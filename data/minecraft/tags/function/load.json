@@ -1,0 +1,7 @@
+{
+    "values":[
+        "rfm:initialize/gamerule",
+        "rfm:initialize/attribute",
+        "rfm:load"
+    ]
+}
