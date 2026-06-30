@@ -1,5 +1,5 @@
 scoreboard players set @s candidate 2
-team join rfm_business @s
+team join business @s
 
 scoreboard players set @s economy 15
 scoreboard players set @s fame 11

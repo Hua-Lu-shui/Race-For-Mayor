@@ -1,5 +1,5 @@
 scoreboard players set @s candidate 1
-team join rfm_star @s
+team join star @s
 
 scoreboard players set @s welfare 6
 scoreboard players set @s fame 15

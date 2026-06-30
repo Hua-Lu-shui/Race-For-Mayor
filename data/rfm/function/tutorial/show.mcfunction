@@ -1,1 +1,1 @@
-function rfm:schedule/delay
+function rfm:schedule/tutorial_delay

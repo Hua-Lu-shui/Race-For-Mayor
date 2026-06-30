@@ -1,3 +1,4 @@
+#延迟函数
 function rfm:tutorial/line1
 schedule function rfm:tutorial/line2 40t
 schedule function rfm:tutorial/line3 80t

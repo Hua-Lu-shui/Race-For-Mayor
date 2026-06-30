@@ -1,5 +1,5 @@
 scoreboard players set @s candidate 4
-team join rfm_scholar @s
+team join scholar @s
 
 scoreboard players set @s welfare 9
 scoreboard players set @s fame 10

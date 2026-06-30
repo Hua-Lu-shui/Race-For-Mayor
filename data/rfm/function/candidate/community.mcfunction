@@ -1,5 +1,5 @@
 scoreboard players set @s candidate 3
-team join rfm_community @s
+team join community @s
 
 scoreboard players set @s welfare 14
 scoreboard players set @s fame 11
