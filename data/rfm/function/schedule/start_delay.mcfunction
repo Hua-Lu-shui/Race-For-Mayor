@@ -1,5 +1,8 @@
-function rfm:start/start
-schedule function rfm:start/wait1 20t
+title @a times 10 40 10
+schedule function rfm:start/wait1 10t
 schedule function rfm:start/wait2 40t
-schedule function rfm:start/wait3 60t
-schedule function rfm:start/wait4 80t
+schedule function rfm:start/wait3 70t
+schedule function rfm:start/wait4 100t
+schedule function rfm:start/start 200t
+
+
