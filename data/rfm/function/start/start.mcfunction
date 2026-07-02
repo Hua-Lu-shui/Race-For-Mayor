@@ -2,3 +2,5 @@
 function rfm:phase/phase1
 #分配房间
 function rfm:room/assign
+#入住提示
+schedule function rfm:schedule/room_delay 20t

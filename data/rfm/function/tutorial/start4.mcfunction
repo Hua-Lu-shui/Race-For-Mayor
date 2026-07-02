@@ -1,0 +1,1 @@
+ tellraw @a {"text":"在规定时间内做出最优解","color":"white","bold":true}

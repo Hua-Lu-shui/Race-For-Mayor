@@ -1,0 +1,1 @@
+ tellraw @a {"text":"务必时刻注意场上属性权重的变化","color":"white","bold":true}

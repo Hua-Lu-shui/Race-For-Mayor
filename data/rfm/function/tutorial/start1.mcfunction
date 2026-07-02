@@ -1,0 +1,1 @@
+tellraw @a {"text":"这里就是你的办公室","color":"white","bold":true}

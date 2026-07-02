@@ -1,0 +1,1 @@
+ tellraw @a {"text":"开始你的表演吧","color":"white","bold":true}
