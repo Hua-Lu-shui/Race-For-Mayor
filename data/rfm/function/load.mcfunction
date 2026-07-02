@@ -18,5 +18,13 @@ data merge block 3 -62 3 {front_text:{has_glowing_text:1b}}
 scoreboard objectives add room dummy
 #创建人数计分板
 scoreboard objectives add player_count dummy
+#创建回合计分板
+scoreboard objectives add round dummy
+#创建选择倒计时计分板
+scoreboard objectives add choose_time dummy
+#移除以创建的选择倒计时条
+bossbar remove rfm:choose_time
+#创建选择倒计时条
+bossbar add rfm:choose_time {"text":"任务选择时间","color":"light_purple"}
 
 say "加载完毕"
