@@ -4,6 +4,7 @@
         "rfm:initialize/attribute",
         "rfm:phase/phase",
         "rfm:phase/phase0",
+        "rfm:task/task",
         "rfm:load"
     ]
 }

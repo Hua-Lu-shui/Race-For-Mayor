@@ -4,6 +4,8 @@ gamemode adventure @a
 gamerule doDaylightCycle false
 #关闭天气变化
 gamerule doWeatherCycle false
+#关闭命令反馈
+gamerule sendCommandFeedback false
 
 
 
