@@ -8,3 +8,4 @@ scoreboard objectives add attribute_choice trigger
 scoreboard objectives add attribute_option_1 dummy
 scoreboard objectives add attribute_option_2 dummy
 scoreboard objectives add attribute_option_3 dummy
+scoreboard objectives add attribute_missing dummy
