@@ -4,4 +4,4 @@ schedule function rfm:tutorial/start2 60t
 schedule function rfm:tutorial/start3 90t
 schedule function rfm:tutorial/start4 120t
 #延迟执行第一轮
-schedule function rfm:round/round 180t
+schedule function rfm:round/round 200t
