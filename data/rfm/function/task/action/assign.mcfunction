@@ -1,6 +1,7 @@
 #重置本轮行动任务状态
 scoreboard players set @a action_player 0
 scoreboard players set @a action_task 0
+scoreboard players set @a decision_task 0
 scoreboard players set @a attribute_choice 0
 scoreboard players set @a action_attribute_choice 0
 scoreboard players set @a action_attribute_option_1 0
