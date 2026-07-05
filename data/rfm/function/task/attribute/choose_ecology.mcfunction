@@ -1,3 +1,10 @@
 #设置属性选择计分板为0
 scoreboard players set @s attribute_choice 0
-tellraw @s {"text":"生态任务还没做好，先测试经济任务。","color":"green"}
+
+execute store result score @s decision_task run random value 401..405
+
+execute if score @s decision_task matches 401 run function rfm:task/decision/ecology/factory/factory_show
+execute if score @s decision_task matches 402 run function rfm:task/decision/ecology/river/river_show
+execute if score @s decision_task matches 403 run function rfm:task/decision/ecology/park/park_show
+execute if score @s decision_task matches 404 run function rfm:task/decision/ecology/trash/trash_show
+execute if score @s decision_task matches 405 run function rfm:task/decision/ecology/energy/energy_show
