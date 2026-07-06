@@ -1,0 +1,5 @@
+tellraw @s {"text":"【民生决策】食品安全","color":"gold","bold":true}
+tellraw @s {"text":"学校周边小吃摊出现卫生投诉。严查能保护居民健康，但摊贩生计会受到影响。","color":"white"}
+tellraw @s [{"text":"[激进] 全区严格整治","color":"red","clickEvent":{"action":"run_command","value":"/function rfm:task/decision/welfare/food_safety/food_safety_a"}}]
+tellraw @s [{"text":"[折中] 重点抽检并整改","color":"aqua","clickEvent":{"action":"run_command","value":"/function rfm:task/decision/welfare/food_safety/food_safety_b"}}]
+tellraw @s [{"text":"[保守] 先宣传提醒","color":"green","clickEvent":{"action":"run_command","value":"/function rfm:task/decision/welfare/food_safety/food_safety_c"}}]

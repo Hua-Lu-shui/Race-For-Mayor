@@ -1,0 +1,5 @@
+execute if score @s decision_task matches 109 run scoreboard players add @s fame 4
+execute if score @s decision_task matches 109 run scoreboard players add @s welfare 2
+execute if score @s decision_task matches 109 run scoreboard players remove @s economy 2
+execute if score @s decision_task matches 109 run tellraw @s {"text":"你选择了全面开放并直播：名誉 +4，民生 +2，经济 -2","color":"yellow"}
+scoreboard players set @s decision_task 0

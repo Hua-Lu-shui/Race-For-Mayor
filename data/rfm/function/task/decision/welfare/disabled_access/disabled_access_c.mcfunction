@@ -1,0 +1,5 @@
+execute if score @s decision_task matches 313 run scoreboard players add @s welfare 1
+execute if score @s decision_task matches 313 run scoreboard players add @s economy 1
+execute if score @s decision_task matches 313 run scoreboard players remove @s fame 1
+execute if score @s decision_task matches 313 run tellraw @s {"text":"你选择了只修复投诉点位：民生 +1，经济 +1，名誉 -1","color":"yellow"}
+scoreboard players set @s decision_task 0

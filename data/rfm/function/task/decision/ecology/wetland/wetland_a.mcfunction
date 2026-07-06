@@ -1,0 +1,5 @@
+execute if score @s decision_task matches 408 run scoreboard players add @s ecology 5
+execute if score @s decision_task matches 408 run scoreboard players add @s fame 2
+execute if score @s decision_task matches 408 run scoreboard players remove @s economy 3
+execute if score @s decision_task matches 408 run tellraw @s {"text":"你选择了划为永久保护区：生态 +5，名誉 +2，经济 -3","color":"yellow"}
+scoreboard players set @s decision_task 0
