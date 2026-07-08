@@ -1,4 +1,4 @@
-execute if score @s decision_task matches 205 run scoreboard players add @s economy 3
+execute if score @s decision_task matches 205 run scoreboard players add @s economy 5
 execute if score @s decision_task matches 205 run scoreboard players add @s welfare 1
 execute if score @s decision_task matches 205 run scoreboard players remove @s ecology 2
 execute if score @s decision_task matches 205 run scoreboard players remove @s fame 1
