@@ -39,3 +39,7 @@ scoreboard objectives add emission_correct dummy
 scoreboard objectives add emission_time dummy
 scoreboard objectives add emission_state dummy
 scoreboard objectives add emission_delay dummy
+
+#下一轮全员准备状态，以及玩家丢出纸条的统计
+scoreboard objectives add next_round_ready dummy
+scoreboard objectives add next_round_drop minecraft.dropped:minecraft.paper
