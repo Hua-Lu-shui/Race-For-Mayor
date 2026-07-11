@@ -1,6 +1,13 @@
-#创建“#next_room”计分板，用于记录下一个房间的编号
-scoreboard players set #next_room room 0
+#重置所有房间的占用状态，0表示空闲，1表示已占用
+scoreboard players set #room_1 room 0
+scoreboard players set #room_2 room 0
+scoreboard players set #room_3 room 0
+scoreboard players set #room_4 room 0
+scoreboard players set #room_5 room 0
+scoreboard players set #room_6 room 0
+scoreboard players set #room_7 room 0
+scoreboard players set #room_8 room 0
 #将所有玩家的房间编号重置为0，确保每局游戏开始时玩家都没有分配到房间
 scoreboard players set @a room 0
-#随机决定玩家入驻房间的顺序来实现随机分配房间的效果
+#随机排列玩家，再为每名玩家随机抽取一个空闲房间
 execute as @a[sort=random] run function rfm:room/next
