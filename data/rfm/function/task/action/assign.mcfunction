@@ -3,6 +3,7 @@ scoreboard players set @a action_player 0
 scoreboard players set @a action_task 0
 scoreboard players set @a action_mode 0
 scoreboard players set @a action_role 0
+scoreboard players set @a action_order 0
 scoreboard players set @a decision_task 0
 scoreboard players set @a attribute_choice 0
 scoreboard players set @a action_attribute_choice 0
@@ -21,6 +22,8 @@ execute as @a[sort=random] if score #action_quota action_quota matches 1.. run f
 
 #决定本轮行动玩家执行单人任务还是双人任务
 function rfm:task/action/select_mode
+#为行动玩家或双人行动组分配执行顺序
+function rfm:task/action/sequence/assign_order
 
 tellraw @a {"text":"本轮行动玩家已分配。其他玩家请选择决策任务方向。","color":"yellow"}
 tellraw @a[scores={action_role=1}] {"text":"你是本轮单人行动玩家，请从随机出现的三个属性中选择一个行动方向。","color":"gold","bold":true}
