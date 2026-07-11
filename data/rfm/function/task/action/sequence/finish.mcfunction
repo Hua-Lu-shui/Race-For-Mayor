@@ -6,7 +6,7 @@ gamemode adventure @a
 execute as @a run function rfm:room/return
 
 title @a title {"text":"本轮结束","color":"green","bold":true}
-title @a subtitle {"text":"3秒后开始下一轮","color":"yellow"}
+title @a subtitle {"text":"10秒后开始下一轮","color":"yellow"}
 
 #短暂等待后开始下一轮，replace防止重复安排
-schedule function rfm:round/round 60t replace
+schedule function rfm:round/round 200t replace

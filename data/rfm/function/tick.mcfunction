@@ -8,3 +8,8 @@ function rfm:task/attribute/check
 function rfm:task/action/attribute/check
 #确保所有属性最低为0
 function rfm:attribute/minimum
+#执行生态行动901“排放巡查”
+execute as @a[scores={action_task=901,emission_state=5}] at @s run function rfm:task/action/ecology/ecology_1/wait_ready
+execute as @a[scores={action_task=901,emission_state=4}] run function rfm:task/action/ecology/ecology_1/countdown
+execute as @a[scores={action_task=901,emission_state=1}] at @s run function rfm:task/action/ecology/ecology_1/tick
+execute as @a[scores={action_task=901,emission_state=2}] run function rfm:task/action/ecology/ecology_1/intermission

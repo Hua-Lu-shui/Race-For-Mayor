@@ -30,3 +30,12 @@ scoreboard objectives add action_attribute_option_2 dummy
 scoreboard objectives add action_attribute_option_3 dummy
 #创建行动任务隐藏属性计分板
 scoreboard objectives add action_attribute_missing dummy
+
+#生态行动901“排放巡查”计分板
+scoreboard objectives add emission_target dummy
+scoreboard objectives add emission_answer dummy
+scoreboard objectives add emission_round dummy
+scoreboard objectives add emission_correct dummy
+scoreboard objectives add emission_time dummy
+scoreboard objectives add emission_state dummy
+scoreboard objectives add emission_delay dummy

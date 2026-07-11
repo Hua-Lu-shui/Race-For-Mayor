@@ -27,4 +27,10 @@ bossbar remove rfm:choose_time
 #创建选择倒计时条
 bossbar add rfm:choose_time {"text":"任务选择时间","color":"light_purple"}
 
+#创建排放巡查选择倒计时条
+bossbar remove rfm:emission_time
+bossbar add rfm:emission_time {"text":"排放口选择时间","color":"green"}
+bossbar set rfm:emission_time visible false
+
+
 say "加载完毕"
