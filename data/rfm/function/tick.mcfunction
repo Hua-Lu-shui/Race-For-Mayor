@@ -6,3 +6,5 @@ function rfm:display/display
 function rfm:task/attribute/check
 #检查行动玩家是否选择了行动任务方向
 function rfm:task/action/attribute/check
+#确保所有属性最低为0
+function rfm:attribute/minimum
