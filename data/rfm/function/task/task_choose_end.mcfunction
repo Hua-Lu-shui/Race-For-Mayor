@@ -7,5 +7,9 @@ title @a subtitle {"text":"开始执行本轮任务","color":"white"}
 scoreboard players set @a decision_task 0
 scoreboard players set @a attribute_choice 0
 scoreboard players set @a action_attribute_choice 0
-#向全体玩家公布本轮行动任务教程
-execute as @a if score @s action_player matches 1 run function rfm:task/action/show_selected
+#单人行动任务分别公布
+execute as @a if score @s action_role matches 1 run function rfm:task/action/show_selected
+#双人行动任务只由队长公布一次
+execute as @a if score @s action_role matches 2 if score @s action_task matches 1.. run function rfm:task/action/duo/show_selected
+#队长超时未选择时，整组双人行动任务取消
+execute as @a if score @s action_role matches 2 if score @s action_task matches 0 run tellraw @a {"text":"双人行动队长没有在倒计时内选择方向，本轮双人行动任务取消。","color":"gray"}

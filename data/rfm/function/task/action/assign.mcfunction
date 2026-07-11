@@ -1,6 +1,8 @@
 #重置本轮行动任务状态
 scoreboard players set @a action_player 0
 scoreboard players set @a action_task 0
+scoreboard players set @a action_mode 0
+scoreboard players set @a action_role 0
 scoreboard players set @a decision_task 0
 scoreboard players set @a attribute_choice 0
 scoreboard players set @a action_attribute_choice 0
@@ -17,5 +19,8 @@ execute if score #player_count player_count matches 5..8 run scoreboard players 
 #随机挑选行动玩家
 execute as @a[sort=random] if score #action_quota action_quota matches 1.. run function rfm:task/action/pick_player
 
-tellraw @a {"text":"本轮行动玩家已分配。行动玩家请选择行动任务方向，其他玩家请选择决策任务方向。","color":"yellow"}
-tellraw @a[scores={action_player=1}] {"text":"你是本轮行动玩家，请从随机出现的三个属性中选择一个行动方向。","color":"gold","bold":true}
+#决定本轮行动玩家执行单人任务还是双人任务
+function rfm:task/action/select_mode
+
+tellraw @a {"text":"本轮行动玩家已分配。其他玩家请选择决策任务方向。","color":"yellow"}
+tellraw @a[scores={action_role=1}] {"text":"你是本轮单人行动玩家，请从随机出现的三个属性中选择一个行动方向。","color":"gold","bold":true}

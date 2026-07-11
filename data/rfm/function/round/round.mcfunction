@@ -7,7 +7,9 @@ title @a subtitle {"text":"请查看你的任务，并在 30 秒内做出选择"
 function rfm:task/task_assign
 #分配本轮行动玩家
 function rfm:task/action/assign
-#行动玩家选择行动任务方向，其他玩家选择决策任务方向
-execute as @a if score @s action_player matches 1 run function rfm:task/action/attribute/show
+#单人行动玩家和双人队长选择行动方向，双人队员等待队长选择
+execute as @a if score @s action_role matches 1 run function rfm:task/action/attribute/show
+execute as @a if score @s action_role matches 2 run function rfm:task/action/attribute/show
+#非行动玩家选择决策任务方向
 execute as @a unless score @s action_player matches 1 run function rfm:task/attribute/show
 
