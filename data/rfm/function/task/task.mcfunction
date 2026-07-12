@@ -43,3 +43,9 @@ scoreboard objectives add emission_delay dummy
 #下一轮全员准备状态，以及玩家丢出纸条的统计
 scoreboard objectives add next_round_ready dummy
 scoreboard objectives add next_round_drop minecraft.dropped:minecraft.paper
+
+#生态行动902“河道取样”计分板
+scoreboard objectives add sample_progress dummy
+scoreboard objectives add sample_time dummy
+scoreboard objectives add sample_state dummy
+scoreboard objectives add sample_delay dummy

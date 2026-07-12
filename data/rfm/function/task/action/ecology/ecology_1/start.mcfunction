@@ -1,4 +1,7 @@
 #临时任务场地：中心约为100 -60 100，后续可统一替换
+#进入行动任务时关闭可能残留的下一轮等待状态
+scoreboard players set #waiting next_round_ready 0
+scoreboard players set @a next_round_drop 0
 #所有人进入旁观位置，当前行动玩家恢复冒险模式并站到答题位置
 gamemode spectator @a
 tp @a 100 -54 114 180 25

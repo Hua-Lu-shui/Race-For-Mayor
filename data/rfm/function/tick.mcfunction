@@ -14,5 +14,10 @@ execute as @a[scores={action_task=901,emission_state=4}] run function rfm:task/a
 execute as @a[scores={action_task=901,emission_state=1}] at @s run function rfm:task/action/ecology/ecology_1/tick
 execute as @a[scores={action_task=901,emission_state=2}] run function rfm:task/action/ecology/ecology_1/intermission
 
+#执行生态行动902“河道取样”
+execute as @a[scores={action_task=902,sample_state=2}] at @s run function rfm:task/action/ecology/ecology_2/wait_ready
+execute as @a[scores={action_task=902,sample_state=3}] run function rfm:task/action/ecology/ecology_2/countdown
+execute as @a[scores={action_task=902,sample_state=1}] at @s run function rfm:task/action/ecology/ecology_2/tick
+
 #所有行动任务结束后，等待全体玩家丢出准备纸条
 execute if score #waiting next_round_ready matches 1 run function rfm:round/ready/check

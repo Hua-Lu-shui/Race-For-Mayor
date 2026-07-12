@@ -32,5 +32,10 @@ bossbar remove rfm:emission_time
 bossbar add rfm:emission_time {"text":"排放口选择时间","color":"green"}
 bossbar set rfm:emission_time visible false
 
+#创建河道取样总时间条
+bossbar remove rfm:sample_time
+bossbar add rfm:sample_time {"text":"河道取样","color":"blue"}
+bossbar set rfm:sample_time visible false
+
 
 say "加载完毕"
