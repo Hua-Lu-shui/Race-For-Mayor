@@ -2,4 +2,4 @@ execute if score @s decision_task matches 410 run scoreboard players add @s econ
 execute if score @s decision_task matches 410 run scoreboard players remove @s ecology 3
 execute if score @s decision_task matches 410 run scoreboard players remove @s welfare 1
 execute if score @s decision_task matches 410 run tellraw @s {"text":"你选择了快速砍伐重铺道路：经济 +2，生态 -3，民生 -1","color":"yellow"}
-scoreboard players set @s decision_task 0
+execute if score @s decision_task matches 410 run scoreboard players set @s decision_task 0

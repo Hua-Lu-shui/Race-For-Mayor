@@ -4,6 +4,8 @@ execute as @a unless score @s candidate matches 0.. run function rfm:initialize/
 function rfm:display/display
 #检查玩家是否选择了属性方向
 function rfm:task/attribute/check
+#检查玩家是否选择了决策方案
+function rfm:task/decision/check
 #检查行动玩家是否选择了行动任务方向
 function rfm:task/action/attribute/check
 #确保所有属性最低为0

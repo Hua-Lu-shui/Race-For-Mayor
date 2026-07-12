@@ -2,4 +2,4 @@ execute if score @s decision_task matches 207 run scoreboard players add @s econ
 execute if score @s decision_task matches 207 run scoreboard players add @s fame 1
 execute if score @s decision_task matches 207 run scoreboard players remove @s welfare 1
 execute if score @s decision_task matches 207 run tellraw @s {"text":"你选择了小额分批扶持：经济 +2，名誉 +1，民生 -1","color":"yellow"}
-scoreboard players set @s decision_task 0
+execute if score @s decision_task matches 207 run scoreboard players set @s decision_task 0

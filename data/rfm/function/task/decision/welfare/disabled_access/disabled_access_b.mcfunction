@@ -2,4 +2,4 @@ execute if score @s decision_task matches 313 run scoreboard players add @s welf
 execute if score @s decision_task matches 313 run scoreboard players add @s fame 1
 execute if score @s decision_task matches 313 run scoreboard players remove @s economy 1
 execute if score @s decision_task matches 313 run tellraw @s {"text":"你选择了优先改造医院车站：民生 +2，名誉 +1，经济 -1","color":"yellow"}
-scoreboard players set @s decision_task 0
+execute if score @s decision_task matches 313 run scoreboard players set @s decision_task 0

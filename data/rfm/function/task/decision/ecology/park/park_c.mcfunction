@@ -2,4 +2,4 @@ execute if score @s decision_task matches 403 run scoreboard players add @s econ
 execute if score @s decision_task matches 403 run scoreboard players remove @s ecology 1
 execute if score @s decision_task matches 403 run scoreboard players remove @s welfare 1
 execute if score @s decision_task matches 403 run tellraw @s {"text":"你选择了优先开发综合商场：经济 +3，生态 -1，民生 -1","color":"yellow"}
-scoreboard players set @s decision_task 0
+execute if score @s decision_task matches 403 run scoreboard players set @s decision_task 0

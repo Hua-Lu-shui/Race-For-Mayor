@@ -4,4 +4,4 @@ execute if score @s decision_task matches 204 run scoreboard players add @s welf
 execute if score @s decision_task matches 204 run scoreboard players remove @s fame 5
 execute if score @s decision_task matches 204 run tellraw @s {"text":"你选择了激进：经济 +6，民生 +2，名誉 -5","color":"yellow"}
 #重置决策任务计分板
-scoreboard players set @s decision_task 0
+execute if score @s decision_task matches 204 run scoreboard players set @s decision_task 0

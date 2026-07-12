@@ -5,6 +5,7 @@ title @a title {"text":"选择结束","color":"light_purple","bold":true}
 title @a subtitle {"text":"开始执行本轮任务","color":"white"}
 #清除超时未完成的选择，防止倒计时后继续点击旧选项
 scoreboard players set @a decision_task 0
+scoreboard players set @a decision_choice 0
 scoreboard players set @a attribute_choice 0
 scoreboard players set @a action_attribute_choice 0
 #按照已分配的行动顺序，从第一项行动任务开始执行

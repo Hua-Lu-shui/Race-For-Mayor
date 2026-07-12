@@ -2,4 +2,4 @@ execute if score @s decision_task matches 210 run scoreboard players add @s econ
 execute if score @s decision_task matches 210 run scoreboard players remove @s welfare 2
 execute if score @s decision_task matches 210 run scoreboard players remove @s fame 1
 execute if score @s decision_task matches 210 run tellraw @s {"text":"你选择了维持市场定价：经济 +3，民生 -2，名誉 -1","color":"yellow"}
-scoreboard players set @s decision_task 0
+execute if score @s decision_task matches 210 run scoreboard players set @s decision_task 0

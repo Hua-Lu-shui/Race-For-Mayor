@@ -2,4 +2,4 @@ execute if score @s decision_task matches 107 run scoreboard players add @s econ
 execute if score @s decision_task matches 107 run scoreboard players remove @s fame 2
 execute if score @s decision_task matches 107 run scoreboard players remove @s welfare 2
 execute if score @s decision_task matches 107 run tellraw @s {"text":"你选择了强调客观困难：经济 +1，名誉 -2，民生 -2","color":"yellow"}
-scoreboard players set @s decision_task 0
+execute if score @s decision_task matches 107 run scoreboard players set @s decision_task 0

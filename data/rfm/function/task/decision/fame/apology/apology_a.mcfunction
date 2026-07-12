@@ -2,4 +2,4 @@ execute if score @s decision_task matches 107 run scoreboard players add @s fame
 execute if score @s decision_task matches 107 run scoreboard players add @s welfare 3
 execute if score @s decision_task matches 107 run scoreboard players remove @s economy 2
 execute if score @s decision_task matches 107 run tellraw @s {"text":"你选择了主动承认并给出补偿：名誉 +1，民生 +3，经济 -2","color":"yellow"}
-scoreboard players set @s decision_task 0
+execute if score @s decision_task matches 107 run scoreboard players set @s decision_task 0

@@ -2,6 +2,8 @@
 scoreboard objectives add task dummy
 #创建决策任务计分板
 scoreboard objectives add decision_task dummy
+#创建决策方案选择触发器：1为A，2为B，3为C
+scoreboard objectives add decision_choice trigger
 #创建行动任务计分板
 scoreboard objectives add action_task dummy
 #创建属性选择计分板

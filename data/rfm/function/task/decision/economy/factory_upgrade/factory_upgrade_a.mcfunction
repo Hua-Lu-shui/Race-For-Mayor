@@ -2,4 +2,4 @@ execute if score @s decision_task matches 209 run scoreboard players remove @s e
 execute if score @s decision_task matches 209 run scoreboard players add @s welfare 3
 execute if score @s decision_task matches 209 run scoreboard players remove @s ecology 1
 execute if score @s decision_task matches 209 run tellraw @s {"text":"你选择了大规模设备补贴：经济 -2，民生 +3，生态 -1","color":"yellow"}
-scoreboard players set @s decision_task 0
+execute if score @s decision_task matches 209 run scoreboard players set @s decision_task 0

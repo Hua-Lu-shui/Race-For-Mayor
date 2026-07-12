@@ -2,4 +2,4 @@ execute if score @s decision_task matches 113 run scoreboard players add @s fame
 execute if score @s decision_task matches 113 run scoreboard players add @s welfare 1
 execute if score @s decision_task matches 113 run scoreboard players remove @s economy 1
 execute if score @s decision_task matches 113 run tellraw @s {"text":"你选择了小规模分区宣讲：名誉 +2，民生 +1，经济 -1","color":"yellow"}
-scoreboard players set @s decision_task 0
+execute if score @s decision_task matches 113 run scoreboard players set @s decision_task 0

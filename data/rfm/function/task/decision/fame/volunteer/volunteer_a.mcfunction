@@ -2,4 +2,4 @@ execute if score @s decision_task matches 106 run scoreboard players add @s fame
 execute if score @s decision_task matches 106 run scoreboard players add @s welfare 2
 execute if score @s decision_task matches 106 run scoreboard players remove @s economy 3
 execute if score @s decision_task matches 106 run tellraw @s {"text":"你选择了发动大规模宣传：名誉 +4，民生 +2，经济 -3","color":"yellow"}
-scoreboard players set @s decision_task 0
+execute if score @s decision_task matches 106 run scoreboard players set @s decision_task 0
