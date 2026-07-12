@@ -1,2 +1,2 @@
-tellraw @a [{"text":"【生态行动】公园维护","color":"green","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"yellow"}]
-tellraw @a {"text":"教程：行动玩家前往公园维护点完成检查。其他玩家可以观察，后续根据完成情况结算生态和民生。","color":"white"}
+tellraw @a {"text":"市民反映公园内多处设施缺少维护，部分区域已影响日常使用。你需要在限定时间内完成各维护点的巡检确认，为后续修缮争取支持。","color":"white"}
+function rfm:task/action/ecology/ecology_3/start

@@ -37,6 +37,11 @@ bossbar remove rfm:sample_time
 bossbar add rfm:sample_time {"text":"河道取样","color":"blue"}
 bossbar set rfm:sample_time visible false
 
+#创建公园维护总时间条
+bossbar remove rfm:park_time
+bossbar add rfm:park_time {"text":"公园维护","color":"green"}
+bossbar set rfm:park_time visible false
+
 
 say "加载完毕"
 

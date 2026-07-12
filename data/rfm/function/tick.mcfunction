@@ -17,5 +17,10 @@ execute as @a[scores={action_task=902,sample_state=2}] at @s run function rfm:ta
 execute as @a[scores={action_task=902,sample_state=3}] run function rfm:task/action/ecology/ecology_2/countdown
 execute as @a[scores={action_task=902,sample_state=1}] at @s run function rfm:task/action/ecology/ecology_2/tick
 
+#执行生态行动903“公园维护”
+execute as @a[scores={action_task=903,park_state=2}] at @s run function rfm:task/action/ecology/ecology_3/wait_ready
+execute as @a[scores={action_task=903,park_state=3}] run function rfm:task/action/ecology/ecology_3/countdown
+execute as @a[scores={action_task=903,park_state=1}] run function rfm:task/action/ecology/ecology_3/tick
+
 #所有行动任务结束后，等待全体玩家丢出准备纸条
 execute if score #waiting next_round_ready matches 1 run function rfm:round/ready/check
