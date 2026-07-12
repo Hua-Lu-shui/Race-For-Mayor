@@ -25,5 +25,4 @@ function rfm:task/action/select_mode
 #为行动玩家或双人行动组分配执行顺序
 function rfm:task/action/sequence/assign_order
 
-tellraw @a {"text":"本轮行动玩家已分配。其他玩家请选择决策任务方向。","color":"yellow"}
 tellraw @a[scores={action_role=1}] {"text":"你是本轮单人行动玩家，请从随机出现的三个属性中选择一个行动方向。","color":"gold","bold":true}

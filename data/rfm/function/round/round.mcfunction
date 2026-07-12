@@ -1,7 +1,7 @@
 #使用虚拟玩家 #round 来记录当前轮数
 scoreboard players add #round round 1
 #提示当前轮数
-title @a title [{"text":"第 ","color":"light_purple","bold":true},{"score":{"name":"#round","objective":"round"},"color":"gold","bold":true},{"text":" 轮","color":"light_purple","bold":true}]
+title @a title [{"text":"第 ","color":"white","bold":true},{"score":{"name":"#round","objective":"round"},"color":"light_purple","bold":true},{"text":" 轮","color":"white","bold":true}]
 #调用任务分配函数
 function rfm:task/task_assign
 #分配本轮行动玩家

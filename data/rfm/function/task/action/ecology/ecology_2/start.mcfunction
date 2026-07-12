@@ -16,10 +16,10 @@ scoreboard players set @s sample_time 0
 scoreboard players set @s sample_delay 0
 scoreboard players set @s sample_state 2
 
-tellraw @a [{"text":"【生态行动】河道取样","color":"gold","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"green"}]
+tellraw @a [{"text":"【生态行动】河道取样","color":"green","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"yellow"}]
 tellraw @a {"text":"行动玩家需要沿河道依次完成1至6号取样点。在当前目标附近用玻璃瓶取得水样，全部完成或时间耗尽后结算。","color":"white"}
 
 title @s clear
-title @s title {"text":"河道取样","color":"aqua","bold":true}
+title @s title {"text":"河道取样","color":"green","bold":true}
 
 item replace entity @s hotbar.4 with minecraft:paper[minecraft:custom_name='{"text":"准备完成","color":"green","bold":true,"italic":false}',minecraft:lore=['{"text":"按Q扔出后开始倒计时","color":"gray","italic":false}'],minecraft:custom_data={sample_ready:1}] 1
