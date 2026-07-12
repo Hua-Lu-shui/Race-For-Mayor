@@ -7,7 +7,5 @@ kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{samp
 scoreboard players set @s sample_time 0
 scoreboard players set @s sample_delay 0
 scoreboard players set @s sample_state 0
-scoreboard players set @s action_task 0
-gamemode spectator @s
 
-function rfm:task/action/sequence/next
+function rfm:task/action/sequence/complete_current

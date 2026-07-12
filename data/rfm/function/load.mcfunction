@@ -39,3 +39,6 @@ bossbar set rfm:sample_time visible false
 
 
 say "加载完毕"
+
+#启动低频属性显示循环
+schedule function rfm:display/display 1t replace

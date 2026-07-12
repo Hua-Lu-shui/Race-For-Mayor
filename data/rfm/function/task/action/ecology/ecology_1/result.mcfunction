@@ -19,4 +19,5 @@ execute if score @s emission_correct matches ..5 run title @s subtitle {"text":"
 execute if score @s emission_correct matches ..5 run tellraw @a [{"text":"【排放巡查】","color":"green","bold":true},{"selector":"@s","color":"gold"},{"text":" 任务失败。","color":"red","bold":true},{"text":" 属性保持不变","color":"gray"}]
 
 tellraw @a [{"text":"排放巡查结束，","color":"white"},{"selector":"@s","color":"gold"},{"text":" 共判断正确 ","color":"white"},{"score":{"name":"@s","objective":"emission_correct"},"color":"green"},{"text":" / 10 次。","color":"white"}]
+function rfm:attribute/minimum
 function rfm:task/action/ecology/ecology_1/cleanup

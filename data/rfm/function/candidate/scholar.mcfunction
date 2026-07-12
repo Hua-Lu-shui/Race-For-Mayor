@@ -5,6 +5,7 @@ scoreboard players set @s welfare 9
 scoreboard players set @s fame 10
 scoreboard players set @s economy 8
 scoreboard players set @s ecology 13
+function rfm:attribute/minimum
 
 
 title @s times 10 40 0

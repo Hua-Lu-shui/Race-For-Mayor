@@ -18,8 +18,6 @@ scoreboard players set @s emission_answer 0
 scoreboard players set @s emission_time 0
 scoreboard players set @s emission_delay 0
 scoreboard players set @s emission_state 0
-scoreboard players set @s action_task 0
-gamemode spectator @s
 
-#开始下一位行动玩家；若没有下一位则自动结束行动阶段
-function rfm:task/action/sequence/next
+#统一完成当前行动；开始下一位行动玩家，若没有则结束行动阶段
+function rfm:task/action/sequence/complete_current

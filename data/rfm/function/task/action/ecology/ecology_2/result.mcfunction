@@ -13,4 +13,5 @@ execute if score @s sample_progress matches 4..5 run tellraw @a [{"text":"【河
 execute if score @s sample_progress matches ..3 run tellraw @a [{"text":"【河道取样】","color":"aqua","bold":true},{"selector":"@s","color":"gold"},{"text":" 任务失败。","color":"red","bold":true},{"text":" 属性保持不变","color":"gray"}]
 
 tellraw @a [{"text":"河道取样结束，共完成 ","color":"white"},{"score":{"name":"@s","objective":"sample_progress"},"color":"aqua"},{"text":" / 6 个取样点。","color":"white"}]
+function rfm:attribute/minimum
 function rfm:task/action/ecology/ecology_2/cleanup

@@ -5,6 +5,7 @@ scoreboard players set @s welfare 6
 scoreboard players set @s fame 15
 scoreboard players set @s economy 13
 scoreboard players set @s ecology 6
+function rfm:attribute/minimum
 
 title @s times 10 40 0
 title @s title [{"text":"你选择了：","color":"white"},{"text":"明星","color":"aqua"}]

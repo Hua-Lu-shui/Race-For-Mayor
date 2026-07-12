@@ -5,6 +5,7 @@ scoreboard players set @s welfare 10
 scoreboard players set @s fame 10
 scoreboard players set @s economy 10
 scoreboard players set @s ecology 10
+function rfm:attribute/minimum
 
 title @s times 10 40 0
 title @s title [{"text":"你选择了：","color":"white"},{"text":"公务员","color":"light_purple"}]

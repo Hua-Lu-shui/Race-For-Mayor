@@ -5,6 +5,7 @@ scoreboard players set @s welfare 14
 scoreboard players set @s fame 11
 scoreboard players set @s economy 7
 scoreboard players set @s ecology 8
+function rfm:attribute/minimum
 
 title @s times 10 40 0
 title @s title [{"text":"你选择了：","color":"white"},{"text":"社区领袖","color":"red"}]
