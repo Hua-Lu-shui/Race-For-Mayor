@@ -27,5 +27,10 @@ execute as @a[scores={action_task=904,trash_state=2}] at @s run function rfm:tas
 execute as @a[scores={action_task=904,trash_state=3}] run function rfm:task/action/ecology/ecology_4/countdown
 execute as @a[scores={action_task=904,trash_state=1}] run function rfm:task/action/ecology/ecology_4/tick
 
+#执行生态行动905“清洁能源检查”
+execute as @a[scores={action_task=905,energy_state=2}] at @s run function rfm:task/action/ecology/ecology_5/wait_ready
+execute as @a[scores={action_task=905,energy_state=3}] run function rfm:task/action/ecology/ecology_5/countdown
+execute as @a[scores={action_task=905,energy_state=1}] run function rfm:task/action/ecology/ecology_5/tick
+
 #所有行动任务结束后，等待全体玩家丢出准备时钟
 execute if score #waiting next_round_ready matches 1 run function rfm:round/ready/check

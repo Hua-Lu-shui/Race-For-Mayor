@@ -47,6 +47,11 @@ bossbar remove rfm:trash_time
 bossbar add rfm:trash_time {"text":"垃圾分类督导","color":"green"}
 bossbar set rfm:trash_time visible false
 
+#生态行动905“清洁能源检查”倒计时
+bossbar remove rfm:energy_time
+bossbar add rfm:energy_time {"text":"清洁能源检查","color":"yellow"}
+bossbar set rfm:energy_time visible false
+
 
 say "加载完毕"
 

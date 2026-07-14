@@ -77,3 +77,12 @@ scoreboard objectives add trash_used_7 dummy
 scoreboard objectives add trash_used_8 dummy
 scoreboard objectives add trash_used_9 dummy
 scoreboard objectives add trash_used_10 dummy
+
+#生态行动905“清洁能源检查”计分板
+scoreboard objectives add energy_round dummy
+scoreboard objectives add energy_target dummy
+scoreboard objectives add energy_total dummy
+scoreboard objectives add energy_correct dummy
+scoreboard objectives add energy_time dummy
+scoreboard objectives add energy_state dummy
+scoreboard objectives add energy_delay dummy

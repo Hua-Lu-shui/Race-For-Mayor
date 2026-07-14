@@ -1,2 +1,5 @@
-tellraw @a [{"text":"【生态行动】清洁能源检查","color":"green","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]
-tellraw @a {"text":"教程：行动玩家前往公共建筑检查能源设备。其他玩家可以观察，后续根据完成情况结算生态和经济。","color":"white"}
+#任务背景
+tellraw @a {"text":"城市清洁能源系统即将接入公共电网，但不同设备的供电量需要与实时需求精确匹配。你需要完成能源调度检查，避免供电不足或能源浪费。","color":"white"}
+
+#进入任务场地，再由start函数公布标题和教程
+function rfm:task/action/ecology/ecology_5/start
