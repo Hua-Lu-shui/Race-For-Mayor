@@ -1,5 +1,5 @@
 bossbar set rfm:park_time visible false
-clear @s minecraft:paper[minecraft:custom_data={park_ready:1}]
+clear @s minecraft:map[minecraft:custom_data={park_ready:1}]
 clear @s minecraft:paper[minecraft:custom_data={park_check:1}]
 kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{park_ready:1}}}}]
 kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{park_check:1}}}}]

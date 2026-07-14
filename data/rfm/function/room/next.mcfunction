@@ -25,11 +25,11 @@ execute if score @s room matches 8 run scoreboard players set #room_8 room 1
 execute if score @s room matches 0 run function rfm:room/next
 
 #根据玩家的房间编号将玩家传送到对应的房间位置
-execute if score @s room matches 1 run tp @s -1 -62 0
-execute if score @s room matches 2 run tp @s -1 -62 2
-execute if score @s room matches 3 run tp @s -1 -62 4
-execute if score @s room matches 4 run tp @s -1 -62 6
-execute if score @s room matches 5 run tp @s -1 -62 8
-execute if score @s room matches 6 run tp @s -1 -62 10
-execute if score @s room matches 7 run tp @s -1 -62 12
-execute if score @s room matches 8 run tp @s -1 -62 14
+execute if score @s room matches 1 run tp @s -20 -58 -11
+execute if score @s room matches 2 run tp @s -20 -58 6
+execute if score @s room matches 3 run tp @s -20 -58 23
+execute if score @s room matches 4 run tp @s -20 -58 30
+execute if score @s room matches 5 run tp @s -20 -58 47
+execute if score @s room matches 6 run tp @s -20 -58 64
+execute if score @s room matches 7 run tp @s -20 -58 81
+execute if score @s room matches 8 run tp @s -20 -58 98

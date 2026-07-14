@@ -1,6 +1,6 @@
 #清除快捷栏中的任务纸条
 bossbar set rfm:emission_time visible false
-clear @s minecraft:paper[minecraft:custom_data={emission_ready:1}]
+clear @s minecraft:map[minecraft:custom_data={emission_ready:1}]
 clear @s minecraft:paper[minecraft:custom_data={emission_id:1}]
 clear @s minecraft:paper[minecraft:custom_data={emission_id:2}]
 clear @s minecraft:paper[minecraft:custom_data={emission_id:3}]

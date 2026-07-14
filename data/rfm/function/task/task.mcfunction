@@ -42,9 +42,9 @@ scoreboard objectives add emission_time dummy
 scoreboard objectives add emission_state dummy
 scoreboard objectives add emission_delay dummy
 
-#下一轮全员准备状态，以及玩家丢出纸条的统计
+#下一轮全员准备状态，以及玩家丢出准备时钟的统计
 scoreboard objectives add next_round_ready dummy
-scoreboard objectives add next_round_drop minecraft.dropped:minecraft.paper
+scoreboard objectives add next_round_clock minecraft.dropped:minecraft.clock
 
 #生态行动902“河道取样”计分板
 scoreboard objectives add sample_progress dummy
@@ -57,3 +57,23 @@ scoreboard objectives add park_progress dummy
 scoreboard objectives add park_time dummy
 scoreboard objectives add park_state dummy
 scoreboard objectives add park_delay dummy
+
+#生态行动904“垃圾分类督导”计分板
+scoreboard objectives add trash_round dummy
+scoreboard objectives add trash_item_id dummy
+scoreboard objectives add trash_target dummy
+scoreboard objectives add trash_answer dummy
+scoreboard objectives add trash_correct dummy
+scoreboard objectives add trash_time dummy
+scoreboard objectives add trash_state dummy
+scoreboard objectives add trash_delay dummy
+scoreboard objectives add trash_used_1 dummy
+scoreboard objectives add trash_used_2 dummy
+scoreboard objectives add trash_used_3 dummy
+scoreboard objectives add trash_used_4 dummy
+scoreboard objectives add trash_used_5 dummy
+scoreboard objectives add trash_used_6 dummy
+scoreboard objectives add trash_used_7 dummy
+scoreboard objectives add trash_used_8 dummy
+scoreboard objectives add trash_used_9 dummy
+scoreboard objectives add trash_used_10 dummy

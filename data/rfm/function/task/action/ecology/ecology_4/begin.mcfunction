@@ -1,0 +1,23 @@
+scoreboard players set @s trash_round 0
+scoreboard players set @s trash_correct 0
+scoreboard players set @s trash_answer 0
+scoreboard players set @s trash_used_1 0
+scoreboard players set @s trash_used_2 0
+scoreboard players set @s trash_used_3 0
+scoreboard players set @s trash_used_4 0
+scoreboard players set @s trash_used_5 0
+scoreboard players set @s trash_used_6 0
+scoreboard players set @s trash_used_7 0
+scoreboard players set @s trash_used_8 0
+scoreboard players set @s trash_used_9 0
+scoreboard players set @s trash_used_10 0
+scoreboard players set @s trash_time 600
+scoreboard players set @s trash_state 1
+
+bossbar set rfm:trash_time players @a
+bossbar set rfm:trash_time max 600
+bossbar set rfm:trash_time value 600
+bossbar set rfm:trash_time name [{"text":"垃圾分类督导  ·  已分类 ","color":"green"},{"score":{"name":"@s","objective":"trash_round"},"color":"yellow"},{"text":" / 10  ·  正确 ","color":"green"},{"score":{"name":"@s","objective":"trash_correct"},"color":"gold"}]
+bossbar set rfm:trash_time visible true
+
+function rfm:task/action/ecology/ecology_4/give_item

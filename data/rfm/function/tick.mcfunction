@@ -22,5 +22,10 @@ execute as @a[scores={action_task=903,park_state=2}] at @s run function rfm:task
 execute as @a[scores={action_task=903,park_state=3}] run function rfm:task/action/ecology/ecology_3/countdown
 execute as @a[scores={action_task=903,park_state=1}] run function rfm:task/action/ecology/ecology_3/tick
 
-#所有行动任务结束后，等待全体玩家丢出准备纸条
+#执行生态行动904“垃圾分类督导”
+execute as @a[scores={action_task=904,trash_state=2}] at @s run function rfm:task/action/ecology/ecology_4/wait_ready
+execute as @a[scores={action_task=904,trash_state=3}] run function rfm:task/action/ecology/ecology_4/countdown
+execute as @a[scores={action_task=904,trash_state=1}] run function rfm:task/action/ecology/ecology_4/tick
+
+#所有行动任务结束后，等待全体玩家丢出准备时钟
 execute if score #waiting next_round_ready matches 1 run function rfm:round/ready/check

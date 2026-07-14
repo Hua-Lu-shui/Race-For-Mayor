@@ -1,18 +1,18 @@
 #告示牌点击事件
-data modify block 3 -62 6 front_text.messages[1] set value '{"text":"明星","color":"aqua","clickEvent":{"action":"run_command","value":"/function rfm:candidate/star"}}'
-data merge block 3 -62 6 {front_text:{has_glowing_text:1b}}
-data modify block 3 -62 8 front_text.messages[1] set value '{"text":"企业家","color":"yellow","clickEvent":{"action":"run_command","value":"/function rfm:candidate/business"}}'
-data merge block 3 -62 8 {front_text:{has_glowing_text:1b}}
-data modify block 3 -62 10 front_text.messages[1] set value '{"text":"社区领袖","color":"red","clickEvent":{"action":"run_command","value":"/function rfm:candidate/community"}}'
-data merge block 3 -62 10 {front_text:{has_glowing_text:1b}}
-data modify block 3 -62 12 front_text.messages[1] set value '{"text":"学者","color":"green","clickEvent":{"action":"run_command","value":"/function rfm:candidate/scholar"}}'
-data merge block 3 -62 12 {front_text:{has_glowing_text:1b}}
-data modify block 3 -62 14 front_text.messages[1] set value '{"text":"公务员","color":"light_purple","clickEvent":{"action":"run_command","value":"/function rfm:candidate/official"}}'
-data merge block 3 -62 14 {front_text:{has_glowing_text:1b}}
-data modify block 3 -62 1 front_text.messages[1] set value '{"text":"教程","color":"gold","bold":true,"clickEvent":{"action":"run_command","value":"/function rfm:tutorial/show"}}'
-data merge block 3 -62 1 {front_text:{has_glowing_text:1b}}
-data modify block 3 -62 3 front_text.messages[1] set value '{"text":"开始游戏","color":"white","bold":true,"clickEvent":{"action":"run_command","value":"/function rfm:schedule/start_check"}}'
-data merge block 3 -62 3 {front_text:{has_glowing_text:1b}}
+data modify block 61 -49 -22 front_text.messages[1] set value '{"text":"明星","color":"aqua","clickEvent":{"action":"run_command","value":"/function rfm:candidate/star"}}'
+data merge block 61 -49 -22 {front_text:{has_glowing_text:1b}}
+data modify block 63 -49 -22 front_text.messages[1] set value '{"text":"企业家","color":"yellow","clickEvent":{"action":"run_command","value":"/function rfm:candidate/business"}}'
+data merge block 63 -49 -22 {front_text:{has_glowing_text:1b}}
+data modify block 65 -49 -22 front_text.messages[1] set value '{"text":"社区领袖","color":"red","clickEvent":{"action":"run_command","value":"/function rfm:candidate/community"}}'
+data merge block 65 -49 -22 {front_text:{has_glowing_text:1b}}
+data modify block 67 -49 -22 front_text.messages[1] set value '{"text":"学者","color":"green","clickEvent":{"action":"run_command","value":"/function rfm:candidate/scholar"}}'
+data merge block 67 -49 -22 {front_text:{has_glowing_text:1b}}
+data modify block 69 -49 -22 front_text.messages[1] set value '{"text":"公务员","color":"light_purple","clickEvent":{"action":"run_command","value":"/function rfm:candidate/official"}}'
+data merge block 69 -49 -22 {front_text:{has_glowing_text:1b}}
+data modify block 55 -49 -22 front_text.messages[1] set value '{"text":"教程","color":"gold","bold":true,"clickEvent":{"action":"run_command","value":"/function rfm:tutorial/show"}}'
+data merge block 55 -49 -22 {front_text:{has_glowing_text:1b}}
+data modify block 49 -49 -22 front_text.messages[1] set value '{"text":"开始游戏","color":"white","bold":true,"clickEvent":{"action":"run_command","value":"/function rfm:schedule/start_check"}}'
+data merge block 49 -49 -22 {front_text:{has_glowing_text:1b}}
 
 #创建房间计分板
 scoreboard objectives add room dummy
@@ -41,6 +41,11 @@ bossbar set rfm:sample_time visible false
 bossbar remove rfm:park_time
 bossbar add rfm:park_time {"text":"公园维护","color":"green"}
 bossbar set rfm:park_time visible false
+
+#生态行动904“垃圾分类督导”倒计时
+bossbar remove rfm:trash_time
+bossbar add rfm:trash_time {"text":"垃圾分类督导","color":"green"}
+bossbar set rfm:trash_time visible false
 
 
 say "加载完毕"
