@@ -42,5 +42,10 @@ execute as @a[scores={action_task=702,negotiation_state=2}] at @s run function r
 execute as @a[scores={action_task=702,negotiation_state=3}] run function rfm:task/action/economy/economy_2/countdown
 execute as @a[scores={action_task=702,negotiation_state=1}] run function rfm:task/action/economy/economy_2/tick
 
+#执行经济行动703“预算核查”
+execute as @a[scores={action_task=703,audit_state=2}] at @s run function rfm:task/action/economy/economy_3/wait_ready
+execute as @a[scores={action_task=703,audit_state=3}] run function rfm:task/action/economy/economy_3/countdown
+execute as @a[scores={action_task=703,audit_state=1}] run function rfm:task/action/economy/economy_3/tick
+
 #所有行动任务结束后，等待全体玩家丢出准备时钟
 execute if score #waiting next_round_ready matches 1 run function rfm:round/ready/check

@@ -62,6 +62,11 @@ bossbar remove rfm:negotiation_time
 bossbar add rfm:negotiation_time {"text":"招商洽谈","color":"yellow"}
 bossbar set rfm:negotiation_time visible false
 
+#经济行动703“预算核查”倒计时
+bossbar remove rfm:audit_time
+bossbar add rfm:audit_time {"text":"预算核查","color":"yellow"}
+bossbar set rfm:audit_time visible false
+
 #启动低频属性显示循环
 schedule function rfm:display/display 1t replace
 

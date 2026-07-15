@@ -1,2 +1,4 @@
-tellraw @a [{"text":"【经济行动】预算核查","color":"yellow","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]
-tellraw @a {"text":"教程：行动玩家前往财政办公室核查预算线索。其他玩家可以观察，后续根据核查结果结算经济。","color":"white"}
+#任务背景
+tellraw @a {"text":"财政办公室在近期市政工程账目中发现异常。行动玩家需要拾取并翻阅三本完整账本，排除无关信息，通过加减乘除核对本次应由市财政承担的金额，找出存在虚报记录的账本。","color":"white"}
+
+function rfm:task/action/economy/economy_3/start

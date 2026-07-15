@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "right_click": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:interaction",
+          "nbt": "{Tags:[\"rfm_audit_book_b\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "rfm:task/action/economy/economy_3/pickup_b"
+  }
+}

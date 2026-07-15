@@ -107,3 +107,14 @@ scoreboard objectives add negotiation_correct dummy
 scoreboard objectives add negotiation_time dummy
 scoreboard objectives add negotiation_state dummy
 scoreboard objectives add negotiation_delay dummy
+
+#经济行动703“预算核查”
+scoreboard objectives add audit_target dummy
+scoreboard objectives add audit_book_a dummy
+scoreboard objectives add audit_book_b dummy
+scoreboard objectives add audit_book_c dummy
+scoreboard objectives add audit_answer dummy
+scoreboard objectives add audit_correct dummy
+scoreboard objectives add audit_time dummy
+scoreboard objectives add audit_state dummy
+scoreboard objectives add audit_delay dummy
