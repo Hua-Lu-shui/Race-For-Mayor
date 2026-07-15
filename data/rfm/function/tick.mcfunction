@@ -3,7 +3,7 @@ execute as @a unless score @s candidate matches 0.. run function rfm:initialize/
 #选择倒计时有效时才检查玩家选择，避免非选择阶段重复执行整组判断
 execute if score #choose_time choose_time matches 1.. run function rfm:task/attribute/check
 #检查玩家是否选择了决策方案
-function rfm:task/decision/check
+execute if entity @a[scores={decision_choice=1..3}] run function rfm:task/decision/check
 #选择倒计时有效时才检查行动玩家的任务方向
 execute if score #choose_time choose_time matches 1.. run function rfm:task/action/attribute/check
 #执行生态行动901“排放巡查”

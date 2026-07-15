@@ -11,8 +11,3 @@ summon minecraft:item_display 368 -58.98 104 {Tags:["rfm_audit_model","rfm_audit
 summon minecraft:interaction 352 -59.0 104 {Tags:["rfm_audit_interaction","rfm_audit_book_a"],width:1.5f,height:0.8f,response:1b}
 summon minecraft:interaction 360 -59.0 104 {Tags:["rfm_audit_interaction","rfm_audit_book_b"],width:1.5f,height:0.8f,response:1b}
 summon minecraft:interaction 368 -59.0 104 {Tags:["rfm_audit_interaction","rfm_audit_book_c"],width:1.5f,height:0.8f,response:1b}
-
-#账本编号
-summon minecraft:text_display 352 -58.2 104 {Tags:["rfm_audit_label"],text:'{"text":"A号账本","color":"yellow","bold":true}',billboard:"center",alignment:"center",background:0,shadow:1b,see_through:1b}
-summon minecraft:text_display 360 -58.2 104 {Tags:["rfm_audit_label"],text:'{"text":"B号账本","color":"aqua","bold":true}',billboard:"center",alignment:"center",background:0,shadow:1b,see_through:1b}
-summon minecraft:text_display 368 -58.2 104 {Tags:["rfm_audit_label"],text:'{"text":"C号账本","color":"green","bold":true}',billboard:"center",alignment:"center",background:0,shadow:1b,see_through:1b}

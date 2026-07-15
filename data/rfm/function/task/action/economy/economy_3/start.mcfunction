@@ -11,7 +11,8 @@ setblock 352 -60 108 minecraft:air replace
 setblock 360 -60 108 minecraft:air replace
 setblock 368 -60 108 minecraft:air replace
 kill @e[type=minecraft:villager,tag=rfm_audit_officer]
-summon minecraft:villager 360 -60 108 {Tags:["rfm_audit_officer"],CustomName:'{"text":"财政负责人·方正","color":"gold","bold":true}',CustomNameVisible:1b,NoAI:1b,Invulnerable:1b,PersistenceRequired:1b,Silent:1b,VillagerData:{profession:"minecraft:librarian",level:5,type:"minecraft:plains"}}
+kill @e[type=minecraft:item_display,tag=rfm_audit_officer]
+summon minecraft:item_display 360 -59 108 {Tags:["rfm_audit_officer"],Rotation:[0.0f,0.0f],item:{id:"minecraft:paper",count:1,components:{"minecraft:custom_model_data":700001}},item_display:"fixed",transformation:{translation:[0.0f,0.0f,0.0f],scale:[2.0f,2.0f,2.0f],left_rotation:[0.0f,0.0f,0.0f,1.0f],right_rotation:[0.0f,0.0f,0.0f,1.0f]}}
 
 function rfm:task/action/economy/economy_3/create_books
 advancement revoke @s only rfm:audit_pickup_a
@@ -34,7 +35,7 @@ gamemode adventure @s
 tp @s 360 -60 112 180 0
 
 tellraw @a [{"text":"【经济行动】预算核查","color":"yellow","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]
-tellraw @a {"text":"右键拾取A、B、C三本账本并逐页核算；预算上限、可退押金、已结清款项等不计入本次申报。确认后选中虚假账本，将其交给财政负责人。","color":"white"}
+tellraw @a {"text":"右键拾取三本账本并逐页核算；预算上限、可退押金、已结清款项等不计入本次申报。确认后选中虚假账本，将其交给财政负责人。","color":"white"}
 
 title @s clear
 title @s title {"text":"预算核查","color":"yellow","bold":true}

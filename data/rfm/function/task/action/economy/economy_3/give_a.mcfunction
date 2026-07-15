@@ -13,4 +13,3 @@ execute if score @s audit_book_a matches 6 unless score @s audit_target matches 
 kill @e[type=minecraft:item_display,tag=rfm_audit_model_a]
 kill @e[type=minecraft:interaction,tag=rfm_audit_book_a]
 playsound minecraft:entity.item.pickup master @s ~ ~ ~ 1 1
-tellraw @s {"text":"已拾取A号账本，选中后右键翻阅。","color":"yellow"}

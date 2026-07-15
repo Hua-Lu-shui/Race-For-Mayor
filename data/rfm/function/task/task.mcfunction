@@ -1,5 +1,3 @@
-#创建任务计分板
-scoreboard objectives add task dummy
 #创建决策任务计分板
 scoreboard objectives add decision_task dummy
 #创建决策方案选择触发器：1为A，2为B，3为C
