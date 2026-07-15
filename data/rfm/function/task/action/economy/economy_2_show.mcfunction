@@ -1,2 +1,4 @@
-tellraw @a [{"text":"【经济行动】招商洽谈","color":"yellow","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]
-tellraw @a {"text":"教程：行动玩家前往招商点与企业代表接触。其他玩家可以观战，后续根据洽谈完成情况结算经济和名誉。","color":"white"}
+#任务背景
+tellraw @a {"text":"一家企业正在考虑是否落户本市，但负责人对经营条件仍有顾虑。你需要听取企业提出的问题，并选择合适的扶持方案完成洽谈。","color":"white"}
+
+function rfm:task/action/economy/economy_2/start

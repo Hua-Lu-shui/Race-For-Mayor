@@ -86,3 +86,24 @@ scoreboard objectives add energy_correct dummy
 scoreboard objectives add energy_time dummy
 scoreboard objectives add energy_state dummy
 scoreboard objectives add energy_delay dummy
+
+#经济行动701“市场调研”计分板
+scoreboard objectives add market_round dummy
+scoreboard objectives add market_goods dummy
+scoreboard objectives add market_target dummy
+scoreboard objectives add market_answer dummy
+scoreboard objectives add market_correct dummy
+scoreboard objectives add market_time dummy
+scoreboard objectives add market_state dummy
+scoreboard objectives add market_delay dummy
+
+#经济行动702“招商洽谈”计分板
+scoreboard objectives add negotiation_round dummy
+scoreboard objectives add negotiation_order dummy
+scoreboard objectives add negotiation_category dummy
+scoreboard objectives add negotiation_question dummy
+scoreboard objectives add negotiation_answer dummy
+scoreboard objectives add negotiation_correct dummy
+scoreboard objectives add negotiation_time dummy
+scoreboard objectives add negotiation_state dummy
+scoreboard objectives add negotiation_delay dummy

@@ -1,7 +1,6 @@
 bossbar set rfm:energy_time visible false
 clear @s minecraft:map[minecraft:custom_data={energy_ready:1}]
 kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{energy_ready:1}}}}]
-kill @e[type=minecraft:text_display,tag=rfm_energy_label]
 
 #复位控制台
 setblock 268 -60 102 minecraft:lever[face=floor,facing=north,powered=false] replace

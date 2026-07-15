@@ -52,8 +52,20 @@ bossbar remove rfm:energy_time
 bossbar add rfm:energy_time {"text":"清洁能源检查","color":"yellow"}
 bossbar set rfm:energy_time visible false
 
+#经济行动701“市场调研”倒计时
+bossbar remove rfm:market_time
+bossbar add rfm:market_time {"text":"市场调研","color":"yellow"}
+bossbar set rfm:market_time visible false
 
-say "加载完毕"
+#经济行动702“招商洽谈”倒计时
+bossbar remove rfm:negotiation_time
+bossbar add rfm:negotiation_time {"text":"招商洽谈","color":"yellow"}
+bossbar set rfm:negotiation_time visible false
 
 #启动低频属性显示循环
 schedule function rfm:display/display 1t replace
+
+
+say "加载完毕"
+
+

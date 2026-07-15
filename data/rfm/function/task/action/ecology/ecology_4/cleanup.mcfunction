@@ -16,7 +16,6 @@ data remove block 244 -60 100 Items
 data remove block 252 -60 100 Items
 data remove block 244 -60 108 Items
 data remove block 252 -60 108 Items
-kill @e[type=minecraft:text_display,tag=rfm_trash_label]
 
 scoreboard players set @s trash_round 0
 scoreboard players set @s trash_item_id 0

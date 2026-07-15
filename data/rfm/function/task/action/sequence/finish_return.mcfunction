@@ -2,8 +2,16 @@
 gamemode adventure @a
 execute as @a run function rfm:room/return
 
-#玩家返回办公室后移除排放巡查场地的悬浮编号
+#玩家返回办公室后统一清除所有行动任务的场地实体，避免玩家看见实体被直接删除
+kill @e[type=minecraft:villager,tag=rfm_market_vendor]
+kill @e[type=minecraft:villager,tag=rfm_negotiation_rep]
+kill @e[type=minecraft:text_display,tag=rfm_market_label]
+kill @e[type=minecraft:text_display,tag=rfm_negotiation_label]
 kill @e[type=minecraft:text_display,tag=rfm_emission_label]
+kill @e[type=minecraft:text_display,tag=rfm_sample_label]
+kill @e[type=minecraft:text_display,tag=rfm_park_label]
+kill @e[type=minecraft:text_display,tag=rfm_trash_label]
+kill @e[type=minecraft:text_display,tag=rfm_energy_label]
 
 title @a title {"text":"本轮结束","color":"green","bold":true}
 
