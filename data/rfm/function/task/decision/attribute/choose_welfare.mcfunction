@@ -1,4 +1,4 @@
-#设置属性选择计分板为0
+#重置决策属性选择计分板
 scoreboard players set @s attribute_choice 0
 #随机抽取民生决策任务编号
 execute store result score @s decision_task run random value 301..315

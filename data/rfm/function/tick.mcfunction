@@ -1,11 +1,16 @@
 #确保所有玩家都具有默认属性
 execute as @a unless score @s candidate matches 0.. run function rfm:initialize/candidate
+#防止所有玩家受到常规伤害
+effect give @a minecraft:resistance infinite 4 true
+#确保所有玩家的饥饿值保持满格
+effect give @a minecraft:saturation infinite 0 true
 #选择倒计时有效时才检查玩家选择，避免非选择阶段重复执行整组判断
-execute if score #choose_time choose_time matches 1.. run function rfm:task/attribute/check
+execute if score #choose_time choose_time matches 1.. run function rfm:task/decision/attribute/check
 #检查玩家是否选择了决策方案
 execute if entity @a[scores={decision_choice=1..3}] run function rfm:task/decision/check
 #选择倒计时有效时才检查行动玩家的任务方向
 execute if score #choose_time choose_time matches 1.. run function rfm:task/action/attribute/check
+#——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 #执行生态行动901“排放巡查”
 execute as @a[scores={action_task=901,emission_state=5}] at @s run function rfm:task/action/ecology/ecology_1/wait_ready
 execute as @a[scores={action_task=901,emission_state=4}] run function rfm:task/action/ecology/ecology_1/countdown
@@ -46,6 +51,7 @@ execute as @a[scores={action_task=702,negotiation_state=1}] run function rfm:tas
 execute as @a[scores={action_task=703,audit_state=2}] at @s run function rfm:task/action/economy/economy_3/wait_ready
 execute as @a[scores={action_task=703,audit_state=3}] run function rfm:task/action/economy/economy_3/countdown
 execute as @a[scores={action_task=703,audit_state=1}] run function rfm:task/action/economy/economy_3/tick
+#————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
 #所有行动任务结束后，等待全体玩家丢出准备时钟
 execute if score #waiting next_round_ready matches 1 run function rfm:round/ready/check

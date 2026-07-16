@@ -1,4 +1,4 @@
-#设置属性选择计分板为0
+#重置决策属性选择计分板
 scoreboard players set @s attribute_choice 0
 #随机抽取生态决策任务编号
 execute store result score @s decision_task run random value 401..415

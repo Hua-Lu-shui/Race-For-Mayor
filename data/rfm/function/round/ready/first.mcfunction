@@ -1,4 +1,3 @@
-#第一轮不再自动开始，改为等待所有玩家扔出准备时钟
 schedule clear rfm:round/round
 scoreboard players set #waiting next_round_ready 1
 scoreboard players set @a next_round_ready 0

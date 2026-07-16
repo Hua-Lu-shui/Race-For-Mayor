@@ -30,7 +30,7 @@ scoreboard objectives add action_attribute_option_2 dummy
 scoreboard objectives add action_attribute_option_3 dummy
 #创建行动任务隐藏属性计分板
 scoreboard objectives add action_attribute_missing dummy
-
+#——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 #生态行动901“排放巡查”计分板
 scoreboard objectives add emission_target dummy
 scoreboard objectives add emission_answer dummy
@@ -39,10 +39,6 @@ scoreboard objectives add emission_correct dummy
 scoreboard objectives add emission_time dummy
 scoreboard objectives add emission_state dummy
 scoreboard objectives add emission_delay dummy
-
-#下一轮全员准备状态，以及玩家丢出准备时钟的统计
-scoreboard objectives add next_round_ready dummy
-scoreboard objectives add next_round_clock minecraft.dropped:minecraft.clock
 
 #生态行动902“河道取样”计分板
 scoreboard objectives add sample_progress dummy
@@ -116,3 +112,8 @@ scoreboard objectives add audit_correct dummy
 scoreboard objectives add audit_time dummy
 scoreboard objectives add audit_state dummy
 scoreboard objectives add audit_delay dummy
+#——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+
+#下一轮全员准备状态，以及玩家丢出准备时钟的统计
+scoreboard objectives add next_round_ready dummy
+scoreboard objectives add next_round_clock minecraft.dropped:minecraft.clock

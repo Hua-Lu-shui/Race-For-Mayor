@@ -1,4 +1,4 @@
-#设置属性选择计分板为0
+#重置决策属性选择计分板
 scoreboard players set @s attribute_choice 0
 
 #从四种属性中随机隐藏一种，剩下三种给玩家选择

@@ -10,5 +10,5 @@ function rfm:task/action/assign
 execute as @a if score @s action_role matches 1 run function rfm:task/action/attribute/show
 execute as @a if score @s action_role matches 2 run function rfm:task/action/attribute/show
 #非行动玩家选择决策任务方向
-execute as @a unless score @s action_player matches 1 run function rfm:task/attribute/show
+execute as @a unless score @s action_player matches 1 run function rfm:task/decision/attribute/show
 

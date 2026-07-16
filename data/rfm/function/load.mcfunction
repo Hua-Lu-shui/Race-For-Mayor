@@ -14,7 +14,7 @@ data merge block 55 -49 -22 {front_text:{has_glowing_text:1b}}
 data modify block 49 -49 -22 front_text.messages[1] set value '{"text":"开始游戏","color":"white","bold":true,"clickEvent":{"action":"run_command","value":"/function rfm:schedule/start_check"}}'
 data merge block 49 -49 -22 {front_text:{has_glowing_text:1b}}
 
-#创建房间计分板
+#——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 scoreboard objectives add room dummy
 #创建人数计分板
 scoreboard objectives add player_count dummy
@@ -27,17 +27,17 @@ bossbar remove rfm:choose_time
 #创建选择倒计时条
 bossbar add rfm:choose_time {"text":"任务选择时间","color":"light_purple"}
 
-#创建排放巡查选择倒计时条
+#生态行动901“排放巡查”倒计时
 bossbar remove rfm:emission_time
 bossbar add rfm:emission_time {"text":"排放口选择时间","color":"green"}
 bossbar set rfm:emission_time visible false
 
-#创建河道取样总时间条
+#生态行动902“河道取样”倒计时
 bossbar remove rfm:sample_time
 bossbar add rfm:sample_time {"text":"河道取样","color":"blue"}
 bossbar set rfm:sample_time visible false
 
-#创建公园维护总时间条
+#生态行动903“公园维护”倒计时
 bossbar remove rfm:park_time
 bossbar add rfm:park_time {"text":"公园维护","color":"green"}
 bossbar set rfm:park_time visible false
@@ -66,7 +66,7 @@ bossbar set rfm:negotiation_time visible false
 bossbar remove rfm:audit_time
 bossbar add rfm:audit_time {"text":"预算核查","color":"yellow"}
 bossbar set rfm:audit_time visible false
-
+#—————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 #启动低频属性显示循环
 schedule function rfm:display/display 1t replace
 
