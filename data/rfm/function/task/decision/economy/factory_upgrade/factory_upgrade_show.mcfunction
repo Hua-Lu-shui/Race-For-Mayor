@@ -1,3 +1,4 @@
+#展示经济决策任务的背景和三个可选方案
 scoreboard players set @s decision_choice 0
 scoreboard players enable @s decision_choice
 tellraw @s {"text":"【经济决策】工厂升级补贴","color":"gold","bold":true}

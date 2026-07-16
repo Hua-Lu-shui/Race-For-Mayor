@@ -1,3 +1,4 @@
+#将玩家设置为学者候选人并初始化对应属性
 scoreboard players set @s candidate 4
 team join scholar @s
 

@@ -1,3 +1,4 @@
+#执行round函数对应的游戏流程
 #使用虚拟玩家 #round 来记录当前轮数
 scoreboard players add #round round 1
 #提示当前轮数

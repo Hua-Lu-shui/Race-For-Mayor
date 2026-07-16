@@ -1,3 +1,4 @@
+#根据完成情况结算生态行动任务5的奖励
 scoreboard players set @s energy_state 4
 bossbar set rfm:energy_time visible false
 tellraw @a [{"text":"清洁能源检查结束，共正确配平 ","color":"white"},{"score":{"name":"@s","objective":"energy_correct"},"color":"green"},{"text":" / 6 轮。","color":"white"}]

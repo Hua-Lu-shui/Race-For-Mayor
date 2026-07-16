@@ -1,3 +1,4 @@
+#推进经济行动任务2的开场倒计时
 execute if score @s negotiation_delay matches 60 run title @a clear
 execute if score @s negotiation_delay matches 60 run title @a title {"text":"3","color":"green","bold":true}
 execute if score @s negotiation_delay matches 60 run playsound minecraft:block.note_block.hat master @a ~ ~ ~ 1 1 1

@@ -1,3 +1,4 @@
+#执行tick函数对应的游戏流程
 #确保所有玩家都具有默认属性
 execute as @a unless score @s candidate matches 0.. run function rfm:initialize/candidate
 #防止所有玩家受到常规伤害

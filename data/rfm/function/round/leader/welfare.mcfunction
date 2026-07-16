@@ -1,3 +1,4 @@
+#统计并公布本轮民生领先玩家
 tag @a remove rfm_lead_welfare
 scoreboard players set #lead_welfare welfare -2147483648
 execute as @a if score @s welfare > #lead_welfare welfare run scoreboard players operation #lead_welfare welfare = @s welfare

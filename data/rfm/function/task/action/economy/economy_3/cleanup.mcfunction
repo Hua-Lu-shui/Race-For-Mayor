@@ -1,3 +1,4 @@
+#清理经济行动任务3的临时状态和界面
 bossbar set rfm:audit_time visible false
 clear @s minecraft:map[minecraft:custom_data={audit_ready:1}]
 clear @s minecraft:written_book[minecraft:custom_data~{rfm_audit_book:1}]

@@ -1,3 +1,4 @@
+#执行task choose end函数对应的游戏流程
 #将选择倒计时条隐藏
 bossbar set rfm:choose_time visible false
 #选择结束提示

@@ -1,3 +1,4 @@
+#将玩家设置为明星候选人并初始化对应属性
 scoreboard players set @s candidate 1
 team join star @s
 

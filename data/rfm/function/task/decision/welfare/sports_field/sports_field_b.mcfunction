@@ -1,3 +1,4 @@
+#执行民生决策任务的B方案并结算属性
 execute if score @s decision_task matches 309 run scoreboard players add @s welfare 2
 execute if score @s decision_task matches 309 run scoreboard players add @s fame 1
 execute if score @s decision_task matches 309 run scoreboard players remove @s economy 1

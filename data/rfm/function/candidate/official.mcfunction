@@ -1,3 +1,4 @@
+#将玩家设置为公务员候选人并初始化对应属性
 scoreboard players set @s candidate 5
 team join official @s
 

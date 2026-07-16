@@ -1,3 +1,4 @@
+#执行名誉决策任务的C方案并结算属性
 execute if score @s decision_task matches 108 run scoreboard players add @s fame 1
 execute if score @s decision_task matches 108 run scoreboard players add @s welfare 1
 execute if score @s decision_task matches 108 run scoreboard players remove @s economy 1

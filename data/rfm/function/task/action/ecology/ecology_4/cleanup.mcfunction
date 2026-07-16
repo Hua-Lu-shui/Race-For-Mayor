@@ -1,3 +1,4 @@
+#清理生态行动任务4的临时状态和界面
 bossbar set rfm:trash_time visible false
 clear @s minecraft:map[minecraft:custom_data={trash_ready:1}]
 clear @s minecraft:paper[minecraft:custom_data={trash_item:1}]

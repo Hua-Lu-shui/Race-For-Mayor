@@ -1,3 +1,4 @@
+#执行room delay函数对应的游戏流程
 #执行开始介绍
 schedule function rfm:tutorial/start1 30t
 schedule function rfm:tutorial/start2 60t

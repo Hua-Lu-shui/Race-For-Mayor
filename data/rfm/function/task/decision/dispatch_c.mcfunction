@@ -1,3 +1,4 @@
+#执行dispatch c函数对应的游戏流程
 #将当前任务的方案C分发到唯一对应的结果函数
 execute if score @s decision_task matches 101 run function rfm:task/decision/fame/media/media_c
 execute if score @s decision_task matches 102 run function rfm:task/decision/fame/debate/debate_c

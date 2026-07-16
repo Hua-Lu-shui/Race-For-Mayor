@@ -1,3 +1,4 @@
+#将玩家设置为企业家候选人并初始化对应属性
 scoreboard players set @s candidate 2
 team join business @s
 

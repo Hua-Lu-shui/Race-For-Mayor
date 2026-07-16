@@ -1,3 +1,4 @@
+#清理经济行动任务1的临时状态和界面
 bossbar set rfm:market_time visible false
 clear @s minecraft:map[minecraft:custom_data={market_ready:1}]
 kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{market_ready:1}}}}]

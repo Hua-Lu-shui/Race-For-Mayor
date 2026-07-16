@@ -1,3 +1,4 @@
+#根据完成情况结算生态行动任务3的奖励
 scoreboard players set @s park_state 4
 bossbar set rfm:park_time visible false
 tellraw @a [{"text":"公园维护结束，共完成 ","color":"white"},{"score":{"name":"@s","objective":"park_progress"},"color":"green"},{"text":" / 6 个维护点。","color":"white"}]

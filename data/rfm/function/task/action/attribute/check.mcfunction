@@ -1,3 +1,4 @@
+#检查行动玩家选择的属性并分派对应任务
 execute as @a if score @s action_player matches 1 if score @s action_task matches 0 if score @s action_attribute_choice matches 1 if score @s action_attribute_choice = @s action_attribute_option_1 run function rfm:task/action/attribute/choose_fame
 execute as @a if score @s action_player matches 1 if score @s action_task matches 0 if score @s action_attribute_choice matches 1 if score @s action_attribute_choice = @s action_attribute_option_2 run function rfm:task/action/attribute/choose_fame
 execute as @a if score @s action_player matches 1 if score @s action_task matches 0 if score @s action_attribute_choice matches 1 if score @s action_attribute_choice = @s action_attribute_option_3 run function rfm:task/action/attribute/choose_fame

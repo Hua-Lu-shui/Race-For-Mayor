@@ -1,3 +1,4 @@
+#根据完成情况结算生态行动任务4的奖励
 scoreboard players set @s trash_state 4
 bossbar set rfm:trash_time visible false
 tellraw @a [{"text":"垃圾分类督导结束，共正确分类 ","color":"white"},{"score":{"name":"@s","objective":"trash_correct"},"color":"green"},{"text":" / 10 件物品。","color":"white"}]

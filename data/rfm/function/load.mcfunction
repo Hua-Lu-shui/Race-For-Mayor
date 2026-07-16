@@ -1,3 +1,4 @@
+#执行load函数对应的游戏流程
 #告示牌点击事件
 data modify block 61 -49 -22 front_text.messages[1] set value '{"text":"明星","color":"aqua","clickEvent":{"action":"run_command","value":"/function rfm:candidate/star"}}'
 data merge block 61 -49 -22 {front_text:{has_glowing_text:1b}}

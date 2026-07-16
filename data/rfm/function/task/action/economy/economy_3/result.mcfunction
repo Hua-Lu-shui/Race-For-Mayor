@@ -1,3 +1,4 @@
+#根据完成情况结算经济行动任务3的奖励
 scoreboard players set @s audit_state 4
 bossbar set rfm:audit_time visible false
 

@@ -1,3 +1,4 @@
+#执行task choose函数对应的游戏流程
 #选择倒计时计分板减1
 scoreboard players remove #choose_time choose_time 1
 #把选择倒计时条的数值同步成选择倒计时计分板

@@ -1,3 +1,4 @@
+#执行attribute函数对应的游戏流程
 #创建四个属性计分板
 scoreboard objectives add fame dummy "名誉"
 scoreboard objectives add economy dummy "经济"

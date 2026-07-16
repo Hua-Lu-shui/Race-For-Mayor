@@ -1,3 +1,4 @@
+#记录当前玩家已为下一轮做好准备
 scoreboard players set @s next_round_ready 1
 scoreboard players set @s next_round_clock 0
 clear @s minecraft:clock[minecraft:custom_data={next_round_ready:1}]

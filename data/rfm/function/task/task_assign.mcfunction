@@ -1,3 +1,4 @@
+#执行task assign函数对应的游戏流程
 #选择任务倒计时设为30秒
 scoreboard players set #choose_time choose_time 30
 scoreboard players set @a decision_choice 0

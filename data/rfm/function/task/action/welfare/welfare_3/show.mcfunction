@@ -1,2 +1,3 @@
+#展示民生行动任务3的背景与行动玩家
 tellraw @a [{"text":"【民生行动】学校协调","color":"red","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]
 tellraw @a {"text":"教程：行动玩家前往学校处理学位协调问题。其他玩家可以观战，后续根据完成情况结算民生。","color":"white"}

@@ -1,3 +1,4 @@
+#展示经济行动任务2当前回合的问题和选项
 tellraw @a {"text":"企业代表·维克托提出了一个问题：","color":"yellow","bold":true}
 execute if score @s negotiation_question matches 1 run tellraw @a {"text":"我们一直招聘不到足够的软件工程师，项目进度受到影响。","color":"white"}
 execute if score @s negotiation_question matches 2 run tellraw @a {"text":"核心研发团队缺少专业人才，短期内很难扩大规模。","color":"white"}

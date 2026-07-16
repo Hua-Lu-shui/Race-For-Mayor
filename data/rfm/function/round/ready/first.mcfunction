@@ -1,3 +1,4 @@
+#处理第一名玩家提交下一轮准备的状态
 schedule clear rfm:round/round
 scoreboard players set #waiting next_round_ready 1
 scoreboard players set @a next_round_ready 0

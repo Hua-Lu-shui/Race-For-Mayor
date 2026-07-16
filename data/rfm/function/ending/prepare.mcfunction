@@ -1,3 +1,4 @@
+#执行prepare函数对应的游戏流程
 #停止下一轮准备检测并清理可能残留的准备时钟
 scoreboard players set #waiting next_round_ready 0
 scoreboard players set @a next_round_ready 0

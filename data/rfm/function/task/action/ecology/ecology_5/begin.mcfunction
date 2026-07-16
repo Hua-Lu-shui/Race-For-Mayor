@@ -1,3 +1,4 @@
+#正式开始生态行动任务5并初始化计时状态
 scoreboard players set @s energy_round 0
 scoreboard players set @s energy_correct 0
 scoreboard players set @s energy_total 0

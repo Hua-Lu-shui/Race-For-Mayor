@@ -1,3 +1,4 @@
+#将玩家设置为社区领袖候选人并初始化对应属性
 scoreboard players set @s candidate 3
 team join community @s
 

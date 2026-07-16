@@ -1,3 +1,4 @@
+#推进生态行动任务4的开场倒计时
 execute if score @s trash_delay matches 60 run title @a clear
 execute if score @s trash_delay matches 60 run title @a title {"text":"3","color":"green","bold":true}
 execute if score @s trash_delay matches 60 run playsound minecraft:block.note_block.hat master @a ~ ~ ~ 1 1 1

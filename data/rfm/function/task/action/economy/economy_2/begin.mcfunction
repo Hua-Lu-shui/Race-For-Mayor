@@ -1,3 +1,4 @@
+#正式开始经济行动任务2并初始化计时状态
 scoreboard players set @s negotiation_round 0
 scoreboard players set @s negotiation_correct 0
 scoreboard players set @s negotiation_answer 0

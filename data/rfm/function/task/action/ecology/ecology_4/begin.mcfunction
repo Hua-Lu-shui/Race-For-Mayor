@@ -1,3 +1,4 @@
+#正式开始生态行动任务4并初始化计时状态
 scoreboard players set @s trash_round 0
 scoreboard players set @s trash_correct 0
 scoreboard players set @s trash_answer 0

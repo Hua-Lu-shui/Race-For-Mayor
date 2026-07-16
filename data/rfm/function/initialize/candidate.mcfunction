@@ -1,3 +1,4 @@
+#执行candidate函数对应的游戏流程
 #默认职业为公务员
 scoreboard players set @s candidate 5
 team join official @s

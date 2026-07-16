@@ -1,3 +1,4 @@
+#执行start delay函数对应的游戏流程
 #准备时间提示
 schedule function rfm:start/wait1 10t
 schedule function rfm:start/wait2 40t

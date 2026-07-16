@@ -1,3 +1,4 @@
+#创建生态行动任务5场景中的说明标签
 kill @e[type=minecraft:text_display,tag=rfm_energy_label]
 summon minecraft:text_display 268 -58 102 {Tags:["rfm_energy_label"],text:'{"text":"太阳能 +1","color":"gold","bold":true}',billboard:"center",alignment:"center",background:0,shadow:1b,see_through:1b}
 summon minecraft:text_display 271 -58 102 {Tags:["rfm_energy_label"],text:'{"text":"风力 +2","color":"aqua","bold":true}',billboard:"center",alignment:"center",background:0,shadow:1b,see_through:1b}

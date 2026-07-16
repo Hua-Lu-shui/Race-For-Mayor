@@ -1,3 +1,4 @@
+#根据完成情况结算经济行动任务2的奖励
 scoreboard players set @s negotiation_state 4
 bossbar set rfm:negotiation_time visible false
 tellraw @a [{"text":"招商洽谈结束，共选择正确 ","color":"white"},{"score":{"name":"@s","objective":"negotiation_correct"},"color":"yellow"},{"text":" / 3 项。","color":"white"}]
