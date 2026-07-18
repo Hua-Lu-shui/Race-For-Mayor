@@ -32,6 +32,19 @@ scoreboard objectives add action_attribute_option_3 dummy
 #创建行动任务隐藏属性计分板
 scoreboard objectives add action_attribute_missing dummy
 #——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+#名誉行动601“街头演讲”计分板
+scoreboard objectives add speech_round dummy
+scoreboard objectives add speech_order dummy
+scoreboard objectives add speech_category dummy
+scoreboard objectives add speech_question dummy
+scoreboard objectives add speech_target dummy
+scoreboard objectives add speech_answer dummy
+scoreboard objectives add speech_correct dummy
+scoreboard objectives add speech_score dummy
+scoreboard objectives add speech_time dummy
+scoreboard objectives add speech_state dummy
+scoreboard objectives add speech_delay dummy
+
 #生态行动901“排放巡查”计分板
 scoreboard objectives add emission_target dummy
 scoreboard objectives add emission_answer dummy

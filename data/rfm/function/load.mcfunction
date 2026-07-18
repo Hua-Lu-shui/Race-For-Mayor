@@ -27,6 +27,11 @@ bossbar remove rfm:choose_time
 #创建选择倒计时条
 bossbar add rfm:choose_time {"text":"任务选择时间","color":"light_purple"}
 
+#名誉行动601“街头演讲”倒计时
+bossbar remove rfm:speech_time
+bossbar add rfm:speech_time {"text":"街头演讲","color":"aqua"}
+bossbar set rfm:speech_time visible false
+
 #生态行动901“排放巡查”倒计时
 bossbar remove rfm:emission_time
 bossbar add rfm:emission_time {"text":"排放口选择时间","color":"green"}

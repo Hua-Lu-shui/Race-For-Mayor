@@ -14,6 +14,12 @@ execute if entity @a[scores={decision_choice=1..3}] run function rfm:task/decisi
 #选择倒计时有效时才检查行动玩家的任务方向
 execute if score #choose_time choose_time matches 1.. run function rfm:task/action/attribute/check
 #——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+#执行名誉行动601“街头演讲”
+execute as @a[scores={action_task=601,speech_state=2}] at @s run function rfm:task/action/fame/fame_1/wait_ready
+execute as @a[scores={action_task=601,speech_state=3}] run function rfm:task/action/fame/fame_1/countdown
+execute as @a[scores={action_task=601,speech_state=1}] at @s run function rfm:task/action/fame/fame_1/tick
+execute as @a[scores={action_task=601,speech_state=5}] run function rfm:task/action/fame/fame_1/intermission
+
 #执行生态行动901“排放巡查”
 execute as @a[scores={action_task=901,emission_state=5}] at @s run function rfm:task/action/ecology/ecology_1/wait_ready
 execute as @a[scores={action_task=901,emission_state=4}] run function rfm:task/action/ecology/ecology_1/countdown

@@ -1,3 +1,4 @@
-#展示名誉行动任务1的背景与行动玩家
-tellraw @a [{"text":"【名誉行动】街头演讲","color":"aqua","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]
-tellraw @a {"text":"教程：行动玩家前往市政广场进行公开演讲。其他玩家可以围观表现，后续根据完成情况结算名誉相关属性。","color":"white"}
+#任务背景
+tellraw @a {"text":"市政广场的听众会在演讲过程中不断产生不同反应。行动玩家需要观察市民头顶的粒子，并立即采用对应方式维持现场气氛。","color":"white"}
+
+function rfm:task/action/fame/fame_1/start
