@@ -18,6 +18,9 @@ kill @e[type=minecraft:text_display,tag=rfm_audit_label]
 kill @e[type=minecraft:villager,tag=rfm_audit_officer]
 kill @e[type=minecraft:item_display,tag=rfm_audit_officer]
 kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{rfm_audit_book:1}}}}]
+kill @e[type=minecraft:villager,tag=rfm_supply_merchant]
+kill @e[type=minecraft:text_display,tag=rfm_supply_label]
+kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{rfm_supply_item:1}}}}]
 
 title @a title {"text":"本轮结束","color":"green","bold":true}
 

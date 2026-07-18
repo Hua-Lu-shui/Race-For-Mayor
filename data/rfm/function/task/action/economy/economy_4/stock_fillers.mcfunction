@@ -1,0 +1,28 @@
+#给十二个大箱子的二十四个半箱设置随机战利品表；玩家首次打开时随机填入24/27格
+data modify block 394 -60 112 LootTable set value "rfm:task/action/economy/economy_4/warehouse_fillers"
+data modify block 395 -60 112 LootTable set value "rfm:task/action/economy/economy_4/warehouse_fillers"
+data modify block 400 -60 112 LootTable set value "rfm:task/action/economy/economy_4/warehouse_fillers"
+data modify block 401 -60 112 LootTable set value "rfm:task/action/economy/economy_4/warehouse_fillers"
+data modify block 406 -60 112 LootTable set value "rfm:task/action/economy/economy_4/warehouse_fillers"
+data modify block 407 -60 112 LootTable set value "rfm:task/action/economy/economy_4/warehouse_fillers"
+data modify block 412 -60 112 LootTable set value "rfm:task/action/economy/economy_4/warehouse_fillers"
+data modify block 413 -60 112 LootTable set value "rfm:task/action/economy/economy_4/warehouse_fillers"
+data modify block 394 -60 116 LootTable set value "rfm:task/action/economy/economy_4/warehouse_fillers"
+data modify block 395 -60 116 LootTable set value "rfm:task/action/economy/economy_4/warehouse_fillers"
+data modify block 400 -60 116 LootTable set value "rfm:task/action/economy/economy_4/warehouse_fillers"
+data modify block 401 -60 116 LootTable set value "rfm:task/action/economy/economy_4/warehouse_fillers"
+data modify block 406 -60 116 LootTable set value "rfm:task/action/economy/economy_4/warehouse_fillers"
+data modify block 407 -60 116 LootTable set value "rfm:task/action/economy/economy_4/warehouse_fillers"
+data modify block 412 -60 116 LootTable set value "rfm:task/action/economy/economy_4/warehouse_fillers"
+data modify block 413 -60 116 LootTable set value "rfm:task/action/economy/economy_4/warehouse_fillers"
+data modify block 394 -60 120 LootTable set value "rfm:task/action/economy/economy_4/warehouse_fillers"
+data modify block 395 -60 120 LootTable set value "rfm:task/action/economy/economy_4/warehouse_fillers"
+data modify block 400 -60 120 LootTable set value "rfm:task/action/economy/economy_4/warehouse_fillers"
+data modify block 401 -60 120 LootTable set value "rfm:task/action/economy/economy_4/warehouse_fillers"
+data modify block 406 -60 120 LootTable set value "rfm:task/action/economy/economy_4/warehouse_fillers"
+data modify block 407 -60 120 LootTable set value "rfm:task/action/economy/economy_4/warehouse_fillers"
+data modify block 412 -60 120 LootTable set value "rfm:task/action/economy/economy_4/warehouse_fillers"
+data modify block 413 -60 120 LootTable set value "rfm:task/action/economy/economy_4/warehouse_fillers"
+
+#读取每个半箱的物品槽，立即触发战利品表生成，而不是等玩家首次打开
+function rfm:task/action/economy/economy_4/force_fill_chests

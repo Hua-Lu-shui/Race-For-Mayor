@@ -1,0 +1,25 @@
+#execute if items会读取容器内容，从而立即展开尚未生成的箱子战利品表
+execute if items block 394 -60 112 container.* * run scoreboard players add #supply_loaded supply_order 0
+execute if items block 395 -60 112 container.* * run scoreboard players add #supply_loaded supply_order 0
+execute if items block 400 -60 112 container.* * run scoreboard players add #supply_loaded supply_order 0
+execute if items block 401 -60 112 container.* * run scoreboard players add #supply_loaded supply_order 0
+execute if items block 406 -60 112 container.* * run scoreboard players add #supply_loaded supply_order 0
+execute if items block 407 -60 112 container.* * run scoreboard players add #supply_loaded supply_order 0
+execute if items block 412 -60 112 container.* * run scoreboard players add #supply_loaded supply_order 0
+execute if items block 413 -60 112 container.* * run scoreboard players add #supply_loaded supply_order 0
+execute if items block 394 -60 116 container.* * run scoreboard players add #supply_loaded supply_order 0
+execute if items block 395 -60 116 container.* * run scoreboard players add #supply_loaded supply_order 0
+execute if items block 400 -60 116 container.* * run scoreboard players add #supply_loaded supply_order 0
+execute if items block 401 -60 116 container.* * run scoreboard players add #supply_loaded supply_order 0
+execute if items block 406 -60 116 container.* * run scoreboard players add #supply_loaded supply_order 0
+execute if items block 407 -60 116 container.* * run scoreboard players add #supply_loaded supply_order 0
+execute if items block 412 -60 116 container.* * run scoreboard players add #supply_loaded supply_order 0
+execute if items block 413 -60 116 container.* * run scoreboard players add #supply_loaded supply_order 0
+execute if items block 394 -60 120 container.* * run scoreboard players add #supply_loaded supply_order 0
+execute if items block 395 -60 120 container.* * run scoreboard players add #supply_loaded supply_order 0
+execute if items block 400 -60 120 container.* * run scoreboard players add #supply_loaded supply_order 0
+execute if items block 401 -60 120 container.* * run scoreboard players add #supply_loaded supply_order 0
+execute if items block 406 -60 120 container.* * run scoreboard players add #supply_loaded supply_order 0
+execute if items block 407 -60 120 container.* * run scoreboard players add #supply_loaded supply_order 0
+execute if items block 412 -60 120 container.* * run scoreboard players add #supply_loaded supply_order 0
+execute if items block 413 -60 120 container.* * run scoreboard players add #supply_loaded supply_order 0

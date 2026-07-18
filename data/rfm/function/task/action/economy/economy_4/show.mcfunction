@@ -1,3 +1,4 @@
-#展示经济行动任务4的背景与行动玩家
-tellraw @a [{"text":"【经济行动】商圈巡查","color":"yellow","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]
-tellraw @a {"text":"教程：行动玩家前往商圈检查经营环境。其他玩家可以观战，后续根据完成情况结算经济与民生。","color":"white"}
+#任务背景
+tellraw @a {"text":"商业街多家店铺同时出现缺货，部分商户已经无法正常营业。你需要巡查各家店铺，从临时仓库领取物资，并将对应商品送到店铺的补货木桶中。","color":"white"}
+
+function rfm:task/action/economy/economy_4/start

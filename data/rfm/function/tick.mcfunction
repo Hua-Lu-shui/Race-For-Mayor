@@ -3,6 +3,8 @@
 execute as @a unless score @s candidate matches 0.. run function rfm:initialize/candidate
 #防止所有玩家受到常规伤害
 effect give @a minecraft:resistance infinite 4 true
+#防止所有玩家受到击退
+effect give @a minecraft:resistance infinite 4 true
 #确保所有玩家的饥饿值保持满格
 effect give @a minecraft:saturation infinite 0 true
 #选择倒计时有效时才检查玩家选择，避免非选择阶段重复执行整组判断
@@ -52,7 +54,11 @@ execute as @a[scores={action_task=702,negotiation_state=1}] run function rfm:tas
 execute as @a[scores={action_task=703,audit_state=2}] at @s run function rfm:task/action/economy/economy_3/wait_ready
 execute as @a[scores={action_task=703,audit_state=3}] run function rfm:task/action/economy/economy_3/countdown
 execute as @a[scores={action_task=703,audit_state=1}] run function rfm:task/action/economy/economy_3/tick
-#————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
+#执行经济行动704“商圈巡查”
+execute as @a[scores={action_task=704,supply_state=2}] at @s run function rfm:task/action/economy/economy_4/wait_ready
+execute as @a[scores={action_task=704,supply_state=3}] run function rfm:task/action/economy/economy_4/countdown
+execute as @a[scores={action_task=704,supply_state=1}] run function rfm:task/action/economy/economy_4/tick
+#————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 #所有行动任务结束后，等待全体玩家丢出准备时钟
 execute if score #waiting next_round_ready matches 1 run function rfm:round/ready/check

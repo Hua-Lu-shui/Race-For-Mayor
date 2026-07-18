@@ -113,8 +113,19 @@ scoreboard objectives add audit_correct dummy
 scoreboard objectives add audit_time dummy
 scoreboard objectives add audit_state dummy
 scoreboard objectives add audit_delay dummy
-#——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
+#经济行动704“商圈巡查”
+scoreboard objectives add supply_order dummy
+scoreboard objectives add supply_completed dummy
+scoreboard objectives add supply_shop_1 dummy
+scoreboard objectives add supply_shop_2 dummy
+scoreboard objectives add supply_shop_3 dummy
+scoreboard objectives add supply_shop_4 dummy
+scoreboard objectives add supply_shop_5 dummy
+scoreboard objectives add supply_time dummy
+scoreboard objectives add supply_state dummy
+scoreboard objectives add supply_delay dummy
+#——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 #下一轮全员准备状态，以及玩家丢出准备时钟的统计
 scoreboard objectives add next_round_ready dummy
 scoreboard objectives add next_round_clock minecraft.dropped:minecraft.clock

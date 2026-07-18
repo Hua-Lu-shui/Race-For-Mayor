@@ -14,7 +14,6 @@ data modify block 55 -49 -22 front_text.messages[1] set value '{"text":"教程",
 data merge block 55 -49 -22 {front_text:{has_glowing_text:1b}}
 data modify block 49 -49 -22 front_text.messages[1] set value '{"text":"开始游戏","color":"white","bold":true,"clickEvent":{"action":"run_command","value":"/function rfm:schedule/start_check"}}'
 data merge block 49 -49 -22 {front_text:{has_glowing_text:1b}}
-
 #——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 scoreboard objectives add room dummy
 #创建人数计分板
@@ -67,6 +66,11 @@ bossbar set rfm:negotiation_time visible false
 bossbar remove rfm:audit_time
 bossbar add rfm:audit_time {"text":"预算核查","color":"yellow"}
 bossbar set rfm:audit_time visible false
+
+#经济行动704“商圈巡查”倒计时
+bossbar remove rfm:supply_time
+bossbar add rfm:supply_time {"text":"商圈巡查","color":"yellow"}
+bossbar set rfm:supply_time visible false
 #—————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 #启动低频属性显示循环
 schedule function rfm:display/display 1t replace
