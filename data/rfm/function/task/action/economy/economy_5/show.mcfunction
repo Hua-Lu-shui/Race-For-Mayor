@@ -1,3 +1,4 @@
-#展示经济行动任务5的背景与行动玩家
-tellraw @a [{"text":"【经济行动】就业走访","color":"yellow","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]
-tellraw @a {"text":"教程：行动玩家前往就业服务点了解岗位需求。其他玩家可以观察，后续根据完成情况结算经济和民生。","color":"white"}
+#任务背景
+tellraw @a {"text":"市就业服务中心正在举办专场招聘会，但多名求职者还没有找到适合自己的岗位。你需要查看求职登记表，根据求职者的技能和工作条件，将他们推荐给合适的招聘单位。","color":"white"}
+
+function rfm:task/action/economy/economy_5/start

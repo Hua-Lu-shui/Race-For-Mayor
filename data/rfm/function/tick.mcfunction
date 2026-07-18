@@ -59,6 +59,11 @@ execute as @a[scores={action_task=703,audit_state=1}] run function rfm:task/acti
 execute as @a[scores={action_task=704,supply_state=2}] at @s run function rfm:task/action/economy/economy_4/wait_ready
 execute as @a[scores={action_task=704,supply_state=3}] run function rfm:task/action/economy/economy_4/countdown
 execute as @a[scores={action_task=704,supply_state=1}] run function rfm:task/action/economy/economy_4/tick
+
+#执行经济行动705“就业走访”
+execute as @a[scores={action_task=705,employment_state=2}] at @s run function rfm:task/action/economy/economy_5/wait_ready
+execute as @a[scores={action_task=705,employment_state=3}] run function rfm:task/action/economy/economy_5/countdown
+execute as @a[scores={action_task=705,employment_state=1}] run function rfm:task/action/economy/economy_5/tick
 #————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 #所有行动任务结束后，等待全体玩家丢出准备时钟
 execute if score #waiting next_round_ready matches 1 run function rfm:round/ready/check

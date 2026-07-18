@@ -71,6 +71,11 @@ bossbar set rfm:audit_time visible false
 bossbar remove rfm:supply_time
 bossbar add rfm:supply_time {"text":"商圈巡查","color":"yellow"}
 bossbar set rfm:supply_time visible false
+
+#经济行动705“就业走访”倒计时
+bossbar remove rfm:employment_time
+bossbar add rfm:employment_time {"text":"就业走访","color":"yellow"}
+bossbar set rfm:employment_time visible false
 #—————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 #启动低频属性显示循环
 schedule function rfm:display/display 1t replace

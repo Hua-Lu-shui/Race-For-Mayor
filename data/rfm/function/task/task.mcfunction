@@ -125,6 +125,18 @@ scoreboard objectives add supply_shop_5 dummy
 scoreboard objectives add supply_time dummy
 scoreboard objectives add supply_state dummy
 scoreboard objectives add supply_delay dummy
+
+#经济行动705“就业走访”
+scoreboard objectives add employment_layout dummy
+scoreboard objectives add employment_completed dummy
+scoreboard objectives add employment_done_1 dummy
+scoreboard objectives add employment_done_2 dummy
+scoreboard objectives add employment_done_3 dummy
+scoreboard objectives add employment_done_4 dummy
+scoreboard objectives add employment_done_5 dummy
+scoreboard objectives add employment_time dummy
+scoreboard objectives add employment_state dummy
+scoreboard objectives add employment_delay dummy
 #——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 #下一轮全员准备状态，以及玩家丢出准备时钟的统计
 scoreboard objectives add next_round_ready dummy
