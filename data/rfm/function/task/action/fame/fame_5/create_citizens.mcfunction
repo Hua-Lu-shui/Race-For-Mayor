@@ -1,0 +1,13 @@
+#四周负责抛送应援物的市民
+summon minecraft:villager 716 -60 95 {Tags:["rfm_cheer_citizen"],NoAI:1b,Invulnerable:1b,Silent:1b,PersistenceRequired:1b,Rotation:[0.0f,0.0f],VillagerData:{profession:"minecraft:farmer",level:2,type:"minecraft:plains"}}
+summon minecraft:villager 720 -60 95 {Tags:["rfm_cheer_citizen"],NoAI:1b,Invulnerable:1b,Silent:1b,PersistenceRequired:1b,Rotation:[0.0f,0.0f],VillagerData:{profession:"minecraft:librarian",level:2,type:"minecraft:plains"}}
+summon minecraft:villager 724 -60 95 {Tags:["rfm_cheer_citizen"],NoAI:1b,Invulnerable:1b,Silent:1b,PersistenceRequired:1b,Rotation:[0.0f,0.0f],VillagerData:{profession:"minecraft:fisherman",level:2,type:"minecraft:plains"}}
+summon minecraft:villager 716 -60 113 {Tags:["rfm_cheer_citizen"],NoAI:1b,Invulnerable:1b,Silent:1b,PersistenceRequired:1b,Rotation:[180.0f,0.0f],VillagerData:{profession:"minecraft:farmer",level:2,type:"minecraft:plains"}}
+summon minecraft:villager 720 -60 113 {Tags:["rfm_cheer_citizen"],NoAI:1b,Invulnerable:1b,Silent:1b,PersistenceRequired:1b,Rotation:[180.0f,0.0f],VillagerData:{profession:"minecraft:librarian",level:2,type:"minecraft:plains"}}
+summon minecraft:villager 724 -60 113 {Tags:["rfm_cheer_citizen"],NoAI:1b,Invulnerable:1b,Silent:1b,PersistenceRequired:1b,Rotation:[180.0f,0.0f],VillagerData:{profession:"minecraft:fisherman",level:2,type:"minecraft:plains"}}
+summon minecraft:villager 711 -60 100 {Tags:["rfm_cheer_citizen"],NoAI:1b,Invulnerable:1b,Silent:1b,PersistenceRequired:1b,Rotation:[-90.0f,0.0f],VillagerData:{profession:"minecraft:cartographer",level:2,type:"minecraft:plains"}}
+summon minecraft:villager 711 -60 104 {Tags:["rfm_cheer_citizen"],NoAI:1b,Invulnerable:1b,Silent:1b,PersistenceRequired:1b,Rotation:[-90.0f,0.0f],VillagerData:{profession:"minecraft:butcher",level:2,type:"minecraft:plains"}}
+summon minecraft:villager 711 -60 108 {Tags:["rfm_cheer_citizen"],NoAI:1b,Invulnerable:1b,Silent:1b,PersistenceRequired:1b,Rotation:[-90.0f,0.0f],VillagerData:{profession:"minecraft:cleric",level:2,type:"minecraft:plains"}}
+summon minecraft:villager 729 -60 100 {Tags:["rfm_cheer_citizen"],NoAI:1b,Invulnerable:1b,Silent:1b,PersistenceRequired:1b,Rotation:[90.0f,0.0f],VillagerData:{profession:"minecraft:cartographer",level:2,type:"minecraft:plains"}}
+summon minecraft:villager 729 -60 104 {Tags:["rfm_cheer_citizen"],NoAI:1b,Invulnerable:1b,Silent:1b,PersistenceRequired:1b,Rotation:[90.0f,0.0f],VillagerData:{profession:"minecraft:butcher",level:2,type:"minecraft:plains"}}
+summon minecraft:villager 729 -60 108 {Tags:["rfm_cheer_citizen"],NoAI:1b,Invulnerable:1b,Silent:1b,PersistenceRequired:1b,Rotation:[90.0f,0.0f],VillagerData:{profession:"minecraft:cleric",level:2,type:"minecraft:plains"}}

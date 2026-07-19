@@ -87,6 +87,15 @@ scoreboard objectives add qa_armed dummy
 scoreboard objectives add qa_state dummy
 scoreboard objectives add qa_delay dummy
 
+#名誉行动605“市民应援”计分板
+scoreboard objectives add cheer_score dummy
+scoreboard objectives add cheer_combo dummy
+scoreboard objectives add cheer_time dummy
+scoreboard objectives add cheer_state dummy
+scoreboard objectives add cheer_delay dummy
+scoreboard objectives add cheer_spawn dummy
+scoreboard objectives add cheer_type dummy
+
 #生态行动901“排放巡查”计分板
 scoreboard objectives add emission_target dummy
 scoreboard objectives add emission_answer dummy

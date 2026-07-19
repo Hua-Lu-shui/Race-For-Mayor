@@ -1,3 +1,3 @@
-#展示名誉行动任务5的背景与行动玩家
-tellraw @a [{"text":"【名誉行动】危机回应","color":"aqua","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]
-tellraw @a {"text":"教程：行动玩家前往新闻点处理突发舆论事件。其他玩家可以观战，后续根据处理结果结算名誉。","color":"white"}
+#展示名誉行动任务5的人物背景并搭建应援场地
+tellraw @a [{"text":"【人物背景】","color":"gold","bold":true},{"selector":"@s","color":"white"},{"text":" 的竞选活动吸引了大批市民，支持者准备向场内抛送鲜花，但人群中也混入了投掷鸡蛋的抗议者。","color":"white"}]
+function rfm:task/action/fame/fame_5/start

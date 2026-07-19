@@ -47,6 +47,11 @@ bossbar remove rfm:qa_time
 bossbar add rfm:qa_time {"text":"公开答疑","color":"aqua"}
 bossbar set rfm:qa_time visible false
 
+#名誉行动605“市民应援”倒计时
+bossbar remove rfm:cheer_time
+bossbar add rfm:cheer_time {"text":"市民应援","color":"aqua"}
+bossbar set rfm:cheer_time visible false
+
 #生态行动901“排放巡查”倒计时
 bossbar remove rfm:emission_time
 bossbar add rfm:emission_time {"text":"排放口选择时间","color":"green"}
