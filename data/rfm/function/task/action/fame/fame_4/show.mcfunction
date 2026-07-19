@@ -1,3 +1,3 @@
-#展示名誉行动任务4的背景与行动玩家
-tellraw @a [{"text":"【名誉行动】公开答疑","color":"aqua","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]
-tellraw @a {"text":"教程：行动玩家前往答疑区接受市民提问。其他玩家可以观战，后续根据表现结算名誉与民生。","color":"white"}
+#任务背景
+tellraw @a {"text":"市民公开问答会正在通过城市频道直播，四个方向的记者都准备了市民关心的问题。现场主持人临时缺席，你需要独自站上答疑台，及时回应每一位突然发问的记者，避免直播现场陷入冷场。","color":"white"}
+function rfm:task/action/fame/fame_4/start

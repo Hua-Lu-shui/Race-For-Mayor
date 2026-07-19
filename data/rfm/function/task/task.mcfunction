@@ -77,6 +77,16 @@ scoreboard objectives add photo_seconds dummy
 scoreboard objectives add photo_state dummy
 scoreboard objectives add photo_delay dummy
 
+#名誉行动604“公开答疑”计分板
+scoreboard objectives add qa_round dummy
+scoreboard objectives add qa_target dummy
+scoreboard objectives add qa_previous dummy
+scoreboard objectives add qa_correct dummy
+scoreboard objectives add qa_time dummy
+scoreboard objectives add qa_armed dummy
+scoreboard objectives add qa_state dummy
+scoreboard objectives add qa_delay dummy
+
 #生态行动901“排放巡查”计分板
 scoreboard objectives add emission_target dummy
 scoreboard objectives add emission_answer dummy

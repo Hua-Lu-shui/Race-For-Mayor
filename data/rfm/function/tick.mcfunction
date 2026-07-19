@@ -30,6 +30,12 @@ execute as @a[scores={action_task=603,photo_state=2}] at @s run function rfm:tas
 execute as @a[scores={action_task=603,photo_state=3}] run function rfm:task/action/fame/fame_3/countdown
 execute as @a[scores={action_task=603,photo_state=1}] at @s run function rfm:task/action/fame/fame_3/tick
 
+#执行名誉行动604“公开答疑”
+execute as @a[scores={action_task=604,qa_state=2}] at @s run function rfm:task/action/fame/fame_4/wait_ready
+execute as @a[scores={action_task=604,qa_state=3}] run function rfm:task/action/fame/fame_4/countdown
+execute as @a[scores={action_task=604,qa_state=1}] at @s run function rfm:task/action/fame/fame_4/tick
+execute as @a[scores={action_task=604,qa_state=5}] run function rfm:task/action/fame/fame_4/intermission
+
 #执行生态行动901“排放巡查”
 execute as @a[scores={action_task=901,emission_state=5}] at @s run function rfm:task/action/ecology/ecology_1/wait_ready
 execute as @a[scores={action_task=901,emission_state=4}] run function rfm:task/action/ecology/ecology_1/countdown
