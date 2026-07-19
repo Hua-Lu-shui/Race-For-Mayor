@@ -5,6 +5,8 @@ execute as @a run function rfm:room/return
 #玩家返回办公室后统一清除所有行动任务的场地实体，避免玩家看见实体被直接删除
 kill @e[type=minecraft:villager,tag=rfm_speech_citizen]
 kill @e[type=minecraft:text_display,tag=rfm_speech_label]
+kill @e[type=minecraft:villager,tag=rfm_visit_resident]
+kill @e[type=minecraft:text_display,tag=rfm_visit_label]
 kill @e[type=minecraft:villager,tag=rfm_market_vendor]
 kill @e[type=minecraft:villager,tag=rfm_negotiation_rep]
 kill @e[type=minecraft:text_display,tag=rfm_market_label]

@@ -20,6 +20,11 @@ execute as @a[scores={action_task=601,speech_state=3}] run function rfm:task/act
 execute as @a[scores={action_task=601,speech_state=1}] at @s run function rfm:task/action/fame/fame_1/tick
 execute as @a[scores={action_task=601,speech_state=5}] run function rfm:task/action/fame/fame_1/intermission
 
+#执行名誉行动602“社区拜访”
+execute as @a[scores={action_task=602,visit_state=2}] at @s run function rfm:task/action/fame/fame_2/wait_ready
+execute as @a[scores={action_task=602,visit_state=3}] run function rfm:task/action/fame/fame_2/countdown
+execute as @a[scores={action_task=602,visit_state=1}] at @s run function rfm:task/action/fame/fame_2/tick
+
 #执行生态行动901“排放巡查”
 execute as @a[scores={action_task=901,emission_state=5}] at @s run function rfm:task/action/ecology/ecology_1/wait_ready
 execute as @a[scores={action_task=901,emission_state=4}] run function rfm:task/action/ecology/ecology_1/countdown

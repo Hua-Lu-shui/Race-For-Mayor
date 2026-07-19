@@ -32,6 +32,11 @@ bossbar remove rfm:speech_time
 bossbar add rfm:speech_time {"text":"街头演讲","color":"aqua"}
 bossbar set rfm:speech_time visible false
 
+#名誉行动602“社区拜访”倒计时
+bossbar remove rfm:visit_time
+bossbar add rfm:visit_time {"text":"社区拜访","color":"aqua"}
+bossbar set rfm:visit_time visible false
+
 #生态行动901“排放巡查”倒计时
 bossbar remove rfm:emission_time
 bossbar add rfm:emission_time {"text":"排放口选择时间","color":"green"}

@@ -45,6 +45,16 @@ scoreboard objectives add speech_time dummy
 scoreboard objectives add speech_state dummy
 scoreboard objectives add speech_delay dummy
 
+#名誉行动602“社区拜访”计分板
+scoreboard objectives add visit_route dummy
+scoreboard objectives add visit_step dummy
+scoreboard objectives add visit_target dummy
+scoreboard objectives add visit_answer dummy
+scoreboard objectives add visit_wrong dummy
+scoreboard objectives add visit_time dummy
+scoreboard objectives add visit_state dummy
+scoreboard objectives add visit_delay dummy
+
 #生态行动901“排放巡查”计分板
 scoreboard objectives add emission_target dummy
 scoreboard objectives add emission_answer dummy
