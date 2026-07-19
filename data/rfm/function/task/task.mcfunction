@@ -55,6 +55,28 @@ scoreboard objectives add visit_time dummy
 scoreboard objectives add visit_state dummy
 scoreboard objectives add visit_delay dummy
 
+#名誉行动603“市民合影”计分板
+scoreboard objectives add photo_selected dummy
+scoreboard objectives add photo_previous dummy
+scoreboard objectives add photo_position dummy
+scoreboard objectives add photo_slot_1 dummy
+scoreboard objectives add photo_slot_2 dummy
+scoreboard objectives add photo_slot_3 dummy
+scoreboard objectives add photo_slot_4 dummy
+scoreboard objectives add photo_slot_5 dummy
+scoreboard objectives add photo_target_1 dummy
+scoreboard objectives add photo_target_2 dummy
+scoreboard objectives add photo_target_3 dummy
+scoreboard objectives add photo_target_4 dummy
+scoreboard objectives add photo_target_5 dummy
+scoreboard objectives add photo_match dummy
+scoreboard objectives add photo_attempt dummy
+scoreboard objectives add photo_success dummy
+scoreboard objectives add photo_time dummy
+scoreboard objectives add photo_seconds dummy
+scoreboard objectives add photo_state dummy
+scoreboard objectives add photo_delay dummy
+
 #生态行动901“排放巡查”计分板
 scoreboard objectives add emission_target dummy
 scoreboard objectives add emission_answer dummy

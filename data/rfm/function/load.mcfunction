@@ -37,6 +37,11 @@ bossbar remove rfm:visit_time
 bossbar add rfm:visit_time {"text":"社区拜访","color":"aqua"}
 bossbar set rfm:visit_time visible false
 
+#名誉行动603“市民合影”倒计时
+bossbar remove rfm:photo_time
+bossbar add rfm:photo_time {"text":"市民合影","color":"aqua"}
+bossbar set rfm:photo_time visible false
+
 #生态行动901“排放巡查”倒计时
 bossbar remove rfm:emission_time
 bossbar add rfm:emission_time {"text":"排放口选择时间","color":"green"}

@@ -25,6 +25,11 @@ execute as @a[scores={action_task=602,visit_state=2}] at @s run function rfm:tas
 execute as @a[scores={action_task=602,visit_state=3}] run function rfm:task/action/fame/fame_2/countdown
 execute as @a[scores={action_task=602,visit_state=1}] at @s run function rfm:task/action/fame/fame_2/tick
 
+#执行名誉行动603“市民合影”
+execute as @a[scores={action_task=603,photo_state=2}] at @s run function rfm:task/action/fame/fame_3/wait_ready
+execute as @a[scores={action_task=603,photo_state=3}] run function rfm:task/action/fame/fame_3/countdown
+execute as @a[scores={action_task=603,photo_state=1}] at @s run function rfm:task/action/fame/fame_3/tick
+
 #执行生态行动901“排放巡查”
 execute as @a[scores={action_task=901,emission_state=5}] at @s run function rfm:task/action/ecology/ecology_1/wait_ready
 execute as @a[scores={action_task=901,emission_state=4}] run function rfm:task/action/ecology/ecology_1/countdown

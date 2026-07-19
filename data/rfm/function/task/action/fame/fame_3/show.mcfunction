@@ -1,3 +1,3 @@
-#展示名誉行动任务3的背景与行动玩家
-tellraw @a [{"text":"【名誉行动】媒体拍摄","color":"aqua","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]
-tellraw @a {"text":"教程：行动玩家前往媒体点位完成宣传拍摄。其他玩家可以观察是否按要求到达点位，后续根据完成情况结算名誉。","color":"white"}
+#展示名誉行动603“市民合影”的任务背景；标题与行动玩家由start统一显示
+tellraw @a {"text":"宣传照即将拍摄。请翻阅站位册，根据其中五个站位的职业要求，从八位居民中选出正确人选并完成排位。","color":"white"}
+function rfm:task/action/fame/fame_3/start

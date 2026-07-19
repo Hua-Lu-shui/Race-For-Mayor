@@ -1,0 +1,1 @@
+{"criteria":{"right_click":{"trigger":"minecraft:player_interacted_with_entity","conditions":{"entity":{"type":"minecraft:interaction","nbt":"{Tags:[\"rfm_photo_select_2\"]}"}}}},"rewards":{"function":"rfm:task/action/fame/fame_3/select_2"}}
