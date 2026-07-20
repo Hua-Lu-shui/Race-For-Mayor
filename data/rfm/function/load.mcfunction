@@ -101,6 +101,11 @@ bossbar set rfm:supply_time visible false
 bossbar remove rfm:employment_time
 bossbar add rfm:employment_time {"text":"就业走访","color":"yellow"}
 bossbar set rfm:employment_time visible false
+
+#民生行动801“医院排队疏导”倒计时
+bossbar remove rfm:hospital_time
+bossbar add rfm:hospital_time {"text":"医院排队疏导","color":"red"}
+bossbar set rfm:hospital_time visible false
 #—————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 #启动低频属性显示循环
 schedule function rfm:display/display 1t replace

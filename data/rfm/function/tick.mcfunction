@@ -91,6 +91,11 @@ execute as @a[scores={action_task=704,supply_state=1}] run function rfm:task/act
 execute as @a[scores={action_task=705,employment_state=2}] at @s run function rfm:task/action/economy/economy_5/wait_ready
 execute as @a[scores={action_task=705,employment_state=3}] run function rfm:task/action/economy/economy_5/countdown
 execute as @a[scores={action_task=705,employment_state=1}] run function rfm:task/action/economy/economy_5/tick
+
+#执行民生行动801“医院排队疏导”
+execute as @a[scores={action_task=801,hospital_state=2}] at @s run function rfm:task/action/welfare/welfare_1/wait_ready
+execute as @a[scores={action_task=801,hospital_state=3}] run function rfm:task/action/welfare/welfare_1/countdown
+execute as @a[scores={action_task=801,hospital_state=1}] run function rfm:task/action/welfare/welfare_1/tick
 #————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 #所有行动任务结束后，等待全体玩家丢出准备时钟
 execute if score #waiting next_round_ready matches 1 run function rfm:round/ready/check

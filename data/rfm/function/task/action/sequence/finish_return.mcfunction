@@ -40,6 +40,9 @@ kill @e[type=minecraft:item_display,tag=rfm_employment_model]
 kill @e[type=minecraft:interaction,tag=rfm_employment_interaction]
 kill @e[type=minecraft:text_display,tag=rfm_employment_label]
 kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{rfm_resume:1}}}}]
+kill @e[type=minecraft:villager,tag=rfm_hospital_staff]
+kill @e[type=minecraft:text_display,tag=rfm_hospital_label]
+kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{hospital_case:1}}}}]
 
 title @a title {"text":"本轮结束","color":"green","bold":true}
 

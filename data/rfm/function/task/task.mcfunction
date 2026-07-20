@@ -201,6 +201,28 @@ scoreboard objectives add employment_done_5 dummy
 scoreboard objectives add employment_time dummy
 scoreboard objectives add employment_state dummy
 scoreboard objectives add employment_delay dummy
+
+#民生行动801“医院排队疏导”
+scoreboard objectives add hospital_round dummy
+scoreboard objectives add hospital_case dummy
+scoreboard objectives add hospital_target dummy
+scoreboard objectives add hospital_answer dummy
+scoreboard objectives add hospital_correct dummy
+scoreboard objectives add hospital_time dummy
+scoreboard objectives add hospital_state dummy
+scoreboard objectives add hospital_delay dummy
+scoreboard objectives add hospital_used_1 dummy
+scoreboard objectives add hospital_used_2 dummy
+scoreboard objectives add hospital_used_3 dummy
+scoreboard objectives add hospital_used_4 dummy
+scoreboard objectives add hospital_used_5 dummy
+scoreboard objectives add hospital_used_6 dummy
+scoreboard objectives add hospital_used_7 dummy
+scoreboard objectives add hospital_used_8 dummy
+scoreboard objectives add hospital_used_9 dummy
+scoreboard objectives add hospital_used_10 dummy
+scoreboard objectives add hospital_used_11 dummy
+scoreboard objectives add hospital_used_12 dummy
 #——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 #下一轮全员准备状态，以及玩家丢出准备时钟的统计
 scoreboard objectives add next_round_ready dummy

@@ -1,3 +1,5 @@
-#展示民生行动任务1的背景与行动玩家
-tellraw @a [{"text":"【民生行动】医院排队疏导","color":"red","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]
-tellraw @a {"text":"教程：行动玩家前往社区医院协助疏导排队。其他玩家可以观战，后续根据完成情况结算民生。","color":"white"}
+#任务背景
+tellraw @a {"text":"社区医院近期患者集中到院，候诊区秩序混乱，一些真正紧急的患者反而无法及时就诊。你需要查看患者病历，判断病情紧急程度，并把他们分流到正确的就诊窗口。","color":"white"}
+
+#进入任务场地，再由start函数公布标题和教程
+function rfm:task/action/welfare/welfare_1/start
