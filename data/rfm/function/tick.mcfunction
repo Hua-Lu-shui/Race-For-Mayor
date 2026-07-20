@@ -7,6 +7,12 @@ effect give @a minecraft:resistance infinite 4 true
 effect give @a minecraft:resistance infinite 4 true
 #确保所有玩家的饥饿值保持满格
 effect give @a minecraft:saturation infinite 0 true
+#执行集体行动状态机
+execute if score #group_state group_state matches 1 run function rfm:collective/tick
+#等待下一轮期间检测玩家丢出的道具
+execute if score #waiting next_round_ready matches 1 run function rfm:item/use/check_all
+#检测道具屋中当前玩家的告示牌选择
+execute if entity @a[scores={item_selecting=1,item_pick=1..28}] run function rfm:item/select/check
 #选择倒计时有效时才检查玩家选择，避免非选择阶段重复执行整组判断
 execute if score #choose_time choose_time matches 1.. run function rfm:task/decision/attribute/check
 #检查玩家是否选择了决策方案

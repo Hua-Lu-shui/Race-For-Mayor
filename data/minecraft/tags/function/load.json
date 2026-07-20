@@ -3,6 +3,8 @@
         "rfm:initialize/gamerule",
         "rfm:initialize/attribute",
         "rfm:initialize/event",
+        "rfm:initialize/collective",
+        "rfm:initialize/item",
         "rfm:phase/phase",
         "rfm:task/task",
         "rfm:load"

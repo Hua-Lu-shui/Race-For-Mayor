@@ -5,6 +5,10 @@ scoreboard players set @a next_round_ready 0
 scoreboard players set @a next_round_clock 0
 clear @a minecraft:clock[minecraft:custom_data={next_round_ready:1}]
 kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{next_round_ready:1}}}}]
+#进入最终结算时销毁所有尚未使用的道具
+clear @a minecraft:heart_of_the_sea[minecraft:custom_data~{rfm_item:1}]
+kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{rfm_item:1}}}}]
+scoreboard players set @a item_held 0
 
 #进入游戏结束阶段，玩家此时仍停留在各自办公室
 function rfm:phase/phase2

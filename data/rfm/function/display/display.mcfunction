@@ -5,7 +5,7 @@ execute if score #phase phase matches 1 run scoreboard players operation 经济 
 execute if score #phase phase matches 1 run scoreboard players operation 民生 weight_display = #weight welfare_weight
 execute if score #phase phase matches 1 run scoreboard players operation 生态 weight_display = #weight ecology_weight
 
-execute as @a if score #phase phase matches 1 run title @s actionbar [{"text":"名誉 ","color":"aqua"},{"score":{"name":"@s","objective":"fame"},"color": "white"},{"text":"  经济 ","color":"yellow"},{"score":{"name":"@s","objective":"economy"},"color": "white"},{"text":"  民生 ","color":"red"},{"score":{"name":"@s","objective":"welfare"},"color": "white"},{"text":"  生态 ","color":"green"},{"score":{"name":"@s","objective":"ecology"},"color": "white"}]
+execute as @a if score #phase phase matches 1 unless score #group_state group_state matches 1 run function rfm:display/player
 
 #属性显示无需每tick刷新，每5tick更新一次即可
 schedule function rfm:display/display 5t replace

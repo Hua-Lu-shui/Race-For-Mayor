@@ -7,5 +7,6 @@ scoreboard players add @a[scores={candidate=2}] ecology 2
 title @a times 10 80 20
 title @a title {"text":"城市商业峰会","color":"yellow","bold":true}
 title @a subtitle [{"text":"企业家候选人：全部属性 ","color":"gray"},{"text":"+2","color":"green","bold":true}]
+tellraw @a {"text":"【城市事件】城市商业峰会","color":"yellow","bold":true}
 tellraw @a [{"text":"【事件背景】","color":"gold","bold":true},{"text":"城市商业峰会汇集投资机构与本地企业，熟悉市场运作的企业家候选人提出了多项务实合作方案。","color":"white"}]
 tellraw @a [{"text":"【事件影响】","color":"yellow","bold":true},{"text":"所有企业家候选人的名誉、经济、民生、生态均提高2点。","color":"white"}]

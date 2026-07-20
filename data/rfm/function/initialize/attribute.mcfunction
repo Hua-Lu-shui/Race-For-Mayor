@@ -4,6 +4,19 @@ scoreboard objectives add fame dummy "名誉"
 scoreboard objectives add economy dummy "经济"
 scoreboard objectives add welfare dummy "民生"
 scoreboard objectives add ecology dummy "生态"
+#属性变化动画：记录旧值、差值和播放状态
+scoreboard objectives add fame_last dummy
+scoreboard objectives add econ_last dummy
+scoreboard objectives add welfare_last dummy
+scoreboard objectives add eco_last dummy
+scoreboard objectives add fame_delta dummy
+scoreboard objectives add econ_delta dummy
+scoreboard objectives add welfare_delta dummy
+scoreboard objectives add eco_delta dummy
+scoreboard objectives add attr_probe dummy
+scoreboard objectives add attr_changed dummy
+scoreboard objectives add attr_anim dummy
+scoreboard objectives add attr_seen dummy
 #创建四个属性权重计分板
 scoreboard objectives add fame_weight dummy "名誉权重"
 scoreboard objectives add economy_weight dummy "经济权重"
