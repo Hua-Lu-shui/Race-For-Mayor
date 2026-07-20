@@ -252,6 +252,31 @@ scoreboard objectives add exercise_step_3 dummy
 scoreboard objectives add exercise_step_4 dummy
 scoreboard objectives add exercise_step_5 dummy
 scoreboard objectives add exercise_step_6 dummy
+
+#民生行动804“公交站调度”
+scoreboard objectives add bus_queue_1 dummy
+scoreboard objectives add bus_queue_2 dummy
+scoreboard objectives add bus_queue_3 dummy
+scoreboard objectives add bus_spawn_line dummy
+scoreboard objectives add bus_spawn_time dummy
+scoreboard objectives add bus_spawned dummy
+scoreboard objectives add bus_answer dummy
+scoreboard objectives add bus_valid dummy
+scoreboard objectives add bus_success dummy
+scoreboard objectives add bus_wrong dummy
+scoreboard objectives add bus_time dummy
+scoreboard objectives add bus_state dummy
+scoreboard objectives add bus_delay dummy
+
+#民生行动805“井盖安全巡检”
+scoreboard objectives add manhole_selected dummy
+scoreboard objectives add manhole_pick dummy
+scoreboard objectives add manhole_repaired dummy
+scoreboard objectives add manhole_time dummy
+scoreboard objectives add manhole_state dummy
+scoreboard objectives add manhole_delay dummy
+scoreboard objectives add manhole_hits dummy
+scoreboard objectives add manhole_need dummy
 #——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 #下一轮全员准备状态，以及玩家丢出准备时钟的统计
 scoreboard objectives add next_round_ready dummy

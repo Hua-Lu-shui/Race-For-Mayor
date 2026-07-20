@@ -1,0 +1,10 @@
+setblock 1021 -60 112 minecraft:iron_trapdoor[half=bottom,facing=north,open=true,powered=false,waterlogged=false] replace
+summon minecraft:marker 1021.5 -60 112.5 {Tags:["rfm_manhole_anchor","rfm_manhole_12"]}
+scoreboard players set @e[type=minecraft:marker,tag=rfm_manhole_12,limit=1] manhole_hits 0
+scoreboard players set @e[type=minecraft:marker,tag=rfm_manhole_12,limit=1] manhole_need 20
+summon minecraft:interaction 1021.10 -60 112.92 {Tags:["rfm_manhole_interaction","rfm_manhole_12"],width:0.18f,height:1.0f,response:1b}
+summon minecraft:interaction 1021.30 -60 112.92 {Tags:["rfm_manhole_interaction","rfm_manhole_12"],width:0.18f,height:1.0f,response:1b}
+summon minecraft:interaction 1021.50 -60 112.92 {Tags:["rfm_manhole_interaction","rfm_manhole_12"],width:0.18f,height:1.0f,response:1b}
+summon minecraft:interaction 1021.70 -60 112.92 {Tags:["rfm_manhole_interaction","rfm_manhole_12"],width:0.18f,height:1.0f,response:1b}
+summon minecraft:interaction 1021.90 -60 112.92 {Tags:["rfm_manhole_interaction","rfm_manhole_12"],width:0.18f,height:1.0f,response:1b}
+scoreboard players add @s manhole_selected 1

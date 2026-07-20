@@ -47,6 +47,11 @@ kill @e[type=minecraft:text_display,tag=rfm_fitness_label]
 kill @e[type=minecraft:arrow,x=792,y=-64,z=86,dx=78,dy=19,dz=36]
 kill @e[type=minecraft:villager,tag=rfm_exercise_student]
 kill @e[type=minecraft:text_display,tag=rfm_exercise_label]
+kill @e[type=minecraft:villager,tag=rfm_bus_passenger]
+kill @e[type=minecraft:text_display,tag=rfm_bus_label]
+kill @e[type=minecraft:interaction,tag=rfm_manhole_interaction]
+kill @e[type=minecraft:marker,tag=rfm_manhole_anchor]
+kill @e[type=minecraft:text_display,tag=rfm_manhole_label]
 
 title @a title {"text":"本轮结束","color":"green","bold":true}
 

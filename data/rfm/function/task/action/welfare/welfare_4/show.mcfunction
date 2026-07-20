@@ -1,3 +1,5 @@
-#展示民生行动任务4的背景与行动玩家
-tellraw @a [{"text":"【民生行动】公交站调查","color":"red","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]
-tellraw @a {"text":"教程：行动玩家前往公交站记录通勤问题。其他玩家可以观察，后续根据完成情况结算民生和生态。","color":"white"}
+#任务背景
+tellraw @a {"text":"晚高峰即将到来，公交站的临时调度员还没赶到。三条线路的乘客不断聚集，你需要根据各线路核定人数及时发车，避免站台拥堵。","color":"white"}
+
+#进入任务场地，再由start函数公布标题和教程
+function rfm:task/action/welfare/welfare_4/start

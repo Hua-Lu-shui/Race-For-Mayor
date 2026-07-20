@@ -107,6 +107,19 @@ execute as @a[scores={action_task=803,exercise_state=2}] at @s run function rfm:
 execute as @a[scores={action_task=803,exercise_state=3}] run function rfm:task/action/welfare/welfare_3/countdown
 execute as @a[scores={action_task=803,exercise_state=5}] run function rfm:task/action/welfare/welfare_3/preview
 execute as @a[scores={action_task=803,exercise_state=1}] at @s run function rfm:task/action/welfare/welfare_3/tick
+
+#执行民生行动804“公交站调度”
+execute as @a[scores={action_task=804,bus_state=2}] at @s run function rfm:task/action/welfare/welfare_4/wait_ready
+execute as @a[scores={action_task=804,bus_state=3}] run function rfm:task/action/welfare/welfare_4/countdown
+execute as @a[scores={action_task=804,bus_state=1}] at @s run function rfm:task/action/welfare/welfare_4/tick
+
+#执行民生行动805“井盖安全巡检”
+execute as @a[scores={action_task=805,manhole_state=2}] at @s run function rfm:task/action/welfare/welfare_5/wait_ready
+execute as @a[scores={action_task=805,manhole_state=3}] run function rfm:task/action/welfare/welfare_5/countdown
+execute as @a[scores={action_task=805,manhole_state=1}] at @s run function rfm:task/action/welfare/welfare_5/tick
+
+#所有行动任务正式开始前统一锁定坐标，但保留玩家视角转动
+execute as @a[scores={action_task=601..905}] run function rfm:task/action/sequence/lock_before_start
 #————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 #所有行动任务结束后，等待全体玩家丢出准备时钟
 execute if score #waiting next_round_ready matches 1 run function rfm:round/ready/check

@@ -116,6 +116,16 @@ bossbar set rfm:fitness_time visible false
 bossbar remove rfm:exercise_time
 bossbar add rfm:exercise_time {"text":"课间操领队","color":"red"}
 bossbar set rfm:exercise_time visible false
+
+#民生行动804“公交站调度”倒计时
+bossbar remove rfm:bus_time
+bossbar add rfm:bus_time {"text":"公交站调度","color":"red"}
+bossbar set rfm:bus_time visible false
+
+#民生行动805“井盖安全巡检”倒计时
+bossbar remove rfm:manhole_time
+bossbar add rfm:manhole_time {"text":"井盖安全巡检","color":"red"}
+bossbar set rfm:manhole_time visible false
 #—————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 #启动低频属性显示循环
 schedule function rfm:display/display 1t replace
