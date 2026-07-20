@@ -111,6 +111,11 @@ bossbar set rfm:hospital_time visible false
 bossbar remove rfm:fitness_time
 bossbar add rfm:fitness_time {"text":"全民健身挑战","color":"red"}
 bossbar set rfm:fitness_time visible false
+
+#民生行动803“课间操领队”倒计时
+bossbar remove rfm:exercise_time
+bossbar add rfm:exercise_time {"text":"课间操领队","color":"red"}
+bossbar set rfm:exercise_time visible false
 #—————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 #启动低频属性显示循环
 schedule function rfm:display/display 1t replace

@@ -45,6 +45,8 @@ kill @e[type=minecraft:text_display,tag=rfm_hospital_label]
 kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{hospital_case:1}}}}]
 kill @e[type=minecraft:text_display,tag=rfm_fitness_label]
 kill @e[type=minecraft:arrow,x=792,y=-64,z=86,dx=78,dy=19,dz=36]
+kill @e[type=minecraft:villager,tag=rfm_exercise_student]
+kill @e[type=minecraft:text_display,tag=rfm_exercise_label]
 
 title @a title {"text":"本轮结束","color":"green","bold":true}
 

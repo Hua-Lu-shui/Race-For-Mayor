@@ -233,6 +233,25 @@ scoreboard objectives add fitness_delay dummy
 scoreboard objectives add fitness_target_1 dummy
 scoreboard objectives add fitness_target_2 dummy
 scoreboard objectives add fitness_target_3 dummy
+
+#民生行动803“课间操领队”
+scoreboard objectives add exercise_round dummy
+scoreboard objectives add exercise_length dummy
+scoreboard objectives add exercise_input dummy
+scoreboard objectives add exercise_answer dummy
+scoreboard objectives add exercise_target dummy
+scoreboard objectives add exercise_wrong dummy
+scoreboard objectives add exercise_time dummy
+scoreboard objectives add exercise_state dummy
+scoreboard objectives add exercise_delay dummy
+scoreboard objectives add exercise_armed dummy
+scoreboard objectives add exercise_preview dummy
+scoreboard objectives add exercise_step_1 dummy
+scoreboard objectives add exercise_step_2 dummy
+scoreboard objectives add exercise_step_3 dummy
+scoreboard objectives add exercise_step_4 dummy
+scoreboard objectives add exercise_step_5 dummy
+scoreboard objectives add exercise_step_6 dummy
 #——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 #下一轮全员准备状态，以及玩家丢出准备时钟的统计
 scoreboard objectives add next_round_ready dummy

@@ -1,0 +1,10 @@
+#结束动作展示，允许玩家开始踩踏板
+scoreboard players set @s exercise_state 1
+scoreboard players set @s exercise_input 0
+scoreboard players set @s exercise_answer 0
+scoreboard players set @s exercise_target 0
+scoreboard players set @s exercise_armed 1
+title @a clear
+title @a title {"text":"请开始领操！","color":"green","bold":true}
+title @s actionbar {"text":"按刚才的顺序踩踏板；每次踩完先离开踏板","color":"yellow"}
+bossbar set rfm:exercise_time name [{"text":"课间操领队  ·  第 ","color":"red"},{"score":{"name":"@s","objective":"exercise_round"},"color":"yellow"},{"text":" / 3 轮  ·  已输入 ","color":"red"},{"score":{"name":"@s","objective":"exercise_input"},"color":"white"},{"text":" / ","color":"red"},{"score":{"name":"@s","objective":"exercise_length"},"color":"white"}]

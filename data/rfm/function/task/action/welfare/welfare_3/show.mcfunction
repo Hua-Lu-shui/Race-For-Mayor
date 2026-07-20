@@ -1,3 +1,5 @@
-#展示民生行动任务3的背景与行动玩家
-tellraw @a [{"text":"【民生行动】学校协调","color":"red","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]
-tellraw @a {"text":"教程：行动玩家前往学校处理学位协调问题。其他玩家可以观战，后续根据完成情况结算民生。","color":"white"}
+#任务背景
+tellraw @a {"text":"学校体育节即将开始，但负责课间操的领操程序突然损坏。学生们已经在操场集合，你需要记住动作顺序并完成现场领操。","color":"white"}
+
+#进入任务场地，再由start函数公布标题和教程
+function rfm:task/action/welfare/welfare_3/start
