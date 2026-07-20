@@ -13,6 +13,8 @@ execute if score #choose_time choose_time matches 1.. run function rfm:task/deci
 execute if entity @a[scores={decision_choice=1..3}] run function rfm:task/decision/check
 #选择倒计时有效时才检查行动玩家的任务方向
 execute if score #choose_time choose_time matches 1.. run function rfm:task/action/attribute/check
+#选择阶段只记录任务选择，不运行行动任务状态机和传送逻辑
+execute if score #choose_time choose_time matches 1.. run return 0
 #——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 #执行名誉行动601“街头演讲”
 execute as @a[scores={action_task=601,speech_state=2}] at @s run function rfm:task/action/fame/fame_1/wait_ready

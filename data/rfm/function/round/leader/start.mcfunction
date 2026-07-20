@@ -3,4 +3,5 @@ schedule function rfm:round/leader/fame 40t replace
 schedule function rfm:round/leader/economy 80t replace
 schedule function rfm:round/leader/welfare 120t replace
 schedule function rfm:round/leader/ecology 160t replace
-schedule function rfm:round/ready/next 200t replace
+#四项领先者公布完毕后，再判断本轮是否抽取城市事件
+schedule function rfm:event/after_leaders 200t replace
