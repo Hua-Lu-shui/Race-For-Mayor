@@ -1,3 +1,5 @@
-#展示民生行动任务2的背景与行动玩家
-tellraw @a [{"text":"【民生行动】住房走访","color":"red","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]
-tellraw @a {"text":"教程：行动玩家前往居民楼收集住房诉求。其他玩家可以观察，后续根据完成情况结算民生与名誉。","color":"white"}
+#任务背景
+tellraw @a {"text":"城市新建的社区健身路线即将开放，但整套设施还没有完成公开体验。你需要代表候选人完成全部运动项目，为设施开放吸引市民关注。","color":"white"}
+
+#进入任务场地，再由start函数公布标题和教程
+function rfm:task/action/welfare/welfare_2/start

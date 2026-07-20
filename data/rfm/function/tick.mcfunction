@@ -96,6 +96,11 @@ execute as @a[scores={action_task=705,employment_state=1}] run function rfm:task
 execute as @a[scores={action_task=801,hospital_state=2}] at @s run function rfm:task/action/welfare/welfare_1/wait_ready
 execute as @a[scores={action_task=801,hospital_state=3}] run function rfm:task/action/welfare/welfare_1/countdown
 execute as @a[scores={action_task=801,hospital_state=1}] run function rfm:task/action/welfare/welfare_1/tick
+
+#执行民生行动802“全民健身挑战”
+execute as @a[scores={action_task=802,fitness_state=2}] at @s run function rfm:task/action/welfare/welfare_2/wait_ready
+execute as @a[scores={action_task=802,fitness_state=3}] run function rfm:task/action/welfare/welfare_2/countdown
+execute as @a[scores={action_task=802,fitness_state=1}] at @s run function rfm:task/action/welfare/welfare_2/tick
 #————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 #所有行动任务结束后，等待全体玩家丢出准备时钟
 execute if score #waiting next_round_ready matches 1 run function rfm:round/ready/check

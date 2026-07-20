@@ -223,6 +223,16 @@ scoreboard objectives add hospital_used_9 dummy
 scoreboard objectives add hospital_used_10 dummy
 scoreboard objectives add hospital_used_11 dummy
 scoreboard objectives add hospital_used_12 dummy
+
+#民生行动802“全民健身挑战”
+scoreboard objectives add fitness_course dummy
+scoreboard objectives add fitness_checkpoint dummy
+scoreboard objectives add fitness_time dummy
+scoreboard objectives add fitness_state dummy
+scoreboard objectives add fitness_delay dummy
+scoreboard objectives add fitness_target_1 dummy
+scoreboard objectives add fitness_target_2 dummy
+scoreboard objectives add fitness_target_3 dummy
 #——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 #下一轮全员准备状态，以及玩家丢出准备时钟的统计
 scoreboard objectives add next_round_ready dummy
