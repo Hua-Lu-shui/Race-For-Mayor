@@ -16,9 +16,15 @@ execute store result score @s employment_layout run random value 1..3
 
 function rfm:task/action/economy/economy_5/create_scene
 
-gamemode spectator @a
+gamemode adventure @a
+#生成可自由走动的空中观战平台
+fill 443 -52 102 453 -52 110 minecraft:light_gray_stained_glass
+setblock 448 -52 106 minecraft:sea_lantern
+fill 443 -51 102 453 -49 102 minecraft:glass
+fill 443 -51 110 453 -49 110 minecraft:glass
+fill 443 -51 103 443 -49 109 minecraft:glass
+fill 453 -51 103 453 -49 109 minecraft:glass
 tp @a 448 -51 106 0 35
-gamemode adventure @s
 tp @s 448 -60 106 180 0
 
 tellraw @a [{"text":"【经济行动】就业走访","color":"yellow","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]

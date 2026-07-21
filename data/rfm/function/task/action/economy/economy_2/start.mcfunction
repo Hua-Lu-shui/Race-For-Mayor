@@ -22,9 +22,15 @@ scoreboard players set @s negotiation_time 0
 scoreboard players set @s negotiation_delay 0
 scoreboard players set @s negotiation_state 2
 
-gamemode spectator @a
+gamemode adventure @a
+#生成可自由走动的空中观战平台
+fill 323 -54 112 333 -54 120 minecraft:light_gray_stained_glass
+setblock 328 -54 116 minecraft:sea_lantern
+fill 323 -53 112 333 -51 112 minecraft:glass
+fill 323 -53 120 333 -51 120 minecraft:glass
+fill 323 -53 113 323 -51 119 minecraft:glass
+fill 333 -53 113 333 -51 119 minecraft:glass
 tp @a 328 -53 116 180 25
-gamemode adventure @s
 tp @s 328 -60 112 180 0
 
 tellraw @a [{"text":"【经济行动】招商洽谈","color":"yellow","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]

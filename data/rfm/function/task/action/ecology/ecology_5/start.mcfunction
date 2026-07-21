@@ -3,9 +3,15 @@ scoreboard players set #waiting next_round_ready 0
 scoreboard players set @a next_round_clock 0
 
 #所有玩家进入观战位置，行动玩家站到控制台前
-gamemode spectator @a
+gamemode adventure @a
+#生成可自由走动的空中观战平台
+fill 267 -55 112 277 -55 120 minecraft:light_gray_stained_glass
+setblock 272 -55 116 minecraft:sea_lantern
+fill 267 -54 112 277 -52 112 minecraft:glass
+fill 267 -54 120 277 -52 120 minecraft:glass
+fill 267 -54 113 267 -52 119 minecraft:glass
+fill 277 -54 113 277 -52 119 minecraft:glass
 tp @a 272 -54 116 180 25
-gamemode adventure @s
 tp @s 272 -60 110 180 0
 
 #搭建临时平台和控制设备

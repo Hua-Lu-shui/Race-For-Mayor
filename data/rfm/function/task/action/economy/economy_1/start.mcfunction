@@ -15,9 +15,15 @@ scoreboard players set @s market_state 2
 function rfm:task/action/economy/economy_1/prepare_round
 
 #商人准备完毕后再把所有玩家送入市场
-gamemode spectator @a
+gamemode adventure @a
+#生成可自由走动的空中观战平台
+fill 293 -54 112 303 -54 120 minecraft:light_gray_stained_glass
+setblock 298 -54 116 minecraft:sea_lantern
+fill 293 -53 112 303 -51 112 minecraft:glass
+fill 293 -53 120 303 -51 120 minecraft:glass
+fill 293 -53 113 293 -51 119 minecraft:glass
+fill 303 -53 113 303 -51 119 minecraft:glass
 tp @a 298 -53 116 180 25
-gamemode adventure @s
 tp @s 298 -60 114 180 0
 
 tellraw @a [{"text":"【经济行动】市场调研","color":"yellow","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]

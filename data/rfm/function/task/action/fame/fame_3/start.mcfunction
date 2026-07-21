@@ -42,9 +42,15 @@ advancement revoke @s only rfm:photo_position_4
 advancement revoke @s only rfm:photo_position_5
 
 #其他玩家在摄影区后方俯视，行动玩家在控制区出发
-gamemode spectator @a
+gamemode adventure @a
+#生成可自由走动的空中观战平台
+fill 591 -52 115 601 -52 123 minecraft:light_gray_stained_glass
+setblock 596 -52 119 minecraft:sea_lantern
+fill 591 -51 115 601 -49 115 minecraft:glass
+fill 591 -51 123 601 -49 123 minecraft:glass
+fill 591 -51 116 591 -49 122 minecraft:glass
+fill 601 -51 116 601 -49 122 minecraft:glass
 tp @a 596 -51 119 180 30
-gamemode adventure @s
 tp @s 596 -60 112 180 0
 
 tellraw @a [{"text":"【名誉行动】市民合影","color":"aqua","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]

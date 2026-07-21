@@ -3,9 +3,15 @@
 scoreboard players set #waiting next_round_ready 0
 scoreboard players set @a next_round_clock 0
 #所有玩家进入观战位置，行动玩家站到河道起点
-gamemode spectator @a
+gamemode adventure @a
+#生成可自由走动的空中观战平台
+fill 197 -55 106 207 -55 114 minecraft:light_gray_stained_glass
+setblock 202 -55 110 minecraft:sea_lantern
+fill 197 -54 106 207 -52 106 minecraft:glass
+fill 197 -54 114 207 -52 114 minecraft:glass
+fill 197 -54 107 197 -52 113 minecraft:glass
+fill 207 -54 107 207 -52 113 minecraft:glass
 tp @a 202 -54 110 180 30
-gamemode adventure @s
 tp @s 190 -60 100 -90 0
 
 function rfm:task/action/ecology/ecology_2/create_labels

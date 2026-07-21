@@ -3,9 +3,15 @@ scoreboard players set #waiting next_round_ready 0
 scoreboard players set @a next_round_clock 0
 
 #所有玩家进入观战位置，行动玩家进入四个分类箱中央
-gamemode spectator @a
+gamemode adventure @a
+#生成可自由走动的空中观战平台
+fill 243 -55 112 253 -55 120 minecraft:light_gray_stained_glass
+setblock 248 -55 116 minecraft:sea_lantern
+fill 243 -54 112 253 -52 112 minecraft:glass
+fill 243 -54 120 253 -52 120 minecraft:glass
+fill 243 -54 113 243 -52 119 minecraft:glass
+fill 253 -54 113 253 -52 119 minecraft:glass
 tp @a 248 -54 116 180 25
-gamemode adventure @s
 tp @s 248 -60 104 180 0
 
 #搭建临时测试平台，避免当前坐标没有地面导致玩家坠落

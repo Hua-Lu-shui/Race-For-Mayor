@@ -19,9 +19,15 @@ scoreboard players set @s exercise_armed 0
 scoreboard players set @s exercise_preview 0
 
 #其他玩家在操场上方观战，行动玩家站在四色踏板中央
-gamemode spectator @a
+gamemode adventure @a
+#生成可自由走动的空中观战平台
+fill 895 -52 118 905 -52 126 minecraft:light_gray_stained_glass
+setblock 900 -52 122 minecraft:sea_lantern
+fill 895 -51 118 905 -49 118 minecraft:glass
+fill 895 -51 126 905 -49 126 minecraft:glass
+fill 895 -51 119 895 -49 125 minecraft:glass
+fill 905 -51 119 905 -49 125 minecraft:glass
 tp @a 900 -51 122 180 30
-gamemode adventure @s
 function rfm:task/action/welfare/welfare_3/teleport_center
 
 tellraw @a [{"text":"【民生行动】课间操领队","color":"red","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]

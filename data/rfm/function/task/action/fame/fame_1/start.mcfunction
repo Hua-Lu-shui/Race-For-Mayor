@@ -34,9 +34,15 @@ scoreboard players set @s speech_delay 0
 scoreboard players set @s speech_state 2
 
 #场景准备完成后再将玩家送入广场
-gamemode spectator @a
+gamemode adventure @a
+#生成可自由走动的空中观战平台
+fill 483 -53 112 493 -53 120 minecraft:light_gray_stained_glass
+setblock 488 -53 116 minecraft:sea_lantern
+fill 483 -52 112 493 -50 112 minecraft:glass
+fill 483 -52 120 493 -50 120 minecraft:glass
+fill 483 -52 113 483 -50 119 minecraft:glass
+fill 493 -52 113 493 -50 119 minecraft:glass
 tp @a 488 -52 116 180 25
-gamemode adventure @s
 tp @s 488 -59 110 180 0
 
 tellraw @a [{"text":"【名誉行动】街头演讲","color":"aqua","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]

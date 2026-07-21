@@ -13,9 +13,15 @@ scoreboard players set @s cheer_type 0
 scoreboard players set @s cheer_state 2
 
 #其他玩家从南侧上空观战，行动玩家进入应援场
-gamemode spectator @a
+gamemode adventure @a
+#生成可自由走动的空中观战平台
+fill 715 -50 116 725 -50 124 minecraft:light_gray_stained_glass
+setblock 720 -50 120 minecraft:sea_lantern
+fill 715 -49 116 725 -47 116 minecraft:glass
+fill 715 -49 124 725 -47 124 minecraft:glass
+fill 715 -49 117 715 -47 123 minecraft:glass
+fill 725 -49 117 725 -47 123 minecraft:glass
 tp @a 720 -49 120 180 32
-gamemode adventure @s
 tp @s 720 -60 104 180 0
 
 tellraw @a [{"text":"【名誉行动】市民应援","color":"aqua","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]

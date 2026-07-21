@@ -16,9 +16,15 @@ scoreboard players set @s visit_delay 0
 scoreboard players set @s visit_state 2
 
 #其他玩家从正面观看整栋楼，行动玩家从一楼中央出发
-gamemode spectator @a
+gamemode adventure @a
+#生成可自由走动的空中观战平台
+fill 531 -30 116 541 -30 124 minecraft:light_gray_stained_glass
+setblock 536 -30 120 minecraft:sea_lantern
+fill 531 -29 116 541 -27 116 minecraft:glass
+fill 531 -29 124 541 -27 124 minecraft:glass
+fill 531 -29 117 531 -27 123 minecraft:glass
+fill 541 -29 117 541 -27 123 minecraft:glass
 tp @a 536 -29 120 180 35
-gamemode adventure @s
 tp @s 536 -60 103 180 0
 
 tellraw @a [{"text":"【名誉行动】社区拜访","color":"aqua","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]

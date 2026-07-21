@@ -15,9 +15,15 @@ scoreboard players set @s fitness_target_2 0
 scoreboard players set @s fitness_target_3 0
 
 #其他玩家从赛道上方观战，行动玩家进入本局随机赛道起点
-gamemode spectator @a
+gamemode adventure @a
+#生成可自由走动的空中观战平台
+fill 827 -43 128 837 -43 136 minecraft:light_gray_stained_glass
+setblock 832 -43 132 minecraft:sea_lantern
+fill 827 -42 128 837 -40 128 minecraft:glass
+fill 827 -42 136 837 -40 136 minecraft:glass
+fill 827 -42 129 827 -40 135 minecraft:glass
+fill 837 -42 129 837 -40 135 minecraft:glass
 tp @a 832 -42 132 180 35
-gamemode adventure @s
 function rfm:task/action/welfare/welfare_2/teleport_start
 
 tellraw @a [{"text":"【民生行动】全民健身挑战","color":"red","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]

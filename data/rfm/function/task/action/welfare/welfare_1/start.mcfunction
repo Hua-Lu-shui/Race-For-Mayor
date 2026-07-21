@@ -15,9 +15,15 @@ scoreboard players set @s hospital_delay 0
 scoreboard players set @s hospital_state 2
 
 #其他玩家从候诊区上方观战，行动玩家站在三个分诊窗口前
-gamemode spectator @a
+gamemode adventure @a
+#生成可自由走动的空中观战平台
+fill 755 -52 116 765 -52 124 minecraft:light_gray_stained_glass
+setblock 760 -52 120 minecraft:sea_lantern
+fill 755 -51 116 765 -49 116 minecraft:glass
+fill 755 -51 124 765 -49 124 minecraft:glass
+fill 755 -51 117 755 -49 123 minecraft:glass
+fill 765 -51 117 765 -49 123 minecraft:glass
 tp @a 760 -51 120 180 30
-gamemode adventure @s
 tp @s 760 -60 113 180 0
 
 tellraw @a [{"text":"【民生行动】医院排队疏导","color":"red","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]

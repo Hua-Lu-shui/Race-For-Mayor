@@ -17,9 +17,15 @@ scoreboard players set @s supply_state 2
 execute store result score @s supply_order run random value 1..3
 function rfm:task/action/economy/economy_4/prepare_orders
 
-gamemode spectator @a
+gamemode adventure @a
+#生成可自由走动的空中观战平台
+fill 398 -52 107 408 -52 115 minecraft:light_gray_stained_glass
+setblock 403 -52 111 minecraft:sea_lantern
+fill 398 -51 107 408 -49 107 minecraft:glass
+fill 398 -51 115 408 -49 115 minecraft:glass
+fill 398 -51 108 398 -49 114 minecraft:glass
+fill 408 -51 108 408 -49 114 minecraft:glass
 tp @a 403 -51 111 0 35
-gamemode adventure @s
 tp @s 403 -60 108 0 0
 
 tellraw @a [{"text":"【经济行动】商圈巡查","color":"yellow","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]

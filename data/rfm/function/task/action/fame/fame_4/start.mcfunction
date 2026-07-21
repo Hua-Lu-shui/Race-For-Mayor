@@ -15,9 +15,15 @@ scoreboard players set @s qa_delay 0
 scoreboard players set @s qa_state 2
 
 #其他玩家从南侧俯视答疑台，行动玩家站在中央
-gamemode spectator @a
+gamemode adventure @a
+#生成可自由走动的空中观战平台
+fill 655 -52 117 665 -52 125 minecraft:light_gray_stained_glass
+setblock 660 -52 121 minecraft:sea_lantern
+fill 655 -51 117 665 -49 117 minecraft:glass
+fill 655 -51 125 665 -49 125 minecraft:glass
+fill 655 -51 118 655 -49 124 minecraft:glass
+fill 665 -51 118 665 -49 124 minecraft:glass
 tp @a 660 -51 121 180 30
-gamemode adventure @s
 tp @s 660 -60 104 180 0
 
 tellraw @a [{"text":"【名誉行动】公开答疑","color":"aqua","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]
