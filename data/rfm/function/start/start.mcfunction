@@ -3,10 +3,10 @@ function rfm:phase/phase1
 #新游戏从第0轮准备状态开始；全员准备后round函数会递增为第1轮
 scoreboard players set #round round 0
 #初始化四项属性权重
-scoreboard players set #weight fame_weight 10
-scoreboard players set #weight economy_weight 10
-scoreboard players set #weight welfare_weight 10
-scoreboard players set #weight ecology_weight 10
+scoreboard players set #weight fame_weight 5
+scoreboard players set #weight economy_weight 5
+scoreboard players set #weight welfare_weight 5
+scoreboard players set #weight ecology_weight 5
 #新一局首次刷新时，以候选人的初始属性作为动画起点
 scoreboard players set @a attr_seen 0
 #在侧边栏展示各项权重
@@ -26,6 +26,16 @@ scoreboard players set @a group_score 0
 scoreboard players set @a group_rank 0
 scoreboard players set @a item_held 0
 scoreboard players set @a item_selecting 0
+#重置上一局的最终结算状态
+scoreboard players set #settle_state settle_state 0
+scoreboard players set #settle_room settle_room 0
+scoreboard players set @a settle_ready 0
+scoreboard players set @a settle_clock 0
+scoreboard players set @a title_bonus 0
+scoreboard players set @a vote_total 0
+scoreboard players set @a final_votes 0
+clear @a minecraft:clock[minecraft:custom_data={settlement_ready:1}]
+kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{settlement_ready:1}}}}]
 clear @a minecraft:heart_of_the_sea[minecraft:custom_data~{rfm_item:1}]
 kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{rfm_item:1}}}}]
 #分配房间

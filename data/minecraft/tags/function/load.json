@@ -5,6 +5,7 @@
         "rfm:initialize/event",
         "rfm:initialize/collective",
         "rfm:initialize/item",
+        "rfm:initialize/ending",
         "rfm:phase/phase",
         "rfm:task/task",
         "rfm:load"

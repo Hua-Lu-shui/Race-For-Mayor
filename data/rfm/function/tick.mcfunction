@@ -7,6 +7,8 @@ effect give @a minecraft:resistance infinite 4 true
 effect give @a minecraft:resistance infinite 4 true
 #确保所有玩家的饥饿值保持满格
 effect give @a minecraft:saturation infinite 0 true
+#等待全体玩家丢出结算时钟
+execute if score #settle_state settle_state matches 1 run function rfm:ending/ready/check
 #执行集体行动状态机
 execute if score #group_state group_state matches 1 run function rfm:collective/tick
 #等待下一轮期间检测玩家丢出的道具
