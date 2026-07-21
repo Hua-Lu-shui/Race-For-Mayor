@@ -13,17 +13,14 @@ execute if score #used_item item_held matches 5 run scoreboard players add #weig
 execute if score #used_item item_held matches 6 run scoreboard players add #weight economy_weight 2
 execute if score #used_item item_held matches 7 run scoreboard players add #weight welfare_weight 2
 execute if score #used_item item_held matches 8 run scoreboard players add #weight ecology_weight 2
-#权重削弱，最低为0
+#权重削弱，最低为1
 execute if score #used_item item_held matches 9 run scoreboard players remove #weight fame_weight 2
 execute if score #used_item item_held matches 10 run scoreboard players remove #weight economy_weight 2
 execute if score #used_item item_held matches 11 run scoreboard players remove #weight welfare_weight 2
 execute if score #used_item item_held matches 12 run scoreboard players remove #weight ecology_weight 2
-execute if score #weight fame_weight matches ..-1 run scoreboard players set #weight fame_weight 0
-execute if score #weight economy_weight matches ..-1 run scoreboard players set #weight economy_weight 0
-execute if score #weight welfare_weight matches ..-1 run scoreboard players set #weight welfare_weight 0
-execute if score #weight ecology_weight matches ..-1 run scoreboard players set #weight ecology_weight 0
+function rfm:attribute/weight_minimum
 
-#计算实际变化量（削弱道具可能受到权重最低为0的限制）
+#计算实际变化量（削弱道具可能受到权重最低为1的限制）
 execute if score #used_item item_held matches 5 run scoreboard players operation @s item_delta = #weight fame_weight
 execute if score #used_item item_held matches 6 run scoreboard players operation @s item_delta = #weight economy_weight
 execute if score #used_item item_held matches 7 run scoreboard players operation @s item_delta = #weight welfare_weight

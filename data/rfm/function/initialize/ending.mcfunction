@@ -12,3 +12,4 @@ scoreboard objectives add title_bonus dummy
 scoreboard objectives add vote_total dummy
 scoreboard objectives add final_votes dummy {"text":"✦ 最终票数 ✦","color":"gold","bold":true}
 scoreboard objectives modify final_votes numberformat styled {"color":"gold","bold":true}
+scoreboard objectives add attribute_total dummy

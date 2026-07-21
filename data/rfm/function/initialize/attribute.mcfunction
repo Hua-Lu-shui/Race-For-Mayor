@@ -16,7 +16,26 @@ scoreboard objectives add eco_delta dummy
 scoreboard objectives add attr_probe dummy
 scoreboard objectives add attr_changed dummy
 scoreboard objectives add attr_anim dummy
+scoreboard objectives add attr_flash dummy
 scoreboard objectives add attr_seen dummy
+#属性锁定状态与锁定值
+scoreboard objectives add fame_lock dummy
+scoreboard objectives add economy_lock dummy
+scoreboard objectives add welfare_lock dummy
+scoreboard objectives add ecology_lock dummy
+scoreboard objectives add fame_locked dummy
+scoreboard objectives add economy_locked dummy
+scoreboard objectives add welfare_locked dummy
+scoreboard objectives add ecology_locked dummy
+#动作栏使用分离计分板，让未锁定数值显示白色、锁定数值显示黑色
+scoreboard objectives add fame_show dummy
+scoreboard objectives add econ_show dummy
+scoreboard objectives add welfare_show dummy
+scoreboard objectives add eco_show dummy
+scoreboard objectives add fame_lshow dummy
+scoreboard objectives add econ_lshow dummy
+scoreboard objectives add welfare_lshow dummy
+scoreboard objectives add eco_lshow dummy
 #创建四个属性权重计分板
 scoreboard objectives add fame_weight dummy "名誉权重"
 scoreboard objectives add economy_weight dummy "经济权重"

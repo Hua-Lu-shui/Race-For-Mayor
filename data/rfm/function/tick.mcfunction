@@ -1,6 +1,8 @@
-#执行tick函数对应的游戏流程
+﻿#执行tick函数对应的游戏流程
 #确保所有玩家都具有默认属性
 execute as @a unless score @s candidate matches 0.. run function rfm:initialize/candidate
+#每tick恢复已锁定属性，覆盖所有事件、道具与任务造成的修改
+execute as @a run function rfm:attribute/lock/enforce
 #防止所有玩家受到常规伤害
 effect give @a minecraft:resistance infinite 4 true
 #防止所有玩家受到击退
@@ -14,7 +16,7 @@ execute if score #group_state group_state matches 1 run function rfm:collective/
 #等待下一轮期间检测玩家丢出的道具
 execute if score #waiting next_round_ready matches 1 run function rfm:item/use/check_all
 #检测道具屋中当前玩家的告示牌选择
-execute if entity @a[scores={item_selecting=1,item_pick=1..28}] run function rfm:item/select/check
+execute if entity @a[scores={item_selecting=1,item_pick=1..20}] run function rfm:item/select/check
 #选择倒计时有效时才检查玩家选择，避免非选择阶段重复执行整组判断
 execute if score #choose_time choose_time matches 1.. run function rfm:task/decision/attribute/check
 #检查玩家是否选择了决策方案

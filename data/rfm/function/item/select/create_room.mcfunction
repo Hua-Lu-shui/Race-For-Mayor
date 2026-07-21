@@ -1,4 +1,4 @@
-#生成等待屋（1180 -59 100）
+﻿#生成等待屋（1180 -59 100）
 fill 1173 -59 93 1187 -54 107 minecraft:air
 fill 1172 -60 92 1188 -60 108 minecraft:smooth_stone
 fill 1172 -59 92 1188 -54 92 minecraft:gray_concrete
@@ -18,7 +18,7 @@ setblock 1230 -53 104 minecraft:light[level=15]
 setblock 1240 -53 104 minecraft:light[level=15]
 setblock 1250 -53 104 minecraft:light[level=15]
 
-#每次集体行动重新开放28种道具；被选择的告示牌会在本次选择中消失
+#每次集体行动重新开放20种道具；被选择的告示牌会在本次选择中消失
 scoreboard players set #item_1 item_available 1
 scoreboard players set #item_2 item_available 1
 scoreboard players set #item_3 item_available 1
@@ -39,20 +39,11 @@ scoreboard players set #item_17 item_available 1
 scoreboard players set #item_18 item_available 1
 scoreboard players set #item_19 item_available 1
 scoreboard players set #item_20 item_available 1
-scoreboard players set #item_21 item_available 1
-scoreboard players set #item_22 item_available 1
-scoreboard players set #item_23 item_available 1
-scoreboard players set #item_24 item_available 1
-scoreboard players set #item_25 item_available 1
-scoreboard players set #item_26 item_available 1
-scoreboard players set #item_27 item_available 1
-scoreboard players set #item_28 item_available 1
 
-#第一排：属性互换、权重加强、权重削弱与前两件属性取舍
-setblock 1227 -58 90 minecraft:dark_oak_wall_sign[facing=south]{is_waxed:1b,front_text:{messages:['{"text":"属性互换","color":"gold","bold":true}','{"text":"名誉","color":"aqua"}','{"text":"与名誉最高者互换","color":"gray"}','{"text":"[右键选择]","color":"green","clickEvent":{"action":"run_command","value":"/trigger item_pick set 1"}}']}}
-setblock 1229 -58 90 minecraft:dark_oak_wall_sign[facing=south]{is_waxed:1b,front_text:{messages:['{"text":"属性互换","color":"gold","bold":true}','{"text":"经济","color":"yellow"}','{"text":"与经济最高者互换","color":"gray"}','{"text":"[右键选择]","color":"green","clickEvent":{"action":"run_command","value":"/trigger item_pick set 2"}}']}}
-setblock 1231 -58 90 minecraft:dark_oak_wall_sign[facing=south]{is_waxed:1b,front_text:{messages:['{"text":"属性互换","color":"gold","bold":true}','{"text":"民生","color":"red"}','{"text":"与民生最高者互换","color":"gray"}','{"text":"[右键选择]","color":"green","clickEvent":{"action":"run_command","value":"/trigger item_pick set 3"}}']}}
-setblock 1233 -58 90 minecraft:dark_oak_wall_sign[facing=south]{is_waxed:1b,front_text:{messages:['{"text":"属性互换","color":"gold","bold":true}','{"text":"生态","color":"green"}','{"text":"与生态最高者互换","color":"gray"}','{"text":"[右键选择]","color":"green","clickEvent":{"action":"run_command","value":"/trigger item_pick set 4"}}']}}
+setblock 1227 -58 90 minecraft:dark_oak_wall_sign[facing=south]{is_waxed:1b,front_text:{messages:['{"text":"属性互换","color":"gold","bold":true}','{"text":"名誉","color":"aqua"}','{"text":"与指定玩家互换","color":"gray"}','{"text":"[右键选择]","color":"green","clickEvent":{"action":"run_command","value":"/trigger item_pick set 1"}}']}}
+setblock 1229 -58 90 minecraft:dark_oak_wall_sign[facing=south]{is_waxed:1b,front_text:{messages:['{"text":"属性互换","color":"gold","bold":true}','{"text":"经济","color":"yellow"}','{"text":"与指定玩家互换","color":"gray"}','{"text":"[右键选择]","color":"green","clickEvent":{"action":"run_command","value":"/trigger item_pick set 2"}}']}}
+setblock 1231 -58 90 minecraft:dark_oak_wall_sign[facing=south]{is_waxed:1b,front_text:{messages:['{"text":"属性互换","color":"gold","bold":true}','{"text":"民生","color":"red"}','{"text":"与指定玩家互换","color":"gray"}','{"text":"[右键选择]","color":"green","clickEvent":{"action":"run_command","value":"/trigger item_pick set 3"}}']}}
+setblock 1233 -58 90 minecraft:dark_oak_wall_sign[facing=south]{is_waxed:1b,front_text:{messages:['{"text":"属性互换","color":"gold","bold":true}','{"text":"生态","color":"green"}','{"text":"与指定玩家互换","color":"gray"}','{"text":"[右键选择]","color":"green","clickEvent":{"action":"run_command","value":"/trigger item_pick set 4"}}']}}
 setblock 1235 -58 90 minecraft:dark_oak_wall_sign[facing=south]{is_waxed:1b,front_text:{messages:['{"text":"权重加强","color":"light_purple","bold":true}','{"text":"名誉权重","color":"aqua"}','{"text":"权重 +2","color":"green"}','{"text":"[右键选择]","color":"green","clickEvent":{"action":"run_command","value":"/trigger item_pick set 5"}}']}}
 setblock 1237 -58 90 minecraft:dark_oak_wall_sign[facing=south]{is_waxed:1b,front_text:{messages:['{"text":"权重加强","color":"light_purple","bold":true}','{"text":"经济权重","color":"yellow"}','{"text":"权重 +2","color":"green"}','{"text":"[右键选择]","color":"green","clickEvent":{"action":"run_command","value":"/trigger item_pick set 6"}}']}}
 setblock 1239 -58 90 minecraft:dark_oak_wall_sign[facing=south]{is_waxed:1b,front_text:{messages:['{"text":"权重加强","color":"light_purple","bold":true}','{"text":"民生权重","color":"red"}','{"text":"权重 +2","color":"green"}','{"text":"[右键选择]","color":"green","clickEvent":{"action":"run_command","value":"/trigger item_pick set 7"}}']}}
@@ -61,21 +52,14 @@ setblock 1243 -58 90 minecraft:dark_oak_wall_sign[facing=south]{is_waxed:1b,fron
 setblock 1245 -58 90 minecraft:dark_oak_wall_sign[facing=south]{is_waxed:1b,front_text:{messages:['{"text":"权重削弱","color":"dark_purple","bold":true}','{"text":"经济权重","color":"yellow"}','{"text":"权重 -2","color":"red"}','{"text":"[右键选择]","color":"green","clickEvent":{"action":"run_command","value":"/trigger item_pick set 10"}}']}}
 setblock 1247 -58 90 minecraft:dark_oak_wall_sign[facing=south]{is_waxed:1b,front_text:{messages:['{"text":"权重削弱","color":"dark_purple","bold":true}','{"text":"民生权重","color":"red"}','{"text":"权重 -2","color":"red"}','{"text":"[右键选择]","color":"green","clickEvent":{"action":"run_command","value":"/trigger item_pick set 11"}}']}}
 setblock 1249 -58 90 minecraft:dark_oak_wall_sign[facing=south]{is_waxed:1b,front_text:{messages:['{"text":"权重削弱","color":"dark_purple","bold":true}','{"text":"生态权重","color":"green"}','{"text":"权重 -2","color":"red"}','{"text":"[右键选择]","color":"green","clickEvent":{"action":"run_command","value":"/trigger item_pick set 12"}}']}}
-setblock 1251 -58 90 minecraft:dark_oak_wall_sign[facing=south]{is_waxed:1b,front_text:{messages:['{"text":"属性取舍","color":"gold","bold":true}','{"text":"名誉 +10","color":"aqua"}','{"text":"经济 -2","color":"yellow"}','{"text":"[右键选择]","color":"green","clickEvent":{"action":"run_command","value":"/trigger item_pick set 13"}}']}}
-setblock 1253 -58 90 minecraft:dark_oak_wall_sign[facing=south]{is_waxed:1b,front_text:{messages:['{"text":"属性取舍","color":"gold","bold":true}','{"text":"名誉 +10","color":"aqua"}','{"text":"民生 -2","color":"red"}','{"text":"[右键选择]","color":"green","clickEvent":{"action":"run_command","value":"/trigger item_pick set 14"}}']}}
 
-#第二排：其余属性取舍与四件属性专精
-setblock 1227 -56 90 minecraft:dark_oak_wall_sign[facing=south]{is_waxed:1b,front_text:{messages:['{"text":"属性取舍","color":"gold","bold":true}','{"text":"名誉 +10","color":"aqua"}','{"text":"生态 -2","color":"green"}','{"text":"[右键选择]","color":"green","clickEvent":{"action":"run_command","value":"/trigger item_pick set 15"}}']}}
-setblock 1229 -56 90 minecraft:dark_oak_wall_sign[facing=south]{is_waxed:1b,front_text:{messages:['{"text":"属性取舍","color":"gold","bold":true}','{"text":"经济 +10","color":"yellow"}','{"text":"名誉 -2","color":"aqua"}','{"text":"[右键选择]","color":"green","clickEvent":{"action":"run_command","value":"/trigger item_pick set 16"}}']}}
-setblock 1231 -56 90 minecraft:dark_oak_wall_sign[facing=south]{is_waxed:1b,front_text:{messages:['{"text":"属性取舍","color":"gold","bold":true}','{"text":"经济 +10","color":"yellow"}','{"text":"民生 -2","color":"red"}','{"text":"[右键选择]","color":"green","clickEvent":{"action":"run_command","value":"/trigger item_pick set 17"}}']}}
-setblock 1233 -56 90 minecraft:dark_oak_wall_sign[facing=south]{is_waxed:1b,front_text:{messages:['{"text":"属性取舍","color":"gold","bold":true}','{"text":"经济 +10","color":"yellow"}','{"text":"生态 -2","color":"green"}','{"text":"[右键选择]","color":"green","clickEvent":{"action":"run_command","value":"/trigger item_pick set 18"}}']}}
-setblock 1235 -56 90 minecraft:dark_oak_wall_sign[facing=south]{is_waxed:1b,front_text:{messages:['{"text":"属性取舍","color":"gold","bold":true}','{"text":"民生 +10","color":"red"}','{"text":"名誉 -2","color":"aqua"}','{"text":"[右键选择]","color":"green","clickEvent":{"action":"run_command","value":"/trigger item_pick set 19"}}']}}
-setblock 1237 -56 90 minecraft:dark_oak_wall_sign[facing=south]{is_waxed:1b,front_text:{messages:['{"text":"属性取舍","color":"gold","bold":true}','{"text":"民生 +10","color":"red"}','{"text":"经济 -2","color":"yellow"}','{"text":"[右键选择]","color":"green","clickEvent":{"action":"run_command","value":"/trigger item_pick set 20"}}']}}
-setblock 1239 -56 90 minecraft:dark_oak_wall_sign[facing=south]{is_waxed:1b,front_text:{messages:['{"text":"属性取舍","color":"gold","bold":true}','{"text":"民生 +10","color":"red"}','{"text":"生态 -2","color":"green"}','{"text":"[右键选择]","color":"green","clickEvent":{"action":"run_command","value":"/trigger item_pick set 21"}}']}}
-setblock 1241 -56 90 minecraft:dark_oak_wall_sign[facing=south]{is_waxed:1b,front_text:{messages:['{"text":"属性取舍","color":"gold","bold":true}','{"text":"生态 +10","color":"green"}','{"text":"名誉 -2","color":"aqua"}','{"text":"[右键选择]","color":"green","clickEvent":{"action":"run_command","value":"/trigger item_pick set 22"}}']}}
-setblock 1243 -56 90 minecraft:dark_oak_wall_sign[facing=south]{is_waxed:1b,front_text:{messages:['{"text":"属性取舍","color":"gold","bold":true}','{"text":"生态 +10","color":"green"}','{"text":"经济 -2","color":"yellow"}','{"text":"[右键选择]","color":"green","clickEvent":{"action":"run_command","value":"/trigger item_pick set 23"}}']}}
-setblock 1245 -56 90 minecraft:dark_oak_wall_sign[facing=south]{is_waxed:1b,front_text:{messages:['{"text":"属性取舍","color":"gold","bold":true}','{"text":"生态 +10","color":"green"}','{"text":"民生 -2","color":"red"}','{"text":"[右键选择]","color":"green","clickEvent":{"action":"run_command","value":"/trigger item_pick set 24"}}']}}
-setblock 1247 -56 90 minecraft:dark_oak_wall_sign[facing=south]{is_waxed:1b,front_text:{messages:['{"text":"属性专精","color":"light_purple","bold":true}','{"text":"自身名誉 +5","color":"aqua"}','{"text":"其他人名誉 -5","color":"red"}','{"text":"[右键选择]","color":"green","clickEvent":{"action":"run_command","value":"/trigger item_pick set 25"}}']}}
-setblock 1249 -56 90 minecraft:dark_oak_wall_sign[facing=south]{is_waxed:1b,front_text:{messages:['{"text":"属性专精","color":"light_purple","bold":true}','{"text":"自身经济 +5","color":"yellow"}','{"text":"其他人经济 -5","color":"red"}','{"text":"[右键选择]","color":"green","clickEvent":{"action":"run_command","value":"/trigger item_pick set 26"}}']}}
-setblock 1251 -56 90 minecraft:dark_oak_wall_sign[facing=south]{is_waxed:1b,front_text:{messages:['{"text":"属性专精","color":"light_purple","bold":true}','{"text":"自身民生 +5","color":"red"}','{"text":"其他人民生 -5","color":"dark_red"}','{"text":"[右键选择]","color":"green","clickEvent":{"action":"run_command","value":"/trigger item_pick set 27"}}']}}
-setblock 1253 -56 90 minecraft:dark_oak_wall_sign[facing=south]{is_waxed:1b,front_text:{messages:['{"text":"属性专精","color":"light_purple","bold":true}','{"text":"自身生态 +5","color":"green"}','{"text":"其他人生态 -5","color":"red"}','{"text":"[右键选择]","color":"green","clickEvent":{"action":"run_command","value":"/trigger item_pick set 28"}}']}}
+setblock 1247 -56 90 minecraft:dark_oak_wall_sign[facing=south]{is_waxed:1b,front_text:{messages:['{"text":"属性专精","color":"light_purple","bold":true}','{"text":"自身名誉 +5","color":"aqua"}','{"text":"其他人名誉 -5","color":"red"}','{"text":"[右键选择]","color":"green","clickEvent":{"action":"run_command","value":"/trigger item_pick set 13"}}']}}
+setblock 1249 -56 90 minecraft:dark_oak_wall_sign[facing=south]{is_waxed:1b,front_text:{messages:['{"text":"属性专精","color":"light_purple","bold":true}','{"text":"自身经济 +5","color":"yellow"}','{"text":"其他人经济 -5","color":"red"}','{"text":"[右键选择]","color":"green","clickEvent":{"action":"run_command","value":"/trigger item_pick set 14"}}']}}
+setblock 1251 -56 90 minecraft:dark_oak_wall_sign[facing=south]{is_waxed:1b,front_text:{messages:['{"text":"属性专精","color":"light_purple","bold":true}','{"text":"自身民生 +5","color":"red"}','{"text":"其他人民生 -5","color":"dark_red"}','{"text":"[右键选择]","color":"green","clickEvent":{"action":"run_command","value":"/trigger item_pick set 15"}}']}}
+setblock 1253 -56 90 minecraft:dark_oak_wall_sign[facing=south]{is_waxed:1b,front_text:{messages:['{"text":"属性专精","color":"light_purple","bold":true}','{"text":"自身生态 +5","color":"green"}','{"text":"其他人生态 -5","color":"red"}','{"text":"[右键选择]","color":"green","clickEvent":{"action":"run_command","value":"/trigger item_pick set 16"}}']}}
+
+#第三排：四件属性锁定道具
+setblock 1227 -54 90 minecraft:dark_oak_wall_sign[facing=south]{is_waxed:1b,front_text:{messages:['{"text":"属性锁定","color":"black","bold":true}','{"text":"锁定名誉","color":"aqua"}','{"text":"本局不再变化","color":"gray"}','{"text":"[右键选择]","color":"green","clickEvent":{"action":"run_command","value":"/trigger item_pick set 17"}}']}}
+setblock 1229 -54 90 minecraft:dark_oak_wall_sign[facing=south]{is_waxed:1b,front_text:{messages:['{"text":"属性锁定","color":"black","bold":true}','{"text":"锁定经济","color":"yellow"}','{"text":"本局不再变化","color":"gray"}','{"text":"[右键选择]","color":"green","clickEvent":{"action":"run_command","value":"/trigger item_pick set 18"}}']}}
+setblock 1231 -54 90 minecraft:dark_oak_wall_sign[facing=south]{is_waxed:1b,front_text:{messages:['{"text":"属性锁定","color":"black","bold":true}','{"text":"锁定民生","color":"red"}','{"text":"本局不再变化","color":"gray"}','{"text":"[右键选择]","color":"green","clickEvent":{"action":"run_command","value":"/trigger item_pick set 19"}}']}}
+setblock 1233 -54 90 minecraft:dark_oak_wall_sign[facing=south]{is_waxed:1b,front_text:{messages:['{"text":"属性锁定","color":"black","bold":true}','{"text":"锁定生态","color":"green"}','{"text":"本局不再变化","color":"gray"}','{"text":"[右键选择]","color":"green","clickEvent":{"action":"run_command","value":"/trigger item_pick set 20"}}']}}

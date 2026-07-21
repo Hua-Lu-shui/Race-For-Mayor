@@ -17,6 +17,10 @@ execute if score #current event matches 15 if score #event_15 event_used matches
 execute if score #current event matches 16 if score #event_16 event_used matches 1 run return run function rfm:event/generate
 execute if score #current event matches 17 if score #event_17 event_used matches 1 run return run function rfm:event/generate
 execute if score #current event matches 18 if score #event_18 event_used matches 1 run return run function rfm:event/generate
+execute if score #current event matches 19 if score #event_19 event_used matches 1 run return run function rfm:event/generate
+execute if score #current event matches 20 if score #event_20 event_used matches 1 run return run function rfm:event/generate
+execute if score #current event matches 21 if score #event_21 event_used matches 1 run return run function rfm:event/generate
+execute if score #current event matches 22 if score #event_22 event_used matches 1 run return run function rfm:event/generate
 
 #执行本次抽中的事件
 execute if score #current event matches 1 run function rfm:event/events/01_city_reputation_poll
@@ -37,3 +41,10 @@ execute if score #current event matches 15 run function rfm:event/events/15_fina
 execute if score #current event matches 16 run function rfm:event/events/16_community_coordination_failure
 execute if score #current event matches 17 run function rfm:event/events/17_research_controversy
 execute if score #current event matches 18 run function rfm:event/events/18_administrative_accountability
+execute if score #current event matches 19 run function rfm:event/events/19_reputation_poll_disclosure
+execute if score #current event matches 20 run function rfm:event/events/20_economic_data_disclosure
+execute if score #current event matches 21 run function rfm:event/events/21_welfare_review_disclosure
+execute if score #current event matches 22 run function rfm:event/events/22_ecology_monitor_disclosure
+
+#属性事件执行完毕后立即恢复所有锁定值
+execute as @a run function rfm:attribute/lock/enforce

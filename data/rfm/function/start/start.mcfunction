@@ -9,6 +9,11 @@ scoreboard players set #weight welfare_weight 5
 scoreboard players set #weight ecology_weight 5
 #新一局首次刷新时，以候选人的初始属性作为动画起点
 scoreboard players set @a attr_seen 0
+#新游戏清除上一局所有在线及离线候选人的属性锁定
+scoreboard players reset * fame_lock
+scoreboard players reset * economy_lock
+scoreboard players reset * welfare_lock
+scoreboard players reset * ecology_lock
 #在侧边栏展示各项权重
 scoreboard players operation 名誉 weight_display = #weight fame_weight
 scoreboard players operation 经济 weight_display = #weight economy_weight
@@ -18,6 +23,10 @@ scoreboard objectives setdisplay sidebar weight_display
 #清空上一局的事件抽取记录
 scoreboard players set #current event 0
 scoreboard players reset * event_used
+scoreboard players set #reveal_fame leader_reveal 0
+scoreboard players set #reveal_economy leader_reveal 0
+scoreboard players set #reveal_welfare leader_reveal 0
+scoreboard players set #reveal_ecology leader_reveal 0
 #重置集体行动与道具状态
 scoreboard players set #group_state group_state 0
 scoreboard players set #group_prompt group_prompt 0
@@ -26,6 +35,7 @@ scoreboard players set @a group_score 0
 scoreboard players set @a group_rank 0
 scoreboard players set @a item_held 0
 scoreboard players set @a item_selecting 0
+scoreboard players set @a swap_pending 0
 #重置上一局的最终结算状态
 scoreboard players set #settle_state settle_state 0
 scoreboard players set #settle_room settle_room 0

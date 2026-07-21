@@ -5,3 +5,4 @@ scoreboard objectives add item_pick trigger
 scoreboard objectives add item_available dummy
 scoreboard objectives add item_before dummy
 scoreboard objectives add item_delta dummy
+scoreboard objectives add swap_pending dummy

@@ -1,4 +1,6 @@
 #执行display函数对应的游戏流程
+#持续校正所有来源造成的异常权重
+function rfm:attribute/weight_minimum
 #游戏进行中，将四项权重同步到侧边栏
 execute if score #phase phase matches 1 run scoreboard players operation 名誉 weight_display = #weight fame_weight
 execute if score #phase phase matches 1 run scoreboard players operation 经济 weight_display = #weight economy_weight

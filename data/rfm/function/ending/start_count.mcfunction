@@ -1,4 +1,5 @@
 #结束黑屏并开始按办公室编号统计候选人票数
+function rfm:attribute/weight_minimum
 effect clear @a minecraft:blindness
 effect clear @a minecraft:darkness
 scoreboard players set #settle_state settle_state 3
