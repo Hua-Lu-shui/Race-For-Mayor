@@ -18,3 +18,7 @@ execute if score @s item_held matches 17 run setblock 1227 -54 90 air
 execute if score @s item_held matches 18 run setblock 1229 -54 90 air
 execute if score @s item_held matches 19 run setblock 1231 -54 90 air
 execute if score @s item_held matches 20 run setblock 1233 -54 90 air
+execute if score @s item_held matches 21 run setblock 1235 -54 90 air
+execute if score @s item_held matches 22 run setblock 1237 -54 90 air
+execute if score @s item_held matches 23 run setblock 1239 -54 90 air
+execute if score @s item_held matches 24 run setblock 1241 -54 90 air

@@ -1,0 +1,5 @@
+{
+  "parent": "rfm:title/root",
+  "display": {"icon": {"id": "minecraft:cake"}, "title": {"text": "幸福之城", "color": "red"}, "description": {"text": "民生超过80分｜+100票", "color": "gray"}, "frame": "goal", "show_toast": true, "announce_to_chat": false, "hidden": false},
+  "criteria": {"impossible": {"trigger": "minecraft:impossible"}}
+}

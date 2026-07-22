@@ -1,3 +1,5 @@
+#记录连续选择民生决策的称号进度
+function rfm:title/decision/welfare
 #重置决策属性选择计分板
 scoreboard players set @s attribute_choice 0
 #随机抽取民生决策任务编号

@@ -17,9 +17,9 @@ scoreboard objectives add attribute_missing dummy
 scoreboard objectives add action_player dummy
 #创建行动玩家限额计分板
 scoreboard objectives add action_quota dummy
-#创建行动模式计分板：1为单人任务，2为双人任务
+#创建行动模式计分板：当前固定为1（单人任务）
 scoreboard objectives add action_mode dummy
-#创建行动角色计分板：1为单人玩家，2为双人队长，3为双人队员
+#创建行动角色计分板：当前行动玩家固定为1
 scoreboard objectives add action_role dummy
 #创建行动执行顺序计分板
 scoreboard objectives add action_order dummy

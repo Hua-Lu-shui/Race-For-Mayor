@@ -2,6 +2,18 @@
 function rfm:phase/phase1
 #新游戏从第0轮准备状态开始；全员准备后round函数会递增为第1轮
 scoreboard players set #round round 0
+#重置本局称号进度；技术根成就只负责承载13个可见称号
+advancement revoke @a from rfm:title/root
+advancement grant @a only rfm:title/root
+scoreboard players set @a title_dec_fame 0
+scoreboard players set @a title_dec_econ 0
+scoreboard players set @a title_dec_welf 0
+scoreboard players set @a title_dec_eco 0
+scoreboard players set @a title_lead_fame 0
+scoreboard players set @a title_lead_econ 0
+scoreboard players set @a title_lead_welf 0
+scoreboard players set @a title_lead_eco 0
+scoreboard players set @a title_item_used 0
 #初始化四项属性权重
 scoreboard players set #weight fame_weight 5
 scoreboard players set #weight economy_weight 5

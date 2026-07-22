@@ -24,8 +24,7 @@ tag @a remove rfm_vote_tied
 tag @a remove rfm_random_winner
 scoreboard players set #settle_state settle_state 4
 
-title @a times 10 200 40
-title @a title [{"text":"统计完成，下一任市长是：","color":"gold","bold":true},{"selector":"@a[tag=rfm_winner]","separator":{"text":"、","color":"yellow"},"color":"yellow","bold":true},{"text":"！","color":"gold","bold":true}]
-title @a subtitle {"text":"本局游戏结束","color":"green","bold":true}
-tellraw @a [{"text":"统计完成，下一任市长是：","color":"gold","bold":true},{"selector":"@a[tag=rfm_winner]","separator":{"text":"、","color":"yellow"},"color":"yellow","bold":true},{"text":"！本局游戏结束。","color":"gold","bold":true}]
-playsound minecraft:ui.toast.challenge_complete master @a ~ ~ ~ 1.0 0.8
+title @a clear
+title @a times 10 40 10
+title @a title {"text":"统计完成","color":"gold","bold":true}
+schedule function rfm:ending/winner/next_mayor 60t replace

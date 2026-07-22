@@ -19,6 +19,7 @@ execute if score @s item_held matches 17 run tellraw @s {"text":"已选择：名
 execute if score @s item_held matches 18 run tellraw @s {"text":"已选择：经济锁定","color":"yellow","bold":true}
 execute if score @s item_held matches 19 run tellraw @s {"text":"已选择：民生锁定","color":"red","bold":true}
 execute if score @s item_held matches 20 run tellraw @s {"text":"已选择：生态锁定","color":"green","bold":true}
+execute if score @s item_held matches 21..24 run tellraw @s {"text":"已选择：属性窥探","color":"light_purple","bold":true}
 
 #将对应告示牌设为不可用并移除
 execute if score @s item_held matches 1 run scoreboard players set #item_1 item_available 0
@@ -41,6 +42,10 @@ execute if score @s item_held matches 17 run scoreboard players set #item_17 ite
 execute if score @s item_held matches 18 run scoreboard players set #item_18 item_available 0
 execute if score @s item_held matches 19 run scoreboard players set #item_19 item_available 0
 execute if score @s item_held matches 20 run scoreboard players set #item_20 item_available 0
+execute if score @s item_held matches 21 run scoreboard players set #item_21 item_available 0
+execute if score @s item_held matches 22 run scoreboard players set #item_22 item_available 0
+execute if score @s item_held matches 23 run scoreboard players set #item_23 item_available 0
+execute if score @s item_held matches 24 run scoreboard players set #item_24 item_available 0
 function rfm:item/select/remove_sign
 
 scoreboard players set @s item_selecting 0

@@ -1,0 +1,5 @@
+{
+  "parent": "rfm:title/root",
+  "display": {"icon": {"id": "minecraft:stick"}, "title": {"text": "大道至简", "color": "light_purple"}, "description": {"text": "整局不使用任何竞选道具｜+500票", "color": "gray"}, "frame": "challenge", "show_toast": true, "announce_to_chat": false, "hidden": false},
+  "criteria": {"impossible": {"trigger": "minecraft:impossible"}}
+}

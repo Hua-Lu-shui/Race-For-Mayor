@@ -1,3 +1,5 @@
+#记录连续选择经济决策的称号进度
+function rfm:title/decision/economy
 #重置决策属性选择计分板
 scoreboard players set @s attribute_choice 0
 #随机抽取经济决策任务编号

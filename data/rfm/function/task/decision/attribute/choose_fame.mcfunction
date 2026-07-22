@@ -1,3 +1,5 @@
+#记录连续选择名誉决策的称号进度
+function rfm:title/decision/fame
 #重置决策属性选择计分板
 scoreboard players set @s attribute_choice 0
 #随机抽取名誉决策任务编号
