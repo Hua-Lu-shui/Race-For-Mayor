@@ -1,4 +1,4 @@
-tellraw @a {"text":"—— 集体行动最终排名 ——","color":"gold","bold":true}
+tellraw @a {"text":"—— 令牌争夺最终排名 ——","color":"gold","bold":true}
 execute as @a[scores={group_rank=1}] run tellraw @a [{"text":"第1名  ","color":"gold","bold":true},{"selector":"@s","color":"white"},{"text":"  ·  ","color":"gray"},{"score":{"name":"@s","objective":"group_score"},"color":"yellow"},{"text":"分","color":"gray"}]
 execute as @a[scores={group_rank=2}] run tellraw @a [{"text":"第2名  ","color":"gray","bold":true},{"selector":"@s","color":"white"},{"text":"  ·  ","color":"gray"},{"score":{"name":"@s","objective":"group_score"},"color":"yellow"},{"text":"分","color":"gray"}]
 execute as @a[scores={group_rank=3}] run tellraw @a [{"text":"第3名  ","color":"gold"},{"selector":"@s","color":"white"},{"text":"  ·  ","color":"gray"},{"score":{"name":"@s","objective":"group_score"},"color":"yellow"},{"text":"分","color":"gray"}]

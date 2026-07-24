@@ -1,23 +1,24 @@
-﻿#执行tick函数对应的游戏流程
+#执行tick函数对应的游戏流程
 #确保所有玩家都具有默认属性
 execute as @a unless score @s candidate matches 0.. run function rfm:initialize/candidate
-#每tick恢复已锁定属性，覆盖所有事件、道具与任务造成的修改
-execute as @a run function rfm:attribute/lock/enforce
+#每tick只选择对应属性已锁定的玩家，覆盖事件、令牌与任务造成的修改
+execute as @a[scores={fame_lock=1}] run scoreboard players operation @s fame = @s fame_locked
+execute as @a[scores={economy_lock=1}] run scoreboard players operation @s economy = @s economy_locked
+execute as @a[scores={welfare_lock=1}] run scoreboard players operation @s welfare = @s welfare_locked
+execute as @a[scores={ecology_lock=1}] run scoreboard players operation @s ecology = @s ecology_locked
 #游戏进行中检查四项属性是否首次超过80分
 execute if score #phase phase matches 1 run function rfm:title/check/attributes
 #防止所有玩家受到常规伤害
-effect give @a minecraft:resistance infinite 4 true
-#防止所有玩家受到击退
 effect give @a minecraft:resistance infinite 4 true
 #确保所有玩家的饥饿值保持满格
 effect give @a minecraft:saturation infinite 0 true
 #等待全体玩家丢出结算时钟
 execute if score #settle_state settle_state matches 1 run function rfm:ending/ready/check
-#执行集体行动状态机
+#执行令牌争夺状态机
 execute if score #group_state group_state matches 1 run function rfm:collective/tick
-#等待下一轮期间检测玩家丢出的道具
+#等待下一轮期间检测玩家丢出的令牌
 execute if score #waiting next_round_ready matches 1 run function rfm:item/use/check_all
-#检测道具屋中当前玩家的告示牌选择
+#检测令牌屋中当前玩家的告示牌选择
 execute if entity @a[scores={item_selecting=1,item_pick=1..24}] run function rfm:item/select/check
 #选择倒计时有效时才检查玩家选择，避免非选择阶段重复执行整组判断
 execute if score #choose_time choose_time matches 1.. run function rfm:task/decision/attribute/check
@@ -27,6 +28,10 @@ execute if entity @a[scores={decision_choice=1..3}] run function rfm:task/decisi
 execute if score #choose_time choose_time matches 1.. run function rfm:task/action/attribute/check
 #选择阶段只记录任务选择，不运行行动任务状态机和传送逻辑
 execute if score #choose_time choose_time matches 1.. run return 0
+#所有行动任务正式开始前统一锁定坐标，但保留玩家视角转动
+execute as @a[scores={action_task=601..905}] run function rfm:task/action/sequence/lock_before_start
+#所有行动任务结束后，等待全体玩家丢出准备时钟
+execute if score #waiting next_round_ready matches 1 run function rfm:round/ready/check
 #——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 #执行名誉行动601“街头演讲”
 execute as @a[scores={action_task=601,speech_state=2}] at @s run function rfm:task/action/fame/fame_1/wait_ready
@@ -132,8 +137,3 @@ execute as @a[scores={action_task=805,manhole_state=2}] at @s run function rfm:t
 execute as @a[scores={action_task=805,manhole_state=3}] run function rfm:task/action/welfare/welfare_5/countdown
 execute as @a[scores={action_task=805,manhole_state=1}] at @s run function rfm:task/action/welfare/welfare_5/tick
 
-#所有行动任务正式开始前统一锁定坐标，但保留玩家视角转动
-execute as @a[scores={action_task=601..905}] run function rfm:task/action/sequence/lock_before_start
-#————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
-#所有行动任务结束后，等待全体玩家丢出准备时钟
-execute if score #waiting next_round_ready matches 1 run function rfm:round/ready/check

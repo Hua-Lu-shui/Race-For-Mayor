@@ -1,5 +1,5 @@
 #执行prepare函数对应的游戏流程
-#补做第10轮属性领先统计，并结算终局类称号
+#补做第10轮属性领先统计，并结算终局类头衔
 function rfm:title/leader/final_round
 function rfm:title/check/attributes
 execute as @a[scores={title_item_used=0}] unless entity @s[advancements={rfm:title/no_item=true}] run function rfm:title/award/no_item
@@ -9,7 +9,7 @@ scoreboard players set @a next_round_ready 0
 scoreboard players set @a next_round_clock 0
 clear @a minecraft:clock[minecraft:custom_data={next_round_ready:1}]
 kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{next_round_ready:1}}}}]
-#进入最终结算时销毁所有尚未使用的道具
+#进入最终结算时销毁所有尚未使用的令牌
 clear @a minecraft:heart_of_the_sea[minecraft:custom_data~{rfm_item:1}]
 kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{rfm_item:1}}}}]
 scoreboard players set @a item_held 0

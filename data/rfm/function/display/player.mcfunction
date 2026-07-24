@@ -1,5 +1,4 @@
-#锁定值优先恢复，并准备黑色或白色的动作栏数值
-function rfm:attribute/lock/enforce
+#准备黑色或白色的动作栏数值；锁定值已由主tick按锁定玩家恢复
 scoreboard players reset @s fame_show
 scoreboard players reset @s fame_lshow
 scoreboard players reset @s econ_show

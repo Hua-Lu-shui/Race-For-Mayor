@@ -1,4 +1,4 @@
-﻿#确认当前告示牌仍可选择，并记录玩家持有的道具编号
+#确认当前告示牌仍可选择，并记录玩家持有的令牌编号
 execute as @a[scores={item_selecting=1,item_pick=1}] if score #item_1 item_available matches 1 run scoreboard players set @s item_held 1
 execute as @a[scores={item_selecting=1,item_pick=2}] if score #item_2 item_available matches 1 run scoreboard players set @s item_held 2
 execute as @a[scores={item_selecting=1,item_pick=3}] if score #item_3 item_available matches 1 run scoreboard players set @s item_held 3
@@ -24,5 +24,5 @@ execute as @a[scores={item_selecting=1,item_pick=22}] if score #item_22 item_ava
 execute as @a[scores={item_selecting=1,item_pick=23}] if score #item_23 item_available matches 1 run scoreboard players set @s item_held 23
 execute as @a[scores={item_selecting=1,item_pick=24}] if score #item_24 item_available matches 1 run scoreboard players set @s item_held 24
 
-#只有成功取得尚未被选择的道具时才完成本名玩家的选择
+#只有成功取得尚未被选择的令牌时才完成本名玩家的选择
 execute as @a[scores={item_selecting=1,item_held=1..24}] run function rfm:item/select/complete

@@ -6,8 +6,7 @@ scoreboard objectives setdisplay sidebar
 title @a actionbar {"text":""}
 title @a clear
 
-#先黑屏两秒再传送；抵达市政厅三秒后揭开画面
-effect give @a minecraft:blindness 7 0 true
-effect give @a minecraft:darkness 7 0 true
+#先戴上南瓜头遮挡视野两秒再传送；抵达市政厅三秒后揭开画面
+item replace entity @a armor.head with minecraft:carved_pumpkin[minecraft:custom_name='{"text":"转场遮罩","color":"black","italic":false}',minecraft:custom_data={rfm_ending_blackout:1}] 1
 tellraw @a {"text":"所有候选人均已确认，最终票数统计即将开始……","color":"dark_gray","italic":true}
 schedule function rfm:ending/city_hall 40t replace

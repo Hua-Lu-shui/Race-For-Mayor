@@ -1,2 +1,2 @@
 #向全体玩家显示教程第11行并安排下一段
-tellraw @a [{"text":"某些轮次结束后会随机发生事件。事件会改变属性权重，也就是每项属性在最终计票中代表多少票。","color":"aqua"}]
+tellraw @a [{"text":"达成某些条件后还会获得","color":"#F2F4F8"},{"text":"头衔","color":"#C6A8FF","bold":true},{"text":"，头衔会帮你在结算时","color":"#F2F4F8"},{"text":"取得优势","color":"#FFD166","bold":true},{"text":"。","color":"#F2F4F8"}]

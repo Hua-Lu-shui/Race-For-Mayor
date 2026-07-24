@@ -1,4 +1,4 @@
-#限制玩家留在集体行动区域内
+#限制玩家留在令牌争夺区域内
 execute as @a at @s unless entity @s[x=1084,y=-64,z=84,dx=32,dy=10,dz=32] run tp @s 1100 -59 100
 
 #抵达正确响应区

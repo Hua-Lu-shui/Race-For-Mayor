@@ -1,5 +1,5 @@
 {
   "parent": "rfm:title/root",
-  "display": {"icon": {"id": "minecraft:name_tag"}, "title": {"text": "名满全城", "color": "aqua"}, "description": {"text": "名誉超过80分｜+100票", "color": "gray"}, "frame": "goal", "show_toast": true, "announce_to_chat": false, "hidden": false},
+  "display": {"icon": {"id": "minecraft:name_tag"}, "title": {"text": "名满全城", "color": "aqua"}, "description": {"text": "名誉超过80分｜+50票", "color": "gray"}, "frame": "goal", "show_toast": true, "announce_to_chat": false, "hidden": false},
   "criteria": {"impossible": {"trigger": "minecraft:impossible"}}
 }

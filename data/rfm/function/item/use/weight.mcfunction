@@ -20,7 +20,7 @@ execute if score #used_item item_held matches 11 run scoreboard players remove #
 execute if score #used_item item_held matches 12 run scoreboard players remove #weight ecology_weight 2
 function rfm:attribute/weight_minimum
 
-#计算实际变化量（削弱道具可能受到权重最低为1的限制）
+#计算实际变化量（削弱令牌可能受到权重最低为1的限制）
 execute if score #used_item item_held matches 5 run scoreboard players operation @s item_delta = #weight fame_weight
 execute if score #used_item item_held matches 6 run scoreboard players operation @s item_delta = #weight economy_weight
 execute if score #used_item item_held matches 7 run scoreboard players operation @s item_delta = #weight welfare_weight

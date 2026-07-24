@@ -1,4 +1,4 @@
-#创建集体行动流程、计分与排名计分板
+#创建令牌争夺流程、计分与排名计分板
 scoreboard objectives add group_state dummy
 scoreboard objectives add group_prompt dummy
 scoreboard objectives add group_target dummy

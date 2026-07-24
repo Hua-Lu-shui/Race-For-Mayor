@@ -1,4 +1,4 @@
-#创建道具持有、选择与实际变化记录计分板
+#创建令牌持有、选择与实际变化记录计分板
 scoreboard objectives add item_held dummy
 scoreboard objectives add item_selecting dummy
 scoreboard objectives add item_pick trigger

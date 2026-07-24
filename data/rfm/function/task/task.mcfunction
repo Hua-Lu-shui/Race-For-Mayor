@@ -3,6 +3,13 @@
 scoreboard objectives add decision_task dummy
 #创建决策方案选择触发器：1为A，2为B，3为C
 scoreboard objectives add decision_choice trigger
+#每位玩家在本局四类决策池中的已抽任务位图，以及抽取时使用的临时值
+scoreboard objectives add dec_used_fame dummy
+scoreboard objectives add dec_used_econ dummy
+scoreboard objectives add dec_used_welf dummy
+scoreboard objectives add dec_used_eco dummy
+scoreboard objectives add dec_used_check dummy
+scoreboard objectives add dec_used_bit dummy
 #创建行动任务计分板
 scoreboard objectives add action_task dummy
 #创建属性选择计分板
@@ -15,6 +22,10 @@ scoreboard objectives add attribute_option_3 dummy
 scoreboard objectives add attribute_missing dummy
 #创建行动玩家计分板
 scoreboard objectives add action_player dummy
+#记录玩家在本局中被抽为行动玩家的次数
+scoreboard objectives add action_draw_count dummy
+#记录本局已经抽取过的行动任务，以及四类行动各自的已用数量
+scoreboard objectives add action_task_used dummy
 #创建行动玩家限额计分板
 scoreboard objectives add action_quota dummy
 #创建行动模式计分板：当前固定为1（单人任务）

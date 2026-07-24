@@ -1,4 +1,4 @@
-#本函数以互换道具使用者为@s，#swap_target room记录目标办公室
+#本函数以互换令牌使用者为@s，#swap_target room记录目标办公室
 tag @a remove rfm_item_user
 tag @a remove rfm_item_target
 tag @s add rfm_item_user

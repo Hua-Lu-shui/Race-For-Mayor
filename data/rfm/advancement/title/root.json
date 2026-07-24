@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {"id": "minecraft:nether_star"},
-    "title": {"text": "竞选称号", "color": "gold", "bold": true},
+    "title": {"text": "竞选头衔", "color": "gold", "bold": true},
     "description": {"text": "在一局竞选中达成目标，赢取额外票数", "color": "gray"},
     "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
     "frame": "task",

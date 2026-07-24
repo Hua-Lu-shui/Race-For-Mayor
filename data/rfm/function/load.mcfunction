@@ -1,19 +1,15 @@
 #执行load函数对应的游戏流程
-#告示牌点击事件
-data modify block 61 -49 -22 front_text.messages[1] set value '{"text":"明星","color":"aqua","clickEvent":{"action":"run_command","value":"/function rfm:candidate/star"}}'
-data merge block 61 -49 -22 {front_text:{has_glowing_text:1b}}
-data modify block 63 -49 -22 front_text.messages[1] set value '{"text":"企业家","color":"yellow","clickEvent":{"action":"run_command","value":"/function rfm:candidate/business"}}'
-data merge block 63 -49 -22 {front_text:{has_glowing_text:1b}}
-data modify block 65 -49 -22 front_text.messages[1] set value '{"text":"社区领袖","color":"red","clickEvent":{"action":"run_command","value":"/function rfm:candidate/community"}}'
-data merge block 65 -49 -22 {front_text:{has_glowing_text:1b}}
-data modify block 67 -49 -22 front_text.messages[1] set value '{"text":"学者","color":"green","clickEvent":{"action":"run_command","value":"/function rfm:candidate/scholar"}}'
-data merge block 67 -49 -22 {front_text:{has_glowing_text:1b}}
-data modify block 69 -49 -22 front_text.messages[1] set value '{"text":"公务员","color":"light_purple","clickEvent":{"action":"run_command","value":"/function rfm:candidate/official"}}'
-data merge block 69 -49 -22 {front_text:{has_glowing_text:1b}}
-data modify block 55 -49 -22 front_text.messages[1] set value '{"text":"教程","color":"gold","bold":true,"clickEvent":{"action":"run_command","value":"/function rfm:tutorial/show"}}'
-data merge block 55 -49 -22 {front_text:{has_glowing_text:1b}}
-data modify block 49 -49 -22 front_text.messages[1] set value '{"text":"开始游戏","color":"white","bold":true,"clickEvent":{"action":"run_command","value":"/function rfm:schedule/start_check"}}'
-data merge block 49 -49 -22 {front_text:{has_glowing_text:1b}}
+#取消旧版本曾写入玩家数据的击退抗性基础值
+execute as @a run attribute @s minecraft:generic.knockback_resistance base set 0
+#生成带有对应文字、颜色与点击事件的告示牌
+setblock 61 -49 -22 minecraft:oak_wall_sign[facing=south,waterlogged=false]{front_text:{has_glowing_text:1b,messages:['""','{"text":"明星","color":"aqua","clickEvent":{"action":"run_command","value":"/function rfm:candidate/star"}}','""','""']}}
+setblock 63 -49 -22 minecraft:oak_wall_sign[facing=south,waterlogged=false]{front_text:{has_glowing_text:1b,messages:['""','{"text":"企业家","color":"yellow","clickEvent":{"action":"run_command","value":"/function rfm:candidate/business"}}','""','""']}}
+setblock 65 -49 -22 minecraft:oak_wall_sign[facing=south,waterlogged=false]{front_text:{has_glowing_text:1b,messages:['""','{"text":"社区领袖","color":"red","clickEvent":{"action":"run_command","value":"/function rfm:candidate/community"}}','""','""']}}
+setblock 67 -49 -22 minecraft:oak_wall_sign[facing=south,waterlogged=false]{front_text:{has_glowing_text:1b,messages:['""','{"text":"学者","color":"green","clickEvent":{"action":"run_command","value":"/function rfm:candidate/scholar"}}','""','""']}}
+setblock 69 -49 -22 minecraft:oak_wall_sign[facing=south,waterlogged=false]{front_text:{has_glowing_text:1b,messages:['""','{"text":"公务员","color":"light_purple","clickEvent":{"action":"run_command","value":"/function rfm:candidate/official"}}','""','""']}}
+setblock 55 -49 -22 minecraft:oak_wall_sign[facing=south,waterlogged=false]{front_text:{has_glowing_text:1b,messages:['""','{"text":"教程","color":"gold","bold":true,"clickEvent":{"action":"run_command","value":"/function rfm:tutorial/show"}}','""','""']}}
+#只有尚未开始游戏时才生成开始告示牌；游戏中/reload不会提前恢复
+execute unless score #start_pending phase matches 1 run setblock 49 -49 -22 minecraft:oak_wall_sign[facing=south,waterlogged=false]{front_text:{has_glowing_text:1b,messages:['""','{"text":"开始游戏","color":"white","bold":true,"clickEvent":{"action":"run_command","value":"/function rfm:schedule/start_check"}}','""','""']}}
 #——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 scoreboard objectives add room dummy
 #创建人数计分板

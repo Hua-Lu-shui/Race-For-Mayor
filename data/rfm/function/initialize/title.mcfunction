@@ -1,4 +1,4 @@
-#创建称号进度计分板
+#创建头衔进度计分板
 scoreboard objectives add title_dec_fame dummy
 scoreboard objectives add title_dec_econ dummy
 scoreboard objectives add title_dec_welf dummy

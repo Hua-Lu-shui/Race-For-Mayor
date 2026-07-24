@@ -36,11 +36,13 @@ scoreboard players set @a energy_state 0
 
 #统计当前玩家人数并决定行动玩家数量
 execute store result score #player_count player_count run execute if entity @a
+scoreboard players set #action_quota action_quota 0
 execute if score #player_count player_count matches ..4 run scoreboard players set #action_quota action_quota 1
 execute if score #player_count player_count matches 5..8 run scoreboard players set #action_quota action_quota 2
 
-#随机挑选行动玩家
-execute as @a[sort=random] if score #action_quota action_quota matches 1.. run function rfm:task/action/pick_player
+#没有本局记录的新玩家从0次开始；优先在被抽中次数最少的玩家中随机挑选
+scoreboard players add @a action_draw_count 0
+function rfm:task/action/select_fair_players
 
 #将本轮行动玩家统一设为单人任务
 function rfm:task/action/select_mode

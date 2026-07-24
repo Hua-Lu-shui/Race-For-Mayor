@@ -2,7 +2,19 @@
 function rfm:phase/phase1
 #新游戏从第0轮准备状态开始；全员准备后round函数会递增为第1轮
 scoreboard players set #round round 0
-#重置本局称号进度；技术根成就只负责承载13个可见称号
+#重置行动玩家公平抽取次数和行动任务去重记录
+scoreboard players reset * action_draw_count
+scoreboard players reset * action_task_used
+scoreboard players set #fame_used action_task_used 0
+scoreboard players set #economy_used action_task_used 0
+scoreboard players set #welfare_used action_task_used 0
+scoreboard players set #ecology_used action_task_used 0
+#清空所有在线及离线玩家上一局的决策任务抽取位图
+scoreboard players reset * dec_used_fame
+scoreboard players reset * dec_used_econ
+scoreboard players reset * dec_used_welf
+scoreboard players reset * dec_used_eco
+#重置本局头衔进度；技术根成就只负责承载13个可见头衔
 advancement revoke @a from rfm:title/root
 advancement grant @a only rfm:title/root
 scoreboard players set @a title_dec_fame 0
@@ -39,7 +51,7 @@ scoreboard players set #reveal_fame leader_reveal 0
 scoreboard players set #reveal_economy leader_reveal 0
 scoreboard players set #reveal_welfare leader_reveal 0
 scoreboard players set #reveal_ecology leader_reveal 0
-#重置集体行动与道具状态
+#重置令牌争夺与令牌状态
 scoreboard players set #group_state group_state 0
 scoreboard players set #group_prompt group_prompt 0
 scoreboard players set #current_picker item_selecting 0
@@ -60,7 +72,11 @@ clear @a minecraft:clock[minecraft:custom_data={settlement_ready:1}]
 kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{settlement_ready:1}}}}]
 clear @a minecraft:heart_of_the_sea[minecraft:custom_data~{rfm_item:1}]
 kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{rfm_item:1}}}}]
-#分配房间
+#传送前戴上全黑南瓜遮罩，避免玩家看到办公室传送和区块加载过程
+item replace entity @a armor.head with minecraft:carved_pumpkin[minecraft:custom_name='{"text":"转场遮罩","color":"black","italic":false}',minecraft:custom_data={rfm_ending_blackout:1}] 1
+#在黑屏遮罩下分配房间并传送
 function rfm:room/assign
+#抵达办公室一秒后揭开画面
+schedule function rfm:schedule/room_reveal 20t replace
 #入住提示
 schedule function rfm:schedule/room_delay 20t

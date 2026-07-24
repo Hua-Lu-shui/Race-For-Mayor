@@ -1,2 +1,2 @@
 #向全体玩家显示教程第2行并安排下一段
-tellraw @a [{"text":"欢迎来到“我要当市长”！你将扮演一名候选人，通过多轮任务争取市长职位。","color":"aqua"}]
+tellraw @a [{"text":"你将扮演候选人，经历 ","color":"#F2F4F8"},{"text":"10 轮","color":"#FFCB77","bold":true},{"text":"竞选，最终得票最高者当选","color":"#F2F4F8"},{"text":"下一任市长","color":"#FFD166","bold":true},{"text":"。","color":"#F2F4F8"}]

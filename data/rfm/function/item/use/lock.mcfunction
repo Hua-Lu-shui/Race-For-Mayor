@@ -1,4 +1,4 @@
-﻿#锁定当前属性值，本局不再受事件、道具或任务影响
+#锁定当前属性值，本局不再受事件、令牌或任务影响
 execute if score #used_item item_held matches 17 run scoreboard players set @s fame_lock 1
 execute if score #used_item item_held matches 17 run scoreboard players operation @s fame_locked = @s fame
 execute if score #used_item item_held matches 17 run scoreboard players operation @s fame_last = @s fame

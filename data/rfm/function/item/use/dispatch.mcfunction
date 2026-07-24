@@ -1,4 +1,4 @@
-#记录并标记道具使用者，先执行效果，再销毁道具和持有记录
+#记录并标记令牌使用者，先执行效果，再销毁令牌和持有记录
 tag @a remove rfm_item_user
 tag @s add rfm_item_user
 scoreboard players set @s title_item_used 1

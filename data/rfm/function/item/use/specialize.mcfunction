@@ -14,7 +14,11 @@ execute if score #used_item item_held matches 15 run scoreboard players remove @
 execute if score #used_item item_held matches 16 run scoreboard players add @a[tag=rfm_item_user] ecology 5
 execute if score #used_item item_held matches 16 run scoreboard players remove @a[tag=!rfm_item_user] ecology 5
 execute as @a[tag=!rfm_item_user] run function rfm:attribute/minimum
-execute as @a run function rfm:attribute/lock/enforce
+#只选择对应属性已锁定的玩家恢复锁定值，再计算其他玩家受到的实际影响
+execute as @a[scores={fame_lock=1}] run scoreboard players operation @s fame = @s fame_locked
+execute as @a[scores={economy_lock=1}] run scoreboard players operation @s economy = @s economy_locked
+execute as @a[scores={welfare_lock=1}] run scoreboard players operation @s welfare = @s welfare_locked
+execute as @a[scores={ecology_lock=1}] run scoreboard players operation @s ecology = @s ecology_locked
 
 #计算其他玩家受到的实际影响
 execute if score #used_item item_held matches 13 as @a[tag=!rfm_item_user] run scoreboard players operation @s item_delta = @s fame

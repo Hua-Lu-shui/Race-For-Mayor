@@ -1,4 +1,4 @@
-#生成集体行动基础场地（中心：1100 -59 100）
+#生成令牌争夺基础场地（中心：1100 -59 100）
 fill 1084 -59 84 1116 -50 116 minecraft:air
 fill 1084 -60 84 1116 -60 116 minecraft:polished_andesite
 fill 1097 -60 97 1103 -60 103 minecraft:white_concrete

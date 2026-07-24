@@ -1,15 +1,15 @@
-#按本局已获得的13个称号计算票数加成（以当前候选人为@s）
+#按本局已获得的13个头衔计算票数加成（以当前候选人为@s）
 scoreboard players set @s title_bonus 0
-execute if entity @s[advancements={rfm:title/decision_fame=true}] run scoreboard players add @s title_bonus 100
-execute if entity @s[advancements={rfm:title/decision_economy=true}] run scoreboard players add @s title_bonus 100
-execute if entity @s[advancements={rfm:title/decision_welfare=true}] run scoreboard players add @s title_bonus 100
-execute if entity @s[advancements={rfm:title/decision_ecology=true}] run scoreboard players add @s title_bonus 100
-execute if entity @s[advancements={rfm:title/leader_fame=true}] run scoreboard players add @s title_bonus 200
-execute if entity @s[advancements={rfm:title/leader_economy=true}] run scoreboard players add @s title_bonus 200
-execute if entity @s[advancements={rfm:title/leader_welfare=true}] run scoreboard players add @s title_bonus 200
-execute if entity @s[advancements={rfm:title/leader_ecology=true}] run scoreboard players add @s title_bonus 200
-execute if entity @s[advancements={rfm:title/score_fame=true}] run scoreboard players add @s title_bonus 100
-execute if entity @s[advancements={rfm:title/score_economy=true}] run scoreboard players add @s title_bonus 100
-execute if entity @s[advancements={rfm:title/score_welfare=true}] run scoreboard players add @s title_bonus 100
-execute if entity @s[advancements={rfm:title/score_ecology=true}] run scoreboard players add @s title_bonus 100
+execute if entity @s[advancements={rfm:title/decision_fame=true}] run scoreboard players add @s title_bonus 50
+execute if entity @s[advancements={rfm:title/decision_economy=true}] run scoreboard players add @s title_bonus 50
+execute if entity @s[advancements={rfm:title/decision_welfare=true}] run scoreboard players add @s title_bonus 50
+execute if entity @s[advancements={rfm:title/decision_ecology=true}] run scoreboard players add @s title_bonus 50
+execute if entity @s[advancements={rfm:title/leader_fame=true}] run scoreboard players add @s title_bonus 100
+execute if entity @s[advancements={rfm:title/leader_economy=true}] run scoreboard players add @s title_bonus 100
+execute if entity @s[advancements={rfm:title/leader_welfare=true}] run scoreboard players add @s title_bonus 100
+execute if entity @s[advancements={rfm:title/leader_ecology=true}] run scoreboard players add @s title_bonus 100
+execute if entity @s[advancements={rfm:title/score_fame=true}] run scoreboard players add @s title_bonus 50
+execute if entity @s[advancements={rfm:title/score_economy=true}] run scoreboard players add @s title_bonus 50
+execute if entity @s[advancements={rfm:title/score_welfare=true}] run scoreboard players add @s title_bonus 50
+execute if entity @s[advancements={rfm:title/score_ecology=true}] run scoreboard players add @s title_bonus 50
 execute if entity @s[advancements={rfm:title/no_item=true}] run scoreboard players add @s title_bonus 500
