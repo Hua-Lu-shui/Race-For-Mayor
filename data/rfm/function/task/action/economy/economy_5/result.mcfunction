@@ -3,6 +3,7 @@ scoreboard players set @s employment_state 4
 bossbar set rfm:employment_time visible false
 
 execute if score @s employment_completed matches 5 if score @s employment_time matches 300.. run scoreboard players add @s economy 8
+execute if score @s employment_completed matches 5 if score @s employment_time matches 300.. run function rfm:ability/military/perfect
 execute if score @s employment_completed matches 5 if score @s employment_time matches 300.. run tellraw @a [{"text":"【就业走访】","color":"yellow","bold":true},{"selector":"@s","color":"white"},{"text":" 快速为五名求职者找到合适岗位！","color":"gold","bold":true},{"text":" 经济 +8","color":"yellow"}]
 
 execute if score @s employment_completed matches 5 if score @s employment_time matches ..299 run scoreboard players add @s economy 6

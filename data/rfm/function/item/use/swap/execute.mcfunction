@@ -5,6 +5,10 @@ tag @s add rfm_item_user
 execute as @a if score @s room = #swap_target room run tag @s add rfm_item_target
 scoreboard players operation #used_item item_held = @s swap_pending
 scoreboard players set #swap_blocked item_before 0
+#律师可以主动使用互换令牌，但不能成为其他玩家的互换目标
+execute if entity @a[tag=rfm_item_target,scores={candidate=7}] run scoreboard players set #swap_blocked item_before 2
+execute if score #swap_blocked item_before matches 2 run function rfm:item/use/swap/lawyer_blocked
+execute if score #swap_blocked item_before matches 2 run return 0
 execute if score #used_item item_held matches 1 as @a[tag=rfm_item_user] if score @s fame_lock matches 1 run scoreboard players set #swap_blocked item_before 1
 execute if score #used_item item_held matches 1 as @a[tag=rfm_item_target] if score @s fame_lock matches 1 run scoreboard players set #swap_blocked item_before 1
 execute if score #used_item item_held matches 2 as @a[tag=rfm_item_user] if score @s economy_lock matches 1 run scoreboard players set #swap_blocked item_before 1

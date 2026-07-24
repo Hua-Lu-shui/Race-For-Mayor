@@ -5,6 +5,7 @@ tellraw @a [{"text":"河道取样结束，共完成 ","color":"white"},{"score":
 
 #6个取样点全部完成：完美，生态+8
 execute if score @s sample_progress matches 6 run scoreboard players add @s ecology 8
+execute if score @s sample_progress matches 6 run function rfm:ability/military/perfect
 execute if score @s sample_progress matches 6 run tellraw @a [{"text":"【河道取样】","color":"green","bold":true},{"selector":"@s","color":"white"},{"text":" 完美完成任务！","color":"gold","bold":true},{"text":" 生态 +8","color":"green"}]
 
 #4至5个取样点：通过，生态+6

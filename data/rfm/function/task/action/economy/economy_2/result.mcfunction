@@ -4,6 +4,7 @@ bossbar set rfm:negotiation_time visible false
 tellraw @a [{"text":"招商洽谈结束，共选择正确 ","color":"white"},{"score":{"name":"@s","objective":"negotiation_correct"},"color":"yellow"},{"text":" / 3 项。","color":"white"}]
 
 execute if score @s negotiation_round matches 3.. if score @s negotiation_correct matches 3 run scoreboard players add @s economy 6
+execute if score @s negotiation_round matches 3.. if score @s negotiation_correct matches 3 run function rfm:ability/military/perfect
 execute if score @s negotiation_round matches 3.. if score @s negotiation_correct matches 3 run tellraw @a [{"text":"【招商洽谈】","color":"yellow","bold":true},{"selector":"@s","color":"white"},{"text":" 完美完成任务！","color":"gold","bold":true},{"text":" 经济 +6","color":"yellow"}]
 
 execute if score @s negotiation_round matches 3.. if score @s negotiation_correct matches 2 run scoreboard players add @s economy 4

@@ -3,6 +3,7 @@ scoreboard players set @s audit_state 4
 bossbar set rfm:audit_time visible false
 
 execute if score @s audit_correct matches 1 if score @s audit_time matches 1200.. run scoreboard players add @s economy 8
+execute if score @s audit_correct matches 1 if score @s audit_time matches 1200.. run function rfm:ability/military/perfect
 execute if score @s audit_correct matches 1 if score @s audit_time matches 1200.. run tellraw @a [{"text":"【预算核查】","color":"yellow","bold":true},{"selector":"@s","color":"white"},{"text":" 快速查清虚假账目！","color":"gold","bold":true},{"text":" 经济 +8","color":"yellow"}]
 
 execute if score @s audit_correct matches 1 if score @s audit_time matches 1..1199 run scoreboard players add @s economy 6

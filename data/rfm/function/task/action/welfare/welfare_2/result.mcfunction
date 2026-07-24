@@ -6,6 +6,7 @@ clear @s minecraft:arrow
 
 #8秒内完赛：至少剩余140 tick
 execute if score @s fitness_checkpoint matches 5 if score @s fitness_time matches 140.. run scoreboard players add @s welfare 6
+execute if score @s fitness_checkpoint matches 5 if score @s fitness_time matches 140.. run function rfm:ability/military/perfect
 execute if score @s fitness_checkpoint matches 5 if score @s fitness_time matches 140.. run tellraw @a [{"text":"【全民健身挑战】","color":"red","bold":true},{"selector":"@s","color":"white"},{"text":" 以优秀成绩完成全部项目！","color":"gold","bold":true},{"text":" 民生 +6","color":"red"}]
 
 #12秒内完赛：剩余60至139 tick

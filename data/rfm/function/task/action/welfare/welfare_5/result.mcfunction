@@ -4,6 +4,7 @@ bossbar set rfm:manhole_time visible false
 
 #修复全部井盖且剩余至少20秒
 execute if score @s manhole_repaired matches 6.. if score @s manhole_time matches 400.. run scoreboard players add @s welfare 7
+execute if score @s manhole_repaired matches 6.. if score @s manhole_time matches 400.. run function rfm:ability/military/perfect
 execute if score @s manhole_repaired matches 6.. if score @s manhole_time matches 400.. run tellraw @a [{"text":"【井盖安全巡检】","color":"red","bold":true},{"selector":"@s","color":"white"},{"text":" 快速完成全部井盖维修！","color":"gold","bold":true},{"text":" 民生 +7","color":"red"}]
 
 #修复全部井盖但剩余不足20秒

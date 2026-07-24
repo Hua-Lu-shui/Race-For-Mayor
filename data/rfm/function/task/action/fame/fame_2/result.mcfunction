@@ -3,6 +3,7 @@ scoreboard players set @s visit_state 4
 bossbar set rfm:visit_time visible false
 
 execute if score @s visit_step matches 5.. if score @s visit_wrong matches 0 run scoreboard players add @s fame 6
+execute if score @s visit_step matches 5.. if score @s visit_wrong matches 0 run function rfm:ability/military/perfect
 execute if score @s visit_step matches 5.. if score @s visit_wrong matches 0 run tellraw @a [{"text":"【社区拜访】","color":"aqua","bold":true},{"selector":"@s","color":"white"},{"text":" 按照路线完成全部拜访！","color":"gold","bold":true},{"text":" 名誉 +6","color":"aqua"}]
 
 execute if score @s visit_step matches 5.. if score @s visit_wrong matches 1..2 run scoreboard players add @s fame 4

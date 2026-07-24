@@ -4,6 +4,7 @@ bossbar set rfm:exercise_time visible false
 
 #exercise_round为4时表示三轮全部完成
 execute if score @s exercise_round matches 4.. run scoreboard players add @s welfare 7
+execute if score @s exercise_round matches 4.. run function rfm:ability/military/perfect
 execute if score @s exercise_round matches 4.. run tellraw @a [{"text":"【课间操领队】","color":"red","bold":true},{"selector":"@s","color":"white"},{"text":" 完成全部三轮领操！","color":"gold","bold":true},{"text":" 民生 +7","color":"red"}]
 
 #停在第3轮表示完成两轮

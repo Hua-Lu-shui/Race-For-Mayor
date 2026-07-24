@@ -6,6 +6,7 @@ kill @e[type=minecraft:item,tag=rfm_cheer_egg]
 tellraw @a [{"text":"市民应援结束，最终得分：","color":"white"},{"score":{"name":"@s","objective":"cheer_score"},"color":"aqua"},{"text":" 分。","color":"white"}]
 
 execute if score @s cheer_score matches 18.. run scoreboard players add @s fame 6
+execute if score @s cheer_score matches 18.. run function rfm:ability/military/perfect
 execute if score @s cheer_score matches 18.. run tellraw @a [{"text":"【市民应援】","color":"aqua","bold":true},{"selector":"@s","color":"white"},{"text":" 在欢呼中完成了精彩互动！","color":"gold","bold":true},{"text":" 名誉 +6","color":"aqua"}]
 
 execute if score @s cheer_score matches 12..17 run scoreboard players add @s fame 4

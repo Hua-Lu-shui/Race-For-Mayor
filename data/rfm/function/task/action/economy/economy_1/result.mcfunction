@@ -3,6 +3,7 @@ bossbar set rfm:market_time visible false
 
 #选对且剩余至少20秒，即在20秒内完成：完美完成
 execute if score @s market_correct matches 1 if score @s market_time matches 400.. run scoreboard players add @s economy 8
+execute if score @s market_correct matches 1 if score @s market_time matches 400.. run function rfm:ability/military/perfect
 execute if score @s market_correct matches 1 if score @s market_time matches 400.. run tellraw @a [{"text":"【市场调研】","color":"yellow","bold":true},{"selector":"@s","color":"white"},{"text":" 完美完成任务！","color":"gold","bold":true},{"text":" 经济 +8","color":"yellow"}]
 
 #选对且剩余时间少于20秒，即在20至40秒内完成：普通完成
