@@ -4,6 +4,14 @@ scoreboard objectives add fame dummy "名誉"
 scoreboard objectives add economy dummy "经济"
 scoreboard objectives add welfare dummy "民生"
 scoreboard objectives add ecology dummy "生态"
+#角色能力使用的回合快照、比较值与触发标记
+scoreboard objectives add ability_fame dummy
+scoreboard objectives add ability_economy dummy
+scoreboard objectives add ability_welfare dummy
+scoreboard objectives add ability_ecology dummy
+scoreboard objectives add ability_min dummy
+scoreboard objectives add ability_max dummy
+scoreboard objectives add ability_trigger dummy
 #属性变化动画：记录旧值、差值和播放状态
 scoreboard objectives add fame_last dummy
 scoreboard objectives add econ_last dummy

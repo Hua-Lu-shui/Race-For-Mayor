@@ -1,4 +1,6 @@
 #执行prepare函数对应的游戏流程
+#最终结算能力只在正常结算入口执行一次
+execute unless score #abilities settle_state matches 1 run function rfm:ability/final/apply
 #补做第10轮属性领先统计，并结算终局类头衔
 function rfm:title/leader/final_round
 function rfm:title/check/attributes

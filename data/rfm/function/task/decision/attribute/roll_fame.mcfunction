@@ -37,3 +37,5 @@ execute if score @s decision_task matches 112 run function rfm:task/decision/fam
 execute if score @s decision_task matches 113 run function rfm:task/decision/fame/street_speech/street_speech_show
 execute if score @s decision_task matches 114 run function rfm:task/decision/fame/fact_check/fact_check_show
 execute if score @s decision_task matches 115 run function rfm:task/decision/fame/heritage_event/heritage_event_show
+#学者额外获知三个选项的精确属性影响
+function rfm:ability/scholar/preview

@@ -37,3 +37,5 @@ execute if score @s decision_task matches 212 run function rfm:task/decision/eco
 execute if score @s decision_task matches 213 run function rfm:task/decision/economy/port_trade/port_trade_show
 execute if score @s decision_task matches 214 run function rfm:task/decision/economy/skills_training/skills_training_show
 execute if score @s decision_task matches 215 run function rfm:task/decision/economy/public_procurement/public_procurement_show
+#学者额外获知三个选项的精确属性影响
+function rfm:ability/scholar/preview

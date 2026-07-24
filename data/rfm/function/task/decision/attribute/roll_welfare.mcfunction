@@ -37,3 +37,5 @@ execute if score @s decision_task matches 312 run function rfm:task/decision/wel
 execute if score @s decision_task matches 313 run function rfm:task/decision/welfare/disabled_access/disabled_access_show
 execute if score @s decision_task matches 314 run function rfm:task/decision/welfare/emergency_shelter/emergency_shelter_show
 execute if score @s decision_task matches 315 run function rfm:task/decision/welfare/library_hours/library_hours_show
+#学者额外获知三个选项的精确属性影响
+function rfm:ability/scholar/preview

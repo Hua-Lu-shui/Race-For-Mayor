@@ -11,3 +11,4 @@ function rfm:attribute/minimum
 title @s times 10 40 0
 title @s title [{"text":"你选择了：","color":"white"},{"text":"公务员","color":"light_purple"}]
 title @s subtitle [{"text":"名誉:10","color":"aqua"},{"text":" 经济:10","color":"yellow"},{"text":" 生态:10","color":"green"},{"text":" 民生:10","color":"red"}]
+tellraw @s [{"text":"【与时俱进】","color":"light_purple","bold":true},{"text":"最终结算时，最高属性对应权重 +1，最低属性对应权重 -1。","color":"white"}]

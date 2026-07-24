@@ -37,3 +37,5 @@ execute if score @s decision_task matches 412 run function rfm:task/decision/eco
 execute if score @s decision_task matches 413 run function rfm:task/decision/ecology/water_saving/water_saving_show
 execute if score @s decision_task matches 414 run function rfm:task/decision/ecology/eco_patrol/eco_patrol_show
 execute if score @s decision_task matches 415 run function rfm:task/decision/ecology/low_emission_zone/low_emission_zone_show
+#学者额外获知三个选项的精确属性影响
+function rfm:ability/scholar/preview

@@ -53,6 +53,9 @@ kill @e[type=minecraft:interaction,tag=rfm_manhole_interaction]
 kill @e[type=minecraft:marker,tag=rfm_manhole_anchor]
 kill @e[type=minecraft:text_display,tag=rfm_manhole_label]
 
+#任务阶段全部结束后统一结算明星与企业家的每轮能力
+function rfm:ability/round_end
+
 title @a title {"text":"本轮结束","color":"green","bold":true}
 
 #取消可能残留的自动开局安排
