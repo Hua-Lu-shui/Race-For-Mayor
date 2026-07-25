@@ -121,7 +121,6 @@ scoreboard objectives add sample_progress dummy
 scoreboard objectives add sample_time dummy
 scoreboard objectives add sample_state dummy
 scoreboard objectives add sample_delay dummy
-
 #生态行动903“公园维护”计分板
 scoreboard objectives add park_progress dummy
 scoreboard objectives add park_time dummy
