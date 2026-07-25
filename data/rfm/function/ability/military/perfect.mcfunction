@@ -24,5 +24,5 @@ execute if score @s ability_fame matches 1 run scoreboard players set @s ability
 execute if score @s ability_economy matches 1 run scoreboard players set @s ability_trigger 1
 execute if score @s ability_welfare matches 1 run scoreboard players set @s ability_trigger 1
 execute if score @s ability_ecology matches 1 run scoreboard players set @s ability_trigger 1
-execute if score @s ability_trigger matches 1 run tellraw @a [{"selector":"@s","color":"#8B5A2B","bold":true},{"text":" 的【孤注一掷】生效：最低属性翻倍。","color":"gold"}]
+execute if score @s ability_trigger matches 1 run tellraw @a [{"selector":"@s","color":"#B06D3C","bold":true},{"text":" 的【孤注一掷】生效：最低属性翻倍。","color":"gold"}]
 function rfm:attribute/minimum

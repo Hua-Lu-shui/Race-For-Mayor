@@ -1,4 +1,5 @@
 #将玩家设置为公务员候选人并初始化对应属性
+playsound minecraft:ui.button.click master @s ~ ~ ~ 0.7 1.0
 scoreboard players set @s candidate 5
 team join official @s
 

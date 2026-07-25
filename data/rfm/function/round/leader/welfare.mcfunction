@@ -16,3 +16,5 @@ execute if score #round round matches ..5 unless entity @a[tag=rfm_public_lead_w
 execute if score #round round matches 6.. if score #reveal_welfare leader_reveal matches 1 if entity @a[tag=rfm_public_lead_welfare] run tellraw @a [{"text":"民生领先：","color":"red","bold":true},{"selector":"@a[tag=rfm_public_lead_welfare]","separator":{"text":"、","color":"gray"},"color":"white","bold":true}]
 execute if score #round round matches 6.. if score #reveal_welfare leader_reveal matches 1 unless entity @a[tag=rfm_public_lead_welfare] run tellraw @a [{"text":"民生领先：","color":"red","bold":true},{"text":"无公开候选人","color":"gray"}]
 execute if score #round round matches 6.. unless score #reveal_welfare leader_reveal matches 1 if entity @a[tag=rfm_public_lead_welfare] run tellraw @a [{"text":"民生领先：","color":"red","bold":true},{"text":"？","color":"white","bold":true}]
+#为全体播放民生领先播报提示音（在每位玩家自身位置播放）
+execute as @a at @s run playsound minecraft:block.note_block.bell master @s ~ ~ ~ 0.8 1 1

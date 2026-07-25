@@ -1,4 +1,5 @@
 #隐藏本次选择，只向选择者确认令牌名称
+playsound minecraft:ui.button.click master @s ~ ~ ~ 0.7 1.0
 execute if score @s item_held matches 1 run tellraw @s {"text":"已选择：名誉互换","color":"aqua","bold":true}
 execute if score @s item_held matches 2 run tellraw @s {"text":"已选择：经济互换","color":"yellow","bold":true}
 execute if score @s item_held matches 3 run tellraw @s {"text":"已选择：民生互换","color":"red","bold":true}

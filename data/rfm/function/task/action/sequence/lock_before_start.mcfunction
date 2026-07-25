@@ -8,7 +8,7 @@ execute if score @s action_task matches 604 if score @s qa_state matches 2..3 ru
 execute if score @s action_task matches 605 if score @s cheer_state matches 2..3 run tp @s 720 -60 104
 
 #生态行动901—905
-execute if score @s action_task matches 901 if score @s emission_state matches 4..5 run tp @s 100 -60 110
+execute if score @s action_task matches 901 if score @s emission_state matches 4..5 run tp @s 120 -55 68
 execute if score @s action_task matches 902 if score @s sample_state matches 2..3 run tp @s 190 -60 100
 execute if score @s action_task matches 903 if score @s park_state matches 2..3 run tp @s 220 -60 96
 execute if score @s action_task matches 904 if score @s trash_state matches 2..3 run tp @s 248 -60 104

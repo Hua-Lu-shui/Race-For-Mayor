@@ -49,8 +49,9 @@ scoreboard objectives add fame_weight dummy "名誉权重"
 scoreboard objectives add economy_weight dummy "经济权重"
 scoreboard objectives add welfare_weight dummy "民生权重"
 scoreboard objectives add ecology_weight dummy "生态权重"
-#创建侧边栏权重显示计分板
-scoreboard objectives add weight_display dummy {"text":"✦ 属性权重 ✦","color":"gold","bold":true}
+#创建侧边栏权重显示计分板；标题不使用两侧装饰，缩短属性名与数值间的留白
+scoreboard objectives add weight_display dummy
+scoreboard objectives modify weight_display displayname {"text":"属性权重","color":"gold","bold":true}
 scoreboard objectives modify weight_display numberformat styled {"color":"white","bold":true}
 #设置侧边栏四项权重的名称样式
 team add weight_fame
@@ -83,7 +84,7 @@ team modify scholar prefix {"text":"[学者] ","color":"green"}
 team add official
 team modify official prefix {"text":"[公务员] ","color":"#D3D3D3"}
 team add military
-team modify military prefix {"text":"[军人] ","color":"#8B5A2B"}
+team modify military prefix {"text":"[军人] ","color":"#B06D3C"}
 team add lawyer
 team modify lawyer prefix {"text":"[律师] ","color":"light_purple"}
 

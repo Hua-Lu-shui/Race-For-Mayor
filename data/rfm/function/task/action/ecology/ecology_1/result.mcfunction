@@ -5,13 +5,11 @@ scoreboard players set @s emission_state 3
 execute if score @s emission_correct matches 10 run scoreboard players add @s ecology 8
 execute if score @s emission_correct matches 10 run function rfm:ability/military/perfect
 execute if score @s emission_correct matches 10 run title @s title {"text":"完美完成","color":"gold","bold":true}
-execute if score @s emission_correct matches 10 run title @s subtitle {"text":"生态 +8","color":"green"}
 execute if score @s emission_correct matches 10 run tellraw @a [{"text":"【排放巡查】","color":"green","bold":true},{"selector":"@s","color":"white"},{"text":" 完美完成任务！","color":"gold","bold":true},{"text":" 生态 +8","color":"green"}]
 
 #6至9次正确：通过，生态+6
 execute if score @s emission_correct matches 6..9 run scoreboard players add @s ecology 6
 execute if score @s emission_correct matches 6..9 run title @s title {"text":"任务通过","color":"green","bold":true}
-execute if score @s emission_correct matches 6..9 run title @s subtitle {"text":"生态 +6","color":"green"}
 execute if score @s emission_correct matches 6..9 run tellraw @a [{"text":"【排放巡查】","color":"green","bold":true},{"selector":"@s","color":"white"},{"text":" 通过任务！","color":"green","bold":true},{"text":" 生态 +6","color":"green"}]
 
 #0至5次正确：失败，不改变任何属性

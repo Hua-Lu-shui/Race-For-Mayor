@@ -2,16 +2,18 @@
 #取消旧版本曾写入玩家数据的击退抗性基础值
 execute as @a run attribute @s minecraft:generic.knockback_resistance base set 0
 #生成带有对应文字、颜色与点击事件的告示牌
+# /reload后回到可重新开局状态，使开始游戏告示牌可以立即使用
+scoreboard players set #start_pending phase 0
 setblock 61 -49 -22 minecraft:oak_wall_sign[facing=south,waterlogged=false]{front_text:{has_glowing_text:1b,messages:['""','{"text":"明星","color":"aqua","clickEvent":{"action":"run_command","value":"/function rfm:candidate/star"}}','""','""']}}
 setblock 63 -49 -22 minecraft:oak_wall_sign[facing=south,waterlogged=false]{front_text:{has_glowing_text:1b,messages:['""','{"text":"企业家","color":"yellow","clickEvent":{"action":"run_command","value":"/function rfm:candidate/business"}}','""','""']}}
 setblock 65 -49 -22 minecraft:oak_wall_sign[facing=south,waterlogged=false]{front_text:{has_glowing_text:1b,messages:['""','{"text":"社区领袖","color":"red","clickEvent":{"action":"run_command","value":"/function rfm:candidate/community"}}','""','""']}}
 setblock 67 -49 -22 minecraft:oak_wall_sign[facing=south,waterlogged=false]{front_text:{has_glowing_text:1b,messages:['""','{"text":"学者","color":"green","clickEvent":{"action":"run_command","value":"/function rfm:candidate/scholar"}}','""','""']}}
 setblock 69 -49 -22 minecraft:oak_wall_sign[facing=south,waterlogged=false]{front_text:{has_glowing_text:1b,messages:['""','{"text":"公务员","color":"#D3D3D3","clickEvent":{"action":"run_command","value":"/function rfm:candidate/official"}}','""','""']}}
-setblock 71 -49 -22 minecraft:oak_wall_sign[facing=south,waterlogged=false]{front_text:{has_glowing_text:1b,messages:['""','{"text":"军人","color":"#8B5A2B","clickEvent":{"action":"run_command","value":"/function rfm:candidate/military"}}','""','""']}}
+setblock 71 -49 -22 minecraft:oak_wall_sign[facing=south,waterlogged=false]{front_text:{has_glowing_text:1b,messages:['""','{"text":"军人","color":"#B06D3C","clickEvent":{"action":"run_command","value":"/function rfm:candidate/military"}}','""','""']}}
 setblock 73 -49 -22 minecraft:oak_wall_sign[facing=south,waterlogged=false]{front_text:{has_glowing_text:1b,messages:['""','{"text":"律师","color":"light_purple","clickEvent":{"action":"run_command","value":"/function rfm:candidate/lawyer"}}','""','""']}}
 setblock 55 -49 -22 minecraft:oak_wall_sign[facing=south,waterlogged=false]{front_text:{has_glowing_text:1b,messages:['""','{"text":"教程","color":"gold","bold":true,"clickEvent":{"action":"run_command","value":"/function rfm:tutorial/show"}}','""','""']}}
-#只有尚未开始游戏时才生成开始告示牌；游戏中/reload不会提前恢复
-execute unless score #start_pending phase matches 1 run setblock 49 -49 -22 minecraft:oak_wall_sign[facing=south,waterlogged=false]{front_text:{has_glowing_text:1b,messages:['""','{"text":"开始游戏","color":"white","bold":true,"clickEvent":{"action":"run_command","value":"/function rfm:schedule/start_check"}}','""','""']}}
+#每次/reload都重新显现开始游戏告示牌；游戏中点击会由start_check的状态锁拦截
+setblock 49 -49 -22 minecraft:oak_wall_sign[facing=south,waterlogged=false]{is_waxed:1b,front_text:{has_glowing_text:1b,messages:['""','{"text":"开始游戏","color":"white","bold":true,"clickEvent":{"action":"run_command","value":"/function rfm:schedule/start_check"}}','""','""']}}
 #——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 scoreboard objectives add room dummy
 #创建人数计分板

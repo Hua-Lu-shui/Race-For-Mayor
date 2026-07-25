@@ -1,6 +1,7 @@
 #执行start check函数对应的游戏流程
 #开始倒计时或本局进行中时，不允许再次触发开始流程
 execute if score #start_pending phase matches 1 run return 0
+playsound minecraft:ui.button.click master @s ~ ~ ~ 0.7 1.0
 #统计当前在线玩家人数
 execute store result score #player_count player_count run execute if entity @a
 #判断当前在线玩家人数是否小于等于8，如果是则执行rfm:schedule/start_delay函数，否则显示人数过多的提示信息
