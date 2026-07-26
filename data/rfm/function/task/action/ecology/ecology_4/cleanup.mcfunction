@@ -14,10 +14,10 @@ clear @s minecraft:leather[minecraft:custom_data={trash_item:1}]
 kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{trash_ready:1}}}}]
 kill @e[type=minecraft:item_display,tag=rfm_trash_bin_model]
 
-data remove block 244 -60 100 Items
-data remove block 252 -60 100 Items
-data remove block 244 -60 108 Items
-data remove block 252 -60 108 Items
+data remove block 236 -59 65 Items
+data remove block 232 -59 69 Items
+data remove block 236 -59 73 Items
+data remove block 240 -59 69 Items
 
 scoreboard players set @s trash_round 0
 scoreboard players set @s trash_item_id 0

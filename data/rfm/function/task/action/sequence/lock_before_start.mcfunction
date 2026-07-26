@@ -11,7 +11,7 @@ execute if score @s action_task matches 605 if score @s cheer_state matches 2..3
 execute if score @s action_task matches 901 if score @s emission_state matches 4..5 run tp @s 120 -55 68
 execute if score @s action_task matches 902 if score @s sample_state matches 2..3 run tp @s 144 -57 69
 execute if score @s action_task matches 903 if score @s park_state matches 2..3 run tp @s 206 -58 63
-execute if score @s action_task matches 904 if score @s trash_state matches 2..3 run tp @s 248 -60 104
+execute if score @s action_task matches 904 if score @s trash_state matches 2..3 run tp @s 236 -59 69
 execute if score @s action_task matches 905 if score @s energy_state matches 2..3 run tp @s 272 -60 110
 
 #经济行动701—705

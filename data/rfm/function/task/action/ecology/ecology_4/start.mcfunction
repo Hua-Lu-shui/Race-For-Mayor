@@ -2,19 +2,22 @@
 scoreboard players set #waiting next_round_ready 0
 scoreboard players set @a next_round_clock 0
 
-#所有玩家进入观战位置，行动玩家进入四个分类箱中央
+#所有玩家进入观战位置，行动玩家进入四个垃圾桶中央
 gamemode adventure @a
-tp @a 248 -54 116 180 25
-tp @s 248 -60 104 180 0
+tp @a 236 -53 66 0 30
+tp @s 236 -59 69 180 0
 
-#搭建临时测试平台，避免当前坐标没有地面导致玩家坠落
-fill 240 -61 96 256 -61 112 minecraft:smooth_stone replace
+#清除容器正上方的阻挡方块，确保陷阱箱可以打开
+setblock 236 -58 65 minecraft:air
+setblock 232 -58 69 minecraft:air
+setblock 236 -58 73 minecraft:air
+setblock 240 -58 69 minecraft:air
 
-#放置四个独立箱子并清除旧内容
-setblock 244 -60 100 minecraft:chest[facing=south,type=single] replace
-setblock 252 -60 100 minecraft:chest[facing=south,type=single] replace
-setblock 244 -60 108 minecraft:chest[facing=north,type=single] replace
-setblock 252 -60 108 minecraft:chest[facing=north,type=single] replace
+#放置四个可储物的陷阱箱；资源包会隐藏箱体，只显示垃圾桶模型
+setblock 236 -59 65 minecraft:trapped_chest[facing=south,type=single] replace
+setblock 232 -59 69 minecraft:trapped_chest[facing=east,type=single] replace
+setblock 236 -59 73 minecraft:trapped_chest[facing=north,type=single] replace
+setblock 240 -59 69 minecraft:trapped_chest[facing=west,type=single] replace
 function rfm:task/action/ecology/ecology_4/create_labels
 function rfm:task/action/ecology/ecology_4/create_models
 
@@ -29,8 +32,8 @@ scoreboard players set @s trash_delay 0
 scoreboard players set @s trash_state 2
 
 tellraw @a [{"text":"【生态行动】垃圾分类督导","color":"green","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]
-tellraw @a {"text":"行动玩家会依次获得10件原版物品。打开对应类别的箱子，把物品放进去；每件物品无论对错只判断一次。","color":"white"}
-tellraw @s [{"text":"箱子分类：","color":"yellow","bold":true},{"text":"可回收物、","color":"aqua"},{"text":"有害垃圾、","color":"red"},{"text":"厨余垃圾、","color":"green"},{"text":"其他垃圾","color":"gray"}]
+tellraw @a {"text":"行动玩家会依次获得10件垃圾。打开对应类别的垃圾桶，进行正确的垃圾分类；每件物品无论对错只判断一次。","color":"white"}
+tellraw @s [{"text":"垃圾桶分类：","color":"yellow","bold":true},{"text":"可回收物、","color":"aqua"},{"text":"有害垃圾、","color":"red"},{"text":"厨余垃圾、","color":"green"},{"text":"其他垃圾","color":"gray"}]
 
 title @s clear
 title @s title {"text":"垃圾分类督导","color":"green","bold":true}
