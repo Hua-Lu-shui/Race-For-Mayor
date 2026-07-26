@@ -5,13 +5,12 @@ scoreboard players set #round round 0
 #允许本局最终结算能力执行一次
 scoreboard players set #abilities settle_state 0
 scoreboard players set @a ability_trigger 0
-#重置行动玩家公平抽取次数和行动任务去重记录
+#重置行动玩家公平抽取次数和每位玩家的行动任务去重记录
 scoreboard players reset * action_draw_count
-scoreboard players reset * action_task_used
-scoreboard players set #fame_used action_task_used 0
-scoreboard players set #economy_used action_task_used 0
-scoreboard players set #welfare_used action_task_used 0
-scoreboard players set #ecology_used action_task_used 0
+scoreboard players reset * action_used_fame
+scoreboard players reset * action_used_econ
+scoreboard players reset * action_used_welf
+scoreboard players reset * action_used_eco
 #清空所有在线及离线玩家上一局的决策任务抽取位图
 scoreboard players reset * dec_used_fame
 scoreboard players reset * dec_used_econ

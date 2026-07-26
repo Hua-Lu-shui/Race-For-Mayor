@@ -12,6 +12,7 @@ clear @s minecraft:melon_slice[minecraft:custom_data={trash_item:1}]
 clear @s minecraft:brick[minecraft:custom_data={trash_item:1}]
 clear @s minecraft:leather[minecraft:custom_data={trash_item:1}]
 kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{trash_ready:1}}}}]
+kill @e[type=minecraft:item_display,tag=rfm_trash_bin_model]
 
 data remove block 244 -60 100 Items
 data remove block 252 -60 100 Items

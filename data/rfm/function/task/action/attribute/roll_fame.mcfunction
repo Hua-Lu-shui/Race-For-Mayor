@@ -1,7 +1,14 @@
-#在本局尚未出现的名誉行动中随机抽取一个
+#随机抽取名誉行动，并用位图判断该玩家本局是否已经抽到过
+scoreboard players add @s action_used_fame 0
 execute store result score @s action_task run random value 601..605
-execute if score @s action_task matches 601 if score #601 action_task_used matches 1 run function rfm:task/action/attribute/roll_fame
-execute if score @s action_task matches 602 if score #602 action_task_used matches 1 run function rfm:task/action/attribute/roll_fame
-execute if score @s action_task matches 603 if score #603 action_task_used matches 1 run function rfm:task/action/attribute/roll_fame
-execute if score @s action_task matches 604 if score #604 action_task_used matches 1 run function rfm:task/action/attribute/roll_fame
-execute if score @s action_task matches 605 if score #605 action_task_used matches 1 run function rfm:task/action/attribute/roll_fame
+scoreboard players set @s action_used_bit 1
+execute if score @s action_task matches 602 run scoreboard players set @s action_used_bit 2
+execute if score @s action_task matches 603 run scoreboard players set @s action_used_bit 4
+execute if score @s action_task matches 604 run scoreboard players set @s action_used_bit 8
+execute if score @s action_task matches 605 run scoreboard players set @s action_used_bit 16
+scoreboard players operation @s action_used_chk = @s action_used_fame
+scoreboard players operation @s action_used_chk /= @s action_used_bit
+scoreboard players set #two action_used_bit 2
+scoreboard players operation @s action_used_chk %= #two action_used_bit
+execute if score @s action_used_chk matches 1 run return run function rfm:task/action/attribute/roll_fame
+scoreboard players operation @s action_used_fame += @s action_used_bit

@@ -61,7 +61,10 @@ scoreboard players set @a energy_state 0
 #重置跨局记录和属性锁定；下一局开始函数会再次初始化完整局内状态
 scoreboard players reset * event_used
 scoreboard players reset * action_draw_count
-scoreboard players reset * action_task_used
+scoreboard players reset * action_used_fame
+scoreboard players reset * action_used_econ
+scoreboard players reset * action_used_welf
+scoreboard players reset * action_used_eco
 scoreboard players reset * dec_used_fame
 scoreboard players reset * dec_used_econ
 scoreboard players reset * dec_used_welf

@@ -1,16 +1,9 @@
-#临时垃圾分类场地：中心约为248 -60 104，地图完成后替换坐标
+#垃圾分类场地
 scoreboard players set #waiting next_round_ready 0
 scoreboard players set @a next_round_clock 0
 
 #所有玩家进入观战位置，行动玩家进入四个分类箱中央
 gamemode adventure @a
-#生成可自由走动的空中观战平台
-fill 243 -55 112 253 -55 120 minecraft:light_gray_stained_glass
-setblock 248 -55 116 minecraft:sea_lantern
-fill 243 -54 112 253 -52 112 minecraft:glass
-fill 243 -54 120 253 -52 120 minecraft:glass
-fill 243 -54 113 243 -52 119 minecraft:glass
-fill 253 -54 113 253 -52 119 minecraft:glass
 tp @a 248 -54 116 180 25
 tp @s 248 -60 104 180 0
 
@@ -23,6 +16,7 @@ setblock 252 -60 100 minecraft:chest[facing=south,type=single] replace
 setblock 244 -60 108 minecraft:chest[facing=north,type=single] replace
 setblock 252 -60 108 minecraft:chest[facing=north,type=single] replace
 function rfm:task/action/ecology/ecology_4/create_labels
+function rfm:task/action/ecology/ecology_4/create_models
 
 #初始化任务状态，等待行动玩家确认准备
 scoreboard players set @s trash_round 0
@@ -40,4 +34,4 @@ tellraw @s [{"text":"箱子分类：","color":"yellow","bold":true},{"text":"可
 
 title @s clear
 title @s title {"text":"垃圾分类督导","color":"green","bold":true}
-item replace entity @s hotbar.4 with minecraft:map[minecraft:custom_name='{"text":"准备完成","color":"green","bold":true,"italic":false}',minecraft:lore=['{"text":"按Q丢出后开始倒计时","color":"gray","italic":false}'],minecraft:custom_data={trash_ready:1}] 1
+item replace entity @s hotbar.4 with minecraft:map[minecraft:custom_name='{"text":"准备完成","color":"green","bold":true,"italic":false}',minecraft:lore=['{"text":"扔出后开始任务","color":"gray","italic":false}'],minecraft:custom_data={trash_ready:1}] 1

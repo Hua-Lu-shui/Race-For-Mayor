@@ -1,10 +1,10 @@
-#临时河道坐标仅用于传送、编号和检测；河道场地由地图提前建造
+#河道场地
 #进入行动任务时关闭可能残留的下一轮等待状态
 scoreboard players set #waiting next_round_ready 0
 scoreboard players set @a next_round_clock 0
 #所有玩家进入观战位置，行动玩家站到河道起点
 gamemode adventure @a
-tp @a 168 -59 74 -90 30
+tp @a 158 -48 74 90 30
 tp @s 144 -57 69 0 0
 
 function rfm:task/action/ecology/ecology_2/create_labels

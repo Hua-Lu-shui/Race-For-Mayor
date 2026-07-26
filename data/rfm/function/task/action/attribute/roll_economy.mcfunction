@@ -1,7 +1,14 @@
-#在本局尚未出现的经济行动中随机抽取一个
+#随机抽取经济行动，并用位图判断该玩家本局是否已经抽到过
+scoreboard players add @s action_used_econ 0
 execute store result score @s action_task run random value 701..705
-execute if score @s action_task matches 701 if score #701 action_task_used matches 1 run function rfm:task/action/attribute/roll_economy
-execute if score @s action_task matches 702 if score #702 action_task_used matches 1 run function rfm:task/action/attribute/roll_economy
-execute if score @s action_task matches 703 if score #703 action_task_used matches 1 run function rfm:task/action/attribute/roll_economy
-execute if score @s action_task matches 704 if score #704 action_task_used matches 1 run function rfm:task/action/attribute/roll_economy
-execute if score @s action_task matches 705 if score #705 action_task_used matches 1 run function rfm:task/action/attribute/roll_economy
+scoreboard players set @s action_used_bit 1
+execute if score @s action_task matches 702 run scoreboard players set @s action_used_bit 2
+execute if score @s action_task matches 703 run scoreboard players set @s action_used_bit 4
+execute if score @s action_task matches 704 run scoreboard players set @s action_used_bit 8
+execute if score @s action_task matches 705 run scoreboard players set @s action_used_bit 16
+scoreboard players operation @s action_used_chk = @s action_used_econ
+scoreboard players operation @s action_used_chk /= @s action_used_bit
+scoreboard players set #two action_used_bit 2
+scoreboard players operation @s action_used_chk %= #two action_used_bit
+execute if score @s action_used_chk matches 1 run return run function rfm:task/action/attribute/roll_economy
+scoreboard players operation @s action_used_econ += @s action_used_bit

@@ -24,8 +24,13 @@ scoreboard objectives add attribute_missing dummy
 scoreboard objectives add action_player dummy
 #记录玩家在本局中被抽为行动玩家的次数
 scoreboard objectives add action_draw_count dummy
-#记录本局已经抽取过的行动任务，以及四类行动各自的已用数量
-scoreboard objectives add action_task_used dummy
+#每位玩家在本局四类行动池中的已抽任务位图，以及抽取时使用的临时值
+scoreboard objectives add action_used_fame dummy
+scoreboard objectives add action_used_econ dummy
+scoreboard objectives add action_used_welf dummy
+scoreboard objectives add action_used_eco dummy
+scoreboard objectives add action_used_chk dummy
+scoreboard objectives add action_used_bit dummy
 #创建行动玩家限额计分板
 scoreboard objectives add action_quota dummy
 #创建行动模式计分板：当前固定为1（单人任务）

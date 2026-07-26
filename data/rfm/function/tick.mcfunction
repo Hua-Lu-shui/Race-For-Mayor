@@ -8,12 +8,6 @@ execute as @a[scores={welfare_lock=1}] run scoreboard players operation @s welfa
 execute as @a[scores={ecology_lock=1}] run scoreboard players operation @s ecology = @s ecology_locked
 #游戏进行中检查四项属性是否首次超过80分
 execute if score #phase phase matches 1 run function rfm:title/check/attributes
-#防止所有玩家受到常规伤害
-effect give @a minecraft:resistance infinite 4 true
-#保护地图中的画，避免被玩家攻击破坏
-execute as @e[type=minecraft:painting] run data merge entity @s {Invulnerable:1b}
-#确保所有玩家的饥饿值保持满格
-effect give @a minecraft:saturation infinite 0 true
 #等待全体玩家丢出结算时钟
 execute if score #settle_state settle_state matches 1 run function rfm:ending/ready/check
 #执行令牌争夺状态机
