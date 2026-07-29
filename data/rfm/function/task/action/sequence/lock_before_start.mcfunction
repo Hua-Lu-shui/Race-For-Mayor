@@ -12,7 +12,7 @@ execute if score @s action_task matches 901 if score @s emission_state matches 4
 execute if score @s action_task matches 902 if score @s sample_state matches 2..3 run tp @s 144 -57 69
 execute if score @s action_task matches 903 if score @s park_state matches 2..3 run tp @s 206 -58 63
 execute if score @s action_task matches 904 if score @s trash_state matches 2..3 run tp @s 236 -59 69
-execute if score @s action_task matches 905 if score @s energy_state matches 2..3 run tp @s 272 -60 110
+execute if score @s action_task matches 905 if score @s energy_state matches 2..3 run tp @s 263 -59 76
 
 #经济行动701—705
 execute if score @s action_task matches 701 if score @s market_state matches 2..3 run tp @s 298 -60 114
