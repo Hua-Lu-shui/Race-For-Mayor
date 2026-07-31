@@ -15,7 +15,7 @@ execute if score @s action_task matches 904 if score @s trash_state matches 2..3
 execute if score @s action_task matches 905 if score @s energy_state matches 2..3 run tp @s 263 -59 76
 
 #经济行动701—705
-execute if score @s action_task matches 701 if score @s market_state matches 2..3 run tp @s 298 -60 114
+execute if score @s action_task matches 701 if score @s market_state matches 2..3 run tp @s 114 -59 22
 execute if score @s action_task matches 702 if score @s negotiation_state matches 2..3 run tp @s 328 -60 112
 execute if score @s action_task matches 703 if score @s audit_state matches 2..3 run tp @s 360 -60 112
 execute if score @s action_task matches 704 if score @s supply_state matches 2..3 run tp @s 403 -60 108

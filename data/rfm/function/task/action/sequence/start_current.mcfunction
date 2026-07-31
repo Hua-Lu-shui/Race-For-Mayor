@@ -1,4 +1,4 @@
-#先确认当前顺序仍有在线的行动玩家，防止玩家离线后流程卡死
+#确认当前顺序仍有在线的行动玩家，防止玩家离线后流程卡死
 scoreboard players set #current_found action_order 0
 execute as @a if score @s action_order = #current_action action_order if score @s action_role matches 1 run scoreboard players set #current_found action_order 1
 

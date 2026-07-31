@@ -1,0 +1,22 @@
+#按每个木质柜台的正面分别固定商贩朝向
+#0=南，90=西，180=北，-90=东
+execute as @e[type=minecraft:villager,tag=rfm_market_v01,limit=1] at @s run tp @s ~ ~ ~ 180 0
+execute as @e[type=minecraft:villager,tag=rfm_market_v02,limit=1] at @s run tp @s ~ ~ ~ -90 0
+execute as @e[type=minecraft:villager,tag=rfm_market_v03,limit=1] at @s run tp @s ~ ~ ~ -90 0
+execute as @e[type=minecraft:villager,tag=rfm_market_v04,limit=1] at @s run tp @s ~ ~ ~ -90 0
+execute as @e[type=minecraft:villager,tag=rfm_market_v05,limit=1] at @s run tp @s ~ ~ ~ 90 0
+execute as @e[type=minecraft:villager,tag=rfm_market_v06,limit=1] at @s run tp @s ~ ~ ~ 90 0
+execute as @e[type=minecraft:villager,tag=rfm_market_v07,limit=1] at @s run tp @s ~ ~ ~ 90 0
+execute as @e[type=minecraft:villager,tag=rfm_market_v08,limit=1] at @s run tp @s ~ ~ ~ 180 0
+execute as @e[type=minecraft:villager,tag=rfm_market_v09,limit=1] at @s run tp @s ~ ~ ~ 90 0
+execute as @e[type=minecraft:villager,tag=rfm_market_v10,limit=1] at @s run tp @s ~ ~ ~ 90 0
+execute as @e[type=minecraft:villager,tag=rfm_market_v11,limit=1] at @s run tp @s ~ ~ ~ 90 0
+execute as @e[type=minecraft:villager,tag=rfm_market_v12,limit=1] at @s run tp @s ~ ~ ~ 90 0
+execute as @e[type=minecraft:villager,tag=rfm_market_v13,limit=1] at @s run tp @s ~ ~ ~ 0 0
+execute as @e[type=minecraft:villager,tag=rfm_market_v14,limit=1] at @s run tp @s ~ ~ ~ 0 0
+execute as @e[type=minecraft:villager,tag=rfm_market_v15,limit=1] at @s run tp @s ~ ~ ~ -90 0
+execute as @e[type=minecraft:villager,tag=rfm_market_v16,limit=1] at @s run tp @s ~ ~ ~ -90 0
+execute as @e[type=minecraft:villager,tag=rfm_market_v17,limit=1] at @s run tp @s ~ ~ ~ -90 0
+execute as @e[type=minecraft:villager,tag=rfm_market_v18,limit=1] at @s run tp @s ~ ~ ~ 0 0
+execute as @e[type=minecraft:villager,tag=rfm_market_v19,limit=1] at @s run tp @s ~ ~ ~ 0 0
+execute as @e[type=minecraft:villager,tag=rfm_market_v20,limit=1] at @s run tp @s ~ ~ ~ 180 0

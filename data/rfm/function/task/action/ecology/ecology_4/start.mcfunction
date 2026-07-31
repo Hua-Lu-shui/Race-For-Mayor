@@ -2,7 +2,7 @@
 scoreboard players set #waiting next_round_ready 0
 scoreboard players set @a next_round_clock 0
 
-#所有玩家进入观战位置，行动玩家进入四个垃圾桶中央
+#所有玩家进入观战位置
 gamemode adventure @a
 tp @a 236 -53 66 0 30
 tp @s 236 -59 69 180 0
@@ -14,10 +14,10 @@ setblock 236 -58 73 minecraft:air
 setblock 240 -58 69 minecraft:air
 
 #放置四个可储物的陷阱箱；资源包会隐藏箱体，只显示垃圾桶模型
-setblock 236 -59 65 minecraft:trapped_chest[facing=south,type=single] replace
-setblock 232 -59 69 minecraft:trapped_chest[facing=east,type=single] replace
-setblock 236 -59 73 minecraft:trapped_chest[facing=north,type=single] replace
-setblock 240 -59 69 minecraft:trapped_chest[facing=west,type=single] replace
+setblock 236 -59 65 minecraft:trapped_chest[facing=south,type=single]{CustomName:'{"text":"可回收物","color":"aqua","bold":true}'} replace
+setblock 232 -59 69 minecraft:trapped_chest[facing=east,type=single]{CustomName:'{"text":"有害垃圾","color":"red","bold":true}'} replace
+setblock 236 -59 73 minecraft:trapped_chest[facing=north,type=single]{CustomName:'{"text":"厨余垃圾","color":"green","bold":true}'} replace
+setblock 240 -59 69 minecraft:trapped_chest[facing=west,type=single]{CustomName:'{"text":"其他垃圾","color":"gray","bold":true}'} replace
 function rfm:task/action/ecology/ecology_4/create_labels
 function rfm:task/action/ecology/ecology_4/create_models
 
