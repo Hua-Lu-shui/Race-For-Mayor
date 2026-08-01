@@ -12,4 +12,13 @@ scoreboard players set @s negotiation_correct 0
 scoreboard players set @s negotiation_time 0
 scoreboard players set @s negotiation_delay 0
 scoreboard players set @s negotiation_state 0
+tag @s remove rfm_negotiation_q1_used
+tag @s remove rfm_negotiation_q2_used
+tag @s remove rfm_negotiation_q3_used
+tag @s remove rfm_negotiation_q4_used
+tag @s remove rfm_negotiation_q5_used
+tag @s remove rfm_negotiation_q6_used
+tag @s remove rfm_negotiation_q7_used
+tag @s remove rfm_negotiation_q8_used
+tag @s remove rfm_negotiation_q9_used
 function rfm:task/action/sequence/complete_current
