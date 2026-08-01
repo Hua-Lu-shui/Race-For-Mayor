@@ -6,7 +6,7 @@ kill @e[type=minecraft:villager,tag=rfm_negotiation_rep]
 kill @e[type=minecraft:item_display,tag=rfm_negotiation_model]
 kill @e[type=minecraft:text_display,tag=rfm_negotiation_dialogue]
 kill @e[type=minecraft:text_display,tag=rfm_negotiation_label]
-summon minecraft:villager 142 -58 22 {Tags:["rfm_negotiation_rep"],CustomName:'{"text":"企业代表·维克托","color":"yellow"}',CustomNameVisible:1b,Rotation:[-90f,0f],Invisible:1b,NoAI:1b,Invulnerable:1b,PersistenceRequired:1b,Silent:1b,VillagerData:{profession:"minecraft:librarian",level:5,type:"minecraft:plains"}}
+summon minecraft:villager 142 -58 22 {Tags:["rfm_negotiation_rep"],CustomName:'{"text":"企业代表·维克托","color":"yellow"}',CustomNameVisible:1b,Rotation:[-90f,0f],NoAI:1b,Invulnerable:1b,PersistenceRequired:1b,Silent:1b,VillagerData:{profession:"minecraft:none",level:1,type:"minecraft:plains"}}
 effect give @e[type=minecraft:villager,tag=rfm_negotiation_rep,limit=1] minecraft:invisibility infinite 0 true
 summon minecraft:item_display 142 -57 22 {Tags:["rfm_negotiation_model"],item:{id:"minecraft:paper",count:1,components:{"minecraft:custom_model_data":700001}},item_display:"fixed",transformation:{translation:[0.0f,0.0f,0.0f],scale:[2.0f,2.0f,2.0f],left_rotation:[0.0f,0.0f,0.0f,1.0f],right_rotation:[0.0f,0.0f,0.0f,1.0f]}}
 execute as @e[type=minecraft:villager,tag=rfm_negotiation_rep,limit=1] at @s run tp @e[type=minecraft:item_display,tag=rfm_negotiation_model,limit=1] ~ ~1 ~ ~180 ~
