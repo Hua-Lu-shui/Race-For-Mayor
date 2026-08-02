@@ -1,5 +1,5 @@
-summon minecraft:text_display 388 -57.5 105 {Tags:["rfm_supply_label"],billboard:"center",alignment:"center",text:'{"text":"面包店\\n需要：鸡蛋","color":"gold","bold":true}',background:0,shadow:1b,line_width:200}
-summon minecraft:text_display 396 -57.5 105 {Tags:["rfm_supply_label"],billboard:"center",alignment:"center",text:'{"text":"铁匠铺\\n需要：铁锭","color":"gray","bold":true}',background:0,shadow:1b,line_width:200}
-summon minecraft:text_display 404 -57.5 105 {Tags:["rfm_supply_label"],billboard:"center",alignment:"center",text:'{"text":"餐馆\\n需要：胡萝卜","color":"yellow","bold":true}',background:0,shadow:1b,line_width:200}
-summon minecraft:text_display 412 -57.5 105 {Tags:["rfm_supply_label"],billboard:"center",alignment:"center",text:'{"text":"药剂店\\n需要：蜂蜜瓶","color":"aqua","bold":true}',background:0,shadow:1b,line_width:200}
-summon minecraft:text_display 420 -57.5 105 {Tags:["rfm_supply_label"],billboard:"center",alignment:"center",text:'{"text":"裁缝店\\n需要：皮革","color":"white","bold":true}',background:0,shadow:1b,line_width:200}
+summon minecraft:text_display 208 -55.5 23 {Tags:["rfm_supply_label"],billboard:"center",alignment:"center",text:'{"text":"面包店\\n需要：鸡蛋","color":"gold","bold":true}',background:0,shadow:1b,line_width:200}
+summon minecraft:text_display 192 -55.5 6 {Tags:["rfm_supply_label"],billboard:"center",alignment:"center",text:'{"text":"铁匠铺\\n需要：铁锭","color":"gray","bold":true}',background:0,shadow:1b,line_width:200}
+summon minecraft:text_display 199 -55.5 12 {Tags:["rfm_supply_label"],billboard:"center",alignment:"center",text:'{"text":"餐馆\\n需要：胡萝卜","color":"yellow","bold":true}',background:0,shadow:1b,line_width:200}
+summon minecraft:text_display 189 -55.5 15 {Tags:["rfm_supply_label"],billboard:"center",alignment:"center",text:'{"text":"药剂店\\n需要：蜂蜜瓶","color":"aqua","bold":true}',background:0,shadow:1b,line_width:200}
+summon minecraft:text_display 199 -55.5 31 {Tags:["rfm_supply_label"],billboard:"center",alignment:"center",text:'{"text":"裁缝店\\n需要：皮革","color":"white","bold":true}',background:0,shadow:1b,line_width:200}

@@ -18,19 +18,12 @@ execute store result score @s supply_order run random value 1..3
 function rfm:task/action/economy/economy_4/prepare_orders
 
 gamemode adventure @a
-#生成可自由走动的空中观战平台
-fill 398 -52 107 408 -52 115 minecraft:light_gray_stained_glass
-setblock 403 -52 111 minecraft:sea_lantern
-fill 398 -51 107 408 -49 107 minecraft:glass
-fill 398 -51 115 408 -49 115 minecraft:glass
-fill 398 -51 108 398 -49 114 minecraft:glass
-fill 408 -51 108 408 -49 114 minecraft:glass
-tp @a 403 -51 111 0 35
-tp @s 403 -60 108 0 0
+tp @a 195 -48 19 0 30
+tp @s 181 -58 19 -90 0
 
 tellraw @a [{"text":"【经济行动】商圈巡查","color":"yellow","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]
-tellraw @a {"text":"查看五家店铺上方的缺货信息，逐个搜索临时仓库里的箱子，找出所需物资并放入对应店铺门口的补货木桶。放错后可以自行取回。","color":"white"}
+tellraw @a {"text":"查看五家店铺上方的缺货信息，逐个搜索临时仓库里的箱子，找出所需物资并放入对应店铺门口的补货木桶。","color":"white"}
 
 title @s clear
 title @s title {"text":"商圈巡查","color":"yellow","bold":true}
-item replace entity @s hotbar.4 with minecraft:map[minecraft:custom_name='{"text":"准备完成","color":"yellow","bold":true,"italic":false}',minecraft:lore=['{"text":"按Q丢出后开始倒计时","color":"gray","italic":false}'],minecraft:custom_data={supply_ready:1}] 1
+item replace entity @s hotbar.4 with minecraft:map[minecraft:custom_name='{"text":"准备完成","color":"yellow","bold":true,"italic":false}',minecraft:lore=['{"text":"扔出后开始任务","color":"gray","italic":false}'],minecraft:custom_data={supply_ready:1}] 1
