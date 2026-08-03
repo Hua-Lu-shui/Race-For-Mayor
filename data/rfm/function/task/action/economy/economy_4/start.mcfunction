@@ -18,7 +18,7 @@ execute store result score @s supply_order run random value 1..3
 function rfm:task/action/economy/economy_4/prepare_orders
 
 gamemode adventure @a
-tp @a 195 -48 19 0 30
+tp @a 195 -48 19 90 30
 tp @s 181 -58 19 -90 0
 
 tellraw @a [{"text":"【经济行动】商圈巡查","color":"yellow","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]

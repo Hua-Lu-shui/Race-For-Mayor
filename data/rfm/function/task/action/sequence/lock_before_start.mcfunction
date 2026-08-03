@@ -19,7 +19,7 @@ execute if score @s action_task matches 701 if score @s market_state matches 2..
 execute if score @s action_task matches 702 if score @s negotiation_state matches 2..3 run tp @s 146 -58 22
 execute if score @s action_task matches 703 if score @s audit_state matches 2..3 run tp @s 162 -58 18
 execute if score @s action_task matches 704 if score @s supply_state matches 2..3 run tp @s 181 -58 19
-execute if score @s action_task matches 705 if score @s employment_state matches 2..3 run tp @s 448 -60 106
+execute if score @s action_task matches 705 if score @s employment_state matches 2..3 run tp @s 235 -58 25
 
 #民生行动801—804
 execute if score @s action_task matches 801 if score @s hospital_state matches 2..3 run tp @s 760 -60 113

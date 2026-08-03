@@ -14,22 +14,16 @@ scoreboard players set @s employment_delay 0
 scoreboard players set @s employment_state 2
 execute store result score @s employment_layout run random value 1..3
 
+gamemode adventure @a
+tp @a 235 -58 12 0 0
+tp @s 235 -58 25 90 0
+
+#玩家到场并加载会场区块后再生成任务实体
 function rfm:task/action/economy/economy_5/create_scene
 
-gamemode adventure @a
-#生成可自由走动的空中观战平台
-fill 443 -52 102 453 -52 110 minecraft:light_gray_stained_glass
-setblock 448 -52 106 minecraft:sea_lantern
-fill 443 -51 102 453 -49 102 minecraft:glass
-fill 443 -51 110 453 -49 110 minecraft:glass
-fill 443 -51 103 443 -49 109 minecraft:glass
-fill 453 -51 103 453 -49 109 minecraft:glass
-tp @a 448 -51 106 0 35
-tp @s 448 -60 106 180 0
-
 tellraw @a [{"text":"【经济行动】就业走访","color":"yellow","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]
-tellraw @a {"text":"右键求职者面前的登记表，查看技能和工作条件，再把登记表扔到对应招聘村民的脚边。投错后可以捡回重投。","color":"white"}
+tellraw @a {"text":"右键求职者面前的登记表，查看技能和工作条件，再把登记表交给对应招聘官。","color":"white"}
 
 title @s clear
 title @s title {"text":"就业走访","color":"yellow","bold":true}
-item replace entity @s hotbar.4 with minecraft:map[minecraft:custom_name='{"text":"准备完成","color":"yellow","bold":true,"italic":false}',minecraft:lore=['{"text":"按Q丢出后开始倒计时","color":"gray","italic":false}'],minecraft:custom_data={employment_ready:1}] 1
+item replace entity @s hotbar.4 with minecraft:map[minecraft:custom_name='{"text":"准备完成","color":"yellow","bold":true,"italic":false}',minecraft:lore=['{"text":"扔出后开始任务","color":"gray","italic":false}'],minecraft:custom_data={employment_ready:1}] 1

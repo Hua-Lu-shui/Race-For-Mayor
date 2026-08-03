@@ -1,5 +1,5 @@
-summon minecraft:text_display 436 -56.8 112 {Tags:["rfm_employment_label"],billboard:"center",alignment:"center",text:'{"text":"设备维修公司\\n岗位：设备维修员","color":"gold","bold":true}',background:0,shadow:1b,line_width:220}
-summon minecraft:text_display 442 -56.8 112 {Tags:["rfm_employment_label"],billboard:"center",alignment:"center",text:'{"text":"政务文印中心\\n岗位：行政文员","color":"aqua","bold":true}',background:0,shadow:1b,line_width:220}
-summon minecraft:text_display 448 -56.8 112 {Tags:["rfm_employment_label"],billboard:"center",alignment:"center",text:'{"text":"临江餐饮集团\\n岗位：餐馆厨师","color":"yellow","bold":true}',background:0,shadow:1b,line_width:220}
-summon minecraft:text_display 454 -56.8 112 {Tags:["rfm_employment_label"],billboard:"center",alignment:"center",text:'{"text":"城市物流公司\\n岗位：物流司机","color":"green","bold":true}',background:0,shadow:1b,line_width:220}
-summon minecraft:text_display 460 -56.8 112 {Tags:["rfm_employment_label"],billboard:"center",alignment:"center",text:'{"text":"安康养老中心\\n岗位：养老护理员","color":"light_purple","bold":true}',background:0,shadow:1b,line_width:220}
+summon minecraft:text_display 241 -55.8 33 {Tags:["rfm_employment_label"],billboard:"center",alignment:"center",text:'{"text":"设备维修公司\\n岗位：设备维修员","color":"gold","bold":true}',background:0,shadow:1b,line_width:220}
+summon minecraft:text_display 241 -55.8 29 {Tags:["rfm_employment_label"],billboard:"center",alignment:"center",text:'{"text":"政务文印中心\\n岗位：行政文员","color":"aqua","bold":true}',background:0,shadow:1b,line_width:220}
+summon minecraft:text_display 241 -55.8 25 {Tags:["rfm_employment_label"],billboard:"center",alignment:"center",text:'{"text":"临江餐饮集团\\n岗位：餐馆厨师","color":"yellow","bold":true}',background:0,shadow:1b,line_width:220}
+summon minecraft:text_display 241 -55.8 21 {Tags:["rfm_employment_label"],billboard:"center",alignment:"center",text:'{"text":"城市物流公司\\n岗位：物流司机","color":"green","bold":true}',background:0,shadow:1b,line_width:220}
+summon minecraft:text_display 241 -55.8 17 {Tags:["rfm_employment_label"],billboard:"center",alignment:"center",text:'{"text":"安康养老中心\\n岗位：养老护理员","color":"light_purple","bold":true}',background:0,shadow:1b,line_width:220}
