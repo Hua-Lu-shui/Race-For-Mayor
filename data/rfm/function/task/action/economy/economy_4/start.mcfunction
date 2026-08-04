@@ -1,4 +1,4 @@
-#临时商圈场地：五家店铺、补货木桶和仓库在玩家到场前准备完成
+#商圈场地
 scoreboard players set #waiting next_round_ready 0
 scoreboard players set @a next_round_clock 0
 

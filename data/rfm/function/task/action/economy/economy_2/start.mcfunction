@@ -1,4 +1,4 @@
-#临时招商洽谈场地：代表和按钮在玩家到场前准备完成
+#招商洽谈场地
 scoreboard players set #waiting next_round_ready 0
 scoreboard players set @a next_round_clock 0
 

@@ -1,4 +1,4 @@
-#临时财政办公室场地
+#财政办公室场地
 scoreboard players set #waiting next_round_ready 0
 scoreboard players set @a next_round_clock 0
 

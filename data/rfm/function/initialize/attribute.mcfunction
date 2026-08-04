@@ -4,7 +4,7 @@ scoreboard objectives add fame dummy "名誉"
 scoreboard objectives add economy dummy "经济"
 scoreboard objectives add welfare dummy "民生"
 scoreboard objectives add ecology dummy "生态"
-#角色能力使用的回合快照、比较值与触发标记
+#角色天赋使用的回合快照、比较值与触发标记
 scoreboard objectives add ability_fame dummy
 scoreboard objectives add ability_economy dummy
 scoreboard objectives add ability_welfare dummy

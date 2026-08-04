@@ -1,7 +1,7 @@
 #行动任务开始前锁定行动玩家坐标；不指定朝向，因此玩家仍可自由转动视角
 
 #名誉行动601—605
-execute if score @s action_task matches 601 if score @s speech_state matches 2..3 run tp @s 488 -59 110
+execute if score @s action_task matches 601 if score @s speech_state matches 2..3 run tp @s 119 -58 -18
 execute if score @s action_task matches 602 if score @s visit_state matches 2..3 run tp @s 536 -60 103
 execute if score @s action_task matches 603 if score @s photo_state matches 2..3 run tp @s 596 -60 112
 execute if score @s action_task matches 604 if score @s qa_state matches 2..3 run tp @s 660 -60 104
@@ -22,7 +22,7 @@ execute if score @s action_task matches 704 if score @s supply_state matches 2..
 execute if score @s action_task matches 705 if score @s employment_state matches 2..3 run tp @s 235 -58 25
 
 #民生行动801—804
-execute if score @s action_task matches 801 if score @s hospital_state matches 2..3 run tp @s 760 -60 113
+execute if score @s action_task matches 801 if score @s hospital_state matches 2..3 run tp @s 119 -58 -18
 execute if score @s action_task matches 802 if score @s fitness_state matches 2..3 if score @s fitness_course matches 1 run tp @s 798 -60 104
 execute if score @s action_task matches 802 if score @s fitness_state matches 2..3 if score @s fitness_course matches 2 run tp @s 798 -60 116
 execute if score @s action_task matches 802 if score @s fitness_state matches 2..3 if score @s fitness_course matches 3 run tp @s 798 -60 92

@@ -2,7 +2,7 @@
 function rfm:phase/phase1
 #新游戏从第0轮准备状态开始；全员准备后round函数会递增为第1轮
 scoreboard players set #round round 0
-#允许本局最终结算能力执行一次
+#允许本局最终结算天赋执行一次
 scoreboard players set #abilities settle_state 0
 scoreboard players set @a ability_trigger 0
 #重置行动玩家公平抽取次数和每位玩家的行动任务去重记录

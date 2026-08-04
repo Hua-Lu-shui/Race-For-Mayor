@@ -1,4 +1,4 @@
-#临时市场调研场地：20名商人按5列4排分布
+#市场调研场地
 scoreboard players set #waiting next_round_ready 0
 scoreboard players set @a next_round_clock 0
 

@@ -1,4 +1,4 @@
-#先锁定执行状态，防止重复调用prepare叠加能力
+#先锁定执行状态，防止重复调用prepare叠加天赋
 scoreboard players set #abilities settle_state 1
 #社区领袖先处理个人最低属性
 execute as @a[scores={candidate=3}] run function rfm:ability/community/final
