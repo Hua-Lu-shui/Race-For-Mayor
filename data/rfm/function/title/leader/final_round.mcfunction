@@ -1,4 +1,4 @@
-#第10轮不走常规领先播报链，因此在进入结算前仅补记一次四项领先进度
+#第10回合不走常规领先播报链，因此在进入结算前仅补记一次四项领先进度
 tag @a remove rfm_lead_fame
 scoreboard players set #lead_fame fame -2147483648
 execute as @a if score @s fame > #lead_fame fame run scoreboard players operation #lead_fame fame = @s fame

@@ -10,7 +10,7 @@ scoreboard players set @s exercise_armed 0
 bossbar set rfm:exercise_time players @a
 bossbar set rfm:exercise_time max 600
 bossbar set rfm:exercise_time value 600
-bossbar set rfm:exercise_time name [{"text":"课间操领队  ·  第 ","color":"red"},{"score":{"name":"@s","objective":"exercise_round"},"color":"yellow"},{"text":" / 3 轮","color":"red"}]
+bossbar set rfm:exercise_time name [{"text":"\uE217","font":"rfm:bossbar"},{"text":"\uE100","font":"rfm:bossbar","color":"white"},{"text":"\uE101","font":"rfm:bossbar"},{"text":"\uE229","font":"rfm:bossbar"},{"text":"课间操领队  ·  第 ","color":"red"},{"score":{"name":"@s","objective":"exercise_round"},"color":"yellow"},{"text":" / 3 轮","color":"red"}]
 bossbar set rfm:exercise_time visible true
 
 function rfm:task/action/welfare/welfare_3/prepare_round

@@ -1,4 +1,4 @@
-#重置本轮行动任务状态
+#重置本回合行动任务状态
 scoreboard players set @a action_player 0
 scoreboard players set @a action_task 0
 scoreboard players set @a action_mode 0
@@ -44,9 +44,9 @@ execute if score #player_count player_count matches 5..8 run scoreboard players 
 scoreboard players add @a action_draw_count 0
 function rfm:task/action/select_fair_players
 
-#将本轮行动玩家统一设为单人任务
+#将本回合行动玩家统一设为单人任务
 function rfm:task/action/select_mode
 #为行动玩家分配执行顺序
 function rfm:task/action/sequence/assign_order
 
-tellraw @a[scores={action_role=1}] {"text":"你是本轮行动玩家，请从随机出现的三个属性中选择一个行动方向。","color":"gold","bold":true}
+tellraw @a[scores={action_role=1}] {"text":"你是本回合行动玩家，请从随机出现的三个属性中选择一个行动方向。","color":"gold","bold":true}

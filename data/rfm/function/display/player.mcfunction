@@ -48,7 +48,7 @@ execute unless score @s attr_probe = @s eco_delta run scoreboard players set @s 
 scoreboard players operation @s eco_delta = @s attr_probe
 execute if score @s attr_changed matches 1 run scoreboard players set @s attr_anim 60
 
-#每轮亮15刻、灭5刻，共闪烁三次；属性数值始终显示最新值
+#每回合亮15刻、灭5刻，共闪烁三次；属性数值始终显示最新值
 scoreboard players set @s attr_flash 0
 execute if score @s attr_anim matches 46..60 run scoreboard players set @s attr_flash 1
 execute if score @s attr_anim matches 26..40 run scoreboard players set @s attr_flash 1

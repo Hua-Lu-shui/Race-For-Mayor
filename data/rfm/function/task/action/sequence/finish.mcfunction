@@ -1,4 +1,4 @@
-tellraw @a {"text":"本轮所有行动任务执行完毕。","color":"green","bold":true}
+tellraw @a {"text":"本回合所有行动任务执行完毕。","color":"green","bold":true}
 title @a title {"text":"行动任务完成","color":"green","bold":true}
 scoreboard players set #current_action action_order 0
 

@@ -12,7 +12,7 @@ execute if score #phase phase matches 1 run function rfm:title/check/attributes
 execute if score #settle_state settle_state matches 1 run function rfm:ending/ready/check
 #执行令牌争夺状态机
 execute if score #group_state group_state matches 1 run function rfm:collective/tick
-#等待下一轮期间检测玩家丢出的令牌
+#等待下一回合期间检测玩家丢出的令牌
 execute if score #waiting next_round_ready matches 1 run function rfm:item/use/check_all
 #检测令牌屋中当前玩家的告示牌选择
 execute if entity @a[scores={item_selecting=1,item_pick=1..24}] run function rfm:item/select/check

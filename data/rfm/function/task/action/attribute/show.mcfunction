@@ -31,7 +31,7 @@ execute if score @s action_attribute_missing matches 4 run scoreboard players se
 #允许玩家改变行动任务属性计分板
 scoreboard players enable @s action_attribute_choice
 #提示选择任务类型
-tellraw @s {"text":"请选择本轮行动任务方向：","color":"gold","bold":true}
+tellraw @s {"text":"请选择本回合行动任务方向：","color":"gold","bold":true}
 
 execute unless score @s action_attribute_missing matches 1 unless score @s action_used_fame matches 31 run tellraw @s [{"text":"[名誉行动]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger action_attribute_choice set 1"}},{"text":"  需要公开表现、沟通或影响舆论的行动","color":"gray"}]
 

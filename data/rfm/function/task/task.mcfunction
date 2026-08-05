@@ -293,6 +293,6 @@ scoreboard objectives add manhole_delay dummy
 scoreboard objectives add manhole_hits dummy
 scoreboard objectives add manhole_need dummy
 #——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
-#下一轮全员准备状态，以及玩家丢出准备时钟的统计
+#下一回合全员准备状态，以及玩家丢出准备时钟的统计
 scoreboard objectives add next_round_ready dummy
 scoreboard objectives add next_round_clock minecraft.dropped:minecraft.clock

@@ -27,7 +27,7 @@ execute if score @s attribute_missing matches 4 run scoreboard players set @s at
 #允许玩家改变属性选择计分板
 scoreboard players enable @s attribute_choice
 #提示选择任务类型
-tellraw @s {"text":"请选择本轮决策任务方向：","color":"yellow","bold":true}
+tellraw @s {"text":"请选择本回合决策任务方向：","color":"yellow","bold":true}
 
 execute unless score @s attribute_missing matches 1 run tellraw @s [{"text":"[名誉]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger attribute_choice set 1"}},{"text":"  影响公众形象、媒体评价、竞选声望","color":"gray"}]
 

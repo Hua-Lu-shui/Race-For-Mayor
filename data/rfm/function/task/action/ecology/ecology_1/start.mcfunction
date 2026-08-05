@@ -1,4 +1,4 @@
-#进入行动任务时关闭可能残留的下一轮等待状态
+#进入行动任务时关闭可能残留的下一回合等待状态
 scoreboard players set #waiting next_round_ready 0
 scoreboard players set @a next_round_clock 0
 #所有人进入旁观位置，当前行动玩家恢复冒险模式并站到答题位置

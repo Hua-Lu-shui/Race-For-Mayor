@@ -5,7 +5,7 @@ scoreboard players set @s supply_state 1
 bossbar set rfm:supply_time players @a
 bossbar set rfm:supply_time max 2400
 bossbar set rfm:supply_time value 2400
-bossbar set rfm:supply_time name {"text":"商圈巡查","color":"yellow"}
+bossbar set rfm:supply_time name [{"text":"\uE20C","font":"rfm:bossbar"},{"text":"\uE100","font":"rfm:bossbar","color":"white"},{"text":"\uE101","font":"rfm:bossbar"},{"text":"\uE234","font":"rfm:bossbar"},{"text":"商圈巡查","color":"yellow"}]
 bossbar set rfm:supply_time visible true
 
 #倒计时结束后才向二十四个箱子装入物资，防止行动玩家提前取走

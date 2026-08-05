@@ -20,4 +20,4 @@ execute if score @s ability_ecology matches 1 unless score @s ecology_lock match
 execute if score @s ability_fame matches 1 unless score @s fame_lock matches 1 run scoreboard players operation @s fame = @s welfare
 execute if score @s ability_economy matches 1 unless score @s economy_lock matches 1 run scoreboard players operation @s economy = @s welfare
 execute if score @s ability_ecology matches 1 unless score @s ecology_lock matches 1 run scoreboard players operation @s ecology = @s welfare
-execute if score @s ability_trigger matches 1 run tellraw @a [{"selector":"@s","color":"red","bold":true},{"text":" 的【得道多助】生效：结算时将民生赋予最低属性。","color":"white"}]
+execute if score @s ability_trigger matches 1 run tellraw @s [{"selector":"@s","color":"red","bold":true},{"text":" 的【得道多助】生效：结算时将民生赋予最低属性。","color":"white"}]

@@ -9,7 +9,7 @@ scoreboard players set @s fitness_state 1
 bossbar set rfm:fitness_time players @a
 bossbar set rfm:fitness_time max 300
 bossbar set rfm:fitness_time value 300
-bossbar set rfm:fitness_time name [{"text":"全民健身挑战  ·  检查点 ","color":"red"},{"score":{"name":"@s","objective":"fitness_checkpoint"},"color":"yellow"},{"text":" / 5","color":"red"}]
+bossbar set rfm:fitness_time name [{"text":"\uE219","font":"rfm:bossbar"},{"text":"\uE100","font":"rfm:bossbar","color":"white"},{"text":"\uE101","font":"rfm:bossbar"},{"text":"\uE227","font":"rfm:bossbar"},{"text":"全民健身挑战  ·  检查点 ","color":"red"},{"score":{"name":"@s","objective":"fitness_checkpoint"},"color":"yellow"},{"text":" / 5","color":"red"}]
 bossbar set rfm:fitness_time visible true
 
 title @s actionbar {"text":"第一段：跨越障碍，到达平衡木入口","color":"yellow","bold":true}

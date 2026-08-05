@@ -84,7 +84,7 @@ team modify scholar prefix {"text":"[学者] ","color":"green"}
 team add official
 team modify official prefix {"text":"[公务员] ","color":"#D3D3D3"}
 team add military
-team modify military prefix {"text":"[军人] ","color":"#B06D3C"}
+team modify military prefix {"text":"[军人] ","color":"#FFA500"}
 team add lawyer
 team modify lawyer prefix {"text":"[律师] ","color":"light_purple"}
 

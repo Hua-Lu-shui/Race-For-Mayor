@@ -1,5 +1,5 @@
 {
   "parent": "rfm:title/root",
-  "display": {"icon": {"id": "minecraft:bell"}, "title": {"text": "民心所向", "color": "red"}, "description": {"text": "连续3轮成为民生领先者｜+100票", "color": "gray"}, "frame": "challenge", "show_toast": true, "announce_to_chat": false, "hidden": false},
+  "display": {"icon": {"id": "minecraft:bell"}, "title": {"text": "民心所向", "color": "red"}, "description": {"text": "连续3个回合成为民生领先者｜+100票", "color": "gray"}, "frame": "challenge", "show_toast": true, "announce_to_chat": false, "hidden": false},
   "criteria": {"impossible": {"trigger": "minecraft:impossible"}}
 }

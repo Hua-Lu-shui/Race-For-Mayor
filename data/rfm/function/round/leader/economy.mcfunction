@@ -1,9 +1,9 @@
-#统计并公布本轮经济领先玩家
+#统计并公布本回合经济领先玩家
 tag @a remove rfm_lead_economy
 scoreboard players set #lead_economy economy -2147483648
 execute as @a if score @s economy > #lead_economy economy run scoreboard players operation #lead_economy economy = @s economy
 execute as @a if score @s economy = #lead_economy economy run tag @s add rfm_lead_economy
-#记录连续经济领先轮数（并列领先同样计入）
+#记录连续经济领先回合数（并列领先同样计入）
 scoreboard players set @a[tag=!rfm_lead_economy] title_lead_econ 0
 execute as @a[tag=rfm_lead_economy] run function rfm:title/leader/economy
 #公示单独从非律师候选人中寻找最高者

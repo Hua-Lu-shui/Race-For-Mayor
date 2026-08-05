@@ -6,7 +6,7 @@ scoreboard players set @s market_state 1
 bossbar set rfm:market_time players @a
 bossbar set rfm:market_time max 800
 bossbar set rfm:market_time value 800
-bossbar set rfm:market_time name {"text":"市场调研","color":"yellow"}
+bossbar set rfm:market_time name [{"text":"\uE20C","font":"rfm:bossbar"},{"text":"\uE100","font":"rfm:bossbar","color":"white"},{"text":"\uE101","font":"rfm:bossbar"},{"text":"\uE234","font":"rfm:bossbar"},{"text":"市场调研","color":"yellow"}]
 bossbar set rfm:market_time visible true
 
 #正式开始时才发放绿宝石，防止玩家在倒计时前交易

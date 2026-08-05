@@ -1,9 +1,9 @@
-#统计并公布本轮生态领先玩家
+#统计并公布本回合生态领先玩家
 tag @a remove rfm_lead_ecology
 scoreboard players set #lead_ecology ecology -2147483648
 execute as @a if score @s ecology > #lead_ecology ecology run scoreboard players operation #lead_ecology ecology = @s ecology
 execute as @a if score @s ecology = #lead_ecology ecology run tag @s add rfm_lead_ecology
-#记录连续生态领先轮数（并列领先同样计入）
+#记录连续生态领先回合数（并列领先同样计入）
 scoreboard players set @a[tag=!rfm_lead_ecology] title_lead_eco 0
 execute as @a[tag=rfm_lead_ecology] run function rfm:title/leader/ecology
 #公示单独从非律师候选人中寻找最高者

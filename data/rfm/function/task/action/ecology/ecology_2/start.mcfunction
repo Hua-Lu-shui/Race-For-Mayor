@@ -1,5 +1,5 @@
 #河道场地
-#进入行动任务时关闭可能残留的下一轮等待状态
+#进入行动任务时关闭可能残留的下一回合等待状态
 scoreboard players set #waiting next_round_ready 0
 scoreboard players set @a next_round_clock 0
 #所有玩家进入观战位置，行动玩家站到河道起点

@@ -10,4 +10,4 @@ scoreboard players enable @s item_pick
 tp @s 1240 -59 104 180 0
 title @s title {"text":"轮到你选择令牌","color":"gold","bold":true}
 title @s subtitle {"text":"查看告示牌并右键选择；其他玩家不会知道你的选择","color":"gray"}
-tellraw @s {"text":"你只能选择一枚尚未被拿走的令牌。右键告示牌后，令牌将在下一轮准备时钟发放时交给你。","color":"yellow"}
+tellraw @s {"text":"你只能选择一枚尚未被拿走的令牌。右键告示牌后，令牌将在下一回合准备时钟发放时交给你。","color":"yellow"}

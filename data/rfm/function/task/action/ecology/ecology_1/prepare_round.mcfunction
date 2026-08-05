@@ -20,7 +20,7 @@ scoreboard players set @s emission_state 1
 bossbar set rfm:emission_time players @a
 bossbar set rfm:emission_time max 40
 bossbar set rfm:emission_time value 40
-bossbar set rfm:emission_time name [{"text":"第 ","color":"white"},{"score":{"name":"@s","objective":"emission_round"},"color":"gold"},{"text":" / 10 轮  ·  剩余时间：2.0 秒","color":"green"}]
+bossbar set rfm:emission_time name [{"text":"\uE21B","font":"rfm:bossbar"},{"text":"\uE100","font":"rfm:bossbar","color":"white"},{"text":"\uE101","font":"rfm:bossbar"},{"text":"\uE225","font":"rfm:bossbar"},{"text":"第 ","color":"white"},{"score":{"name":"@s","objective":"emission_round"},"color":"gold"},{"text":" / 10 轮  ·  剩余时间：2.0 秒","color":"green"}]
 bossbar set rfm:emission_time visible true
 
 #补齐九张纸，确保同一编号可以在后续再次使用

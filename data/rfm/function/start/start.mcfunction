@@ -1,6 +1,6 @@
 #设置阶段为1，代表游戏进行中
 function rfm:phase/phase1
-#新游戏从第0轮准备状态开始；全员准备后round函数会递增为第1轮
+#新游戏从第0回合准备状态开始；全员准备后round函数会递增为第1回合
 scoreboard players set #round round 0
 #允许本局最终结算天赋执行一次
 scoreboard players set #abilities settle_state 0

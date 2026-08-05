@@ -17,4 +17,4 @@ execute if score @s fame = @s ability_min run scoreboard players remove #weight 
 execute if score @s economy = @s ability_min run scoreboard players remove #weight economy_weight 1
 execute if score @s welfare = @s ability_min run scoreboard players remove #weight welfare_weight 1
 execute if score @s ecology = @s ability_min run scoreboard players remove #weight ecology_weight 1
-tellraw @a [{"selector":"@s","color":"#D3D3D3","bold":true},{"text":" 的【与时俱进】生效：最高属性对应权重 +1，最低属性对应权重 -1。","color":"white"}]
+tellraw @s [{"selector":"@s","color":"#D3D3D3","bold":true},{"text":" 的【与时俱进】生效：最高属性对应权重 +1，最低属性对应权重 -1。","color":"white"}]
