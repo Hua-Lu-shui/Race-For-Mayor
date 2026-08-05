@@ -72,7 +72,7 @@ team modify weight_ecology prefix {"text":"◆ ","color":"green"}
 team join weight_ecology 生态
 #创建候选人类型
 scoreboard objectives add candidate dummy
-#创建身份队伍，用于在Tab列表玩家名前显示身份
+#创建队伍，用于在Tab列表玩家名前显示身份
 team add star
 team modify star prefix {"text":"[明星] ","color":"aqua"}
 team add business

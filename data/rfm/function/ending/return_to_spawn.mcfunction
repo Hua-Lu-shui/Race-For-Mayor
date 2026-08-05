@@ -97,14 +97,14 @@ kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{rfm_
 kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{rfm_collection:1}}}}]
 function rfm:collection/mysterious/cleanup
 
-#恢复大厅默认职业与基础属性，再将全体玩家送回世界出生点
+#恢复大厅默认身份与属性，再将全体玩家送回世界出生点
 execute as @a run function rfm:initialize/candidate
 gamemode adventure @a
 tp @a 55.5 -50 -17.5 0 0
 #玩家点击返回并完成复位后，重新生成下一局的开始游戏告示牌
 scoreboard players set #start_pending phase 0
 setblock 49 -49 -22 minecraft:oak_wall_sign[facing=south,waterlogged=false]{is_waxed:1b,front_text:{has_glowing_text:1b,messages:['""','{"text":"开始游戏","color":"white","bold":true,"clickEvent":{"action":"run_command","value":"/function rfm:schedule/start_check"}}','""','""']}}
-tellraw @a [{"text":"已返回出生点。可重新选择","color":"white"},{"text":"候选人职业","color":"#C6A8FF","bold":true},{"text":"并开始","color":"white"},{"text":"下一局","color":"#FFCB77","bold":true},{"text":"。","color":"white"}]
+tellraw @a [{"text":"已返回出生点。可重新选择","color":"white"},{"text":"身份","color":"#C6A8FF","bold":true},{"text":"并开始","color":"white"},{"text":"下一局","color":"#FFCB77","bold":true},{"text":"。","color":"white"}]
 
 #返回流程完成，状态重新回到未结算
 scoreboard players set #settle_state settle_state 0

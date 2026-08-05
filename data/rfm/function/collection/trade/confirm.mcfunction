@@ -7,7 +7,7 @@ function rfm:collection/mysterious/configure_offer
 execute if score @s collection_attr matches 0 run return run tellraw @s {"text":"这件藏品的交易属性尚未确定，暂时无法交易。","color":"gray"}
 execute if score @s collection_cost matches ..-1 run return run tellraw @s {"text":"这件藏品的效果与价格尚未确定，暂时无法交易。","color":"gray"}
 
-#普通职业直接以新藏品替换第一槽；医生空槽优先，两个槽都满时由玩家选择替换哪件
+#普通身份直接以新藏品替换第一槽；医生空槽优先，两个槽都满时由玩家选择替换哪件
 execute unless score @s candidate matches 8 run scoreboard players set @s collection_target 1
 execute if score @s candidate matches 8 if score @s collection_slot1 matches 0 run scoreboard players set @s collection_target 1
 execute if score @s candidate matches 8 unless score @s collection_slot1 matches 0 if score @s collection_slot2 matches 0 run scoreboard players set @s collection_target 2
