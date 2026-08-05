@@ -29,6 +29,9 @@ scoreboard players set @a item_held 0
 scoreboard players set @a item_selecting 0
 scoreboard players set @a item_pick 0
 scoreboard players set @a swap_pending 0
+scoreboard players set @a collection_slot1 0
+scoreboard players set @a collection_slot2 0
+scoreboard players set @a collection_offer 0
 scoreboard players set @a settle_ready 0
 scoreboard players set @a settle_clock 0
 scoreboard players set @a title_bonus 0
@@ -86,10 +89,13 @@ title @a actionbar {"text":""}
 clear @a minecraft:clock[minecraft:custom_data={next_round_ready:1}]
 clear @a minecraft:clock[minecraft:custom_data={settlement_ready:1}]
 clear @a minecraft:heart_of_the_sea[minecraft:custom_data~{rfm_item:1}]
+clear @a minecraft:amethyst_shard[minecraft:custom_data~{rfm_collection:1}]
 clear @a minecraft:carved_pumpkin[minecraft:custom_data~{rfm_ending_blackout:1}]
 kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{next_round_ready:1}}}}]
 kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{settlement_ready:1}}}}]
 kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{rfm_item:1}}}}]
+kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{rfm_collection:1}}}}]
+function rfm:collection/mysterious/cleanup
 
 #恢复大厅默认职业与基础属性，再将全体玩家送回世界出生点
 execute as @a run function rfm:initialize/candidate
@@ -98,7 +104,7 @@ tp @a 55.5 -50 -17.5 0 0
 #玩家点击返回并完成复位后，重新生成下一局的开始游戏告示牌
 scoreboard players set #start_pending phase 0
 setblock 49 -49 -22 minecraft:oak_wall_sign[facing=south,waterlogged=false]{is_waxed:1b,front_text:{has_glowing_text:1b,messages:['""','{"text":"开始游戏","color":"white","bold":true,"clickEvent":{"action":"run_command","value":"/function rfm:schedule/start_check"}}','""','""']}}
-tellraw @a {"text":"已返回出生点。可重新选择候选人职业并开始下一局。","color":"green"}
+tellraw @a [{"text":"已返回出生点。可重新选择","color":"white"},{"text":"候选人职业","color":"#C6A8FF","bold":true},{"text":"并开始","color":"white"},{"text":"下一局","color":"#FFCB77","bold":true},{"text":"。","color":"white"}]
 
 #返回流程完成，状态重新回到未结算
 scoreboard players set #settle_state settle_state 0

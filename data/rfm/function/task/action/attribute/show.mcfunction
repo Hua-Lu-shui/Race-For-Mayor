@@ -31,12 +31,12 @@ execute if score @s action_attribute_missing matches 4 run scoreboard players se
 #允许玩家改变行动任务属性计分板
 scoreboard players enable @s action_attribute_choice
 #提示选择任务类型
-tellraw @s {"text":"请选择本回合行动任务方向：","color":"gold","bold":true}
+tellraw @s [{"text":"请选择本回合","color":"white"},{"text":"行动任务方向","color":"#67D5FF","bold":true},{"text":"：","color":"white"}]
 
-execute unless score @s action_attribute_missing matches 1 unless score @s action_used_fame matches 31 run tellraw @s [{"text":"[名誉行动]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger action_attribute_choice set 1"}},{"text":"  需要公开表现、沟通或影响舆论的行动","color":"gray"}]
+execute unless score @s action_attribute_missing matches 1 unless score @s action_used_fame matches 31 run tellraw @s [{"text":"[名誉行动]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger action_attribute_choice set 1"}},{"text":"  需要公开表现、沟通或影响舆论的行动","color":"white"}]
 
-execute unless score @s action_attribute_missing matches 2 unless score @s action_used_econ matches 31 run tellraw @s [{"text":"[经济行动]","color":"yellow","clickEvent":{"action":"run_command","value":"/trigger action_attribute_choice set 2"}},{"text":"  需要跑市场、招商或处理财政资源的行动","color":"gray"}]
+execute unless score @s action_attribute_missing matches 2 unless score @s action_used_econ matches 31 run tellraw @s [{"text":"[经济行动]","color":"yellow","clickEvent":{"action":"run_command","value":"/trigger action_attribute_choice set 2"}},{"text":"  需要跑市场、招商或处理财政资源的行动","color":"white"}]
 
-execute unless score @s action_attribute_missing matches 3 unless score @s action_used_welf matches 31 run tellraw @s [{"text":"[民生行动]","color":"red","clickEvent":{"action":"run_command","value":"/trigger action_attribute_choice set 3"}},{"text":"  需要服务居民、处理公共事务的行动","color":"gray"}]
+execute unless score @s action_attribute_missing matches 3 unless score @s action_used_welf matches 31 run tellraw @s [{"text":"[民生行动]","color":"red","clickEvent":{"action":"run_command","value":"/trigger action_attribute_choice set 3"}},{"text":"  需要服务居民、处理公共事务的行动","color":"white"}]
 
-execute unless score @s action_attribute_missing matches 4 unless score @s action_used_eco matches 31 run tellraw @s [{"text":"[生态行动]","color":"green","clickEvent":{"action":"run_command","value":"/trigger action_attribute_choice set 4"}},{"text":"  需要环保巡查、治理或绿化建设的行动","color":"gray"}]
+execute unless score @s action_attribute_missing matches 4 unless score @s action_used_eco matches 31 run tellraw @s [{"text":"[生态行动]","color":"green","clickEvent":{"action":"run_command","value":"/trigger action_attribute_choice set 4"}},{"text":"  需要环保巡查、治理或绿化建设的行动","color":"white"}]

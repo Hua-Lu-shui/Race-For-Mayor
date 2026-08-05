@@ -22,7 +22,7 @@ tp @s 235 -58 25 90 0
 function rfm:task/action/economy/economy_5/create_scene
 
 tellraw @a [{"text":"【经济行动】就业走访","color":"yellow","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]
-tellraw @a {"text":"右键求职者面前的登记表，查看技能和工作条件，再把登记表交给对应招聘官。","color":"white"}
+tellraw @a [{"text":"右键求职者面前的","color":"white"},{"text":"登记表","color":"#67D5FF","bold":true},{"text":"，查看技能和工作条件，再把登记表交给","color":"white"},{"text":"对应招聘官","color":"#FFD166","bold":true},{"text":"。","color":"white"}]
 
 title @s clear
 title @s title {"text":"就业走访","color":"yellow","bold":true}

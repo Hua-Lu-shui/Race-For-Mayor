@@ -62,6 +62,8 @@ scoreboard players set @a group_rank 0
 scoreboard players set @a item_held 0
 scoreboard players set @a item_selecting 0
 scoreboard players set @a swap_pending 0
+#重置藏品，并为医生生成开局随机藏品
+function rfm:collection/start_game
 #重置上一局的最终结算状态
 scoreboard players set #settle_state settle_state 0
 scoreboard players set #settle_room settle_room 0

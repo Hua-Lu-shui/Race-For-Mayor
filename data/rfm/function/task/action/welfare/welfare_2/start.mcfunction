@@ -27,7 +27,7 @@ tp @a 832 -42 132 180 35
 function rfm:task/action/welfare/welfare_2/teleport_start
 
 tellraw @a [{"text":"【民生行动】全民健身挑战","color":"red","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]
-tellraw @a {"text":"依次完成跨栏、平衡木、攀爬、射箭和跳水冲线。掉出赛道会返回最近检查点并扣除3秒。","color":"white"}
+tellraw @a [{"text":"依次完成","color":"white"},{"text":"跨栏、平衡木、攀爬、射箭和跳水冲线","color":"#67D5FF","bold":true},{"text":"。掉出赛道会返回最近检查点并扣除","color":"white"},{"text":"3秒","color":"#FFCB77"},{"text":"。","color":"white"}]
 
 title @s clear
 title @s title {"text":"全民健身挑战","color":"red","bold":true}

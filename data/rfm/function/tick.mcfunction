@@ -8,6 +8,10 @@ execute as @a[scores={welfare_lock=1}] run scoreboard players operation @s welfa
 execute as @a[scores={ecology_lock=1}] run scoreboard players operation @s ecology = @s ecology_locked
 #游戏进行中检查四项属性是否首次超过80分
 execute if score #phase phase matches 1 run function rfm:title/check/attributes
+#藏品为持续效果；具体效果确定后从统一入口分派
+execute if score #phase phase matches 1 run function rfm:collection/effect/tick
+#神秘人在办公室停留期间检测右键交互
+execute if score #phase phase matches 1 run function rfm:collection/mysterious/tick
 #等待全体玩家丢出结算时钟
 execute if score #settle_state settle_state matches 1 run function rfm:ending/ready/check
 #执行令牌争夺状态机

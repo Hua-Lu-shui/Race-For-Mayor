@@ -25,8 +25,8 @@ tp @a 720 -49 120 180 32
 tp @s 720 -60 104 180 0
 
 tellraw @a [{"text":"【名誉行动】市民应援","color":"aqua","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]
-tellraw @a {"text":"45秒内追赶并拾取带绿色粒子的鲜花，同时躲开带黄色粒子的鸡蛋。鲜花落地后很快消失，被鸡蛋击中会扣1分并清空连击。","color":"white"}
-tellraw @a {"text":"连续接到3朵鲜花额外得1分，连续接到5朵再额外得2分。18分以上名誉+6，12至17分名誉+4。","color":"gray"}
+tellraw @a [{"text":"45秒内","color":"#FFCB77","bold":true},{"text":"追赶并拾取","color":"white"},{"text":"带绿色粒子的鲜花","color":"#67D5FF","bold":true},{"text":"，同时躲开","color":"white"},{"text":"带黄色粒子的鸡蛋","color":"#FFD166","bold":true},{"text":"。鲜花落地后很快消失，被鸡蛋击中会扣1分并清空连击。","color":"white"}]
+tellraw @a [{"text":"连续接到3朵鲜花额外得1分，连续接到5朵再额外得2分。18分以上","color":"white"},{"text":"名誉+6","color":"aqua","bold":true},{"text":"，12至17分","color":"white"},{"text":"名誉+4","color":"aqua"},{"text":"。","color":"white"}]
 
 title @s clear
 title @s title {"text":"市民应援","color":"aqua","bold":true}

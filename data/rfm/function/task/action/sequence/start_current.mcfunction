@@ -3,7 +3,7 @@ scoreboard players set #current_found action_order 0
 execute as @a if score @s action_order = #current_action action_order if score @s action_role matches 1 run scoreboard players set #current_found action_order 1
 
 #公布当前行动玩家
-execute as @a if score @s action_order = #current_action action_order if score @s action_role matches 1 run tellraw @a [{"text":"现在由行动玩家 ","color":"white"},{"selector":"@s","color":"white"},{"text":" 执行任务。","color":"white"}]
+execute as @a if score @s action_order = #current_action action_order if score @s action_role matches 1 run tellraw @a [{"text":"现在由","color":"white"},{"text":"行动玩家 ","color":"#67D5FF","bold":true},{"selector":"@s","color":"white"},{"text":" 执行任务。","color":"white"}]
 
 #启动当前行动任务
 execute as @a if score @s action_order = #current_action action_order if score @s action_role matches 1 if score @s action_task matches 1.. run function rfm:task/action/show_selected

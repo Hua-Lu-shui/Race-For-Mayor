@@ -27,7 +27,7 @@ tp @a 760 -51 120 180 30
 tp @s 760 -60 113 180 0
 
 tellraw @a [{"text":"【民生行动】医院排队疏导","color":"red","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]
-tellraw @a {"text":"阅读患者病历，根据病情把病历放进急诊、优先门诊或普通门诊窗口。每份病历只判断一次，分诊错误会扣除3秒。","color":"white"}
+tellraw @a [{"text":"阅读","color":"white"},{"text":"患者病历","color":"#67D5FF","bold":true},{"text":"，根据病情把病历放进","color":"white"},{"text":"急诊、优先门诊或普通门诊窗口","color":"#FFD166","bold":true},{"text":"。每份病历只判断一次，分诊错误会扣除","color":"white"},{"text":"3秒","color":"#FFCB77"},{"text":"。","color":"white"}]
 
 title @s clear
 title @s title {"text":"医院排队疏导","color":"red","bold":true}

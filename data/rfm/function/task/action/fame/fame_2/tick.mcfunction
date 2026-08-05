@@ -1,6 +1,6 @@
 scoreboard players remove @s visit_time 1
 execute store result bossbar rfm:visit_time value run scoreboard players get @s visit_time
-bossbar set rfm:visit_time name [{"text":"\uE224","font":"rfm:bossbar"},{"text":"\uE100","font":"rfm:bossbar","color":"white"},{"text":"\uE101","font":"rfm:bossbar"},{"text":"\uE21C","font":"rfm:bossbar"},{"text":"社区拜访 · 已完成 ","color":"aqua"},{"score":{"name":"@s","objective":"visit_step"},"color":"white"},{"text":" / 5 · 当前门牌 ","color":"aqua"},{"score":{"name":"@s","objective":"visit_target"},"color":"yellow"},{"text":" · 错误 ","color":"aqua"},{"score":{"name":"@s","objective":"visit_wrong"},"color":"red"}]
+bossbar set rfm:visit_time name [{"text":"","font":"minecraft:default"},{"text":"\uE224","font":"rfm:bossbar"},{"text":"\uE100","font":"rfm:bossbar","color":"white"},{"text":"\uE101","font":"rfm:bossbar"},{"text":"\uE21C","font":"rfm:bossbar"},{"text":"社区拜访 · 已完成 ","color":"aqua"},{"score":{"name":"@s","objective":"visit_step"},"color":"white"},{"text":" / 5 · 当前门牌 ","color":"aqua"},{"score":{"name":"@s","objective":"visit_target"},"color":"yellow"},{"text":" · 错误 ","color":"aqua"},{"score":{"name":"@s","objective":"visit_wrong"},"color":"red"}]
 
 #读取十二户真实门铃
 scoreboard players set @s visit_answer 0

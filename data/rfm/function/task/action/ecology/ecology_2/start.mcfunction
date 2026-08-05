@@ -16,7 +16,7 @@ scoreboard players set @s sample_delay 0
 scoreboard players set @s sample_state 2
 
 tellraw @a [{"text":"【生态行动】河道取样","color":"green","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]
-tellraw @a {"text":"行动玩家需要沿河道依次完成1至6号取样点。在当前目标附近用玻璃瓶取得水样。","color":"white"}
+tellraw @a [{"text":"行动玩家","color":"#67D5FF","bold":true},{"text":"需要沿河道依次完成","color":"white"},{"text":"1至6号取样点","color":"#FFCB77"},{"text":"。在当前目标附近用玻璃瓶","color":"white"},{"text":"取得水样","color":"#FFD166","bold":true},{"text":"。","color":"white"}]
 
 title @s clear
 title @s title {"text":"河道取样","color":"green","bold":true}

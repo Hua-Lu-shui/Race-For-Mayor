@@ -27,8 +27,8 @@ tp @a 660 -51 121 180 30
 tp @s 660 -60 104 180 0
 
 tellraw @a [{"text":"【名誉行动】公开答疑","color":"aqua","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]
-tellraw @a {"text":"记者发光并出现粒子后，你只有3秒转向该记者，再重新按下一次潜行。按下瞬间会锁定答案，方向错误不能补救。必须留在中央答疑台内，共进行8次提问。","color":"white"}
-tellraw @a {"text":"成功回应7至8次可得6点名誉，成功5至6次可得4点名誉，成功不足5次则失败。","color":"gray"}
+tellraw @a [{"text":"记者发光并出现粒子后，你只有","color":"white"},{"text":"3秒","color":"#FFCB77","bold":true},{"text":"转向该记者，再重新按下一次潜行。按下瞬间会","color":"white"},{"text":"锁定答案","color":"#67D5FF","bold":true},{"text":"，方向错误不能补救。必须留在","color":"white"},{"text":"中央答疑台","color":"#FFD166"},{"text":"内，共进行","color":"white"},{"text":"8次提问","color":"#FFCB77"},{"text":"。","color":"white"}]
+tellraw @a [{"text":"成功回应7至8次可得","color":"white"},{"text":"6点名誉","color":"aqua","bold":true},{"text":"，成功5至6次可得","color":"white"},{"text":"4点名誉","color":"aqua"},{"text":"，成功不足5次则失败。","color":"white"}]
 
 title @s clear
 title @s title {"text":"公开答疑","color":"aqua","bold":true}

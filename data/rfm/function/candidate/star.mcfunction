@@ -12,4 +12,4 @@ function rfm:attribute/minimum
 title @s times 10 40 0
 title @s title [{"text":"你选择了：","color":"white"},{"text":"明星","color":"aqua"}]
 title @s subtitle [{"text":"名誉:15","color":"aqua"},{"text":" 经济:12","color":"yellow"},{"text":" 生态:6","color":"green"},{"text":" 民生:7","color":"red"}]
-tellraw @s [{"text":"【粉丝效应】","color":"aqua","bold":true},{"text":"每回合结束后，恢复因任务而降低的除名誉外的属性。","color":"white"}]
+tellraw @s [{"text":"【粉丝效应】","color":"aqua","bold":true},{"text":"返还因任务而降低的除名誉外的属性。","color":"white"}]

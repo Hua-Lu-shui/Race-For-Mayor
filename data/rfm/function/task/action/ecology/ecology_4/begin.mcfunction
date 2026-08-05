@@ -18,7 +18,7 @@ scoreboard players set @s trash_state 1
 bossbar set rfm:trash_time players @a
 bossbar set rfm:trash_time max 400
 bossbar set rfm:trash_time value 400
-bossbar set rfm:trash_time name [{"text":"\uE220","font":"rfm:bossbar"},{"text":"\uE100","font":"rfm:bossbar","color":"white"},{"text":"\uE101","font":"rfm:bossbar"},{"text":"\uE220","font":"rfm:bossbar"},{"text":"垃圾分类督导  ·  已分类 ","color":"green"},{"score":{"name":"@s","objective":"trash_round"},"color":"yellow"},{"text":" / 10  ·  正确 ","color":"green"},{"score":{"name":"@s","objective":"trash_correct"},"color":"gold"}]
+bossbar set rfm:trash_time name [{"text":"","font":"minecraft:default"},{"text":"\uE220","font":"rfm:bossbar"},{"text":"\uE100","font":"rfm:bossbar","color":"white"},{"text":"\uE101","font":"rfm:bossbar"},{"text":"\uE220","font":"rfm:bossbar"},{"text":"垃圾分类督导  ·  已分类 ","color":"green"},{"score":{"name":"@s","objective":"trash_round"},"color":"yellow"},{"text":" / 10  ·  正确 ","color":"green"},{"score":{"name":"@s","objective":"trash_correct"},"color":"gold"}]
 bossbar set rfm:trash_time visible true
 
 function rfm:task/action/ecology/ecology_4/give_item

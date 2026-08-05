@@ -25,8 +25,8 @@ scoreboard players set @s energy_delay 0
 scoreboard players set @s energy_state 2
 
 tellraw @a [{"text":"【生态行动】清洁能源检查","color":"green","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]
-tellraw @a {"text":"行动玩家需要根据目标需求开关四个发电设备，使供电总量等于目标，共进行10轮。","color":"white"}
-tellraw @a [{"text":"设备数值：","color":"yellow","bold":true},{"text":"太阳能 1，","color":"gold"},{"text":"风力 2，","color":"aqua"},{"text":"水力 3，","color":"blue"},{"text":"储能 4","color":"light_purple"}]
+tellraw @a [{"text":"行动玩家","color":"#67D5FF","bold":true},{"text":"需要根据目标需求开关四个发电设备，使","color":"white"},{"text":"供电总量等于目标","color":"#FFD166","bold":true},{"text":"，共进行","color":"white"},{"text":"10轮","color":"#FFCB77"},{"text":"。","color":"white"}]
+tellraw @a [{"text":"设备数值：","color":"#67D5FF","bold":true},{"text":"太阳能 1，风力 2，水力 3，储能 4","color":"white"}]
 
 title @s clear
 title @s title {"text":"清洁能源检查","color":"green","bold":true}

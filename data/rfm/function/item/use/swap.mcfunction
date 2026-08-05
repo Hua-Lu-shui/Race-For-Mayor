@@ -1,9 +1,9 @@
 #记录待互换属性，并仅向使用者列出其他候选人
 scoreboard players operation @s swap_pending = @s item_held
-execute if score @s swap_pending matches 1 run tellraw @s {"text":"【名誉互换】点击一名玩家，与其互换名誉：","color":"aqua","bold":true}
-execute if score @s swap_pending matches 2 run tellraw @s {"text":"【经济互换】点击一名玩家，与其互换经济：","color":"yellow","bold":true}
-execute if score @s swap_pending matches 3 run tellraw @s {"text":"【民生互换】点击一名玩家，与其互换民生：","color":"red","bold":true}
-execute if score @s swap_pending matches 4 run tellraw @s {"text":"【生态互换】点击一名玩家，与其互换生态：","color":"green","bold":true}
+execute if score @s swap_pending matches 1 run tellraw @s [{"text":"【名誉互换】","color":"aqua","bold":true},{"text":"点击一名玩家，与其互换","color":"white"},{"text":"名誉","color":"aqua"},{"text":"：","color":"white"}]
+execute if score @s swap_pending matches 2 run tellraw @s [{"text":"【经济互换】","color":"yellow","bold":true},{"text":"点击一名玩家，与其互换","color":"white"},{"text":"经济","color":"yellow"},{"text":"：","color":"white"}]
+execute if score @s swap_pending matches 3 run tellraw @s [{"text":"【民生互换】","color":"red","bold":true},{"text":"点击一名玩家，与其互换","color":"white"},{"text":"民生","color":"red"},{"text":"：","color":"white"}]
+execute if score @s swap_pending matches 4 run tellraw @s [{"text":"【生态互换】","color":"green","bold":true},{"text":"点击一名玩家，与其互换","color":"white"},{"text":"生态","color":"green"},{"text":"：","color":"white"}]
 execute as @a[tag=!rfm_item_user,scores={room=1}] unless score @s candidate matches 7 run tellraw @a[tag=rfm_item_user,limit=1] [{"text":"▶ ","color":"green"},{"selector":"@s","color":"white","bold":true,"clickEvent":{"action":"run_command","value":"/function rfm:item/use/swap/select_1"}}]
 execute as @a[tag=!rfm_item_user,scores={room=2}] unless score @s candidate matches 7 run tellraw @a[tag=rfm_item_user,limit=1] [{"text":"▶ ","color":"green"},{"selector":"@s","color":"white","bold":true,"clickEvent":{"action":"run_command","value":"/function rfm:item/use/swap/select_2"}}]
 execute as @a[tag=!rfm_item_user,scores={room=3}] unless score @s candidate matches 7 run tellraw @a[tag=rfm_item_user,limit=1] [{"text":"▶ ","color":"green"},{"selector":"@s","color":"white","bold":true,"clickEvent":{"action":"run_command","value":"/function rfm:item/use/swap/select_3"}}]

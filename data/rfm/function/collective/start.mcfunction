@@ -16,6 +16,6 @@ scoreboard players set @a group_answered 0
 scoreboard players set @a group_wrong 0
 gamemode adventure @a
 tp @a 1100 -59 100 0 0
-title @a title {"text":"准备响应","color":"gold","bold":true}
+title @a title [{"text":"准备","color":"white"},{"text":"响应","color":"#67D5FF","bold":true}]
 title @a subtitle [{"text":"名誉","color":"aqua"},{"text":" · ","color":"gray"},{"text":"经济","color":"yellow"},{"text":" · ","color":"gray"},{"text":"民生","color":"red"},{"text":" · ","color":"gray"},{"text":"生态","color":"green"}]
 schedule function rfm:collective/countdown_3 60t replace

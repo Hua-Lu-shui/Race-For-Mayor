@@ -37,7 +37,7 @@ tp @a 19 -52 -17 180 30
 tp @s 119 -58 -18 180 0
 
 tellraw @a [{"text":"【名誉行动】街头演讲","color":"aqua","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]
-tellraw @a {"text":"共进行10次临场反应，每次只有1.5秒。愤怒粒子按“安抚情绪”，烟雾粒子按“补充说明”，音符粒子按“坚定承诺”。","color":"white"}
+tellraw @a [{"text":"共进行","color":"white"},{"text":"10次临场反应","color":"#67D5FF","bold":true},{"text":"，每次只有","color":"white"},{"text":"1.5秒","color":"#FFCB77","bold":true},{"text":"。愤怒粒子按“安抚情绪”，烟雾粒子按“补充说明”，音符粒子按“坚定承诺”。","color":"white"}]
 
 title @s clear
 title @s title {"text":"街头演讲","color":"aqua","bold":true}

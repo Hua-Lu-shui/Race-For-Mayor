@@ -20,7 +20,7 @@ scoreboard players set @s hospital_state 1
 bossbar set rfm:hospital_time players @a
 bossbar set rfm:hospital_time max 1200
 bossbar set rfm:hospital_time value 1200
-bossbar set rfm:hospital_time name [{"text":"\uE220","font":"rfm:bossbar"},{"text":"\uE100","font":"rfm:bossbar","color":"white"},{"text":"\uE101","font":"rfm:bossbar"},{"text":"\uE220","font":"rfm:bossbar"},{"text":"医院排队疏导  ·  已分诊 ","color":"red"},{"score":{"name":"@s","objective":"hospital_round"},"color":"yellow"},{"text":" / 8  ·  正确 ","color":"red"},{"score":{"name":"@s","objective":"hospital_correct"},"color":"gold"}]
+bossbar set rfm:hospital_time name [{"text":"","font":"minecraft:default"},{"text":"\uE220","font":"rfm:bossbar"},{"text":"\uE100","font":"rfm:bossbar","color":"white"},{"text":"\uE101","font":"rfm:bossbar"},{"text":"\uE220","font":"rfm:bossbar"},{"text":"医院排队疏导  ·  已分诊 ","color":"red"},{"score":{"name":"@s","objective":"hospital_round"},"color":"yellow"},{"text":" / 8  ·  正确 ","color":"red"},{"score":{"name":"@s","objective":"hospital_correct"},"color":"gold"}]
 bossbar set rfm:hospital_time visible true
 
 function rfm:task/action/welfare/welfare_1/give_case

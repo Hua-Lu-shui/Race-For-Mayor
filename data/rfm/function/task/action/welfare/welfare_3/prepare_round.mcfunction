@@ -21,4 +21,4 @@ scoreboard players set @s exercise_state 5
 title @a clear
 title @a title [{"text":"第 ","color":"white"},{"score":{"name":"@s","objective":"exercise_round"},"color":"yellow"},{"text":" 轮","color":"white"}]
 title @a subtitle {"text":"观察动作顺序","color":"aqua"}
-bossbar set rfm:exercise_time name [{"text":"\uE21D","font":"rfm:bossbar"},{"text":"\uE100","font":"rfm:bossbar","color":"white"},{"text":"\uE101","font":"rfm:bossbar"},{"text":"\uE223","font":"rfm:bossbar"},{"text":"课间操领队  ·  第 ","color":"red"},{"score":{"name":"@s","objective":"exercise_round"},"color":"yellow"},{"text":" / 3 轮  ·  观察中","color":"aqua"}]
+bossbar set rfm:exercise_time name [{"text":"","font":"minecraft:default"},{"text":"\uE21D","font":"rfm:bossbar"},{"text":"\uE100","font":"rfm:bossbar","color":"white"},{"text":"\uE101","font":"rfm:bossbar"},{"text":"\uE223","font":"rfm:bossbar"},{"text":"课间操领队  ·  第 ","color":"red"},{"score":{"name":"@s","objective":"exercise_round"},"color":"yellow"},{"text":" / 3 轮  ·  观察中","color":"aqua"}]

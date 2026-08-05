@@ -32,7 +32,7 @@ tp @a 144 -58 16 0 0
 tp @s 146 -58 22 90 0
 
 tellraw @a [{"text":"【经济行动】招商洽谈","color":"yellow","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]
-tellraw @a {"text":"企业代表将依次提出全部9项经营问题，每次任务的问题顺序不同。行动玩家需要选择合适的扶持方案。","color":"white"}
+tellraw @a [{"text":"企业代表将依次提出全部","color":"white"},{"text":"9项经营问题","color":"#FFCB77"},{"text":"，每次任务的问题顺序不同。","color":"white"},{"text":"行动玩家","color":"#67D5FF","bold":true},{"text":"需要选择","color":"white"},{"text":"合适的扶持方案","color":"#FFD166","bold":true},{"text":"。","color":"white"}]
 
 title @s clear
 title @s title {"text":"招商洽谈","color":"yellow","bold":true}

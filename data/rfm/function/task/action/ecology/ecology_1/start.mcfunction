@@ -21,7 +21,7 @@ scoreboard players set @s emission_state 5
 
 #所有玩家到达任务场地后再公布教程
 tellraw @a [{"text":"【生态行动】排放巡查","color":"green","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]
-tellraw @a {"text":"9个排放口中每次会有1个冒出黑烟。行动玩家需要在2秒内扔出对应编号的纸条，共进行10次巡查。","color":"white"}
+tellraw @a [{"text":"9个排放口中每次会有1个冒出黑烟。","color":"white"},{"text":"行动玩家","color":"#67D5FF","bold":true},{"text":"需要在","color":"white"},{"text":"2秒内","color":"#FFCB77","bold":true},{"text":"扔出","color":"white"},{"text":"对应编号的纸条","color":"#FFD166","bold":true},{"text":"，共进行10次巡查。","color":"white"}]
 
 title @s clear
 title @s title {"text":"排放巡查","color":"green","bold":true}

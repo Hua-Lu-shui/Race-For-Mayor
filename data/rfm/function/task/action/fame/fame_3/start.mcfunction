@@ -54,8 +54,8 @@ tp @a 596 -51 119 180 30
 tp @s 596 -60 112 180 0
 
 tellraw @a [{"text":"【名誉行动】市民合影","color":"aqua","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]
-tellraw @a {"text":"右键居民进行选择，再右键对应的青色脚底方块安排位置；可随时重新选择和调整。排好后按下快门。","color":"white"}
-tellraw @a {"text":"首次提交完全正确可得6点名誉；首次有误可继续调整，第二次完全正确可得4点名誉。两次错误或45秒耗尽则失败。","color":"gray"}
+tellraw @a [{"text":"右键居民","color":"#67D5FF","bold":true},{"text":"进行选择，再右键对应的","color":"white"},{"text":"青色脚底方块","color":"#67D5FF"},{"text":"安排位置；可随时重新选择和调整。排好后","color":"white"},{"text":"按下快门","color":"#FFD166","bold":true},{"text":"。","color":"white"}]
+tellraw @a [{"text":"首次提交完全正确可得","color":"white"},{"text":"6点名誉","color":"aqua","bold":true},{"text":"；首次有误可继续调整，第二次完全正确可得","color":"white"},{"text":"4点名誉","color":"aqua"},{"text":"。两次错误或","color":"white"},{"text":"45秒","color":"#FFCB77"},{"text":"耗尽则失败。","color":"white"}]
 
 title @s clear
 title @s title {"text":"市民合影","color":"aqua","bold":true}

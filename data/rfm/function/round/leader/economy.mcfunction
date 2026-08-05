@@ -15,6 +15,6 @@ execute if score #round round matches ..5 if entity @a[tag=rfm_public_lead_econo
 execute if score #round round matches ..5 unless entity @a[tag=rfm_public_lead_economy] run tellraw @a [{"text":"经济领先：","color":"yellow","bold":true},{"text":"无公开候选人","color":"gray"}]
 execute if score #round round matches 6.. if score #reveal_economy leader_reveal matches 1 if entity @a[tag=rfm_public_lead_economy] run tellraw @a [{"text":"经济领先：","color":"yellow","bold":true},{"selector":"@a[tag=rfm_public_lead_economy]","separator":{"text":"、","color":"gray"},"color":"white","bold":true}]
 execute if score #round round matches 6.. if score #reveal_economy leader_reveal matches 1 unless entity @a[tag=rfm_public_lead_economy] run tellraw @a [{"text":"经济领先：","color":"yellow","bold":true},{"text":"无公开候选人","color":"gray"}]
-execute if score #round round matches 6.. unless score #reveal_economy leader_reveal matches 1 if entity @a[tag=rfm_public_lead_economy] run tellraw @a [{"text":"经济领先：","color":"yellow","bold":true},{"text":"？","color":"white","bold":true}]
+execute if score #round round matches 6.. unless score #reveal_economy leader_reveal matches 1 if entity @a[tag=rfm_public_lead_economy] run tellraw @a [{"text":"经济领先：","color":"yellow","bold":true},{"text":"?","color":"white","bold":true}]
 #为全体播放经济领先播报提示音（在每位玩家自身位置播放）
 execute as @a at @s run playsound minecraft:block.note_block.bell master @s ~ ~ ~ 0.8 1 1

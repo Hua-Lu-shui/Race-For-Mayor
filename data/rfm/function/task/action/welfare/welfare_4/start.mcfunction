@@ -33,7 +33,7 @@ tp @a 948 -51 122 180 30
 function rfm:task/action/welfare/welfare_4/teleport_center
 
 tellraw @a [{"text":"【民生行动】公交站调度","color":"red","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]
-tellraw @a {"text":"乘客会随机进入三条候车队伍。红线满3人、黄线满4人、蓝线满5人时，按下对应按钮发车。提前或超载发车会清空该队并扣除2秒；60秒内正确发车6次即可完成。","color":"white"}
+tellraw @a [{"text":"乘客会随机进入三条候车队伍。红线满3人、黄线满4人、蓝线满5人时，","color":"white"},{"text":"按下对应按钮发车","color":"#67D5FF","bold":true},{"text":"。提前或超载发车会清空该队并扣除","color":"white"},{"text":"2秒","color":"#FFCB77"},{"text":"；","color":"white"},{"text":"60秒内正确发车6次","color":"#FFD166","bold":true},{"text":"即可完成。","color":"white"}]
 
 title @s clear
 title @s title {"text":"公交站调度","color":"red","bold":true}

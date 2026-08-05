@@ -31,7 +31,7 @@ tp @a 900 -51 122 180 30
 function rfm:task/action/welfare/welfare_3/teleport_center
 
 tellraw @a [{"text":"【民生行动】课间操领队","color":"red","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]
-tellraw @a {"text":"观察系统依次展示的动作，再按原顺序踩下四色踏板。共三轮，踩错扣除2秒并从本轮第一个动作重新输入；连续同色时也要先离开踏板。","color":"white"}
+tellraw @a [{"text":"观察系统依次展示的动作，再按","color":"white"},{"text":"原顺序踩下四色踏板","color":"#67D5FF","bold":true},{"text":"。共","color":"white"},{"text":"三轮","color":"#FFCB77"},{"text":"，踩错扣除","color":"white"},{"text":"2秒","color":"#FFCB77"},{"text":"并从本轮第一个动作重新输入；连续同色时也要先离开踏板。","color":"white"}]
 
 title @s clear
 title @s title {"text":"课间操领队","color":"red","bold":true}

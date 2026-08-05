@@ -37,8 +37,8 @@ scoreboard players set @a energy_state 0
 #统计当前玩家人数并决定行动玩家数量
 execute store result score #player_count player_count run execute if entity @a
 scoreboard players set #action_quota action_quota 0
-execute if score #player_count player_count matches ..4 run scoreboard players set #action_quota action_quota 1
-execute if score #player_count player_count matches 5..8 run scoreboard players set #action_quota action_quota 2
+execute if score #player_count player_count matches 2..5 run scoreboard players set #action_quota action_quota 1
+execute if score #player_count player_count matches 6..8 run scoreboard players set #action_quota action_quota 2
 
 #没有本局记录的新玩家从0次开始；优先在被抽中次数最少的玩家中随机挑选
 scoreboard players add @a action_draw_count 0
@@ -49,4 +49,4 @@ function rfm:task/action/select_mode
 #为行动玩家分配执行顺序
 function rfm:task/action/sequence/assign_order
 
-tellraw @a[scores={action_role=1}] {"text":"你是本回合行动玩家，请从随机出现的三个属性中选择一个行动方向。","color":"gold","bold":true}
+tellraw @a[scores={action_role=1}] [{"text":"你是本回合","color":"white"},{"text":"行动玩家","color":"#67D5FF","bold":true},{"text":"，请从随机出现的三个属性中选择一个","color":"white"},{"text":"行动方向","color":"#67D5FF","bold":true},{"text":"。","color":"white"}]

@@ -24,6 +24,5 @@ scoreboard players set @a settle_clock 0
 clear @a minecraft:clock[minecraft:custom_data={settlement_ready:1}]
 kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{settlement_ready:1}}}}]
 item replace entity @a hotbar.4 with minecraft:clock[minecraft:custom_name='{"text":"准备最终结算","color":"gold","bold":true,"italic":false}',minecraft:lore=['{"text":"按Q丢出；全员确认后前往市政厅","color":"gray","italic":false}'],minecraft:custom_data={settlement_ready:1}] 1
-title @a title {"text":"准备最终结算","color":"gold","bold":true}
-title @a subtitle {"text":"丢出结算时钟，等待全体候选人确认","color":"yellow"}
-tellraw @a {"text":"第10回合已经结束。请丢出物品栏中的结算时钟；所有候选人确认后，将统一前往市政厅统计最终票数。","color":"gold"}
+title @a title [{"text":"准备","color":"white"},{"text":"最终结算","color":"#FFD166","bold":true}]
+title @a subtitle [{"text":"丢出","color":"white"},{"text":"结算时钟","color":"#67D5FF","bold":true},{"text":"，等待全体候选人确认","color":"white"}]

@@ -1,5 +1,5 @@
 #显示剩余时间与当前得分
-bossbar set rfm:cheer_time name [{"text":"\uE218","font":"rfm:bossbar"},{"text":"\uE100","font":"rfm:bossbar","color":"white"},{"text":"\uE101","font":"rfm:bossbar"},{"text":"\uE228","font":"rfm:bossbar"},{"text":"市民应援 · 得分 ","color":"aqua"},{"score":{"name":"@s","objective":"cheer_score"},"color":"green"},{"text":" · 连击 ","color":"aqua"},{"score":{"name":"@s","objective":"cheer_combo"},"color":"yellow"}]
+bossbar set rfm:cheer_time name [{"text":"","font":"minecraft:default"},{"text":"\uE218","font":"rfm:bossbar"},{"text":"\uE100","font":"rfm:bossbar","color":"white"},{"text":"\uE101","font":"rfm:bossbar"},{"text":"\uE228","font":"rfm:bossbar"},{"text":"市民应援 · 得分 ","color":"aqua"},{"score":{"name":"@s","objective":"cheer_score"},"color":"green"},{"text":" · 连击 ","color":"aqua"},{"score":{"name":"@s","objective":"cheer_combo"},"color":"yellow"}]
 execute store result bossbar rfm:cheer_time value run scoreboard players get @s cheer_time
 
 #为飞行中的鲜花和鸡蛋显示不同轨迹

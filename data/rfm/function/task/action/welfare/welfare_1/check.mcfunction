@@ -11,6 +11,6 @@ data remove block 760 -60 103 Items
 data remove block 768 -60 103 Items
 
 scoreboard players add @s hospital_round 1
-bossbar set rfm:hospital_time name [{"text":"\uE220","font":"rfm:bossbar"},{"text":"\uE100","font":"rfm:bossbar","color":"white"},{"text":"\uE101","font":"rfm:bossbar"},{"text":"\uE220","font":"rfm:bossbar"},{"text":"医院排队疏导  ·  已分诊 ","color":"red"},{"score":{"name":"@s","objective":"hospital_round"},"color":"yellow"},{"text":" / 8  ·  正确 ","color":"red"},{"score":{"name":"@s","objective":"hospital_correct"},"color":"gold"}]
+bossbar set rfm:hospital_time name [{"text":"","font":"minecraft:default"},{"text":"\uE220","font":"rfm:bossbar"},{"text":"\uE100","font":"rfm:bossbar","color":"white"},{"text":"\uE101","font":"rfm:bossbar"},{"text":"\uE220","font":"rfm:bossbar"},{"text":"医院排队疏导  ·  已分诊 ","color":"red"},{"score":{"name":"@s","objective":"hospital_round"},"color":"yellow"},{"text":" / 8  ·  正确 ","color":"red"},{"score":{"name":"@s","objective":"hospital_correct"},"color":"gold"}]
 execute if score @s hospital_round matches ..7 run function rfm:task/action/welfare/welfare_1/give_case
 execute if score @s hospital_round matches 8.. run function rfm:task/action/welfare/welfare_1/result

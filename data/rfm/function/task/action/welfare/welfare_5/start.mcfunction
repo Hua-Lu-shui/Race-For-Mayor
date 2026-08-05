@@ -25,7 +25,7 @@ tp @a 1004 -51 122 180 30
 tp @s 1004 -60 117 180 0
 
 tellraw @a [{"text":"【民生行动】井盖安全巡检","color":"red","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]
-tellraw @a {"text":"寻找步行街上打开的故障井盖，对准竖起的铁活板门连续点击。每个井盖需要维修20次，第20次点击后会自动合上。60秒内尽量修复全部6个井盖。","color":"white"}
+tellraw @a [{"text":"寻找步行街上打开的","color":"white"},{"text":"故障井盖","color":"#67D5FF","bold":true},{"text":"，对准竖起的铁活板门连续点击。每个井盖需要维修20次，第20次点击后会自动合上。","color":"white"},{"text":"60秒内尽量修复全部6个井盖","color":"#FFD166","bold":true},{"text":"。","color":"white"}]
 
 title @s clear
 title @s title {"text":"井盖安全巡检","color":"red","bold":true}
