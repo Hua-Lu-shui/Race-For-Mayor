@@ -1,23 +1,10 @@
-#创建民生行动任务1的临时社区医院场地
-fill 748 -61 96 772 -61 116 minecraft:smooth_quartz replace
-fill 748 -60 96 772 -56 96 minecraft:white_concrete replace
-fill 748 -60 116 772 -57 116 minecraft:light_gray_concrete replace
-fill 748 -60 97 748 -57 115 minecraft:white_concrete replace
-fill 772 -60 97 772 -57 115 minecraft:white_concrete replace
-
-#三个分诊窗口及对应投递箱：后墙和柜台之间为工作人员站位
-fill 750 -60 99 754 -56 99 minecraft:red_concrete replace
-fill 750 -60 101 754 -60 101 minecraft:red_concrete replace
-fill 758 -60 99 762 -56 99 minecraft:yellow_concrete replace
-fill 758 -60 101 762 -60 101 minecraft:yellow_concrete replace
-fill 766 -60 99 770 -56 99 minecraft:lime_concrete replace
-fill 766 -60 101 770 -60 101 minecraft:lime_concrete replace
-setblock 752 -60 103 minecraft:chest[facing=south,type=single] replace
-setblock 760 -60 103 minecraft:chest[facing=south,type=single] replace
-setblock 768 -60 103 minecraft:chest[facing=south,type=single] replace
+setblock 123 -58 -66 minecraft:chest[facing=north,type=single] replace
+setblock 119 -58 -66 minecraft:chest[facing=north,type=single] replace
+setblock 115 -58 -66 minecraft:chest[facing=north,type=single] replace
 
 #窗口工作人员在场地创建时生成，避免玩家到场后看见实体突然出现
 kill @e[type=minecraft:villager,tag=rfm_hospital_staff]
-summon minecraft:villager 752 -60 100 {Tags:["rfm_hospital_staff"],NoAI:1b,Silent:1b,Invulnerable:1b,PersistenceRequired:1b,VillagerData:{profession:"minecraft:cleric",level:2,type:"minecraft:plains"}}
-summon minecraft:villager 760 -60 100 {Tags:["rfm_hospital_staff"],NoAI:1b,Silent:1b,Invulnerable:1b,PersistenceRequired:1b,VillagerData:{profession:"minecraft:cleric",level:2,type:"minecraft:plains"}}
-summon minecraft:villager 768 -60 100 {Tags:["rfm_hospital_staff"],NoAI:1b,Silent:1b,Invulnerable:1b,PersistenceRequired:1b,VillagerData:{profession:"minecraft:cleric",level:2,type:"minecraft:plains"}}
+kill @e[type=minecraft:item_display,tag=rfm_hospital_staff]
+summon minecraft:item_display 123 -57 -65 {Tags:["rfm_hospital_staff"],Rotation:[0.0f,0.0f],item:{id:"minecraft:paper",count:1,components:{"minecraft:custom_model_data":700008}},item_display:"fixed",transformation:{translation:[0.0f,0.0f,0.0f],scale:[2.0f,2.0f,2.0f],left_rotation:[0.0f,0.0f,0.0f,1.0f],right_rotation:[0.0f,0.0f,0.0f,1.0f]},view_range:64.0f}
+summon minecraft:item_display 119 -57 -65 {Tags:["rfm_hospital_staff"],Rotation:[0.0f,0.0f],item:{id:"minecraft:paper",count:1,components:{"minecraft:custom_model_data":700009}},item_display:"fixed",transformation:{translation:[0.0f,0.0f,0.0f],scale:[2.0f,2.0f,2.0f],left_rotation:[0.0f,0.0f,0.0f,1.0f],right_rotation:[0.0f,0.0f,0.0f,1.0f]},view_range:64.0f}
+summon minecraft:item_display 115 -57 -65 {Tags:["rfm_hospital_staff"],Rotation:[0.0f,0.0f],item:{id:"minecraft:paper",count:1,components:{"minecraft:custom_model_data":700010}},item_display:"fixed",transformation:{translation:[0.0f,0.0f,0.0f],scale:[2.0f,2.0f,2.0f],left_rotation:[0.0f,0.0f,0.0f,1.0f],right_rotation:[0.0f,0.0f,0.0f,1.0f]},view_range:64.0f}

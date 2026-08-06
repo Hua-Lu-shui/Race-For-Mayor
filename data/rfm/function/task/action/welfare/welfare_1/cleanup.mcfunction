@@ -4,10 +4,12 @@ clear @s minecraft:map[minecraft:custom_data={hospital_ready:1}]
 clear @s minecraft:written_book[minecraft:custom_data~{hospital_case:1}]
 kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{hospital_ready:1}}}}]
 kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{hospital_case:1}}}}]
+kill @e[type=minecraft:villager,tag=rfm_hospital_staff]
+kill @e[type=minecraft:item_display,tag=rfm_hospital_staff]
 
-data remove block 752 -60 103 Items
-data remove block 760 -60 103 Items
-data remove block 768 -60 103 Items
+data remove block 123 -58 -66 Items
+data remove block 119 -58 -66 Items
+data remove block 115 -58 -66 Items
 
 scoreboard players set @s hospital_round 0
 scoreboard players set @s hospital_case 0
