@@ -2,7 +2,7 @@
 
 #名誉行动601—605
 execute if score @s action_task matches 601 if score @s speech_state matches 2..3 run tp @s 119 -58 -18
-execute if score @s action_task matches 602 if score @s visit_state matches 2..3 run tp @s 536 -60 103
+execute if score @s action_task matches 602 if score @s visit_state matches 2..3 run tp @s 143 -58 -31
 execute if score @s action_task matches 603 if score @s photo_state matches 2..3 run tp @s 596 -60 112
 execute if score @s action_task matches 604 if score @s qa_state matches 2..3 run tp @s 660 -60 104
 execute if score @s action_task matches 605 if score @s cheer_state matches 2..3 run tp @s 720 -60 104

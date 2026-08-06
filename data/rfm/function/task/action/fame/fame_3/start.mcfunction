@@ -43,20 +43,12 @@ advancement revoke @s only rfm:photo_position_5
 
 #其他玩家在摄影区后方俯视，行动玩家在控制区出发
 gamemode adventure @a
-#生成可自由走动的空中观战平台
-fill 591 -52 115 601 -52 123 minecraft:light_gray_stained_glass
-setblock 596 -52 119 minecraft:sea_lantern
-fill 591 -51 115 601 -49 115 minecraft:glass
-fill 591 -51 123 601 -49 123 minecraft:glass
-fill 591 -51 116 591 -49 122 minecraft:glass
-fill 601 -51 116 601 -49 122 minecraft:glass
 tp @a 596 -51 119 180 30
 tp @s 596 -60 112 180 0
 
 tellraw @a [{"text":"【名誉行动】市民合影","color":"aqua","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]
-tellraw @a [{"text":"右键居民","color":"#67D5FF","bold":true},{"text":"进行选择，再右键对应的","color":"white"},{"text":"青色脚底方块","color":"#67D5FF"},{"text":"安排位置；可随时重新选择和调整。排好后","color":"white"},{"text":"按下快门","color":"#FFD166","bold":true},{"text":"。","color":"white"}]
-tellraw @a [{"text":"首次提交完全正确可得","color":"white"},{"text":"6点名誉","color":"aqua","bold":true},{"text":"；首次有误可继续调整，第二次完全正确可得","color":"white"},{"text":"4点名誉","color":"aqua"},{"text":"。两次错误或","color":"white"},{"text":"45秒","color":"#FFCB77"},{"text":"耗尽则失败。","color":"white"}]
+tellraw @a [{"text":"右键居民","color":"#67D5FF","bold":true},{"text":"进行选择，再右键对应的","color":"white"},{"text":"站位","color":"#67D5FF"},{"text":"安排位置；可随时重新选择和调整。排好后","color":"white"},{"text":"按下快门","color":"#FFD166","bold":true},{"text":"。","color":"white"}]
 
 title @s clear
 title @s title {"text":"市民合影","color":"aqua","bold":true}
-item replace entity @s hotbar.4 with minecraft:map[minecraft:custom_name='{"text":"准备完成","color":"aqua","bold":true,"italic":false}',minecraft:lore=['{"text":"按Q丢出后开始倒计时","color":"gray","italic":false}'],minecraft:custom_data={photo_ready:1}] 1
+item replace entity @s hotbar.4 with minecraft:map[minecraft:custom_name='{"text":"准备完成","color":"aqua","bold":true,"italic":false}',minecraft:lore=['{"text":"扔出后开始任务","color":"gray","italic":false}'],minecraft:custom_data={photo_ready:1}] 1

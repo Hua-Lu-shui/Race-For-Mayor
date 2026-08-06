@@ -15,8 +15,4 @@ function rfm:task/action/ecology/ecology_1/detect_answer
 #尚未作答时继续倒计时，40游戏刻等于2秒
 execute if score @s emission_state matches 1 run scoreboard players remove @s emission_time 1
 execute if score @s emission_state matches 1 store result bossbar rfm:emission_time value run scoreboard players get @s emission_time
-execute if score @s emission_state matches 1 if score @s emission_time matches 31..40 run bossbar set rfm:emission_time name [{"text":"第 ","color":"white"},{"score":{"name":"@s","objective":"emission_round"},"color":"gold"},{"text":" / 10 轮  ·  剩余时间：2.0 秒","color":"green"}]
-execute if score @s emission_state matches 1 if score @s emission_time matches 21..30 run bossbar set rfm:emission_time name [{"text":"第 ","color":"white"},{"score":{"name":"@s","objective":"emission_round"},"color":"gold"},{"text":" / 10 轮  ·  剩余时间：1.5 秒","color":"yellow"}]
-execute if score @s emission_state matches 1 if score @s emission_time matches 11..20 run bossbar set rfm:emission_time name [{"text":"第 ","color":"white"},{"score":{"name":"@s","objective":"emission_round"},"color":"gold"},{"text":" / 10 轮  ·  剩余时间：1.0 秒","color":"gold"}]
-execute if score @s emission_state matches 1 if score @s emission_time matches 1..10 run bossbar set rfm:emission_time name [{"text":"第 ","color":"white"},{"score":{"name":"@s","objective":"emission_round"},"color":"gold"},{"text":" / 10 轮  ·  剩余时间：0.5 秒","color":"red"}]
 execute if score @s emission_state matches 1 if score @s emission_time matches ..0 run function rfm:task/action/ecology/ecology_1/timeout

@@ -21,6 +21,12 @@ execute if score #current event matches 19 if score #event_19 event_used matches
 execute if score #current event matches 20 if score #event_20 event_used matches 1 run return run function rfm:event/generate
 execute if score #current event matches 21 if score #event_21 event_used matches 1 run return run function rfm:event/generate
 execute if score #current event matches 22 if score #event_22 event_used matches 1 run return run function rfm:event/generate
+execute if score #current event matches 23 if score #event_23 event_used matches 1 run return run function rfm:event/generate
+execute if score #current event matches 24 if score #event_24 event_used matches 1 run return run function rfm:event/generate
+execute if score #current event matches 25 if score #event_25 event_used matches 1 run return run function rfm:event/generate
+execute if score #current event matches 26 if score #event_26 event_used matches 1 run return run function rfm:event/generate
+execute if score #current event matches 27 if score #event_27 event_used matches 1 run return run function rfm:event/generate
+execute if score #current event matches 28 if score #event_28 event_used matches 1 run return run function rfm:event/generate
 
 #执行本次抽中的事件
 execute if score #current event matches 1 run function rfm:event/events/01_city_reputation_poll
@@ -45,6 +51,12 @@ execute if score #current event matches 19 run function rfm:event/events/19_repu
 execute if score #current event matches 20 run function rfm:event/events/20_economic_data_disclosure
 execute if score #current event matches 21 run function rfm:event/events/21_welfare_review_disclosure
 execute if score #current event matches 22 run function rfm:event/events/22_ecology_monitor_disclosure
+execute if score #current event matches 23 run function rfm:event/events/23_emergency_rescue_drill
+execute if score #current event matches 24 run function rfm:event/events/24_public_legal_aid
+execute if score #current event matches 25 run function rfm:event/events/25_community_free_clinic
+execute if score #current event matches 26 run function rfm:event/events/26_drill_disturbance_controversy
+execute if score #current event matches 27 run function rfm:event/events/27_conflict_of_interest_dispute
+execute if score #current event matches 28 run function rfm:event/events/28_medical_record_controversy
 
 #属性事件执行完毕后，只选择对应属性已锁定的玩家立即恢复锁定值
 execute as @a[scores={fame_lock=1}] run scoreboard players operation @s fame = @s fame_locked

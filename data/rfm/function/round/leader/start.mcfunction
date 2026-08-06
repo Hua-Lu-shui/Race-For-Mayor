@@ -1,7 +1,9 @@
-#返回办公室后先停留2秒，再依次展示四项属性的领先候选人；每项间隔2秒
-schedule function rfm:round/leader/fame 40t replace
-schedule function rfm:round/leader/economy 80t replace
-schedule function rfm:round/leader/welfare 120t replace
-schedule function rfm:round/leader/ecology 160t replace
-#四项领先者公布完毕后，再判断本回合是否抽取事件
-schedule function rfm:event/after_leaders 200t replace
+#事件回合返回办公室后停留5秒再公示事件，确保永久公开领先者的事件能影响本轮属性公示
+execute if score #round round matches 1 run schedule function rfm:event/draw 100t replace
+execute if score #round round matches 3 run schedule function rfm:event/draw 100t replace
+execute if score #round round matches 5 run schedule function rfm:event/draw 100t replace
+execute if score #round round matches 7 run schedule function rfm:event/draw 100t replace
+execute if score #round round matches 9 run schedule function rfm:event/draw 100t replace
+
+#非事件回合返回办公室后停留2秒，直接开始属性公示
+execute unless score #round round matches 1 unless score #round round matches 3 unless score #round round matches 5 unless score #round round matches 7 unless score #round round matches 9 run schedule function rfm:round/leader/show 40t replace

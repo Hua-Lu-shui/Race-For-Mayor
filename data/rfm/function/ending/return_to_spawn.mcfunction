@@ -114,7 +114,5 @@ tp @a 55.5 -50 -17.5 0 0
 #玩家点击返回并完成复位后，重新生成下一局的开始游戏告示牌
 scoreboard players set #start_pending phase 0
 setblock 49 -49 -22 minecraft:oak_wall_sign[facing=south,waterlogged=false]{is_waxed:1b,front_text:{has_glowing_text:1b,messages:['""','{"text":"开始游戏","color":"white","bold":true,"clickEvent":{"action":"run_command","value":"/function rfm:schedule/start_check"}}','""','""']}}
-tellraw @a [{"text":"已返回出生点。可重新选择","color":"white"},{"text":"身份","color":"#C6A8FF","bold":true},{"text":"并开始","color":"white"},{"text":"下一局","color":"#FFCB77","bold":true},{"text":"。","color":"white"}]
-
 #返回流程完成，状态重新回到未结算
 scoreboard players set #settle_state settle_state 0

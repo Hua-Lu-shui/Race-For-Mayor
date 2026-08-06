@@ -13,6 +13,6 @@ bossbar set rfm:speech_time players @a
 bossbar set rfm:speech_time max 30
 bossbar set rfm:speech_time value 30
 bossbar set rfm:speech_time visible true
-bossbar set rfm:speech_time name [{"text":"","font":"minecraft:default"},{"text":"\uE216","font":"rfm:bossbar"},{"text":"\uE100","font":"rfm:bossbar","color":"white"},{"text":"\uE101","font":"rfm:bossbar"},{"text":"\uE22A","font":"rfm:bossbar"},{"text":"街头演讲 · 观察市民反应！","color":"aqua"}]
+bossbar set rfm:speech_time name [{"text":"街头演讲 · 观察市民反应！","color":"aqua"}]
 
 function rfm:task/action/fame/fame_1/reset_buttons
