@@ -7,8 +7,8 @@ scoreboard players set @s photo_slot_4 0
 scoreboard players set @s photo_slot_5 0
 scoreboard players set @s photo_attempt 0
 scoreboard players set @s photo_success 0
-scoreboard players set @s photo_time 900
-scoreboard players set @s photo_seconds 45
+scoreboard players set @s photo_time 700
+scoreboard players set @s photo_seconds 35
 scoreboard players set #twenty photo_seconds 20
 scoreboard players set @s photo_state 1
 function rfm:task/action/fame/fame_3/roll_target_1
@@ -21,6 +21,6 @@ function rfm:task/action/fame/fame_3/reset_buttons
 
 tellraw @a [{"text":"站位册已发放。翻书查看","color":"white"},{"text":"五个站位要求","color":"#FFD166","bold":true},{"text":"，","color":"white"},{"text":"右键选择居民","color":"#67D5FF","bold":true},{"text":"，再右键对应的青色脚底方块安排位置。","color":"white"}]
 bossbar set rfm:photo_time players @a
-bossbar set rfm:photo_time max 45
-bossbar set rfm:photo_time value 45
+bossbar set rfm:photo_time max 35
+bossbar set rfm:photo_time value 35
 bossbar set rfm:photo_time visible true

@@ -6,7 +6,7 @@ execute if score @s photo_slot_3 = @s photo_selected run scoreboard players set 
 execute if score @s photo_slot_4 = @s photo_selected run scoreboard players set @s photo_slot_4 0
 execute if score @s photo_slot_5 = @s photo_selected run scoreboard players set @s photo_slot_5 0
 scoreboard players operation @s photo_slot_2 = @s photo_selected
-tp @e[tag=rfm_photo_selected] 606 -60 100
+tp @e[tag=rfm_photo_selected] 180 -58.9 -29 0 0
 tag @e[tag=rfm_photo_selected] remove rfm_photo_selected
 scoreboard players set @s photo_selected 0
 tellraw @s {"text":"已安排到中后方。","color":"green"}

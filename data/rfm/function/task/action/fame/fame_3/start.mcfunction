@@ -43,8 +43,8 @@ advancement revoke @s only rfm:photo_position_5
 
 #其他玩家在摄影区后方俯视，行动玩家在控制区出发
 gamemode adventure @a
-tp @a 596 -51 119 180 30
-tp @s 596 -60 112 180 0
+tp @a 180 -52 -23 0 30
+tp @s 180 -59 -18 0 0
 
 tellraw @a [{"text":"【名誉行动】市民合影","color":"aqua","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]
 tellraw @a [{"text":"右键居民","color":"#67D5FF","bold":true},{"text":"进行选择，再右键对应的","color":"white"},{"text":"站位","color":"#67D5FF"},{"text":"安排位置；可随时重新选择和调整。排好后","color":"white"},{"text":"按下快门","color":"#FFD166","bold":true},{"text":"。","color":"white"}]
