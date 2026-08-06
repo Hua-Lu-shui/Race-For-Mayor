@@ -5,3 +5,23 @@ scoreboard objectives add collection_offer dummy
 scoreboard objectives add collection_attr dummy
 scoreboard objectives add collection_cost dummy
 scoreboard objectives add collection_target dummy
+scoreboard objectives add collection_previous_offer dummy
+scoreboard objectives add collection_offer_shift dummy
+scoreboard objectives add collection_trade_round dummy
+scoreboard objectives add collection_view_round dummy
+#“无名英雄勋章”交易时，用于计算当前最高属性并从并列项中随机选择
+scoreboard objectives add collection_highest dummy
+scoreboard objectives add collection_tie_mask dummy
+scoreboard objectives add collection_pay_pick dummy
+#藏品效果使用的属性快照、差值、极值与并列随机选择
+scoreboard objectives add collection_fame_before dummy
+scoreboard objectives add collection_economy_before dummy
+scoreboard objectives add collection_welfare_before dummy
+scoreboard objectives add collection_ecology_before dummy
+scoreboard objectives add collection_delta_fame dummy
+scoreboard objectives add collection_delta_economy dummy
+scoreboard objectives add collection_delta_welfare dummy
+scoreboard objectives add collection_delta_ecology dummy
+scoreboard objectives add collection_effect_value dummy
+scoreboard objectives add collection_effect_mask dummy
+scoreboard objectives add collection_effect_pick dummy

@@ -32,6 +32,16 @@ scoreboard players set @a swap_pending 0
 scoreboard players set @a collection_slot1 0
 scoreboard players set @a collection_slot2 0
 scoreboard players set @a collection_offer 0
+scoreboard players set @a collection_attr 0
+scoreboard players set @a collection_cost -1
+scoreboard players set @a collection_target 0
+scoreboard players set @a collection_previous_offer 0
+scoreboard players set @a collection_offer_shift 0
+scoreboard players set @a collection_trade_round -1
+scoreboard players set @a collection_view_round -1
+scoreboard players set @a collection_highest 0
+scoreboard players set @a collection_tie_mask 0
+scoreboard players set @a collection_pay_pick 0
 scoreboard players set @a settle_ready 0
 scoreboard players set @a settle_clock 0
 scoreboard players set @a title_bonus 0

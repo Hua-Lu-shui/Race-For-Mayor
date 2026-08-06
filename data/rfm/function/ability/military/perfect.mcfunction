@@ -1,4 +1,6 @@
-#“孤注一掷”仅在军人完美完成行动任务的最高奖励分支中调用
+#最高奖励分支统一先结算“老旧的战功章”，再结算军人的“孤注一掷”
+function rfm:collection/effect/old_war_medal
+#“孤注一掷”仅对军人继续执行
 execute unless score @s candidate matches 6 run return 0
 function rfm:attribute/lock/enforce
 #按任务奖励结算后的四项属性找出最低值

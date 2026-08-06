@@ -10,6 +10,9 @@ execute if score @s item_held matches 13..16 run function rfm:item/use/specializ
 execute if score @s item_held matches 17..20 run function rfm:item/use/lock
 execute if score @s item_held matches 21..24 run function rfm:item/use/peek
 
+#令牌已正式使用后结算“诉讼卷宗”
+function rfm:collection/effect/litigation_file
+
 clear @s minecraft:heart_of_the_sea[minecraft:custom_data~{rfm_item:1}]
 kill @e[type=minecraft:item,distance=..3,nbt={Item:{components:{"minecraft:custom_data":{rfm_item:1}}}}]
 scoreboard players set @s item_held 0

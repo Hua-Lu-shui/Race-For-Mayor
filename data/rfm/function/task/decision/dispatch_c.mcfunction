@@ -1,5 +1,6 @@
 #执行dispatch c函数对应的游戏流程
 #将当前任务的方案C分发到唯一对应的结果函数
+function rfm:collection/effect/annotated_file/before
 execute if score @s decision_task matches 101 run function rfm:task/decision/fame/media/media_c
 execute if score @s decision_task matches 102 run function rfm:task/decision/fame/debate/debate_c
 execute if score @s decision_task matches 103 run function rfm:task/decision/fame/anti_corruption/anti_corruption_c
@@ -60,5 +61,7 @@ execute if score @s decision_task matches 412 run function rfm:task/decision/eco
 execute if score @s decision_task matches 413 run function rfm:task/decision/ecology/water_saving/water_saving_c
 execute if score @s decision_task matches 414 run function rfm:task/decision/ecology/eco_patrol/eco_patrol_c
 execute if score @s decision_task matches 415 run function rfm:task/decision/ecology/low_emission_zone/low_emission_zone_c
+function rfm:attribute/lock/enforce
+function rfm:collection/effect/annotated_file/after
 function rfm:attribute/minimum
 scoreboard players set @s decision_choice 0

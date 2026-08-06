@@ -58,6 +58,8 @@ kill @e[type=minecraft:text_display,tag=rfm_manhole_label]
 
 #任务阶段全部结束后结算明星的每回合天赋
 function rfm:ability/round_end
+#回合结束型藏品在领先者统计及属性公示前结算；第10回合则在最终结算前生效
+function rfm:collection/effect/before_leaders
 
 title @a title {"text":"本回合结束","color":"green","bold":true}
 
