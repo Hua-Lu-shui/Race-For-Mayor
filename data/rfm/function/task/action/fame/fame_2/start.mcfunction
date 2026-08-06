@@ -19,7 +19,7 @@ tp @a 163 -48 -23 90 30
 tp @s 143 -58 -31 0 0
 
 tellraw @a [{"text":"【名誉行动】社区拜访","color":"aqua","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]
-tellraw @a [{"text":"查看","color":"white"},{"text":"拜访记录","color":"#67D5FF","bold":true},{"text":"，按照其中","color":"white"},{"text":"5个门牌号的顺序","color":"#FFD166"},{"text":"按响门铃。按错门铃会扣除","color":"white"},{"text":"3秒","color":"#FFCB77"},{"text":"，累计按错","color":"white"},{"text":"3次","color":"#FFCB77"},{"text":"直接失败。","color":"white"}]
+tellraw @a [{"text":"查看","color":"white"},{"text":"拜访记录","color":"#67D5FF","bold":true},{"text":"，按照其中","color":"white"},{"text":"5个门牌号的顺序","color":"#FFD166"},{"text":"按响门铃。按错门铃会扣除","color":"white"},{"text":"3秒","color":"#FFCB77"},{"text":"。","color":"white"}]
 
 title @s clear
 title @s title {"text":"社区拜访","color":"aqua","bold":true}

@@ -18,7 +18,7 @@ tp @a 204 -53 -21 180 30
 tp @s 204 -58 -21 180 0
 
 tellraw @a [{"text":"【名誉行动】公开答疑","color":"aqua","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]
-tellraw @a [{"text":"记者发光并出现粒子后，你只有","color":"white"},{"text":"2秒","color":"#FFCB77","bold":true},{"text":"转向该记者，再重新按下一次潜行。按下瞬间会","color":"white"},{"text":"锁定答案","color":"#67D5FF","bold":true},{"text":",共进行","color":"white"},{"text":"10次提问","color":"#FFCB77"},{"text":"。","color":"white"}]
+tellraw @a [{"text":"记者发光并出现粒子后，你只有","color":"white"},{"text":"2秒","color":"#FFCB77","bold":true},{"text":"转向该记者，再重新按下一次潜行。按下瞬间会","color":"white"},{"text":"锁定答案","color":"#67D5FF","bold":true},{"text":"，共进行","color":"white"},{"text":"10次提问","color":"#FFCB77"},{"text":"。","color":"white"}]
 
 title @s clear
 title @s title {"text":"公开答疑","color":"aqua","bold":true}

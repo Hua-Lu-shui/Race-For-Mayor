@@ -5,6 +5,7 @@ clear @s minecraft:poppy[minecraft:custom_data~{rfm_cheer_flower:1}]
 kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{cheer_ready:1}}}}]
 kill @e[type=minecraft:item,tag=rfm_cheer_flower]
 kill @e[type=minecraft:item,tag=rfm_cheer_egg]
+kill @e[tag=rfm_cheer_citizen]
 
 scoreboard players set @s cheer_score 0
 scoreboard players set @s cheer_combo 0
