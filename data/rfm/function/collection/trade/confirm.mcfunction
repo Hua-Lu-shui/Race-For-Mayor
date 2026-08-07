@@ -10,9 +10,10 @@ function rfm:collection/mysterious/configure_offer
 execute if score @s collection_attr matches 0 run return run tellraw @s {"text":"这件藏品的交易属性尚未确定，暂时无法交易。","color":"gray"}
 execute if score @s collection_cost matches ..-1 run return run tellraw @s {"text":"这件藏品的效果与价格尚未确定，暂时无法交易。","color":"gray"}
 
-#普通身份直接以新藏品替换第一槽；医生空槽优先，两个槽都满时由玩家选择替换哪件
-execute unless score @s candidate matches 8 run scoreboard players set @s collection_target 1
-execute if score @s candidate matches 8 if score @s collection_slot1 matches 0 run scoreboard players set @s collection_target 1
-execute if score @s candidate matches 8 unless score @s collection_slot1 matches 0 if score @s collection_slot2 matches 0 run scoreboard players set @s collection_target 2
-execute if score @s candidate matches 8 unless score @s collection_slot1 matches 0 unless score @s collection_slot2 matches 0 run return run function rfm:collection/trade/choose_replace
+#藏品按槽位顺序存放；普通最多两件，医生最多三件，满槽时由玩家选择替换位置
+execute if score @s collection_slot1 matches 0 run scoreboard players set @s collection_target 1
+execute unless score @s collection_slot1 matches 0 if score @s collection_slot2 matches 0 run scoreboard players set @s collection_target 2
+execute if score @s candidate matches 8 unless score @s collection_slot1 matches 0 unless score @s collection_slot2 matches 0 if score @s collection_slot3 matches 0 run scoreboard players set @s collection_target 3
+execute unless score @s candidate matches 8 unless score @s collection_slot1 matches 0 unless score @s collection_slot2 matches 0 run return run function rfm:collection/trade/choose_replace
+execute if score @s candidate matches 8 unless score @s collection_slot1 matches 0 unless score @s collection_slot2 matches 0 unless score @s collection_slot3 matches 0 run return run function rfm:collection/trade/choose_replace
 function rfm:collection/trade/pay

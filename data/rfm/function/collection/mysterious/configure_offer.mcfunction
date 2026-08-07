@@ -19,3 +19,6 @@ execute if score @s collection_offer matches 5 run scoreboard players set @s col
 #藏品6“老旧的战功章”：所有属性-1
 execute if score @s collection_offer matches 6 run scoreboard players set @s collection_attr 6
 execute if score @s collection_offer matches 6 run scoreboard players set @s collection_cost 1
+#藏品7“水晶球”：当前最高属性-30；并列最高时随机扣除其中一项
+execute if score @s collection_offer matches 7 run scoreboard players set @s collection_attr 5
+execute if score @s collection_offer matches 7 run scoreboard players set @s collection_cost 30

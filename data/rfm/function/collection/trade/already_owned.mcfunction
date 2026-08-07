@@ -1,0 +1,7 @@
+execute if score @s collection_offer matches 1 run tellraw @s [{"text":"你已经拥有 ","color":"red"},{"text":"褪色的记者证","color":"green","bold":true},{"text":"，不能同时拥有两件相同的藏品。","color":"red"}]
+execute if score @s collection_offer matches 2 run tellraw @s [{"text":"你已经拥有 ","color":"red"},{"text":"无名英雄勋章","color":"green","bold":true},{"text":"，不能同时拥有两件相同的藏品。","color":"red"}]
+execute if score @s collection_offer matches 3 run tellraw @s [{"text":"你已经拥有 ","color":"red"},{"text":"金属怀表","color":"blue","bold":true},{"text":"，不能同时拥有两件相同的藏品。","color":"red"}]
+execute if score @s collection_offer matches 4 run tellraw @s [{"text":"你已经拥有 ","color":"red"},{"text":"带批注的档案","color":"green","bold":true},{"text":"，不能同时拥有两件相同的藏品。","color":"red"}]
+execute if score @s collection_offer matches 5 run tellraw @s [{"text":"你已经拥有 ","color":"red"},{"text":"诉讼卷宗","color":"green","bold":true},{"text":"，不能同时拥有两件相同的藏品。","color":"red"}]
+execute if score @s collection_offer matches 6 run tellraw @s [{"text":"你已经拥有 ","color":"red"},{"text":"老旧的战功章","color":"green","bold":true},{"text":"，不能同时拥有两件相同的藏品。","color":"red"}]
+execute if score @s collection_offer matches 7 run tellraw @s [{"text":"你已经拥有 ","color":"red"},{"text":"水晶球","color":"light_purple","bold":true},{"text":"，不能同时拥有两件相同的藏品。","color":"red"}]

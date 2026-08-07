@@ -1,5 +1,5 @@
 #“带批注的档案”：向本次决策中实际增加最多的一项属性追加2点；并列时等概率选择
-execute unless score @s collection_slot1 matches 4 unless score @s collection_slot2 matches 4 run return 0
+execute unless score @s collection_slot1 matches 4 unless score @s collection_slot2 matches 4 unless score @s collection_slot3 matches 4 run return 0
 scoreboard players operation @s collection_delta_fame = @s fame
 scoreboard players operation @s collection_delta_fame -= @s collection_fame_before
 scoreboard players operation @s collection_delta_economy = @s economy

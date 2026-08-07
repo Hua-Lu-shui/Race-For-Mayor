@@ -8,3 +8,4 @@ scoreboard objectives add title_lead_econ dummy
 scoreboard objectives add title_lead_welf dummy
 scoreboard objectives add title_lead_eco dummy
 scoreboard objectives add title_item_used dummy
+scoreboard objectives add title_collection_bought dummy

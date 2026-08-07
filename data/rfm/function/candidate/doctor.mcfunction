@@ -12,5 +12,4 @@ function rfm:attribute/minimum
 title @s times 10 40 0
 title @s title [{"text":"你选择了：","color":"white"},{"text":"医生","color":"#012696"}]
 title @s subtitle [{"text":"名誉:8","color":"aqua"},{"text":" 经济:9","color":"yellow"},{"text":" 生态:12","color":"green"},{"text":" 民生:11","color":"red"}]
-tellraw @s [{"text":"【医者仁心】","color":"#012696","bold":true},{"text":"可同时拥有两件藏品，且开局随机获得一件藏品。","color":"white"}]
-
+tellraw @s [{"text":"【医者仁心】","color":"#012696","bold":true},{"text":"可同时拥有三件藏品，且开局随机获得一件藏品。","color":"white"}]

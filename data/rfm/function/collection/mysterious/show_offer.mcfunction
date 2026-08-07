@@ -2,12 +2,13 @@ function rfm:collection/mysterious/configure_offer
 scoreboard players operation @s collection_view_round = #round round
 playsound minecraft:entity.villager.ambient master @s ~ ~ ~ 0.7 0.8
 tellraw @s [{"text":"神秘人：","color":"dark_purple","bold":true},{"text":"我为你准备了一件只属于你的藏品。","color":"white"}]
-execute if score @s collection_offer matches 1 run tellraw @s [{"text":"本次藏品：","color":"gray"},{"text":"褪色的记者证","color":"aqua","bold":true},{"text":"\n持续效果：每回合属性公示后，若你没有任何一项领先，名誉 +3。","color":"white"}]
-execute if score @s collection_offer matches 2 run tellraw @s [{"text":"本次藏品：","color":"gray"},{"text":"无名英雄勋章","color":"gold","bold":true},{"text":"\n持续效果：若本回合没有成为行动玩家，属性公示前四项属性各 +1。","color":"white"}]
-execute if score @s collection_offer matches 3 run tellraw @s [{"text":"本次藏品：","color":"gray"},{"text":"金属怀表","color":"yellow","bold":true},{"text":"\n持续效果：每回合结束时，将经济与最低属性互换。","color":"white"}]
-execute if score @s collection_offer matches 4 run tellraw @s [{"text":"本次藏品：","color":"gray"},{"text":"带批注的档案","color":"green","bold":true},{"text":"\n持续效果：每次完成决策任务后，该任务中增加最多的属性额外 +2；并列时随机选择其中一项。","color":"white"}]
-execute if score @s collection_offer matches 5 run tellraw @s [{"text":"本次藏品：","color":"gray"},{"text":"诉讼卷宗","color":"light_purple","bold":true},{"text":"\n持续效果：每使用一次令牌，所有属性 +5。","color":"white"}]
-execute if score @s collection_offer matches 6 run tellraw @s [{"text":"本次藏品：","color":"gray"},{"text":"老旧的战功章","color":"#FFA500","bold":true},{"text":"\n持续效果：完美完成行动任务时，所有并列最低属性 +5。","color":"white"}]
+execute if score @s collection_offer matches 1 run tellraw @s [{"text":"本次藏品：","color":"gray"},{"text":"褪色的记者证","color":"green","bold":true},{"text":"\n稀有度：普通","color":"green"},{"text":"\n持续效果：每回合属性公示后，若你没有任何一项领先，名誉 +4。","color":"white"}]
+execute if score @s collection_offer matches 2 run tellraw @s [{"text":"本次藏品：","color":"gray"},{"text":"无名英雄勋章","color":"green","bold":true},{"text":"\n稀有度：普通","color":"green"},{"text":"\n持续效果：若本回合没有成为行动玩家，属性公示前四项属性各 +1。","color":"white"}]
+execute if score @s collection_offer matches 3 run tellraw @s [{"text":"本次藏品：","color":"gray"},{"text":"金属怀表","color":"blue","bold":true},{"text":"\n稀有度：稀有","color":"blue"},{"text":"\n持续效果：每回合结束时，将经济与最低属性互换。","color":"white"}]
+execute if score @s collection_offer matches 4 run tellraw @s [{"text":"本次藏品：","color":"gray"},{"text":"带批注的档案","color":"green","bold":true},{"text":"\n稀有度：普通","color":"green"},{"text":"\n持续效果：每次完成决策任务后，该任务中增加最多的属性额外 +2；并列时随机选择其中一项。","color":"white"}]
+execute if score @s collection_offer matches 5 run tellraw @s [{"text":"本次藏品：","color":"gray"},{"text":"诉讼卷宗","color":"green","bold":true},{"text":"\n稀有度：普通","color":"green"},{"text":"\n持续效果：每使用一次令牌，所有属性 +5。","color":"white"}]
+execute if score @s collection_offer matches 6 run tellraw @s [{"text":"本次藏品：","color":"gray"},{"text":"老旧的战功章","color":"green","bold":true},{"text":"\n稀有度：普通","color":"green"},{"text":"\n持续效果：完美完成行动任务时，所有并列最低属性 +5。","color":"white"}]
+execute if score @s collection_offer matches 7 run tellraw @s [{"text":"本次藏品：","color":"gray"},{"text":"水晶球","color":"light_purple","bold":true},{"text":"\n稀有度：史诗","color":"light_purple"},{"text":"\n持续效果：回合开始时，最高权重对应的属性 +3；并列时随机选择其中一项。","color":"white"}]
 execute if score @s collection_trade_round = #round round run tellraw @s {"text":"你本回合已经刷新过一次报价，请等待下一回合刷新报价。","color":"gray"}
 execute unless score @s collection_trade_round = #round round if score @s collection_cost matches ..-1 run tellraw @s {"text":"交易所需属性与价格尚未确定，当前无法交易。","color":"gray"}
 execute unless score @s collection_trade_round = #round round if score @s collection_attr matches 1 run tellraw @s [{"text":"交易价格：名誉 -","color":"gray"},{"score":{"name":"@s","objective":"collection_cost"},"color":"aqua","bold":true},{"text":" [确认交易]","color":"green","bold":true,"clickEvent":{"action":"run_command","value":"/function rfm:collection/trade/confirm"}}]

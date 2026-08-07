@@ -1,6 +1,7 @@
 #新一局清空旧藏品与报价；医生的开局藏品由天赋函数单独生成
 scoreboard players set @a collection_slot1 0
 scoreboard players set @a collection_slot2 0
+scoreboard players set @a collection_slot3 0
 scoreboard players set @a collection_offer 0
 scoreboard players set @a collection_attr 0
 scoreboard players set @a collection_cost -1

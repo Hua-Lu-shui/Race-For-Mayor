@@ -31,6 +31,7 @@ scoreboard players set @a item_pick 0
 scoreboard players set @a swap_pending 0
 scoreboard players set @a collection_slot1 0
 scoreboard players set @a collection_slot2 0
+scoreboard players set @a collection_slot3 0
 scoreboard players set @a collection_offer 0
 scoreboard players set @a collection_attr 0
 scoreboard players set @a collection_cost -1
