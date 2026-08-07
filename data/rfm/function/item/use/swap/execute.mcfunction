@@ -9,6 +9,11 @@ scoreboard players set #swap_blocked item_before 0
 execute if entity @a[tag=rfm_item_target,scores={candidate=7}] run scoreboard players set #swap_blocked item_before 2
 execute if score #swap_blocked item_before matches 2 run function rfm:item/use/swap/lawyer_blocked
 execute if score #swap_blocked item_before matches 2 run return 0
+execute as @a[tag=rfm_item_target,limit=1] if score @s collection_slot1 matches 10 run scoreboard players set #swap_blocked item_before 3
+execute as @a[tag=rfm_item_target,limit=1] if score @s collection_slot2 matches 10 run scoreboard players set #swap_blocked item_before 3
+execute as @a[tag=rfm_item_target,limit=1] if score @s collection_slot3 matches 10 run scoreboard players set #swap_blocked item_before 3
+execute if score #swap_blocked item_before matches 3 run function rfm:item/use/swap/cloak_blocked
+execute if score #swap_blocked item_before matches 3 run return 0
 execute if score #used_item item_held matches 1 as @a[tag=rfm_item_user] if score @s fame_lock matches 1 run scoreboard players set #swap_blocked item_before 1
 execute if score #used_item item_held matches 1 as @a[tag=rfm_item_target] if score @s fame_lock matches 1 run scoreboard players set #swap_blocked item_before 1
 execute if score #used_item item_held matches 2 as @a[tag=rfm_item_user] if score @s economy_lock matches 1 run scoreboard players set #swap_blocked item_before 1

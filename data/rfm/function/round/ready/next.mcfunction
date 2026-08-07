@@ -4,7 +4,8 @@ scoreboard players set @a next_round_clock 0
 
 #重新发放尚未使用的令牌，并与下一回合准备时钟同时交给玩家
 clear @a minecraft:heart_of_the_sea[minecraft:custom_data~{rfm_item:1}]
-execute as @a[scores={item_held=1..24}] run function rfm:item/give_selected
+execute as @a[scores={item_held=1..16}] run function rfm:item/give_selected
+execute as @a[scores={item_held=21..24}] run function rfm:item/give_selected
 #藏品使用独立持有状态，持续生效，并从快捷栏第一格开始重新显示
 execute as @a[scores={collection_slot1=1..}] run function rfm:collection/deliver
 execute as @a[scores={collection_slot1=..0,collection_slot2=1..}] run function rfm:collection/deliver

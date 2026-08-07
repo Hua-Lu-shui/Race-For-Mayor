@@ -3,6 +3,7 @@ tag @a remove rfm_lead_fame
 scoreboard players set #lead_fame fame -2147483648
 execute as @a if score @s fame > #lead_fame fame run scoreboard players operation #lead_fame fame = @s fame
 execute as @a if score @s fame = #lead_fame fame run tag @s add rfm_lead_fame
+scoreboard players add @a[tag=rfm_lead_fame] stat_lead_f 1
 #记录连续名誉领先回合数（并列领先同样计入）
 scoreboard players set @a[tag=!rfm_lead_fame] title_lead_fame 0
 execute as @a[tag=rfm_lead_fame] run function rfm:title/leader/fame

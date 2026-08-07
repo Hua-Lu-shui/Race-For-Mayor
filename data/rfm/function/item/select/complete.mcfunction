@@ -16,10 +16,6 @@ execute if score @s item_held matches 13 run tellraw @s {"text":"已选择：名
 execute if score @s item_held matches 14 run tellraw @s {"text":"已选择：经济专精","color":"yellow","bold":true}
 execute if score @s item_held matches 15 run tellraw @s {"text":"已选择：民生专精","color":"red","bold":true}
 execute if score @s item_held matches 16 run tellraw @s {"text":"已选择：生态专精","color":"green","bold":true}
-execute if score @s item_held matches 17 run tellraw @s {"text":"已选择：名誉锁定","color":"aqua","bold":true}
-execute if score @s item_held matches 18 run tellraw @s {"text":"已选择：经济锁定","color":"yellow","bold":true}
-execute if score @s item_held matches 19 run tellraw @s {"text":"已选择：民生锁定","color":"red","bold":true}
-execute if score @s item_held matches 20 run tellraw @s {"text":"已选择：生态锁定","color":"green","bold":true}
 execute if score @s item_held matches 21..24 run tellraw @s {"text":"已选择：属性窥探","color":"light_purple","bold":true}
 
 #将对应告示牌设为不可用并移除
@@ -39,10 +35,6 @@ execute if score @s item_held matches 13 run scoreboard players set #item_13 ite
 execute if score @s item_held matches 14 run scoreboard players set #item_14 item_available 0
 execute if score @s item_held matches 15 run scoreboard players set #item_15 item_available 0
 execute if score @s item_held matches 16 run scoreboard players set #item_16 item_available 0
-execute if score @s item_held matches 17 run scoreboard players set #item_17 item_available 0
-execute if score @s item_held matches 18 run scoreboard players set #item_18 item_available 0
-execute if score @s item_held matches 19 run scoreboard players set #item_19 item_available 0
-execute if score @s item_held matches 20 run scoreboard players set #item_20 item_available 0
 execute if score @s item_held matches 21 run scoreboard players set #item_21 item_available 0
 execute if score @s item_held matches 22 run scoreboard players set #item_22 item_available 0
 execute if score @s item_held matches 23 run scoreboard players set #item_23 item_available 0

@@ -23,9 +23,7 @@ execute if score @s action_task matches 705 if score @s employment_state matches
 
 #民生行动801—804
 execute if score @s action_task matches 801 if score @s hospital_state matches 2..3 run tp @s 119 -58 -71
-execute if score @s action_task matches 802 if score @s fitness_state matches 2..3 if score @s fitness_course matches 1 run tp @s 798 -60 104
-execute if score @s action_task matches 802 if score @s fitness_state matches 2..3 if score @s fitness_course matches 2 run tp @s 798 -60 116
-execute if score @s action_task matches 802 if score @s fitness_state matches 2..3 if score @s fitness_course matches 3 run tp @s 798 -60 92
+execute if score @s action_task matches 802 if score @s fitness_state matches 2..3 run tp @s 184 -57 -67
 execute if score @s action_task matches 803 if score @s exercise_state matches 2..3 run tp @s 900 -60 104
 execute if score @s action_task matches 803 if score @s exercise_state matches 5 run tp @s 900 -60 104
 execute if score @s action_task matches 804 if score @s bus_state matches 2..3 run tp @s 948 -60 114

@@ -3,6 +3,7 @@ tag @a remove rfm_lead_ecology
 scoreboard players set #lead_ecology ecology -2147483648
 execute as @a if score @s ecology > #lead_ecology ecology run scoreboard players operation #lead_ecology ecology = @s ecology
 execute as @a if score @s ecology = #lead_ecology ecology run tag @s add rfm_lead_ecology
+scoreboard players add @a[tag=rfm_lead_ecology] stat_lead_c 1
 #记录连续生态领先回合数（并列领先同样计入）
 scoreboard players set @a[tag=!rfm_lead_ecology] title_lead_eco 0
 execute as @a[tag=rfm_lead_ecology] run function rfm:title/leader/ecology

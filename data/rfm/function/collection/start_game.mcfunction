@@ -24,6 +24,12 @@ scoreboard players set @a collection_delta_ecology 0
 scoreboard players set @a collection_effect_value 0
 scoreboard players set @a collection_effect_mask 0
 scoreboard players set @a collection_effect_pick 0
+scoreboard players set @a collection_lowest 0
+scoreboard players set @a collection_steal_roll 0
+scoreboard players set @a collection_amber_fame 0
+scoreboard players set @a collection_amber_economy 0
+scoreboard players set @a collection_amber_welfare 0
+scoreboard players set @a collection_amber_ecology 0
 clear @a minecraft:amethyst_shard[minecraft:custom_data~{rfm_collection:1}]
 kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{rfm_collection:1}}}}]
 function rfm:collection/mysterious/cleanup

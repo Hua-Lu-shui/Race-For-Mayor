@@ -18,7 +18,7 @@ setblock 1230 -53 104 minecraft:light[level=15]
 setblock 1240 -53 104 minecraft:light[level=15]
 setblock 1250 -53 104 minecraft:light[level=15]
 
-#每次令牌争夺重新开放24件令牌；被选择的告示牌会在本次选择中消失
+#每次令牌争夺重新开放20件令牌；被选择的告示牌会在本次选择中消失
 scoreboard players set #item_1 item_available 1
 scoreboard players set #item_2 item_available 1
 scoreboard players set #item_3 item_available 1
@@ -35,10 +35,10 @@ scoreboard players set #item_13 item_available 1
 scoreboard players set #item_14 item_available 1
 scoreboard players set #item_15 item_available 1
 scoreboard players set #item_16 item_available 1
-scoreboard players set #item_17 item_available 1
-scoreboard players set #item_18 item_available 1
-scoreboard players set #item_19 item_available 1
-scoreboard players set #item_20 item_available 1
+scoreboard players set #item_17 item_available 0
+scoreboard players set #item_18 item_available 0
+scoreboard players set #item_19 item_available 0
+scoreboard players set #item_20 item_available 0
 scoreboard players set #item_21 item_available 1
 scoreboard players set #item_22 item_available 1
 scoreboard players set #item_23 item_available 1
@@ -62,11 +62,7 @@ setblock 1249 -56 90 minecraft:dark_oak_wall_sign[facing=south]{is_waxed:1b,fron
 setblock 1251 -56 90 minecraft:dark_oak_wall_sign[facing=south]{is_waxed:1b,front_text:{messages:['{"text":"属性专精","color":"light_purple","bold":true}','{"text":"自身民生 +5","color":"red"}','{"text":"其他人民生 -5","color":"dark_red"}','{"text":"[右键选择]","color":"green","clickEvent":{"action":"run_command","value":"/trigger item_pick set 15"}}']}}
 setblock 1253 -56 90 minecraft:dark_oak_wall_sign[facing=south]{is_waxed:1b,front_text:{messages:['{"text":"属性专精","color":"light_purple","bold":true}','{"text":"自身生态 +5","color":"green"}','{"text":"其他人生态 -5","color":"red"}','{"text":"[右键选择]","color":"green","clickEvent":{"action":"run_command","value":"/trigger item_pick set 16"}}']}}
 
-#第三排：四件属性锁定与四件属性窥探令牌
-setblock 1227 -54 90 minecraft:dark_oak_wall_sign[facing=south]{is_waxed:1b,front_text:{messages:['{"text":"属性锁定","color":"black","bold":true}','{"text":"锁定名誉","color":"aqua"}','{"text":"本局不再变化","color":"gray"}','{"text":"[右键选择]","color":"green","clickEvent":{"action":"run_command","value":"/trigger item_pick set 17"}}']}}
-setblock 1229 -54 90 minecraft:dark_oak_wall_sign[facing=south]{is_waxed:1b,front_text:{messages:['{"text":"属性锁定","color":"black","bold":true}','{"text":"锁定经济","color":"yellow"}','{"text":"本局不再变化","color":"gray"}','{"text":"[右键选择]","color":"green","clickEvent":{"action":"run_command","value":"/trigger item_pick set 18"}}']}}
-setblock 1231 -54 90 minecraft:dark_oak_wall_sign[facing=south]{is_waxed:1b,front_text:{messages:['{"text":"属性锁定","color":"black","bold":true}','{"text":"锁定民生","color":"red"}','{"text":"本局不再变化","color":"gray"}','{"text":"[右键选择]","color":"green","clickEvent":{"action":"run_command","value":"/trigger item_pick set 19"}}']}}
-setblock 1233 -54 90 minecraft:dark_oak_wall_sign[facing=south]{is_waxed:1b,front_text:{messages:['{"text":"属性锁定","color":"black","bold":true}','{"text":"锁定生态","color":"green"}','{"text":"本局不再变化","color":"gray"}','{"text":"[右键选择]","color":"green","clickEvent":{"action":"run_command","value":"/trigger item_pick set 20"}}']}}
+#第三排：四件属性窥探令牌
 setblock 1235 -54 90 minecraft:dark_oak_wall_sign[facing=south]{is_waxed:1b,front_text:{messages:['{"text":"属性窥探","color":"light_purple","bold":true}','{"text":"查看四项领先者","color":"white"}','{"text":"仅自己可见","color":"gray"}','{"text":"[右键选择]","color":"green","clickEvent":{"action":"run_command","value":"/trigger item_pick set 21"}}']}}
 setblock 1237 -54 90 minecraft:dark_oak_wall_sign[facing=south]{is_waxed:1b,front_text:{messages:['{"text":"属性窥探","color":"light_purple","bold":true}','{"text":"查看四项领先者","color":"white"}','{"text":"仅自己可见","color":"gray"}','{"text":"[右键选择]","color":"green","clickEvent":{"action":"run_command","value":"/trigger item_pick set 22"}}']}}
 setblock 1239 -54 90 minecraft:dark_oak_wall_sign[facing=south]{is_waxed:1b,front_text:{messages:['{"text":"属性窥探","color":"light_purple","bold":true}','{"text":"查看四项领先者","color":"white"}','{"text":"仅自己可见","color":"gray"}','{"text":"[右键选择]","color":"green","clickEvent":{"action":"run_command","value":"/trigger item_pick set 23"}}']}}

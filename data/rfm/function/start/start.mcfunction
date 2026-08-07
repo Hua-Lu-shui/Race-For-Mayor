@@ -29,6 +29,25 @@ scoreboard players set @a title_lead_welf 0
 scoreboard players set @a title_lead_eco 0
 scoreboard players set @a title_item_used 0
 scoreboard players set @a title_collection_bought 0
+scoreboard players set @a stat_lead_f 0
+scoreboard players set @a stat_lead_e 0
+scoreboard players set @a stat_lead_w 0
+scoreboard players set @a stat_lead_c 0
+scoreboard players set @a stat_title_df 0
+scoreboard players set @a stat_title_de 0
+scoreboard players set @a stat_title_dw 0
+scoreboard players set @a stat_title_dc 0
+scoreboard players set @a stat_title_lf 0
+scoreboard players set @a stat_title_le 0
+scoreboard players set @a stat_title_lw 0
+scoreboard players set @a stat_title_lc 0
+scoreboard players set @a stat_title_sf 0
+scoreboard players set @a stat_title_se 0
+scoreboard players set @a stat_title_sw 0
+scoreboard players set @a stat_title_sc 0
+scoreboard players set @a stat_title_ni 0
+scoreboard players set @a stat_title_nc 0
+scoreboard players set @a stat_title_all 0
 #初始化四项属性权重
 scoreboard players set #weight fame_weight 5
 scoreboard players set #weight economy_weight 5
@@ -63,6 +82,33 @@ scoreboard players set @a group_rank 0
 scoreboard players set @a item_held 0
 scoreboard players set @a item_selecting 0
 scoreboard players set @a swap_pending 0
+scoreboard players set @a stat_use_1 0
+scoreboard players set @a stat_use_2 0
+scoreboard players set @a stat_use_3 0
+scoreboard players set @a stat_use_4 0
+scoreboard players set @a stat_use_5 0
+scoreboard players set @a stat_use_6 0
+scoreboard players set @a stat_use_7 0
+scoreboard players set @a stat_use_8 0
+scoreboard players set @a stat_use_9 0
+scoreboard players set @a stat_use_10 0
+scoreboard players set @a stat_use_11 0
+scoreboard players set @a stat_use_12 0
+scoreboard players set @a stat_use_13 0
+scoreboard players set @a stat_use_14 0
+scoreboard players set @a stat_use_15 0
+scoreboard players set @a stat_use_16 0
+scoreboard players set @a stat_use_21 0
+scoreboard players set @a stat_use_22 0
+scoreboard players set @a stat_use_23 0
+scoreboard players set @a stat_use_24 0
+scoreboard players set @a stat_col_1 0
+scoreboard players set @a stat_col_2 0
+scoreboard players set @a stat_col_3 0
+scoreboard players set @a stat_col_4 0
+scoreboard players set @a stat_col_5 0
+scoreboard players set @a stat_col_6 0
+scoreboard players set @a stat_col_7 0
 #重置藏品，并为医生生成开局随机藏品
 function rfm:collection/start_game
 #重置上一局的最终结算状态

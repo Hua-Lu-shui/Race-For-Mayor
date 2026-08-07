@@ -26,3 +26,16 @@ scoreboard objectives add collection_delta_ecology dummy
 scoreboard objectives add collection_effect_value dummy
 scoreboard objectives add collection_effect_mask dummy
 scoreboard objectives add collection_effect_pick dummy
+scoreboard objectives add collection_lowest dummy
+scoreboard objectives add collection_steal_roll dummy
+scoreboard objectives add collection_amber_fame dummy
+scoreboard objectives add collection_amber_economy dummy
+scoreboard objectives add collection_amber_welfare dummy
+scoreboard objectives add collection_amber_ecology dummy
+scoreboard objectives add stat_col_1 dummy
+scoreboard objectives add stat_col_2 dummy
+scoreboard objectives add stat_col_3 dummy
+scoreboard objectives add stat_col_4 dummy
+scoreboard objectives add stat_col_5 dummy
+scoreboard objectives add stat_col_6 dummy
+scoreboard objectives add stat_col_7 dummy

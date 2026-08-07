@@ -1,4 +1,4 @@
-#collection_attr：1名誉、2经济、3民生、4生态、5当前最高属性、6所有属性
+#collection_attr：1名誉、2经济、3民生、4生态、5当前最高属性、6所有属性、7当前最高与最低属性、8当前最低属性
 scoreboard players set @s collection_attr 0
 scoreboard players set @s collection_cost -1
 #藏品1“褪色的记者证”：名誉-10
@@ -22,3 +22,27 @@ execute if score @s collection_offer matches 6 run scoreboard players set @s col
 #藏品7“水晶球”：当前最高属性-30；并列最高时随机扣除其中一项
 execute if score @s collection_offer matches 7 run scoreboard players set @s collection_attr 5
 execute if score @s collection_offer matches 7 run scoreboard players set @s collection_cost 30
+#藏品8“银戒指”：所有属性-3
+execute if score @s collection_offer matches 8 run scoreboard players set @s collection_attr 6
+execute if score @s collection_offer matches 8 run scoreboard players set @s collection_cost 3
+#藏品9“金戒指”：所有属性-5
+execute if score @s collection_offer matches 9 run scoreboard players set @s collection_attr 6
+execute if score @s collection_offer matches 9 run scoreboard players set @s collection_cost 5
+#藏品10“神秘的斗篷”：所有属性-5
+execute if score @s collection_offer matches 10 run scoreboard players set @s collection_attr 6
+execute if score @s collection_offer matches 10 run scoreboard players set @s collection_cost 5
+#藏品11“琥珀”：所有属性-15
+execute if score @s collection_offer matches 11 run scoreboard players set @s collection_attr 6
+execute if score @s collection_offer matches 11 run scoreboard players set @s collection_cost 15
+#藏品12“魔镜”：所有属性-10
+execute if score @s collection_offer matches 12 run scoreboard players set @s collection_attr 6
+execute if score @s collection_offer matches 12 run scoreboard players set @s collection_cost 10
+#藏品13“做工精美的手镯”：当前最高与最低属性-5
+execute if score @s collection_offer matches 13 run scoreboard players set @s collection_attr 7
+execute if score @s collection_offer matches 13 run scoreboard players set @s collection_cost 5
+#藏品14“珠宝大盗的手套”：所有属性-1
+execute if score @s collection_offer matches 14 run scoreboard players set @s collection_attr 6
+execute if score @s collection_offer matches 14 run scoreboard players set @s collection_cost 1
+#藏品15“历史悠久的花瓶”：当前最低属性-20
+execute if score @s collection_offer matches 15 run scoreboard players set @s collection_attr 8
+execute if score @s collection_offer matches 15 run scoreboard players set @s collection_cost 20
