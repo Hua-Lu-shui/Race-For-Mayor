@@ -1,4 +1,4 @@
-#准备黑色或白色的动作栏数值；锁定值已由主tick按锁定玩家恢复
+#准备动作栏数值；锁定值仍以普通白色显示，并由主tick按锁定玩家恢复
 scoreboard players reset @s fame_show
 scoreboard players reset @s fame_lshow
 scoreboard players reset @s econ_show
@@ -7,14 +7,10 @@ scoreboard players reset @s welfare_show
 scoreboard players reset @s welfare_lshow
 scoreboard players reset @s eco_show
 scoreboard players reset @s eco_lshow
-execute unless score @s fame_lock matches 1 run scoreboard players operation @s fame_show = @s fame
-execute if score @s fame_lock matches 1 run scoreboard players operation @s fame_lshow = @s fame
-execute unless score @s economy_lock matches 1 run scoreboard players operation @s econ_show = @s economy
-execute if score @s economy_lock matches 1 run scoreboard players operation @s econ_lshow = @s economy
-execute unless score @s welfare_lock matches 1 run scoreboard players operation @s welfare_show = @s welfare
-execute if score @s welfare_lock matches 1 run scoreboard players operation @s welfare_lshow = @s welfare
-execute unless score @s ecology_lock matches 1 run scoreboard players operation @s eco_show = @s ecology
-execute if score @s ecology_lock matches 1 run scoreboard players operation @s eco_lshow = @s ecology
+scoreboard players operation @s fame_show = @s fame
+scoreboard players operation @s econ_show = @s economy
+scoreboard players operation @s welfare_show = @s welfare
+scoreboard players operation @s eco_show = @s ecology
 
 #首次显示或新一局开始时，以当前属性作为动画起点
 execute unless score @s attr_seen matches 1 run scoreboard players operation @s fame_last = @s fame

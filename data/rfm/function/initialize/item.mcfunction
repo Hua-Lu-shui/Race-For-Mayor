@@ -22,6 +22,10 @@ scoreboard objectives add stat_use_13 dummy
 scoreboard objectives add stat_use_14 dummy
 scoreboard objectives add stat_use_15 dummy
 scoreboard objectives add stat_use_16 dummy
+scoreboard objectives add stat_use_17 dummy
+scoreboard objectives add stat_use_18 dummy
+scoreboard objectives add stat_use_19 dummy
+scoreboard objectives add stat_use_20 dummy
 scoreboard objectives add stat_use_21 dummy
 scoreboard objectives add stat_use_22 dummy
 scoreboard objectives add stat_use_23 dummy

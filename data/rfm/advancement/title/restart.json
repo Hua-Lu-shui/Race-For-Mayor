@@ -1,0 +1,5 @@
+{
+  "parent": "rfm:title/root",
+  "display": {"icon": {"id": "minecraft:totem_of_undying"}, "title": {"text": "从头再来", "color": "dark_red"}, "description": {"text": "任一属性降为0｜+100票", "color": "gray"}, "frame": "goal", "show_toast": true, "announce_to_chat": false, "hidden": false},
+  "criteria": {"impossible": {"trigger": "minecraft:impossible"}}
+}

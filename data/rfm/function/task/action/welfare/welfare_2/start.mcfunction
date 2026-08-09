@@ -12,7 +12,7 @@ scoreboard players set @s fitness_delay 0
 #其他玩家从赛道上方观战，行动玩家进入固定赛道起点
 gamemode adventure @a
 
-tp @a 168 -49 -66 180 35
+tp @a 168 -49 -66 180 30
 tp @s 184 -57 -67 90 0
 
 tellraw @a [{"text":"【民生行动】全民健身挑战","color":"red","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]

@@ -46,3 +46,33 @@ execute if score @s collection_offer matches 14 run scoreboard players set @s co
 #藏品15“历史悠久的花瓶”：当前最低属性-20
 execute if score @s collection_offer matches 15 run scoreboard players set @s collection_attr 8
 execute if score @s collection_offer matches 15 run scoreboard players set @s collection_cost 20
+#藏品16“护目镜”：生态-5
+execute if score @s collection_offer matches 16 run scoreboard players set @s collection_attr 4
+execute if score @s collection_offer matches 16 run scoreboard players set @s collection_cost 5
+#藏品17“不知名种子”：生态-5
+execute if score @s collection_offer matches 17 run scoreboard players set @s collection_attr 4
+execute if score @s collection_offer matches 17 run scoreboard players set @s collection_cost 5
+#藏品18“玩具熊”：民生-5
+execute if score @s collection_offer matches 18 run scoreboard players set @s collection_attr 3
+execute if score @s collection_offer matches 18 run scoreboard players set @s collection_cost 5
+#藏品19“礼品盒”：民生-5
+execute if score @s collection_offer matches 19 run scoreboard players set @s collection_attr 3
+execute if score @s collection_offer matches 19 run scoreboard players set @s collection_cost 5
+#藏品20“招财猫”：经济-5
+execute if score @s collection_offer matches 20 run scoreboard players set @s collection_attr 2
+execute if score @s collection_offer matches 20 run scoreboard players set @s collection_cost 5
+#藏品21“摇钱树”：经济-5
+execute if score @s collection_offer matches 21 run scoreboard players set @s collection_attr 2
+execute if score @s collection_offer matches 21 run scoreboard players set @s collection_cost 5
+#藏品22“华丽的面具”：名誉-5
+execute if score @s collection_offer matches 22 run scoreboard players set @s collection_attr 1
+execute if score @s collection_offer matches 22 run scoreboard players set @s collection_cost 5
+#藏品23“礼服”：名誉-5
+execute if score @s collection_offer matches 23 run scoreboard players set @s collection_attr 1
+execute if score @s collection_offer matches 23 run scoreboard players set @s collection_cost 5
+#藏品24“手枪子弹”：当前最高属性-10
+execute if score @s collection_offer matches 24 run scoreboard players set @s collection_attr 5
+execute if score @s collection_offer matches 24 run scoreboard players set @s collection_cost 10
+#藏品25“无人认领的钥匙”：当前最低属性-20
+execute if score @s collection_offer matches 25 run scoreboard players set @s collection_attr 8
+execute if score @s collection_offer matches 25 run scoreboard players set @s collection_cost 20

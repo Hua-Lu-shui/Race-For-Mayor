@@ -1,6 +1,6 @@
 #随机抽取一个民生决策，并用位图判断该玩家本局是否已经抽到过
 scoreboard players add @s dec_used_welf 0
-execute store result score @s decision_task run random value 301..315
+execute store result score @s decision_task run random value 301..320
 scoreboard players set @s dec_used_bit 1
 execute if score @s decision_task matches 302 run scoreboard players set @s dec_used_bit 2
 execute if score @s decision_task matches 303 run scoreboard players set @s dec_used_bit 4
@@ -16,6 +16,11 @@ execute if score @s decision_task matches 312 run scoreboard players set @s dec_
 execute if score @s decision_task matches 313 run scoreboard players set @s dec_used_bit 4096
 execute if score @s decision_task matches 314 run scoreboard players set @s dec_used_bit 8192
 execute if score @s decision_task matches 315 run scoreboard players set @s dec_used_bit 16384
+execute if score @s decision_task matches 316 run scoreboard players set @s dec_used_bit 32768
+execute if score @s decision_task matches 317 run scoreboard players set @s dec_used_bit 65536
+execute if score @s decision_task matches 318 run scoreboard players set @s dec_used_bit 131072
+execute if score @s decision_task matches 319 run scoreboard players set @s dec_used_bit 262144
+execute if score @s decision_task matches 320 run scoreboard players set @s dec_used_bit 524288
 scoreboard players operation @s dec_used_check = @s dec_used_welf
 scoreboard players operation @s dec_used_check /= @s dec_used_bit
 scoreboard players set #two dec_used_bit 2
@@ -37,5 +42,10 @@ execute if score @s decision_task matches 312 run function rfm:task/decision/wel
 execute if score @s decision_task matches 313 run function rfm:task/decision/welfare/disabled_access/disabled_access_show
 execute if score @s decision_task matches 314 run function rfm:task/decision/welfare/emergency_shelter/emergency_shelter_show
 execute if score @s decision_task matches 315 run function rfm:task/decision/welfare/library_hours/library_hours_show
+execute if score @s decision_task matches 316 run function rfm:task/decision/welfare/courier_station/courier_station_show
+execute if score @s decision_task matches 317 run function rfm:task/decision/welfare/heat_labor/heat_labor_show
+execute if score @s decision_task matches 318 run function rfm:task/decision/welfare/mental_hotline/mental_hotline_show
+execute if score @s decision_task matches 319 run function rfm:task/decision/welfare/night_toilet/night_toilet_show
+execute if score @s decision_task matches 320 run function rfm:task/decision/welfare/funeral_service/funeral_service_show
 #学者额外获知三个选项的精确属性影响
 function rfm:ability/scholar/preview

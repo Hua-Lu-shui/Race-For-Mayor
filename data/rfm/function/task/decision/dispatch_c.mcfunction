@@ -16,6 +16,11 @@ execute if score @s decision_task matches 112 run function rfm:task/decision/fam
 execute if score @s decision_task matches 113 run function rfm:task/decision/fame/street_speech/street_speech_c
 execute if score @s decision_task matches 114 run function rfm:task/decision/fame/fact_check/fact_check_c
 execute if score @s decision_task matches 115 run function rfm:task/decision/fame/heritage_event/heritage_event_c
+execute if score @s decision_task matches 116 run function rfm:task/decision/fame/city_mascot/city_mascot_c
+execute if score @s decision_task matches 117 run function rfm:task/decision/fame/civic_award/civic_award_c
+execute if score @s decision_task matches 118 run function rfm:task/decision/fame/official_ai/official_ai_c
+execute if score @s decision_task matches 119 run function rfm:task/decision/fame/public_art/public_art_c
+execute if score @s decision_task matches 120 run function rfm:task/decision/fame/honor_revocation/honor_revocation_c
 execute if score @s decision_task matches 201 run function rfm:task/decision/economy/tax/tax_c
 execute if score @s decision_task matches 202 run function rfm:task/decision/economy/investment/investment_c
 execute if score @s decision_task matches 203 run function rfm:task/decision/economy/subsidy/subsidy_c
@@ -31,6 +36,11 @@ execute if score @s decision_task matches 212 run function rfm:task/decision/eco
 execute if score @s decision_task matches 213 run function rfm:task/decision/economy/port_trade/port_trade_c
 execute if score @s decision_task matches 214 run function rfm:task/decision/economy/skills_training/skills_training_c
 execute if score @s decision_task matches 215 run function rfm:task/decision/economy/public_procurement/public_procurement_c
+execute if score @s decision_task matches 216 run function rfm:task/decision/economy/data_center/data_center_c
+execute if score @s decision_task matches 217 run function rfm:task/decision/economy/crop_price/crop_price_c
+execute if score @s decision_task matches 218 run function rfm:task/decision/economy/autonomous_zone/autonomous_zone_c
+execute if score @s decision_task matches 219 run function rfm:task/decision/economy/heritage_business/heritage_business_c
+execute if score @s decision_task matches 220 run function rfm:task/decision/economy/underground_space/underground_space_c
 execute if score @s decision_task matches 301 run function rfm:task/decision/welfare/hospital/hospital_c
 execute if score @s decision_task matches 302 run function rfm:task/decision/welfare/housing/housing_c
 execute if score @s decision_task matches 303 run function rfm:task/decision/welfare/education/education_c
@@ -46,6 +56,11 @@ execute if score @s decision_task matches 312 run function rfm:task/decision/wel
 execute if score @s decision_task matches 313 run function rfm:task/decision/welfare/disabled_access/disabled_access_c
 execute if score @s decision_task matches 314 run function rfm:task/decision/welfare/emergency_shelter/emergency_shelter_c
 execute if score @s decision_task matches 315 run function rfm:task/decision/welfare/library_hours/library_hours_c
+execute if score @s decision_task matches 316 run function rfm:task/decision/welfare/courier_station/courier_station_c
+execute if score @s decision_task matches 317 run function rfm:task/decision/welfare/heat_labor/heat_labor_c
+execute if score @s decision_task matches 318 run function rfm:task/decision/welfare/mental_hotline/mental_hotline_c
+execute if score @s decision_task matches 319 run function rfm:task/decision/welfare/night_toilet/night_toilet_c
+execute if score @s decision_task matches 320 run function rfm:task/decision/welfare/funeral_service/funeral_service_c
 execute if score @s decision_task matches 401 run function rfm:task/decision/ecology/factory/factory_c
 execute if score @s decision_task matches 402 run function rfm:task/decision/ecology/river/river_c
 execute if score @s decision_task matches 403 run function rfm:task/decision/ecology/park/park_c
@@ -61,6 +76,11 @@ execute if score @s decision_task matches 412 run function rfm:task/decision/eco
 execute if score @s decision_task matches 413 run function rfm:task/decision/ecology/water_saving/water_saving_c
 execute if score @s decision_task matches 414 run function rfm:task/decision/ecology/eco_patrol/eco_patrol_c
 execute if score @s decision_task matches 415 run function rfm:task/decision/ecology/low_emission_zone/low_emission_zone_c
+execute if score @s decision_task matches 416 run function rfm:task/decision/ecology/light_pollution/light_pollution_c
+execute if score @s decision_task matches 417 run function rfm:task/decision/ecology/invasive_species/invasive_species_c
+execute if score @s decision_task matches 418 run function rfm:task/decision/ecology/soil_garden/soil_garden_c
+execute if score @s decision_task matches 419 run function rfm:task/decision/ecology/urban_wildlife/urban_wildlife_c
+execute if score @s decision_task matches 420 run function rfm:task/decision/ecology/material_reuse/material_reuse_c
 function rfm:attribute/lock/enforce
 function rfm:collection/effect/annotated_file/after
 function rfm:attribute/minimum

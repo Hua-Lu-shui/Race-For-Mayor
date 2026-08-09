@@ -16,7 +16,7 @@ scoreboard players reset * dec_used_fame
 scoreboard players reset * dec_used_econ
 scoreboard players reset * dec_used_welf
 scoreboard players reset * dec_used_eco
-#重置本局头衔进度；技术根成就只负责承载15个可见头衔
+#重置本局头衔进度；技术根成就只负责承载16个可见头衔
 advancement revoke @a from rfm:title/root
 advancement grant @a only rfm:title/root
 scoreboard players set @a title_dec_fame 0
@@ -98,6 +98,10 @@ scoreboard players set @a stat_use_13 0
 scoreboard players set @a stat_use_14 0
 scoreboard players set @a stat_use_15 0
 scoreboard players set @a stat_use_16 0
+scoreboard players set @a stat_use_17 0
+scoreboard players set @a stat_use_18 0
+scoreboard players set @a stat_use_19 0
+scoreboard players set @a stat_use_20 0
 scoreboard players set @a stat_use_21 0
 scoreboard players set @a stat_use_22 0
 scoreboard players set @a stat_use_23 0

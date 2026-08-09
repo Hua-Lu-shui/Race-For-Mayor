@@ -12,4 +12,4 @@ function rfm:attribute/minimum
 title @s times 10 40 0
 title @s title [{"text":"你选择了：","color":"white"},{"text":"社区领袖","color":"red"}]
 title @s subtitle [{"text":"名誉:11","color":"aqua"},{"text":" 经济:7","color":"yellow"},{"text":" 生态:8","color":"green"},{"text":" 民生:14","color":"red"}]
-tellraw @s [{"text":"【得道多助】","color":"red","bold":true},{"text":"最终结算时，将民生赋予最低属性。","color":"white"}]
+tellraw @s [{"text":"【得道多助】","color":"red","bold":true},{"text":"最终结算时，将民生赋予最低属性；并列最低时随机选择其中一项。","color":"white"}]

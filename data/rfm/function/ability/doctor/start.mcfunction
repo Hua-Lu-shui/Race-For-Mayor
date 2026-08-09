@@ -1,5 +1,6 @@
 #“医者仁心”：开局随机藏品使用第一槽，并随第一次准备时钟发放
-execute store result score @s collection_slot1 run random value 1..15
+function rfm:collection/mysterious/sample_offer
+scoreboard players operation @s collection_slot1 = @s collection_offer
 scoreboard players set @s collection_slot2 0
 scoreboard players set @s collection_slot3 0
 execute if score @s collection_slot1 matches 11 run function rfm:collection/effect/amber_record

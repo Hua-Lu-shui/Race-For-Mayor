@@ -1,6 +1,6 @@
 #随机抽取一个名誉决策，并用位图判断该玩家本局是否已经抽到过
 scoreboard players add @s dec_used_fame 0
-execute store result score @s decision_task run random value 101..115
+execute store result score @s decision_task run random value 101..120
 scoreboard players set @s dec_used_bit 1
 execute if score @s decision_task matches 102 run scoreboard players set @s dec_used_bit 2
 execute if score @s decision_task matches 103 run scoreboard players set @s dec_used_bit 4
@@ -16,6 +16,11 @@ execute if score @s decision_task matches 112 run scoreboard players set @s dec_
 execute if score @s decision_task matches 113 run scoreboard players set @s dec_used_bit 4096
 execute if score @s decision_task matches 114 run scoreboard players set @s dec_used_bit 8192
 execute if score @s decision_task matches 115 run scoreboard players set @s dec_used_bit 16384
+execute if score @s decision_task matches 116 run scoreboard players set @s dec_used_bit 32768
+execute if score @s decision_task matches 117 run scoreboard players set @s dec_used_bit 65536
+execute if score @s decision_task matches 118 run scoreboard players set @s dec_used_bit 131072
+execute if score @s decision_task matches 119 run scoreboard players set @s dec_used_bit 262144
+execute if score @s decision_task matches 120 run scoreboard players set @s dec_used_bit 524288
 scoreboard players operation @s dec_used_check = @s dec_used_fame
 scoreboard players operation @s dec_used_check /= @s dec_used_bit
 scoreboard players set #two dec_used_bit 2
@@ -37,5 +42,10 @@ execute if score @s decision_task matches 112 run function rfm:task/decision/fam
 execute if score @s decision_task matches 113 run function rfm:task/decision/fame/street_speech/street_speech_show
 execute if score @s decision_task matches 114 run function rfm:task/decision/fame/fact_check/fact_check_show
 execute if score @s decision_task matches 115 run function rfm:task/decision/fame/heritage_event/heritage_event_show
+execute if score @s decision_task matches 116 run function rfm:task/decision/fame/city_mascot/city_mascot_show
+execute if score @s decision_task matches 117 run function rfm:task/decision/fame/civic_award/civic_award_show
+execute if score @s decision_task matches 118 run function rfm:task/decision/fame/official_ai/official_ai_show
+execute if score @s decision_task matches 119 run function rfm:task/decision/fame/public_art/public_art_show
+execute if score @s decision_task matches 120 run function rfm:task/decision/fame/honor_revocation/honor_revocation_show
 #学者额外获知三个选项的精确属性影响
 function rfm:ability/scholar/preview

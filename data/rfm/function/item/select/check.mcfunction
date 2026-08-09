@@ -15,11 +15,14 @@ execute as @a[scores={item_selecting=1,item_pick=13}] if score #item_13 item_ava
 execute as @a[scores={item_selecting=1,item_pick=14}] if score #item_14 item_available matches 1 run scoreboard players set @s item_held 14
 execute as @a[scores={item_selecting=1,item_pick=15}] if score #item_15 item_available matches 1 run scoreboard players set @s item_held 15
 execute as @a[scores={item_selecting=1,item_pick=16}] if score #item_16 item_available matches 1 run scoreboard players set @s item_held 16
+execute as @a[scores={item_selecting=1,item_pick=17}] if score #item_17 item_available matches 1 run scoreboard players set @s item_held 17
+execute as @a[scores={item_selecting=1,item_pick=18}] if score #item_18 item_available matches 1 run scoreboard players set @s item_held 18
+execute as @a[scores={item_selecting=1,item_pick=19}] if score #item_19 item_available matches 1 run scoreboard players set @s item_held 19
+execute as @a[scores={item_selecting=1,item_pick=20}] if score #item_20 item_available matches 1 run scoreboard players set @s item_held 20
 execute as @a[scores={item_selecting=1,item_pick=21}] if score #item_21 item_available matches 1 run scoreboard players set @s item_held 21
 execute as @a[scores={item_selecting=1,item_pick=22}] if score #item_22 item_available matches 1 run scoreboard players set @s item_held 22
 execute as @a[scores={item_selecting=1,item_pick=23}] if score #item_23 item_available matches 1 run scoreboard players set @s item_held 23
 execute as @a[scores={item_selecting=1,item_pick=24}] if score #item_24 item_available matches 1 run scoreboard players set @s item_held 24
 
 #只有成功取得尚未被选择的令牌时才完成本名玩家的选择
-execute as @a[scores={item_selecting=1,item_held=1..16}] run function rfm:item/select/complete
-execute as @a[scores={item_selecting=1,item_held=21..24}] run function rfm:item/select/complete
+execute as @a[scores={item_selecting=1,item_held=1..24}] run function rfm:item/select/complete
