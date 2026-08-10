@@ -14,13 +14,6 @@ scoreboard players set @s manhole_delay 0
 
 #其他玩家在步行街上方观战，行动玩家站在巡检起点
 gamemode adventure @a
-#生成可自由走动的空中观战平台
-fill 999 -52 118 1009 -52 126 minecraft:light_gray_stained_glass
-setblock 1004 -52 122 minecraft:sea_lantern
-fill 999 -51 118 1009 -49 118 minecraft:glass
-fill 999 -51 126 1009 -49 126 minecraft:glass
-fill 999 -51 119 999 -49 125 minecraft:glass
-fill 1009 -51 119 1009 -49 125 minecraft:glass
 tp @a 1004 -51 122 180 30
 tp @s 1004 -60 117 180 0
 

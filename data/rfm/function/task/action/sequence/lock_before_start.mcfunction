@@ -26,5 +26,5 @@ execute if score @s action_task matches 801 if score @s hospital_state matches 2
 execute if score @s action_task matches 802 if score @s fitness_state matches 2..3 run tp @s 184 -57 -67
 execute if score @s action_task matches 803 if score @s exercise_state matches 2..3 run tp @s 206 -59 -65
 execute if score @s action_task matches 803 if score @s exercise_state matches 5 run tp @s 206 -59 -65
-execute if score @s action_task matches 804 if score @s bus_state matches 2..3 run tp @s 948 -60 114
+execute if score @s action_task matches 804 if score @s bus_state matches 2..3 run tp @s 244 -59 -63
 execute if score @s action_task matches 805 if score @s manhole_state matches 2..3 run tp @s 1004 -60 117
