@@ -6,6 +6,8 @@ scoreboard objectives add item_available dummy
 scoreboard objectives add item_before dummy
 scoreboard objectives add item_delta dummy
 scoreboard objectives add swap_pending dummy
+#属性互换令牌选择目标房间
+scoreboard objectives add swap_target trigger
 scoreboard objectives add stat_use_1 dummy
 scoreboard objectives add stat_use_2 dummy
 scoreboard objectives add stat_use_3 dummy

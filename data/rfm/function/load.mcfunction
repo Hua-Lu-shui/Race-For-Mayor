@@ -4,19 +4,21 @@ execute as @a run attribute @s minecraft:generic.knockback_resistance base set 0
 #生成带有对应文字、颜色与点击事件的告示牌
 # /reload后回到可重新开局状态，使开始游戏告示牌可以立即使用
 scoreboard players set #start_pending phase 0
-setblock 61 -49 -22 minecraft:oak_wall_sign[facing=south,waterlogged=false]{front_text:{has_glowing_text:0b,messages:['""','{"text":"明星","color":"aqua","clickEvent":{"action":"run_command","value":"/function rfm:candidate/star"}}','""','""']}}
-setblock 63 -49 -22 minecraft:oak_wall_sign[facing=south,waterlogged=false]{front_text:{has_glowing_text:0b,messages:['""','{"text":"企业家","color":"yellow","clickEvent":{"action":"run_command","value":"/function rfm:candidate/business"}}','""','""']}}
-setblock 65 -49 -22 minecraft:oak_wall_sign[facing=south,waterlogged=false]{front_text:{has_glowing_text:0b,messages:['""','{"text":"社区领袖","color":"red","clickEvent":{"action":"run_command","value":"/function rfm:candidate/community"}}','""','""']}}
-setblock 67 -49 -22 minecraft:oak_wall_sign[facing=south,waterlogged=false]{front_text:{has_glowing_text:0b,messages:['""','{"text":"学者","color":"green","clickEvent":{"action":"run_command","value":"/function rfm:candidate/scholar"}}','""','""']}}
-setblock 69 -49 -22 minecraft:oak_wall_sign[facing=south,waterlogged=false]{front_text:{color:"light_gray",has_glowing_text:0b,messages:['""','{"text":"公务员","color":"#F5F5DC","clickEvent":{"action":"run_command","value":"/function rfm:candidate/official"}}','""','""']}}
-setblock 71 -49 -22 minecraft:oak_wall_sign[facing=south,waterlogged=false]{front_text:{color:"orange",has_glowing_text:0b,messages:['""','{"text":"军人","color":"#FFA500","clickEvent":{"action":"run_command","value":"/function rfm:candidate/military"}}','""','""']}}
-setblock 73 -49 -22 minecraft:oak_wall_sign[facing=south,waterlogged=false]{front_text:{has_glowing_text:0b,messages:['""','{"text":"律师","color":"light_purple","clickEvent":{"action":"run_command","value":"/function rfm:candidate/lawyer"}}','""','""']}}
-setblock 75 -49 -22 minecraft:oak_wall_sign[facing=south,waterlogged=false]{front_text:{has_glowing_text:0b,messages:['""','{"text":"医生","color":"#012696","clickEvent":{"action":"run_command","value":"/function rfm:candidate/doctor"}}','""','""']}}
-setblock 55 -49 -22 minecraft:oak_wall_sign[facing=south,waterlogged=false]{front_text:{has_glowing_text:1b,messages:['""','{"text":"教程","color":"gold","bold":true,"clickEvent":{"action":"run_command","value":"/function rfm:tutorial/show"}}','""','""']}}
+setblock 61 -49 -22 minecraft:oak_wall_sign[facing=south,waterlogged=false]{front_text:{has_glowing_text:0b,messages:['""','{"text":"明星","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger lobby_action set 1"}}','""','""']}}
+setblock 63 -49 -22 minecraft:oak_wall_sign[facing=south,waterlogged=false]{front_text:{has_glowing_text:0b,messages:['""','{"text":"企业家","color":"yellow","clickEvent":{"action":"run_command","value":"/trigger lobby_action set 2"}}','""','""']}}
+setblock 65 -49 -22 minecraft:oak_wall_sign[facing=south,waterlogged=false]{front_text:{has_glowing_text:0b,messages:['""','{"text":"社区领袖","color":"red","clickEvent":{"action":"run_command","value":"/trigger lobby_action set 3"}}','""','""']}}
+setblock 67 -49 -22 minecraft:oak_wall_sign[facing=south,waterlogged=false]{front_text:{has_glowing_text:0b,messages:['""','{"text":"学者","color":"green","clickEvent":{"action":"run_command","value":"/trigger lobby_action set 4"}}','""','""']}}
+setblock 69 -49 -22 minecraft:oak_wall_sign[facing=south,waterlogged=false]{front_text:{color:"light_gray",has_glowing_text:0b,messages:['""','{"text":"公务员","color":"#F5F5DC","clickEvent":{"action":"run_command","value":"/trigger lobby_action set 5"}}','""','""']}}
+setblock 71 -49 -22 minecraft:oak_wall_sign[facing=south,waterlogged=false]{front_text:{color:"orange",has_glowing_text:0b,messages:['""','{"text":"军人","color":"#FFA500","clickEvent":{"action":"run_command","value":"/trigger lobby_action set 6"}}','""','""']}}
+setblock 73 -49 -22 minecraft:oak_wall_sign[facing=south,waterlogged=false]{front_text:{has_glowing_text:0b,messages:['""','{"text":"律师","color":"light_purple","clickEvent":{"action":"run_command","value":"/trigger lobby_action set 7"}}','""','""']}}
+setblock 75 -49 -22 minecraft:oak_wall_sign[facing=south,waterlogged=false]{front_text:{has_glowing_text:0b,messages:['""','{"text":"医生","color":"#012696","clickEvent":{"action":"run_command","value":"/trigger lobby_action set 8"}}','""','""']}}
+setblock 55 -49 -22 minecraft:oak_wall_sign[facing=south,waterlogged=false]{front_text:{has_glowing_text:1b,messages:['""','{"text":"教程","color":"gold","bold":true,"clickEvent":{"action":"run_command","value":"/trigger lobby_action set 9"}}','""','""']}}
 #每次/reload都重新显现开始游戏告示牌；游戏中点击会由start_check的状态锁拦截
-setblock 49 -49 -22 minecraft:oak_wall_sign[facing=south,waterlogged=false]{is_waxed:1b,front_text:{has_glowing_text:1b,messages:['""','{"text":"开始游戏","color":"white","bold":true,"clickEvent":{"action":"run_command","value":"/function rfm:schedule/start_check"}}','""','""']}}
+setblock 49 -49 -22 minecraft:oak_wall_sign[facing=south,waterlogged=false]{is_waxed:1b,front_text:{has_glowing_text:1b,messages:['""','{"text":"开始游戏","color":"white","bold":true,"clickEvent":{"action":"run_command","value":"/trigger lobby_action set 10"}}','""','""']}}
 #——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 scoreboard objectives add room dummy
+#大厅身份、教程与开始游戏告示牌统一入口
+scoreboard objectives add lobby_action trigger
 #创建人数计分板
 scoreboard objectives add player_count dummy
 #创建回合计分板
@@ -154,5 +156,4 @@ schedule function rfm:display/display 1t replace
 
 
 say "加载完毕"
-
 

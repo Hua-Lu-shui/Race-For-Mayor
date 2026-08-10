@@ -166,6 +166,6 @@ gamemode adventure @a
 tp @a 55.5 -50 -17.5 0 0
 #玩家点击返回并完成复位后，重新生成下一局的开始游戏告示牌
 scoreboard players set #start_pending phase 0
-setblock 49 -49 -22 minecraft:oak_wall_sign[facing=south,waterlogged=false]{is_waxed:1b,front_text:{has_glowing_text:1b,messages:['""','{"text":"开始游戏","color":"white","bold":true,"clickEvent":{"action":"run_command","value":"/function rfm:schedule/start_check"}}','""','""']}}
+setblock 49 -49 -22 minecraft:oak_wall_sign[facing=south,waterlogged=false]{is_waxed:1b,front_text:{has_glowing_text:1b,messages:['""','{"text":"开始游戏","color":"white","bold":true,"clickEvent":{"action":"run_command","value":"/trigger lobby_action set 10"}}','""','""']}}
 #返回流程完成，状态重新回到未结算
 scoreboard players set #settle_state settle_state 0

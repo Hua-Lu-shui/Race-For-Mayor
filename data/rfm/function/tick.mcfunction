@@ -1,6 +1,13 @@
 #执行tick函数对应的游戏流程
 #确保所有玩家都具有默认属性
 execute as @a unless score @s candidate matches 0.. run function rfm:initialize/candidate
+#只在大厅告示牌附近开放身份、教程与开始游戏触发器
+execute if score #phase phase matches 0 positioned 62 -49 -22 run scoreboard players enable @a[distance=..16] lobby_action
+#只在结算完成且靠近返回告示牌时开放返回触发器
+execute if score #settle_state settle_state matches 4 positioned 49 -56 35 run scoreboard players enable @a[distance=..6] ending_return
+#处理告示牌提交的普通玩家请求
+execute as @a[scores={lobby_action=1..}] at @s run function rfm:lobby/check_action
+execute as @a[scores={ending_return=1..}] at @s run function rfm:ending/check_return
 #每tick只选择对应属性已锁定的玩家，覆盖事件、令牌与任务造成的修改
 execute as @a[scores={fame_lock=1}] run scoreboard players operation @s fame = @s fame_locked
 execute as @a[scores={economy_lock=1}] run scoreboard players operation @s economy = @s economy_locked
@@ -12,6 +19,11 @@ execute if score #phase phase matches 1 run function rfm:title/check/attributes
 execute if score #phase phase matches 1 run function rfm:collection/effect/tick
 #神秘人在办公室停留期间检测右键交互
 execute if score #phase phase matches 1 run function rfm:collection/mysterious/tick
+#处理普通玩家通过聊天按钮提交的交易确认请求
+execute as @a[scores={collection_confirm=1..}] run function rfm:collection/trade/check_confirm
+#处理满槽藏品替换与属性互换目标请求
+execute as @a[scores={collection_replace=1..}] at @s run function rfm:collection/trade/check_replace
+execute as @a[scores={swap_target=1..}] at @s run function rfm:item/use/swap/check_target
 #等待全体玩家丢出结算时钟
 execute if score #settle_state settle_state matches 1 run function rfm:ending/ready/check
 #执行令牌争夺状态机

@@ -22,15 +22,8 @@ scoreboard players set @s bus_delay 0
 
 #其他玩家在站台上方观战，行动玩家站在调度区
 gamemode adventure @a
-#生成可自由走动的空中观战平台
-fill 943 -52 118 953 -52 126 minecraft:light_gray_stained_glass
-setblock 948 -52 122 minecraft:sea_lantern
-fill 943 -51 118 953 -49 118 minecraft:glass
-fill 943 -51 126 953 -49 126 minecraft:glass
-fill 943 -51 119 943 -49 125 minecraft:glass
-fill 953 -51 119 953 -49 125 minecraft:glass
 tp @a 948 -51 122 180 30
-function rfm:task/action/welfare/welfare_4/teleport_center
+tp @s 948 -60 114 180 0
 
 tellraw @a [{"text":"【民生行动】公交站调度","color":"red","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]
 tellraw @a [{"text":"乘客会随机进入三条候车队伍。红线满3人、黄线满4人、蓝线满5人时，","color":"white"},{"text":"按下对应按钮发车","color":"#67D5FF","bold":true},{"text":"。提前或超载发车会清空该队并扣除","color":"white"},{"text":"2秒","color":"#FFCB77"},{"text":"。","color":"white"}]

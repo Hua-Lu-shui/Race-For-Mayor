@@ -10,6 +10,10 @@ scoreboard objectives add collection_previous_offer dummy
 scoreboard objectives add collection_offer_shift dummy
 scoreboard objectives add collection_trade_round dummy
 scoreboard objectives add collection_view_round dummy
+#普通玩家通过聊天按钮提交交易确认请求
+scoreboard objectives add collection_confirm trigger
+#满槽交易时选择要替换的藏品槽位
+scoreboard objectives add collection_replace trigger
 #“无名英雄勋章”交易时，用于计算当前最高属性并从并列项中随机选择
 scoreboard objectives add collection_highest dummy
 scoreboard objectives add collection_tie_mask dummy
