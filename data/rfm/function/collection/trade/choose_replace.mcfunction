@@ -1,7 +1,7 @@
 tellraw @s {"text":"你已经持有的藏品已满，请选择要替换的藏品：","color":"white"}
 scoreboard players enable @s collection_replace
 execute if score @s collection_slot1 matches 1 run tellraw @s [{"text":" [替换 褪色的记者证（第一格）]","color":"green","bold":true,"clickEvent":{"action":"run_command","value":"/trigger collection_replace set 1"}}]
-execute if score @s collection_slot1 matches 2 run tellraw @s [{"text":" [替换 无名英雄勋章（第一格）]","color":"green","bold":true,"clickEvent":{"action":"run_command","value":"/trigger collection_replace set 1"}}]
+execute if score @s collection_slot1 matches 2 run tellraw @s [{"text":" [替换 羽毛笔（第一格）]","color":"green","bold":true,"clickEvent":{"action":"run_command","value":"/trigger collection_replace set 1"}}]
 execute if score @s collection_slot1 matches 3 run tellraw @s [{"text":" [替换 金属怀表（第一格）]","color":"blue","bold":true,"clickEvent":{"action":"run_command","value":"/trigger collection_replace set 1"}}]
 execute if score @s collection_slot1 matches 4 run tellraw @s [{"text":" [替换 带批注的档案（第一格）]","color":"green","bold":true,"clickEvent":{"action":"run_command","value":"/trigger collection_replace set 1"}}]
 execute if score @s collection_slot1 matches 5 run tellraw @s [{"text":" [替换 诉讼卷宗（第一格）]","color":"green","bold":true,"clickEvent":{"action":"run_command","value":"/trigger collection_replace set 1"}}]
@@ -26,7 +26,7 @@ execute if score @s collection_slot1 matches 23 run tellraw @s [{"text":" [替�
 execute if score @s collection_slot1 matches 24 run tellraw @s [{"text":" [替换 手枪子弹（第一格）]","color":"blue","bold":true,"clickEvent":{"action":"run_command","value":"/trigger collection_replace set 1"}}]
 execute if score @s collection_slot1 matches 25 run tellraw @s [{"text":" [替换 无人认领的钥匙（第一格）]","color":"light_purple","bold":true,"clickEvent":{"action":"run_command","value":"/trigger collection_replace set 1"}}]
 execute if score @s collection_slot2 matches 1 run tellraw @s [{"text":" [替换 褪色的记者证（第二格）]","color":"green","bold":true,"clickEvent":{"action":"run_command","value":"/trigger collection_replace set 2"}}]
-execute if score @s collection_slot2 matches 2 run tellraw @s [{"text":" [替换 无名英雄勋章（第二格）]","color":"green","bold":true,"clickEvent":{"action":"run_command","value":"/trigger collection_replace set 2"}}]
+execute if score @s collection_slot2 matches 2 run tellraw @s [{"text":" [替换 羽毛笔（第二格）]","color":"green","bold":true,"clickEvent":{"action":"run_command","value":"/trigger collection_replace set 2"}}]
 execute if score @s collection_slot2 matches 3 run tellraw @s [{"text":" [替换 金属怀表（第二格）]","color":"blue","bold":true,"clickEvent":{"action":"run_command","value":"/trigger collection_replace set 2"}}]
 execute if score @s collection_slot2 matches 4 run tellraw @s [{"text":" [替换 带批注的档案（第二格）]","color":"green","bold":true,"clickEvent":{"action":"run_command","value":"/trigger collection_replace set 2"}}]
 execute if score @s collection_slot2 matches 5 run tellraw @s [{"text":" [替换 诉讼卷宗（第二格）]","color":"green","bold":true,"clickEvent":{"action":"run_command","value":"/trigger collection_replace set 2"}}]
@@ -51,7 +51,7 @@ execute if score @s collection_slot2 matches 23 run tellraw @s [{"text":" [替�
 execute if score @s collection_slot2 matches 24 run tellraw @s [{"text":" [替换 手枪子弹（第二格）]","color":"blue","bold":true,"clickEvent":{"action":"run_command","value":"/trigger collection_replace set 2"}}]
 execute if score @s collection_slot2 matches 25 run tellraw @s [{"text":" [替换 无人认领的钥匙（第二格）]","color":"light_purple","bold":true,"clickEvent":{"action":"run_command","value":"/trigger collection_replace set 2"}}]
 execute if score @s candidate matches 8 if score @s collection_slot3 matches 1 run tellraw @s [{"text":" [替换 褪色的记者证（第三格）]","color":"green","bold":true,"clickEvent":{"action":"run_command","value":"/trigger collection_replace set 3"}}]
-execute if score @s candidate matches 8 if score @s collection_slot3 matches 2 run tellraw @s [{"text":" [替换 无名英雄勋章（第三格）]","color":"green","bold":true,"clickEvent":{"action":"run_command","value":"/trigger collection_replace set 3"}}]
+execute if score @s candidate matches 8 if score @s collection_slot3 matches 2 run tellraw @s [{"text":" [替换 羽毛笔（第三格）]","color":"green","bold":true,"clickEvent":{"action":"run_command","value":"/trigger collection_replace set 3"}}]
 execute if score @s candidate matches 8 if score @s collection_slot3 matches 3 run tellraw @s [{"text":" [替换 金属怀表（第三格）]","color":"blue","bold":true,"clickEvent":{"action":"run_command","value":"/trigger collection_replace set 3"}}]
 execute if score @s candidate matches 8 if score @s collection_slot3 matches 4 run tellraw @s [{"text":" [替换 带批注的档案（第三格）]","color":"green","bold":true,"clickEvent":{"action":"run_command","value":"/trigger collection_replace set 3"}}]
 execute if score @s candidate matches 8 if score @s collection_slot3 matches 5 run tellraw @s [{"text":" [替换 诉讼卷宗（第三格）]","color":"green","bold":true,"clickEvent":{"action":"run_command","value":"/trigger collection_replace set 3"}}]

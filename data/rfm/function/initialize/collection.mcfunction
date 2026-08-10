@@ -14,7 +14,7 @@ scoreboard objectives add collection_view_round dummy
 scoreboard objectives add collection_confirm trigger
 #满槽交易时选择要替换的藏品槽位
 scoreboard objectives add collection_replace trigger
-#“无名英雄勋章”交易时，用于计算当前最高属性并从并列项中随机选择
+#“羽毛笔”交易时，用于计算当前最高属性并从并列项中随机选择
 scoreboard objectives add collection_highest dummy
 scoreboard objectives add collection_tie_mask dummy
 scoreboard objectives add collection_pay_pick dummy

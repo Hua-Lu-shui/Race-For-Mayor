@@ -7,5 +7,5 @@ execute if score @s negotiation_delay matches 40 run playsound minecraft:block.n
 execute if score @s negotiation_delay matches 20 run title @a title {"text":"1","color":"red","bold":true}
 execute if score @s negotiation_delay matches 20 run playsound minecraft:block.note_block.hat master @a ~ ~ ~ 1 1.2 1
 scoreboard players remove @s negotiation_delay 1
-execute if score @s negotiation_delay matches ..0 run title @a title {"text":"开始！","color":"yellow","bold":true}
+execute if score @s negotiation_delay matches ..0 run title @a title {"text":"开始","color":"yellow","bold":true}
 execute if score @s negotiation_delay matches ..0 run function rfm:task/action/economy/economy_2/begin

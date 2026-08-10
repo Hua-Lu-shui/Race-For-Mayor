@@ -11,6 +11,6 @@ execute if score @s emission_delay matches 20 run playsound minecraft:block.note
 
 scoreboard players remove @s emission_delay 1
 
-execute if score @s emission_delay matches ..0 run title @a title {"text":"开始！","color":"green","bold":true}
+execute if score @s emission_delay matches ..0 run title @a title {"text":"开始","color":"green","bold":true}
 execute if score @s emission_delay matches ..0 run playsound minecraft:entity.experience_orb.pickup master @a ~ ~ ~ 1 1 1
 execute if score @s emission_delay matches ..0 run function rfm:task/action/ecology/ecology_1/prepare_round

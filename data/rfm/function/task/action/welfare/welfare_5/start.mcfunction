@@ -1,25 +1,23 @@
-#在玩家到达前搭建步行街和全部井盖
+#在玩家到达前搭建比赛厨房和料理台
 scoreboard players set #waiting next_round_ready 0
 scoreboard players set @a next_round_clock 0
 function rfm:task/action/welfare/welfare_5/create_scene
 function rfm:task/action/welfare/welfare_5/create_labels
 
 #初始化任务状态，等待行动玩家确认准备
-scoreboard players set @s manhole_selected 0
-scoreboard players set @s manhole_pick 0
-scoreboard players set @s manhole_repaired 0
-scoreboard players set @s manhole_time 0
-scoreboard players set @s manhole_state 2
-scoreboard players set @s manhole_delay 0
+scoreboard players set @s cooking_clicks 0
+scoreboard players set @s cooking_time 0
+scoreboard players set @s cooking_state 2
+scoreboard players set @s cooking_delay 0
 
-#其他玩家在步行街上方观战，行动玩家站在巡检起点
+#其他玩家在厨房上方观战，行动玩家站在料理台前
 gamemode adventure @a
-tp @a 1004 -51 122 180 30
-tp @s 1004 -60 117 180 0
+tp @a 263 -58 -55 180 0
+tp @s 263 -58 -67 0 0
 
-tellraw @a [{"text":"【民生行动】井盖安全巡检","color":"red","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]
-tellraw @a [{"text":"寻找步行街上打开的","color":"white"},{"text":"故障井盖","color":"#67D5FF","bold":true},{"text":"，对准竖起的铁活板门连续点击。每个井盖需要维修20次，第20次点击后会自动合上。","color":"white"},{"text":"60秒内尽量修复更多井盖","color":"#FFD166","bold":true},{"text":"。","color":"white"}]
+tellraw @a [{"text":"【民生行动】厨艺大比拼","color":"red","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]
+tellraw @a [{"text":"比赛开始后，对准料理台上的","color":"white"},{"text":"土豆","color":"#67D5FF","bold":true},{"text":"连续点击，每次点击视为切一刀。","color":"white"},{"text":"累计切满250刀","color":"#FFD166","bold":true},{"text":"即可完成料理。","color":"white"}]
 
 title @s clear
-title @s title {"text":"井盖安全巡检","color":"red","bold":true}
-item replace entity @s hotbar.4 with minecraft:map[minecraft:custom_name='{"text":"准备完成","color":"red","bold":true,"italic":false}',minecraft:lore=['{"text":"按Q丢出后开始倒计时","color":"gray","italic":false}'],minecraft:custom_data={manhole_ready:1}] 1
+title @s title {"text":"厨艺大比拼","color":"red","bold":true}
+item replace entity @s hotbar.4 with minecraft:map[minecraft:custom_name='{"text":"准备完成","color":"red","bold":true,"italic":false}',minecraft:lore=['{"text":"扔出后开始任务","color":"gray","italic":false}'],minecraft:custom_data={cooking_ready:1}] 1

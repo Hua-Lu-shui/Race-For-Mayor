@@ -283,15 +283,11 @@ scoreboard objectives add bus_time dummy
 scoreboard objectives add bus_state dummy
 scoreboard objectives add bus_delay dummy
 
-#民生行动805“井盖安全巡检”
-scoreboard objectives add manhole_selected dummy
-scoreboard objectives add manhole_pick dummy
-scoreboard objectives add manhole_repaired dummy
-scoreboard objectives add manhole_time dummy
-scoreboard objectives add manhole_state dummy
-scoreboard objectives add manhole_delay dummy
-scoreboard objectives add manhole_hits dummy
-scoreboard objectives add manhole_need dummy
+#民生行动805“厨艺大比拼”
+scoreboard objectives add cooking_clicks dummy
+scoreboard objectives add cooking_time dummy
+scoreboard objectives add cooking_state dummy
+scoreboard objectives add cooking_delay dummy
 #——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 #下一回合全员准备状态，以及玩家丢出准备时钟的统计
 scoreboard objectives add next_round_ready dummy

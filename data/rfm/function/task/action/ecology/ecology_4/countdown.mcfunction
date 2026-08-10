@@ -7,5 +7,5 @@ execute if score @s trash_delay matches 40 run playsound minecraft:block.note_bl
 execute if score @s trash_delay matches 20 run title @a title {"text":"1","color":"red","bold":true}
 execute if score @s trash_delay matches 20 run playsound minecraft:block.note_block.hat master @a ~ ~ ~ 1 1.2 1
 scoreboard players remove @s trash_delay 1
-execute if score @s trash_delay matches ..0 run title @a title {"text":"开始！","color":"green","bold":true}
+execute if score @s trash_delay matches ..0 run title @a title {"text":"开始","color":"green","bold":true}
 execute if score @s trash_delay matches ..0 run function rfm:task/action/ecology/ecology_4/begin

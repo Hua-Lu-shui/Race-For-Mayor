@@ -15,4 +15,3 @@ bossbar set rfm:bus_time name [{"text":"公交站调度  ·  已正确发车 ","
 bossbar set rfm:bus_time visible true
 
 function rfm:task/action/welfare/welfare_4/reset_buttons
-title @a title {"text":"开始调度！","color":"green","bold":true}

@@ -144,8 +144,8 @@ execute as @a[scores={action_task=804,bus_state=2}] at @s run function rfm:task/
 execute as @a[scores={action_task=804,bus_state=3}] run function rfm:task/action/welfare/welfare_4/countdown
 execute as @a[scores={action_task=804,bus_state=1}] at @s run function rfm:task/action/welfare/welfare_4/tick
 
-#执行民生行动805“井盖安全巡检”
-execute as @a[scores={action_task=805,manhole_state=2}] at @s run function rfm:task/action/welfare/welfare_5/wait_ready
-execute as @a[scores={action_task=805,manhole_state=3}] run function rfm:task/action/welfare/welfare_5/countdown
-execute as @a[scores={action_task=805,manhole_state=1}] at @s run function rfm:task/action/welfare/welfare_5/tick
+#执行民生行动805“厨艺大比拼”
+execute as @a[scores={action_task=805,cooking_state=2}] at @s run function rfm:task/action/welfare/welfare_5/wait_ready
+execute as @a[scores={action_task=805,cooking_state=3}] run function rfm:task/action/welfare/welfare_5/countdown
+execute as @a[scores={action_task=805,cooking_state=1}] at @s run function rfm:task/action/welfare/welfare_5/tick
 

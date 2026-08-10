@@ -117,7 +117,7 @@ scoreboard players set @a hospital_state 0
 scoreboard players set @a fitness_state 0
 scoreboard players set @a exercise_state 0
 scoreboard players set @a bus_state 0
-scoreboard players set @a manhole_state 0
+scoreboard players set @a cooking_state 0
 scoreboard players set @a emission_state 0
 scoreboard players set @a sample_state 0
 scoreboard players set @a park_state 0

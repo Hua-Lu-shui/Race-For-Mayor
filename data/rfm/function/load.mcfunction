@@ -145,15 +145,16 @@ bossbar add rfm:bus_time [{"text":"公交站调度","color":"red"}]
 bossbar set rfm:bus_time color red
 bossbar set rfm:bus_time visible false
 
-#民生行动805“井盖安全巡检”倒计时
+#民生行动805“厨艺大比拼”倒计时
 bossbar remove rfm:manhole_time
-bossbar add rfm:manhole_time [{"text":"井盖安全巡检","color":"red"}]
-bossbar set rfm:manhole_time color red
-bossbar set rfm:manhole_time visible false
+bossbar remove rfm:meal_time
+bossbar remove rfm:cooking_time
+bossbar add rfm:cooking_time [{"text":"厨艺大比拼","color":"red"}]
+bossbar set rfm:cooking_time color red
+bossbar set rfm:cooking_time visible false
 #—————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 #启动低频属性显示循环
 schedule function rfm:display/display 1t replace
 
 
 say "加载完毕"
-

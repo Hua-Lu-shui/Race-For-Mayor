@@ -3,7 +3,7 @@ scoreboard players operation @s collection_view_round = #round round
 playsound minecraft:entity.villager.ambient master @s ~ ~ ~ 0.7 0.8
 tellraw @s [{"text":"神秘人：","color":"dark_purple","bold":true},{"text":"我为你准备了一件只属于你的藏品。","color":"white"}]
 execute if score @s collection_offer matches 1 run tellraw @s [{"text":"本次藏品：","color":"gray"},{"text":"褪色的记者证","color":"green","bold":true},{"text":"\n稀有度：普通","color":"green"},{"text":"\n持续效果：每回合属性公示后，若你没有任何一项领先，名誉 +4。","color":"white"}]
-execute if score @s collection_offer matches 2 run tellraw @s [{"text":"本次藏品：","color":"gray"},{"text":"无名英雄勋章","color":"green","bold":true},{"text":"\n稀有度：普通","color":"green"},{"text":"\n持续效果：若本回合没有成为行动玩家，属性公示前四项属性各 +1。","color":"white"}]
+execute if score @s collection_offer matches 2 run tellraw @s [{"text":"本次藏品：","color":"gray"},{"text":"羽毛笔","color":"green","bold":true},{"text":"\n稀有度：普通","color":"green"},{"text":"\n持续效果：若本回合没有成为行动玩家，属性公示前四项属性各 +1。","color":"white"}]
 execute if score @s collection_offer matches 3 run tellraw @s [{"text":"本次藏品：","color":"gray"},{"text":"金属怀表","color":"blue","bold":true},{"text":"\n稀有度：稀有","color":"blue"},{"text":"\n持续效果：每回合结束时，将经济与最低属性互换。","color":"white"}]
 execute if score @s collection_offer matches 4 run tellraw @s [{"text":"本次藏品：","color":"gray"},{"text":"带批注的档案","color":"green","bold":true},{"text":"\n稀有度：普通","color":"green"},{"text":"\n持续效果：每次完成决策任务后，该任务中增加最多的属性额外 +2；并列时随机选择其中一项。","color":"white"}]
 execute if score @s collection_offer matches 5 run tellraw @s [{"text":"本次藏品：","color":"gray"},{"text":"诉讼卷宗","color":"green","bold":true},{"text":"\n稀有度：普通","color":"green"},{"text":"\n持续效果：每使用一次令牌，所有属性 +5。","color":"white"}]

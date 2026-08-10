@@ -1,3 +1,3 @@
-#清除右键记录并登记一次维修
+#清除右键记录，并把本次点击交给行动玩家
 data remove entity @s interaction
-function rfm:task/action/welfare/welfare_5/register_hit
+execute as @a[scores={action_task=805,cooking_state=1},sort=nearest,limit=1,distance=..6] run function rfm:task/action/welfare/welfare_5/register_click
