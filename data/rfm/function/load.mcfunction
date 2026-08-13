@@ -146,8 +146,6 @@ bossbar set rfm:bus_time color red
 bossbar set rfm:bus_time visible false
 
 #民生行动805“厨艺大比拼”倒计时
-bossbar remove rfm:manhole_time
-bossbar remove rfm:meal_time
 bossbar remove rfm:cooking_time
 bossbar add rfm:cooking_time [{"text":"厨艺大比拼","color":"red"}]
 bossbar set rfm:cooking_time color red

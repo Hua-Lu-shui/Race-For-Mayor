@@ -27,6 +27,8 @@ execute as @a[scores={swap_target=1..}] at @s run function rfm:item/use/swap/che
 #等待全体玩家丢出结算时钟
 execute if score #settle_state settle_state matches 1 run function rfm:ending/ready/check
 #执行令牌争夺状态机
+execute if score #group_state group_state matches 3 run function rfm:collective/prepare_check
+execute if score #group_state group_state matches 4 run function rfm:collective/start_ready/check
 execute if score #group_state group_state matches 1 run function rfm:collective/tick
 #等待下一回合期间检测玩家丢出的令牌
 execute if score #waiting next_round_ready matches 1 run function rfm:item/use/check_all

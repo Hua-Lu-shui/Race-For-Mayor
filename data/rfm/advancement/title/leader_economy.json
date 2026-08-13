@@ -1,5 +1,5 @@
 {
   "parent": "rfm:title/root",
-  "display": {"icon": {"id": "minecraft:emerald"}, "title": {"text": "财政领航", "color": "yellow"}, "description": {"text": "连续3个回合成为经济领先者｜+100票", "color": "gray"}, "frame": "challenge", "show_toast": true, "announce_to_chat": false, "hidden": false},
+  "display": {"icon": {"id": "minecraft:paper", "components": {"minecraft:custom_model_data": 720007}}, "title": {"text": "财政领航", "color": "yellow"}, "description": {"text": "连续3个回合成为经济领先者｜+100票", "color": "gray"}, "frame": "challenge", "show_toast": true, "announce_to_chat": false, "hidden": false},
   "criteria": {"impossible": {"trigger": "minecraft:impossible"}}
 }

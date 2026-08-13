@@ -1,6 +1,7 @@
 #最终属性票数 = 玩家属性 × 当前对应权重
 function rfm:attribute/lock/enforce
 function rfm:collection/effect/amber_final
+function rfm:collection/effect/fossil_final
 scoreboard players operation @s vote_fame = @s fame
 scoreboard players operation @s vote_fame *= #weight fame_weight
 scoreboard players operation @s vote_economy = @s economy

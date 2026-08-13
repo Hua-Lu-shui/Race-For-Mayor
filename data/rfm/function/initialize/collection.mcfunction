@@ -1,4 +1,4 @@
-#藏品：持有槽、神秘人报价与交易临时状态
+#藏品：持有槽、神秘人展示内容与交易临时状态
 scoreboard objectives add collection_slot1 dummy
 scoreboard objectives add collection_slot2 dummy
 scoreboard objectives add collection_slot3 dummy

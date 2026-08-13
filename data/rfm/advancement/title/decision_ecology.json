@@ -1,5 +1,5 @@
 {
   "parent": "rfm:title/root",
-  "display": {"icon": {"id": "minecraft:oak_sapling"}, "title": {"text": "绿色执政者", "color": "green"}, "description": {"text": "连续3次选择生态决策任务｜+50票", "color": "gray"}, "frame": "goal", "show_toast": true, "announce_to_chat": false, "hidden": false},
+  "display": {"icon": {"id": "minecraft:paper", "components": {"minecraft:custom_model_data": 720002}}, "title": {"text": "绿色执政者", "color": "green"}, "description": {"text": "连续3次选择生态决策任务｜+50票", "color": "gray"}, "frame": "goal", "show_toast": true, "announce_to_chat": false, "hidden": false},
   "criteria": {"impossible": {"trigger": "minecraft:impossible"}}
 }

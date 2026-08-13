@@ -5,4 +5,4 @@ execute unless score @s collection_slot1 = @s collection_offer unless score @s c
 execute if score @s collection_offer matches 11 run function rfm:collection/effect/amber_record
 function rfm:collection/deliver
 playsound minecraft:item.bundle.insert master @s ~ ~ ~ 0.7 1.2
-tellraw @s [{"text":"【珠宝大盗的手套】","color":"light_purple","bold":true},{"text":"你偷到了一件新的藏品。","color":"white"}]
+tellraw @s [{"text":"【珠宝大盗的手套】","color":"gold","bold":true},{"text":"你偷到了一件新的藏品。","color":"white"}]

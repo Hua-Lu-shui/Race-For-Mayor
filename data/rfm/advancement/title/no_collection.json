@@ -1,5 +1,5 @@
 {
   "parent": "rfm:title/root",
-  "display": {"icon": {"id": "minecraft:glass_bottle"}, "title": {"text": "洁身自好", "color": "white"}, "description": {"text": "整局不购入任何藏品｜+200票", "color": "gray"}, "frame": "goal", "show_toast": true, "announce_to_chat": false, "hidden": false},
+  "display": {"icon": {"id": "minecraft:paper", "components": {"minecraft:custom_model_data": 720010}}, "title": {"text": "洁身自好", "color": "white"}, "description": {"text": "整局不购入任何藏品｜+200票", "color": "gray"}, "frame": "goal", "show_toast": true, "announce_to_chat": false, "hidden": false},
   "criteria": {"impossible": {"trigger": "minecraft:impossible"}}
 }

@@ -8,3 +8,5 @@ scoreboard objectives add group_answered dummy
 scoreboard objectives add group_wrong dummy
 scoreboard objectives add group_score dummy
 scoreboard objectives add group_rank dummy
+scoreboard objectives add group_game dummy
+scoreboard objectives add group_ready dummy

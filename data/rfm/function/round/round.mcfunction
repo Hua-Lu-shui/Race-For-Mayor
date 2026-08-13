@@ -10,6 +10,7 @@ execute as @a run function rfm:collection/effect/crystal_ball
 execute as @a run function rfm:collection/effect/ancient_vase
 execute as @a run function rfm:collection/effect/round_start_basic
 execute as @a run function rfm:collection/effect/round_start_lowest
+execute as @a run function rfm:collection/effect/meteorite_fragment
 #提示当前回合数
 title @a title [{"text":"第 ","color":"white","bold":true},{"score":{"name":"#round","objective":"round"},"color":"light_purple","bold":true},{"text":" 回合","color":"white","bold":true}]
 #调用任务分配函数

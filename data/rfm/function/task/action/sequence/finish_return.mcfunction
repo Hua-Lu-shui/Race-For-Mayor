@@ -65,6 +65,7 @@ kill @e[type=minecraft:villager,tag=rfm_cooking_judge]
 function rfm:ability/round_end
 #回合结束型藏品在领先者统计及属性公示前结算；第10回合则在最终结算前生效
 function rfm:collection/effect/before_leaders
+execute as @a run function rfm:collection/effect/masterpiece
 
 title @a title {"text":"本回合结束","color":"green","bold":true}
 

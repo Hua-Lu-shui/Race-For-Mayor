@@ -1,4 +1,4 @@
-#每位玩家独立随机：普通60%，稀有30%，史诗10%
+#每位玩家独立随机：普通50%，稀有30%，史诗15%，传奇5%
 function rfm:collection/mysterious/sample_offer
 
 #严格使用room/return中的办公室传送坐标，不受玩家生成时所在位置影响

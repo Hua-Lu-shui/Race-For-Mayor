@@ -76,6 +76,9 @@ scoreboard players set #reveal_ecology leader_reveal 0
 #重置令牌争夺与令牌状态
 scoreboard players set #group_state group_state 0
 scoreboard players set #group_prompt group_prompt 0
+scoreboard players set #last_game group_game 0
+scoreboard players set #selected_game group_game 0
+scoreboard players set @a group_ready 0
 scoreboard players set #current_picker item_selecting 0
 scoreboard players set @a group_score 0
 scoreboard players set @a group_rank 0

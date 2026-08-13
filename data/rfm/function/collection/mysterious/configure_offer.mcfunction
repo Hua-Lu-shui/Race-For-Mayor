@@ -73,6 +73,21 @@ execute if score @s collection_offer matches 23 run scoreboard players set @s co
 #藏品24“手枪子弹”：当前最高属性-10
 execute if score @s collection_offer matches 24 run scoreboard players set @s collection_attr 5
 execute if score @s collection_offer matches 24 run scoreboard players set @s collection_cost 10
-#藏品25“无人认领的钥匙”：当前最低属性-20
+#藏品25“万能钥匙”：当前最低属性-20
 execute if score @s collection_offer matches 25 run scoreboard players set @s collection_attr 8
 execute if score @s collection_offer matches 25 run scoreboard players set @s collection_cost 20
+#藏品26“世纪名画”：当前最高属性-20
+execute if score @s collection_offer matches 26 run scoreboard players set @s collection_attr 5
+execute if score @s collection_offer matches 26 run scoreboard players set @s collection_cost 20
+#藏品27“王冠”：所有属性-10
+execute if score @s collection_offer matches 27 run scoreboard players set @s collection_attr 6
+execute if score @s collection_offer matches 27 run scoreboard players set @s collection_cost 10
+#藏品28“古生物化石”：所有属性-20
+execute if score @s collection_offer matches 28 run scoreboard players set @s collection_attr 6
+execute if score @s collection_offer matches 28 run scoreboard players set @s collection_cost 20
+#藏品29“皇家项链”：所有属性-10
+execute if score @s collection_offer matches 29 run scoreboard players set @s collection_attr 6
+execute if score @s collection_offer matches 29 run scoreboard players set @s collection_cost 10
+#藏品30“陨石碎片”：所有属性-20
+execute if score @s collection_offer matches 30 run scoreboard players set @s collection_attr 6
+execute if score @s collection_offer matches 30 run scoreboard players set @s collection_cost 20

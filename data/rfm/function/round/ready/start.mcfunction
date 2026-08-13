@@ -3,8 +3,8 @@ scoreboard players set #waiting next_round_ready 0
 clear @a minecraft:clock[minecraft:custom_data={next_round_ready:1}]
 kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{next_round_ready:1}}}}]
 scoreboard players set @a next_round_clock 0
-#第4回合交易结束、进入第5回合时，神秘人以末影传送效果离开办公室
-execute if score #round round matches 4 run function rfm:collection/mysterious/leave_all
+#第2至4回合的办公室交易等待结束后，神秘人立即离场，任务选择期间不再留在办公室
+execute if score #round round matches 2..4 run function rfm:collection/mysterious/leave_all
 execute if score #round round matches 0 run tellraw @a {"text":"所有玩家已准备完成，第一回合开始！","color":"green","bold":true}
 execute if score #round round matches 1.. run tellraw @a {"text":"所有玩家已准备完成，下一回合开始！","color":"green","bold":true}
 function rfm:round/round

@@ -1,5 +1,5 @@
 {
   "parent": "rfm:title/root",
-  "display": {"icon": {"id": "minecraft:diamond"}, "title": {"text": "众望所归", "color": "aqua"}, "description": {"text": "连续3个回合成为名誉领先者｜+100票", "color": "gray"}, "frame": "challenge", "show_toast": true, "announce_to_chat": false, "hidden": false},
+  "display": {"icon": {"id": "minecraft:paper", "components": {"minecraft:custom_model_data": 720008}}, "title": {"text": "众望所归", "color": "aqua"}, "description": {"text": "连续3个回合成为名誉领先者｜+100票", "color": "gray"}, "frame": "challenge", "show_toast": true, "announce_to_chat": false, "hidden": false},
   "criteria": {"impossible": {"trigger": "minecraft:impossible"}}
 }

@@ -1,5 +1,5 @@
 {
   "parent": "rfm:title/root",
-  "display": {"icon": {"id": "minecraft:heart_of_the_sea"}, "title": {"text": "生态标杆", "color": "green"}, "description": {"text": "连续3个回合成为生态领先者｜+100票", "color": "gray"}, "frame": "challenge", "show_toast": true, "announce_to_chat": false, "hidden": false},
+  "display": {"icon": {"id": "minecraft:paper", "components": {"minecraft:custom_model_data": 720006}}, "title": {"text": "生态标杆", "color": "green"}, "description": {"text": "连续3个回合成为生态领先者｜+100票", "color": "gray"}, "frame": "challenge", "show_toast": true, "announce_to_chat": false, "hidden": false},
   "criteria": {"impossible": {"trigger": "minecraft:impossible"}}
 }

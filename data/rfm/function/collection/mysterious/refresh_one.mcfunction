@@ -1,9 +1,9 @@
-#按普通60%、稀有30%、史诗10%重新抽取，并保证新报价与上一回合不同
+#按普通50%、稀有30%、史诗15%、传奇5%重新抽取，并保证新藏品与上一回合不同
 scoreboard players operation @s collection_previous_offer = @s collection_offer
 function rfm:collection/mysterious/sample_offer
 execute if score @s collection_offer = @s collection_previous_offer run function rfm:collection/mysterious/refresh_one
 
-#同步本办公室神秘人与交互实体记录的报价
+#同步本办公室神秘人与交互实体记录的藏品
 tag @a remove rfm_collection_offer_owner
 tag @s add rfm_collection_offer_owner
 execute as @e[type=minecraft:item_display,tag=rfm_collection_mysterious] if score @s room = @a[tag=rfm_collection_offer_owner,limit=1] room run scoreboard players operation @s collection_offer = @a[tag=rfm_collection_offer_owner,limit=1] collection_offer

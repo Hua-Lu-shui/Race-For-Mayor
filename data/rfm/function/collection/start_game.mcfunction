@@ -1,4 +1,4 @@
-#新一局清空旧藏品与报价；医生的开局藏品由天赋函数单独生成
+#新一局清空旧藏品与神秘人展示状态；医生的开局藏品由天赋函数单独生成
 scoreboard players set @a collection_slot1 0
 scoreboard players set @a collection_slot2 0
 scoreboard players set @a collection_slot3 0
