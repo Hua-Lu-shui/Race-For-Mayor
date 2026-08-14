@@ -9,6 +9,7 @@ scoreboard objectives add title_lead_welf dummy
 scoreboard objectives add title_lead_eco dummy
 scoreboard objectives add title_item_used dummy
 scoreboard objectives add title_collection_bought dummy
+scoreboard objectives add title_trade_count dummy
 scoreboard objectives add stat_lead_f dummy
 scoreboard objectives add stat_lead_e dummy
 scoreboard objectives add stat_lead_w dummy

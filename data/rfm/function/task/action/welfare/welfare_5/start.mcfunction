@@ -2,7 +2,6 @@
 scoreboard players set #waiting next_round_ready 0
 scoreboard players set @a next_round_clock 0
 function rfm:task/action/welfare/welfare_5/create_scene
-function rfm:task/action/welfare/welfare_5/create_labels
 
 #初始化任务状态，等待行动玩家确认准备
 scoreboard players set @s cooking_clicks 0
