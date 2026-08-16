@@ -1,4 +1,4 @@
-#“珠宝大盗的手套”：每回合50%几率偷取一件其他候选人身上且自己未拥有的藏品；需要有空槽
+#“珠宝大盗的手套”：每回合50%几率偷取一件其他候选人身上且自己未拥有的藏品
 execute unless score @s collection_slot1 matches 14 unless score @s collection_slot2 matches 14 unless score @s collection_slot3 matches 14 run return 0
 execute unless score @s collection_slot1 matches 0 unless score @s collection_slot2 matches 0 unless score @s collection_slot3 matches 0 run return 0
 execute unless score @s candidate matches 8 unless score @s collection_slot1 matches 0 unless score @s collection_slot2 matches 0 run return 0

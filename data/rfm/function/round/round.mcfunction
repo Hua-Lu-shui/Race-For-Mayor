@@ -8,6 +8,7 @@ execute as @a[scores={candidate=1}] run function rfm:ability/star/snapshot
 #回合开始时的藏品效果在天赋之后结算
 execute as @a run function rfm:collection/effect/crystal_ball
 execute as @a run function rfm:collection/effect/ancient_vase
+execute as @a run function rfm:collection/effect/magic_mirror
 execute as @a run function rfm:collection/effect/round_start_basic
 execute as @a run function rfm:collection/effect/round_start_lowest
 execute as @a run function rfm:collection/effect/meteorite_fragment
