@@ -1,0 +1,1 @@
+{"criteria":{"right_click":{"trigger":"minecraft:player_interacted_with_entity","conditions":{"entity":{"type":"minecraft:interaction","nbt":"{Tags:[\"rfm_lottery_slot_4\"]}"}}}},"rewards":{"function":"rfm:collective/game/fated_draw/pick_4"}}

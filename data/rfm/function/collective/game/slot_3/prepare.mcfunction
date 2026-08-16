@@ -1,1 +1,2 @@
-#小游戏槽位3占位：完成独立玩法后再加入抽取池
+#小游戏槽位3：命中注定
+function rfm:collective/game/fated_draw/prepare

@@ -1,8 +1,8 @@
 #执行tick函数对应的游戏流程
 #确保所有玩家都具有默认属性
 execute as @a unless score @s candidate matches 0.. run function rfm:initialize/candidate
-#只在大厅告示牌附近开放身份、教程与开始游戏触发器
-execute if score #phase phase matches 0 positioned 62 -49 -22 run scoreboard players enable @a[distance=..16] lobby_action
+#只在大厅告示牌区域开放统一触发器，覆盖左右两侧所有告示牌
+execute if score #phase phase matches 0 positioned 49 -49.5 -18.5 run scoreboard players enable @a[distance=..16] lobby_action
 #只在结算完成且靠近返回告示牌时开放返回触发器
 execute if score #settle_state settle_state matches 4 positioned 49 -56 35 run scoreboard players enable @a[distance=..6] ending_return
 #处理告示牌提交的普通玩家请求

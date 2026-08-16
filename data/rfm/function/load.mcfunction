@@ -4,21 +4,27 @@ execute as @a run attribute @s minecraft:generic.knockback_resistance base set 0
 #生成带有对应文字、颜色与点击事件的告示牌
 # /reload后回到可重新开局状态，使开始游戏告示牌可以立即使用
 scoreboard players set #start_pending phase 0
-setblock 61 -49 -22 minecraft:oak_wall_sign[facing=south,waterlogged=false]{front_text:{has_glowing_text:0b,messages:['""','{"text":"明星","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger lobby_action set 1"}}','""','""']}}
-setblock 63 -49 -22 minecraft:oak_wall_sign[facing=south,waterlogged=false]{front_text:{has_glowing_text:0b,messages:['""','{"text":"企业家","color":"yellow","clickEvent":{"action":"run_command","value":"/trigger lobby_action set 2"}}','""','""']}}
-setblock 65 -49 -22 minecraft:oak_wall_sign[facing=south,waterlogged=false]{front_text:{has_glowing_text:0b,messages:['""','{"text":"社区领袖","color":"red","clickEvent":{"action":"run_command","value":"/trigger lobby_action set 3"}}','""','""']}}
-setblock 67 -49 -22 minecraft:oak_wall_sign[facing=south,waterlogged=false]{front_text:{has_glowing_text:0b,messages:['""','{"text":"学者","color":"green","clickEvent":{"action":"run_command","value":"/trigger lobby_action set 4"}}','""','""']}}
-setblock 69 -49 -22 minecraft:oak_wall_sign[facing=south,waterlogged=false]{front_text:{color:"light_gray",has_glowing_text:0b,messages:['""','{"text":"公务员","color":"#F5F5DC","clickEvent":{"action":"run_command","value":"/trigger lobby_action set 5"}}','""','""']}}
-setblock 71 -49 -22 minecraft:oak_wall_sign[facing=south,waterlogged=false]{front_text:{color:"orange",has_glowing_text:0b,messages:['""','{"text":"军人","color":"#FFA500","clickEvent":{"action":"run_command","value":"/trigger lobby_action set 6"}}','""','""']}}
-setblock 73 -49 -22 minecraft:oak_wall_sign[facing=south,waterlogged=false]{front_text:{has_glowing_text:0b,messages:['""','{"text":"律师","color":"light_purple","clickEvent":{"action":"run_command","value":"/trigger lobby_action set 7"}}','""','""']}}
-setblock 75 -49 -22 minecraft:oak_wall_sign[facing=south,waterlogged=false]{front_text:{has_glowing_text:0b,messages:['""','{"text":"医生","color":"#012696","clickEvent":{"action":"run_command","value":"/trigger lobby_action set 8"}}','""','""']}}
-setblock 55 -49 -22 minecraft:oak_wall_sign[facing=south,waterlogged=false]{front_text:{has_glowing_text:1b,messages:['""','{"text":"教程","color":"gold","bold":true,"clickEvent":{"action":"run_command","value":"/trigger lobby_action set 9"}}','""','""']}}
+setblock 35 -49 -15 minecraft:cherry_wall_sign[facing=east,waterlogged=false]{front_text:{has_glowing_text:1b,messages:['""','{"text":"明星","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger lobby_action set 1"}}','""','""']}}
+setblock 35 -49 -16 minecraft:cherry_wall_sign[facing=east,waterlogged=false]{front_text:{has_glowing_text:1b,messages:['""','{"text":"企业家","color":"yellow","clickEvent":{"action":"run_command","value":"/trigger lobby_action set 2"}}','""','""']}}
+setblock 35 -49 -17 minecraft:cherry_wall_sign[facing=east,waterlogged=false]{front_text:{has_glowing_text:1b,messages:['""','{"text":"社区领袖","color":"red","clickEvent":{"action":"run_command","value":"/trigger lobby_action set 3"}}','""','""']}}
+setblock 35 -49 -18 minecraft:cherry_wall_sign[facing=east,waterlogged=false]{front_text:{has_glowing_text:1b,messages:['""','{"text":"学者","color":"green","clickEvent":{"action":"run_command","value":"/trigger lobby_action set 4"}}','""','""']}}
+setblock 35 -49 -19 minecraft:cherry_wall_sign[facing=east,waterlogged=false]{front_text:{color:"light_gray",has_glowing_text:1b,messages:['""','{"text":"公务员","color":"#F5F5DC","clickEvent":{"action":"run_command","value":"/trigger lobby_action set 5"}}','""','""']}}
+setblock 35 -49 -20 minecraft:cherry_wall_sign[facing=east,waterlogged=false]{front_text:{color:"orange",has_glowing_text:1b,messages:['""','{"text":"军人","color":"#FFA500","clickEvent":{"action":"run_command","value":"/trigger lobby_action set 6"}}','""','""']}}
+setblock 35 -49 -21 minecraft:cherry_wall_sign[facing=east,waterlogged=false]{front_text:{has_glowing_text:1b,messages:['""','{"text":"律师","color":"light_purple","clickEvent":{"action":"run_command","value":"/trigger lobby_action set 7"}}','""','""']}}
+setblock 35 -49 -22 minecraft:cherry_wall_sign[facing=east,waterlogged=false]{front_text:{has_glowing_text:1b,messages:['""','{"text":"医生","color":"#012696","clickEvent":{"action":"run_command","value":"/trigger lobby_action set 8"}}','""','""']}}
+#教程
+setblock 45 -50 -13 minecraft:cherry_wall_sign[facing=north,waterlogged=false]{front_text:{has_glowing_text:1b,messages:['""','{"text":"教程","color":"gold","bold":true,"clickEvent":{"action":"run_command","value":"/trigger lobby_action set 9"}}','""','""']}}
 #每次/reload都重新显现开始游戏告示牌；游戏中点击会由start_check的状态锁拦截
-setblock 49 -49 -22 minecraft:oak_wall_sign[facing=south,waterlogged=false]{is_waxed:1b,front_text:{has_glowing_text:1b,messages:['""','{"text":"开始游戏","color":"white","bold":true,"clickEvent":{"action":"run_command","value":"/trigger lobby_action set 10"}}','""','""']}}
+setblock 49 -50 -13 minecraft:cherry_wall_sign[facing=north,waterlogged=false]{is_waxed:1b,front_text:{has_glowing_text:1b,messages:['""','{"text":"开始游戏","color":"white","bold":true,"clickEvent":{"action":"run_command","value":"/trigger lobby_action set 10"}}','""','""']}}
 #——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 scoreboard objectives add room dummy
 #大厅身份、教程与开始游戏告示牌统一入口
 scoreboard objectives add lobby_action trigger
+#大厅全局设置
+scoreboard objectives add game_setting dummy
+execute unless score #count_animation game_setting matches 0..1 run scoreboard players set #count_animation game_setting 1
+execute unless score #decision_time game_setting matches 20 unless score #decision_time game_setting matches 30 run scoreboard players set #decision_time game_setting 30
+function rfm:settings/render
 #创建人数计分板
 scoreboard objectives add player_count dummy
 #创建回合计分板
@@ -156,6 +162,18 @@ bossbar remove rfm:swim_time
 bossbar add rfm:swim_time {"text":"奋泳争先","color":"aqua"}
 bossbar set rfm:swim_time color blue
 bossbar set rfm:swim_time visible false
+
+#令牌争夺游戏2“见缝插针”倒计时
+bossbar remove rfm:needle_time
+bossbar add rfm:needle_time {"text":"见缝插针","color":"light_purple"}
+bossbar set rfm:needle_time color purple
+bossbar set rfm:needle_time visible false
+
+#令牌争夺游戏3“命中注定”抽签倒计时
+bossbar remove rfm:lottery_time
+bossbar add rfm:lottery_time {"text":"命中注定","color":"gold"}
+bossbar set rfm:lottery_time color yellow
+bossbar set rfm:lottery_time visible false
 #—————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 #启动低频属性显示循环
 schedule function rfm:display/display 1t replace

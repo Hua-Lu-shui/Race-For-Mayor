@@ -1,1 +1,2 @@
-#小游戏槽位2占位：完成独立玩法后再加入抽取池
+#小游戏槽位2：见缝插针
+function rfm:collective/game/needle_gap/prepare
