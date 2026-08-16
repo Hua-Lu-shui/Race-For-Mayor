@@ -1,4 +1,4 @@
-#按普通50%、稀有30%、史诗15%、传奇5%重新抽取，并保证新藏品与上一回合不同
+#按普通50%、稀有30%、史诗15%、传说5%重新抽取，并保证新藏品与当前展示不同
 scoreboard players operation @s collection_previous_offer = @s collection_offer
 function rfm:collection/mysterious/sample_offer
 execute if score @s collection_offer = @s collection_previous_offer run function rfm:collection/mysterious/refresh_one

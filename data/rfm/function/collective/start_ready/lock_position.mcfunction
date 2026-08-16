@@ -1,9 +1,3 @@
-#第二阶段准备期间按办公室编号分散并锁定站位，避免一张掉落地图同时替多人完成准备
-execute if score @s room matches 1 run tp @s 1090 -59 90 45 0
-execute if score @s room matches 2 run tp @s 1100 -59 90 0 0
-execute if score @s room matches 3 run tp @s 1110 -59 90 -45 0
-execute if score @s room matches 4 run tp @s 1110 -59 100 -90 0
-execute if score @s room matches 5 run tp @s 1110 -59 110 -135 0
-execute if score @s room matches 6 run tp @s 1100 -59 110 180 0
-execute if score @s room matches 7 run tp @s 1090 -59 110 135 0
-execute if score @s room matches 8 run tp @s 1090 -59 100 90 0
+#第二阶段准备与开赛倒计时期间调用所选小游戏的锁位函数
+#锁位函数只写坐标，不写yaw/pitch，玩家仍可自由转动视角
+execute if score #selected_game group_game matches 1 run function rfm:collective/game/swimming_race/lock_position

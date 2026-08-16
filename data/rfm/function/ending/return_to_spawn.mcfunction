@@ -10,7 +10,7 @@ scoreboard players set #round round 0
 scoreboard players set #choose_time choose_time 0
 scoreboard players set #waiting next_round_ready 0
 scoreboard players set #group_state group_state 0
-scoreboard players set #group_prompt group_prompt 0
+scoreboard players set @a group_finished 0
 scoreboard players set #current_picker item_selecting 0
 scoreboard players set #settle_room settle_room 0
 scoreboard players set #current event 0

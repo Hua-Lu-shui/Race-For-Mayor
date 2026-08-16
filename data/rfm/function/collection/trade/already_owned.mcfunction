@@ -28,3 +28,5 @@ execute if score @s collection_offer matches 27 run tellraw @s [{"text":"你已�
 execute if score @s collection_offer matches 28 run tellraw @s [{"text":"你已经拥有 ","color":"red"},{"text":"古生物化石","color":"gold","bold":true},{"text":"，不能同时拥有两件相同的藏品。","color":"red"}]
 execute if score @s collection_offer matches 29 run tellraw @s [{"text":"你已经拥有 ","color":"red"},{"text":"皇家项链","color":"gold","bold":true},{"text":"，不能同时拥有两件相同的藏品。","color":"red"}]
 execute if score @s collection_offer matches 30 run tellraw @s [{"text":"你已经拥有 ","color":"red"},{"text":"陨石碎片","color":"gold","bold":true},{"text":"，不能同时拥有两件相同的藏品。","color":"red"}]
+execute if score @s collection_offer matches 31 run tellraw @s [{"text":"你已经拥有 ","color":"red"},{"text":"玉玺","color":"light_purple","bold":true},{"text":"，不能同时拥有两件相同的藏品。","color":"red"}]
+execute if score @s collection_offer matches 32 run tellraw @s [{"text":"你已经拥有 ","color":"red"},{"text":"魔方","color":"green","bold":true},{"text":"，不能同时拥有两件相同的藏品。","color":"red"}]

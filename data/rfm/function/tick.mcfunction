@@ -21,6 +21,8 @@ execute if score #phase phase matches 1 run function rfm:collection/effect/tick
 execute if score #phase phase matches 1 run function rfm:collection/mysterious/tick
 #处理普通玩家通过聊天按钮提交的交易确认请求
 execute as @a[scores={collection_confirm=1..}] run function rfm:collection/trade/check_confirm
+#处理普通玩家通过聊天按钮提交的主动刷新请求
+execute as @a[scores={collection_refresh=1..}] run function rfm:collection/mysterious/check_refresh
 #处理满槽藏品替换与属性互换目标请求
 execute as @a[scores={collection_replace=1..}] at @s run function rfm:collection/trade/check_replace
 execute as @a[scores={swap_target=1..}] at @s run function rfm:item/use/swap/check_target
@@ -29,6 +31,7 @@ execute if score #settle_state settle_state matches 1 run function rfm:ending/re
 #执行令牌争夺状态机
 execute if score #group_state group_state matches 3 run function rfm:collective/prepare_check
 execute if score #group_state group_state matches 4 run function rfm:collective/start_ready/check
+execute if score #group_state group_state matches 5 as @a run function rfm:collective/start_ready/lock_position
 execute if score #group_state group_state matches 1 run function rfm:collective/tick
 #等待下一回合期间检测玩家丢出的令牌
 execute if score #waiting next_round_ready matches 1 run function rfm:item/use/check_all

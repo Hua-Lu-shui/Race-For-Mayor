@@ -1,5 +1,5 @@
 #处理生态行动任务1倒计时结束后的失败结算
-tellraw @s {"text":"本次判断超时！","color":"red","bold":true}
+tellraw @a {"text":"本次判断超时！","color":"red","bold":true}
 bossbar set rfm:emission_time visible false
 function rfm:task/action/ecology/ecology_1/clear_drops
 scoreboard players set @s emission_state 2

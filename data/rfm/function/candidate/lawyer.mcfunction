@@ -12,4 +12,4 @@ function rfm:attribute/minimum
 title @s times 10 40 0
 title @s title [{"text":"你选择了：","color":"white"},{"text":"律师","color":"light_purple"}]
 title @s subtitle [{"text":"名誉:11","color":"aqua"},{"text":" 经济:11","color":"yellow"},{"text":" 生态:7","color":"green"},{"text":" 民生:11","color":"red"}]
-tellraw @s [{"text":"【维权意识】","color":"light_purple","bold":true},{"text":"可以使用属性互换令牌，但不能成为互换目标，且不参与属性公示。","color":"white"}]
+tellraw @s [{"text":"【维权意识】","color":"light_purple","bold":true},{"text":"可以使用属性互换令牌，但不能成为互换目标。","color":"white"}]

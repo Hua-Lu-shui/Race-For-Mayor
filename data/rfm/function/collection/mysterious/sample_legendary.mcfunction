@@ -1,4 +1,4 @@
-#传奇池总概率保持5%，进入传奇池后六件藏品等概率抽取
+#传说池总概率保持5%，进入传说池后六件藏品等概率抽取
 execute store result score @s collection_offer_shift run random value 1..6
 execute if score @s collection_offer_shift matches 1 run scoreboard players set @s collection_offer 14
 execute if score @s collection_offer_shift matches 2 run scoreboard players set @s collection_offer 26

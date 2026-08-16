@@ -10,6 +10,9 @@ scoreboard players set @a collection_previous_offer 0
 scoreboard players set @a collection_offer_shift 0
 scoreboard players set @a collection_trade_round -1
 scoreboard players set @a collection_view_round -1
+scoreboard players set @a collection_refresh 0
+scoreboard players set @a collection_refresh_count 0
+scoreboard players set @a collection_refresh_cost 0
 scoreboard players set @a collection_highest 0
 scoreboard players set @a collection_tie_mask 0
 scoreboard players set @a collection_pay_pick 0

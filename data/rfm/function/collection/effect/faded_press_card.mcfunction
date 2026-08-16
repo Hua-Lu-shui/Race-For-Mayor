@@ -1,5 +1,4 @@
-#“褪色的记者证”：按公开公示标签判断；律师不参与公示，因此固定满足触发条件
-#非律师并列成为公开领先者时仍视为领先，不触发效果
+#“褪色的记者证”：按属性公示标签判断；并列成为领先者时仍视为领先，不触发效果
 execute if entity @s[tag=rfm_public_lead_fame] run return 0
 execute if entity @s[tag=rfm_public_lead_economy] run return 0
 execute if entity @s[tag=rfm_public_lead_welfare] run return 0

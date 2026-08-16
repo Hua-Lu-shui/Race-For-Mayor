@@ -33,7 +33,7 @@ scoreboard players set @s trash_state 2
 
 tellraw @a [{"text":"【生态行动】垃圾分类督导","color":"green","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]
 tellraw @a [{"text":"行动玩家","color":"#67D5FF","bold":true},{"text":"会依次获得","color":"white"},{"text":"10件垃圾","color":"#FFCB77"},{"text":"。打开对应类别的垃圾桶，进行","color":"white"},{"text":"正确的垃圾分类","color":"#FFD166","bold":true},{"text":"；每件物品无论对错只判断一次。","color":"white"}]
-tellraw @s [{"text":"垃圾桶分类：","color":"#67D5FF","bold":true},{"text":"可回收物、","color":"white"},{"text":"有害垃圾、","color":"white"},{"text":"厨余垃圾、","color":"white"},{"text":"其他垃圾","color":"white"}]
+tellraw @a [{"text":"垃圾桶分类：","color":"#67D5FF","bold":true},{"text":"可回收物、","color":"white"},{"text":"有害垃圾、","color":"white"},{"text":"厨余垃圾、","color":"white"},{"text":"其他垃圾","color":"white"}]
 
 title @s clear
 title @s title {"text":"垃圾分类督导","color":"green","bold":true}

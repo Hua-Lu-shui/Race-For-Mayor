@@ -7,7 +7,5 @@ execute if score @s item_held matches 1..24 run return run function rfm:item/sel
 scoreboard players set @s item_selecting 1
 scoreboard players set @s item_pick 0
 scoreboard players enable @s item_pick
-tp @s 1240 -59 104 180 0
+tp @s 56 -59 -46 180 0
 title @s title [{"text":"轮到你选择","color":"white"},{"text":"令牌","color":"#C6A8FF","bold":true}]
-title @s subtitle [{"text":"查看告示牌并","color":"white"},{"text":"右键选择","color":"#67D5FF"},{"text":"；其他玩家不会知道你的选择","color":"white"}]
-tellraw @s [{"text":"你只能选择一枚尚未被拿走的","color":"white"},{"text":"令牌","color":"#C6A8FF","bold":true},{"text":"。右键告示牌后，令牌将在","color":"white"},{"text":"下一回合","color":"#FFCB77"},{"text":"准备时钟发放时交给你。","color":"white"}]

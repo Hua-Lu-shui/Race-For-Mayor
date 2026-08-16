@@ -18,4 +18,4 @@ execute if score @s collection_effect_pick matches 3 run scoreboard players oper
 execute if score @s collection_effect_pick matches 4 run scoreboard players operation @s ecology += @s ecology
 function rfm:attribute/minimum
 playsound minecraft:block.bone_block.place master @s ~ ~ ~ 0.7 0.8
-tellraw @s [{"text":"【古生物化石】","color":"gold","bold":true},{"text":"最终结算开始，随机选择一项最低属性并翻倍。","color":"white"}]
+tellraw @s [{"text":"【古生物化石】","color":"gold","bold":true},{"text":"最终结算开始，最低属性翻倍。","color":"white"}]

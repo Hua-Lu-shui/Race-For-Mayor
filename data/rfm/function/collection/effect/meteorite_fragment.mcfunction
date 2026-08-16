@@ -22,4 +22,4 @@ execute if score @s collection_effect_pick matches 3 run scoreboard players oper
 execute if score @s collection_effect_pick matches 4 run scoreboard players operation @s ecology = @s collection_effect_value
 function rfm:attribute/minimum
 playsound minecraft:entity.firework_rocket.large_blast master @s ~ ~ ~ 0.7 0.7
-tellraw @s [{"text":"【陨石碎片】","color":"gold","bold":true},{"text":"本回合开始，已将最高属性的数值赋予随机一项最低属性。","color":"white"}]
+tellraw @s [{"text":"【陨石碎片】","color":"gold","bold":true},{"text":"本回合开始，已将最高属性的数值赋予最低属性。","color":"white"}]

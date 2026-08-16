@@ -24,5 +24,5 @@ execute if score @s collection_effect_pick matches 1 run scoreboard players oper
 execute if score @s collection_effect_pick matches 2 run scoreboard players operation @s economy += @s economy
 execute if score @s collection_effect_pick matches 3 run scoreboard players operation @s welfare += @s welfare
 execute if score @s collection_effect_pick matches 4 run scoreboard players operation @s ecology += @s ecology
-tellraw @s [{"selector":"@s","color":"#FFA500","bold":true},{"text":" 的【孤注一掷】生效：随机选择一项最低属性并翻倍。","color":"gold"}]
+tellraw @s [{"selector":"@s","color":"#FFA500","bold":true},{"text":" 的【孤注一掷】生效：最低属性翻倍。","color":"gold"}]
 function rfm:attribute/minimum

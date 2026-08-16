@@ -9,4 +9,4 @@ scoreboard players operation @s photo_slot_3 = @s photo_selected
 tp @e[tag=rfm_photo_selected] 184 -58.9 -29 0 0
 tag @e[tag=rfm_photo_selected] remove rfm_photo_selected
 scoreboard players set @s photo_selected 0
-tellraw @s {"text":"已安排到右后方。","color":"green"}
+tellraw @a {"text":"已安排到右后方。","color":"green"}

@@ -51,6 +51,6 @@ function rfm:item/select/remove_sign
 
 scoreboard players set @s item_selecting 0
 scoreboard players set @s item_pick 0
-tp @s 1180 -59 100 0 0
+tp @s 56 -59 -55 0 0
 scoreboard players add #current_picker item_selecting 1
 function rfm:item/select/next

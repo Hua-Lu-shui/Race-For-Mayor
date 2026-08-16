@@ -1,7 +1,7 @@
 #记录正确答案并显示本次结果
 execute if score @s emission_answer = @s emission_target run scoreboard players add @s emission_correct 1
-execute if score @s emission_answer = @s emission_target run tellraw @s {"text":"判断正确！","color":"green","bold":true}
-execute unless score @s emission_answer = @s emission_target run tellraw @s {"text":"判断错误！","color":"red","bold":true}
+execute if score @s emission_answer = @s emission_target run tellraw @a {"text":"判断正确！","color":"green","bold":true}
+execute unless score @s emission_answer = @s emission_target run tellraw @a {"text":"判断错误！","color":"red","bold":true}
 bossbar set rfm:emission_time visible false
 
 #清除本次扔出的任务纸条，进入2秒间隔

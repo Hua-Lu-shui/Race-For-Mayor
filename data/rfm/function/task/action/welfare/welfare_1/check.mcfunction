@@ -1,8 +1,8 @@
 #判断本次分诊结果并清空三个窗口
 execute if score @s hospital_answer = @s hospital_target run scoreboard players add @s hospital_correct 1
-execute if score @s hospital_answer = @s hospital_target run tellraw @s [{"text":"分诊正确！","color":"green","bold":true},{"text":" 当前正确数：","color":"white"},{"score":{"name":"@s","objective":"hospital_correct"},"color":"green"}]
+execute if score @s hospital_answer = @s hospital_target run tellraw @a [{"text":"分诊正确！","color":"green","bold":true},{"text":" 当前正确数：","color":"white"},{"score":{"name":"@s","objective":"hospital_correct"},"color":"green"}]
 execute if score @s hospital_answer = @s hospital_target run playsound minecraft:entity.experience_orb.pickup master @s ~ ~ ~ 1 1.2 1
-execute unless score @s hospital_answer = @s hospital_target run tellraw @s {"text":"分诊错误！","color":"red","bold":true}
+execute unless score @s hospital_answer = @s hospital_target run tellraw @a {"text":"分诊错误！","color":"red","bold":true}
 execute unless score @s hospital_answer = @s hospital_target run playsound minecraft:entity.villager.no master @s ~ ~ ~ 1 1 1
 
 data remove block 123 -58 -66 Items

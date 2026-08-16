@@ -31,9 +31,9 @@ execute if score @s collection_offer matches 9 run scoreboard players set @s col
 #藏品10“神秘的斗篷”：所有属性-5
 execute if score @s collection_offer matches 10 run scoreboard players set @s collection_attr 6
 execute if score @s collection_offer matches 10 run scoreboard players set @s collection_cost 5
-#藏品11“琥珀”：所有属性-15
+#藏品11“琥珀”：所有属性-10
 execute if score @s collection_offer matches 11 run scoreboard players set @s collection_attr 6
-execute if score @s collection_offer matches 11 run scoreboard players set @s collection_cost 15
+execute if score @s collection_offer matches 11 run scoreboard players set @s collection_cost 10
 #藏品12“魔镜”：所有属性-10
 execute if score @s collection_offer matches 12 run scoreboard players set @s collection_attr 6
 execute if score @s collection_offer matches 12 run scoreboard players set @s collection_cost 10
@@ -91,3 +91,9 @@ execute if score @s collection_offer matches 29 run scoreboard players set @s co
 #藏品30“陨石碎片”：所有属性-20
 execute if score @s collection_offer matches 30 run scoreboard players set @s collection_attr 6
 execute if score @s collection_offer matches 30 run scoreboard players set @s collection_cost 20
+#藏品31“玉玺”：所有属性-5
+execute if score @s collection_offer matches 31 run scoreboard players set @s collection_attr 6
+execute if score @s collection_offer matches 31 run scoreboard players set @s collection_cost 5
+#藏品32“魔方”：当前最高属性-5
+execute if score @s collection_offer matches 32 run scoreboard players set @s collection_attr 5
+execute if score @s collection_offer matches 32 run scoreboard players set @s collection_cost 5

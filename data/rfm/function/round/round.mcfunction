@@ -11,6 +11,9 @@ execute as @a run function rfm:collection/effect/ancient_vase
 execute as @a run function rfm:collection/effect/round_start_basic
 execute as @a run function rfm:collection/effect/round_start_lowest
 execute as @a run function rfm:collection/effect/meteorite_fragment
+execute as @a if score @s collection_slot1 matches 32 run function rfm:collection/effect/rubiks_cube
+execute as @a unless score @s collection_slot1 matches 32 if score @s collection_slot2 matches 32 run function rfm:collection/effect/rubiks_cube
+execute as @a unless score @s collection_slot1 matches 32 unless score @s collection_slot2 matches 32 if score @s collection_slot3 matches 32 run function rfm:collection/effect/rubiks_cube
 #提示当前回合数
 title @a title [{"text":"第 ","color":"white","bold":true},{"score":{"name":"#round","objective":"round"},"color":"light_purple","bold":true},{"text":" 回合","color":"white","bold":true}]
 #调用任务分配函数

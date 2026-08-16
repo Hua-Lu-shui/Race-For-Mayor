@@ -1,2 +1,2 @@
-#小游戏槽位1：城市议题响应赛
-function rfm:collective/game/city_response/start
+#小游戏槽位1：奋泳争先
+function rfm:collective/game/swimming_race/start

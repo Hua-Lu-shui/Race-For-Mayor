@@ -150,6 +150,12 @@ bossbar remove rfm:cooking_time
 bossbar add rfm:cooking_time [{"text":"厨艺大比拼","color":"red"}]
 bossbar set rfm:cooking_time color red
 bossbar set rfm:cooking_time visible false
+
+#令牌争夺游戏1“奋泳争先”倒计时
+bossbar remove rfm:swim_time
+bossbar add rfm:swim_time {"text":"奋泳争先","color":"aqua"}
+bossbar set rfm:swim_time color blue
+bossbar set rfm:swim_time visible false
 #—————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 #启动低频属性显示循环
 schedule function rfm:display/display 1t replace

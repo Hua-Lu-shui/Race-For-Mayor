@@ -1,8 +1,8 @@
 #先判断本次分类是否正确，再清空四个新坐标的投放容器
 execute if score @s trash_answer = @s trash_target run scoreboard players add @s trash_correct 1
-execute if score @s trash_answer = @s trash_target run tellraw @s [{"text":"分类正确！","color":"green","bold":true},{"text":" 当前正确数：","color":"white"},{"score":{"name":"@s","objective":"trash_correct"},"color":"green"}]
+execute if score @s trash_answer = @s trash_target run tellraw @a [{"text":"分类正确！","color":"green","bold":true},{"text":" 当前正确数：","color":"white"},{"score":{"name":"@s","objective":"trash_correct"},"color":"green"}]
 execute if score @s trash_answer = @s trash_target run playsound minecraft:entity.experience_orb.pickup master @s ~ ~ ~ 1 1.2 1
-execute unless score @s trash_answer = @s trash_target run tellraw @s {"text":"分类错误！","color":"red","bold":true}
+execute unless score @s trash_answer = @s trash_target run tellraw @a {"text":"分类错误！","color":"red","bold":true}
 execute unless score @s trash_answer = @s trash_target run playsound minecraft:entity.villager.no master @s ~ ~ ~ 1 1 1
 
 data remove block 236 -59 65 Items

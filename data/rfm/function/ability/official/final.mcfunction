@@ -31,4 +31,4 @@ execute if score @s collection_effect_pick matches 1 run scoreboard players remo
 execute if score @s collection_effect_pick matches 2 run scoreboard players remove #weight economy_weight 2
 execute if score @s collection_effect_pick matches 3 run scoreboard players remove #weight welfare_weight 2
 execute if score @s collection_effect_pick matches 4 run scoreboard players remove #weight ecology_weight 2
-tellraw @s [{"selector":"@s","color":"#F5F5DC","bold":true},{"text":" 的【与时俱进】生效：最高与最低属性对应权重分别调整；并列时随机选择。","color":"white"}]
+tellraw @s [{"selector":"@s","color":"#F5F5DC","bold":true},{"text":" 的【与时俱进】生效：最高与最低属性对应权重分别调整。","color":"white"}]

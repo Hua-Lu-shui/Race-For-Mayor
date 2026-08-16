@@ -1,7 +1,7 @@
-#25“万能钥匙”：每回合开始时，20%几率使最低属性翻倍
+#25“万能钥匙”：每回合开始时，10%几率使最低属性翻倍
 execute unless score @s collection_slot1 matches 25 unless score @s collection_slot2 matches 25 unless score @s collection_slot3 matches 25 run return 0
 execute store result score @s collection_steal_roll run random value 1..100
-execute unless score @s collection_steal_roll matches 1..20 run return 0
+execute unless score @s collection_steal_roll matches 1..10 run return 0
 function rfm:collection/trade/select_lowest
 execute if score @s collection_lowest matches 1 run scoreboard players operation @s fame += @s fame
 execute if score @s collection_lowest matches 2 run scoreboard players operation @s economy += @s economy
