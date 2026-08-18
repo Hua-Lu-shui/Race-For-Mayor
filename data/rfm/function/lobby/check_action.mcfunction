@@ -15,4 +15,5 @@ execute if score @s lobby_action matches 9 run function rfm:tutorial/show
 execute if score @s lobby_action matches 10 run function rfm:schedule/start_check
 execute if score @s lobby_action matches 11 run function rfm:settings/count_animation/toggle
 execute if score @s lobby_action matches 12 run function rfm:settings/decision_time/toggle
+execute if score @s lobby_action matches 13 run function rfm:lobby/about
 scoreboard players set @s lobby_action 0

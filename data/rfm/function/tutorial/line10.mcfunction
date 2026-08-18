@@ -1,2 +1,2 @@
-#向全体玩家显示教程第10行并安排下一段
-tellraw @a [{"text":"第 4、8 回合结束后","color":"#FFCB77","bold":true},{"text":"进行","color":"white"},{"text":"令牌争夺","color":"#C6A8FF","bold":true},{"text":",合理运用","color":"white"},{"text":"令牌","color":"#C6A8FF"},{"text":"将是","color":"white"},{"text":"制胜的关键","color":"#FFD166","bold":true},{"text":"。","color":"white"}]
+#向全体玩家显示教程第10行
+tellraw @a [{"text":"第","color":"#FFCB77"},{"text":"2","color":"#FFCB77","bold":true},{"text":"、","color":"#FFCB77"},{"text":"3","color":"#FFCB77","bold":true},{"text":"、","color":"#FFCB77"},{"text":"4","color":"#FFCB77","bold":true},{"text":"回合结束后","color":"#FFCB77"},{"text":"，可与神秘人交易","color":"white"},{"text":"藏品","color":"#C6A8FF"},{"text":"，藏品可以","color":"white"},{"text":"极大地提高你的赢面","color":"white"}]

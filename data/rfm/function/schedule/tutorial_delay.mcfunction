@@ -10,3 +10,5 @@ schedule function rfm:tutorial/line8 420t
 schedule function rfm:tutorial/line9 480t
 schedule function rfm:tutorial/line10 540t
 schedule function rfm:tutorial/line11 600t
+schedule function rfm:tutorial/line12 660t
+schedule function rfm:tutorial/line13 720t

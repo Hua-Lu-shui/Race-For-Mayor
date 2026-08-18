@@ -1,2 +1,2 @@
-#向全体玩家显示教程第12行并安排下一段
-tellraw @a [{"text":"最终得票","color":"#FFD166","bold":true},{"text":" = Σ（","color":"white"},{"text":"属性","color":"#67D5FF"},{"text":" × ","color":"white"},{"text":"当前权重","color":"#FFCB77"},{"text":"）。","color":"white"}]
+#向全体玩家显示教程第12行
+tellraw @a [{"text":"达成某些","color":"white"},{"text":"特定条件","color":"white"},{"text":"后，还会获得","color":"white"},{"text":"头衔","color":"#C6A8FF"},{"text":"，头衔能在","color":"white"},{"text":"最终结算","color":"white"},{"text":"时给予你额外加成","color":"white"}]

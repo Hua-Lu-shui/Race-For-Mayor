@@ -14,8 +14,10 @@ setblock 35 -49 -21 minecraft:cherry_wall_sign[facing=east,waterlogged=false]{fr
 setblock 35 -49 -22 minecraft:cherry_wall_sign[facing=east,waterlogged=false]{front_text:{has_glowing_text:1b,messages:['""','{"text":"医生","color":"#012696","clickEvent":{"action":"run_command","value":"/trigger lobby_action set 8"}}','""','""']}}
 #教程
 setblock 45 -50 -13 minecraft:cherry_wall_sign[facing=north,waterlogged=false]{front_text:{has_glowing_text:1b,messages:['""','{"text":"教程","color":"gold","bold":true,"clickEvent":{"action":"run_command","value":"/trigger lobby_action set 9"}}','""','""']}}
-#每次/reload都重新显现开始游戏告示牌；游戏中点击会由start_check的状态锁拦截
+#开始游戏
 setblock 49 -50 -13 minecraft:cherry_wall_sign[facing=north,waterlogged=false]{is_waxed:1b,front_text:{has_glowing_text:1b,messages:['""','{"text":"开始游戏","color":"white","bold":true,"clickEvent":{"action":"run_command","value":"/trigger lobby_action set 10"}}','""','""']}}
+#关于
+setblock 53 -50 -13 minecraft:cherry_wall_sign[facing=north,waterlogged=false]{is_waxed:1b,front_text:{has_glowing_text:1b,messages:['""','{"text":"关于","color":"aqua","bold":true,"clickEvent":{"action":"run_command","value":"/trigger lobby_action set 13"}}','""','""']}}
 #——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 scoreboard objectives add room dummy
 #大厅身份、教程与开始游戏告示牌统一入口

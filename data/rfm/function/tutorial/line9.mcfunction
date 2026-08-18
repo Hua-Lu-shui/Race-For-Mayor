@@ -1,2 +1,2 @@
-#向全体玩家显示教程第9行并安排下一段
-tellraw @a [{"text":"某些回合结束后会随机发生","color":"white"},{"text":"事件","color":"#C6A8FF","bold":true},{"text":"，改变","color":"white"},{"text":"权重","color":"#FFD166"},{"text":"或属性。","color":"white"}]
+#向全体玩家显示教程第9行
+tellraw @a [{"text":"第","color":"#FFCB77"},{"text":"2","color":"#FFCB77","bold":true},{"text":"、","color":"#FFCB77"},{"text":"4","color":"#FFCB77","bold":true},{"text":"、","color":"#FFCB77"},{"text":"6","color":"#FFCB77","bold":true},{"text":"、","color":"#FFCB77"},{"text":"8","color":"#FFCB77","bold":true},{"text":"回合结束后","color":"#FFCB77"},{"text":"，会随机发生","color":"white"},{"text":"事件","color":"#C6A8FF"},{"text":"，事件对局势的影响","color":"white"},{"text":"不容小觑","color":"white"}]

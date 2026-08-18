@@ -1,2 +1,2 @@
-#向全体玩家显示教程第7行并安排下一段
-tellraw @a [{"text":"每位候选人都具有以下四项属性：","color":"white"},{"text":"名誉","color":"aqua"},{"text":"、","color":"white"},{"text":"经济","color":"yellow"},{"text":"、","color":"white"},{"text":"民生","color":"red"},{"text":"、","color":"white"},{"text":"生态","color":"green"},{"text":"。","color":"white"}]
+#向全体玩家显示教程第7行
+tellraw @a [{"text":"属性权重","color":"#FFD166"},{"text":"决定了","color":"white"},{"text":"最终结算","color":"white"},{"text":"时各属性的价值","color":"white"}]
