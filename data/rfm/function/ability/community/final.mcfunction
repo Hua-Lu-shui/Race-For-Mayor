@@ -19,4 +19,4 @@ execute if score @s collection_effect_pick matches 4 unless score @s ecology = @
 execute if score @s collection_effect_pick matches 1 run scoreboard players operation @s fame = @s welfare
 execute if score @s collection_effect_pick matches 2 run scoreboard players operation @s economy = @s welfare
 execute if score @s collection_effect_pick matches 4 run scoreboard players operation @s ecology = @s welfare
-execute if score @s ability_trigger matches 1 run tellraw @s [{"selector":"@s","color":"red","bold":true},{"text":" 的【得道多助】生效：将民生值赋予最低属性。","color":"white"}]
+execute if score @s ability_trigger matches 1 run tellraw @s [{"text":"【得道多助】","color":"red","bold":true},{"text":"将民生值赋予最低属性。","color":"white"}]

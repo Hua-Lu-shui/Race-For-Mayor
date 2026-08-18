@@ -1,5 +1,5 @@
 {
   "parent": "rfm:title/root",
-  "display": {"icon": {"id": "minecraft:paper", "components": {"minecraft:custom_model_data": 720011}}, "title": {"text": "大道至简", "color": "light_purple"}, "description": {"text": "整局不使用任何令牌｜+500票", "color": "gray"}, "frame": "challenge", "show_toast": true, "announce_to_chat": false, "hidden": false},
+  "display": {"icon": {"id": "minecraft:paper", "components": {"minecraft:custom_model_data": 720011}}, "title": {"text": "大道至简", "color": "light_purple"}, "description": {"text": "整局不使用任何令牌｜+400票", "color": "gray"}, "frame": "challenge", "show_toast": true, "announce_to_chat": false, "hidden": false},
   "criteria": {"impossible": {"trigger": "minecraft:impossible"}}
 }

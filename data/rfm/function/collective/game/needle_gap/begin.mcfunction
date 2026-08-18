@@ -5,6 +5,6 @@ bossbar set rfm:needle_time players @a
 bossbar set rfm:needle_time max 6000
 bossbar set rfm:needle_time value 6000
 bossbar set rfm:needle_time visible true
-effect give @a minecraft:levitation infinite 0 true
+effect give @a minecraft:levitation infinite 4 true
 title @a title {"text":"开始！","color":"green","bold":true}
 playsound minecraft:entity.shulker.shoot master @a ~ ~ ~ 1 1.2 1

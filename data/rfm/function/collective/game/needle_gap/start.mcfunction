@@ -9,5 +9,4 @@ kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{coll
 effect clear @a minecraft:levitation
 execute as @a run function rfm:collective/game/needle_gap/lock_position
 title @a title {"text":"见缝插针","color":"light_purple","bold":true}
-title @a subtitle {"text":"准备上升","color":"white"}
 schedule function rfm:collective/game/needle_gap/countdown_3 20t replace

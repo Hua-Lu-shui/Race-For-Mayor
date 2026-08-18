@@ -1,5 +1,5 @@
-#所有在线玩家在自己所在位置听到烟花爆炸音效
-execute as @a at @s run playsound minecraft:entity.firework_rocket.blast master @s ~ ~ ~ 1 1
+#所有在线玩家在自己所在位置听到烟花推进鞘翅时的发射音效
+execute as @a at @s run playsound minecraft:entity.firework_rocket.launch master @s ~ ~ ~ 1 1
 #“皇家项链”由任何候选人完美完成行动任务触发，所有持有者各生效一次
 execute as @a run function rfm:collection/effect/royal_necklace
 #最高奖励分支统一先结算“老旧的战功章”，再结算军人的“孤注一掷”
@@ -24,5 +24,5 @@ execute if score @s collection_effect_pick matches 1 run scoreboard players oper
 execute if score @s collection_effect_pick matches 2 run scoreboard players operation @s economy += @s economy
 execute if score @s collection_effect_pick matches 3 run scoreboard players operation @s welfare += @s welfare
 execute if score @s collection_effect_pick matches 4 run scoreboard players operation @s ecology += @s ecology
-tellraw @s [{"selector":"@s","color":"#FFA500","bold":true},{"text":" 的【孤注一掷】生效：最低属性翻倍。","color":"gold"}]
+execute if score @s ability_trigger matches 1 run tellraw @s [{"text":"【孤注一掷】","color":"#FFA500","bold":true},{"text":"最低属性翻倍。","color":"white"}]
 function rfm:attribute/minimum

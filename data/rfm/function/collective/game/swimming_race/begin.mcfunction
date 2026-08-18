@@ -5,5 +5,6 @@ bossbar set rfm:swim_time players @a
 bossbar set rfm:swim_time max 6000
 bossbar set rfm:swim_time value 6000
 bossbar set rfm:swim_time visible true
+effect give @a minecraft:water_breathing infinite 0 true
 title @a title {"text":"开始！","color":"green","bold":true}
 playsound minecraft:entity.player.splash master @a ~ ~ ~ 1 1 1
