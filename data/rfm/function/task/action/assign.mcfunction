@@ -1,4 +1,6 @@
 #重置本回合行动任务状态
+#第2回合起，在清空当前标记前保存上一回合的行动玩家状态
+execute if score #round round matches 2.. as @a run scoreboard players operation @s previous_action_player = @s action_player
 scoreboard players set @a action_player 0
 scoreboard players set @a action_task 0
 scoreboard players set @a action_mode 0

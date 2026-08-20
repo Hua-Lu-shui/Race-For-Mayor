@@ -19,3 +19,5 @@ execute if score #round round matches 6.. if score #reveal_ecology leader_reveal
 execute if score #round round matches 6.. unless score #reveal_ecology leader_reveal matches 1 if entity @a[tag=rfm_public_lead_ecology] run tellraw @a [{"text":"生态领先：","color":"green","bold":true},{"text":"?","color":"white","bold":true}]
 #为全体播放生态领先播报提示音（在每位玩家自身位置播放）
 execute as @a at @s run playsound minecraft:block.note_block.bell master @s ~ ~ ~ 0.8 1 1
+#四项属性公示完成后，检查是否有人同时成为所有属性领先者
+function rfm:title/check/all_attribute_leader

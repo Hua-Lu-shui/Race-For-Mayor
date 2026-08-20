@@ -5,6 +5,8 @@ scoreboard players set #round round 0
 #允许本局最终结算天赋执行一次
 scoreboard players set #abilities settle_state 0
 scoreboard players set @a ability_trigger 0
+#第1回合不存在“上一回合”，因此羽毛笔不在第1回合结束时触发
+scoreboard players set @a previous_action_player 1
 #重置行动玩家公平抽取次数和每位玩家的行动任务去重记录
 scoreboard players reset * action_draw_count
 scoreboard players reset * action_used_fame
@@ -127,6 +129,8 @@ scoreboard players set @a settle_clock 0
 scoreboard players set @a title_bonus 0
 scoreboard players set @a vote_total 0
 scoreboard players set @a final_votes 0
+#开始新游戏时清除玩家背包中上一局的竞选统计书
+clear @a minecraft:written_book[minecraft:custom_data~{rfm_stat_book:1}]
 clear @a minecraft:clock[minecraft:custom_data={settlement_ready:1}]
 kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{settlement_ready:1}}}}]
 clear @a minecraft:heart_of_the_sea[minecraft:custom_data~{rfm_item:1}]

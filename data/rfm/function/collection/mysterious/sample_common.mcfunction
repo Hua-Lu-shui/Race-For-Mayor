@@ -1,5 +1,5 @@
-#十一件普通藏品在普通稀有度内等概率抽取
-execute store result score @s collection_offer_shift run random value 1..11
+#十五件普通藏品在普通稀有度内等概率抽取
+execute store result score @s collection_offer_shift run random value 1..15
 execute if score @s collection_offer_shift matches 1 run scoreboard players set @s collection_offer 1
 execute if score @s collection_offer_shift matches 2 run scoreboard players set @s collection_offer 2
 execute if score @s collection_offer_shift matches 3 run scoreboard players set @s collection_offer 4
@@ -11,3 +11,7 @@ execute if score @s collection_offer_shift matches 8 run scoreboard players set 
 execute if score @s collection_offer_shift matches 9 run scoreboard players set @s collection_offer 20
 execute if score @s collection_offer_shift matches 10 run scoreboard players set @s collection_offer 22
 execute if score @s collection_offer_shift matches 11 run scoreboard players set @s collection_offer 32
+execute if score @s collection_offer_shift matches 12 run scoreboard players set @s collection_offer 35
+execute if score @s collection_offer_shift matches 13 run scoreboard players set @s collection_offer 36
+execute if score @s collection_offer_shift matches 14 run scoreboard players set @s collection_offer 37
+execute if score @s collection_offer_shift matches 15 run scoreboard players set @s collection_offer 38

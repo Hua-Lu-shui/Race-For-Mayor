@@ -22,6 +22,8 @@ scoreboard objectives add attribute_option_3 dummy
 scoreboard objectives add attribute_missing dummy
 #创建行动玩家计分板
 scoreboard objectives add action_player dummy
+#记录玩家上一回合是否成为行动玩家，供“羽毛笔”在下一回合结束时判断
+scoreboard objectives add previous_action_player dummy
 #记录玩家在本局中被抽为行动玩家的次数
 scoreboard objectives add action_draw_count dummy
 #每位玩家在本局四类行动池中的已抽任务位图，以及抽取时使用的临时值

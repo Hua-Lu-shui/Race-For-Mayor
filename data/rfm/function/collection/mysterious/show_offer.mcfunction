@@ -1,9 +1,8 @@
 function rfm:collection/mysterious/configure_offer
 scoreboard players operation @s collection_view_round = #round round
 playsound minecraft:entity.villager.ambient master @s ~ ~ ~ 0.7 0.8
-tellraw @s [{"text":"神秘人：","color":"dark_purple","bold":true},{"text":"我为你准备了一件只属于你的藏品。","color":"white"}]
 execute if score @s collection_offer matches 1 run tellraw @s [{"text":"本次藏品：","color":"gray"},{"text":"褪色的记者证","color":"green","bold":true},{"text":"\n稀有度：普通","color":"green"},{"text":"\n持续效果：每回合属性公示后，若你没有任何一项领先，名誉 +4。","color":"white"}]
-execute if score @s collection_offer matches 2 run tellraw @s [{"text":"本次藏品：","color":"gray"},{"text":"羽毛笔","color":"green","bold":true},{"text":"\n稀有度：普通","color":"green"},{"text":"\n持续效果：若本回合没有成为行动玩家，所有属性 +1。","color":"white"}]
+execute if score @s collection_offer matches 2 run tellraw @s [{"text":"本次藏品：","color":"gray"},{"text":"羽毛笔","color":"green","bold":true},{"text":"\n稀有度：普通","color":"green"},{"text":"\n持续效果：回合结束时，若上回合没有成为行动玩家，所有属性 +1。","color":"white"}]
 execute if score @s collection_offer matches 3 run tellraw @s [{"text":"本次藏品：","color":"gray"},{"text":"金属怀表","color":"blue","bold":true},{"text":"\n稀有度：稀有","color":"blue"},{"text":"\n持续效果：回合结束时，将经济与最低属性互换。","color":"white"}]
 execute if score @s collection_offer matches 4 run tellraw @s [{"text":"本次藏品：","color":"gray"},{"text":"带批注的档案","color":"green","bold":true},{"text":"\n稀有度：普通","color":"green"},{"text":"\n持续效果：完成决策任务后，该任务中增加最多的属性额外 +3。","color":"white"}]
 execute if score @s collection_offer matches 5 run tellraw @s [{"text":"本次藏品：","color":"gray"},{"text":"诉讼卷宗","color":"green","bold":true},{"text":"\n稀有度：普通","color":"green"},{"text":"\n持续效果：每使用一次令牌，所有属性 +5。","color":"white"}]
@@ -34,6 +33,13 @@ execute if score @s collection_offer matches 29 run tellraw @s [{"text":"本次�
 execute if score @s collection_offer matches 30 run tellraw @s [{"text":"本次藏品：","color":"gray"},{"text":"陨石碎片","color":"gold","bold":true},{"text":"\n稀有度：传说","color":"gold"},{"text":"\n持续效果：回合开始时，将最高属性赋予最低属性。","color":"white"}]
 execute if score @s collection_offer matches 31 run tellraw @s [{"text":"本次藏品：","color":"gray"},{"text":"玉玺","color":"light_purple","bold":true},{"text":"\n稀有度：史诗","color":"light_purple"},{"text":"\n持续效果：属性公示后，若有任意属性领先，最高属性 +8。","color":"white"}]
 execute if score @s collection_offer matches 32 run tellraw @s [{"text":"本次藏品：","color":"gray"},{"text":"魔方","color":"green","bold":true},{"text":"\n稀有度：普通","color":"green"},{"text":"\n持续效果：回合开始时，若有与你同身份的候选人，最低属性 +4。","color":"white"}]
+execute if score @s collection_offer matches 33 run tellraw @s [{"text":"本次藏品：","color":"gray"},{"text":"小丑帽","color":"light_purple","bold":true},{"text":"\n稀有度：史诗","color":"light_purple"},{"text":"\n持续效果：最终结算时，若所有属性均为全场最低，所有属性翻倍。","color":"white"}]
+execute if score @s collection_offer matches 34 run tellraw @s [{"text":"本次藏品：","color":"gray"},{"text":"不稳定装置","color":"blue","bold":true},{"text":"\n稀有度：稀有","color":"blue"},{"text":"\n持续效果：回合开始时，随机一项属性 +5。","color":"white"}]
+execute if score @s collection_offer matches 35 run tellraw @s [{"text":"本次藏品：","color":"gray"},{"text":"多肉植物","color":"green","bold":true},{"text":"\n稀有度：普通","color":"green"},{"text":"\n持续效果：回合开始时，生态 +6，其余属性 -1。","color":"white"}]
+execute if score @s collection_offer matches 36 run tellraw @s [{"text":"本次藏品：","color":"gray"},{"text":"纸飞机","color":"green","bold":true},{"text":"\n稀有度：普通","color":"green"},{"text":"\n持续效果：回合开始时，民生 +6，其余属性 -1。","color":"white"}]
+execute if score @s collection_offer matches 37 run tellraw @s [{"text":"本次藏品：","color":"gray"},{"text":"单片眼镜","color":"green","bold":true},{"text":"\n稀有度：普通","color":"green"},{"text":"\n持续效果：回合开始时，经济 +6，其余属性 -1。","color":"white"}]
+execute if score @s collection_offer matches 38 run tellraw @s [{"text":"本次藏品：","color":"gray"},{"text":"喇叭","color":"green","bold":true},{"text":"\n稀有度：普通","color":"green"},{"text":"\n持续效果：回合开始时，名誉 +6，其余属性 -1。","color":"white"}]
+execute if score @s collection_offer matches 39 run tellraw @s [{"text":"本次藏品：","color":"gray"},{"text":"名贵的巧克力","color":"blue","bold":true},{"text":"\n稀有度：稀有","color":"blue"},{"text":"\n持续效果：最终结算时，所有属性 +10。","color":"white"}]
 execute if score @s collection_trade_round = #round round run tellraw @s {"text":"你本回合已经交易过一次，请等待下一回合刷新藏品。","color":"gray"}
 execute unless score @s collection_trade_round = #round round if score @s collection_cost matches ..-1 run tellraw @s {"text":"交易所需属性与价格尚未确定，当前无法交易。","color":"gray"}
 execute unless score @s collection_trade_round = #round round if score @s collection_attr matches 1..8 run scoreboard players enable @s collection_confirm

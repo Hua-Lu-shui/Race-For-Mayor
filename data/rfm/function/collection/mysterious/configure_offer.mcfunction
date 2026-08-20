@@ -97,3 +97,24 @@ execute if score @s collection_offer matches 31 run scoreboard players set @s co
 #藏品32“魔方”：当前最高属性-5
 execute if score @s collection_offer matches 32 run scoreboard players set @s collection_attr 5
 execute if score @s collection_offer matches 32 run scoreboard players set @s collection_cost 5
+#藏品33“小丑帽”：所有属性-2
+execute if score @s collection_offer matches 33 run scoreboard players set @s collection_attr 6
+execute if score @s collection_offer matches 33 run scoreboard players set @s collection_cost 2
+#藏品34“不稳定装置”：所有属性-1
+execute if score @s collection_offer matches 34 run scoreboard players set @s collection_attr 6
+execute if score @s collection_offer matches 34 run scoreboard players set @s collection_cost 1
+#藏品35“多肉植物”：生态-5
+execute if score @s collection_offer matches 35 run scoreboard players set @s collection_attr 4
+execute if score @s collection_offer matches 35 run scoreboard players set @s collection_cost 5
+#藏品36“纸飞机”：民生-5
+execute if score @s collection_offer matches 36 run scoreboard players set @s collection_attr 3
+execute if score @s collection_offer matches 36 run scoreboard players set @s collection_cost 5
+#藏品37“单片眼镜”：经济-5
+execute if score @s collection_offer matches 37 run scoreboard players set @s collection_attr 2
+execute if score @s collection_offer matches 37 run scoreboard players set @s collection_cost 5
+#藏品38“喇叭”：名誉-5
+execute if score @s collection_offer matches 38 run scoreboard players set @s collection_attr 1
+execute if score @s collection_offer matches 38 run scoreboard players set @s collection_cost 5
+#藏品39“名贵的巧克力”：所有属性-2
+execute if score @s collection_offer matches 39 run scoreboard players set @s collection_attr 6
+execute if score @s collection_offer matches 39 run scoreboard players set @s collection_cost 2
