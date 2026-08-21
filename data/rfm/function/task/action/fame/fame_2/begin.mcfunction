@@ -10,7 +10,7 @@ function rfm:task/action/fame/fame_2/reset_buttons
 function rfm:task/action/fame/fame_2/give_route
 function rfm:task/action/fame/fame_2/prepare_target
 
-bossbar set rfm:visit_time players @a
+bossbar set rfm:visit_time players @a[tag=rfm_participant]
 bossbar set rfm:visit_time max 800
 bossbar set rfm:visit_time value 800
 bossbar set rfm:visit_time visible true

@@ -1,7 +1,7 @@
 #所有在线玩家在自己所在位置听到烟花推进鞘翅时的发射音效
-execute as @a at @s run playsound minecraft:entity.firework_rocket.launch master @s ~ ~ ~ 1 1
+execute as @a[tag=rfm_participant] at @s run playsound minecraft:entity.firework_rocket.launch master @s ~ ~ ~ 1 1
 #“皇家项链”由任何候选人完美完成行动任务触发，所有持有者各生效一次
-execute as @a run function rfm:collection/effect/royal_necklace
+execute as @a[tag=rfm_participant] run function rfm:collection/effect/royal_necklace
 #最高奖励分支统一先结算“老旧的战功章”，再结算军人的“孤注一掷”
 function rfm:collection/effect/old_war_medal
 #“孤注一掷”仅对军人继续执行

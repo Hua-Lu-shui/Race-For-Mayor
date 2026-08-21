@@ -2,7 +2,7 @@
 scoreboard players set @s park_progress 0
 scoreboard players set @s park_time 600
 scoreboard players set @s park_state 1
-bossbar set rfm:park_time players @a
+bossbar set rfm:park_time players @a[tag=rfm_participant]
 bossbar set rfm:park_time max 600
 bossbar set rfm:park_time value 600
 bossbar set rfm:park_time name [{"text":"公园维护  ·  已完成 ","color":"green"},{"score":{"name":"@s","objective":"park_progress"},"color":"yellow"},{"text":" / 6","color":"green"}]

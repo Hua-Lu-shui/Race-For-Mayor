@@ -1,6 +1,6 @@
 #市场调研场地
 scoreboard players set #waiting next_round_ready 0
-scoreboard players set @a next_round_clock 0
+scoreboard players set @a[tag=rfm_participant] next_round_clock 0
 
 #生成商人
 scoreboard players set @s market_round 0
@@ -14,12 +14,12 @@ scoreboard players set @s market_state 2
 function rfm:task/action/economy/economy_1/prepare_round
 
 #商人准备完毕后再把所有玩家送入市场
-gamemode adventure @a
-tp @a 127 -50 22 90 30
+gamemode adventure @a[tag=rfm_participant]
+tp @a[tag=rfm_participant] 127 -50 22 90 30
 tp @s 114 -59 22 -90 0
 
-tellraw @a [{"text":"【经济行动】市场调研","color":"yellow","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]
-tellraw @a [{"text":"行动玩家","color":"#67D5FF","bold":true},{"text":"需要查看","color":"white"},{"text":"20名商人的交易","color":"#FFCB77"},{"text":"，并实际完成其中","color":"white"},{"text":"最实惠的一笔交易","color":"#FFD166","bold":true},{"text":"。任务只进行一轮。","color":"white"}]
+tellraw @a[tag=rfm_participant] [{"text":"【经济行动】市场调研","color":"yellow","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]
+tellraw @a[tag=rfm_participant] [{"text":"行动玩家","color":"#67D5FF","bold":true},{"text":"需要查看","color":"white"},{"text":"20名商人的交易","color":"#FFCB77"},{"text":"，并实际完成其中","color":"white"},{"text":"最实惠的一笔交易","color":"#FFD166","bold":true},{"text":"。任务只进行一轮。","color":"white"}]
 
 title @s clear
 title @s title {"text":"市场调研","color":"yellow","bold":true}

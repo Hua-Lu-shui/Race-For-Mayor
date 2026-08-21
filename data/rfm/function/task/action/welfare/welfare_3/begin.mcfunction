@@ -7,7 +7,7 @@ scoreboard players set @s exercise_answer 0
 scoreboard players set @s exercise_target 0
 scoreboard players set @s exercise_armed 0
 
-bossbar set rfm:exercise_time players @a
+bossbar set rfm:exercise_time players @a[tag=rfm_participant]
 bossbar set rfm:exercise_time max 600
 bossbar set rfm:exercise_time value 600
 bossbar set rfm:exercise_time name [{"text":"课间操领队  ·  第 ","color":"red"},{"score":{"name":"@s","objective":"exercise_round"},"color":"yellow"},{"text":" / 3 轮","color":"red"}]

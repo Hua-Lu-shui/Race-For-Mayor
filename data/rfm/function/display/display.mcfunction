@@ -8,11 +8,11 @@ execute if score #phase phase matches 1 run scoreboard players operation 民生 
 execute if score #phase phase matches 1 run scoreboard players operation 生态 weight_display = #weight ecology_weight
 
 #动作栏采样前只恢复真正被锁定的属性，避免任务同tick修改造成错误的属性采样
-execute as @a[scores={fame_lock=1}] run scoreboard players operation @s fame = @s fame_locked
-execute as @a[scores={economy_lock=1}] run scoreboard players operation @s economy = @s economy_locked
-execute as @a[scores={welfare_lock=1}] run scoreboard players operation @s welfare = @s welfare_locked
-execute as @a[scores={ecology_lock=1}] run scoreboard players operation @s ecology = @s ecology_locked
-execute as @a if score #phase phase matches 1 unless score #group_state group_state matches 1 run function rfm:display/player
+execute as @a[tag=rfm_participant,scores={fame_lock=1}] run scoreboard players operation @s fame = @s fame_locked
+execute as @a[tag=rfm_participant,scores={economy_lock=1}] run scoreboard players operation @s economy = @s economy_locked
+execute as @a[tag=rfm_participant,scores={welfare_lock=1}] run scoreboard players operation @s welfare = @s welfare_locked
+execute as @a[tag=rfm_participant,scores={ecology_lock=1}] run scoreboard players operation @s ecology = @s ecology_locked
+execute as @a[tag=rfm_participant] if score #phase phase matches 1 unless score #group_state group_state matches 1 run function rfm:display/player
 
 #属性显示无需每tick刷新，每5tick更新一次即可
 schedule function rfm:display/display 5t replace

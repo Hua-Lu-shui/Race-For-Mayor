@@ -1,6 +1,6 @@
 #在玩家到达前搭建公交站并创建线路标签
 scoreboard players set #waiting next_round_ready 0
-scoreboard players set @a next_round_clock 0
+scoreboard players set @a[tag=rfm_participant] next_round_clock 0
 function rfm:task/action/welfare/welfare_4/create_scene
 function rfm:task/action/welfare/welfare_4/create_labels
 function rfm:task/action/welfare/welfare_4/reset_buttons
@@ -21,12 +21,12 @@ scoreboard players set @s bus_state 2
 scoreboard players set @s bus_delay 0
 
 #其他玩家在站台上方观战，行动玩家站在调度区
-gamemode adventure @a
-tp @a 233 -52 -63 -90 30
+gamemode adventure @a[tag=rfm_participant]
+tp @a[tag=rfm_participant] 233 -52 -63 -90 30
 tp @s 244 -59 -63 90 0
 
-tellraw @a [{"text":"【民生行动】公交站调度","color":"red","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]
-tellraw @a [{"text":"乘客会随机进入三条候车队伍。红线满3人、黄线满4人、蓝线满5人时，","color":"white"},{"text":"按下对应按钮发车","color":"#67D5FF","bold":true},{"text":"。提前或超载发车会清空该队并扣除","color":"white"},{"text":"2秒","color":"#FFCB77"},{"text":"。","color":"white"}]
+tellraw @a[tag=rfm_participant] [{"text":"【民生行动】公交站调度","color":"red","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]
+tellraw @a[tag=rfm_participant] [{"text":"乘客会随机进入三条候车队伍。红线满3人、黄线满4人、蓝线满5人时，","color":"white"},{"text":"按下对应按钮发车","color":"#67D5FF","bold":true},{"text":"。提前或超载发车会清空该队并扣除","color":"white"},{"text":"2秒","color":"#FFCB77"},{"text":"。","color":"white"}]
 
 title @s clear
 title @s title {"text":"公交站调度","color":"red","bold":true}

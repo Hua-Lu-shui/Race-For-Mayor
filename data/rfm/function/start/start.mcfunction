@@ -1,5 +1,10 @@
 #设置阶段为1，代表游戏进行中
 function rfm:phase/phase1
+#为本局生成新的参与者会话；断线重连者保留会话，中途加入者不会自动进入本局
+scoreboard players add #session game_session 1
+scoreboard players operation @a game_session = #session game_session
+tag @a add rfm_participant
+execute store result score #session_size game_session run execute if entity @a[tag=rfm_participant]
 #新游戏从第0回合准备状态开始；全员准备后round函数会递增为第1回合
 scoreboard players set #round round 0
 #允许本局最终结算天赋执行一次

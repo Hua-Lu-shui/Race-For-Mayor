@@ -8,7 +8,7 @@ scoreboard players set @s qa_armed 0
 scoreboard players set @s qa_delay 0
 scoreboard players set @s qa_state 1
 
-bossbar set rfm:qa_time players @a
+bossbar set rfm:qa_time players @a[tag=rfm_participant]
 bossbar set rfm:qa_time max 40
 bossbar set rfm:qa_time value 40
 bossbar set rfm:qa_time visible true

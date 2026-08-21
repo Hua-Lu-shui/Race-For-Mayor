@@ -1,6 +1,6 @@
 #招商洽谈场地
 scoreboard players set #waiting next_round_ready 0
-scoreboard players set @a next_round_clock 0
+scoreboard players set @a[tag=rfm_participant] next_round_clock 0
 
 kill @e[type=minecraft:villager,tag=rfm_negotiation_rep]
 kill @e[type=minecraft:item_display,tag=rfm_negotiation_model]
@@ -27,12 +27,12 @@ scoreboard players set @s negotiation_time 0
 scoreboard players set @s negotiation_delay 0
 scoreboard players set @s negotiation_state 2
 
-gamemode adventure @a
-tp @a 144 -58 16 0 0
+gamemode adventure @a[tag=rfm_participant]
+tp @a[tag=rfm_participant] 144 -58 16 0 0
 tp @s 146 -58 22 90 0
 
-tellraw @a [{"text":"【经济行动】招商洽谈","color":"yellow","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]
-tellraw @a [{"text":"企业代表将依次提出全部","color":"white"},{"text":"9项经营问题","color":"#FFCB77"},{"text":"，每次任务的问题顺序不同。","color":"white"},{"text":"行动玩家","color":"#67D5FF","bold":true},{"text":"需要选择","color":"white"},{"text":"合适的扶持方案","color":"#FFD166","bold":true},{"text":"。","color":"white"}]
+tellraw @a[tag=rfm_participant] [{"text":"【经济行动】招商洽谈","color":"yellow","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]
+tellraw @a[tag=rfm_participant] [{"text":"企业代表将依次提出全部","color":"white"},{"text":"9项经营问题","color":"#FFCB77"},{"text":"，每次任务的问题顺序不同。","color":"white"},{"text":"行动玩家","color":"#67D5FF","bold":true},{"text":"需要选择","color":"white"},{"text":"合适的扶持方案","color":"#FFD166","bold":true},{"text":"。","color":"white"}]
 
 title @s clear
 title @s title {"text":"招商洽谈","color":"yellow","bold":true}

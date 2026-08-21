@@ -15,7 +15,7 @@ scoreboard players set @s trash_used_10 0
 scoreboard players set @s trash_time 400
 scoreboard players set @s trash_state 1
 
-bossbar set rfm:trash_time players @a
+bossbar set rfm:trash_time players @a[tag=rfm_participant]
 bossbar set rfm:trash_time max 400
 bossbar set rfm:trash_time value 400
 bossbar set rfm:trash_time name [{"text":"垃圾分类督导  ·  已分类 ","color":"green"},{"score":{"name":"@s","objective":"trash_round"},"color":"yellow"},{"text":" / 10  ·  正确 ","color":"green"},{"score":{"name":"@s","objective":"trash_correct"},"color":"gold"}]

@@ -59,7 +59,7 @@ execute if score #current event matches 27 run function rfm:event/events/27_conf
 execute if score #current event matches 28 run function rfm:event/events/28_medical_record_controversy
 
 #属性事件执行完毕后，只选择对应属性已锁定的玩家立即恢复锁定值
-execute as @a[scores={fame_lock=1}] run scoreboard players operation @s fame = @s fame_locked
-execute as @a[scores={economy_lock=1}] run scoreboard players operation @s economy = @s economy_locked
-execute as @a[scores={welfare_lock=1}] run scoreboard players operation @s welfare = @s welfare_locked
-execute as @a[scores={ecology_lock=1}] run scoreboard players operation @s ecology = @s ecology_locked
+execute as @a[tag=rfm_participant,scores={fame_lock=1}] run scoreboard players operation @s fame = @s fame_locked
+execute as @a[tag=rfm_participant,scores={economy_lock=1}] run scoreboard players operation @s economy = @s economy_locked
+execute as @a[tag=rfm_participant,scores={welfare_lock=1}] run scoreboard players operation @s welfare = @s welfare_locked
+execute as @a[tag=rfm_participant,scores={ecology_lock=1}] run scoreboard players operation @s ecology = @s ecology_locked

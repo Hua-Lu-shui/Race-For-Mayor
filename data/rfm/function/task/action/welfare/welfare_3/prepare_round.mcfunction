@@ -18,7 +18,7 @@ scoreboard players set @s exercise_preview 0
 scoreboard players set @s exercise_delay 20
 scoreboard players set @s exercise_state 5
 
-title @a clear
-title @a title [{"text":"第 ","color":"white"},{"score":{"name":"@s","objective":"exercise_round"},"color":"yellow"},{"text":" 轮","color":"white"}]
-title @a subtitle {"text":"观察动作顺序","color":"aqua"}
+title @a[tag=rfm_participant] clear
+title @a[tag=rfm_participant] title [{"text":"第 ","color":"white"},{"score":{"name":"@s","objective":"exercise_round"},"color":"yellow"},{"text":" 轮","color":"white"}]
+title @a[tag=rfm_participant] subtitle {"text":"观察动作顺序","color":"aqua"}
 bossbar set rfm:exercise_time name [{"text":"课间操领队  ·  第 ","color":"red"},{"score":{"name":"@s","objective":"exercise_round"},"color":"yellow"},{"text":" / 3 轮  ·  观察中","color":"aqua"}]

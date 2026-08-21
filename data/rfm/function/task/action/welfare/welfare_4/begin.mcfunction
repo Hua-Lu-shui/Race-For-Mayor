@@ -8,7 +8,7 @@ scoreboard players set @s bus_wrong 0
 scoreboard players set @s bus_time 1200
 scoreboard players set @s bus_state 1
 
-bossbar set rfm:bus_time players @a
+bossbar set rfm:bus_time players @a[tag=rfm_participant]
 bossbar set rfm:bus_time max 1200
 bossbar set rfm:bus_time value 1200
 bossbar set rfm:bus_time name [{"text":"公交站调度  ·  已正确发车 ","color":"red"},{"score":{"name":"@s","objective":"bus_success"},"color":"yellow"},{"text":" / 6","color":"red"}]

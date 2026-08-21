@@ -1,6 +1,6 @@
 #街头演讲场地
 scoreboard players set #waiting next_round_ready 0
-scoreboard players set @a next_round_clock 0
+scoreboard players set @a[tag=rfm_participant] next_round_clock 0
 
 kill @e[type=minecraft:villager,tag=rfm_speech_citizen]
 kill @e[type=minecraft:text_display,tag=rfm_speech_label]
@@ -32,12 +32,12 @@ scoreboard players set @s speech_delay 0
 scoreboard players set @s speech_state 2
 
 #场景准备完成后再将玩家送入广场
-gamemode adventure @a
-tp @a 19 -52 -17 180 30
+gamemode adventure @a[tag=rfm_participant]
+tp @a[tag=rfm_participant] 19 -52 -17 180 30
 tp @s 119 -58 -18 180 0
 
-tellraw @a [{"text":"【名誉行动】街头演讲","color":"aqua","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]
-tellraw @a [{"text":"共进行","color":"white"},{"text":"10次临场反应","color":"#67D5FF","bold":true},{"text":"，每次只有","color":"white"},{"text":"1.5秒","color":"#FFCB77","bold":true},{"text":"。愤怒粒子按“安抚情绪”，烟雾粒子按“补充说明”，音符粒子按“坚定承诺”。","color":"white"}]
+tellraw @a[tag=rfm_participant] [{"text":"【名誉行动】街头演讲","color":"aqua","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]
+tellraw @a[tag=rfm_participant] [{"text":"共进行","color":"white"},{"text":"10次临场反应","color":"#67D5FF","bold":true},{"text":"，每次只有","color":"white"},{"text":"1.5秒","color":"#FFCB77","bold":true},{"text":"。愤怒粒子按“安抚情绪”，烟雾粒子按“补充说明”，音符粒子按“坚定承诺”。","color":"white"}]
 
 title @s clear
 title @s title {"text":"街头演讲","color":"aqua","bold":true}

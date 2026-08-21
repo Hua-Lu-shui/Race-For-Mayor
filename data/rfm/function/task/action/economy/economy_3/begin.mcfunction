@@ -6,7 +6,7 @@ scoreboard players set @s audit_correct 0
 scoreboard players set @s audit_time 2400
 scoreboard players set @s audit_state 1
 
-bossbar set rfm:audit_time players @a
+bossbar set rfm:audit_time players @a[tag=rfm_participant]
 bossbar set rfm:audit_time max 2400
 bossbar set rfm:audit_time value 2400
 bossbar set rfm:audit_time visible true

@@ -1,10 +1,10 @@
 #清洁能源场地
 scoreboard players set #waiting next_round_ready 0
-scoreboard players set @a next_round_clock 0
+scoreboard players set @a[tag=rfm_participant] next_round_clock 0
 
 #所有玩家进入观战位置，行动玩家站到控制台前
-gamemode adventure @a
-tp @a 262 -59 70 0 0
+gamemode adventure @a[tag=rfm_participant]
+tp @a[tag=rfm_participant] 262 -59 70 0 0
 tp @s 263 -59 76 0 0
 
 #控制设备
@@ -24,9 +24,9 @@ scoreboard players set @s energy_time 0
 scoreboard players set @s energy_delay 0
 scoreboard players set @s energy_state 2
 
-tellraw @a [{"text":"【生态行动】清洁能源检查","color":"green","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]
-tellraw @a [{"text":"行动玩家","color":"#67D5FF","bold":true},{"text":"需要根据目标需求开关四个发电设备，使","color":"white"},{"text":"供电总量等于目标","color":"#FFD166","bold":true},{"text":"，共进行","color":"white"},{"text":"10轮","color":"#FFCB77"},{"text":"。","color":"white"}]
-tellraw @a [{"text":"设备数值：","color":"#67D5FF","bold":true},{"text":"太阳能 1，风力 2，水力 3，储能 4","color":"white"}]
+tellraw @a[tag=rfm_participant] [{"text":"【生态行动】清洁能源检查","color":"green","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]
+tellraw @a[tag=rfm_participant] [{"text":"行动玩家","color":"#67D5FF","bold":true},{"text":"需要根据目标需求开关四个发电设备，使","color":"white"},{"text":"供电总量等于目标","color":"#FFD166","bold":true},{"text":"，共进行","color":"white"},{"text":"10轮","color":"#FFCB77"},{"text":"。","color":"white"}]
+tellraw @a[tag=rfm_participant] [{"text":"设备数值：","color":"#67D5FF","bold":true},{"text":"太阳能 1，风力 2，水力 3，储能 4","color":"white"}]
 
 title @s clear
 title @s title {"text":"清洁能源检查","color":"green","bold":true}

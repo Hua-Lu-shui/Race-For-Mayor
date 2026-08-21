@@ -1,6 +1,6 @@
 #恢复所有玩家的游戏模式，并传送回各自办公室
-gamemode adventure @a
-execute as @a run function rfm:room/return
+gamemode adventure @a[tag=rfm_participant]
+execute as @a[tag=rfm_participant] run function rfm:room/return
 
 #玩家返回办公室后统一清除所有行动任务的场地实体，避免玩家看见实体被直接删除
 kill @e[type=minecraft:villager,tag=rfm_speech_citizen]
@@ -66,7 +66,7 @@ function rfm:ability/round_end
 #回合结束型藏品在领先者统计及属性公示前结算；第10回合则在最终结算前生效
 function rfm:collection/effect/before_leaders
 
-title @a title {"text":"本回合结束","color":"green","bold":true}
+title @a[tag=rfm_participant] title {"text":"本回合结束","color":"green","bold":true}
 
 #取消可能残留的自动开局安排
 schedule clear rfm:round/round

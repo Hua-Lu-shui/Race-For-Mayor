@@ -1,8 +1,8 @@
 #“魔方”：回合开始时，若有另一位同身份候选人，当前最低属性+4
-tag @a remove rfm_cube_owner
+tag @a[tag=rfm_participant] remove rfm_cube_owner
 tag @s add rfm_cube_owner
 scoreboard players set @s collection_effect_value 0
-execute as @a[tag=!rfm_cube_owner] if score @s candidate = @a[tag=rfm_cube_owner,limit=1] candidate run scoreboard players set @a[tag=rfm_cube_owner,limit=1] collection_effect_value 1
+execute as @a[tag=rfm_participant,tag=!rfm_cube_owner] if score @s candidate = @a[tag=rfm_participant,tag=rfm_cube_owner,limit=1] candidate run scoreboard players set @a[tag=rfm_participant,tag=rfm_cube_owner,limit=1] collection_effect_value 1
 tag @s remove rfm_cube_owner
 execute unless score @s collection_effect_value matches 1 run return 0
 function rfm:collection/trade/select_lowest

@@ -14,7 +14,7 @@ tag @s remove rfm_negotiation_q7_used
 tag @s remove rfm_negotiation_q8_used
 tag @s remove rfm_negotiation_q9_used
 
-bossbar set rfm:negotiation_time players @a
+bossbar set rfm:negotiation_time players @a[tag=rfm_participant]
 bossbar set rfm:negotiation_time max 500
 bossbar set rfm:negotiation_time value 500
 bossbar set rfm:negotiation_time visible true

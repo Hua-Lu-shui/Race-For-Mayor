@@ -1,10 +1,10 @@
 #垃圾分类场地
 scoreboard players set #waiting next_round_ready 0
-scoreboard players set @a next_round_clock 0
+scoreboard players set @a[tag=rfm_participant] next_round_clock 0
 
 #所有玩家进入观战位置
-gamemode adventure @a
-tp @a 236 -53 66 0 30
+gamemode adventure @a[tag=rfm_participant]
+tp @a[tag=rfm_participant] 236 -53 66 0 30
 tp @s 236 -59 69 180 0
 
 #清除容器正上方的阻挡方块，确保陷阱箱可以打开
@@ -31,9 +31,9 @@ scoreboard players set @s trash_time 0
 scoreboard players set @s trash_delay 0
 scoreboard players set @s trash_state 2
 
-tellraw @a [{"text":"【生态行动】垃圾分类督导","color":"green","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]
-tellraw @a [{"text":"行动玩家","color":"#67D5FF","bold":true},{"text":"会依次获得","color":"white"},{"text":"10件垃圾","color":"#FFCB77"},{"text":"。打开对应类别的垃圾桶，进行","color":"white"},{"text":"正确的垃圾分类","color":"#FFD166","bold":true},{"text":"；每件物品无论对错只判断一次。","color":"white"}]
-tellraw @a [{"text":"垃圾桶分类：","color":"#67D5FF","bold":true},{"text":"可回收物、","color":"white"},{"text":"有害垃圾、","color":"white"},{"text":"厨余垃圾、","color":"white"},{"text":"其他垃圾","color":"white"}]
+tellraw @a[tag=rfm_participant] [{"text":"【生态行动】垃圾分类督导","color":"green","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]
+tellraw @a[tag=rfm_participant] [{"text":"行动玩家","color":"#67D5FF","bold":true},{"text":"会依次获得","color":"white"},{"text":"10件垃圾","color":"#FFCB77"},{"text":"。打开对应类别的垃圾桶，进行","color":"white"},{"text":"正确的垃圾分类","color":"#FFD166","bold":true},{"text":"；每件物品无论对错只判断一次。","color":"white"}]
+tellraw @a[tag=rfm_participant] [{"text":"垃圾桶分类：","color":"#67D5FF","bold":true},{"text":"可回收物、","color":"white"},{"text":"有害垃圾、","color":"white"},{"text":"厨余垃圾、","color":"white"},{"text":"其他垃圾","color":"white"}]
 
 title @s clear
 title @s title {"text":"垃圾分类督导","color":"green","bold":true}

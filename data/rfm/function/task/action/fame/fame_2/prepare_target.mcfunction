@@ -30,5 +30,5 @@ execute if score @s visit_route matches 6 if score @s visit_step matches 1 run s
 execute if score @s visit_route matches 6 if score @s visit_step matches 2 run scoreboard players set @s visit_target 302
 execute if score @s visit_route matches 6 if score @s visit_step matches 3 run scoreboard players set @s visit_target 301
 execute if score @s visit_route matches 6 if score @s visit_step matches 4 run scoreboard players set @s visit_target 204
-tellraw @a [{"text":"下一户：","color":"aqua","bold":true},{"score":{"name":"@s","objective":"visit_target"},"color":"white","bold":true}]
+tellraw @a[tag=rfm_participant] [{"text":"下一户：","color":"aqua","bold":true},{"score":{"name":"@s","objective":"visit_target"},"color":"white","bold":true}]
 playsound minecraft:block.note_block.pling master @s ~ ~ ~ 0.7 1.4 1

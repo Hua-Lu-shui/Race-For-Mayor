@@ -19,8 +19,8 @@ function rfm:task/action/fame/fame_3/roll_target_5
 function rfm:task/action/fame/fame_3/create_requirements
 function rfm:task/action/fame/fame_3/reset_buttons
 
-tellraw @a [{"text":"站位册已发放。翻书查看","color":"white"},{"text":"五个站位要求","color":"#FFD166","bold":true},{"text":"，","color":"white"},{"text":"右键选择居民","color":"#67D5FF","bold":true},{"text":"，再右键对应的青色脚底方块安排位置。","color":"white"}]
-bossbar set rfm:photo_time players @a
+tellraw @a[tag=rfm_participant] [{"text":"站位册已发放。翻书查看","color":"white"},{"text":"五个站位要求","color":"#FFD166","bold":true},{"text":"，","color":"white"},{"text":"右键选择居民","color":"#67D5FF","bold":true},{"text":"，再右键对应的青色脚底方块安排位置。","color":"white"}]
+bossbar set rfm:photo_time players @a[tag=rfm_participant]
 bossbar set rfm:photo_time max 35
 bossbar set rfm:photo_time value 35
 bossbar set rfm:photo_time visible true

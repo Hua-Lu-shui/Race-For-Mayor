@@ -1,7 +1,7 @@
 #玩家已在等待屋时，从第一名开始依次进入令牌屋
-scoreboard players set @a item_selecting 0
-scoreboard players set @a item_pick 0
+scoreboard players set @a[tag=rfm_participant] item_selecting 0
+scoreboard players set @a[tag=rfm_participant] item_pick 0
 scoreboard players set #current_picker item_selecting 1
-tp @a 56 -59 -55 0 0
-title @a title [{"text":"令牌选择","color":"#C6A8FF","bold":true},{"text":"开始","color":"white"}]
+tp @a[tag=rfm_participant] 56 -59 -55 0 0
+title @a[tag=rfm_participant] title [{"text":"令牌选择","color":"#C6A8FF","bold":true},{"text":"开始","color":"white"}]
 function rfm:item/select/next

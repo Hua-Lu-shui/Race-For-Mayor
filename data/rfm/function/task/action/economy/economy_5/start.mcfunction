@@ -1,6 +1,6 @@
 #临时招聘会场地
 scoreboard players set #waiting next_round_ready 0
-scoreboard players set @a next_round_clock 0
+scoreboard players set @a[tag=rfm_participant] next_round_clock 0
 
 scoreboard players set @s employment_layout 0
 scoreboard players set @s employment_completed 0
@@ -14,15 +14,15 @@ scoreboard players set @s employment_delay 0
 scoreboard players set @s employment_state 2
 execute store result score @s employment_layout run random value 1..3
 
-gamemode adventure @a
-tp @a 235 -58 12 0 0
+gamemode adventure @a[tag=rfm_participant]
+tp @a[tag=rfm_participant] 235 -58 12 0 0
 tp @s 235 -58 25 90 0
 
 #玩家到场并加载会场区块后再生成任务实体
 function rfm:task/action/economy/economy_5/create_scene
 
-tellraw @a [{"text":"【经济行动】就业走访","color":"yellow","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]
-tellraw @a [{"text":"右键求职者面前的","color":"white"},{"text":"登记表","color":"#67D5FF","bold":true},{"text":"，查看技能和工作条件，再把登记表交给","color":"white"},{"text":"对应招聘官","color":"#FFD166","bold":true},{"text":"。","color":"white"}]
+tellraw @a[tag=rfm_participant] [{"text":"【经济行动】就业走访","color":"yellow","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]
+tellraw @a[tag=rfm_participant] [{"text":"右键求职者面前的","color":"white"},{"text":"登记表","color":"#67D5FF","bold":true},{"text":"，查看技能和工作条件，再把登记表交给","color":"white"},{"text":"对应招聘官","color":"#FFD166","bold":true},{"text":"。","color":"white"}]
 
 title @s clear
 title @s title {"text":"就业走访","color":"yellow","bold":true}

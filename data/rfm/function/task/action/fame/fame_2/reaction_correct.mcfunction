@@ -1,13 +1,13 @@
 #在正确住户头顶显示爱心粒子
-execute if score @s visit_answer matches 101 at @e[type=minecraft:villager,tag=rfm_visit_101,limit=1] run particle minecraft:heart ~ ~2 ~ 0.35 0.4 0.35 0.05 20 force @a
-execute if score @s visit_answer matches 102 at @e[type=minecraft:villager,tag=rfm_visit_102,limit=1] run particle minecraft:heart ~ ~2 ~ 0.35 0.4 0.35 0.05 20 force @a
-execute if score @s visit_answer matches 103 at @e[type=minecraft:villager,tag=rfm_visit_103,limit=1] run particle minecraft:heart ~ ~2 ~ 0.35 0.4 0.35 0.05 20 force @a
-execute if score @s visit_answer matches 104 at @e[type=minecraft:villager,tag=rfm_visit_104,limit=1] run particle minecraft:heart ~ ~2 ~ 0.35 0.4 0.35 0.05 20 force @a
-execute if score @s visit_answer matches 201 at @e[type=minecraft:villager,tag=rfm_visit_201,limit=1] run particle minecraft:heart ~ ~2 ~ 0.35 0.4 0.35 0.05 20 force @a
-execute if score @s visit_answer matches 202 at @e[type=minecraft:villager,tag=rfm_visit_202,limit=1] run particle minecraft:heart ~ ~2 ~ 0.35 0.4 0.35 0.05 20 force @a
-execute if score @s visit_answer matches 203 at @e[type=minecraft:villager,tag=rfm_visit_203,limit=1] run particle minecraft:heart ~ ~2 ~ 0.35 0.4 0.35 0.05 20 force @a
-execute if score @s visit_answer matches 204 at @e[type=minecraft:villager,tag=rfm_visit_204,limit=1] run particle minecraft:heart ~ ~2 ~ 0.35 0.4 0.35 0.05 20 force @a
-execute if score @s visit_answer matches 301 at @e[type=minecraft:villager,tag=rfm_visit_301,limit=1] run particle minecraft:heart ~ ~2 ~ 0.35 0.4 0.35 0.05 20 force @a
-execute if score @s visit_answer matches 302 at @e[type=minecraft:villager,tag=rfm_visit_302,limit=1] run particle minecraft:heart ~ ~2 ~ 0.35 0.4 0.35 0.05 20 force @a
-execute if score @s visit_answer matches 303 at @e[type=minecraft:villager,tag=rfm_visit_303,limit=1] run particle minecraft:heart ~ ~2 ~ 0.35 0.4 0.35 0.05 20 force @a
-execute if score @s visit_answer matches 304 at @e[type=minecraft:villager,tag=rfm_visit_304,limit=1] run particle minecraft:heart ~ ~2 ~ 0.35 0.4 0.35 0.05 20 force @a
+execute if score @s visit_answer matches 101 at @e[type=minecraft:villager,tag=rfm_visit_101,limit=1] run particle minecraft:heart ~ ~2 ~ 0.35 0.4 0.35 0.05 20 force @a[tag=rfm_participant]
+execute if score @s visit_answer matches 102 at @e[type=minecraft:villager,tag=rfm_visit_102,limit=1] run particle minecraft:heart ~ ~2 ~ 0.35 0.4 0.35 0.05 20 force @a[tag=rfm_participant]
+execute if score @s visit_answer matches 103 at @e[type=minecraft:villager,tag=rfm_visit_103,limit=1] run particle minecraft:heart ~ ~2 ~ 0.35 0.4 0.35 0.05 20 force @a[tag=rfm_participant]
+execute if score @s visit_answer matches 104 at @e[type=minecraft:villager,tag=rfm_visit_104,limit=1] run particle minecraft:heart ~ ~2 ~ 0.35 0.4 0.35 0.05 20 force @a[tag=rfm_participant]
+execute if score @s visit_answer matches 201 at @e[type=minecraft:villager,tag=rfm_visit_201,limit=1] run particle minecraft:heart ~ ~2 ~ 0.35 0.4 0.35 0.05 20 force @a[tag=rfm_participant]
+execute if score @s visit_answer matches 202 at @e[type=minecraft:villager,tag=rfm_visit_202,limit=1] run particle minecraft:heart ~ ~2 ~ 0.35 0.4 0.35 0.05 20 force @a[tag=rfm_participant]
+execute if score @s visit_answer matches 203 at @e[type=minecraft:villager,tag=rfm_visit_203,limit=1] run particle minecraft:heart ~ ~2 ~ 0.35 0.4 0.35 0.05 20 force @a[tag=rfm_participant]
+execute if score @s visit_answer matches 204 at @e[type=minecraft:villager,tag=rfm_visit_204,limit=1] run particle minecraft:heart ~ ~2 ~ 0.35 0.4 0.35 0.05 20 force @a[tag=rfm_participant]
+execute if score @s visit_answer matches 301 at @e[type=minecraft:villager,tag=rfm_visit_301,limit=1] run particle minecraft:heart ~ ~2 ~ 0.35 0.4 0.35 0.05 20 force @a[tag=rfm_participant]
+execute if score @s visit_answer matches 302 at @e[type=minecraft:villager,tag=rfm_visit_302,limit=1] run particle minecraft:heart ~ ~2 ~ 0.35 0.4 0.35 0.05 20 force @a[tag=rfm_participant]
+execute if score @s visit_answer matches 303 at @e[type=minecraft:villager,tag=rfm_visit_303,limit=1] run particle minecraft:heart ~ ~2 ~ 0.35 0.4 0.35 0.05 20 force @a[tag=rfm_participant]
+execute if score @s visit_answer matches 304 at @e[type=minecraft:villager,tag=rfm_visit_304,limit=1] run particle minecraft:heart ~ ~2 ~ 0.35 0.4 0.35 0.05 20 force @a[tag=rfm_participant]

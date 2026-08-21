@@ -1,4 +1,3 @@
-#玩家在等待下一回合时选中海洋之心并按Q丢出，即使用当前持有的令牌
-execute as @a[scores={item_held=1..16}] at @s if entity @e[type=minecraft:item,distance=..3,limit=1,nbt={Item:{components:{"minecraft:custom_data":{rfm_item:1}}}}] run function rfm:item/use/dispatch
-execute as @a[scores={item_held=17..20}] at @s if entity @e[type=minecraft:item,distance=..3,limit=1,nbt={Item:{components:{"minecraft:custom_data":{rfm_item:1}}}}] run function rfm:item/use/dispatch
-execute as @a[scores={item_held=21..24}] at @s if entity @e[type=minecraft:item,distance=..3,limit=1,nbt={Item:{components:{"minecraft:custom_data":{rfm_item:1}}}}] run function rfm:item/use/dispatch
+#逐个检测丢出的令牌，并只允许该物品实体的原主人触发效果
+tag @e[type=minecraft:item,tag=rfm_item_current] remove rfm_item_current
+execute as @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{rfm_item:1}}}}] at @s run function rfm:item/use/from_drop
