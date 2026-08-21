@@ -2,7 +2,7 @@
 execute unless score #settle_state settle_state matches 4 run return 0
 playsound minecraft:ui.button.click master @s ~ ~ ~ 0.7 1.0
 scoreboard players set #settle_state settle_state 5
-setblock 49 -56 35 minecraft:air
+setblock 49 -57 23 minecraft:air
 
 #停止上一局仍可能参与tick判断的全局流程
 function rfm:phase/phase0

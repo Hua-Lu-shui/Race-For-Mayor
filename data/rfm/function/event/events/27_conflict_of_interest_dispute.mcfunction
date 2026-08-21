@@ -10,4 +10,4 @@ title @a title {"text":"利益冲突争议","color":"light_purple","bold":true}
 title @a subtitle [{"text":"律师候选人：所有属性 ","color":"gray"},{"text":"-3","color":"red","bold":true}]
 tellraw @a {"text":"【事件】利益冲突争议","color":"light_purple","bold":true}
 tellraw @a [{"text":"【事件背景】","color":"gold","bold":true},{"text":"一项公共事务被质疑存在代理关系上的利益冲突，律师候选人的职业判断与信息披露遭到舆论审视。","color":"white"}]
-tellraw @a [{"text":"【事件影响】","color":"yellow","bold":true},{"text":"所有律师候选人的","color":"white"},{"text":"名誉","color":"aqua"},{"text":"、","color":"white"},{"text":"经济","color":"yellow"},{"text":"、","color":"white"},{"text":"民生","color":"red"},{"text":"、","color":"white"},{"text":"生态","color":"green"},{"text":"均降低3点。","color":"white"}]
+tellraw @a [{"text":"【事件影响】","color":"yellow","bold":true},{"text":"所有","color":"white"},{"text":"律师","color":"light_purple"},{"text":"候选人的","color":"white"},{"text":"名誉","color":"aqua"},{"text":"、","color":"white"},{"text":"经济","color":"yellow"},{"text":"、","color":"white"},{"text":"民生","color":"red"},{"text":"、","color":"white"},{"text":"生态","color":"green"},{"text":"均降低3点。","color":"white"}]

@@ -3,6 +3,7 @@ scoreboard players set @a next_round_ready 0
 scoreboard players set @a next_round_clock 0
 scoreboard players operation #next_round round = #round round
 scoreboard players add #next_round round 1
+execute store result storage rfm:round_clock next_round int 1 run scoreboard players get #next_round round
 
 #重新发放尚未使用的令牌，并与下一回合准备时钟同时交给玩家
 clear @a minecraft:heart_of_the_sea[minecraft:custom_data~{rfm_item:1}]
@@ -12,4 +13,4 @@ execute as @a[scores={item_held=21..24}] run function rfm:item/give_selected
 execute as @a[scores={collection_slot1=1..}] run function rfm:collection/deliver
 execute as @a[scores={collection_slot1=..0,collection_slot2=1..}] run function rfm:collection/deliver
 execute as @a[scores={collection_slot1=..0,collection_slot2=..0,collection_slot3=1..}] run function rfm:collection/deliver
-item replace entity @a hotbar.4 with minecraft:clock[minecraft:custom_name='[{"text":"准备第","color":"green","bold":true,"italic":false},{"score":{"name":"#next_round","objective":"round"},"color":"green","bold":true,"italic":false},{"text":"回合","color":"green","bold":true,"italic":false}]',minecraft:lore=['[{"text":"全员准备后开始第","color":"gray","italic":false},{"score":{"name":"#next_round","objective":"round"},"color":"gray","italic":false},{"text":"回合","color":"gray","italic":false}]'],minecraft:custom_data={next_round_ready:1}] 1
+execute as @a run function rfm:collection/give_clock with storage rfm:round_clock

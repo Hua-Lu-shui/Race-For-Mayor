@@ -7,6 +7,7 @@ execute unless score #confirm_valid collection_target matches 1 run return run t
 execute unless score @s collection_view_round = #round round run return run tellraw @s {"text":"请先右键神秘人，查看本回合的藏品与价格。","color":"red"}
 execute if score @s collection_trade_round = #round round run return run tellraw @s {"text":"你本回合已经完成交易，不能再刷新藏品。","color":"red"}
 execute if score @s collection_refresh_count matches 3.. run return run tellraw @s {"text":"你本局的 3 次主动刷新机会已经用完。","color":"red"}
+execute if score #collection_refresh_paid game_setting matches 0 run return run function rfm:collection/mysterious/confirm_refresh_free
 
 #三次主动刷新的所有属性花费依次为2、4、8
 scoreboard players set @s collection_refresh_cost 0

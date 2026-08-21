@@ -17,7 +17,7 @@ setblock 45 -50 -13 minecraft:cherry_wall_sign[facing=north,waterlogged=false]{f
 #开始游戏
 setblock 49 -50 -13 minecraft:cherry_wall_sign[facing=north,waterlogged=false]{is_waxed:1b,front_text:{has_glowing_text:1b,messages:['""','{"text":"开始游戏","color":"white","bold":true,"clickEvent":{"action":"run_command","value":"/trigger lobby_action set 10"}}','""','""']}}
 #关于
-setblock 53 -50 -13 minecraft:cherry_wall_sign[facing=north,waterlogged=false]{is_waxed:1b,front_text:{has_glowing_text:1b,messages:['""','{"text":"关于","color":"aqua","bold":true,"clickEvent":{"action":"run_command","value":"/trigger lobby_action set 13"}}','""','""']}}
+setblock 53 -50 -13 minecraft:cherry_wall_sign[facing=north,waterlogged=false]{front_text:{has_glowing_text:1b,messages:['""','{"text":"关于","color":"aqua","bold":true,"clickEvent":{"action":"run_command","value":"/trigger lobby_action set 13"}}','""','""']}}
 #——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 scoreboard objectives add room dummy
 #大厅身份、教程与开始游戏告示牌统一入口
@@ -26,6 +26,7 @@ scoreboard objectives add lobby_action trigger
 scoreboard objectives add game_setting dummy
 execute unless score #count_animation game_setting matches 0..1 run scoreboard players set #count_animation game_setting 1
 execute unless score #decision_time game_setting matches 20 unless score #decision_time game_setting matches 30 run scoreboard players set #decision_time game_setting 30
+execute unless score #collection_refresh_paid game_setting matches 0..1 run scoreboard players set #collection_refresh_paid game_setting 1
 function rfm:settings/render
 #创建人数计分板
 scoreboard objectives add player_count dummy
