@@ -56,8 +56,6 @@ scoreboard players set #weight fame_weight 5
 scoreboard players set #weight economy_weight 5
 scoreboard players set #weight welfare_weight 5
 scoreboard players set #weight ecology_weight 5
-#新一局首次刷新时，以候选人的初始属性作为动画起点
-scoreboard players set @a attr_seen 0
 #新游戏清除上一局所有在线及离线候选人的属性锁定
 scoreboard players reset * fame_lock
 scoreboard players reset * economy_lock
@@ -80,6 +78,30 @@ scoreboard players set #reveal_ecology leader_reveal 0
 scoreboard players set #group_state group_state 0
 scoreboard players set #last_game group_game 0
 scoreboard players set #selected_game group_game 0
+scoreboard players set #item_1 item_available 1
+scoreboard players set #item_2 item_available 1
+scoreboard players set #item_3 item_available 1
+scoreboard players set #item_4 item_available 1
+scoreboard players set #item_5 item_available 1
+scoreboard players set #item_6 item_available 1
+scoreboard players set #item_7 item_available 1
+scoreboard players set #item_8 item_available 1
+scoreboard players set #item_9 item_available 1
+scoreboard players set #item_10 item_available 1
+scoreboard players set #item_11 item_available 1
+scoreboard players set #item_12 item_available 1
+scoreboard players set #item_13 item_available 1
+scoreboard players set #item_14 item_available 1
+scoreboard players set #item_15 item_available 1
+scoreboard players set #item_16 item_available 1
+scoreboard players set #item_17 item_available 1
+scoreboard players set #item_18 item_available 1
+scoreboard players set #item_19 item_available 1
+scoreboard players set #item_20 item_available 1
+scoreboard players set #item_21 item_available 1
+scoreboard players set #item_22 item_available 1
+scoreboard players set #item_23 item_available 1
+scoreboard players set #item_24 item_available 1
 scoreboard players set @a group_ready 0
 scoreboard players set @a group_finished 0
 scoreboard players set #current_picker item_selecting 0
@@ -131,6 +153,7 @@ scoreboard players set @a vote_total 0
 scoreboard players set @a final_votes 0
 #开始新游戏时清除玩家背包中上一局的竞选统计书
 clear @a minecraft:written_book[minecraft:custom_data~{rfm_stat_book:1}]
+scoreboard players set @a stat_book_room 0
 clear @a minecraft:clock[minecraft:custom_data={settlement_ready:1}]
 kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{settlement_ready:1}}}}]
 clear @a minecraft:heart_of_the_sea[minecraft:custom_data~{rfm_item:1}]

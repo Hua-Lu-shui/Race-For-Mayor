@@ -2,5 +2,5 @@
 execute if score @s decision_task matches 202 run scoreboard players add @s economy 12
 execute if score @s decision_task matches 202 run scoreboard players remove @s ecology 4
 execute if score @s decision_task matches 202 run scoreboard players remove @s fame 2
-execute if score @s decision_task matches 202 run tellraw @s {"text":"你选择了引进大型工业园：经济 +12，生态 -4，名誉 -2","color":"yellow"}
+execute if score @s decision_task matches 202 run tellraw @s [{"text":"你选择了引进大型工业园：","color":"red"},{"text":"经济 +12","color":"yellow"},{"text":"，","color":"gray"},{"text":"生态 -4","color":"green"},{"text":"，","color":"gray"},{"text":"名誉 -2","color":"aqua"}]
 execute if score @s decision_task matches 202 run scoreboard players set @s decision_task 0

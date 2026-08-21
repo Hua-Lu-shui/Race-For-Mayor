@@ -4,12 +4,12 @@ scoreboard players set @s collection_cost -1
 #藏品1“褪色的记者证”：名誉-10
 execute if score @s collection_offer matches 1 run scoreboard players set @s collection_attr 1
 execute if score @s collection_offer matches 1 run scoreboard players set @s collection_cost 10
-#藏品2“羽毛笔”：当前最高属性-20；并列最高时随机扣除其中一项
+#藏品2“羽毛笔”：当前最高属性-15；并列最高时随机扣除其中一项
 execute if score @s collection_offer matches 2 run scoreboard players set @s collection_attr 5
-execute if score @s collection_offer matches 2 run scoreboard players set @s collection_cost 20
-#藏品3“金属怀表”：所有属性-5
+execute if score @s collection_offer matches 2 run scoreboard players set @s collection_cost 15
+#藏品3“金属怀表”：所有属性-2
 execute if score @s collection_offer matches 3 run scoreboard players set @s collection_attr 6
-execute if score @s collection_offer matches 3 run scoreboard players set @s collection_cost 5
+execute if score @s collection_offer matches 3 run scoreboard players set @s collection_cost 2
 #藏品4“带批注的档案”：当前最高属性-8；并列最高时随机扣除其中一项
 execute if score @s collection_offer matches 4 run scoreboard players set @s collection_attr 5
 execute if score @s collection_offer matches 4 run scoreboard players set @s collection_cost 8

@@ -2,5 +2,5 @@
 execute if score @s decision_task matches 120 run scoreboard players remove @s fame 6
 execute if score @s decision_task matches 120 run scoreboard players add @s economy 2
 execute if score @s decision_task matches 120 run scoreboard players add @s welfare 6
-execute if score @s decision_task matches 120 run tellraw @s {"text":"你选择了判决前继续保留荣誉：名誉 -6，经济 +2，民生 +6","color":"yellow"}
+execute if score @s decision_task matches 120 run tellraw @s [{"text":"你选择了判决前继续保留荣誉：","color":"green"},{"text":"名誉 -6","color":"aqua"},{"text":"，","color":"gray"},{"text":"经济 +2","color":"yellow"},{"text":"，","color":"gray"},{"text":"民生 +6","color":"red"}]
 execute if score @s decision_task matches 120 run scoreboard players set @s decision_task 0

@@ -29,3 +29,4 @@ scoreboard objectives add stat_title_sc dummy
 scoreboard objectives add stat_title_ni dummy
 scoreboard objectives add stat_title_nc dummy
 scoreboard objectives add stat_title_all dummy
+scoreboard objectives add stat_book_room dummy

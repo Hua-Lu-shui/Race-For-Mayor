@@ -25,4 +25,5 @@ execute as @a[scores={item_selecting=1,item_pick=23}] if score #item_23 item_ava
 execute as @a[scores={item_selecting=1,item_pick=24}] if score #item_24 item_available matches 1 run scoreboard players set @s item_held 24
 
 #只有成功取得尚未被选择的令牌时才完成本名玩家的选择
+execute as @a[scores={item_selecting=1,item_held=1..24}] run function rfm:item/record_owned
 execute as @a[scores={item_selecting=1,item_held=1..24}] run function rfm:item/select/complete

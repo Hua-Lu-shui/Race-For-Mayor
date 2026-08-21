@@ -1,8 +1,8 @@
 #执行tick函数对应的游戏流程
 #确保所有玩家都具有默认属性
 execute as @a unless score @s candidate matches 0.. run function rfm:initialize/candidate
-#只在大厅告示牌区域开放统一触发器，覆盖左右两侧所有告示牌
-execute if score #phase phase matches 0 positioned 49 -49.5 -18.5 run scoreboard players enable @a[distance=..16] lobby_action
+#在任何阶段开放大厅区域内的全部告示牌触发器
+execute positioned 49 -49.5 -18.5 run scoreboard players enable @a[distance=..16] lobby_action
 #只在结算完成且靠近返回告示牌时开放返回触发器
 execute if score #settle_state settle_state matches 4 positioned 49 -56 35 run scoreboard players enable @a[distance=..6] ending_return
 #处理告示牌提交的普通玩家请求
@@ -49,108 +49,5 @@ execute if score #choose_time choose_time matches 1.. run return 0
 execute as @a[scores={action_task=601..905}] run function rfm:task/action/sequence/lock_before_start
 #所有行动任务结束后，等待全体玩家丢出准备时钟
 execute if score #waiting next_round_ready matches 1 run function rfm:round/ready/check
-#——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
-#执行名誉行动601“街头演讲”
-execute as @a[scores={action_task=601,speech_state=2}] at @s run function rfm:task/action/fame/fame_1/wait_ready
-execute as @a[scores={action_task=601,speech_state=3}] run function rfm:task/action/fame/fame_1/countdown
-execute as @a[scores={action_task=601,speech_state=1}] at @s run function rfm:task/action/fame/fame_1/tick
-execute as @a[scores={action_task=601,speech_state=5}] run function rfm:task/action/fame/fame_1/intermission
-
-#执行名誉行动602“社区拜访”
-execute as @a[scores={action_task=602,visit_state=2}] at @s run function rfm:task/action/fame/fame_2/wait_ready
-execute as @a[scores={action_task=602,visit_state=3}] run function rfm:task/action/fame/fame_2/countdown
-execute as @a[scores={action_task=602,visit_state=1}] at @s run function rfm:task/action/fame/fame_2/tick
-
-#执行名誉行动603“市民合影”
-execute as @a[scores={action_task=603,photo_state=2}] at @s run function rfm:task/action/fame/fame_3/wait_ready
-execute as @a[scores={action_task=603,photo_state=3}] run function rfm:task/action/fame/fame_3/countdown
-execute as @a[scores={action_task=603,photo_state=1}] at @s run function rfm:task/action/fame/fame_3/tick
-
-#执行名誉行动604“公开答疑”
-execute as @a[scores={action_task=604,qa_state=2}] at @s run function rfm:task/action/fame/fame_4/wait_ready
-execute as @a[scores={action_task=604,qa_state=3}] run function rfm:task/action/fame/fame_4/countdown
-execute as @a[scores={action_task=604,qa_state=1}] at @s run function rfm:task/action/fame/fame_4/tick
-execute as @a[scores={action_task=604,qa_state=5}] run function rfm:task/action/fame/fame_4/intermission
-
-#执行名誉行动605“市民应援”
-execute as @a[scores={action_task=605,cheer_state=2}] at @s run function rfm:task/action/fame/fame_5/wait_ready
-execute as @a[scores={action_task=605,cheer_state=3}] run function rfm:task/action/fame/fame_5/countdown
-execute as @a[scores={action_task=605,cheer_state=1}] at @s run function rfm:task/action/fame/fame_5/tick
-
-#执行生态行动901“排放巡查”
-execute as @a[scores={action_task=901,emission_state=5}] at @s run function rfm:task/action/ecology/ecology_1/wait_ready
-execute as @a[scores={action_task=901,emission_state=4}] run function rfm:task/action/ecology/ecology_1/countdown
-execute as @a[scores={action_task=901,emission_state=1}] at @s run function rfm:task/action/ecology/ecology_1/tick
-execute as @a[scores={action_task=901,emission_state=2}] run function rfm:task/action/ecology/ecology_1/intermission
-
-#执行生态行动902“河道取样”
-execute as @a[scores={action_task=902,sample_state=2}] at @s run function rfm:task/action/ecology/ecology_2/wait_ready
-execute as @a[scores={action_task=902,sample_state=3}] run function rfm:task/action/ecology/ecology_2/countdown
-execute as @a[scores={action_task=902,sample_state=1}] at @s run function rfm:task/action/ecology/ecology_2/tick
-
-#执行生态行动903“公园维护”
-execute as @a[scores={action_task=903,park_state=2}] at @s run function rfm:task/action/ecology/ecology_3/wait_ready
-execute as @a[scores={action_task=903,park_state=3}] run function rfm:task/action/ecology/ecology_3/countdown
-execute as @a[scores={action_task=903,park_state=1}] run function rfm:task/action/ecology/ecology_3/tick
-
-#执行生态行动904“垃圾分类督导”
-execute as @a[scores={action_task=904,trash_state=2}] at @s run function rfm:task/action/ecology/ecology_4/wait_ready
-execute as @a[scores={action_task=904,trash_state=3}] run function rfm:task/action/ecology/ecology_4/countdown
-execute as @a[scores={action_task=904,trash_state=1}] run function rfm:task/action/ecology/ecology_4/tick
-
-#执行生态行动905“清洁能源检查”
-execute as @a[scores={action_task=905,energy_state=2}] at @s run function rfm:task/action/ecology/ecology_5/wait_ready
-execute as @a[scores={action_task=905,energy_state=3}] run function rfm:task/action/ecology/ecology_5/countdown
-execute as @a[scores={action_task=905,energy_state=1}] run function rfm:task/action/ecology/ecology_5/tick
-
-#执行经济行动701“市场调研”
-execute as @a[scores={action_task=701,market_state=2}] at @s run function rfm:task/action/economy/economy_1/wait_ready
-execute as @a[scores={action_task=701,market_state=3}] run function rfm:task/action/economy/economy_1/countdown
-execute as @a[scores={action_task=701,market_state=1}] run function rfm:task/action/economy/economy_1/tick
-
-#执行经济行动702“招商洽谈”
-execute as @a[scores={action_task=702,negotiation_state=2}] at @s run function rfm:task/action/economy/economy_2/wait_ready
-execute as @a[scores={action_task=702,negotiation_state=3}] run function rfm:task/action/economy/economy_2/countdown
-execute as @a[scores={action_task=702,negotiation_state=1}] run function rfm:task/action/economy/economy_2/tick
-
-#执行经济行动703“预算核查”
-execute as @a[scores={action_task=703,audit_state=2}] at @s run function rfm:task/action/economy/economy_3/wait_ready
-execute as @a[scores={action_task=703,audit_state=3}] run function rfm:task/action/economy/economy_3/countdown
-execute as @a[scores={action_task=703,audit_state=1}] run function rfm:task/action/economy/economy_3/tick
-
-#执行经济行动704“商圈巡查”
-execute as @a[scores={action_task=704,supply_state=2}] at @s run function rfm:task/action/economy/economy_4/wait_ready
-execute as @a[scores={action_task=704,supply_state=3}] run function rfm:task/action/economy/economy_4/countdown
-execute as @a[scores={action_task=704,supply_state=1}] run function rfm:task/action/economy/economy_4/tick
-
-#执行经济行动705“就业走访”
-execute as @a[scores={action_task=705,employment_state=2}] at @s run function rfm:task/action/economy/economy_5/wait_ready
-execute as @a[scores={action_task=705,employment_state=3}] run function rfm:task/action/economy/economy_5/countdown
-execute as @a[scores={action_task=705,employment_state=1}] run function rfm:task/action/economy/economy_5/tick
-
-#执行民生行动801“医院排队疏导”
-execute as @a[scores={action_task=801,hospital_state=2}] at @s run function rfm:task/action/welfare/welfare_1/wait_ready
-execute as @a[scores={action_task=801,hospital_state=3}] run function rfm:task/action/welfare/welfare_1/countdown
-execute as @a[scores={action_task=801,hospital_state=1}] run function rfm:task/action/welfare/welfare_1/tick
-
-#执行民生行动802“全民健身挑战”
-execute as @a[scores={action_task=802,fitness_state=2}] at @s run function rfm:task/action/welfare/welfare_2/wait_ready
-execute as @a[scores={action_task=802,fitness_state=3}] run function rfm:task/action/welfare/welfare_2/countdown
-execute as @a[scores={action_task=802,fitness_state=1}] at @s run function rfm:task/action/welfare/welfare_2/tick
-
-#执行民生行动803“课间操领队”
-execute as @a[scores={action_task=803,exercise_state=2}] at @s run function rfm:task/action/welfare/welfare_3/wait_ready
-execute as @a[scores={action_task=803,exercise_state=3}] run function rfm:task/action/welfare/welfare_3/countdown
-execute as @a[scores={action_task=803,exercise_state=5}] run function rfm:task/action/welfare/welfare_3/preview
-execute as @a[scores={action_task=803,exercise_state=1}] at @s run function rfm:task/action/welfare/welfare_3/tick
-
-#执行民生行动804“公交站调度”
-execute as @a[scores={action_task=804,bus_state=2}] at @s run function rfm:task/action/welfare/welfare_4/wait_ready
-execute as @a[scores={action_task=804,bus_state=3}] run function rfm:task/action/welfare/welfare_4/countdown
-execute as @a[scores={action_task=804,bus_state=1}] at @s run function rfm:task/action/welfare/welfare_4/tick
-
-#执行民生行动805“厨艺大比拼”
-execute as @a[scores={action_task=805,cooking_state=2}] at @s run function rfm:task/action/welfare/welfare_5/wait_ready
-execute as @a[scores={action_task=805,cooking_state=3}] run function rfm:task/action/welfare/welfare_5/countdown
-execute as @a[scores={action_task=805,cooking_state=1}] at @s run function rfm:task/action/welfare/welfare_5/tick
-
+#只选择实际持有行动任务的玩家，再由统一入口按任务与状态分派
+execute as @a[scores={action_task=601..905}] run function rfm:task/action/tick

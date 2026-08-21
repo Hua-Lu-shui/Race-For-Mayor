@@ -1,0 +1,25 @@
+#成功领取令牌时留档；即使终局前未使用，也会出现在竞选统计书中
+execute if score @s item_held matches 1 run scoreboard players set @s stat_use_1 1
+execute if score @s item_held matches 2 run scoreboard players set @s stat_use_2 1
+execute if score @s item_held matches 3 run scoreboard players set @s stat_use_3 1
+execute if score @s item_held matches 4 run scoreboard players set @s stat_use_4 1
+execute if score @s item_held matches 5 run scoreboard players set @s stat_use_5 1
+execute if score @s item_held matches 6 run scoreboard players set @s stat_use_6 1
+execute if score @s item_held matches 7 run scoreboard players set @s stat_use_7 1
+execute if score @s item_held matches 8 run scoreboard players set @s stat_use_8 1
+execute if score @s item_held matches 9 run scoreboard players set @s stat_use_9 1
+execute if score @s item_held matches 10 run scoreboard players set @s stat_use_10 1
+execute if score @s item_held matches 11 run scoreboard players set @s stat_use_11 1
+execute if score @s item_held matches 12 run scoreboard players set @s stat_use_12 1
+execute if score @s item_held matches 13 run scoreboard players set @s stat_use_13 1
+execute if score @s item_held matches 14 run scoreboard players set @s stat_use_14 1
+execute if score @s item_held matches 15 run scoreboard players set @s stat_use_15 1
+execute if score @s item_held matches 16 run scoreboard players set @s stat_use_16 1
+execute if score @s item_held matches 17 run scoreboard players set @s stat_use_17 1
+execute if score @s item_held matches 18 run scoreboard players set @s stat_use_18 1
+execute if score @s item_held matches 19 run scoreboard players set @s stat_use_19 1
+execute if score @s item_held matches 20 run scoreboard players set @s stat_use_20 1
+execute if score @s item_held matches 21 run scoreboard players set @s stat_use_21 1
+execute if score @s item_held matches 22 run scoreboard players set @s stat_use_22 1
+execute if score @s item_held matches 23 run scoreboard players set @s stat_use_23 1
+execute if score @s item_held matches 24 run scoreboard players set @s stat_use_24 1

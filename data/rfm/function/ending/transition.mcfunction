@@ -2,6 +2,12 @@
 scoreboard players set #settle_state settle_state 2
 clear @a minecraft:clock[minecraft:custom_data={settlement_ready:1}]
 kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{settlement_ready:1}}}}]
+#全员扔出结算时钟后立刻清除令牌与藏品物品；藏品槽位分数暂时保留，供最终效果和统计书读取
+clear @a minecraft:heart_of_the_sea[minecraft:custom_data~{rfm_item:1}]
+kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{rfm_item:1}}}}]
+scoreboard players set @a item_held 0
+clear @a minecraft:amethyst_shard[minecraft:custom_data~{rfm_collection:1}]
+kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{rfm_collection:1}}}}]
 scoreboard objectives setdisplay sidebar
 title @a actionbar {"text":""}
 title @a clear

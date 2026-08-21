@@ -2,5 +2,5 @@
 execute if score @s decision_task matches 414 run scoreboard players add @s ecology 4
 execute if score @s decision_task matches 414 run scoreboard players add @s fame 2
 execute if score @s decision_task matches 414 run scoreboard players add @s welfare 2
-execute if score @s decision_task matches 414 run tellraw @s {"text":"你选择了联合社区志愿巡查：生态 +4，名誉 +2，民生 +2","color":"yellow"}
+execute if score @s decision_task matches 414 run tellraw @s [{"text":"你选择了联合社区志愿巡查：","color":"aqua"},{"text":"生态 +4","color":"green"},{"text":"，","color":"gray"},{"text":"名誉 +2","color":"aqua"},{"text":"，","color":"gray"},{"text":"民生 +2","color":"red"}]
 execute if score @s decision_task matches 414 run scoreboard players set @s decision_task 0

@@ -7,5 +7,6 @@ tellraw @a [{"selector":"@s","color":"gold","bold":true},{"text":" 抽中了第"
 playsound minecraft:entity.item.pickup master @a ~ ~ ~ 1 1 1
 execute at @e[type=minecraft:interaction,tag=rfm_lottery_selected,limit=1] run kill @e[type=minecraft:item_display,tag=rfm_lottery_paper,distance=..0.6,sort=nearest,limit=1]
 kill @e[type=minecraft:interaction,tag=rfm_lottery_selected]
-gamemode spectator @s
+gamemode adventure @s
+tp @s 56 -59 -55 0 0
 execute if score #group_state group_state matches 1 unless entity @a[scores={group_finished=0}] run function rfm:collective/finish

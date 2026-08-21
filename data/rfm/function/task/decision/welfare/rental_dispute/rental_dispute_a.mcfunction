@@ -2,5 +2,5 @@
 execute if score @s decision_task matches 312 run scoreboard players add @s welfare 8
 execute if score @s decision_task matches 312 run scoreboard players add @s fame 2
 execute if score @s decision_task matches 312 run scoreboard players remove @s economy 6
-execute if score @s decision_task matches 312 run tellraw @s {"text":"你选择了设立租房仲裁中心：民生 +8，名誉 +2，经济 -6","color":"yellow"}
+execute if score @s decision_task matches 312 run tellraw @s [{"text":"你选择了设立租房仲裁中心：","color":"red"},{"text":"民生 +8","color":"red"},{"text":"，","color":"gray"},{"text":"名誉 +2","color":"aqua"},{"text":"，","color":"gray"},{"text":"经济 -6","color":"yellow"}]
 execute if score @s decision_task matches 312 run scoreboard players set @s decision_task 0

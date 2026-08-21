@@ -12,20 +12,6 @@ scoreboard objectives add ability_ecology dummy
 scoreboard objectives add ability_min dummy
 scoreboard objectives add ability_max dummy
 scoreboard objectives add ability_trigger dummy
-#属性变化动画：记录旧值、差值和播放状态
-scoreboard objectives add fame_last dummy
-scoreboard objectives add econ_last dummy
-scoreboard objectives add welfare_last dummy
-scoreboard objectives add eco_last dummy
-scoreboard objectives add fame_delta dummy
-scoreboard objectives add econ_delta dummy
-scoreboard objectives add welfare_delta dummy
-scoreboard objectives add eco_delta dummy
-scoreboard objectives add attr_probe dummy
-scoreboard objectives add attr_changed dummy
-scoreboard objectives add attr_anim dummy
-scoreboard objectives add attr_flash dummy
-scoreboard objectives add attr_seen dummy
 #属性锁定状态与锁定值
 scoreboard objectives add fame_lock dummy
 scoreboard objectives add economy_lock dummy
@@ -35,15 +21,11 @@ scoreboard objectives add fame_locked dummy
 scoreboard objectives add economy_locked dummy
 scoreboard objectives add welfare_locked dummy
 scoreboard objectives add ecology_locked dummy
-#动作栏使用分离计分板，让未锁定数值显示白色、锁定数值显示黑色
+#动作栏显示使用的四项临时数值
 scoreboard objectives add fame_show dummy
 scoreboard objectives add econ_show dummy
 scoreboard objectives add welfare_show dummy
 scoreboard objectives add eco_show dummy
-scoreboard objectives add fame_lshow dummy
-scoreboard objectives add econ_lshow dummy
-scoreboard objectives add welfare_lshow dummy
-scoreboard objectives add eco_lshow dummy
 #创建四个属性权重计分板
 scoreboard objectives add fame_weight dummy "名誉权重"
 scoreboard objectives add economy_weight dummy "经济权重"
@@ -89,4 +71,3 @@ team add lawyer
 team modify lawyer prefix {"text":"[律师] ","color":"light_purple"}
 team add doctor
 team modify doctor prefix {"text":"[医生] ","color":"#012696"}
-

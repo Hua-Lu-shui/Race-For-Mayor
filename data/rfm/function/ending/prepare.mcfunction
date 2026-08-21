@@ -12,11 +12,6 @@ scoreboard players set @a next_round_ready 0
 scoreboard players set @a next_round_clock 0
 clear @a minecraft:clock[minecraft:custom_data={next_round_ready:1}]
 kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{next_round_ready:1}}}}]
-#进入最终结算时销毁所有尚未使用的令牌
-clear @a minecraft:heart_of_the_sea[minecraft:custom_data~{rfm_item:1}]
-kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{rfm_item:1}}}}]
-scoreboard players set @a item_held 0
-
 #进入游戏结束阶段，玩家仍停留在各自办公室并确认进入结算
 function rfm:phase/phase2
 scoreboard players set #settle_state settle_state 1
@@ -24,6 +19,6 @@ scoreboard players set @a settle_ready 0
 scoreboard players set @a settle_clock 0
 clear @a minecraft:clock[minecraft:custom_data={settlement_ready:1}]
 kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{settlement_ready:1}}}}]
-item replace entity @a hotbar.4 with minecraft:clock[minecraft:custom_name='{"text":"准备最终结算","color":"gold","bold":true,"italic":false}',minecraft:lore=['{"text":"按Q丢出；全员确认后前往市政厅","color":"gray","italic":false}'],minecraft:custom_data={settlement_ready:1}] 1
+item replace entity @a hotbar.4 with minecraft:clock[minecraft:custom_name='{"text":"准备最终结算","color":"gold","bold":true,"italic":false}',minecraft:lore=['{"text":"全员确认后前往市政厅","color":"gray","italic":false}'],minecraft:custom_data={settlement_ready:1}] 1
+title @a subtitle {"text":""}
 title @a title [{"text":"准备","color":"white"},{"text":"最终结算","color":"#FFD166","bold":true}]
-title @a subtitle [{"text":"丢出","color":"white"},{"text":"结算时钟","color":"#67D5FF","bold":true},{"text":"，等待全体候选人确认","color":"white"}]

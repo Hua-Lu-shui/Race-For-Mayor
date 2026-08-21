@@ -2,5 +2,5 @@
 execute if score @s decision_task matches 406 run scoreboard players add @s ecology 2
 execute if score @s decision_task matches 406 run scoreboard players add @s economy 2
 execute if score @s decision_task matches 406 run scoreboard players remove @s fame 2
-execute if score @s decision_task matches 406 run tellraw @s {"text":"你选择了只做示范项目：生态 +2，经济 +2，名誉 -2","color":"yellow"}
+execute if score @s decision_task matches 406 run tellraw @s [{"text":"你选择了只做示范项目：","color":"green"},{"text":"生态 +2","color":"green"},{"text":"，","color":"gray"},{"text":"经济 +2","color":"yellow"},{"text":"，","color":"gray"},{"text":"名誉 -2","color":"aqua"}]
 execute if score @s decision_task matches 406 run scoreboard players set @s decision_task 0

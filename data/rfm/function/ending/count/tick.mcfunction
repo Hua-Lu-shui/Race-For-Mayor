@@ -12,7 +12,7 @@ execute if score #shown_ecology settle_value < @a[tag=rfm_settling,limit=1] vote
 
 #只显示四项属性对应颜色的数字；顺序固定为名誉、经济、民生、生态
 title @a title [{"score":{"name":"#shown_fame","objective":"settle_value"},"color":"aqua","bold":true},{"text":"   "},{"score":{"name":"#shown_economy","objective":"settle_value"},"color":"yellow","bold":true},{"text":"   "},{"score":{"name":"#shown_welfare","objective":"settle_value"},"color":"red","bold":true},{"text":"   "},{"score":{"name":"#shown_ecology","objective":"settle_value"},"color":"green","bold":true}]
-execute if score #vote_changed settle_value matches 1 run playsound minecraft:block.note_block.hat master @a ~ ~ ~ 0.2 1.6
+execute if score #vote_changed settle_value matches 1 as @a at @s run playsound minecraft:block.note_block.hat master @s ~ ~ ~ 0.2 1.6
 
 #只要还有任意一项未到目标就继续；四项全部完成后统一合计
 scoreboard players set #vote_counting settle_value 0

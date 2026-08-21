@@ -1,16 +1,16 @@
-#“金属怀表”：回合结束时，将经济与最低属性互换；经济本身最低时不交换
+#“金属怀表”：回合结束时，将经济与最高属性互换；经济本身最高时不交换
 execute unless score @s collection_slot1 matches 3 unless score @s collection_slot2 matches 3 unless score @s collection_slot3 matches 3 run return 0
 function rfm:attribute/lock/enforce
 execute if score @s economy_lock matches 1 run return 0
 
-#找出四项属性的实际最低值；经济并列最低也视为“经济已是最低属性”
+#找出四项属性的实际最高值；经济并列最高也视为“经济已是最高属性”
 scoreboard players operation @s collection_effect_value = @s fame
-execute if score @s economy < @s collection_effect_value run scoreboard players operation @s collection_effect_value = @s economy
-execute if score @s welfare < @s collection_effect_value run scoreboard players operation @s collection_effect_value = @s welfare
-execute if score @s ecology < @s collection_effect_value run scoreboard players operation @s collection_effect_value = @s ecology
+execute if score @s economy > @s collection_effect_value run scoreboard players operation @s collection_effect_value = @s economy
+execute if score @s welfare > @s collection_effect_value run scoreboard players operation @s collection_effect_value = @s welfare
+execute if score @s ecology > @s collection_effect_value run scoreboard players operation @s collection_effect_value = @s ecology
 execute if score @s economy = @s collection_effect_value run return 0
 
-#只从未锁定的并列最低属性中等概率选择一项
+#只从未锁定的并列最高属性中等概率选择一项
 scoreboard players set @s collection_effect_mask 0
 execute if score @s fame = @s collection_effect_value unless score @s fame_lock matches 1 run scoreboard players add @s collection_effect_mask 1
 execute if score @s welfare = @s collection_effect_value unless score @s welfare_lock matches 1 run scoreboard players add @s collection_effect_mask 4

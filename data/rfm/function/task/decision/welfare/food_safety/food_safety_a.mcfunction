@@ -2,5 +2,5 @@
 execute if score @s decision_task matches 308 run scoreboard players add @s welfare 10
 execute if score @s decision_task matches 308 run scoreboard players add @s fame 2
 execute if score @s decision_task matches 308 run scoreboard players remove @s economy 4
-execute if score @s decision_task matches 308 run tellraw @s {"text":"你选择了全区严格整治：民生 +10，名誉 +2，经济 -4","color":"yellow"}
+execute if score @s decision_task matches 308 run tellraw @s [{"text":"你选择了全区严格整治：","color":"red"},{"text":"民生 +10","color":"red"},{"text":"，","color":"gray"},{"text":"名誉 +2","color":"aqua"},{"text":"，","color":"gray"},{"text":"经济 -4","color":"yellow"}]
 execute if score @s decision_task matches 308 run scoreboard players set @s decision_task 0

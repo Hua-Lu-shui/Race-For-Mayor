@@ -1,7 +1,6 @@
 #执行start delay函数对应的游戏流程
-#有效开始后移除开始游戏告示牌，直到本局结束并返回大厅才重新生成
+#有效开始后锁定开始流程，告示牌保留但不能重复触发
 scoreboard players set #start_pending phase 1
-setblock 49 -50 -13 minecraft:air
 #准备时间提示
 schedule function rfm:start/wait1 10t
 schedule function rfm:start/wait2 40t

@@ -1,6 +1,4 @@
-#只接受大厅阶段且仍在告示牌区域内的请求
-execute unless score #phase phase matches 0 run scoreboard players set @s lobby_action 0
-execute unless score #phase phase matches 0 run return 0
+#只接受仍在告示牌区域内的请求
 execute positioned 49 -49.5 -18.5 unless entity @s[distance=..16] run scoreboard players set @s lobby_action 0
 execute positioned 49 -49.5 -18.5 unless entity @s[distance=..16] run return 0
 execute if score @s lobby_action matches 1 run function rfm:candidate/star

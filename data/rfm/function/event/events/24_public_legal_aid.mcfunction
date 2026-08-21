@@ -9,4 +9,4 @@ title @a title {"text":"公益法律援助","color":"light_purple","bold":true}
 title @a subtitle [{"text":"律师候选人：所有属性 ","color":"gray"},{"text":"+3","color":"green","bold":true}]
 tellraw @a {"text":"【事件】公益法律援助","color":"light_purple","bold":true}
 tellraw @a [{"text":"【事件背景】","color":"gold","bold":true},{"text":"全市公益法律援助活动为大量市民解决了实际困难，熟悉法规与权益保障的律师候选人赢得广泛信任。","color":"white"}]
-tellraw @a [{"text":"【事件影响】","color":"yellow","bold":true},{"text":"所有","color":"white"},{"text":"律师","color":"light_purple"},{"text":"候选人的","color":"white"},{"text":"名誉","color":"aqua"},{"text":"、","color":"white"},{"text":"经济","color":"yellow"},{"text":"、","color":"white"},{"text":"民生","color":"red"},{"text":"、","color":"white"},{"text":"生态","color":"green"},{"text":"均提高3点。","color":"white"}]
+tellraw @a [{"text":"【事件影响】","color":"yellow","bold":true},{"text":"所有","color":"white"},{"text":"律师","color":"white"},{"text":"候选人的","color":"white"},{"text":"名誉","color":"aqua"},{"text":"、","color":"white"},{"text":"经济","color":"yellow"},{"text":"、","color":"white"},{"text":"民生","color":"red"},{"text":"、","color":"white"},{"text":"生态","color":"green"},{"text":"均提高3点。","color":"white"}]

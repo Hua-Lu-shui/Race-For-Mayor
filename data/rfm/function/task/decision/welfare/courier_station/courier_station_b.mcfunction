@@ -2,5 +2,5 @@
 execute if score @s decision_task matches 316 run scoreboard players add @s welfare 8
 execute if score @s decision_task matches 316 run scoreboard players add @s fame 2
 execute if score @s decision_task matches 316 run scoreboard players remove @s economy 2
-execute if score @s decision_task matches 316 run tellraw @s {"text":"你选择了在交通枢纽设置共享驿站：民生 +8，名誉 +2，经济 -2","color":"yellow"}
+execute if score @s decision_task matches 316 run tellraw @s [{"text":"你选择了在交通枢纽设置共享驿站：","color":"aqua"},{"text":"民生 +8","color":"red"},{"text":"，","color":"gray"},{"text":"名誉 +2","color":"aqua"},{"text":"，","color":"gray"},{"text":"经济 -2","color":"yellow"}]
 execute if score @s decision_task matches 316 run scoreboard players set @s decision_task 0
