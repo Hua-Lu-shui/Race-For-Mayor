@@ -5,7 +5,7 @@ scoreboard players set @a[tag=rfm_participant] group_ready 0
 scoreboard players set @a[tag=rfm_participant] next_round_clock 0
 clear @a[tag=rfm_participant] minecraft:clock[minecraft:custom_data={next_round_ready:1}]
 clear @a[tag=rfm_participant] minecraft:name_tag[minecraft:custom_data={collective_venue_ready:1}]
-clear @a[tag=rfm_participant] minecraft:map[minecraft:custom_data={collective_start_ready:1}]
+clear @a[tag=rfm_participant] minecraft:paper[minecraft:custom_data={collective_start_ready:1}]
 kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{next_round_ready:1}}}}]
 kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{collective_venue_ready:1}}}}]
 kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{collective_start_ready:1}}}}]

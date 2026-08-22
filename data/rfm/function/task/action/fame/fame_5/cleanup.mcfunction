@@ -1,6 +1,6 @@
 #清理市民应援的临时物品、界面和计分状态
 bossbar set rfm:cheer_time visible false
-clear @s minecraft:map[minecraft:custom_data={cheer_ready:1}]
+clear @s minecraft:paper[minecraft:custom_data={cheer_ready:1}]
 clear @s minecraft:poppy[minecraft:custom_data~{rfm_cheer_flower:1}]
 kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{cheer_ready:1}}}}]
 kill @e[type=minecraft:item,tag=rfm_cheer_flower]

@@ -22,7 +22,7 @@ scoreboard players set @s audit_delay 0
 scoreboard players set @s audit_state 2
 
 gamemode adventure @a[tag=rfm_participant]
-tp @a[tag=rfm_participant] 162 -58 125 0 0
+tp @a[tag=rfm_participant] 162 -58 25 0 0
 tp @s 162 -58 18 -90 0
 
 tellraw @a[tag=rfm_participant] [{"text":"【经济行动】预算核查","color":"yellow","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]
@@ -30,4 +30,4 @@ tellraw @a[tag=rfm_participant] [{"text":"右键拾取","color":"white"},{"text"
 
 title @s clear
 title @s title {"text":"预算核查","color":"yellow","bold":true}
-item replace entity @s hotbar.4 with minecraft:map[minecraft:custom_name='{"text":"准备完成","color":"yellow","bold":true,"italic":false}',minecraft:lore=['{"text":"扔出后开始任务","color":"gray","italic":false}'],minecraft:custom_data={audit_ready:1}] 1
+item replace entity @s hotbar.4 with minecraft:paper[minecraft:custom_name='{"text":"准备完成","color":"yellow","bold":true,"italic":false}',minecraft:lore=['{"text":"扔出后开始任务","color":"gray","italic":false}'],minecraft:custom_data={audit_ready:1}] 1

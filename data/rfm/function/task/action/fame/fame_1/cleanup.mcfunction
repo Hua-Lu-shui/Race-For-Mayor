@@ -1,6 +1,6 @@
 #清理名誉行动任务1的临时状态和界面
 bossbar set rfm:speech_time visible false
-clear @s minecraft:map[minecraft:custom_data={speech_ready:1}]
+clear @s minecraft:paper[minecraft:custom_data={speech_ready:1}]
 kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{speech_ready:1}}}}]
 
 scoreboard players set @s speech_round 0

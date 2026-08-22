@@ -21,4 +21,4 @@ tellraw @a[tag=rfm_participant] [{"text":"行动玩家","color":"#67D5FF","bold"
 title @s clear
 title @s title {"text":"河道取样","color":"green","bold":true}
 
-item replace entity @s hotbar.4 with minecraft:map[minecraft:custom_name='{"text":"准备完成","color":"green","bold":true,"italic":false}',minecraft:lore=['{"text":"扔出后开始任务","color":"gray","italic":false}'],minecraft:custom_data={sample_ready:1}] 1
+item replace entity @s hotbar.4 with minecraft:paper[minecraft:custom_name='{"text":"准备完成","color":"green","bold":true,"italic":false}',minecraft:lore=['{"text":"扔出后开始任务","color":"gray","italic":false}'],minecraft:custom_data={sample_ready:1}] 1

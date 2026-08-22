@@ -1,6 +1,6 @@
 #清理经济行动任务5的临时状态和界面
 bossbar set rfm:employment_time visible false
-clear @s minecraft:map[minecraft:custom_data={employment_ready:1}]
+clear @s minecraft:paper[minecraft:custom_data={employment_ready:1}]
 clear @s minecraft:paper[minecraft:custom_data~{rfm_resume:1}]
 kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{employment_ready:1}}}}]
 kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{rfm_resume:1}}}}]

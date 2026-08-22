@@ -1,6 +1,8 @@
 #恢复所有玩家的游戏模式，并传送回各自办公室
 gamemode adventure @a[tag=rfm_participant]
 execute as @a[tag=rfm_participant] run function rfm:room/return
+#玩家回到办公室、交易界面关闭后，再清理市场调研交易槽退回的物品
+schedule function rfm:task/action/economy/economy_1/cleanup_items 2t replace
 
 #玩家返回办公室后统一清除所有行动任务的场地实体，避免玩家看见实体被直接删除
 kill @e[type=minecraft:villager,tag=rfm_speech_citizen]

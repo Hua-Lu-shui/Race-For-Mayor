@@ -27,4 +27,4 @@ title @s clear
 title @s title {"text":"排放巡查","color":"green","bold":true}
 
 #只发放一张准备空地图；编号纸条将在倒计时结束后发放
-item replace entity @s hotbar.4 with minecraft:map[minecraft:custom_name='{"text":"准备完成","color":"green","bold":true,"italic":false}',minecraft:lore=['{"text":"扔出后开始任务","color":"gray","italic":false}'],minecraft:custom_data={emission_ready:1}] 1
+item replace entity @s hotbar.4 with minecraft:paper[minecraft:custom_name='{"text":"准备完成","color":"green","bold":true,"italic":false}',minecraft:lore=['{"text":"扔出后开始任务","color":"gray","italic":false}'],minecraft:custom_data={emission_ready:1}] 1

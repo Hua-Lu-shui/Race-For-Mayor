@@ -13,7 +13,7 @@ scoreboard players set @s cheer_state 2
 
 #其他玩家从南侧上空观战，行动玩家进入应援场
 gamemode adventure @a[tag=rfm_participant]
-tp @a[tag=rfm_participant] 232 -48 -6 180 32
+tp @a[tag=rfm_participant] 232 -51 -18 180 32
 tp @s 232 -59 -18 180 0
 
 tellraw @a[tag=rfm_participant] [{"text":"【名誉行动】市民应援","color":"aqua","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]
@@ -22,4 +22,4 @@ tellraw @a[tag=rfm_participant] [{"text":"连续接到","color":"white"},{"text"
 
 title @s clear
 title @s title {"text":"市民应援","color":"aqua","bold":true}
-item replace entity @s hotbar.4 with minecraft:map[minecraft:custom_name='{"text":"准备完成","color":"aqua","bold":true,"italic":false}',minecraft:lore=['{"text":"按Q丢出后开始倒计时","color":"gray","italic":false}'],minecraft:custom_data={cheer_ready:1}] 1
+item replace entity @s hotbar.4 with minecraft:paper[minecraft:custom_name='{"text":"准备完成","color":"aqua","bold":true,"italic":false}',minecraft:lore=['{"text":"按Q丢出后开始倒计时","color":"gray","italic":false}'],minecraft:custom_data={cheer_ready:1}] 1

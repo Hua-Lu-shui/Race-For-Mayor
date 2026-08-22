@@ -37,4 +37,4 @@ tellraw @a[tag=rfm_participant] [{"text":"垃圾桶分类：","color":"#67D5FF",
 
 title @s clear
 title @s title {"text":"垃圾分类督导","color":"green","bold":true}
-item replace entity @s hotbar.4 with minecraft:map[minecraft:custom_name='{"text":"准备完成","color":"green","bold":true,"italic":false}',minecraft:lore=['{"text":"扔出后开始任务","color":"gray","italic":false}'],minecraft:custom_data={trash_ready:1}] 1
+item replace entity @s hotbar.4 with minecraft:paper[minecraft:custom_name='{"text":"准备完成","color":"green","bold":true,"italic":false}',minecraft:lore=['{"text":"扔出后开始任务","color":"gray","italic":false}'],minecraft:custom_data={trash_ready:1}] 1

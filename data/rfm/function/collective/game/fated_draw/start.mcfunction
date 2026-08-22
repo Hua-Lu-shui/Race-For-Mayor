@@ -3,7 +3,7 @@ scoreboard players set #group_state group_state 5
 scoreboard players set @a[tag=rfm_participant] group_score 0
 scoreboard players set @a[tag=rfm_participant] group_rank 0
 scoreboard players set @a[tag=rfm_participant] group_finished 0
-clear @a[tag=rfm_participant] minecraft:map[minecraft:custom_data={collective_start_ready:1}]
+clear @a[tag=rfm_participant] minecraft:paper[minecraft:custom_data={collective_start_ready:1}]
 kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{collective_start_ready:1}}}}]
 execute store result score #online_total player_count run execute if entity @a[tag=rfm_participant]
 function rfm:collective/game/fated_draw/create_slips

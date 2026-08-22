@@ -26,4 +26,4 @@ tellraw @a[tag=rfm_participant] [{"text":"观察系统依次展示的动作，�
 
 title @s clear
 title @s title {"text":"课间操领队","color":"red","bold":true}
-item replace entity @s hotbar.4 with minecraft:map[minecraft:custom_name='{"text":"准备完成","color":"red","bold":true,"italic":false}',minecraft:lore=['{"text":"扔出后开始任务","color":"gray","italic":false}'],minecraft:custom_data={exercise_ready:1}] 1
+item replace entity @s hotbar.4 with minecraft:paper[minecraft:custom_name='{"text":"准备完成","color":"red","bold":true,"italic":false}',minecraft:lore=['{"text":"扔出后开始任务","color":"gray","italic":false}'],minecraft:custom_data={exercise_ready:1}] 1

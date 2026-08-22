@@ -33,7 +33,7 @@ scoreboard players set @s speech_state 2
 
 #场景准备完成后再将玩家送入广场
 gamemode adventure @a[tag=rfm_participant]
-tp @a[tag=rfm_participant] 19 -52 -17 180 30
+tp @a[tag=rfm_participant] 119 -52 -17 180 30
 tp @s 119 -58 -18 180 0
 
 tellraw @a[tag=rfm_participant] [{"text":"【名誉行动】街头演讲","color":"aqua","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]
@@ -41,4 +41,4 @@ tellraw @a[tag=rfm_participant] [{"text":"共进行","color":"white"},{"text":"1
 
 title @s clear
 title @s title {"text":"街头演讲","color":"aqua","bold":true}
-item replace entity @s hotbar.4 with minecraft:map[minecraft:custom_name='{"text":"准备完成","color":"aqua","bold":true,"italic":false}',minecraft:lore=['{"text":"扔出后开始任务","color":"gray","italic":false}'],minecraft:custom_data={speech_ready:1}] 1
+item replace entity @s hotbar.4 with minecraft:paper[minecraft:custom_name='{"text":"准备完成","color":"aqua","bold":true,"italic":false}',minecraft:lore=['{"text":"扔出后开始任务","color":"gray","italic":false}'],minecraft:custom_data={speech_ready:1}] 1

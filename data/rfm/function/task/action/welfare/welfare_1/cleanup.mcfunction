@@ -1,6 +1,6 @@
 #清理民生行动任务1的临时状态和界面
 bossbar set rfm:hospital_time visible false
-clear @s minecraft:map[minecraft:custom_data={hospital_ready:1}]
+clear @s minecraft:paper[minecraft:custom_data={hospital_ready:1}]
 clear @s minecraft:written_book[minecraft:custom_data~{hospital_case:1}]
 kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{hospital_ready:1}}}}]
 kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{hospital_case:1}}}}]

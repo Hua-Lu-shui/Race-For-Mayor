@@ -20,4 +20,4 @@ tellraw @a[tag=rfm_participant] [{"text":"在规定时间内完成","color":"whi
 
 title @s clear
 title @s title {"text":"全民健身挑战","color":"red","bold":true}
-item replace entity @s hotbar.4 with minecraft:map[minecraft:custom_name='{"text":"准备完成","color":"red","bold":true,"italic":false}',minecraft:lore=['{"text":"扔出后开始任务","color":"gray","italic":false}'],minecraft:custom_data={fitness_ready:1}] 1
+item replace entity @s hotbar.4 with minecraft:paper[minecraft:custom_name='{"text":"准备完成","color":"red","bold":true,"italic":false}',minecraft:lore=['{"text":"扔出后开始任务","color":"gray","italic":false}'],minecraft:custom_data={fitness_ready:1}] 1

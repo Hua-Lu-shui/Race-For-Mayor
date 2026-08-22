@@ -6,8 +6,7 @@ title @a[tag=rfm_participant] times 10 120 40
 title @a[tag=rfm_participant] title {"selector":"@a[tag=rfm_participant,tag=rfm_winner]","separator":{"text":"、","color":"yellow"},"color":"yellow","bold":true}
 tellraw @a[tag=rfm_participant] [{"text":"统计完成，下一任市长是：","color":"gold","bold":true},{"selector":"@a[tag=rfm_participant,tag=rfm_winner]","separator":{"text":"、","color":"yellow"},"color":"yellow","bold":true},{"text":"！","color":"gold","bold":true}]
 execute as @a[tag=rfm_participant] at @s run playsound minecraft:ui.toast.challenge_complete master @s ~ ~ ~ 1.0 0.8
-function rfm:ending/stat_book/prepare
-execute as @a[tag=rfm_participant] at @s run function rfm:ending/stat_book/issue
+execute as @a[tag=rfm_participant] at @s run function rfm:ending/stat_book/give
 
 #在市政厅生成返回出生点的告示牌；点击后由返回函数统一复位游戏
 setblock 49 -56 35 minecraft:air

@@ -1,6 +1,6 @@
 #清理经济行动任务4的临时状态和界面
 bossbar set rfm:supply_time visible false
-clear @s minecraft:map[minecraft:custom_data={supply_ready:1}]
+clear @s minecraft:paper[minecraft:custom_data={supply_ready:1}]
 clear @s minecraft:wheat[minecraft:custom_data~{rfm_supply_item:1}]
 clear @s minecraft:coal[minecraft:custom_data~{rfm_supply_item:1}]
 clear @s minecraft:potato[minecraft:custom_data~{rfm_supply_item:1}]
@@ -79,6 +79,8 @@ clear @s minecraft:flowering_azalea[minecraft:custom_data~{rfm_supply_item:1}]
 clear @s minecraft:brown_mushroom[minecraft:custom_data~{rfm_supply_item:1}]
 clear @s minecraft:red_mushroom[minecraft:custom_data~{rfm_supply_item:1}]
 clear @s minecraft:cactus[minecraft:custom_data~{rfm_supply_item:1}]
+#商圈巡查结束后清空行动玩家背包，防止从仓库取出的物品被带回办公室
+clear @s
 kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{supply_ready:1}}}}]
 kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{rfm_supply_item:1}}}}]
 kill @e[type=minecraft:text_display,tag=rfm_supply_label]
