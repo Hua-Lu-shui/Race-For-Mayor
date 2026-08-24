@@ -11,3 +11,5 @@ execute unless score @s candidate matches 8 run scoreboard players set @s collec
 function rfm:attribute/minimum
 function rfm:collection/deliver_with_clock
 playsound minecraft:entity.player.levelup master @s ~ ~ ~ 0.7 1.2
+#标记当前展示藏品已经售出；关闭自动刷新时，下回合据此生成新藏品
+scoreboard players set @s collection_offer 0

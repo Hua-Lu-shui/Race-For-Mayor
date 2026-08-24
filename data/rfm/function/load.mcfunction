@@ -26,7 +26,7 @@ scoreboard objectives add lobby_action trigger
 scoreboard objectives add game_setting dummy
 execute unless score #count_animation game_setting matches 0..1 run scoreboard players set #count_animation game_setting 1
 execute unless score #decision_time game_setting matches 20 unless score #decision_time game_setting matches 30 run scoreboard players set #decision_time game_setting 30
-execute unless score #collection_refresh_paid game_setting matches 0..1 run scoreboard players set #collection_refresh_paid game_setting 1
+execute unless score #collection_auto_refresh game_setting matches 0..1 run scoreboard players set #collection_auto_refresh game_setting 0
 function rfm:settings/render
 #创建人数计分板
 scoreboard objectives add player_count dummy

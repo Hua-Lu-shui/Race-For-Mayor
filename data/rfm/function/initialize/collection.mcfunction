@@ -15,7 +15,6 @@ scoreboard objectives add collection_confirm trigger
 #普通玩家主动刷新藏品；次数按玩家记录，整局最多三次
 scoreboard objectives add collection_refresh trigger
 scoreboard objectives add collection_refresh_count dummy
-scoreboard objectives add collection_refresh_cost dummy
 #满槽交易时选择要替换的藏品槽位
 scoreboard objectives add collection_replace trigger
 #“羽毛笔”交易时，用于计算当前最高属性并从并列项中随机选择

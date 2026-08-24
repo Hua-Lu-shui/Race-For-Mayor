@@ -27,8 +27,8 @@ execute if score @s economy = @s ability_min run scoreboard players add @s colle
 execute if score @s welfare = @s ability_min run scoreboard players add @s collection_effect_mask 4
 execute if score @s ecology = @s ability_min run scoreboard players add @s collection_effect_mask 8
 function rfm:collection/effect/select_from_mask
-execute if score @s collection_effect_pick matches 1 run scoreboard players remove #weight fame_weight 2
-execute if score @s collection_effect_pick matches 2 run scoreboard players remove #weight economy_weight 2
-execute if score @s collection_effect_pick matches 3 run scoreboard players remove #weight welfare_weight 2
-execute if score @s collection_effect_pick matches 4 run scoreboard players remove #weight ecology_weight 2
+execute if score @s collection_effect_pick matches 1 run scoreboard players remove #weight fame_weight 1
+execute if score @s collection_effect_pick matches 2 run scoreboard players remove #weight economy_weight 1
+execute if score @s collection_effect_pick matches 3 run scoreboard players remove #weight welfare_weight 1
+execute if score @s collection_effect_pick matches 4 run scoreboard players remove #weight ecology_weight 1
 execute if score @s ability_trigger matches 1 run tellraw @s [{"text":"【与时俱进】","color":"#F5F5DC","bold":true},{"text":"最高与最低属性对应权重分别调整。","color":"white"}]

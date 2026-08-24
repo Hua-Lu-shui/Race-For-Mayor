@@ -1,5 +1,6 @@
-#每位玩家独立随机：普通50%，稀有30%，史诗15%，传说5%
-function rfm:collection/mysterious/sample_offer
+#开启自动刷新时保证换成不同藏品；关闭时只在没有待售藏品（开局或上件已购买）时抽取
+execute if score #collection_auto_refresh game_setting matches 1 if score @s collection_offer matches 1.. run function rfm:collection/mysterious/refresh_one
+execute if score @s collection_offer matches 0 run function rfm:collection/mysterious/sample_offer
 
 execute if score @s room matches 1 positioned -18 -58 -10 run function rfm:collection/mysterious/spawn_at_room
 execute if score @s room matches 2 positioned -19 -58 6 run function rfm:collection/mysterious/spawn_at_room

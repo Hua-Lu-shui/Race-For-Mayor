@@ -12,7 +12,6 @@ scoreboard players set @a[tag=rfm_participant] collection_trade_round -1
 scoreboard players set @a[tag=rfm_participant] collection_view_round -1
 scoreboard players set @a[tag=rfm_participant] collection_refresh 0
 scoreboard players set @a[tag=rfm_participant] collection_refresh_count 0
-scoreboard players set @a[tag=rfm_participant] collection_refresh_cost 0
 scoreboard players set @a[tag=rfm_participant] collection_highest 0
 scoreboard players set @a[tag=rfm_participant] collection_tie_mask 0
 scoreboard players set @a[tag=rfm_participant] collection_pay_pick 0

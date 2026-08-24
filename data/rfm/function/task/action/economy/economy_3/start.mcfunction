@@ -26,7 +26,7 @@ tp @a[tag=rfm_participant] 162 -58 25 0 0
 tp @s 162 -58 18 -90 0
 
 tellraw @a[tag=rfm_participant] [{"text":"【经济行动】预算核查","color":"yellow","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]
-tellraw @a[tag=rfm_participant] [{"text":"右键拾取","color":"white"},{"text":"三本账本","color":"#67D5FF","bold":true},{"text":"并逐页核算；预算上限、可退押金、已结清款项等不计入本次申报。确认后选中","color":"white"},{"text":"虚假账本","color":"#FFD166","bold":true},{"text":"，将其交给财政负责人。","color":"white"}]
+tellraw @a[tag=rfm_participant] [{"text":"右键拾取","color":"white"},{"text":"三本账本","color":"#67D5FF","bold":true},{"text":"，将各部分花费相加。若结果不等于最后一页的总费用，就选中该","color":"white"},{"text":"虚假账本","color":"#FFD166","bold":true},{"text":"并交给财政负责人。","color":"white"}]
 
 title @s clear
 title @s title {"text":"预算核查","color":"yellow","bold":true}
