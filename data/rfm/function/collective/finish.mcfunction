@@ -3,6 +3,7 @@ scoreboard players set #group_state group_state 0
 execute if score #selected_game group_game matches 1 run function rfm:collective/game/swimming_race/cleanup
 execute if score #selected_game group_game matches 2 run function rfm:collective/game/needle_gap/cleanup
 execute if score #selected_game group_game matches 3 run function rfm:collective/game/fated_draw/cleanup
+execute if score #selected_game group_game matches 4 run function rfm:collective/game/hot_potato/cleanup
 scoreboard players set @a[tag=rfm_participant] group_rank 0
 scoreboard players set #rank group_rank 0
 title @a[tag=rfm_participant] title {"text":"令牌争夺结束","color":"gold","bold":true}

@@ -7,3 +7,5 @@ scoreboard objectives add group_rank dummy
 scoreboard objectives add group_game dummy
 scoreboard objectives add group_ready dummy
 scoreboard objectives add group_finished dummy
+scoreboard objectives add potato_pos dummy
+scoreboard objectives add potato_hold dummy
