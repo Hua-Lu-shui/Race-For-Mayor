@@ -18,6 +18,8 @@ setblock 45 -50 -13 minecraft:cherry_wall_sign[facing=north,waterlogged=false]{f
 execute unless score #start_pending phase matches 1 run setblock 49 -50 -13 minecraft:cherry_wall_sign[facing=north,waterlogged=false]{front_text:{has_glowing_text:1b,messages:['""','{"translate":"rfm.text.2857a3704a65","color":"white","bold":true,"clickEvent":{"action":"run_command","value":"/trigger lobby_action set 10"}}','""','""']}}
 #关于
 setblock 53 -50 -13 minecraft:cherry_wall_sign[facing=north,waterlogged=false]{front_text:{has_glowing_text:1b,messages:['""','{"translate":"rfm.text.bed172efc953","color":"aqua","bold":true,"clickEvent":{"action":"run_command","value":"/trigger lobby_action set 13"}}','""','""']}}
+#作者人物展示
+function rfm:lobby/create_authors
 #——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 scoreboard objectives add room dummy
 #大厅身份、教程与开始游戏告示牌统一入口
