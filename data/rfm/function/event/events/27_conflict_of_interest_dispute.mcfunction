@@ -6,8 +6,8 @@ scoreboard players remove @a[tag=rfm_participant,scores={candidate=7}] welfare 3
 scoreboard players remove @a[tag=rfm_participant,scores={candidate=7}] ecology 3
 execute as @a[tag=rfm_participant,scores={candidate=7}] run function rfm:attribute/minimum
 title @a[tag=rfm_participant] times 10 80 20
-title @a[tag=rfm_participant] title {"text":"利益冲突争议","color":"light_purple","bold":true}
-title @a[tag=rfm_participant] subtitle [{"text":"律师候选人：所有属性 ","color":"gray"},{"text":"-3","color":"red","bold":true}]
-tellraw @a[tag=rfm_participant] {"text":"【事件】利益冲突争议","color":"light_purple","bold":true}
-tellraw @a[tag=rfm_participant] [{"text":"【事件背景】","color":"gold","bold":true},{"text":"一项公共事务被质疑存在代理关系上的利益冲突，律师候选人的职业判断与信息披露遭到舆论审视。","color":"white"}]
-tellraw @a[tag=rfm_participant] [{"text":"【事件影响】","color":"yellow","bold":true},{"text":"所有","color":"white"},{"text":"律师","color":"white"},{"text":"候选人的","color":"white"},{"text":"名誉","color":"aqua"},{"text":"、","color":"white"},{"text":"经济","color":"yellow"},{"text":"、","color":"white"},{"text":"民生","color":"red"},{"text":"、","color":"white"},{"text":"生态","color":"green"},{"text":"均降低3点。","color":"white"}]
+title @a[tag=rfm_participant] title {"translate":"rfm.text.39620f0efce7","color":"light_purple","bold":true}
+title @a[tag=rfm_participant] subtitle [{"translate":"rfm.text.c648a25366c9","color":"gray"},{"text":"-3","color":"red","bold":true}]
+tellraw @a[tag=rfm_participant] {"translate":"rfm.text.03b052689b2a","color":"light_purple","bold":true}
+tellraw @a[tag=rfm_participant] [{"translate":"rfm.text.dd46bd7444bb","color":"gold","bold":true},{"translate":"rfm.text.a316c6fccc15","color":"white"}]
+tellraw @a[tag=rfm_participant] [{"translate":"rfm.text.a6f273449c10","color":"yellow","bold":true},{"translate":"rfm.text.eba4161da484","color":"white"},{"translate":"rfm.text.786c0074d224","color":"white"},{"translate":"rfm.text.7ec624a8adf1","color":"white"},{"translate":"rfm.text.dc04a5799df2","color":"aqua"},{"text":"、","color":"white"},{"translate":"rfm.text.cd0bf6887da7","color":"yellow"},{"text":"、","color":"white"},{"translate":"rfm.text.318edbd5be8f","color":"red"},{"text":"、","color":"white"},{"translate":"rfm.text.014a015ae588","color":"green"},{"translate":"rfm.text.6554a880f5c6","color":"white"}]

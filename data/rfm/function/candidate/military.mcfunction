@@ -10,6 +10,6 @@ scoreboard players set @s ecology 9
 function rfm:attribute/minimum
 
 title @s times 10 40 0
-title @s title [{"text":"你选择了：","color":"white"},{"text":"军人","color":"#FFA500"}]
-title @s subtitle [{"text":"名誉:11","color":"aqua"},{"text":" 经济:9","color":"yellow"},{"text":" 生态:9","color":"green"},{"text":" 民生:11","color":"red"}]
-tellraw @s [{"text":"【孤注一掷】","color":"#FFA500","bold":true},{"text":"完美完成行动任务时，最低属性翻倍。","color":"white"}]
+title @s title [{"translate":"rfm.text.29c85476c04c","color":"white"},{"translate":"rfm.text.ae87d8da0853","color":"#FFA500"}]
+title @s subtitle [{"translate":"rfm.text.1a3d9cecfa98","color":"aqua"},{"translate":"rfm.text.d8d219adbb05","color":"yellow"},{"translate":"rfm.text.05ba5742effe","color":"green"},{"translate":"rfm.text.dffbeaa284ca","color":"red"}]
+tellraw @s [{"translate":"rfm.text.55bce636bc10","color":"#FFA500","bold":true},{"translate":"rfm.text.66f1706cba5a","color":"white"}]

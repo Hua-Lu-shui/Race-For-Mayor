@@ -11,6 +11,6 @@ function rfm:attribute/minimum
 
 
 title @s times 10 40 0
-title @s title [{"text":"你选择了：","color":"white"},{"text":"学者","color":"green"}]
-title @s subtitle [{"text":"名誉:10","color":"aqua"},{"text":" 经济:8","color":"yellow"},{"text":" 生态:13","color":"green"},{"text":" 民生:9","color":"red"}]
-tellraw @s [{"text":"【运筹帷幄】","color":"green","bold":true},{"text":"选择决策任务时，显示三个选项对属性的精确影响。","color":"white"}]
+title @s title [{"translate":"rfm.text.29c85476c04c","color":"white"},{"translate":"rfm.text.d283b25d4b3c","color":"green"}]
+title @s subtitle [{"translate":"rfm.text.0c8f491f2696","color":"aqua"},{"translate":"rfm.text.89166bab1105","color":"yellow"},{"translate":"rfm.text.38fc16a81b4e","color":"green"},{"translate":"rfm.text.66585118f716","color":"red"}]
+tellraw @s [{"translate":"rfm.text.75d019b3a0db","color":"green","bold":true},{"translate":"rfm.text.4d2206dbdc76","color":"white"}]

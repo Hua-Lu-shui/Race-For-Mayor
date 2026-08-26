@@ -2,5 +2,5 @@
 execute if score @s decision_task matches 420 run scoreboard players add @s ecology 8
 execute if score @s decision_task matches 420 run scoreboard players remove @s welfare 2
 execute if score @s decision_task matches 420 run scoreboard players remove @s economy 6
-execute if score @s decision_task matches 420 run tellraw @s [{"text":"你选择了强制所有工程分类再利用：","color":"red"},{"text":"生态 +8","color":"green"},{"text":"，","color":"gray"},{"text":"民生 -2","color":"red"},{"text":"，","color":"gray"},{"text":"经济 -6","color":"yellow"}]
+execute if score @s decision_task matches 420 run tellraw @s [{"translate":"rfm.text.6062c298b8ff","color":"red"},{"translate":"rfm.text.c0e789ceb9a3","color":"green"},{"text":"，","color":"gray"},{"translate":"rfm.text.058e6e20214e","color":"red"},{"text":"，","color":"gray"},{"translate":"rfm.text.e187c8894717","color":"yellow"}]
 execute if score @s decision_task matches 420 run scoreboard players set @s decision_task 0

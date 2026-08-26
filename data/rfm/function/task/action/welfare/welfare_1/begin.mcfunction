@@ -20,7 +20,7 @@ scoreboard players set @s hospital_state 1
 bossbar set rfm:hospital_time players @a[tag=rfm_participant]
 bossbar set rfm:hospital_time max 700
 bossbar set rfm:hospital_time value 700
-bossbar set rfm:hospital_time name [{"text":"医院排队疏导  ·  已分诊 ","color":"red"},{"score":{"name":"@s","objective":"hospital_round"},"color":"yellow"},{"text":" / 8  ·  正确 ","color":"red"},{"score":{"name":"@s","objective":"hospital_correct"},"color":"gold"}]
+bossbar set rfm:hospital_time name [{"translate":"rfm.text.aef6911f2025","color":"red"},{"score":{"name":"@s","objective":"hospital_round"},"color":"yellow"},{"translate":"rfm.text.b9009aa4e74a","color":"red"},{"score":{"name":"@s","objective":"hospital_correct"},"color":"gold"}]
 bossbar set rfm:hospital_time visible true
 
 function rfm:task/action/welfare/welfare_1/give_case

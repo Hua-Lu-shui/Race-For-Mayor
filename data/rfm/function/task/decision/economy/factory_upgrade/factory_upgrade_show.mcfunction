@@ -1,8 +1,8 @@
 #展示经济决策任务的背景和三个可选方案
 scoreboard players set @s decision_choice 0
 scoreboard players enable @s decision_choice
-tellraw @s {"text":"【经济决策】工厂升级补贴","color":"gold","bold":true}
-tellraw @s {"text":"几家传统工厂表示设备老旧，若没有补贴可能裁员。升级能保住产能，但补贴标准会引发争议。","color":"white"}
-tellraw @s [{"text":"[激进] 大规模设备补贴","color":"red","clickEvent":{"action":"run_command","value":"/trigger decision_choice set 1"}}]
-tellraw @s [{"text":"[折中] 只补贴节能设备","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger decision_choice set 2"}}]
-tellraw @s [{"text":"[保守] 不补贴只减税","color":"green","clickEvent":{"action":"run_command","value":"/trigger decision_choice set 3"}}]
+tellraw @s {"translate":"rfm.text.07db00f817fc","color":"gold","bold":true}
+tellraw @s {"translate":"rfm.text.d2a381bd905f","color":"white"}
+tellraw @s [{"translate":"rfm.text.89b9a0594d5b","color":"red","clickEvent":{"action":"run_command","value":"/trigger decision_choice set 1"}}]
+tellraw @s [{"translate":"rfm.text.3a11a8e87e91","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger decision_choice set 2"}}]
+tellraw @s [{"translate":"rfm.text.fe5365736eb9","color":"green","clickEvent":{"action":"run_command","value":"/trigger decision_choice set 3"}}]

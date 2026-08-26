@@ -19,7 +19,7 @@ execute if score @s sample_progress matches 4 positioned 148 -57 70 if entity @s
 execute if score @s sample_progress matches 5 positioned 171 -57 78 if entity @s[distance=..3] if items entity @s weapon.mainhand minecraft:potion[minecraft:potion_contents={potion:"minecraft:water"}] run function rfm:task/action/ecology/ecology_2/sample
 
 #正确取样会在上方先消耗水瓶；此时主手仍有水瓶即为错误地点取样
-execute if items entity @s weapon.mainhand minecraft:potion[minecraft:potion_contents={potion:"minecraft:water"}] run tellraw @s {"text":"采样错误，需重新采样","color":"red","bold":true}
+execute if items entity @s weapon.mainhand minecraft:potion[minecraft:potion_contents={potion:"minecraft:water"}] run tellraw @s {"translate":"rfm.text.e96a3b14542c","color":"red","bold":true}
 execute if items entity @s weapon.mainhand minecraft:potion[minecraft:potion_contents={potion:"minecraft:water"}] run item replace entity @s weapon.mainhand with minecraft:glass_bottle 1
 
 execute if score @s sample_state matches 1 if score @s sample_time matches ..0 run function rfm:task/action/ecology/ecology_2/result

@@ -6,4 +6,4 @@ execute if score @s welfare < @s ability_welfare run scoreboard players set @s a
 execute if score @s welfare < @s ability_welfare run scoreboard players operation @s welfare = @s ability_welfare
 execute if score @s ecology < @s ability_ecology run scoreboard players set @s ability_trigger 1
 execute if score @s ecology < @s ability_ecology run scoreboard players operation @s ecology = @s ability_ecology
-execute if score @s ability_trigger matches 1 run tellraw @s [{"text":"【粉丝效应】","color":"aqua","bold":true},{"text":"返还因任务而降低的除名誉外的属性。","color":"white"}]
+execute if score @s ability_trigger matches 1 run tellraw @s [{"translate":"rfm.text.dda2f374dd38","color":"aqua","bold":true},{"translate":"rfm.text.a4a4e24310f8","color":"white"}]

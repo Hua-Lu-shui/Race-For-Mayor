@@ -1,5 +1,5 @@
 {
   "parent": "rfm:title/root",
-  "display": {"icon": {"id": "minecraft:emerald"}, "title": {"text": "收藏家", "color": "gold"}, "description": {"text": "与神秘人达成3次交易｜+50票", "color": "gray"}, "frame": "goal", "show_toast": true, "announce_to_chat": false, "hidden": false},
+  "display": {"icon": {"id": "minecraft:emerald"}, "title": {"translate":"rfm.text.3496fa2414bf", "color": "gold"}, "description": {"translate":"rfm.text.121a2f190fe7", "color": "gray"}, "frame": "goal", "show_toast": true, "announce_to_chat": false, "hidden": false},
   "criteria": {"impossible": {"trigger": "minecraft:impossible"}}
 }

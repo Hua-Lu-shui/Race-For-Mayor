@@ -14,10 +14,10 @@ setblock 236 -58 73 minecraft:air
 setblock 240 -58 69 minecraft:air
 
 #放置四个可储物的陷阱箱；资源包会隐藏箱体，只显示垃圾桶模型
-setblock 236 -59 65 minecraft:trapped_chest[facing=south,type=single]{CustomName:'{"text":"可回收物","color":"aqua","bold":true}'} replace
-setblock 232 -59 69 minecraft:trapped_chest[facing=east,type=single]{CustomName:'{"text":"有害垃圾","color":"red","bold":true}'} replace
-setblock 236 -59 73 minecraft:trapped_chest[facing=north,type=single]{CustomName:'{"text":"厨余垃圾","color":"green","bold":true}'} replace
-setblock 240 -59 69 minecraft:trapped_chest[facing=west,type=single]{CustomName:'{"text":"其他垃圾","color":"gray","bold":true}'} replace
+setblock 236 -59 65 minecraft:trapped_chest[facing=south,type=single]{CustomName:'{"translate":"rfm.text.1b0ee977123b","color":"aqua","bold":true}'} replace
+setblock 232 -59 69 minecraft:trapped_chest[facing=east,type=single]{CustomName:'{"translate":"rfm.text.dfbe16fb9796","color":"red","bold":true}'} replace
+setblock 236 -59 73 minecraft:trapped_chest[facing=north,type=single]{CustomName:'{"translate":"rfm.text.a38f54b95f87","color":"green","bold":true}'} replace
+setblock 240 -59 69 minecraft:trapped_chest[facing=west,type=single]{CustomName:'{"translate":"rfm.text.7946fb7921e0","color":"gray","bold":true}'} replace
 function rfm:task/action/ecology/ecology_4/create_labels
 function rfm:task/action/ecology/ecology_4/create_models
 
@@ -31,10 +31,10 @@ scoreboard players set @s trash_time 0
 scoreboard players set @s trash_delay 0
 scoreboard players set @s trash_state 2
 
-tellraw @a[tag=rfm_participant] [{"text":"【生态行动】垃圾分类督导","color":"green","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]
-tellraw @a[tag=rfm_participant] [{"text":"行动玩家","color":"#67D5FF","bold":true},{"text":"会依次获得","color":"white"},{"text":"10件垃圾","color":"#FFCB77"},{"text":"。打开对应类别的垃圾桶，进行","color":"white"},{"text":"正确的垃圾分类","color":"#FFD166","bold":true},{"text":"；每件物品无论对错只判断一次。","color":"white"}]
-tellraw @a[tag=rfm_participant] [{"text":"垃圾桶分类：","color":"#67D5FF","bold":true},{"text":"可回收物、","color":"white"},{"text":"有害垃圾、","color":"white"},{"text":"厨余垃圾、","color":"white"},{"text":"其他垃圾","color":"white"}]
+tellraw @a[tag=rfm_participant] [{"translate":"rfm.text.cd89a39fad9f","color":"green","bold":true},{"translate":"rfm.text.f3bab73164c2","color":"white"},{"selector":"@s","color":"white"}]
+tellraw @a[tag=rfm_participant] [{"translate":"rfm.text.995a081da711","color":"#67D5FF","bold":true},{"translate":"rfm.text.f3409a65182f","color":"white"},{"translate":"rfm.text.3dd4383b0327","color":"#FFCB77"},{"translate":"rfm.text.5fc43e3ceec3","color":"white"},{"translate":"rfm.text.6791d940022a","color":"#FFD166","bold":true},{"translate":"rfm.text.f349382cfbe5","color":"white"}]
+tellraw @a[tag=rfm_participant] [{"translate":"rfm.text.8b296167927d","color":"#67D5FF","bold":true},{"translate":"rfm.text.e96687490f14","color":"white"},{"translate":"rfm.text.3df25805a364","color":"white"},{"translate":"rfm.text.8e635d974647","color":"white"},{"translate":"rfm.text.7946fb7921e0","color":"white"}]
 
 title @s clear
-title @s title {"text":"垃圾分类督导","color":"green","bold":true}
-item replace entity @s hotbar.4 with minecraft:paper[minecraft:custom_name='{"text":"准备完成","color":"green","bold":true,"italic":false}',minecraft:lore=['{"text":"扔出后开始任务","color":"gray","italic":false}'],minecraft:custom_data={trash_ready:1}] 1
+title @s title {"translate":"rfm.text.0a5a7ffb4494","color":"green","bold":true}
+item replace entity @s hotbar.4 with minecraft:paper[minecraft:custom_name='{"translate":"rfm.text.34ffc0766113","color":"green","bold":true,"italic":false}',minecraft:lore=['{"translate":"rfm.text.52454e1545d8","color":"gray","italic":false}'],minecraft:custom_data={trash_ready:1}] 1

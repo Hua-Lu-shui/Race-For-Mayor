@@ -6,8 +6,8 @@ execute if score #selected_game group_game matches 3 run function rfm:collective
 execute if score #selected_game group_game matches 4 run function rfm:collective/game/hot_potato/cleanup
 scoreboard players set @a[tag=rfm_participant] group_rank 0
 scoreboard players set #rank group_rank 0
-title @a[tag=rfm_participant] title {"text":"令牌争夺结束","color":"gold","bold":true}
-title @a[tag=rfm_participant] subtitle {"text":"正在统计排名……","color":"yellow"}
+title @a[tag=rfm_participant] title {"translate":"rfm.text.cfd620854a51","color":"gold","bold":true}
+title @a[tag=rfm_participant] subtitle {"translate":"rfm.text.a7a23752acf7","color":"yellow"}
 #先生成选择区域并将全员送入等待屋，再统计并公布进入顺序
 function rfm:item/select/create_room
 gamemode adventure @a[tag=rfm_participant]

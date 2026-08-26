@@ -8,4 +8,4 @@ execute if score @s exercise_delay matches 20 run title @a[tag=rfm_participant] 
 execute if score @s exercise_delay matches 20 run playsound minecraft:block.note_block.hat master @a[tag=rfm_participant] ~ ~ ~ 1 1.2 1
 scoreboard players remove @s exercise_delay 1
 execute if score @s exercise_delay matches ..0 run function rfm:task/action/welfare/welfare_3/begin
-execute if score @s exercise_delay matches ..0 run title @a[tag=rfm_participant] title {"text":"开始","color":"red","bold":true}
+execute if score @s exercise_delay matches ..0 run title @a[tag=rfm_participant] title {"translate":"rfm.text.79cc871ca992","color":"red","bold":true}

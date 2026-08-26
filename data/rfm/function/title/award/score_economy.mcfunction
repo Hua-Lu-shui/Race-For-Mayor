@@ -1,3 +1,3 @@
 advancement grant @s only rfm:title/score_economy
 function rfm:collection/effect/crown
-tellraw @a[tag=rfm_participant] [{"selector":"@s","color":"white","bold":true},{"text":" 获得头衔 ","color":"gray"},{"text":"【经济腾飞】","color":"yellow","bold":true},{"text":"（最终票数 +50）","color":"gold"}]
+tellraw @a[tag=rfm_participant] [{"selector":"@s","color":"white","bold":true},{"translate":"rfm.text.5510b697a429","color":"gray"},{"translate":"rfm.text.1c2b750e88da","color":"yellow","bold":true},{"translate":"rfm.text.ef23474df794","color":"gold"}]

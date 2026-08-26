@@ -1,5 +1,5 @@
 #执行名誉决策任务的C方案并结算属性
 execute if score @s decision_task matches 103 run scoreboard players add @s economy 4
 execute if score @s decision_task matches 103 run scoreboard players remove @s fame 4
-execute if score @s decision_task matches 103 run tellraw @s [{"text":"你选择了维持项目推进：","color":"green"},{"text":"经济 +4","color":"yellow"},{"text":"，","color":"gray"},{"text":"名誉 -4","color":"aqua"}]
+execute if score @s decision_task matches 103 run tellraw @s [{"translate":"rfm.text.728841a36ef0","color":"green"},{"translate":"rfm.text.be96e443c44f","color":"yellow"},{"text":"，","color":"gray"},{"translate":"rfm.text.87ea5bdc6ed8","color":"aqua"}]
 execute if score @s decision_task matches 103 run scoreboard players set @s decision_task 0

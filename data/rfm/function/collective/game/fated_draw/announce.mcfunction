@@ -1,8 +1,8 @@
 #显示游戏名称与抽签规则
 title @a[tag=rfm_participant] times 10 80 20
-title @a[tag=rfm_participant] title [{"text":"令牌争夺","color":"#C6A8FF","bold":true},{"text":"：命中注定","color":"gold","bold":true}]
-title @a[tag=rfm_participant] subtitle [{"text":"从桌面纸条中抽取自己的最终名次","color":"white"}]
-tellraw @a[tag=rfm_participant] [{"text":"【令牌争夺】","color":"#C6A8FF","bold":true},{"text":"命中注定","color":"gold","bold":true}]
-tellraw @a[tag=rfm_participant] [{"text":"【游戏规则】","color":"#67D5FF","bold":true},{"text":"桌上会按照参赛人数生成等量纸条，每张纸条随机对应一个不重复的名次。抽取一张尚未被抽走的纸条，纸条中的名次就是你的最终排名。","color":"white"}]
-tellraw @a[tag=rfm_participant] [{"text":"【排名奖励】","color":"#FFD166","bold":true},{"text":"抽到的名次越高，越先进入","color":"white"},{"text":"令牌屋","color":"#C6A8FF"},{"text":"挑选令牌。","color":"white"}]
-item replace entity @a[tag=rfm_participant] hotbar.4 with minecraft:paper[minecraft:custom_name='{"text":"准备开始","color":"#C6A8FF","bold":true,"italic":false}',minecraft:lore=['{"text":"全员准备后开始抽签","color":"gray","italic":false}'],minecraft:custom_data={collective_start_ready:1}] 1
+title @a[tag=rfm_participant] title [{"translate":"rfm.text.419f291a6047","color":"#C6A8FF","bold":true},{"translate":"rfm.text.d3a3069580c2","color":"gold","bold":true}]
+title @a[tag=rfm_participant] subtitle [{"translate":"rfm.text.7320b9c10194","color":"white"}]
+tellraw @a[tag=rfm_participant] [{"translate":"rfm.text.2d703985ac61","color":"#C6A8FF","bold":true},{"translate":"rfm.text.6afd443ee77c","color":"gold","bold":true}]
+tellraw @a[tag=rfm_participant] [{"translate":"rfm.text.bdd9d6550396","color":"#67D5FF","bold":true},{"translate":"rfm.text.4618a52e30f6","color":"white"}]
+tellraw @a[tag=rfm_participant] [{"translate":"rfm.text.c53d252ed6b5","color":"#FFD166","bold":true},{"translate":"rfm.text.dda6fc941817","color":"white"},{"translate":"rfm.text.41caa243f759","color":"#C6A8FF"},{"translate":"rfm.text.a789285b8019","color":"white"}]
+item replace entity @a[tag=rfm_participant] hotbar.4 with minecraft:paper[minecraft:custom_name='{"translate":"rfm.text.604df5358eaa","color":"#C6A8FF","bold":true,"italic":false}',minecraft:lore=['{"translate":"rfm.text.ff37494c647e","color":"gray","italic":false}'],minecraft:custom_data={collective_start_ready:1}] 1

@@ -68,7 +68,7 @@ function rfm:ability/round_end
 #回合结束型藏品在领先者统计及属性公示前结算；第10回合则在最终结算前生效
 function rfm:collection/effect/before_leaders
 
-title @a[tag=rfm_participant] title {"text":"本回合结束","color":"green","bold":true}
+title @a[tag=rfm_participant] title {"translate":"rfm.text.e14df014667f","color":"green","bold":true}
 
 #取消可能残留的自动开局安排
 schedule clear rfm:round/round

@@ -19,6 +19,6 @@ scoreboard players set @a[tag=rfm_participant] settle_ready 0
 scoreboard players set @a[tag=rfm_participant] settle_clock 0
 clear @a[tag=rfm_participant] minecraft:clock[minecraft:custom_data={settlement_ready:1}]
 kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{settlement_ready:1}}}}]
-item replace entity @a[tag=rfm_participant] hotbar.4 with minecraft:clock[minecraft:custom_name='{"text":"准备最终结算","color":"gold","bold":true,"italic":false}',minecraft:lore=['{"text":"全员确认后前往市政厅","color":"gray","italic":false}'],minecraft:custom_data={settlement_ready:1}] 1
+item replace entity @a[tag=rfm_participant] hotbar.5 with minecraft:clock[minecraft:custom_name='{"translate":"rfm.text.1d927374a66a","color":"gold","bold":true,"italic":false}',minecraft:lore=['{"translate":"rfm.text.b9f72406d3e7","color":"gray","italic":false}'],minecraft:custom_data={settlement_ready:1}] 1
 title @a[tag=rfm_participant] subtitle {"text":""}
-title @a[tag=rfm_participant] title [{"text":"准备","color":"white"},{"text":"最终结算","color":"#FFD166","bold":true}]
+title @a[tag=rfm_participant] title [{"translate":"rfm.text.cc3ce6dfcb66","color":"white"},{"translate":"rfm.text.4ba94afc00bf","color":"#FFD166","bold":true}]

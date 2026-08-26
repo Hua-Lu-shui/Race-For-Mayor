@@ -11,7 +11,7 @@ scoreboard players set @s bus_state 1
 bossbar set rfm:bus_time players @a[tag=rfm_participant]
 bossbar set rfm:bus_time max 1200
 bossbar set rfm:bus_time value 1200
-bossbar set rfm:bus_time name [{"text":"公交站调度  ·  已正确发车 ","color":"red"},{"score":{"name":"@s","objective":"bus_success"},"color":"yellow"},{"text":" / 6","color":"red"}]
+bossbar set rfm:bus_time name [{"translate":"rfm.text.a08c1f9f0020","color":"red"},{"score":{"name":"@s","objective":"bus_success"},"color":"yellow"},{"text":" / 6","color":"red"}]
 bossbar set rfm:bus_time visible true
 
 function rfm:task/action/welfare/welfare_4/reset_buttons

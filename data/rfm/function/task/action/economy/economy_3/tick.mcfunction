@@ -1,6 +1,6 @@
 scoreboard players remove @s audit_time 1
 execute store result bossbar rfm:audit_time value run scoreboard players get @s audit_time
-bossbar set rfm:audit_time name [{"text":"预算核查 · 核对各部分花费与总费用","color":"yellow"}]
+bossbar set rfm:audit_time name [{"translate":"rfm.text.f3d452e3ff52","color":"yellow"}]
 
 #读取扔到财政负责人附近的任务账本
 execute positioned 164 -58 18 if score @s audit_answer matches 0 if entity @e[type=minecraft:item,distance=..2.5,limit=1,nbt={Item:{components:{"minecraft:custom_data":{rfm_audit_book:1,audit_slot:1}}}}] run scoreboard players set @s audit_answer 1

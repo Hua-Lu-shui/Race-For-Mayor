@@ -13,7 +13,7 @@ execute if score @s collection_lowest matches 4 run scoreboard players add @s ec
 function rfm:attribute/lock/enforce
 function rfm:attribute/minimum
 playsound minecraft:block.amethyst_block.chime master @s ~ ~ ~ 0.7 1.2
-execute if score @s collection_lowest matches 1 run tellraw @s [{"text":"【魔方】","color":"green","bold":true},{"text":"存在与你同身份的候选人，当前最低属性名誉 +4。","color":"white"}]
-execute if score @s collection_lowest matches 2 run tellraw @s [{"text":"【魔方】","color":"green","bold":true},{"text":"存在与你同身份的候选人，当前最低属性经济 +4。","color":"white"}]
-execute if score @s collection_lowest matches 3 run tellraw @s [{"text":"【魔方】","color":"green","bold":true},{"text":"存在与你同身份的候选人，当前最低属性民生 +4。","color":"white"}]
-execute if score @s collection_lowest matches 4 run tellraw @s [{"text":"【魔方】","color":"green","bold":true},{"text":"存在与你同身份的候选人，当前最低属性生态 +4。","color":"white"}]
+execute if score @s collection_lowest matches 1 run tellraw @s [{"translate":"rfm.text.e74e9a32d2ce","color":"green","bold":true},{"translate":"rfm.text.c31a1773555a","color":"white"}]
+execute if score @s collection_lowest matches 2 run tellraw @s [{"translate":"rfm.text.e74e9a32d2ce","color":"green","bold":true},{"translate":"rfm.text.81f53c10631a","color":"white"}]
+execute if score @s collection_lowest matches 3 run tellraw @s [{"translate":"rfm.text.e74e9a32d2ce","color":"green","bold":true},{"translate":"rfm.text.c7c1fe4dd29d","color":"white"}]
+execute if score @s collection_lowest matches 4 run tellraw @s [{"translate":"rfm.text.e74e9a32d2ce","color":"green","bold":true},{"translate":"rfm.text.6cd1985a869c","color":"white"}]

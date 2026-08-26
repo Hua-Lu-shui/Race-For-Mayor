@@ -12,6 +12,8 @@ execute as @a[tag=rfm_participant] run function rfm:collection/effect/magic_mirr
 execute as @a[tag=rfm_participant] if score @s collection_slot1 matches 32 run function rfm:collection/effect/rubiks_cube
 execute as @a[tag=rfm_participant] unless score @s collection_slot1 matches 32 if score @s collection_slot2 matches 32 run function rfm:collection/effect/rubiks_cube
 execute as @a[tag=rfm_participant] unless score @s collection_slot1 matches 32 unless score @s collection_slot2 matches 32 if score @s collection_slot3 matches 32 run function rfm:collection/effect/rubiks_cube
+execute as @a[tag=rfm_participant] unless score @s collection_slot1 matches 32 unless score @s collection_slot2 matches 32 unless score @s collection_slot3 matches 32 if score @s collection_slot4 matches 32 run function rfm:collection/effect/rubiks_cube
+execute as @a[tag=rfm_participant] unless score @s collection_slot1 matches 32 unless score @s collection_slot2 matches 32 unless score @s collection_slot3 matches 32 unless score @s collection_slot4 matches 32 if score @s collection_slot5 matches 32 run function rfm:collection/effect/rubiks_cube
 execute as @a[tag=rfm_participant] run function rfm:collection/effect/meteorite_fragment
 execute as @a[tag=rfm_participant] run function rfm:collection/effect/crystal_ball
 execute as @a[tag=rfm_participant] run function rfm:collection/effect/ancient_vase
@@ -23,7 +25,7 @@ execute as @a[tag=rfm_participant] run function rfm:collection/effect/paper_plan
 execute as @a[tag=rfm_participant] run function rfm:collection/effect/monocle
 execute as @a[tag=rfm_participant] run function rfm:collection/effect/horn
 #提示当前回合数
-title @a[tag=rfm_participant] title [{"text":"第 ","color":"white","bold":true},{"score":{"name":"#round","objective":"round"},"color":"light_purple","bold":true},{"text":" 回合","color":"white","bold":true}]
+title @a[tag=rfm_participant] title [{"translate":"rfm.text.f495347d6acf","color":"white","bold":true},{"score":{"name":"#round","objective":"round"},"color":"light_purple","bold":true},{"translate":"rfm.text.9be0dd7897d4","color":"white","bold":true}]
 #调用任务分配函数
 function rfm:task/task_assign
 #分配本回合行动玩家

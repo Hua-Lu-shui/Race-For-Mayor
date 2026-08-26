@@ -12,6 +12,6 @@ scoreboard objectives add vote_welfare dummy
 scoreboard objectives add vote_ecology dummy
 scoreboard objectives add title_bonus dummy
 scoreboard objectives add vote_total dummy
-scoreboard objectives add final_votes dummy {"text":"✦ 最终票数 ✦","color":"gold","bold":true}
+scoreboard objectives add final_votes dummy {"translate":"rfm.text.8ec168ab8d97","color":"gold","bold":true}
 scoreboard objectives modify final_votes numberformat styled {"color":"gold","bold":true}
 scoreboard objectives add attribute_total dummy

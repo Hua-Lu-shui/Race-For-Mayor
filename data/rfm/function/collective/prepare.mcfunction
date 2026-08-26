@@ -9,6 +9,6 @@ clear @a[tag=rfm_participant] minecraft:paper[minecraft:custom_data={collective_
 kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{next_round_ready:1}}}}]
 kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{collective_venue_ready:1}}}}]
 kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{collective_start_ready:1}}}}]
-item replace entity @a[tag=rfm_participant] hotbar.4 with minecraft:name_tag[minecraft:custom_name='{"text":"准备令牌争夺","color":"#C6A8FF","bold":true,"italic":false}',minecraft:lore=['{"text":"按Q丢出；全员准备后传送至小游戏场地","color":"gray","italic":false}'],minecraft:custom_data={collective_venue_ready:1}] 1
-title @a[tag=rfm_participant] title {"text":"令牌争夺即将开始","color":"#C6A8FF","bold":true}
-title @a[tag=rfm_participant] subtitle {"text":"丢出“准备令牌争夺”命名牌以完成准备","color":"white"}
+item replace entity @a[tag=rfm_participant] hotbar.4 with minecraft:name_tag[minecraft:custom_name='{"translate":"rfm.text.745f545f9f13","color":"#C6A8FF","bold":true,"italic":false}',minecraft:lore=['{"translate":"rfm.text.73c97e4677a3","color":"gray","italic":false}'],minecraft:custom_data={collective_venue_ready:1}] 1
+title @a[tag=rfm_participant] title {"translate":"rfm.text.b1ef853ec5cb","color":"#C6A8FF","bold":true}
+title @a[tag=rfm_participant] subtitle {"translate":"rfm.text.67052f3437cc","color":"white"}

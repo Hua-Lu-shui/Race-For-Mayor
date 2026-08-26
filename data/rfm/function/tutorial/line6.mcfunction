@@ -1,2 +1,2 @@
 #向全体玩家显示教程第6行
-tellraw @a [{"text":"完成","color":"white"},{"text":"决策任务","color":"#67D5FF"},{"text":"和","color":"white"},{"text":"行动任务","color":"#67D5FF"},{"text":"来提高这些属性","color":"white"}]
+tellraw @a [{"translate":"rfm.text.33246f6a5e5b","color":"white"},{"translate":"rfm.text.ee26ab7edd2a","color":"#67D5FF"},{"translate":"rfm.text.9a3eb340971f","color":"white"},{"translate":"rfm.text.748305a082e7","color":"#67D5FF"},{"translate":"rfm.text.74075f482a38","color":"white"}]

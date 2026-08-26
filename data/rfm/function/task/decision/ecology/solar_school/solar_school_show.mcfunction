@@ -1,8 +1,8 @@
 #展示生态决策任务的背景和三个可选方案
 scoreboard players set @s decision_choice 0
 scoreboard players enable @s decision_choice
-tellraw @s {"text":"【生态决策】校园光伏","color":"gold","bold":true}
-tellraw @s {"text":"教育部门想在学校屋顶安装光伏板，既节能又有教育意义。但建设成本较高。","color":"white"}
-tellraw @s [{"text":"[激进] 全市学校铺设光伏","color":"red","clickEvent":{"action":"run_command","value":"/trigger decision_choice set 1"}}]
-tellraw @s [{"text":"[折中] 先选十所学校试点","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger decision_choice set 2"}}]
-tellraw @s [{"text":"[保守] 暂只做节能宣传","color":"green","clickEvent":{"action":"run_command","value":"/trigger decision_choice set 3"}}]
+tellraw @s {"translate":"rfm.text.a9bbf5309100","color":"gold","bold":true}
+tellraw @s {"translate":"rfm.text.5d157c63eac9","color":"white"}
+tellraw @s [{"translate":"rfm.text.ac40394e7ff2","color":"red","clickEvent":{"action":"run_command","value":"/trigger decision_choice set 1"}}]
+tellraw @s [{"translate":"rfm.text.8ade35f274f8","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger decision_choice set 2"}}]
+tellraw @s [{"translate":"rfm.text.2fe424f3290f","color":"green","clickEvent":{"action":"run_command","value":"/trigger decision_choice set 3"}}]

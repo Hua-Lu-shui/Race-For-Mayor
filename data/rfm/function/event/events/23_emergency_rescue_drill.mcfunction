@@ -5,8 +5,8 @@ scoreboard players add @a[tag=rfm_participant,scores={candidate=6}] economy 3
 scoreboard players add @a[tag=rfm_participant,scores={candidate=6}] welfare 3
 scoreboard players add @a[tag=rfm_participant,scores={candidate=6}] ecology 3
 title @a[tag=rfm_participant] times 10 80 20
-title @a[tag=rfm_participant] title {"text":"应急救援演练","color":"#FFA500","bold":true}
-title @a[tag=rfm_participant] subtitle [{"text":"军人候选人：所有属性 ","color":"gray"},{"text":"+3","color":"green","bold":true}]
-tellraw @a[tag=rfm_participant] {"text":"【事件】应急救援演练","color":"#FFA500","bold":true}
-tellraw @a[tag=rfm_participant] [{"text":"【事件背景】","color":"gold","bold":true},{"text":"全市开展跨部门应急救援演练，纪律严明、善于统筹现场的军人候选人在复杂状况中展现出可靠的组织能力。","color":"white"}]
-tellraw @a[tag=rfm_participant] [{"text":"【事件影响】","color":"yellow","bold":true},{"text":"所有","color":"white"},{"text":"军人","color":"white"},{"text":"候选人的","color":"white"},{"text":"名誉","color":"aqua"},{"text":"、","color":"white"},{"text":"经济","color":"yellow"},{"text":"、","color":"white"},{"text":"民生","color":"red"},{"text":"、","color":"white"},{"text":"生态","color":"green"},{"text":"均提高3点。","color":"white"}]
+title @a[tag=rfm_participant] title {"translate":"rfm.text.1f5b75913e2a","color":"#FFA500","bold":true}
+title @a[tag=rfm_participant] subtitle [{"translate":"rfm.text.cc7edbfb515d","color":"gray"},{"text":"+3","color":"green","bold":true}]
+tellraw @a[tag=rfm_participant] {"translate":"rfm.text.6c448d9e0445","color":"#FFA500","bold":true}
+tellraw @a[tag=rfm_participant] [{"translate":"rfm.text.dd46bd7444bb","color":"gold","bold":true},{"translate":"rfm.text.e318d2e18075","color":"white"}]
+tellraw @a[tag=rfm_participant] [{"translate":"rfm.text.a6f273449c10","color":"yellow","bold":true},{"translate":"rfm.text.eba4161da484","color":"white"},{"translate":"rfm.text.ae87d8da0853","color":"white"},{"translate":"rfm.text.7ec624a8adf1","color":"white"},{"translate":"rfm.text.dc04a5799df2","color":"aqua"},{"text":"、","color":"white"},{"translate":"rfm.text.cd0bf6887da7","color":"yellow"},{"text":"、","color":"white"},{"translate":"rfm.text.318edbd5be8f","color":"red"},{"text":"、","color":"white"},{"translate":"rfm.text.014a015ae588","color":"green"},{"translate":"rfm.text.eaee2398aa72","color":"white"}]

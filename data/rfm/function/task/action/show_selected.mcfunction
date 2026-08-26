@@ -23,4 +23,4 @@ execute if score @s action_task matches 903 run function rfm:task/action/ecology
 execute if score @s action_task matches 904 run function rfm:task/action/ecology/ecology_4/show
 execute if score @s action_task matches 905 run function rfm:task/action/ecology/ecology_5/show
 
-execute if score @s action_task matches 0 run tellraw @a[tag=rfm_participant] [{"text":"本回合行动玩家 ","color":"gray"},{"selector":"@s","color":"white"},{"text":" 没有在倒计时内选择行动方向。","color":"gray"}]
+execute if score @s action_task matches 0 run tellraw @a[tag=rfm_participant] [{"translate":"rfm.text.397b426b333a","color":"gray"},{"selector":"@s","color":"white"},{"translate":"rfm.text.72096b58dffc","color":"gray"}]

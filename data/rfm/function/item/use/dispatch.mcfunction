@@ -32,7 +32,8 @@ execute if score @s item_held matches 1..4 run function rfm:item/use/swap
 execute if score @s item_held matches 5..12 run function rfm:item/use/weight
 execute if score @s item_held matches 13..16 run function rfm:item/use/specialize
 execute if score @s item_held matches 17..20 run function rfm:item/use/lock
-execute if score @s item_held matches 21..24 run function rfm:item/use/peek
+execute if score @s item_held matches 21..22 run function rfm:item/use/peek
+execute if score @s item_held matches 23..24 run function rfm:item/use/expand_collection
 
 #令牌已正式使用后结算“诉讼卷宗”
 function rfm:collection/effect/litigation_file

@@ -8,4 +8,4 @@ scoreboard players set @s item_selecting 1
 scoreboard players set @s item_pick 0
 scoreboard players enable @s item_pick
 tp @s 56 -59 -46 180 0
-title @s title [{"text":"轮到你选择","color":"white"},{"text":"令牌","color":"#C6A8FF","bold":true}]
+title @s title [{"translate":"rfm.text.ba376d7e40b9","color":"white"},{"translate":"rfm.text.3b811588971b","color":"#C6A8FF","bold":true}]

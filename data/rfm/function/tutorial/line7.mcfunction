@@ -1,2 +1,2 @@
 #向全体玩家显示教程第7行
-tellraw @a [{"text":"属性权重","color":"#FFD166"},{"text":"决定了","color":"white"},{"text":"最终结算","color":"white"},{"text":"时各属性的价值","color":"white"}]
+tellraw @a [{"translate":"rfm.text.bec365631ddf","color":"#FFD166"},{"translate":"rfm.text.12b490338720","color":"white"},{"translate":"rfm.text.4ba94afc00bf","color":"white"},{"translate":"rfm.text.13ca66fd0493","color":"white"}]

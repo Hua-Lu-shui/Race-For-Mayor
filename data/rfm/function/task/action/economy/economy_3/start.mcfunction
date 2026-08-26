@@ -25,9 +25,9 @@ gamemode adventure @a[tag=rfm_participant]
 tp @a[tag=rfm_participant] 162 -58 25 0 0
 tp @s 162 -58 18 -90 0
 
-tellraw @a[tag=rfm_participant] [{"text":"【经济行动】预算核查","color":"yellow","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]
-tellraw @a[tag=rfm_participant] [{"text":"右键拾取","color":"white"},{"text":"三本账本","color":"#67D5FF","bold":true},{"text":"，将各部分花费相加。若结果不等于最后一页的总费用，就选中该","color":"white"},{"text":"虚假账本","color":"#FFD166","bold":true},{"text":"并交给财政负责人。","color":"white"}]
+tellraw @a[tag=rfm_participant] [{"translate":"rfm.text.e2c360093975","color":"yellow","bold":true},{"translate":"rfm.text.f3bab73164c2","color":"white"},{"selector":"@s","color":"white"}]
+tellraw @a[tag=rfm_participant] [{"translate":"rfm.text.2b84d119437c","color":"white"},{"translate":"rfm.text.792049aa724f","color":"#67D5FF","bold":true},{"translate":"rfm.text.9f8fde10bdf1","color":"white"},{"translate":"rfm.text.4f47caba8cc2","color":"#FFD166","bold":true},{"translate":"rfm.text.a63686a6b4fe","color":"white"}]
 
 title @s clear
-title @s title {"text":"预算核查","color":"yellow","bold":true}
-item replace entity @s hotbar.4 with minecraft:paper[minecraft:custom_name='{"text":"准备完成","color":"yellow","bold":true,"italic":false}',minecraft:lore=['{"text":"扔出后开始任务","color":"gray","italic":false}'],minecraft:custom_data={audit_ready:1}] 1
+title @s title {"translate":"rfm.text.6917e7aba53e","color":"yellow","bold":true}
+item replace entity @s hotbar.4 with minecraft:paper[minecraft:custom_name='{"translate":"rfm.text.34ffc0766113","color":"yellow","bold":true,"italic":false}',minecraft:lore=['{"translate":"rfm.text.52454e1545d8","color":"gray","italic":false}'],minecraft:custom_data={audit_ready:1}] 1

@@ -21,9 +21,9 @@ tp @s 235 -58 25 90 0
 #玩家到场并加载会场区块后再生成任务实体
 function rfm:task/action/economy/economy_5/create_scene
 
-tellraw @a[tag=rfm_participant] [{"text":"【经济行动】就业走访","color":"yellow","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]
-tellraw @a[tag=rfm_participant] [{"text":"右键求职者面前的","color":"white"},{"text":"登记表","color":"#67D5FF","bold":true},{"text":"，查看技能和工作条件，再把登记表交给","color":"white"},{"text":"对应招聘官","color":"#FFD166","bold":true},{"text":"。","color":"white"}]
+tellraw @a[tag=rfm_participant] [{"translate":"rfm.text.e16c3dfa7f91","color":"yellow","bold":true},{"translate":"rfm.text.f3bab73164c2","color":"white"},{"selector":"@s","color":"white"}]
+tellraw @a[tag=rfm_participant] [{"translate":"rfm.text.d7c36fa18e39","color":"white"},{"translate":"rfm.text.b1af95dbbc6e","color":"#67D5FF","bold":true},{"translate":"rfm.text.0a2772bc5bbc","color":"white"},{"translate":"rfm.text.159b657df224","color":"#FFD166","bold":true},{"text":"。","color":"white"}]
 
 title @s clear
-title @s title {"text":"就业走访","color":"yellow","bold":true}
-item replace entity @s hotbar.4 with minecraft:paper[minecraft:custom_name='{"text":"准备完成","color":"yellow","bold":true,"italic":false}',minecraft:lore=['{"text":"扔出后开始任务","color":"gray","italic":false}'],minecraft:custom_data={employment_ready:1}] 1
+title @s title {"translate":"rfm.text.c96143a9c522","color":"yellow","bold":true}
+item replace entity @s hotbar.4 with minecraft:paper[minecraft:custom_name='{"translate":"rfm.text.34ffc0766113","color":"yellow","bold":true,"italic":false}',minecraft:lore=['{"translate":"rfm.text.52454e1545d8","color":"gray","italic":false}'],minecraft:custom_data={employment_ready:1}] 1

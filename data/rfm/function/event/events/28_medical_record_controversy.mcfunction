@@ -6,8 +6,8 @@ scoreboard players remove @a[tag=rfm_participant,scores={candidate=8}] welfare 3
 scoreboard players remove @a[tag=rfm_participant,scores={candidate=8}] ecology 3
 execute as @a[tag=rfm_participant,scores={candidate=8}] run function rfm:attribute/minimum
 title @a[tag=rfm_participant] times 10 80 20
-title @a[tag=rfm_participant] title {"text":"诊疗记录争议","color":"#012696","bold":true}
-title @a[tag=rfm_participant] subtitle [{"text":"医生候选人：所有属性 ","color":"gray"},{"text":"-3","color":"red","bold":true}]
-tellraw @a[tag=rfm_participant] {"text":"【事件】诊疗记录争议","color":"#012696","bold":true}
-tellraw @a[tag=rfm_participant] [{"text":"【事件背景】","color":"gold","bold":true},{"text":"一批诊疗记录被发现管理不规范，引发市民对隐私保护和医疗流程的担忧，医生候选人面临专业责任质疑。","color":"white"}]
-tellraw @a[tag=rfm_participant] [{"text":"【事件影响】","color":"yellow","bold":true},{"text":"所有","color":"white"},{"text":"医生","color":"white"},{"text":"候选人的","color":"white"},{"text":"名誉","color":"aqua"},{"text":"、","color":"white"},{"text":"经济","color":"yellow"},{"text":"、","color":"white"},{"text":"民生","color":"red"},{"text":"、","color":"white"},{"text":"生态","color":"green"},{"text":"均降低3点。","color":"white"}]
+title @a[tag=rfm_participant] title {"translate":"rfm.text.b6d340646617","color":"#012696","bold":true}
+title @a[tag=rfm_participant] subtitle [{"translate":"rfm.text.d98a9ecd48aa","color":"gray"},{"text":"-3","color":"red","bold":true}]
+tellraw @a[tag=rfm_participant] {"translate":"rfm.text.9a159ddb4104","color":"#012696","bold":true}
+tellraw @a[tag=rfm_participant] [{"translate":"rfm.text.dd46bd7444bb","color":"gold","bold":true},{"translate":"rfm.text.80b996f9c2dd","color":"white"}]
+tellraw @a[tag=rfm_participant] [{"translate":"rfm.text.a6f273449c10","color":"yellow","bold":true},{"translate":"rfm.text.eba4161da484","color":"white"},{"translate":"rfm.text.552caeb5bd54","color":"white"},{"translate":"rfm.text.7ec624a8adf1","color":"white"},{"translate":"rfm.text.dc04a5799df2","color":"aqua"},{"text":"、","color":"white"},{"translate":"rfm.text.cd0bf6887da7","color":"yellow"},{"text":"、","color":"white"},{"translate":"rfm.text.318edbd5be8f","color":"red"},{"text":"、","color":"white"},{"translate":"rfm.text.014a015ae588","color":"green"},{"translate":"rfm.text.6554a880f5c6","color":"white"}]

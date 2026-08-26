@@ -16,10 +16,10 @@ gamemode adventure @a[tag=rfm_participant]
 tp @a[tag=rfm_participant] 232 -51 -18 180 32
 tp @s 232 -59 -18 180 0
 
-tellraw @a[tag=rfm_participant] [{"text":"【名誉行动】市民应援","color":"aqua","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]
-tellraw @a[tag=rfm_participant] [{"text":"追赶并拾取","color":"white"},{"text":"带绿色粒子的鲜花","color":"#67D5FF","bold":true},{"text":"，同时躲开","color":"white"},{"text":"带黄色粒子的鸡蛋","color":"#FFD166","bold":true},{"text":"。鲜花落地后很快消失，被鸡蛋击中会扣1分并清空连击。","color":"white"}]
-tellraw @a[tag=rfm_participant] [{"text":"连续接到","color":"white"},{"text":"3朵鲜花","color":"#FFCB77","bold":true},{"text":"额外得1分，连续接到","color":"white"},{"text":"5朵","color":"#FFCB77"},{"text":"再额外得2分。","color":"white"}]
+tellraw @a[tag=rfm_participant] [{"translate":"rfm.text.64f9e53717f9","color":"aqua","bold":true},{"translate":"rfm.text.f3bab73164c2","color":"white"},{"selector":"@s","color":"white"}]
+tellraw @a[tag=rfm_participant] [{"translate":"rfm.text.e447afb8ce24","color":"white"},{"translate":"rfm.text.f8b5a9a97edb","color":"#67D5FF","bold":true},{"translate":"rfm.text.37184cb51817","color":"white"},{"translate":"rfm.text.84e37d8352be","color":"#FFD166","bold":true},{"translate":"rfm.text.82e05718ea1b","color":"white"}]
+tellraw @a[tag=rfm_participant] [{"translate":"rfm.text.a2247370d761","color":"white"},{"translate":"rfm.text.eeac62215afc","color":"#FFCB77","bold":true},{"translate":"rfm.text.c1465f5dd1ab","color":"white"},{"translate":"rfm.text.a6efff261f33","color":"#FFCB77"},{"translate":"rfm.text.2593535b4743","color":"white"}]
 
 title @s clear
-title @s title {"text":"市民应援","color":"aqua","bold":true}
-item replace entity @s hotbar.4 with minecraft:paper[minecraft:custom_name='{"text":"准备完成","color":"aqua","bold":true,"italic":false}',minecraft:lore=['{"text":"按Q丢出后开始倒计时","color":"gray","italic":false}'],minecraft:custom_data={cheer_ready:1}] 1
+title @s title {"translate":"rfm.text.2e86c018ee6c","color":"aqua","bold":true}
+item replace entity @s hotbar.4 with minecraft:paper[minecraft:custom_name='{"translate":"rfm.text.34ffc0766113","color":"aqua","bold":true,"italic":false}',minecraft:lore=['{"translate":"rfm.text.444741ad7049","color":"gray","italic":false}'],minecraft:custom_data={cheer_ready:1}] 1

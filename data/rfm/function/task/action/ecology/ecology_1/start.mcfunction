@@ -20,11 +20,11 @@ scoreboard players set @s emission_delay 0
 scoreboard players set @s emission_state 5
 
 #所有玩家到达任务场地后再公布教程
-tellraw @a[tag=rfm_participant] [{"text":"【生态行动】排放巡查","color":"green","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]
-tellraw @a[tag=rfm_participant] [{"text":"9个排放口中每次会有1个冒出黑烟。","color":"white"},{"text":"行动玩家","color":"#67D5FF","bold":true},{"text":"需要在","color":"white"},{"text":"2秒内","color":"#FFCB77","bold":true},{"text":"扔出","color":"white"},{"text":"对应编号的纸条","color":"#FFD166","bold":true},{"text":"，共进行10次巡查。","color":"white"}]
+tellraw @a[tag=rfm_participant] [{"translate":"rfm.text.28858f9b1c3c","color":"green","bold":true},{"translate":"rfm.text.f3bab73164c2","color":"white"},{"selector":"@s","color":"white"}]
+tellraw @a[tag=rfm_participant] [{"translate":"rfm.text.f44a75c3f0a9","color":"white"},{"translate":"rfm.text.995a081da711","color":"#67D5FF","bold":true},{"translate":"rfm.text.a10c069b6b76","color":"white"},{"translate":"rfm.text.bea54c87eabe","color":"#FFCB77","bold":true},{"translate":"rfm.text.c0499e077385","color":"white"},{"translate":"rfm.text.15c91d6be19e","color":"#FFD166","bold":true},{"translate":"rfm.text.f42dbe2701df","color":"white"}]
 
 title @s clear
-title @s title {"text":"排放巡查","color":"green","bold":true}
+title @s title {"translate":"rfm.text.003f8a08b2cf","color":"green","bold":true}
 
 #只发放一张准备空地图；编号纸条将在倒计时结束后发放
-item replace entity @s hotbar.4 with minecraft:paper[minecraft:custom_name='{"text":"准备完成","color":"green","bold":true,"italic":false}',minecraft:lore=['{"text":"扔出后开始任务","color":"gray","italic":false}'],minecraft:custom_data={emission_ready:1}] 1
+item replace entity @s hotbar.4 with minecraft:paper[minecraft:custom_name='{"translate":"rfm.text.34ffc0766113","color":"green","bold":true,"italic":false}',minecraft:lore=['{"translate":"rfm.text.52454e1545d8","color":"gray","italic":false}'],minecraft:custom_data={emission_ready:1}] 1

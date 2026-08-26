@@ -12,4 +12,6 @@ execute as @a[tag=rfm_participant,scores={item_held=1..24}] run function rfm:ite
 execute as @a[tag=rfm_participant,scores={collection_slot1=1..}] run function rfm:collection/deliver
 execute as @a[tag=rfm_participant,scores={collection_slot1=..0,collection_slot2=1..}] run function rfm:collection/deliver
 execute as @a[tag=rfm_participant,scores={collection_slot1=..0,collection_slot2=..0,collection_slot3=1..}] run function rfm:collection/deliver
+execute as @a[tag=rfm_participant,scores={collection_slot1=..0,collection_slot2=..0,collection_slot3=..0,collection_slot4=1..}] run function rfm:collection/deliver
+execute as @a[tag=rfm_participant,scores={collection_slot1=..0,collection_slot2=..0,collection_slot3=..0,collection_slot4=..0,collection_slot5=1..}] run function rfm:collection/deliver
 execute as @a[tag=rfm_participant] run function rfm:collection/give_clock with storage rfm:round_clock

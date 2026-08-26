@@ -13,6 +13,6 @@ bossbar set rfm:speech_time players @a[tag=rfm_participant]
 bossbar set rfm:speech_time max 30
 bossbar set rfm:speech_time value 30
 bossbar set rfm:speech_time visible true
-bossbar set rfm:speech_time name [{"text":"街头演讲 · 观察市民反应！","color":"aqua"}]
+bossbar set rfm:speech_time name [{"translate":"rfm.text.33e6f5a6f919","color":"aqua"}]
 
 function rfm:task/action/fame/fame_1/reset_buttons

@@ -13,6 +13,6 @@ title @a[tag=rfm_participant] actionbar {"text":""}
 title @a[tag=rfm_participant] clear
 
 #先戴上南瓜头遮挡视野两秒再传送；抵达市政厅三秒后揭开画面
-item replace entity @a[tag=rfm_participant] armor.head with minecraft:carved_pumpkin[minecraft:custom_name='{"text":"转场遮罩","color":"black","italic":false}',minecraft:custom_data={rfm_ending_blackout:1}] 1
-tellraw @a[tag=rfm_participant] {"text":"所有候选人均已确认，最终票数统计即将开始……","color":"dark_gray","italic":true}
+item replace entity @a[tag=rfm_participant] armor.head with minecraft:carved_pumpkin[minecraft:custom_name='{"translate":"rfm.text.ea82ecabfdaf","color":"black","italic":false}',minecraft:custom_data={rfm_ending_blackout:1}] 1
+tellraw @a[tag=rfm_participant] {"translate":"rfm.text.54ac59358a85","color":"dark_gray","italic":true}
 schedule function rfm:ending/city_hall 40t replace

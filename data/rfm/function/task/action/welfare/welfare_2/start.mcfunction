@@ -15,9 +15,9 @@ gamemode adventure @a[tag=rfm_participant]
 tp @a[tag=rfm_participant] 168 -49 -66 180 30
 tp @s 184 -57 -67 90 0
 
-tellraw @a[tag=rfm_participant] [{"text":"【民生行动】全民健身挑战","color":"red","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]
-tellraw @a[tag=rfm_participant] [{"text":"在规定时间内完成","color":"white"},{"text":"跨栏、平衡木、攀爬、跳水冲线","color":"#67D5FF","bold":true},{"text":"。站上","color":"white"},{"text":"终点线即算完成。","color":"white"}]
+tellraw @a[tag=rfm_participant] [{"translate":"rfm.text.ed3b4489edb2","color":"red","bold":true},{"translate":"rfm.text.f3bab73164c2","color":"white"},{"selector":"@s","color":"white"}]
+tellraw @a[tag=rfm_participant] [{"translate":"rfm.text.706a832f9125","color":"white"},{"translate":"rfm.text.91edb5083d08","color":"#67D5FF","bold":true},{"translate":"rfm.text.6c3a307285a3","color":"white"},{"translate":"rfm.text.d8aa39eacfbd","color":"white"}]
 
 title @s clear
-title @s title {"text":"全民健身挑战","color":"red","bold":true}
-item replace entity @s hotbar.4 with minecraft:paper[minecraft:custom_name='{"text":"准备完成","color":"red","bold":true,"italic":false}',minecraft:lore=['{"text":"扔出后开始任务","color":"gray","italic":false}'],minecraft:custom_data={fitness_ready:1}] 1
+title @s title {"translate":"rfm.text.af029b01d298","color":"red","bold":true}
+item replace entity @s hotbar.4 with minecraft:paper[minecraft:custom_name='{"translate":"rfm.text.34ffc0766113","color":"red","bold":true,"italic":false}',minecraft:lore=['{"translate":"rfm.text.52454e1545d8","color":"gray","italic":false}'],minecraft:custom_data={fitness_ready:1}] 1

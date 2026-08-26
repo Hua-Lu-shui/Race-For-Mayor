@@ -6,7 +6,7 @@ scoreboard players set @s fitness_state 1
 bossbar set rfm:fitness_time players @a[tag=rfm_participant]
 bossbar set rfm:fitness_time max 220
 bossbar set rfm:fitness_time value 220
-bossbar set rfm:fitness_time name {"text":"全民健身挑战  ·  剩余时间","color":"red"}
+bossbar set rfm:fitness_time name {"translate":"rfm.text.56ef167687bf","color":"red"}
 bossbar set rfm:fitness_time visible true
 
-title @s actionbar [{"text":"开始：","color":"#FFCB77","bold":true},{"text":"冲过终点才算完成","color":"white"}]
+title @s actionbar [{"translate":"rfm.text.76a0ba5c77e9","color":"#FFCB77","bold":true},{"translate":"rfm.text.3f9b37183879","color":"white"}]

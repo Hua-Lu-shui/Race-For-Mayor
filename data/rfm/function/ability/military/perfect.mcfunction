@@ -24,5 +24,5 @@ execute if score @s collection_effect_pick matches 1 run scoreboard players oper
 execute if score @s collection_effect_pick matches 2 run scoreboard players operation @s economy += @s economy
 execute if score @s collection_effect_pick matches 3 run scoreboard players operation @s welfare += @s welfare
 execute if score @s collection_effect_pick matches 4 run scoreboard players operation @s ecology += @s ecology
-execute if score @s ability_trigger matches 1 run tellraw @s [{"text":"【孤注一掷】","color":"#FFA500","bold":true},{"text":"最低属性翻倍。","color":"white"}]
+execute if score @s ability_trigger matches 1 run tellraw @s [{"translate":"rfm.text.55bce636bc10","color":"#FFA500","bold":true},{"translate":"rfm.text.3707e96d6846","color":"white"}]
 function rfm:attribute/minimum

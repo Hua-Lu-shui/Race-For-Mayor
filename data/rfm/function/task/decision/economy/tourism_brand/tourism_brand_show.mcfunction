@@ -1,8 +1,8 @@
 #展示经济决策任务的背景和三个可选方案
 scoreboard players set @s decision_choice 0
 scoreboard players enable @s decision_choice
-tellraw @s {"text":"【经济决策】旅游品牌","color":"gold","bold":true}
-tellraw @s {"text":"文旅部门建议打造城市旅游品牌，投入广告、活动和景点包装。短期花钱较多，但可能带来长期消费。","color":"white"}
-tellraw @s [{"text":"[激进] 全面投放旅游广告","color":"red","clickEvent":{"action":"run_command","value":"/trigger decision_choice set 1"}}]
-tellraw @s [{"text":"[折中] 主推周末短途游","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger decision_choice set 2"}}]
-tellraw @s [{"text":"[保守] 只维护现有景点","color":"green","clickEvent":{"action":"run_command","value":"/trigger decision_choice set 3"}}]
+tellraw @s {"translate":"rfm.text.8ce055a4adb1","color":"gold","bold":true}
+tellraw @s {"translate":"rfm.text.c24ff66d0bbd","color":"white"}
+tellraw @s [{"translate":"rfm.text.15e91276bdd7","color":"red","clickEvent":{"action":"run_command","value":"/trigger decision_choice set 1"}}]
+tellraw @s [{"translate":"rfm.text.eaf3dafbbbdd","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger decision_choice set 2"}}]
+tellraw @s [{"translate":"rfm.text.b9c4268b413f","color":"green","clickEvent":{"action":"run_command","value":"/trigger decision_choice set 3"}}]

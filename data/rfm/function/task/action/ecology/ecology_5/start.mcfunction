@@ -24,10 +24,10 @@ scoreboard players set @s energy_time 0
 scoreboard players set @s energy_delay 0
 scoreboard players set @s energy_state 2
 
-tellraw @a[tag=rfm_participant] [{"text":"【生态行动】清洁能源检查","color":"green","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]
-tellraw @a[tag=rfm_participant] [{"text":"行动玩家","color":"#67D5FF","bold":true},{"text":"需要根据目标需求开关四个发电设备，使","color":"white"},{"text":"供电总量等于目标","color":"#FFD166","bold":true},{"text":"，共进行","color":"white"},{"text":"10轮","color":"#FFCB77"},{"text":"。","color":"white"}]
-tellraw @a[tag=rfm_participant] [{"text":"设备数值：","color":"#67D5FF","bold":true},{"text":"太阳能 1，风力 2，水力 3，储能 4","color":"white"}]
+tellraw @a[tag=rfm_participant] [{"translate":"rfm.text.940495d8e7c4","color":"green","bold":true},{"translate":"rfm.text.f3bab73164c2","color":"white"},{"selector":"@s","color":"white"}]
+tellraw @a[tag=rfm_participant] [{"translate":"rfm.text.995a081da711","color":"#67D5FF","bold":true},{"translate":"rfm.text.f57fa98c422b","color":"white"},{"translate":"rfm.text.c8ad668489f2","color":"#FFD166","bold":true},{"translate":"rfm.text.144896339332","color":"white"},{"translate":"rfm.text.3e67d798a45f","color":"#FFCB77"},{"text":"。","color":"white"}]
+tellraw @a[tag=rfm_participant] [{"translate":"rfm.text.09dd41999781","color":"#67D5FF","bold":true},{"translate":"rfm.text.7ae3ce3d7352","color":"white"}]
 
 title @s clear
-title @s title {"text":"清洁能源检查","color":"green","bold":true}
-item replace entity @s hotbar.4 with minecraft:paper[minecraft:custom_name='{"text":"准备完成","color":"green","bold":true,"italic":false}',minecraft:lore=['{"text":"扔出后开始任务","color":"gray","italic":false}'],minecraft:custom_data={energy_ready:1}] 1
+title @s title {"translate":"rfm.text.dea9f8ca0a01","color":"green","bold":true}
+item replace entity @s hotbar.4 with minecraft:paper[minecraft:custom_name='{"translate":"rfm.text.34ffc0766113","color":"green","bold":true,"italic":false}',minecraft:lore=['{"translate":"rfm.text.52454e1545d8","color":"gray","italic":false}'],minecraft:custom_data={energy_ready:1}] 1

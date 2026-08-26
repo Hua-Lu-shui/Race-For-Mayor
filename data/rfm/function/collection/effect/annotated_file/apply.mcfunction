@@ -26,7 +26,7 @@ execute if score @s collection_effect_pick matches 2 run scoreboard players add 
 execute if score @s collection_effect_pick matches 3 run scoreboard players add @s welfare 3
 execute if score @s collection_effect_pick matches 4 run scoreboard players add @s ecology 3
 playsound minecraft:item.book.page_turn master @s ~ ~ ~ 0.7 1.1
-execute if score @s collection_effect_pick matches 1 run tellraw @s [{"text":"【带批注的档案】","color":"green","bold":true},{"text":"本次决策中名誉增加最多，额外 +3。","color":"white"}]
-execute if score @s collection_effect_pick matches 2 run tellraw @s [{"text":"【带批注的档案】","color":"green","bold":true},{"text":"本次决策中经济增加最多，额外 +3。","color":"white"}]
-execute if score @s collection_effect_pick matches 3 run tellraw @s [{"text":"【带批注的档案】","color":"green","bold":true},{"text":"本次决策中民生增加最多，额外 +3。","color":"white"}]
-execute if score @s collection_effect_pick matches 4 run tellraw @s [{"text":"【带批注的档案】","color":"green","bold":true},{"text":"本次决策中生态增加最多，额外 +3。","color":"white"}]
+execute if score @s collection_effect_pick matches 1 run tellraw @s [{"translate":"rfm.text.8c88c0d1b7de","color":"green","bold":true},{"translate":"rfm.text.db18227283f6","color":"white"}]
+execute if score @s collection_effect_pick matches 2 run tellraw @s [{"translate":"rfm.text.8c88c0d1b7de","color":"green","bold":true},{"translate":"rfm.text.83050009183f","color":"white"}]
+execute if score @s collection_effect_pick matches 3 run tellraw @s [{"translate":"rfm.text.8c88c0d1b7de","color":"green","bold":true},{"translate":"rfm.text.e1ef6017bfef","color":"white"}]
+execute if score @s collection_effect_pick matches 4 run tellraw @s [{"translate":"rfm.text.8c88c0d1b7de","color":"green","bold":true},{"translate":"rfm.text.e9075a1f46b4","color":"white"}]

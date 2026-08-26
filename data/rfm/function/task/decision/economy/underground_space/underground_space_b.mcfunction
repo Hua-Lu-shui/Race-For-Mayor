@@ -2,5 +2,5 @@
 execute if score @s decision_task matches 220 run scoreboard players add @s economy 4
 execute if score @s decision_task matches 220 run scoreboard players add @s welfare 2
 execute if score @s decision_task matches 220 run scoreboard players remove @s ecology 2
-execute if score @s decision_task matches 220 run tellraw @s [{"text":"你选择了周末开放小型创意市集：","color":"aqua"},{"text":"经济 +4","color":"yellow"},{"text":"，","color":"gray"},{"text":"民生 +2","color":"red"},{"text":"，","color":"gray"},{"text":"生态 -2","color":"green"}]
+execute if score @s decision_task matches 220 run tellraw @s [{"translate":"rfm.text.c64590cd2882","color":"aqua"},{"translate":"rfm.text.be96e443c44f","color":"yellow"},{"text":"，","color":"gray"},{"translate":"rfm.text.347012d06208","color":"red"},{"text":"，","color":"gray"},{"translate":"rfm.text.08597c9fb827","color":"green"}]
 execute if score @s decision_task matches 220 run scoreboard players set @s decision_task 0

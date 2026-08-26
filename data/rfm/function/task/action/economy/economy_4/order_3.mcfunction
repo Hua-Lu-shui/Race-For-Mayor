@@ -1,5 +1,5 @@
-summon minecraft:text_display 208 -55.5 23 {Tags:["rfm_supply_label"],billboard:"center",alignment:"center",text:'{"text":"面包店\\n需要：牛奶桶","color":"gold","bold":true}',background:0,shadow:1b,line_width:200}
-summon minecraft:text_display 192 -55.5 6 {Tags:["rfm_supply_label"],billboard:"center",alignment:"center",text:'{"text":"铁匠铺\\n需要：木炭","color":"gray","bold":true}',background:0,shadow:1b,line_width:200}
-summon minecraft:text_display 199 -55.5 12 {Tags:["rfm_supply_label"],billboard:"center",alignment:"center",text:'{"text":"餐馆\\n需要：甜菜根","color":"yellow","bold":true}',background:0,shadow:1b,line_width:200}
-summon minecraft:text_display 189 -55.5 15 {Tags:["rfm_supply_label"],billboard:"center",alignment:"center",text:'{"text":"药剂店\\n需要：红石粉","color":"aqua","bold":true}',background:0,shadow:1b,line_width:200}
-summon minecraft:text_display 199 -55.5 31 {Tags:["rfm_supply_label"],billboard:"center",alignment:"center",text:'{"text":"裁缝店\\n需要：线","color":"white","bold":true}',background:0,shadow:1b,line_width:200}
+summon minecraft:text_display 208 -55.5 23 {Tags:["rfm_supply_label"],billboard:"center",alignment:"center",text:'{"translate":"rfm.text.5196e260e593","color":"gold","bold":true}',background:0,shadow:1b,line_width:200}
+summon minecraft:text_display 192 -55.5 6 {Tags:["rfm_supply_label"],billboard:"center",alignment:"center",text:'{"translate":"rfm.text.9b42d5c07cbd","color":"gray","bold":true}',background:0,shadow:1b,line_width:200}
+summon minecraft:text_display 199 -55.5 12 {Tags:["rfm_supply_label"],billboard:"center",alignment:"center",text:'{"translate":"rfm.text.1c37763126b6","color":"yellow","bold":true}',background:0,shadow:1b,line_width:200}
+summon minecraft:text_display 189 -55.5 15 {Tags:["rfm_supply_label"],billboard:"center",alignment:"center",text:'{"translate":"rfm.text.77966d1cdeb3","color":"aqua","bold":true}',background:0,shadow:1b,line_width:200}
+summon minecraft:text_display 199 -55.5 31 {Tags:["rfm_supply_label"],billboard:"center",alignment:"center",text:'{"translate":"rfm.text.4e3c21d7f764","color":"white","bold":true}',background:0,shadow:1b,line_width:200}

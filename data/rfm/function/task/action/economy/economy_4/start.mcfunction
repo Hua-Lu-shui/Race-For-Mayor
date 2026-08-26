@@ -21,9 +21,9 @@ gamemode adventure @a[tag=rfm_participant]
 tp @a[tag=rfm_participant] 195 -48 19 90 30
 tp @s 181 -58 19 -90 0
 
-tellraw @a[tag=rfm_participant] [{"text":"【经济行动】商圈巡查","color":"yellow","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]
-tellraw @a[tag=rfm_participant] [{"text":"查看","color":"white"},{"text":"五家店铺上方的缺货信息","color":"#67D5FF","bold":true},{"text":"，逐个搜索临时仓库里的箱子，找出","color":"white"},{"text":"所需物资","color":"#FFD166","bold":true},{"text":"并放入对应店铺门口的补货木桶。","color":"white"}]
+tellraw @a[tag=rfm_participant] [{"translate":"rfm.text.d38e77679758","color":"yellow","bold":true},{"translate":"rfm.text.f3bab73164c2","color":"white"},{"selector":"@s","color":"white"}]
+tellraw @a[tag=rfm_participant] [{"translate":"rfm.text.f7acefd2d4cd","color":"white"},{"translate":"rfm.text.2de1f48cb3a4","color":"#67D5FF","bold":true},{"translate":"rfm.text.e28f04252ca2","color":"white"},{"translate":"rfm.text.4521048eace5","color":"#FFD166","bold":true},{"translate":"rfm.text.a33f4fcc275d","color":"white"}]
 
 title @s clear
-title @s title {"text":"商圈巡查","color":"yellow","bold":true}
-item replace entity @s hotbar.4 with minecraft:paper[minecraft:custom_name='{"text":"准备完成","color":"yellow","bold":true,"italic":false}',minecraft:lore=['{"text":"扔出后开始任务","color":"gray","italic":false}'],minecraft:custom_data={supply_ready:1}] 1
+title @s title {"translate":"rfm.text.e0c9d49f9ac6","color":"yellow","bold":true}
+item replace entity @s hotbar.4 with minecraft:paper[minecraft:custom_name='{"translate":"rfm.text.34ffc0766113","color":"yellow","bold":true,"italic":false}',minecraft:lore=['{"translate":"rfm.text.52454e1545d8","color":"gray","italic":false}'],minecraft:custom_data={supply_ready:1}] 1

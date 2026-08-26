@@ -6,4 +6,4 @@ scoreboard players add @s economy 1
 scoreboard players add @s welfare 1
 scoreboard players add @s ecology 1
 playsound minecraft:entity.experience_orb.pickup master @s ~ ~ ~ 0.7 1.1
-tellraw @s [{"text":"【羽毛笔】","color":"green","bold":true},{"text":"你上回合没有成为行动玩家，本回合结束时四项属性各 +1。","color":"white"}]
+tellraw @s [{"translate":"rfm.text.cb0e29c5748e","color":"green","bold":true},{"translate":"rfm.text.696371b806fa","color":"white"}]

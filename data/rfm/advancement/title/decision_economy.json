@@ -1,5 +1,5 @@
 {
   "parent": "rfm:title/root",
-  "display": {"icon": {"id": "minecraft:paper", "components": {"minecraft:custom_model_data": 720003}}, "title": {"text": "城市经营者", "color": "yellow"}, "description": {"text": "连续3次选择经济决策任务｜+50票", "color": "gray"}, "frame": "goal", "show_toast": true, "announce_to_chat": false, "hidden": false},
+  "display": {"icon": {"id": "minecraft:paper", "components": {"minecraft:custom_model_data": 720003}}, "title": {"translate":"rfm.text.caf0db35833c", "color": "yellow"}, "description": {"translate":"rfm.text.81ad01e1fe44", "color": "gray"}, "frame": "goal", "show_toast": true, "announce_to_chat": false, "hidden": false},
   "criteria": {"impossible": {"trigger": "minecraft:impossible"}}
 }

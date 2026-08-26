@@ -1,5 +1,5 @@
 {
   "parent": "rfm:title/root",
-  "display": {"icon": {"id": "minecraft:paper", "components": {"minecraft:custom_model_data": 720004}}, "title": {"text": "舆论掌舵者", "color": "aqua"}, "description": {"text": "连续3次选择名誉决策任务｜+50票", "color": "gray"}, "frame": "goal", "show_toast": true, "announce_to_chat": false, "hidden": false},
+  "display": {"icon": {"id": "minecraft:paper", "components": {"minecraft:custom_model_data": 720004}}, "title": {"translate":"rfm.text.743bdd6060f7", "color": "aqua"}, "description": {"translate":"rfm.text.471a762f40c2", "color": "gray"}, "frame": "goal", "show_toast": true, "announce_to_chat": false, "hidden": false},
   "criteria": {"impossible": {"trigger": "minecraft:impossible"}}
 }

@@ -27,12 +27,12 @@ execute if score @s attribute_missing matches 4 run scoreboard players set @s at
 #允许玩家改变属性选择计分板
 scoreboard players enable @s attribute_choice
 #提示选择任务类型
-tellraw @s [{"text":"请选择本回合","color":"white"},{"text":"决策任务方向","color":"#C6A8FF","bold":true},{"text":"：","color":"white"}]
+tellraw @s [{"translate":"rfm.text.ea1ef355ebe8","color":"white"},{"translate":"rfm.text.ce211a387eac","color":"#C6A8FF","bold":true},{"text":"：","color":"white"}]
 
-execute unless score @s attribute_missing matches 1 run tellraw @s [{"text":"[名誉]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger attribute_choice set 1"}},{"text":"  影响公众形象、媒体评价、竞选声望","color":"white"}]
+execute unless score @s attribute_missing matches 1 run tellraw @s [{"translate":"rfm.text.bd30e95a8691","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger attribute_choice set 1"}},{"translate":"rfm.text.0c392f992619","color":"white"}]
 
-execute unless score @s attribute_missing matches 2 run tellraw @s [{"text":"[经济]","color":"yellow","clickEvent":{"action":"run_command","value":"/trigger attribute_choice set 2"}},{"text":"  影响财政、商业、就业和城市发展","color":"white"}]
+execute unless score @s attribute_missing matches 2 run tellraw @s [{"translate":"rfm.text.f0f3da567bf8","color":"yellow","clickEvent":{"action":"run_command","value":"/trigger attribute_choice set 2"}},{"translate":"rfm.text.5c428b0b9b6f","color":"white"}]
 
-execute unless score @s attribute_missing matches 3 run tellraw @s [{"text":"[民生]","color":"red","clickEvent":{"action":"run_command","value":"/trigger attribute_choice set 3"}},{"text":"  影响公共服务、住房、教育和生活保障","color":"white"}]
+execute unless score @s attribute_missing matches 3 run tellraw @s [{"translate":"rfm.text.ce215a169cfa","color":"red","clickEvent":{"action":"run_command","value":"/trigger attribute_choice set 3"}},{"translate":"rfm.text.60cffbb30104","color":"white"}]
 
-execute unless score @s attribute_missing matches 4 run tellraw @s [{"text":"[生态]","color":"green","clickEvent":{"action":"run_command","value":"/trigger attribute_choice set 4"}},{"text":"  影响环境、污染治理和城市宜居度","color":"white"}]
+execute unless score @s attribute_missing matches 4 run tellraw @s [{"translate":"rfm.text.2414d2fa3bd3","color":"green","clickEvent":{"action":"run_command","value":"/trigger attribute_choice set 4"}},{"translate":"rfm.text.2d387166f939","color":"white"}]

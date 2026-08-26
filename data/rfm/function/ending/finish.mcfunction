@@ -28,5 +28,5 @@ scoreboard players set #settle_state settle_state 4
 
 title @a[tag=rfm_participant] clear
 title @a[tag=rfm_participant] times 10 40 10
-title @a[tag=rfm_participant] title {"text":"统计完成","color":"gold","bold":true}
+title @a[tag=rfm_participant] title {"translate":"rfm.text.dc3c04fce25d","color":"gold","bold":true}
 schedule function rfm:ending/winner/next_mayor 60t replace

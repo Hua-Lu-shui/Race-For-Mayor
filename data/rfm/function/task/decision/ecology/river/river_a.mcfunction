@@ -2,5 +2,5 @@
 execute if score @s decision_task matches 402 run scoreboard players add @s ecology 12
 execute if score @s decision_task matches 402 run scoreboard players add @s welfare 2
 execute if score @s decision_task matches 402 run scoreboard players remove @s economy 6
-execute if score @s decision_task matches 402 run tellraw @s [{"text":"你选择了全线清淤并关闭污染排口：","color":"red"},{"text":"生态 +12","color":"green"},{"text":"，","color":"gray"},{"text":"民生 +2","color":"red"},{"text":"，","color":"gray"},{"text":"经济 -6","color":"yellow"}]
+execute if score @s decision_task matches 402 run tellraw @s [{"translate":"rfm.text.5ab160cf26b2","color":"red"},{"translate":"rfm.text.29b8e21b179b","color":"green"},{"text":"，","color":"gray"},{"translate":"rfm.text.347012d06208","color":"red"},{"text":"，","color":"gray"},{"translate":"rfm.text.e187c8894717","color":"yellow"}]
 execute if score @s decision_task matches 402 run scoreboard players set @s decision_task 0

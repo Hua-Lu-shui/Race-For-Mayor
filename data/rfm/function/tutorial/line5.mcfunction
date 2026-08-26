@@ -1,2 +1,2 @@
 #向全体玩家显示教程第5行
-tellraw @a [{"text":"不同","color":"white"},{"text":"身份","color":"#67D5FF"},{"text":"的候选人拥有不同的","color":"white"},{"text":"初始属性","color":"#FFCB77"},{"text":"和","color":"white"},{"text":"天赋","color":"#C6A8FF"}]
+tellraw @a [{"translate":"rfm.text.b3d980b349fa","color":"white"},{"translate":"rfm.text.0d0b95894332","color":"#67D5FF"},{"translate":"rfm.text.ae019db1cf50","color":"white"},{"translate":"rfm.text.79feec35a5ff","color":"#FFCB77"},{"translate":"rfm.text.9a3eb340971f","color":"white"},{"translate":"rfm.text.d83d147c7145","color":"#C6A8FF"}]

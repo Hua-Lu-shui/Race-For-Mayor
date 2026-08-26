@@ -2,5 +2,5 @@
 execute if score @s decision_task matches 115 run scoreboard players add @s fame 4
 execute if score @s decision_task matches 115 run scoreboard players add @s welfare 2
 execute if score @s decision_task matches 115 run scoreboard players remove @s economy 2
-execute if score @s decision_task matches 115 run tellraw @s [{"text":"你选择了办社区巡回小展：","color":"aqua"},{"text":"名誉 +4","color":"aqua"},{"text":"，","color":"gray"},{"text":"民生 +2","color":"red"},{"text":"，","color":"gray"},{"text":"经济 -2","color":"yellow"}]
+execute if score @s decision_task matches 115 run tellraw @s [{"translate":"rfm.text.7641f3e7566a","color":"aqua"},{"translate":"rfm.text.ddb7b732be21","color":"aqua"},{"text":"，","color":"gray"},{"translate":"rfm.text.347012d06208","color":"red"},{"text":"，","color":"gray"},{"translate":"rfm.text.78f8777cc0a3","color":"yellow"}]
 execute if score @s decision_task matches 115 run scoreboard players set @s decision_task 0

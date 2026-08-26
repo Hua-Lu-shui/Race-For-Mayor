@@ -2,5 +2,5 @@
 execute if score @s decision_task matches 304 run scoreboard players add @s welfare 6
 execute if score @s decision_task matches 304 run scoreboard players remove @s ecology 2
 execute if score @s decision_task matches 304 run scoreboard players remove @s economy 6
-execute if score @s decision_task matches 304 run tellraw @s [{"text":"你选择了大幅增加公交线路：","color":"red"},{"text":"民生 +6","color":"red"},{"text":"，","color":"gray"},{"text":"生态 -2","color":"green"},{"text":"，","color":"gray"},{"text":"经济 -6","color":"yellow"}]
+execute if score @s decision_task matches 304 run tellraw @s [{"translate":"rfm.text.5cddf4005cf1","color":"red"},{"translate":"rfm.text.37adbac8f2b5","color":"red"},{"text":"，","color":"gray"},{"translate":"rfm.text.08597c9fb827","color":"green"},{"text":"，","color":"gray"},{"translate":"rfm.text.e187c8894717","color":"yellow"}]
 execute if score @s decision_task matches 304 run scoreboard players set @s decision_task 0

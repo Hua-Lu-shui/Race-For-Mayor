@@ -7,5 +7,5 @@ scoreboard players set @a[tag=rfm_participant] group_finished 0
 clear @a[tag=rfm_participant] minecraft:paper[minecraft:custom_data={collective_start_ready:1}]
 kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{collective_start_ready:1}}}}]
 effect clear @a[tag=rfm_participant] minecraft:levitation
-title @a[tag=rfm_participant] title {"text":"见缝插针","color":"light_purple","bold":true}
+title @a[tag=rfm_participant] title {"translate":"rfm.text.7c5820266a97","color":"light_purple","bold":true}
 schedule function rfm:collective/game/needle_gap/countdown_3 20t replace

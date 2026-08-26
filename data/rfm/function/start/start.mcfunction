@@ -164,7 +164,7 @@ kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{sett
 clear @a minecraft:heart_of_the_sea[minecraft:custom_data~{rfm_item:1}]
 kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{rfm_item:1}}}}]
 #传送前戴上全黑南瓜遮罩，避免玩家看到办公室传送和区块加载过程
-item replace entity @a armor.head with minecraft:carved_pumpkin[minecraft:custom_name='{"text":"转场遮罩","color":"black","italic":false}',minecraft:custom_data={rfm_ending_blackout:1}] 1
+item replace entity @a armor.head with minecraft:carved_pumpkin[minecraft:custom_name='{"translate":"rfm.text.ea82ecabfdaf","color":"black","italic":false}',minecraft:custom_data={rfm_ending_blackout:1}] 1
 #在黑屏遮罩下分配房间并传送
 function rfm:room/assign
 #抵达办公室一秒后揭开画面

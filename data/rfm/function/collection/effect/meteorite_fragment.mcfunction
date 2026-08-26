@@ -1,5 +1,5 @@
 #“陨石碎片”：回合开始时，将最高属性的数值赋予随机一项未锁定的并列最低属性
-execute unless score @s collection_slot1 matches 30 unless score @s collection_slot2 matches 30 unless score @s collection_slot3 matches 30 run return 0
+execute unless score @s collection_slot1 matches 30 unless score @s collection_slot2 matches 30 unless score @s collection_slot3 matches 30 unless score @s collection_slot4 matches 30 unless score @s collection_slot5 matches 30 run return 0
 function rfm:attribute/lock/enforce
 scoreboard players operation @s collection_effect_value = @s fame
 execute if score @s economy > @s collection_effect_value run scoreboard players operation @s collection_effect_value = @s economy
@@ -22,4 +22,4 @@ execute if score @s collection_effect_pick matches 3 run scoreboard players oper
 execute if score @s collection_effect_pick matches 4 run scoreboard players operation @s ecology = @s collection_effect_value
 function rfm:attribute/minimum
 playsound minecraft:entity.firework_rocket.large_blast master @s ~ ~ ~ 0.7 0.7
-tellraw @s [{"text":"【陨石碎片】","color":"gold","bold":true},{"text":"本回合开始，已将最高属性的数值赋予最低属性。","color":"white"}]
+tellraw @s [{"translate":"rfm.text.70b1b12c252d","color":"gold","bold":true},{"translate":"rfm.text.b61b6a6a50b3","color":"white"}]

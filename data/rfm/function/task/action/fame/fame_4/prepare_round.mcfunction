@@ -8,4 +8,4 @@ scoreboard players set @s qa_armed 0
 scoreboard players set @s qa_state 1
 effect clear @e[type=minecraft:villager,tag=rfm_qa_reporter] minecraft:glowing
 playsound minecraft:block.note_block.pling master @a[tag=rfm_participant] 204 -58 -21 1 1.6 1
-title @s actionbar {"text":"记者开始提问！转向后重新按下潜行！","color":"yellow","bold":true}
+title @s actionbar {"translate":"rfm.text.30598640dd40","color":"yellow","bold":true}

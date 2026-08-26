@@ -19,6 +19,6 @@ scoreboard players operation #final_lowest_welfare welfare < @a[tag=rfm_particip
 scoreboard players operation #final_lowest_ecology ecology < @a[tag=rfm_participant] ecology
 execute as @a[tag=rfm_participant] run function rfm:ending/calculate
 title @a[tag=rfm_participant] times 5 50 10
-title @a[tag=rfm_participant] title {"text":"最终票数统计","color":"gold","bold":true}
-tellraw @a[tag=rfm_participant] {"text":"所有候选人已抵达市政厅。最终票数统计现在开始。","color":"light_purple","bold":true}
+title @a[tag=rfm_participant] title {"translate":"rfm.text.adfb7a009b5b","color":"gold","bold":true}
+tellraw @a[tag=rfm_participant] {"translate":"rfm.text.7645f4f2b711","color":"light_purple","bold":true}
 schedule function rfm:ending/next_player 50t replace

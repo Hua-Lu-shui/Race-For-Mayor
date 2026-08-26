@@ -4,4 +4,4 @@ execute if score @s supply_order matches 1 run data remove block 199 -58 31 Item
 execute if score @s supply_order matches 2 run data remove block 199 -58 31 Items[{id:"minecraft:leather"}]
 execute if score @s supply_order matches 3 run data remove block 199 -58 31 Items[{id:"minecraft:string"}]
 playsound minecraft:entity.experience_orb.pickup master @a[tag=rfm_participant] ~ ~ ~ 1 1.2 1
-tellraw @a[tag=rfm_participant] {"text":"裁缝店补货完成！","color":"green"}
+tellraw @a[tag=rfm_participant] {"translate":"rfm.text.ede48f32c8d0","color":"green"}

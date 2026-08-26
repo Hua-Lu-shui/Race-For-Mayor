@@ -2,5 +2,5 @@
 execute if score @s decision_task matches 420 run scoreboard players remove @s ecology 6
 execute if score @s decision_task matches 420 run scoreboard players add @s economy 6
 execute if score @s decision_task matches 420 run scoreboard players add @s welfare 2
-execute if score @s decision_task matches 420 run tellraw @s [{"text":"你选择了继续由承包商自行处理：","color":"green"},{"text":"生态 -6","color":"green"},{"text":"，","color":"gray"},{"text":"经济 +6","color":"yellow"},{"text":"，","color":"gray"},{"text":"民生 +2","color":"red"}]
+execute if score @s decision_task matches 420 run tellraw @s [{"translate":"rfm.text.af43328e440c","color":"green"},{"translate":"rfm.text.678f248e3e4f","color":"green"},{"text":"，","color":"gray"},{"translate":"rfm.text.aff427681eb7","color":"yellow"},{"text":"，","color":"gray"},{"translate":"rfm.text.347012d06208","color":"red"}]
 execute if score @s decision_task matches 420 run scoreboard players set @s decision_task 0

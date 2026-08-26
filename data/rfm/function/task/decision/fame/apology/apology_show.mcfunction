@@ -1,8 +1,8 @@
 #展示名誉决策任务的背景和三个可选方案
 scoreboard players set @s decision_choice 0
 scoreboard players enable @s decision_choice
-tellraw @s {"text":"【名誉决策】公开道歉","color":"gold","bold":true}
-tellraw @s {"text":"旧城区改造承诺迟迟没有兑现，居民在公开会上要求你正面回应。一次道歉可能挽回信任，也可能被对手攻击软弱。","color":"white"}
-tellraw @s [{"text":"[激进] 主动承认并给出补偿","color":"red","clickEvent":{"action":"run_command","value":"/trigger decision_choice set 1"}}]
-tellraw @s [{"text":"[折中] 解释原因并公布时间表","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger decision_choice set 2"}}]
-tellraw @s [{"text":"[保守] 强调客观困难","color":"green","clickEvent":{"action":"run_command","value":"/trigger decision_choice set 3"}}]
+tellraw @s {"translate":"rfm.text.f8127877f8e2","color":"gold","bold":true}
+tellraw @s {"translate":"rfm.text.a1e2fbe1bfc5","color":"white"}
+tellraw @s [{"translate":"rfm.text.fd93148063de","color":"red","clickEvent":{"action":"run_command","value":"/trigger decision_choice set 1"}}]
+tellraw @s [{"translate":"rfm.text.2cba32e61a0d","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger decision_choice set 2"}}]
+tellraw @s [{"translate":"rfm.text.01a65ca88101","color":"green","clickEvent":{"action":"run_command","value":"/trigger decision_choice set 3"}}]

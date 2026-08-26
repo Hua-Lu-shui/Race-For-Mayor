@@ -4,4 +4,4 @@ execute if score @s economy >= @s fame if score @s economy >= @s welfare if scor
 execute if score @s ability_trigger matches 1 unless score @s fame_lock matches 1 run scoreboard players add @s fame 1
 execute if score @s ability_trigger matches 1 unless score @s welfare_lock matches 1 run scoreboard players add @s welfare 1
 execute if score @s ability_trigger matches 1 unless score @s ecology_lock matches 1 run scoreboard players add @s ecology 1
-execute if score @s ability_trigger matches 1 run tellraw @s [{"text":"【富人思维】","color":"yellow","bold":true},{"text":"本回合开始时经济为最高属性，其余属性 +1。","color":"white"}]
+execute if score @s ability_trigger matches 1 run tellraw @s [{"translate":"rfm.text.bbbe0403012e","color":"yellow","bold":true},{"translate":"rfm.text.73fdacf16d29","color":"white"}]

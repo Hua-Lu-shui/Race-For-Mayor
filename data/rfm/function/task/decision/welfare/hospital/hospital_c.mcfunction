@@ -1,5 +1,5 @@
 #执行民生决策任务的C方案并结算属性
 execute if score @s decision_task matches 301 run scoreboard players add @s economy 4
 execute if score @s decision_task matches 301 run scoreboard players remove @s welfare 4
-execute if score @s decision_task matches 301 run tellraw @s [{"text":"你选择了优化预约流程：","color":"green"},{"text":"经济 +4","color":"yellow"},{"text":"，","color":"gray"},{"text":"民生 -4","color":"red"}]
+execute if score @s decision_task matches 301 run tellraw @s [{"translate":"rfm.text.0ec5a84fedbb","color":"green"},{"translate":"rfm.text.be96e443c44f","color":"yellow"},{"text":"，","color":"gray"},{"translate":"rfm.text.fbddb2b05628","color":"red"}]
 execute if score @s decision_task matches 301 run scoreboard players set @s decision_task 0

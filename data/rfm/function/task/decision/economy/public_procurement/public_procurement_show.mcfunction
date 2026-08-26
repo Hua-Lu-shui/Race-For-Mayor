@@ -1,8 +1,8 @@
 #展示经济决策任务的背景和三个可选方案
 scoreboard players set @s decision_choice 0
 scoreboard players enable @s decision_choice
-tellraw @s {"text":"【经济决策】政府采购","color":"gold","bold":true}
-tellraw @s {"text":"市政采购即将更新规则。选择本地企业能保护就业，公开竞价能降低成本，但两者很难完全兼得。","color":"white"}
-tellraw @s [{"text":"[激进] 优先本地企业","color":"red","clickEvent":{"action":"run_command","value":"/trigger decision_choice set 1"}}]
-tellraw @s [{"text":"[折中] 本地加分公开竞价","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger decision_choice set 2"}}]
-tellraw @s [{"text":"[保守] 完全最低价中标","color":"green","clickEvent":{"action":"run_command","value":"/trigger decision_choice set 3"}}]
+tellraw @s {"translate":"rfm.text.3218a264eaf6","color":"gold","bold":true}
+tellraw @s {"translate":"rfm.text.1569bc76204a","color":"white"}
+tellraw @s [{"translate":"rfm.text.a7ec1df5445a","color":"red","clickEvent":{"action":"run_command","value":"/trigger decision_choice set 1"}}]
+tellraw @s [{"translate":"rfm.text.27f9b7643ee2","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger decision_choice set 2"}}]
+tellraw @s [{"translate":"rfm.text.c96eaf6eb7a0","color":"green","clickEvent":{"action":"run_command","value":"/trigger decision_choice set 3"}}]

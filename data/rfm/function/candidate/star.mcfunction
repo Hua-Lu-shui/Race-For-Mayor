@@ -10,6 +10,6 @@ scoreboard players set @s ecology 6
 function rfm:attribute/minimum
 
 title @s times 10 40 0
-title @s title [{"text":"你选择了：","color":"white"},{"text":"明星","color":"aqua"}]
-title @s subtitle [{"text":"名誉:15","color":"aqua"},{"text":" 经济:12","color":"yellow"},{"text":" 生态:6","color":"green"},{"text":" 民生:7","color":"red"}]
-tellraw @s [{"text":"【粉丝效应】","color":"aqua","bold":true},{"text":"回合结束时，返还因任务而降低的除名誉外的属性。","color":"white"}]
+title @s title [{"translate":"rfm.text.29c85476c04c","color":"white"},{"translate":"rfm.text.69ed896366d3","color":"aqua"}]
+title @s subtitle [{"translate":"rfm.text.61ab3a096d8a","color":"aqua"},{"translate":"rfm.text.90365ab5a3fe","color":"yellow"},{"translate":"rfm.text.a0bc7296e106","color":"green"},{"translate":"rfm.text.6a0bf085f4e5","color":"red"}]
+tellraw @s [{"translate":"rfm.text.dda2f374dd38","color":"aqua","bold":true},{"translate":"rfm.text.ccdd0cdc6a51","color":"white"}]

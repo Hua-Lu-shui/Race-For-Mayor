@@ -2,5 +2,5 @@
 execute if score @s decision_task matches 416 run scoreboard players remove @s ecology 6
 execute if score @s decision_task matches 416 run scoreboard players add @s economy 6
 execute if score @s decision_task matches 416 run scoreboard players add @s welfare 2
-execute if score @s decision_task matches 416 run tellraw @s [{"text":"你选择了只发布自愿节制倡议：","color":"green"},{"text":"生态 -6","color":"green"},{"text":"，","color":"gray"},{"text":"经济 +6","color":"yellow"},{"text":"，","color":"gray"},{"text":"民生 +2","color":"red"}]
+execute if score @s decision_task matches 416 run tellraw @s [{"translate":"rfm.text.d7dab73d2abb","color":"green"},{"translate":"rfm.text.678f248e3e4f","color":"green"},{"text":"，","color":"gray"},{"translate":"rfm.text.aff427681eb7","color":"yellow"},{"text":"，","color":"gray"},{"translate":"rfm.text.347012d06208","color":"red"}]
 execute if score @s decision_task matches 416 run scoreboard players set @s decision_task 0

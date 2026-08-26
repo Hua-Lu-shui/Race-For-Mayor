@@ -10,6 +10,6 @@ scoreboard players set @s ecology 7
 function rfm:attribute/minimum
 
 title @s times 10 40 0
-title @s title [{"text":"你选择了：","color":"white"},{"text":"律师","color":"light_purple"}]
-title @s subtitle [{"text":"名誉:11","color":"aqua"},{"text":" 经济:11","color":"yellow"},{"text":" 生态:7","color":"green"},{"text":" 民生:11","color":"red"}]
-tellraw @s [{"text":"【维权意识】","color":"light_purple","bold":true},{"text":"不会成为属性互换令牌的目标。","color":"white"}]
+title @s title [{"translate":"rfm.text.29c85476c04c","color":"white"},{"translate":"rfm.text.786c0074d224","color":"light_purple"}]
+title @s subtitle [{"translate":"rfm.text.1a3d9cecfa98","color":"aqua"},{"translate":"rfm.text.ef49f203e8b8","color":"yellow"},{"translate":"rfm.text.675c0066a917","color":"green"},{"translate":"rfm.text.dffbeaa284ca","color":"red"}]
+tellraw @s [{"translate":"rfm.text.df0be2cf860b","color":"light_purple","bold":true},{"translate":"rfm.text.15b3817cbd97","color":"white"}]

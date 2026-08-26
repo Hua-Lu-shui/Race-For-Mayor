@@ -10,6 +10,6 @@ scoreboard players set @s ecology 8
 function rfm:attribute/minimum
 
 title @s times 10 40 0
-title @s title [{"text":"你选择了：","color":"white"},{"text":"社区领袖","color":"red"}]
-title @s subtitle [{"text":"名誉:11","color":"aqua"},{"text":" 经济:7","color":"yellow"},{"text":" 生态:8","color":"green"},{"text":" 民生:14","color":"red"}]
-tellraw @s [{"text":"【得道多助】","color":"red","bold":true},{"text":"最终结算时，将民生赋予最低属性。","color":"white"}]
+title @s title [{"translate":"rfm.text.29c85476c04c","color":"white"},{"translate":"rfm.text.a64d79f9cbf2","color":"red"}]
+title @s subtitle [{"translate":"rfm.text.1a3d9cecfa98","color":"aqua"},{"translate":"rfm.text.2dfdd698be4e","color":"yellow"},{"translate":"rfm.text.c818830c0aed","color":"green"},{"translate":"rfm.text.8fd25b3a5257","color":"red"}]
+tellraw @s [{"translate":"rfm.text.85dbbc2be30a","color":"red","bold":true},{"translate":"rfm.text.bc50361854ad","color":"white"}]

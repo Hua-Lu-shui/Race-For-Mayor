@@ -8,7 +8,7 @@ execute if score @s collection_attr matches 4 run scoreboard players add @s ecol
 function rfm:attribute/lock/enforce
 function rfm:attribute/minimum
 playsound minecraft:block.amethyst_block.resonate master @s ~ ~ ~ 0.7 0.7
-execute if score @s collection_attr matches 1 run tellraw @s [{"text":"【玉玺】","color":"light_purple","bold":true},{"text":"你有属性处于领先，当前最高属性名誉 +8。","color":"white"}]
-execute if score @s collection_attr matches 2 run tellraw @s [{"text":"【玉玺】","color":"light_purple","bold":true},{"text":"你有属性处于领先，当前最高属性经济 +8。","color":"white"}]
-execute if score @s collection_attr matches 3 run tellraw @s [{"text":"【玉玺】","color":"light_purple","bold":true},{"text":"你有属性处于领先，当前最高属性民生 +8。","color":"white"}]
-execute if score @s collection_attr matches 4 run tellraw @s [{"text":"【玉玺】","color":"light_purple","bold":true},{"text":"你有属性处于领先，当前最高属性生态 +8。","color":"white"}]
+execute if score @s collection_attr matches 1 run tellraw @s [{"translate":"rfm.text.693855af1806","color":"light_purple","bold":true},{"translate":"rfm.text.1506b0ca3da6","color":"white"}]
+execute if score @s collection_attr matches 2 run tellraw @s [{"translate":"rfm.text.693855af1806","color":"light_purple","bold":true},{"translate":"rfm.text.7f05016da8c5","color":"white"}]
+execute if score @s collection_attr matches 3 run tellraw @s [{"translate":"rfm.text.693855af1806","color":"light_purple","bold":true},{"translate":"rfm.text.f2f68e47beb9","color":"white"}]
+execute if score @s collection_attr matches 4 run tellraw @s [{"translate":"rfm.text.693855af1806","color":"light_purple","bold":true},{"translate":"rfm.text.4dc040b94e49","color":"white"}]

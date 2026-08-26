@@ -2,5 +2,5 @@
 execute if score @s decision_task matches 409 run scoreboard players add @s economy 8
 execute if score @s decision_task matches 409 run scoreboard players remove @s ecology 2
 execute if score @s decision_task matches 409 run scoreboard players remove @s fame 2
-execute if score @s decision_task matches 409 run tellraw @s [{"text":"你选择了维持月度报告：","color":"green"},{"text":"经济 +8","color":"yellow"},{"text":"，","color":"gray"},{"text":"生态 -2","color":"green"},{"text":"，","color":"gray"},{"text":"名誉 -2","color":"aqua"}]
+execute if score @s decision_task matches 409 run tellraw @s [{"translate":"rfm.text.4ad64bb40141","color":"green"},{"translate":"rfm.text.9f3dca44000b","color":"yellow"},{"text":"，","color":"gray"},{"translate":"rfm.text.08597c9fb827","color":"green"},{"text":"，","color":"gray"},{"translate":"rfm.text.7cd41714bcfc","color":"aqua"}]
 execute if score @s decision_task matches 409 run scoreboard players set @s decision_task 0

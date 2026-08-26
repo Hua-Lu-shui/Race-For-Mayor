@@ -1,8 +1,8 @@
 #展示民生决策任务的背景和三个可选方案
 scoreboard players set @s decision_choice 0
 scoreboard players enable @s decision_choice
-tellraw @s {"text":"【民生决策】无障碍改造","color":"gold","bold":true}
-tellraw @s {"text":"残障居民反映公共设施无障碍不足。改造范围越大，公平感越强，但预算压力也越明显。","color":"white"}
-tellraw @s [{"text":"[激进] 全面改造公共设施","color":"red","clickEvent":{"action":"run_command","value":"/trigger decision_choice set 1"}}]
-tellraw @s [{"text":"[折中] 优先改造医院车站","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger decision_choice set 2"}}]
-tellraw @s [{"text":"[保守] 只修复投诉点位","color":"green","clickEvent":{"action":"run_command","value":"/trigger decision_choice set 3"}}]
+tellraw @s {"translate":"rfm.text.6ebfede9a3e3","color":"gold","bold":true}
+tellraw @s {"translate":"rfm.text.78a84d95833a","color":"white"}
+tellraw @s [{"translate":"rfm.text.d76d02908d74","color":"red","clickEvent":{"action":"run_command","value":"/trigger decision_choice set 1"}}]
+tellraw @s [{"translate":"rfm.text.5411f976ffd5","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger decision_choice set 2"}}]
+tellraw @s [{"translate":"rfm.text.074fb6696847","color":"green","clickEvent":{"action":"run_command","value":"/trigger decision_choice set 3"}}]

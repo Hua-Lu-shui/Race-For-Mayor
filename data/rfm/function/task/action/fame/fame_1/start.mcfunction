@@ -36,9 +36,9 @@ gamemode adventure @a[tag=rfm_participant]
 tp @a[tag=rfm_participant] 119 -52 -17 180 30
 tp @s 119 -58 -18 180 0
 
-tellraw @a[tag=rfm_participant] [{"text":"【名誉行动】街头演讲","color":"aqua","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]
-tellraw @a[tag=rfm_participant] [{"text":"共进行","color":"white"},{"text":"10次临场反应","color":"#67D5FF","bold":true},{"text":"，每次只有","color":"white"},{"text":"1.5秒","color":"#FFCB77","bold":true},{"text":"。愤怒粒子按“安抚情绪”，烟雾粒子按“补充说明”，音符粒子按“坚定承诺”。","color":"white"}]
+tellraw @a[tag=rfm_participant] [{"translate":"rfm.text.fbbcb292e42e","color":"aqua","bold":true},{"translate":"rfm.text.f3bab73164c2","color":"white"},{"selector":"@s","color":"white"}]
+tellraw @a[tag=rfm_participant] [{"translate":"rfm.text.ee78e4bff0ee","color":"white"},{"translate":"rfm.text.3fe7ebf4a42d","color":"#67D5FF","bold":true},{"translate":"rfm.text.676d9965245e","color":"white"},{"translate":"rfm.text.799d31ae53f6","color":"#FFCB77","bold":true},{"translate":"rfm.text.c8ee371bf430","color":"white"}]
 
 title @s clear
-title @s title {"text":"街头演讲","color":"aqua","bold":true}
-item replace entity @s hotbar.4 with minecraft:paper[minecraft:custom_name='{"text":"准备完成","color":"aqua","bold":true,"italic":false}',minecraft:lore=['{"text":"扔出后开始任务","color":"gray","italic":false}'],minecraft:custom_data={speech_ready:1}] 1
+title @s title {"translate":"rfm.text.4ac31a4c067b","color":"aqua","bold":true}
+item replace entity @s hotbar.4 with minecraft:paper[minecraft:custom_name='{"translate":"rfm.text.34ffc0766113","color":"aqua","bold":true,"italic":false}',minecraft:lore=['{"translate":"rfm.text.52454e1545d8","color":"gray","italic":false}'],minecraft:custom_data={speech_ready:1}] 1

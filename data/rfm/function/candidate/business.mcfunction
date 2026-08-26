@@ -10,6 +10,6 @@ scoreboard players set @s ecology 6
 function rfm:attribute/minimum
 
 title @s times 10 40 0
-title @s title [{"text":"你选择了：","color":"white"},{"text":"企业家","color":"yellow"}]
-title @s subtitle [{"text":"名誉:11","color":"aqua"},{"text":" 经济:15","color":"yellow"},{"text":" 生态:6","color":"green"},{"text":" 民生:8","color":"red"}]
-tellraw @s [{"text":"【富人思维】","color":"yellow","bold":true},{"text":"回合开始时，若经济为最高属性，则其余属性 +1。","color":"white"}]
+title @s title [{"translate":"rfm.text.29c85476c04c","color":"white"},{"translate":"rfm.text.b91aed4fedef","color":"yellow"}]
+title @s subtitle [{"translate":"rfm.text.1a3d9cecfa98","color":"aqua"},{"translate":"rfm.text.86a2a5228633","color":"yellow"},{"translate":"rfm.text.a0bc7296e106","color":"green"},{"translate":"rfm.text.223dc71ecac8","color":"red"}]
+tellraw @s [{"translate":"rfm.text.bbbe0403012e","color":"yellow","bold":true},{"translate":"rfm.text.2e9b7c8a9107","color":"white"}]

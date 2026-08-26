@@ -118,3 +118,12 @@ execute if score @s collection_offer matches 38 run scoreboard players set @s co
 #藏品39“名贵的巧克力”：所有属性-2
 execute if score @s collection_offer matches 39 run scoreboard players set @s collection_attr 6
 execute if score @s collection_offer matches 39 run scoreboard players set @s collection_cost 2
+#藏品40“冠军奖杯”：所有属性-3
+execute if score @s collection_offer matches 40 run scoreboard players set @s collection_attr 6
+execute if score @s collection_offer matches 40 run scoreboard players set @s collection_cost 3
+#藏品41“显微镜”：当前最高属性-5
+execute if score @s collection_offer matches 41 run scoreboard players set @s collection_attr 5
+execute if score @s collection_offer matches 41 run scoreboard players set @s collection_cost 5
+#藏品42“天平”：当前最高与最低属性-4
+execute if score @s collection_offer matches 42 run scoreboard players set @s collection_attr 7
+execute if score @s collection_offer matches 42 run scoreboard players set @s collection_cost 4

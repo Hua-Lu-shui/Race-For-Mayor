@@ -4,9 +4,9 @@ setblock 144 -57 22 minecraft:stone_button[face=floor,facing=west,powered=false]
 setblock 144 -57 20 minecraft:stone_button[face=floor,facing=west,powered=false] replace
 
 execute if score @s negotiation_answer = @s negotiation_category run scoreboard players add @s negotiation_correct 1
-execute if score @s negotiation_answer = @s negotiation_category run tellraw @a[tag=rfm_participant] {"text":"选择正确，扶持方案符合企业需求！","color":"green","bold":true}
+execute if score @s negotiation_answer = @s negotiation_category run tellraw @a[tag=rfm_participant] {"translate":"rfm.text.5dcba5ee6269","color":"green","bold":true}
 execute if score @s negotiation_answer = @s negotiation_category run playsound minecraft:entity.experience_orb.pickup master @a[tag=rfm_participant] ~ ~ ~ 1 1.2 1
-execute unless score @s negotiation_answer = @s negotiation_category run tellraw @a[tag=rfm_participant] {"text":"选择错误，这项方案没有解决企业当前的问题。","color":"red","bold":true}
+execute unless score @s negotiation_answer = @s negotiation_category run tellraw @a[tag=rfm_participant] {"translate":"rfm.text.5195a7b0e46f","color":"red","bold":true}
 execute unless score @s negotiation_answer = @s negotiation_category run playsound minecraft:entity.villager.no master @a[tag=rfm_participant] ~ ~ ~ 1 1 1
 
 scoreboard players add @s negotiation_round 1

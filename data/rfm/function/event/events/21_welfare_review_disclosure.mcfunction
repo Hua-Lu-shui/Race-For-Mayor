@@ -2,8 +2,8 @@
 scoreboard players set #event_21 event_used 1
 scoreboard players set #reveal_welfare leader_reveal 1
 title @a[tag=rfm_participant] times 10 80 20
-title @a[tag=rfm_participant] title {"text":"民生评议公开","color":"red","bold":true}
-title @a[tag=rfm_participant] subtitle {"text":"民生领先者将永久公开","color":"white","bold":true}
-tellraw @a[tag=rfm_participant] {"text":"【事件】民生评议公开","color":"red","bold":true}
-tellraw @a[tag=rfm_participant] [{"text":"【事件背景】","color":"gold","bold":true},{"text":"社区联合发布公共服务评议榜，医疗、教育、交通与保障工作的领先候选人将持续公示。","color":"white"}]
-tellraw @a[tag=rfm_participant] [{"text":"【事件影响】","color":"yellow","bold":true},{"text":"从本轮属性公示起，本局剩余时间将永久显示民生领先者。","color":"white"}]
+title @a[tag=rfm_participant] title {"translate":"rfm.text.2950957357bf","color":"red","bold":true}
+title @a[tag=rfm_participant] subtitle {"translate":"rfm.text.9cc161e1bb15","color":"white","bold":true}
+tellraw @a[tag=rfm_participant] {"translate":"rfm.text.9d1c3b5e654c","color":"red","bold":true}
+tellraw @a[tag=rfm_participant] [{"translate":"rfm.text.dd46bd7444bb","color":"gold","bold":true},{"translate":"rfm.text.1e5749e9a516","color":"white"}]
+tellraw @a[tag=rfm_participant] [{"translate":"rfm.text.a6f273449c10","color":"yellow","bold":true},{"translate":"rfm.text.031b01b6d69b","color":"white"}]

@@ -17,11 +17,11 @@ execute as @a[tag=rfm_participant] if score @s economy = #peek_economy economy r
 execute as @a[tag=rfm_participant] if score @s welfare = #peek_welfare welfare run tag @s add rfm_peek_welfare
 execute as @a[tag=rfm_participant] if score @s ecology = #peek_ecology ecology run tag @s add rfm_peek_ecology
 
-tellraw @s {"text":"【属性窥探】当前属性领先者","color":"light_purple","bold":true}
-tellraw @s [{"text":"名誉领先：","color":"aqua","bold":true},{"selector":"@a[tag=rfm_participant,tag=rfm_peek_fame]","separator":{"text":"、","color":"gray"},"color":"white","bold":true}]
-tellraw @s [{"text":"经济领先：","color":"yellow","bold":true},{"selector":"@a[tag=rfm_participant,tag=rfm_peek_economy]","separator":{"text":"、","color":"gray"},"color":"white","bold":true}]
-tellraw @s [{"text":"民生领先：","color":"red","bold":true},{"selector":"@a[tag=rfm_participant,tag=rfm_peek_welfare]","separator":{"text":"、","color":"gray"},"color":"white","bold":true}]
-tellraw @s [{"text":"生态领先：","color":"green","bold":true},{"selector":"@a[tag=rfm_participant,tag=rfm_peek_ecology]","separator":{"text":"、","color":"gray"},"color":"white","bold":true}]
+tellraw @s {"translate":"rfm.text.ec64add60eb0","color":"light_purple","bold":true}
+tellraw @s [{"translate":"rfm.text.1135de09521e","color":"aqua","bold":true},{"selector":"@a[tag=rfm_participant,tag=rfm_peek_fame]","separator":{"text":"、","color":"gray"},"color":"white","bold":true}]
+tellraw @s [{"translate":"rfm.text.713ebb365fdb","color":"yellow","bold":true},{"selector":"@a[tag=rfm_participant,tag=rfm_peek_economy]","separator":{"text":"、","color":"gray"},"color":"white","bold":true}]
+tellraw @s [{"translate":"rfm.text.7fdb91a8120c","color":"red","bold":true},{"selector":"@a[tag=rfm_participant,tag=rfm_peek_welfare]","separator":{"text":"、","color":"gray"},"color":"white","bold":true}]
+tellraw @s [{"translate":"rfm.text.b18676ac7795","color":"green","bold":true},{"selector":"@a[tag=rfm_participant,tag=rfm_peek_ecology]","separator":{"text":"、","color":"gray"},"color":"white","bold":true}]
 
 tag @a[tag=rfm_participant] remove rfm_peek_fame
 tag @a[tag=rfm_participant] remove rfm_peek_economy

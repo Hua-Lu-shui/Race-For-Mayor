@@ -38,4 +38,4 @@ execute if score @s trash_item_id matches 8 run item replace entity @s hotbar.4 
 execute if score @s trash_item_id matches 9 run item replace entity @s hotbar.4 with minecraft:brick[minecraft:custom_data={trash_item:1}] 1
 execute if score @s trash_item_id matches 10 run item replace entity @s hotbar.4 with minecraft:leather[minecraft:custom_data={trash_item:1}] 1
 
-title @s actionbar [{"text":"已完成 ","color":"white"},{"score":{"name":"@s","objective":"trash_round"},"color":"yellow"},{"text":" / 10 件：请把手中物品放进正确的箱子","color":"white"}]
+title @s actionbar [{"translate":"rfm.text.6666f97c70c8","color":"white"},{"score":{"name":"@s","objective":"trash_round"},"color":"yellow"},{"translate":"rfm.text.47f8e2250602","color":"white"}]

@@ -1,2 +1,2 @@
 #向全体玩家显示教程第4行
-tellraw @a [{"text":"名誉","color":"aqua"},{"text":"，","color":"white"},{"text":"经济","color":"yellow"},{"text":"，","color":"white"},{"text":"民生","color":"red"},{"text":"，","color":"white"},{"text":"生态","color":"green"},{"text":"四项属性是竞选中的","color":"white"},{"text":"重要标准","color":"white"}]
+tellraw @a [{"translate":"rfm.text.dc04a5799df2","color":"aqua"},{"text":"，","color":"white"},{"translate":"rfm.text.cd0bf6887da7","color":"yellow"},{"text":"，","color":"white"},{"translate":"rfm.text.318edbd5be8f","color":"red"},{"text":"，","color":"white"},{"translate":"rfm.text.014a015ae588","color":"green"},{"translate":"rfm.text.596656db3f79","color":"white"},{"translate":"rfm.text.8d0ccb3cedb7","color":"white"}]

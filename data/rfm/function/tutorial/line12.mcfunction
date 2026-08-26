@@ -1,2 +1,2 @@
 #向全体玩家显示教程第12行
-tellraw @a [{"text":"达成某些","color":"white"},{"text":"特定条件","color":"white"},{"text":"后，还会获得","color":"white"},{"text":"头衔","color":"#C6A8FF"},{"text":"，头衔能在","color":"white"},{"text":"最终结算","color":"white"},{"text":"时给予你额外加成","color":"white"}]
+tellraw @a [{"translate":"rfm.text.c6a36138b3f6","color":"white"},{"translate":"rfm.text.cb5790f321c1","color":"white"},{"translate":"rfm.text.ddf31ade9839","color":"white"},{"translate":"rfm.text.05f35561beb4","color":"#C6A8FF"},{"translate":"rfm.text.823ab3703778","color":"white"},{"translate":"rfm.text.4ba94afc00bf","color":"white"},{"translate":"rfm.text.6c441cb4f865","color":"white"}]

@@ -4,4 +4,4 @@ execute if score @s supply_order matches 1 run data remove block 208 -58 23 Item
 execute if score @s supply_order matches 2 run data remove block 208 -58 23 Items[{id:"minecraft:egg"}]
 execute if score @s supply_order matches 3 run data remove block 208 -58 23 Items[{id:"minecraft:milk_bucket"}]
 playsound minecraft:entity.experience_orb.pickup master @a[tag=rfm_participant] ~ ~ ~ 1 1.2 1
-tellraw @a[tag=rfm_participant] {"text":"面包店补货完成！","color":"green"}
+tellraw @a[tag=rfm_participant] {"translate":"rfm.text.b417fb9a82fc","color":"green"}

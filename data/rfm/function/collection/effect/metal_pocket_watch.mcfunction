@@ -1,5 +1,5 @@
 #“金属怀表”：回合结束时，将经济与最高属性互换；经济本身最高时不交换
-execute unless score @s collection_slot1 matches 3 unless score @s collection_slot2 matches 3 unless score @s collection_slot3 matches 3 run return 0
+execute unless score @s collection_slot1 matches 3 unless score @s collection_slot2 matches 3 unless score @s collection_slot3 matches 3 unless score @s collection_slot4 matches 3 unless score @s collection_slot5 matches 3 run return 0
 function rfm:attribute/lock/enforce
 execute if score @s economy_lock matches 1 run return 0
 
@@ -39,7 +39,7 @@ execute if score @s collection_effect_pick matches 3 run scoreboard players oper
 execute if score @s collection_effect_pick matches 4 run scoreboard players operation @s economy = @s ecology
 execute if score @s collection_effect_pick matches 4 run scoreboard players operation @s ecology = @s collection_effect_value
 playsound minecraft:block.note_block.hat master @s ~ ~ ~ 0.7 0.8
-execute if score @s collection_effect_pick matches 1 run tellraw @s [{"text":"【金属怀表】","color":"blue","bold":true},{"text":"回合结束，已将经济与名誉互换。","color":"white"}]
-execute if score @s collection_effect_pick matches 3 run tellraw @s [{"text":"【金属怀表】","color":"blue","bold":true},{"text":"回合结束，已将经济与民生互换。","color":"white"}]
-execute if score @s collection_effect_pick matches 4 run tellraw @s [{"text":"【金属怀表】","color":"blue","bold":true},{"text":"回合结束，已将经济与生态互换。","color":"white"}]
+execute if score @s collection_effect_pick matches 1 run tellraw @s [{"translate":"rfm.text.55fa9db8762d","color":"blue","bold":true},{"translate":"rfm.text.412b51ec1c25","color":"white"}]
+execute if score @s collection_effect_pick matches 3 run tellraw @s [{"translate":"rfm.text.55fa9db8762d","color":"blue","bold":true},{"translate":"rfm.text.3a7d41887bb2","color":"white"}]
+execute if score @s collection_effect_pick matches 4 run tellraw @s [{"translate":"rfm.text.55fa9db8762d","color":"blue","bold":true},{"translate":"rfm.text.ebdfa54ad496","color":"white"}]
 function rfm:attribute/minimum

@@ -32,6 +32,10 @@ scoreboard players set @a[tag=rfm_participant] swap_pending 0
 scoreboard players set @a[tag=rfm_participant] collection_slot1 0
 scoreboard players set @a[tag=rfm_participant] collection_slot2 0
 scoreboard players set @a[tag=rfm_participant] collection_slot3 0
+scoreboard players set @a[tag=rfm_participant] collection_slot4 0
+scoreboard players set @a[tag=rfm_participant] collection_slot5 0
+scoreboard players set @a[tag=rfm_participant] collection_cap 0
+scoreboard players set @a[tag=rfm_participant] col_expand_used 0
 scoreboard players set @a[tag=rfm_participant] collection_offer 0
 scoreboard players set @a[tag=rfm_participant] collection_attr 0
 scoreboard players set @a[tag=rfm_participant] collection_cost -1
@@ -170,7 +174,7 @@ gamemode adventure @a[tag=rfm_participant]
 tp @a[tag=rfm_participant] 55.5 -50 -17.5 0 0
 #玩家点击返回并完成复位后，重新生成下一局的开始游戏告示牌
 scoreboard players set #start_pending phase 0
-setblock 49 -50 -13 minecraft:cherry_wall_sign[facing=north,waterlogged=false]{front_text:{has_glowing_text:1b,messages:['""','{"text":"开始游戏","color":"white","bold":true,"clickEvent":{"action":"run_command","value":"/trigger lobby_action set 10"}}','""','""']}}
+setblock 49 -50 -13 minecraft:cherry_wall_sign[facing=north,waterlogged=false]{front_text:{has_glowing_text:1b,messages:['""','{"translate":"rfm.text.2857a3704a65","color":"white","bold":true,"clickEvent":{"action":"run_command","value":"/trigger lobby_action set 10"}}','""','""']}}
 #返回流程完成，状态重新回到未结算
 scoreboard players set #settle_state settle_state 0
 tag @a[tag=rfm_participant] remove rfm_participant

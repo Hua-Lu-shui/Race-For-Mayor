@@ -2,5 +2,5 @@
 execute if score @s decision_task matches 112 run scoreboard players add @s economy 2
 execute if score @s decision_task matches 112 run scoreboard players remove @s fame 4
 execute if score @s decision_task matches 112 run scoreboard players remove @s welfare 2
-execute if score @s decision_task matches 112 run tellraw @s [{"text":"你选择了追查泄露源头优先：","color":"green"},{"text":"经济 +2","color":"yellow"},{"text":"，","color":"gray"},{"text":"名誉 -4","color":"aqua"},{"text":"，","color":"gray"},{"text":"民生 -2","color":"red"}]
+execute if score @s decision_task matches 112 run tellraw @s [{"translate":"rfm.text.8848f3a4e549","color":"green"},{"translate":"rfm.text.b68792471274","color":"yellow"},{"text":"，","color":"gray"},{"translate":"rfm.text.87ea5bdc6ed8","color":"aqua"},{"text":"，","color":"gray"},{"translate":"rfm.text.058e6e20214e","color":"red"}]
 execute if score @s decision_task matches 112 run scoreboard players set @s decision_task 0

@@ -1,5 +1,5 @@
 #“古生物化石”：最终结算时，随机选择一项未锁定的并列最低属性并翻倍
-execute unless score @s collection_slot1 matches 28 unless score @s collection_slot2 matches 28 unless score @s collection_slot3 matches 28 run return 0
+execute unless score @s collection_slot1 matches 28 unless score @s collection_slot2 matches 28 unless score @s collection_slot3 matches 28 unless score @s collection_slot4 matches 28 unless score @s collection_slot5 matches 28 run return 0
 function rfm:attribute/lock/enforce
 scoreboard players operation @s collection_effect_value = @s fame
 execute if score @s economy < @s collection_effect_value run scoreboard players operation @s collection_effect_value = @s economy
@@ -18,4 +18,4 @@ execute if score @s collection_effect_pick matches 3 run scoreboard players oper
 execute if score @s collection_effect_pick matches 4 run scoreboard players operation @s ecology += @s ecology
 function rfm:attribute/minimum
 playsound minecraft:block.bone_block.place master @s ~ ~ ~ 0.7 0.8
-tellraw @s [{"text":"【古生物化石】","color":"gold","bold":true},{"text":"最终结算开始，最低属性翻倍。","color":"white"}]
+tellraw @s [{"translate":"rfm.text.d46105eb49d0","color":"gold","bold":true},{"translate":"rfm.text.206fd31ce82c","color":"white"}]

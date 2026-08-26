@@ -19,9 +19,9 @@ gamemode adventure @a[tag=rfm_participant]
 tp @a[tag=rfm_participant] 119 -58 -77 0 0
 tp @s 119 -58 -71 0 0
 
-tellraw @a[tag=rfm_participant] [{"text":"【民生行动】医院排队疏导","color":"red","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]
-tellraw @a[tag=rfm_participant] [{"text":"阅读","color":"white"},{"text":"患者病历","color":"#67D5FF","bold":true},{"text":"，根据病情把病历放进","color":"white"},{"text":"急诊、优先门诊或普通门诊窗口","color":"#FFD166","bold":true},{"text":"。每份病历只判断一次。","color":"white"}]
+tellraw @a[tag=rfm_participant] [{"translate":"rfm.text.9404870b4a25","color":"red","bold":true},{"translate":"rfm.text.f3bab73164c2","color":"white"},{"selector":"@s","color":"white"}]
+tellraw @a[tag=rfm_participant] [{"translate":"rfm.text.aac0ef6c1c6d","color":"white"},{"translate":"rfm.text.eecfc083177a","color":"#67D5FF","bold":true},{"translate":"rfm.text.ca80130b5383","color":"white"},{"translate":"rfm.text.208a13e07332","color":"#FFD166","bold":true},{"translate":"rfm.text.06366f532f79","color":"white"}]
 
 title @s clear
-title @s title {"text":"医院排队疏导","color":"red","bold":true}
-item replace entity @s hotbar.4 with minecraft:paper[minecraft:custom_name='{"text":"准备完成","color":"red","bold":true,"italic":false}',minecraft:lore=['{"text":"扔出后开始倒计时","color":"gray","italic":false}'],minecraft:custom_data={hospital_ready:1}] 1
+title @s title {"translate":"rfm.text.5de269e96a6e","color":"red","bold":true}
+item replace entity @s hotbar.4 with minecraft:paper[minecraft:custom_name='{"translate":"rfm.text.34ffc0766113","color":"red","bold":true,"italic":false}',minecraft:lore=['{"translate":"rfm.text.70325968cefe","color":"gray","italic":false}'],minecraft:custom_data={hospital_ready:1}] 1

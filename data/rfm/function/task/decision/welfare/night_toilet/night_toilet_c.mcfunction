@@ -2,5 +2,5 @@
 execute if score @s decision_task matches 319 run scoreboard players remove @s welfare 6
 execute if score @s decision_task matches 319 run scoreboard players add @s economy 6
 execute if score @s decision_task matches 319 run scoreboard players add @s ecology 2
-execute if score @s decision_task matches 319 run tellraw @s [{"text":"你选择了维持现有开放时间：","color":"green"},{"text":"民生 -6","color":"red"},{"text":"，","color":"gray"},{"text":"经济 +6","color":"yellow"},{"text":"，","color":"gray"},{"text":"生态 +2","color":"green"}]
+execute if score @s decision_task matches 319 run tellraw @s [{"translate":"rfm.text.9ff7fe9c4c46","color":"green"},{"translate":"rfm.text.bf455db6070a","color":"red"},{"text":"，","color":"gray"},{"translate":"rfm.text.aff427681eb7","color":"yellow"},{"text":"，","color":"gray"},{"translate":"rfm.text.5ee7110d02b1","color":"green"}]
 execute if score @s decision_task matches 319 run scoreboard players set @s decision_task 0

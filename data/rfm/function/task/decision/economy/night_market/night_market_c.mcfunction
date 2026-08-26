@@ -3,5 +3,5 @@ execute if score @s decision_task matches 205 run scoreboard players add @s fame
 execute if score @s decision_task matches 205 run scoreboard players add @s ecology 6
 execute if score @s decision_task matches 205 run scoreboard players remove @s economy 2
 execute if score @s decision_task matches 205 run scoreboard players remove @s welfare 2
-execute if score @s decision_task matches 205 run tellraw @s [{"text":"你选择了严格限制流动摊贩：","color":"green"},{"text":"名誉 +2","color":"aqua"},{"text":"，","color":"gray"},{"text":"生态 +6","color":"green"},{"text":"，","color":"gray"},{"text":"经济 -2","color":"yellow"},{"text":"，","color":"gray"},{"text":"民生 -2","color":"red"}]
+execute if score @s decision_task matches 205 run tellraw @s [{"translate":"rfm.text.672a0f7a459d","color":"green"},{"translate":"rfm.text.d51d2d52456e","color":"aqua"},{"text":"，","color":"gray"},{"translate":"rfm.text.a6ffc5897bf5","color":"green"},{"text":"，","color":"gray"},{"translate":"rfm.text.78f8777cc0a3","color":"yellow"},{"text":"，","color":"gray"},{"translate":"rfm.text.058e6e20214e","color":"red"}]
 execute if score @s decision_task matches 205 run scoreboard players set @s decision_task 0

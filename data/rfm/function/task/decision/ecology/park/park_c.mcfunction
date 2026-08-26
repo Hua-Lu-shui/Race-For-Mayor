@@ -2,5 +2,5 @@
 execute if score @s decision_task matches 403 run scoreboard players add @s economy 6
 execute if score @s decision_task matches 403 run scoreboard players remove @s ecology 2
 execute if score @s decision_task matches 403 run scoreboard players remove @s welfare 2
-execute if score @s decision_task matches 403 run tellraw @s [{"text":"你选择了优先开发综合商场：","color":"green"},{"text":"经济 +6","color":"yellow"},{"text":"，","color":"gray"},{"text":"生态 -2","color":"green"},{"text":"，","color":"gray"},{"text":"民生 -2","color":"red"}]
+execute if score @s decision_task matches 403 run tellraw @s [{"translate":"rfm.text.2e99b60a208f","color":"green"},{"translate":"rfm.text.aff427681eb7","color":"yellow"},{"text":"，","color":"gray"},{"translate":"rfm.text.08597c9fb827","color":"green"},{"text":"，","color":"gray"},{"translate":"rfm.text.058e6e20214e","color":"red"}]
 execute if score @s decision_task matches 403 run scoreboard players set @s decision_task 0

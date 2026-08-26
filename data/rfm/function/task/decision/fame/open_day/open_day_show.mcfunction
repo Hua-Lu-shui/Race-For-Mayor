@@ -1,8 +1,8 @@
 #展示名誉决策任务的背景和三个可选方案
 scoreboard players set @s decision_choice 0
 scoreboard players enable @s decision_choice
-tellraw @s {"text":"【名誉决策】市政开放日","color":"gold","bold":true}
-tellraw @s {"text":"市民希望近距离了解市政府运作。开放办公区可以提升透明度，但会占用大量行政资源。","color":"white"}
-tellraw @s [{"text":"[激进] 全面开放并直播","color":"red","clickEvent":{"action":"run_command","value":"/trigger decision_choice set 1"}}]
-tellraw @s [{"text":"[折中] 开放重点窗口","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger decision_choice set 2"}}]
-tellraw @s [{"text":"[保守] 只发布线上报告","color":"green","clickEvent":{"action":"run_command","value":"/trigger decision_choice set 3"}}]
+tellraw @s {"translate":"rfm.text.cd9a162b97bf","color":"gold","bold":true}
+tellraw @s {"translate":"rfm.text.0c5a28b47ec1","color":"white"}
+tellraw @s [{"translate":"rfm.text.a6d451c41d12","color":"red","clickEvent":{"action":"run_command","value":"/trigger decision_choice set 1"}}]
+tellraw @s [{"translate":"rfm.text.9ce17cb3a99a","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger decision_choice set 2"}}]
+tellraw @s [{"translate":"rfm.text.6c26f79bba4e","color":"green","clickEvent":{"action":"run_command","value":"/trigger decision_choice set 3"}}]

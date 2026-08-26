@@ -1,5 +1,5 @@
 {
   "parent": "rfm:title/root",
-  "display": {"icon": {"id": "minecraft:paper", "components": {"minecraft:custom_model_data": 720012}}, "title": {"text": "从头再来", "color": "dark_red"}, "description": {"text": "任一属性降为0｜+100票", "color": "gray"}, "frame": "goal", "show_toast": true, "announce_to_chat": false, "hidden": false},
+  "display": {"icon": {"id": "minecraft:paper", "components": {"minecraft:custom_model_data": 720012}}, "title": {"translate":"rfm.text.1643cfd228c8", "color": "dark_red"}, "description": {"translate":"rfm.text.7883f85128ff", "color": "gray"}, "frame": "goal", "show_toast": true, "announce_to_chat": false, "hidden": false},
   "criteria": {"impossible": {"trigger": "minecraft:impossible"}}
 }

@@ -2,8 +2,8 @@
 scoreboard players set #event_4 event_used 1
 scoreboard players add #weight ecology_weight 1
 title @a[tag=rfm_participant] times 10 80 20
-title @a[tag=rfm_participant] title {"text":"绿色城市倡议","color":"green","bold":true}
-title @a[tag=rfm_participant] subtitle [{"text":"生态权重 ","color":"gray"},{"text":"+1","color":"green","bold":true}]
-tellraw @a[tag=rfm_participant] {"text":"【事件】绿色城市倡议","color":"green","bold":true}
-tellraw @a[tag=rfm_participant] [{"text":"【事件背景】","color":"gold","bold":true},{"text":"市民团体发起绿色城市倡议，空气质量、公共绿地与清洁能源进入竞选议程。","color":"white"}]
-tellraw @a[tag=rfm_participant] [{"text":"【事件影响】","color":"yellow","bold":true},{"text":"生态权重提高1点；当前生态权重为 ","color":"white"},{"score":{"name":"#weight","objective":"ecology_weight"},"color":"green","bold":true},{"text":"。","color":"white"}]
+title @a[tag=rfm_participant] title {"translate":"rfm.text.7c9543c5966e","color":"green","bold":true}
+title @a[tag=rfm_participant] subtitle [{"translate":"rfm.text.e6ba8104beaf","color":"gray"},{"text":"+1","color":"green","bold":true}]
+tellraw @a[tag=rfm_participant] {"translate":"rfm.text.ff21b3e4a230","color":"green","bold":true}
+tellraw @a[tag=rfm_participant] [{"translate":"rfm.text.dd46bd7444bb","color":"gold","bold":true},{"translate":"rfm.text.9f8e54ebd636","color":"white"}]
+tellraw @a[tag=rfm_participant] [{"translate":"rfm.text.a6f273449c10","color":"yellow","bold":true},{"translate":"rfm.text.470679e8435a","color":"white"},{"score":{"name":"#weight","objective":"ecology_weight"},"color":"green","bold":true},{"text":"。","color":"white"}]

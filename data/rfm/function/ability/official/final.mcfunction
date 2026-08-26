@@ -31,4 +31,4 @@ execute if score @s collection_effect_pick matches 1 run scoreboard players remo
 execute if score @s collection_effect_pick matches 2 run scoreboard players remove #weight economy_weight 1
 execute if score @s collection_effect_pick matches 3 run scoreboard players remove #weight welfare_weight 1
 execute if score @s collection_effect_pick matches 4 run scoreboard players remove #weight ecology_weight 1
-execute if score @s ability_trigger matches 1 run tellraw @s [{"text":"【与时俱进】","color":"#F5F5DC","bold":true},{"text":"最高与最低属性对应权重分别调整。","color":"white"}]
+execute if score @s ability_trigger matches 1 run tellraw @s [{"translate":"rfm.text.1f27b414e59f","color":"#F5F5DC","bold":true},{"translate":"rfm.text.65a8a9fcf489","color":"white"}]

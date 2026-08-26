@@ -2,5 +2,5 @@
 execute if score @s decision_task matches 402 run scoreboard players add @s ecology 6
 execute if score @s decision_task matches 402 run scoreboard players add @s welfare 2
 execute if score @s decision_task matches 402 run scoreboard players remove @s economy 2
-execute if score @s decision_task matches 402 run tellraw @s [{"text":"你选择了先治理重点河段：","color":"aqua"},{"text":"生态 +6","color":"green"},{"text":"，","color":"gray"},{"text":"民生 +2","color":"red"},{"text":"，","color":"gray"},{"text":"经济 -2","color":"yellow"}]
+execute if score @s decision_task matches 402 run tellraw @s [{"translate":"rfm.text.677217859118","color":"aqua"},{"translate":"rfm.text.a6ffc5897bf5","color":"green"},{"text":"，","color":"gray"},{"translate":"rfm.text.347012d06208","color":"red"},{"text":"，","color":"gray"},{"translate":"rfm.text.78f8777cc0a3","color":"yellow"}]
 execute if score @s decision_task matches 402 run scoreboard players set @s decision_task 0

@@ -46,9 +46,9 @@ gamemode adventure @a[tag=rfm_participant]
 tp @a[tag=rfm_participant] 180 -52 -23 0 30
 tp @s 180 -59 -18 0 0
 
-tellraw @a[tag=rfm_participant] [{"text":"【名誉行动】市民合影","color":"aqua","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]
-tellraw @a[tag=rfm_participant] [{"text":"右键居民","color":"#67D5FF","bold":true},{"text":"进行选择，再右键对应的","color":"white"},{"text":"站位","color":"#67D5FF"},{"text":"安排位置；可随时重新选择和调整。排好后","color":"white"},{"text":"按下快门","color":"#FFD166","bold":true},{"text":"。","color":"white"}]
+tellraw @a[tag=rfm_participant] [{"translate":"rfm.text.9f09ab4648bc","color":"aqua","bold":true},{"translate":"rfm.text.f3bab73164c2","color":"white"},{"selector":"@s","color":"white"}]
+tellraw @a[tag=rfm_participant] [{"translate":"rfm.text.3064eea9d3b0","color":"#67D5FF","bold":true},{"translate":"rfm.text.1af0946385b1","color":"white"},{"translate":"rfm.text.0f1e64280ef7","color":"#67D5FF"},{"translate":"rfm.text.1f443fce06ab","color":"white"},{"translate":"rfm.text.da4e0a1620c1","color":"#FFD166","bold":true},{"text":"。","color":"white"}]
 
 title @s clear
-title @s title {"text":"市民合影","color":"aqua","bold":true}
-item replace entity @s hotbar.4 with minecraft:paper[minecraft:custom_name='{"text":"准备完成","color":"aqua","bold":true,"italic":false}',minecraft:lore=['{"text":"扔出后开始任务","color":"gray","italic":false}'],minecraft:custom_data={photo_ready:1}] 1
+title @s title {"translate":"rfm.text.f9c4cd98b08c","color":"aqua","bold":true}
+item replace entity @s hotbar.4 with minecraft:paper[minecraft:custom_name='{"translate":"rfm.text.34ffc0766113","color":"aqua","bold":true,"italic":false}',minecraft:lore=['{"translate":"rfm.text.52454e1545d8","color":"gray","italic":false}'],minecraft:custom_data={photo_ready:1}] 1

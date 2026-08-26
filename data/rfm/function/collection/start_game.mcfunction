@@ -2,6 +2,11 @@
 scoreboard players set @a[tag=rfm_participant] collection_slot1 0
 scoreboard players set @a[tag=rfm_participant] collection_slot2 0
 scoreboard players set @a[tag=rfm_participant] collection_slot3 0
+scoreboard players set @a[tag=rfm_participant] collection_slot4 0
+scoreboard players set @a[tag=rfm_participant] collection_slot5 0
+scoreboard players set @a[tag=rfm_participant] collection_cap 2
+execute as @a[tag=rfm_participant,scores={candidate=8}] run scoreboard players set @s collection_cap 3
+scoreboard players set @a[tag=rfm_participant] col_expand_used 0
 scoreboard players set @a[tag=rfm_participant] collection_offer 0
 scoreboard players set @a[tag=rfm_participant] collection_attr 0
 scoreboard players set @a[tag=rfm_participant] collection_cost -1

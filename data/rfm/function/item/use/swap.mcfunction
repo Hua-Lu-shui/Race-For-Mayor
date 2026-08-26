@@ -1,9 +1,9 @@
 #记录待互换属性，并仅向使用者列出其他候选人
 scoreboard players operation @s swap_pending = @s item_held
-execute if score @s swap_pending matches 1 run tellraw @s [{"text":"【名誉互换】","color":"aqua","bold":true},{"text":"点击一名玩家，与其互换","color":"white"},{"text":"名誉","color":"aqua"},{"text":"：","color":"white"}]
-execute if score @s swap_pending matches 2 run tellraw @s [{"text":"【经济互换】","color":"yellow","bold":true},{"text":"点击一名玩家，与其互换","color":"white"},{"text":"经济","color":"yellow"},{"text":"：","color":"white"}]
-execute if score @s swap_pending matches 3 run tellraw @s [{"text":"【民生互换】","color":"red","bold":true},{"text":"点击一名玩家，与其互换","color":"white"},{"text":"民生","color":"red"},{"text":"：","color":"white"}]
-execute if score @s swap_pending matches 4 run tellraw @s [{"text":"【生态互换】","color":"green","bold":true},{"text":"点击一名玩家，与其互换","color":"white"},{"text":"生态","color":"green"},{"text":"：","color":"white"}]
+execute if score @s swap_pending matches 1 run tellraw @s [{"translate":"rfm.text.821127e39cef","color":"aqua","bold":true},{"translate":"rfm.text.3b141cf76371","color":"white"},{"translate":"rfm.text.dc04a5799df2","color":"aqua"},{"text":"：","color":"white"}]
+execute if score @s swap_pending matches 2 run tellraw @s [{"translate":"rfm.text.d21e25067cc8","color":"yellow","bold":true},{"translate":"rfm.text.3b141cf76371","color":"white"},{"translate":"rfm.text.cd0bf6887da7","color":"yellow"},{"text":"：","color":"white"}]
+execute if score @s swap_pending matches 3 run tellraw @s [{"translate":"rfm.text.b6c2e0643a91","color":"red","bold":true},{"translate":"rfm.text.3b141cf76371","color":"white"},{"translate":"rfm.text.318edbd5be8f","color":"red"},{"text":"：","color":"white"}]
+execute if score @s swap_pending matches 4 run tellraw @s [{"translate":"rfm.text.888b5e5142c3","color":"green","bold":true},{"translate":"rfm.text.3b141cf76371","color":"white"},{"translate":"rfm.text.014a015ae588","color":"green"},{"text":"：","color":"white"}]
 scoreboard players enable @s swap_target
 execute as @a[tag=rfm_participant,tag=!rfm_item_user,scores={room=1}] unless score @s candidate matches 7 run tellraw @a[tag=rfm_participant,tag=rfm_item_user,limit=1] [{"text":"▶ ","color":"green"},{"selector":"@s","color":"white","bold":true,"clickEvent":{"action":"run_command","value":"/trigger swap_target set 1"}}]
 execute as @a[tag=rfm_participant,tag=!rfm_item_user,scores={room=2}] unless score @s candidate matches 7 run tellraw @a[tag=rfm_participant,tag=rfm_item_user,limit=1] [{"text":"▶ ","color":"green"},{"selector":"@s","color":"white","bold":true,"clickEvent":{"action":"run_command","value":"/trigger swap_target set 2"}}]

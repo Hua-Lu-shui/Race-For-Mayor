@@ -1,5 +1,5 @@
 {
   "parent": "rfm:title/root",
-  "display": {"icon": {"id": "minecraft:paper", "components": {"minecraft:custom_model_data": 720001}}, "title": {"text": "遥遥领先", "color": "gold"}, "description": {"text": "任意回合属性公示时同时成为所有属性领先者｜+200票", "color": "gray"}, "frame": "challenge", "show_toast": true, "announce_to_chat": false, "hidden": false},
+  "display": {"icon": {"id": "minecraft:paper", "components": {"minecraft:custom_model_data": 720001}}, "title": {"translate":"rfm.text.c10897c38396", "color": "gold"}, "description": {"translate":"rfm.text.9ca85cde1849", "color": "gray"}, "frame": "challenge", "show_toast": true, "announce_to_chat": false, "hidden": false},
   "criteria": {"impossible": {"trigger": "minecraft:impossible"}}
 }

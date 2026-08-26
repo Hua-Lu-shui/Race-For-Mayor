@@ -18,9 +18,9 @@ gamemode adventure @a[tag=rfm_participant]
 tp @a[tag=rfm_participant] 163 -48 -23 90 30
 tp @s 143 -58 -31 0 0
 
-tellraw @a[tag=rfm_participant] [{"text":"【名誉行动】社区拜访","color":"aqua","bold":true},{"text":" 行动玩家：","color":"white"},{"selector":"@s","color":"white"}]
-tellraw @a[tag=rfm_participant] [{"text":"查看","color":"white"},{"text":"拜访记录","color":"#67D5FF","bold":true},{"text":"，按照其中","color":"white"},{"text":"5个门牌号的顺序","color":"#FFD166"},{"text":"按响门铃。按错门铃会扣除","color":"white"},{"text":"3秒","color":"#FFCB77"},{"text":"。","color":"white"}]
+tellraw @a[tag=rfm_participant] [{"translate":"rfm.text.3b5b89df2cb1","color":"aqua","bold":true},{"translate":"rfm.text.f3bab73164c2","color":"white"},{"selector":"@s","color":"white"}]
+tellraw @a[tag=rfm_participant] [{"translate":"rfm.text.f7acefd2d4cd","color":"white"},{"translate":"rfm.text.a582f9914169","color":"#67D5FF","bold":true},{"translate":"rfm.text.886545dd2ae9","color":"white"},{"translate":"rfm.text.ba247ab5d48e","color":"#FFD166"},{"translate":"rfm.text.1fe9220eb01d","color":"white"},{"translate":"rfm.text.4439676fd18d","color":"#FFCB77"},{"text":"。","color":"white"}]
 
 title @s clear
-title @s title {"text":"社区拜访","color":"aqua","bold":true}
-item replace entity @s hotbar.4 with minecraft:paper[minecraft:custom_name='{"text":"准备完成","color":"aqua","bold":true,"italic":false}',minecraft:lore=['{"text":"扔出后开始任务","color":"gray","italic":false}'],minecraft:custom_data={visit_ready:1}] 1
+title @s title {"translate":"rfm.text.0a4c3ad3ca66","color":"aqua","bold":true}
+item replace entity @s hotbar.4 with minecraft:paper[minecraft:custom_name='{"translate":"rfm.text.34ffc0766113","color":"aqua","bold":true,"italic":false}',minecraft:lore=['{"translate":"rfm.text.52454e1545d8","color":"gray","italic":false}'],minecraft:custom_data={visit_ready:1}] 1

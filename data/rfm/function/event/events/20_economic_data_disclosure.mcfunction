@@ -2,8 +2,8 @@
 scoreboard players set #event_20 event_used 1
 scoreboard players set #reveal_economy leader_reveal 1
 title @a[tag=rfm_participant] times 10 80 20
-title @a[tag=rfm_participant] title {"text":"经济数据公开","color":"yellow","bold":true}
-title @a[tag=rfm_participant] subtitle {"text":"经济领先者将永久公开","color":"white","bold":true}
-tellraw @a[tag=rfm_participant] {"text":"【事件】经济数据公开","color":"yellow","bold":true}
-tellraw @a[tag=rfm_participant] [{"text":"【事件背景】","color":"gold","bold":true},{"text":"城市财政与产业评估平台向公众开放，候选人的经济治理表现开始接受持续监督。","color":"white"}]
-tellraw @a[tag=rfm_participant] [{"text":"【事件影响】","color":"yellow","bold":true},{"text":"从本轮属性公示起，本局剩余时间将永久显示经济领先者。","color":"white"}]
+title @a[tag=rfm_participant] title {"translate":"rfm.text.6882f1daac76","color":"yellow","bold":true}
+title @a[tag=rfm_participant] subtitle {"translate":"rfm.text.0ff6dfcd42ba","color":"white","bold":true}
+tellraw @a[tag=rfm_participant] {"translate":"rfm.text.6c12d48e2328","color":"yellow","bold":true}
+tellraw @a[tag=rfm_participant] [{"translate":"rfm.text.dd46bd7444bb","color":"gold","bold":true},{"translate":"rfm.text.97fc004138f5","color":"white"}]
+tellraw @a[tag=rfm_participant] [{"translate":"rfm.text.a6f273449c10","color":"yellow","bold":true},{"translate":"rfm.text.a1b00c6f7d9b","color":"white"}]

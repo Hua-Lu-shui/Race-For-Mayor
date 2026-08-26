@@ -1,2 +1,2 @@
 #显示教程开始流程的第2段内容
-tellraw @a {"text":"你将在这里进行一系列的任务选择","color":"white","bold":true}
+tellraw @a {"translate":"rfm.text.394189ae8339","color":"white","bold":true}

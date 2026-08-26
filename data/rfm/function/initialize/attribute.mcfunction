@@ -1,9 +1,9 @@
 #执行attribute函数对应的游戏流程
 #创建四个属性计分板
-scoreboard objectives add fame dummy "名誉"
-scoreboard objectives add economy dummy "经济"
-scoreboard objectives add welfare dummy "民生"
-scoreboard objectives add ecology dummy "生态"
+scoreboard objectives add fame dummy {"translate":"rfm.text.dc04a5799df2"}
+scoreboard objectives add economy dummy {"translate":"rfm.text.cd0bf6887da7"}
+scoreboard objectives add welfare dummy {"translate":"rfm.text.318edbd5be8f"}
+scoreboard objectives add ecology dummy {"translate":"rfm.text.014a015ae588"}
 #角色天赋使用的回合快照、比较值与触发标记
 scoreboard objectives add ability_fame dummy
 scoreboard objectives add ability_economy dummy
@@ -27,14 +27,18 @@ scoreboard objectives add econ_show dummy
 scoreboard objectives add welfare_show dummy
 scoreboard objectives add eco_show dummy
 #创建四个属性权重计分板
-scoreboard objectives add fame_weight dummy "名誉权重"
-scoreboard objectives add economy_weight dummy "经济权重"
-scoreboard objectives add welfare_weight dummy "民生权重"
-scoreboard objectives add ecology_weight dummy "生态权重"
+scoreboard objectives add fame_weight dummy {"translate":"rfm.text.c993caee15bb"}
+scoreboard objectives add economy_weight dummy {"translate":"rfm.text.116fe2d1ff6d"}
+scoreboard objectives add welfare_weight dummy {"translate":"rfm.text.4b5059491fe7"}
+scoreboard objectives add ecology_weight dummy {"translate":"rfm.text.b93124d17289"}
 #创建侧边栏权重显示计分板；标题不使用两侧装饰，缩短属性名与数值间的留白
 scoreboard objectives add weight_display dummy
-scoreboard objectives modify weight_display displayname {"text":"属性权重","color":"gold","bold":true}
+scoreboard objectives modify weight_display displayname {"translate":"rfm.text.bec365631ddf","color":"gold","bold":true}
 scoreboard objectives modify weight_display numberformat styled {"color":"white","bold":true}
+scoreboard players display name 名誉 weight_display {"translate":"rfm.text.dc04a5799df2"}
+scoreboard players display name 经济 weight_display {"translate":"rfm.text.cd0bf6887da7"}
+scoreboard players display name 民生 weight_display {"translate":"rfm.text.318edbd5be8f"}
+scoreboard players display name 生态 weight_display {"translate":"rfm.text.014a015ae588"}
 #设置侧边栏四项权重的名称样式
 team add weight_fame
 team modify weight_fame color aqua
@@ -56,18 +60,18 @@ team join weight_ecology 生态
 scoreboard objectives add candidate dummy
 #创建队伍，用于在Tab列表玩家名前显示身份
 team add star
-team modify star prefix {"text":"[明星] ","color":"aqua"}
+team modify star prefix {"translate":"rfm.text.0330c09c19a8","color":"aqua"}
 team add business
-team modify business prefix {"text":"[企业家] ","color":"yellow"}
+team modify business prefix {"translate":"rfm.text.a98b0b0206f9","color":"yellow"}
 team add community
-team modify community prefix {"text":"[社区领袖] ","color":"red"}
+team modify community prefix {"translate":"rfm.text.3ce765dd14cb","color":"red"}
 team add scholar
-team modify scholar prefix {"text":"[学者] ","color":"green"}
+team modify scholar prefix {"translate":"rfm.text.b42a348fe88f","color":"green"}
 team add official
-team modify official prefix {"text":"[公务员] ","color":"#F5F5DC"}
+team modify official prefix {"translate":"rfm.text.d362a8ca0fea","color":"#F5F5DC"}
 team add military
-team modify military prefix {"text":"[军人] ","color":"#FFA500"}
+team modify military prefix {"translate":"rfm.text.26ec5bd5faf5","color":"#FFA500"}
 team add lawyer
-team modify lawyer prefix {"text":"[律师] ","color":"light_purple"}
+team modify lawyer prefix {"translate":"rfm.text.c922cac22796","color":"light_purple"}
 team add doctor
-team modify doctor prefix {"text":"[医生] ","color":"#012696"}
+team modify doctor prefix {"translate":"rfm.text.d9a1a94853e4","color":"#012696"}

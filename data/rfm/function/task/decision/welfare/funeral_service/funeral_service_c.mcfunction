@@ -2,5 +2,5 @@
 execute if score @s decision_task matches 320 run scoreboard players remove @s welfare 6
 execute if score @s decision_task matches 320 run scoreboard players add @s economy 6
 execute if score @s decision_task matches 320 run scoreboard players remove @s fame 2
-execute if score @s decision_task matches 320 run tellraw @s [{"text":"你选择了仅要求商家自愿公示：","color":"green"},{"text":"民生 -6","color":"red"},{"text":"，","color":"gray"},{"text":"经济 +6","color":"yellow"},{"text":"，","color":"gray"},{"text":"名誉 -2","color":"aqua"}]
+execute if score @s decision_task matches 320 run tellraw @s [{"translate":"rfm.text.71789d280603","color":"green"},{"translate":"rfm.text.bf455db6070a","color":"red"},{"text":"，","color":"gray"},{"translate":"rfm.text.aff427681eb7","color":"yellow"},{"text":"，","color":"gray"},{"translate":"rfm.text.7cd41714bcfc","color":"aqua"}]
 execute if score @s decision_task matches 320 run scoreboard players set @s decision_task 0

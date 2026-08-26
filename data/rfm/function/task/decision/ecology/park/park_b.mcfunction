@@ -2,5 +2,5 @@
 execute if score @s decision_task matches 403 run scoreboard players add @s ecology 4
 execute if score @s decision_task matches 403 run scoreboard players add @s welfare 2
 execute if score @s decision_task matches 403 run scoreboard players add @s economy 2
-execute if score @s decision_task matches 403 run tellraw @s [{"text":"你选择了公园和小型商业街：","color":"aqua"},{"text":"生态 +4","color":"green"},{"text":"，","color":"gray"},{"text":"民生 +2","color":"red"},{"text":"，","color":"gray"},{"text":"经济 +2","color":"yellow"}]
+execute if score @s decision_task matches 403 run tellraw @s [{"translate":"rfm.text.9206acc32552","color":"aqua"},{"translate":"rfm.text.643208335c88","color":"green"},{"text":"，","color":"gray"},{"translate":"rfm.text.347012d06208","color":"red"},{"text":"，","color":"gray"},{"translate":"rfm.text.b68792471274","color":"yellow"}]
 execute if score @s decision_task matches 403 run scoreboard players set @s decision_task 0

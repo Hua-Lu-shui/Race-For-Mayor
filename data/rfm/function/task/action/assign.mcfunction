@@ -51,4 +51,4 @@ function rfm:task/action/select_mode
 #为行动玩家分配执行顺序
 function rfm:task/action/sequence/assign_order
 
-tellraw @a[tag=rfm_participant,scores={action_role=1}] [{"text":"你是本回合","color":"white"},{"text":"行动玩家","color":"#67D5FF","bold":true},{"text":"，请从随机出现的三个属性中选择一个","color":"white"},{"text":"行动方向","color":"#67D5FF","bold":true},{"text":"。","color":"white"}]
+tellraw @a[tag=rfm_participant,scores={action_role=1}] [{"translate":"rfm.text.8036f5f7f2d0","color":"white"},{"translate":"rfm.text.995a081da711","color":"#67D5FF","bold":true},{"translate":"rfm.text.1ef6ebc28f49","color":"white"},{"translate":"rfm.text.1a2c4a752d7c","color":"#67D5FF","bold":true},{"text":"。","color":"white"}]
