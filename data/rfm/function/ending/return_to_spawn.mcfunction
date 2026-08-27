@@ -172,9 +172,8 @@ function rfm:collection/mysterious/cleanup
 execute as @a[tag=rfm_participant] run function rfm:initialize/candidate
 gamemode adventure @a[tag=rfm_participant]
 tp @a[tag=rfm_participant] 55.5 -50 -17.5 0 0
-#玩家点击返回并完成复位后，重新生成下一局的开始游戏告示牌
+#玩家点击返回并完成复位后，重新允许开始下一局
 scoreboard players set #start_pending phase 0
-setblock 49 -50 -13 minecraft:cherry_wall_sign[facing=north,waterlogged=false]{front_text:{has_glowing_text:1b,messages:['""','{"translate":"rfm.text.2857a3704a65","color":"white","bold":true,"clickEvent":{"action":"run_command","value":"/trigger lobby_action set 10"}}','""','""']}}
 #返回流程完成，状态重新回到未结算
 scoreboard players set #settle_state settle_state 0
 tag @a[tag=rfm_participant] remove rfm_participant

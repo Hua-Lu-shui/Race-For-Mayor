@@ -17,6 +17,8 @@ execute as @a[tag=rfm_participant,scores={fame_lock=1}] run scoreboard players o
 execute as @a[tag=rfm_participant,scores={economy_lock=1}] run scoreboard players operation @s economy = @s economy_locked
 execute as @a[tag=rfm_participant,scores={welfare_lock=1}] run scoreboard players operation @s welfare = @s welfare_locked
 execute as @a[tag=rfm_participant,scores={ecology_lock=1}] run scoreboard players operation @s ecology = @s ecology_locked
+#每tick统一执行属性下限检查，防止任何遗漏入口留下负数
+execute as @a[tag=rfm_participant] run function rfm:attribute/minimum
 #游戏进行中检查四项属性是否首次超过80分
 execute if score #phase phase matches 1 run function rfm:title/check/attributes
 #藏品持续效果及掉落回收入口
