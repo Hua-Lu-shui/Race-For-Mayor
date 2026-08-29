@@ -1,10 +1,59 @@
 #设置阶段为1，代表游戏进行中
 function rfm:phase/phase1
-#为本局生成新的参与者会话；断线重连者保留会话，中途加入者不会自动进入本局
+#先移除可能残留的旧参与者标签，再为本局生成新的参与者会话；断线重连者保留会话，中途加入者不会自动进入本局
+tag @a remove rfm_participant
 scoreboard players add #session game_session 1
 scoreboard players operation @a game_session = #session game_session
 tag @a add rfm_participant
 execute store result score #session_size game_session run execute if entity @a[tag=rfm_participant]
+#兜底清理返回大厅流程中的旧局状态；保留玩家在大厅选择的候选人身份与四项初始属性
+scoreboard players set #choose_time choose_time 0
+scoreboard players set #waiting next_round_ready 0
+scoreboard players set @a[tag=rfm_participant] room 0
+scoreboard players set @a[tag=rfm_participant] decision_task 0
+scoreboard players set @a[tag=rfm_participant] decision_choice 0
+scoreboard players set @a[tag=rfm_participant] action_task 0
+scoreboard players set @a[tag=rfm_participant] action_player 0
+scoreboard players set @a[tag=rfm_participant] attribute_choice 0
+scoreboard players set @a[tag=rfm_participant] action_attribute_choice 0
+scoreboard players set @a[tag=rfm_participant] next_round_ready 0
+scoreboard players set @a[tag=rfm_participant] next_round_clock 0
+scoreboard players set @a[tag=rfm_participant] item_pick 0
+scoreboard players set @a[tag=rfm_participant] attribute_total 0
+#关闭所有可能遗留的行动任务tick状态
+scoreboard players set @a[tag=rfm_participant] speech_state 0
+scoreboard players set @a[tag=rfm_participant] visit_state 0
+scoreboard players set @a[tag=rfm_participant] photo_state 0
+scoreboard players set @a[tag=rfm_participant] qa_state 0
+scoreboard players set @a[tag=rfm_participant] cheer_state 0
+scoreboard players set @a[tag=rfm_participant] market_state 0
+scoreboard players set @a[tag=rfm_participant] negotiation_state 0
+scoreboard players set @a[tag=rfm_participant] audit_state 0
+scoreboard players set @a[tag=rfm_participant] supply_state 0
+scoreboard players set @a[tag=rfm_participant] employment_state 0
+scoreboard players set @a[tag=rfm_participant] hospital_state 0
+scoreboard players set @a[tag=rfm_participant] fitness_state 0
+scoreboard players set @a[tag=rfm_participant] exercise_state 0
+scoreboard players set @a[tag=rfm_participant] bus_state 0
+scoreboard players set @a[tag=rfm_participant] cooking_state 0
+scoreboard players set @a[tag=rfm_participant] emission_state 0
+scoreboard players set @a[tag=rfm_participant] sample_state 0
+scoreboard players set @a[tag=rfm_participant] park_state 0
+scoreboard players set @a[tag=rfm_participant] trash_state 0
+scoreboard players set @a[tag=rfm_participant] energy_state 0
+#清除旧局结算标签、界面与只供数据包使用的残留物品
+tag @a[tag=rfm_participant] remove rfm_settling
+tag @a[tag=rfm_participant] remove rfm_vote_tied
+tag @a[tag=rfm_participant] remove rfm_random_winner
+tag @a[tag=rfm_participant] remove rfm_winner
+scoreboard objectives setdisplay sidebar
+bossbar set rfm:choose_time visible false
+title @a[tag=rfm_participant] clear
+title @a[tag=rfm_participant] actionbar {"text":""}
+clear @a[tag=rfm_participant] minecraft:clock[minecraft:custom_data={next_round_ready:1}]
+clear @a[tag=rfm_participant] minecraft:carved_pumpkin[minecraft:custom_data~{rfm_ending_blackout:1}]
+kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{next_round_ready:1}}}}]
+gamemode adventure @a[tag=rfm_participant]
 #新游戏从第0回合准备状态开始；全员准备后round函数会递增为第1回合
 scoreboard players set #round round 0
 #允许本局最终结算天赋执行一次

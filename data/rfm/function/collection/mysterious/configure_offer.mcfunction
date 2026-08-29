@@ -91,9 +91,9 @@ execute if score @s collection_offer matches 29 run scoreboard players set @s co
 #藏品30“陨石碎片”：所有属性-20
 execute if score @s collection_offer matches 30 run scoreboard players set @s collection_attr 6
 execute if score @s collection_offer matches 30 run scoreboard players set @s collection_cost 20
-#藏品31“玉玺”：所有属性-5
-execute if score @s collection_offer matches 31 run scoreboard players set @s collection_attr 6
-execute if score @s collection_offer matches 31 run scoreboard players set @s collection_cost 5
+#藏品31“玉玺”：当前最高属性-25
+execute if score @s collection_offer matches 31 run scoreboard players set @s collection_attr 5
+execute if score @s collection_offer matches 31 run scoreboard players set @s collection_cost 25
 #藏品32“魔方”：当前最高属性-5
 execute if score @s collection_offer matches 32 run scoreboard players set @s collection_attr 5
 execute if score @s collection_offer matches 32 run scoreboard players set @s collection_cost 5
