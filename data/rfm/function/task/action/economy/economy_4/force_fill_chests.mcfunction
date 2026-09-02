@@ -1,4 +1,3 @@
-#execute if items会读取容器内容，从而立即展开尚未生成的箱子战利品表
 execute if items block 190 -58 25 container.* * run scoreboard players add #supply_loaded supply_order 0
 execute if items block 190 -58 26 container.* * run scoreboard players add #supply_loaded supply_order 0
 execute if items block 190 -58 27 container.* * run scoreboard players add #supply_loaded supply_order 0

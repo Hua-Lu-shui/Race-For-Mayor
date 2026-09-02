@@ -1,4 +1,3 @@
-#若随机结果已在本局出现，则立即重新抽取
 execute if score #current event matches 1 if score #event_1 event_used matches 1 run return run function rfm:event/generate
 execute if score #current event matches 2 if score #event_2 event_used matches 1 run return run function rfm:event/generate
 execute if score #current event matches 3 if score #event_3 event_used matches 1 run return run function rfm:event/generate
@@ -28,7 +27,6 @@ execute if score #current event matches 26 if score #event_26 event_used matches
 execute if score #current event matches 27 if score #event_27 event_used matches 1 run return run function rfm:event/generate
 execute if score #current event matches 28 if score #event_28 event_used matches 1 run return run function rfm:event/generate
 
-#执行本次抽中的事件
 execute if score #current event matches 1 run function rfm:event/events/01_city_reputation_poll
 execute if score #current event matches 2 run function rfm:event/events/02_investment_week
 execute if score #current event matches 3 run function rfm:event/events/03_public_service_review
@@ -58,7 +56,6 @@ execute if score #current event matches 26 run function rfm:event/events/26_dril
 execute if score #current event matches 27 run function rfm:event/events/27_conflict_of_interest_dispute
 execute if score #current event matches 28 run function rfm:event/events/28_medical_record_controversy
 
-#属性事件执行完毕后，只选择对应属性已锁定的玩家立即恢复锁定值
 execute as @a[tag=rfm_participant,scores={fame_lock=1}] run scoreboard players operation @s fame = @s fame_locked
 execute as @a[tag=rfm_participant,scores={economy_lock=1}] run scoreboard players operation @s economy = @s economy_locked
 execute as @a[tag=rfm_participant,scores={welfare_lock=1}] run scoreboard players operation @s welfare = @s welfare_locked

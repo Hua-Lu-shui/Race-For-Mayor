@@ -1,4 +1,3 @@
-#清除当前维护点的确认纸条，记录进度并补发下一张确认纸条
 kill @e[type=minecraft:item,distance=..3,limit=1,nbt={Item:{components:{"minecraft:custom_data":{park_check:1}}}}]
 scoreboard players add @s park_progress 1
 bossbar set rfm:park_time name [{"translate":"rfm.text.ebb9f3effdda","color":"green"},{"score":{"name":"@s","objective":"park_progress"},"color":"yellow"},{"text":" / 6","color":"green"}]

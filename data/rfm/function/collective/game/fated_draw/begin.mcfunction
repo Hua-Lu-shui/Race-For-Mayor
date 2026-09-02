@@ -1,4 +1,3 @@
-#切换到运行状态后解除锁位，并开始2分钟抽签倒计时
 scoreboard players set #group_state group_state 1
 scoreboard players set #group_time group_time 2400
 bossbar set rfm:lottery_time players @a[tag=rfm_participant]

@@ -1,4 +1,3 @@
-#事件21：民生评议公开（永久显示民生领先者）
 scoreboard players set #event_21 event_used 1
 scoreboard players set #reveal_welfare leader_reveal 1
 title @a[tag=rfm_participant] times 10 80 20

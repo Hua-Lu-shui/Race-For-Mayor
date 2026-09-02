@@ -1,4 +1,3 @@
-#事件05：全城信任危机（名誉权重+2）
 scoreboard players set #event_5 event_used 1
 scoreboard players add #weight fame_weight 2
 title @a[tag=rfm_participant] times 10 80 20

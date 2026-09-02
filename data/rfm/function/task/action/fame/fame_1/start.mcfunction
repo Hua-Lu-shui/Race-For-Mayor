@@ -1,11 +1,9 @@
-#街头演讲场地
 scoreboard players set #waiting next_round_ready 0
 scoreboard players set @a[tag=rfm_participant] next_round_clock 0
 
 kill @e[type=minecraft:villager,tag=rfm_speech_citizen]
 kill @e[type=minecraft:text_display,tag=rfm_speech_label]
 
-#广场上的市民观众
 summon minecraft:villager 116 -59 -24 {Tags:["rfm_speech_citizen"],NoAI:1b,Invulnerable:1b,PersistenceRequired:1b,Silent:1b,Offers:{Recipes:[]},VillagerData:{profession:"minecraft:none",level:1,type:"minecraft:plains"}}
 summon minecraft:villager 119 -59 -24 {Tags:["rfm_speech_citizen"],NoAI:1b,Invulnerable:1b,PersistenceRequired:1b,Silent:1b,Offers:{Recipes:[]},VillagerData:{profession:"minecraft:librarian",level:2,type:"minecraft:plains"}}
 summon minecraft:villager 122 -59 -24 {Tags:["rfm_speech_citizen"],NoAI:1b,Invulnerable:1b,PersistenceRequired:1b,Silent:1b,Offers:{Recipes:[]},VillagerData:{profession:"minecraft:none",level:1,type:"minecraft:plains"}}
@@ -31,10 +29,10 @@ scoreboard players set @s speech_time 0
 scoreboard players set @s speech_delay 0
 scoreboard players set @s speech_state 2
 
-#场景准备完成后再将玩家送入广场
 gamemode adventure @a[tag=rfm_participant]
 tp @a[tag=rfm_participant] 119 -52 -17 180 30
 tp @s 119 -58 -18 180 0
+function rfm:task/action/sequence/hide_observers
 
 tellraw @a[tag=rfm_participant] [{"translate":"rfm.text.fbbcb292e42e","color":"aqua","bold":true},{"translate":"rfm.text.f3bab73164c2","color":"white"},{"selector":"@s","color":"white"}]
 tellraw @a[tag=rfm_participant] [{"translate":"rfm.text.ee78e4bff0ee","color":"white"},{"translate":"rfm.text.3fe7ebf4a42d","color":"#67D5FF","bold":true},{"translate":"rfm.text.676d9965245e","color":"white"},{"translate":"rfm.text.799d31ae53f6","color":"#FFCB77","bold":true},{"translate":"rfm.text.c8ee371bf430","color":"white"}]

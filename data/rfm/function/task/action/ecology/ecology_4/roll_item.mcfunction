@@ -1,4 +1,3 @@
-#先随机一个编号；如果本局已经出现过，就递归重抽
 execute store result score @s trash_item_id run random value 1..10
 execute if score @s trash_item_id matches 1 if score @s trash_used_1 matches 1 run function rfm:task/action/ecology/ecology_4/roll_item
 execute if score @s trash_item_id matches 2 if score @s trash_used_2 matches 1 run function rfm:task/action/ecology/ecology_4/roll_item

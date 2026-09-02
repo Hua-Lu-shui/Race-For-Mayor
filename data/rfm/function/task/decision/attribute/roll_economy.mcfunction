@@ -1,4 +1,3 @@
-#随机抽取一个经济决策，并用位图判断该玩家本局是否已经抽到过
 scoreboard players add @s dec_used_econ 0
 execute store result score @s decision_task run random value 201..220
 scoreboard players set @s dec_used_bit 1
@@ -47,5 +46,4 @@ execute if score @s decision_task matches 217 run function rfm:task/decision/eco
 execute if score @s decision_task matches 218 run function rfm:task/decision/economy/autonomous_zone/autonomous_zone_show
 execute if score @s decision_task matches 219 run function rfm:task/decision/economy/heritage_business/heritage_business_show
 execute if score @s decision_task matches 220 run function rfm:task/decision/economy/underground_space/underground_space_show
-#学者额外获知三个选项的精确属性影响
 function rfm:ability/scholar/preview

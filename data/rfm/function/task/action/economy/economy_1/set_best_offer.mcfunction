@@ -1,4 +1,3 @@
-#随机选出的商人获得最佳交易标记
 execute if score @s market_target matches 1 run tag @e[type=minecraft:villager,tag=rfm_market_v01,limit=1] add rfm_market_best
 execute if score @s market_target matches 2 run tag @e[type=minecraft:villager,tag=rfm_market_v02,limit=1] add rfm_market_best
 execute if score @s market_target matches 3 run tag @e[type=minecraft:villager,tag=rfm_market_v03,limit=1] add rfm_market_best
@@ -20,7 +19,6 @@ execute if score @s market_target matches 18 run tag @e[type=minecraft:villager,
 execute if score @s market_target matches 19 run tag @e[type=minecraft:villager,tag=rfm_market_v19,limit=1] add rfm_market_best
 execute if score @s market_target matches 20 run tag @e[type=minecraft:villager,tag=rfm_market_v20,limit=1] add rfm_market_best
 
-#最佳交易有三种随机组合
 execute if score @s market_round matches 1 run data modify entity @e[type=minecraft:villager,tag=rfm_market_best,limit=1] Offers.Recipes[0].buy.count set value 3
 execute if score @s market_round matches 1 run data modify entity @e[type=minecraft:villager,tag=rfm_market_best,limit=1] Offers.Recipes[0].sell.count set value 4
 execute if score @s market_round matches 2 run data modify entity @e[type=minecraft:villager,tag=rfm_market_best,limit=1] Offers.Recipes[0].buy.count set value 4

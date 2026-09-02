@@ -1,4 +1,3 @@
-#若非名誉属性低于本回合任务开始前的值，则返还差额；任务带来的提升予以保留
 scoreboard players set @s ability_trigger 0
 execute if score @s economy < @s ability_economy run scoreboard players set @s ability_trigger 1
 execute if score @s economy < @s ability_economy run scoreboard players operation @s economy = @s ability_economy

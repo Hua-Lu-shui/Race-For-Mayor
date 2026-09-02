@@ -1,6 +1,4 @@
-#创建最终结算流程与票数计分板
 scoreboard objectives add settle_state dummy
-#普通玩家点击结束告示牌提交返回请求
 scoreboard objectives add ending_return trigger
 scoreboard objectives add settle_ready dummy
 scoreboard objectives add settle_clock minecraft.dropped:minecraft.clock

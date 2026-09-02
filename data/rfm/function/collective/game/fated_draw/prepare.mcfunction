@@ -1,4 +1,3 @@
-#小游戏3准备：传送到抽签房间、生成与玩家人数相同的纸条并显示规则
 function rfm:collective/game/fated_draw/cleanup
 scoreboard players set #group_state group_state 4
 scoreboard players set @a[tag=rfm_participant] group_ready 0

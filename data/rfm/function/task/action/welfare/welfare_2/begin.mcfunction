@@ -1,4 +1,3 @@
-#正式开始全民健身挑战
 scoreboard players set @s fitness_checkpoint 0
 scoreboard players set @s fitness_time 220
 scoreboard players set @s fitness_state 1

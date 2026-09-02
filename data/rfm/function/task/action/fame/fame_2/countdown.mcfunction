@@ -1,4 +1,3 @@
-#推进社区拜访开场倒计时
 execute if score @s visit_delay matches 60 run title @a[tag=rfm_participant] clear
 execute if score @s visit_delay matches 60 run title @a[tag=rfm_participant] title {"text":"3","color":"green","bold":true}
 execute if score @s visit_delay matches 60 run playsound minecraft:block.note_block.hat master @a[tag=rfm_participant] ~ ~ ~ 1 1 1

@@ -1,4 +1,3 @@
-#本函数以尝试交易的玩家为@s；只有靠近自己房间的神秘人交互实体才通过
 tag @a[tag=rfm_participant] remove rfm_collection_buyer
 tag @s add rfm_collection_buyer
 scoreboard players set #confirm_valid collection_target 0

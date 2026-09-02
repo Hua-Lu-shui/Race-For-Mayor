@@ -1,4 +1,3 @@
-#事件06：经济结构震荡（经济权重+2）
 scoreboard players set #event_6 event_used 1
 scoreboard players add #weight economy_weight 2
 title @a[tag=rfm_participant] times 10 80 20

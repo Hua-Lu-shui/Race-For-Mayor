@@ -1,4 +1,3 @@
-#初始化10轮公开答疑
 scoreboard players set @s qa_round 0
 scoreboard players set @s qa_target 0
 scoreboard players set @s qa_previous 0

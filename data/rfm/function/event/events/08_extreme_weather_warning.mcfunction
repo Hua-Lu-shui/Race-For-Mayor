@@ -1,4 +1,3 @@
-#事件08：极端气候预警（生态权重+2）
 scoreboard players set #event_8 event_used 1
 scoreboard players add #weight ecology_weight 2
 title @a[tag=rfm_participant] times 10 80 20

@@ -1,4 +1,3 @@
-#事件02：产业招商周（经济权重+1）
 scoreboard players set #event_2 event_used 1
 scoreboard players add #weight economy_weight 1
 title @a[tag=rfm_participant] times 10 80 20

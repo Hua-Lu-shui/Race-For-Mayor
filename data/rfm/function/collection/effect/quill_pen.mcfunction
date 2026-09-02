@@ -1,5 +1,3 @@
-#“羽毛笔”：回合结束、公示前结算；上一回合实际被选为行动玩家时不触发
-#第1回合及缺少上一回合记录时也不触发
 execute unless score @s previous_action_player matches 0 run return 0
 scoreboard players add @s fame 1
 scoreboard players add @s economy 1

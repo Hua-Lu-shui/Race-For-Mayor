@@ -1,4 +1,3 @@
-#招商洽谈场地
 scoreboard players set #waiting next_round_ready 0
 scoreboard players set @a[tag=rfm_participant] next_round_clock 0
 
@@ -30,6 +29,7 @@ scoreboard players set @s negotiation_state 2
 gamemode adventure @a[tag=rfm_participant]
 tp @a[tag=rfm_participant] 144 -58 16 0 0
 tp @s 146 -58 22 90 0
+function rfm:task/action/sequence/hide_observers
 
 tellraw @a[tag=rfm_participant] [{"translate":"rfm.text.7adf9d90fc9c","color":"yellow","bold":true},{"translate":"rfm.text.f3bab73164c2","color":"white"},{"selector":"@s","color":"white"}]
 tellraw @a[tag=rfm_participant] [{"translate":"rfm.text.3881a269b355","color":"white"},{"translate":"rfm.text.0c803ad54a7d","color":"#FFCB77"},{"translate":"rfm.text.b715a04744cd","color":"white"},{"translate":"rfm.text.995a081da711","color":"#67D5FF","bold":true},{"translate":"rfm.text.662ee5c9abbd","color":"white"},{"translate":"rfm.text.74c1fda3648a","color":"#FFD166","bold":true},{"text":"。","color":"white"}]

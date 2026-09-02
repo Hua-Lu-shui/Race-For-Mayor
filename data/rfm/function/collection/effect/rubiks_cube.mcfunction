@@ -1,4 +1,3 @@
-#“魔方”：回合开始时，若有另一位同身份候选人，当前最低属性+4
 tag @a[tag=rfm_participant] remove rfm_cube_owner
 tag @s add rfm_cube_owner
 scoreboard players set @s collection_effect_value 0

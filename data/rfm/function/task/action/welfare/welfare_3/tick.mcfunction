@@ -1,8 +1,6 @@
-#只在玩家实际输入动作时推进30秒倒计时
 scoreboard players remove @s exercise_time 1
 execute store result bossbar rfm:exercise_time value run scoreboard players get @s exercise_time
 
-#离开全部踏板后，才允许记录下一次踩踏
 execute if block 202 -59 -65 minecraft:light_weighted_pressure_plate[power=0] if block 206 -59 -69 minecraft:light_weighted_pressure_plate[power=0] if block 210 -59 -65 minecraft:light_weighted_pressure_plate[power=0] if block 206 -59 -61 minecraft:light_weighted_pressure_plate[power=0] run scoreboard players set @s exercise_armed 1
 
 scoreboard players set @s exercise_answer 0

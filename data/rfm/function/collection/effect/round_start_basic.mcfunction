@@ -1,5 +1,3 @@
-#16-23号藏品：回合开始时固定属性加成；同层按稀有 -> 普通结算，相同藏品只生效一次
-#稀有：不知名种子、礼品盒、摇钱树、礼服
 execute if score @s collection_slot1 matches 17 run scoreboard players add @s ecology 5
 execute unless score @s collection_slot1 matches 17 if score @s collection_slot2 matches 17 run scoreboard players add @s ecology 5
 execute unless score @s collection_slot1 matches 17 unless score @s collection_slot2 matches 17 if score @s collection_slot3 matches 17 run scoreboard players add @s ecology 5
@@ -21,7 +19,6 @@ execute unless score @s collection_slot1 matches 23 unless score @s collection_s
 execute unless score @s collection_slot1 matches 23 unless score @s collection_slot2 matches 23 unless score @s collection_slot3 matches 23 if score @s collection_slot4 matches 23 run scoreboard players add @s fame 5
 execute unless score @s collection_slot1 matches 23 unless score @s collection_slot2 matches 23 unless score @s collection_slot3 matches 23 unless score @s collection_slot4 matches 23 if score @s collection_slot5 matches 23 run scoreboard players add @s fame 5
 
-#普通：护目镜、玩具熊、招财猫、华丽的面具
 execute if score @s collection_slot1 matches 16 run scoreboard players add @s ecology 3
 execute unless score @s collection_slot1 matches 16 if score @s collection_slot2 matches 16 run scoreboard players add @s ecology 3
 execute unless score @s collection_slot1 matches 16 unless score @s collection_slot2 matches 16 if score @s collection_slot3 matches 16 run scoreboard players add @s ecology 3

@@ -1,4 +1,3 @@
-#8个占位起点：沿+Z方向游向终点；只写坐标以锁位，不写yaw/pitch以保留视角转动
 execute if score @s room matches 1 run tp @s 120 -53 149
 execute if score @s room matches 2 run tp @s 120 -53 143
 execute if score @s room matches 3 run tp @s 120 -53 137

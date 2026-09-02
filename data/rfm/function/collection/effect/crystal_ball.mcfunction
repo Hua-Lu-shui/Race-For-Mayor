@@ -1,4 +1,3 @@
-#“水晶球”：回合开始时，最高权重对应的属性+5；并列最高时随机选择其中一项
 execute unless score @s collection_slot1 matches 7 unless score @s collection_slot2 matches 7 unless score @s collection_slot3 matches 7 unless score @s collection_slot4 matches 7 unless score @s collection_slot5 matches 7 run return 0
 scoreboard players operation @s collection_highest = #weight fame_weight
 execute if score #weight economy_weight > @s collection_highest run scoreboard players operation @s collection_highest = #weight economy_weight

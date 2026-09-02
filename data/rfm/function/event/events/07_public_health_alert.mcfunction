@@ -1,4 +1,3 @@
-#事件07：公共卫生警报（民生权重+2）
 scoreboard players set #event_7 event_used 1
 scoreboard players add #weight welfare_weight 2
 title @a[tag=rfm_participant] times 10 80 20

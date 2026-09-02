@@ -1,4 +1,3 @@
-#交易只允许在第二回合后的三回合期限内、办公室等待下一回合时进行
 execute unless score #phase phase matches 1 run return 0
 execute unless score #waiting next_round_ready matches 1 run return run tellraw @s {"translate":"rfm.text.9a3432b00503","color":"red"}
 execute unless score #round round matches 2..4 run return run tellraw @s {"translate":"rfm.text.06a971cc106a","color":"red"}
@@ -10,7 +9,6 @@ function rfm:collection/mysterious/configure_offer
 execute if score @s collection_attr matches 0 run return run tellraw @s {"translate":"rfm.text.9ba1e3b73a82","color":"gray"}
 execute if score @s collection_cost matches ..-1 run return run tellraw @s {"translate":"rfm.text.b1b446e18510","color":"gray"}
 
-#藏品按槽位顺序存放；基础容量为2，医生为3，每枚扩容令牌再增加1
 scoreboard players set @s collection_target 0
 execute if score @s collection_cap matches 1.. if score @s collection_slot1 matches 0 run scoreboard players set @s collection_target 1
 execute unless score @s collection_target matches 1.. if score @s collection_cap matches 2.. if score @s collection_slot2 matches 0 run scoreboard players set @s collection_target 2

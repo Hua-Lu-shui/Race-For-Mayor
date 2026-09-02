@@ -1,4 +1,3 @@
-#事件10：城市商业峰会（企业家候选人所有属性+3）
 scoreboard players set #event_10 event_used 1
 scoreboard players add @a[tag=rfm_participant,scores={candidate=2}] fame 3
 scoreboard players add @a[tag=rfm_participant,scores={candidate=2}] economy 3

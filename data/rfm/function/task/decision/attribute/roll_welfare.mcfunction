@@ -1,4 +1,3 @@
-#随机抽取一个民生决策，并用位图判断该玩家本局是否已经抽到过
 scoreboard players add @s dec_used_welf 0
 execute store result score @s decision_task run random value 301..320
 scoreboard players set @s dec_used_bit 1
@@ -47,5 +46,4 @@ execute if score @s decision_task matches 317 run function rfm:task/decision/wel
 execute if score @s decision_task matches 318 run function rfm:task/decision/welfare/mental_hotline/mental_hotline_show
 execute if score @s decision_task matches 319 run function rfm:task/decision/welfare/night_toilet/night_toilet_show
 execute if score @s decision_task matches 320 run function rfm:task/decision/welfare/funeral_service/funeral_service_show
-#学者额外获知三个选项的精确属性影响
 function rfm:ability/scholar/preview

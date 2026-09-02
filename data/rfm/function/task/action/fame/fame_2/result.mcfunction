@@ -1,4 +1,3 @@
-#根据完成情况和错误次数结算社区拜访奖励
 scoreboard players set @s visit_state 4
 bossbar set rfm:visit_time visible false
 

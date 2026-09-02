@@ -1,4 +1,3 @@
-#“带批注的档案”：向本次决策中实际增加最多的一项属性追加3点；并列时等概率选择
 scoreboard players operation @s collection_delta_fame = @s fame
 scoreboard players operation @s collection_delta_fame -= @s collection_fame_before
 scoreboard players operation @s collection_delta_economy = @s economy

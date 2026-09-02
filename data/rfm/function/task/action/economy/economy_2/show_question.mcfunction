@@ -1,4 +1,3 @@
-#在企业代表头顶的对话框展示当前问题
 execute if score @s negotiation_question matches 1 run data merge entity @e[type=minecraft:text_display,tag=rfm_negotiation_dialogue,limit=1] {text:'[{"translate":"rfm.text.fb48812fee67","color":"yellow","bold":true},{"translate":"rfm.text.b70614ab6d35","color":"white"}]'}
 execute if score @s negotiation_question matches 2 run data merge entity @e[type=minecraft:text_display,tag=rfm_negotiation_dialogue,limit=1] {text:'[{"translate":"rfm.text.fb48812fee67","color":"yellow","bold":true},{"translate":"rfm.text.eb0c9ec25319","color":"white"}]'}
 execute if score @s negotiation_question matches 3 run data merge entity @e[type=minecraft:text_display,tag=rfm_negotiation_dialogue,limit=1] {text:'[{"translate":"rfm.text.fb48812fee67","color":"yellow","bold":true},{"translate":"rfm.text.81c509b677b9","color":"white"}]'}

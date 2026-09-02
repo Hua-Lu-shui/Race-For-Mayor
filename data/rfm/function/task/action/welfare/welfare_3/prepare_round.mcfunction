@@ -1,4 +1,3 @@
-#根据当前轮数确定序列长度，并生成新的动作顺序
 scoreboard players set @s exercise_length 4
 execute if score @s exercise_round matches 2 run scoreboard players set @s exercise_length 5
 execute if score @s exercise_round matches 3 run scoreboard players set @s exercise_length 6

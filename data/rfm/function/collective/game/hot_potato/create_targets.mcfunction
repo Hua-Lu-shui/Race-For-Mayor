@@ -1,4 +1,3 @@
-#8个点击区域必须与lock_position.mcfunction中的站位坐标保持一致
 kill @e[type=minecraft:interaction,tag=rfm_hot_potato_target]
 execute unless entity @a[tag=rfm_potato_holder,scores={potato_pos=1}] run summon minecraft:interaction 329 -59 124 {Tags:["rfm_hot_potato_target","rfm_hot_potato_target_1"],width:1.3f,height:2.0f,response:1b}
 execute unless entity @a[tag=rfm_potato_holder,scores={potato_pos=2}] run summon minecraft:interaction 328 -59 125 {Tags:["rfm_hot_potato_target","rfm_hot_potato_target_2"],width:1.3f,height:2.0f,response:1b}

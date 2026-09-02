@@ -1,4 +1,3 @@
-#事件04：绿色城市倡议（生态权重+1）
 scoreboard players set #event_4 event_used 1
 scoreboard players add #weight ecology_weight 1
 title @a[tag=rfm_participant] times 10 80 20

@@ -1,4 +1,3 @@
-#先判断本次分类是否正确，再清空四个新坐标的投放容器
 execute if score @s trash_answer = @s trash_target run scoreboard players add @s trash_correct 1
 execute if score @s trash_answer = @s trash_target run tellraw @a[tag=rfm_participant] [{"translate":"rfm.text.c84a2dff15d0","color":"green","bold":true},{"translate":"rfm.text.e02b0573ab8b","color":"white"},{"score":{"name":"@s","objective":"trash_correct"},"color":"green"}]
 execute if score @s trash_answer = @s trash_target run playsound minecraft:entity.experience_orb.pickup master @s ~ ~ ~ 1 1.2 1

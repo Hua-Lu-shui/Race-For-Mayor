@@ -1,4 +1,3 @@
-#终点按钮事件：按同tick内的检测顺序记录到达名次，并转换为供统一排名函数使用的高分优先值
 scoreboard players set @s group_finished 1
 scoreboard players add #group_arrival group_arrival 1
 scoreboard players set @s group_score 9

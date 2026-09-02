@@ -1,4 +1,3 @@
-#清理公开答疑的临时物品、界面和计分状态
 bossbar set rfm:qa_time visible false
 clear @s minecraft:paper[minecraft:custom_data={qa_ready:1}]
 kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{qa_ready:1}}}}]

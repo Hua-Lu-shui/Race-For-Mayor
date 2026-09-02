@@ -1,4 +1,3 @@
-#正式开始生态行动任务3并初始化计时状态
 scoreboard players set @s park_progress 0
 scoreboard players set @s park_time 800
 scoreboard players set @s park_state 1

@@ -1,4 +1,3 @@
-#记录上一方向，抽取一个不连续重复的新提问方向
 scoreboard players operation @s qa_previous = @s qa_target
 execute store result score @s qa_target run random value 1..4
 execute if score @s qa_target = @s qa_previous run function rfm:task/action/fame/fame_4/roll_target

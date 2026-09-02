@@ -1,4 +1,3 @@
-#根据随机路线发放对应的拜访记录
 execute if score @s visit_route matches 1 run function rfm:task/action/fame/fame_2/routes/route_1
 execute if score @s visit_route matches 2 run function rfm:task/action/fame/fame_2/routes/route_2
 execute if score @s visit_route matches 3 run function rfm:task/action/fame/fame_2/routes/route_3

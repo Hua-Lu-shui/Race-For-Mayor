@@ -1,4 +1,3 @@
-#“褪色的记者证”：按属性公示标签判断；并列成为领先者时仍视为领先，不触发效果
 execute if entity @s[tag=rfm_public_lead_fame] run return 0
 execute if entity @s[tag=rfm_public_lead_economy] run return 0
 execute if entity @s[tag=rfm_public_lead_welfare] run return 0

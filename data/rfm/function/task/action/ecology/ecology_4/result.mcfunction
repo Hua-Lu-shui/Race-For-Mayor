@@ -1,4 +1,3 @@
-#根据完成情况结算生态行动任务4的奖励
 scoreboard players set @s trash_state 4
 bossbar set rfm:trash_time visible false
 tellraw @a[tag=rfm_participant] [{"translate":"rfm.text.52b9846e520e","color":"white"},{"score":{"name":"@s","objective":"trash_correct"},"color":"green"},{"translate":"rfm.text.0f621beba739","color":"white"}]

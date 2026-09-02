@@ -1,7 +1,5 @@
-#从尚未出现的物品中随机抽取，确保一局内10种物品各出现一次
 function rfm:task/action/ecology/ecology_4/roll_item
 
-#立即记录本次编号，后续抽取遇到该编号时重新随机
 execute if score @s trash_item_id matches 1 run scoreboard players set @s trash_used_1 1
 execute if score @s trash_item_id matches 2 run scoreboard players set @s trash_used_2 1
 execute if score @s trash_item_id matches 3 run scoreboard players set @s trash_used_3 1
@@ -13,28 +11,23 @@ execute if score @s trash_item_id matches 8 run scoreboard players set @s trash_
 execute if score @s trash_item_id matches 9 run scoreboard players set @s trash_used_9 1
 execute if score @s trash_item_id matches 10 run scoreboard players set @s trash_used_10 1
 
-#物品名称保持原版，只附加不可见的任务标记
 scoreboard players set @s trash_target 0
 execute if score @s trash_item_id matches 1..3 run scoreboard players set @s trash_target 1
 execute if score @s trash_item_id matches 4..5 run scoreboard players set @s trash_target 2
 execute if score @s trash_item_id matches 6..8 run scoreboard players set @s trash_target 3
 execute if score @s trash_item_id matches 9..10 run scoreboard players set @s trash_target 4
 
-#可回收物：纸、玻璃瓶、铁粒
 execute if score @s trash_item_id matches 1 run item replace entity @s hotbar.4 with minecraft:paper[minecraft:custom_data={trash_item:1}] 1
 execute if score @s trash_item_id matches 2 run item replace entity @s hotbar.4 with minecraft:glass_bottle[minecraft:custom_data={trash_item:1}] 1
 execute if score @s trash_item_id matches 3 run item replace entity @s hotbar.4 with minecraft:iron_nugget[minecraft:custom_data={trash_item:1}] 1
 
-#有害垃圾：钟、指南针
 execute if score @s trash_item_id matches 4 run item replace entity @s hotbar.4 with minecraft:clock[minecraft:custom_data={trash_item:1}] 1
 execute if score @s trash_item_id matches 5 run item replace entity @s hotbar.4 with minecraft:compass[minecraft:custom_data={trash_item:1}] 1
 
-#厨余垃圾：腐肉、毒马铃薯、西瓜片
 execute if score @s trash_item_id matches 6 run item replace entity @s hotbar.4 with minecraft:rotten_flesh[minecraft:custom_data={trash_item:1}] 1
 execute if score @s trash_item_id matches 7 run item replace entity @s hotbar.4 with minecraft:poisonous_potato[minecraft:custom_data={trash_item:1}] 1
 execute if score @s trash_item_id matches 8 run item replace entity @s hotbar.4 with minecraft:melon_slice[minecraft:custom_data={trash_item:1}] 1
 
-#其他垃圾：红砖、皮革
 execute if score @s trash_item_id matches 9 run item replace entity @s hotbar.4 with minecraft:brick[minecraft:custom_data={trash_item:1}] 1
 execute if score @s trash_item_id matches 10 run item replace entity @s hotbar.4 with minecraft:leather[minecraft:custom_data={trash_item:1}] 1
 

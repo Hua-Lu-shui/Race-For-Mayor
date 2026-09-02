@@ -1,4 +1,3 @@
-#同时拥有“银戒指”和“金戒指”时，每回合结束时所有属性+4
 execute unless score @s collection_slot1 matches 8 unless score @s collection_slot2 matches 8 unless score @s collection_slot3 matches 8 unless score @s collection_slot4 matches 8 unless score @s collection_slot5 matches 8 run return 0
 execute unless score @s collection_slot1 matches 9 unless score @s collection_slot2 matches 9 unless score @s collection_slot3 matches 9 unless score @s collection_slot4 matches 9 unless score @s collection_slot5 matches 9 run return 0
 scoreboard players add @s fame 4

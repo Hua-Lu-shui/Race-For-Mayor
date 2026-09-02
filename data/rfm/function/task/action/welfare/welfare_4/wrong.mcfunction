@@ -1,4 +1,3 @@
-#提前或超载发车，清空该线路并扣除2秒
 scoreboard players add @s bus_wrong 1
 scoreboard players remove @s bus_time 40
 tellraw @a[tag=rfm_participant] {"translate":"rfm.text.4773f4157826","color":"red","bold":true}

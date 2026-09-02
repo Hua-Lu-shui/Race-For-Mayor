@@ -1,4 +1,3 @@
-#判断本次分诊结果并清空三个窗口
 execute if score @s hospital_answer = @s hospital_target run scoreboard players add @s hospital_correct 1
 execute if score @s hospital_answer = @s hospital_target run tellraw @a[tag=rfm_participant] [{"translate":"rfm.text.853b1a1e9033","color":"green","bold":true},{"translate":"rfm.text.e02b0573ab8b","color":"white"},{"score":{"name":"@s","objective":"hospital_correct"},"color":"green"}]
 execute if score @s hospital_answer = @s hospital_target run playsound minecraft:entity.experience_orb.pickup master @s ~ ~ ~ 1 1.2 1

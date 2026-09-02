@@ -1,4 +1,3 @@
-#根据玩家保存的房间编号返回对应办公室
 execute if score @s room matches 1 run tp @s -18 -59 -10
 execute if score @s room matches 2 run tp @s -19 -59 6
 execute if score @s room matches 3 run tp @s -21 -59 23

@@ -1,4 +1,3 @@
-#在按错的住户头顶显示愤怒粒子
 execute if score @s visit_answer matches 101 at @e[type=minecraft:villager,tag=rfm_visit_101,limit=1] run particle minecraft:angry_villager ~ ~2 ~ 0.35 0.4 0.35 0.05 15 force @a[tag=rfm_participant]
 execute if score @s visit_answer matches 102 at @e[type=minecraft:villager,tag=rfm_visit_102,limit=1] run particle minecraft:angry_villager ~ ~2 ~ 0.35 0.4 0.35 0.05 15 force @a[tag=rfm_participant]
 execute if score @s visit_answer matches 103 at @e[type=minecraft:villager,tag=rfm_visit_103,limit=1] run particle minecraft:angry_villager ~ ~2 ~ 0.35 0.4 0.35 0.05 15 force @a[tag=rfm_participant]

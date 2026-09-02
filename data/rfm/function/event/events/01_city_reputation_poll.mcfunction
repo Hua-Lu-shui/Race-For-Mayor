@@ -1,4 +1,3 @@
-#事件01：城市口碑调查（名誉权重+1）
 scoreboard players set #event_1 event_used 1
 scoreboard players add #weight fame_weight 1
 title @a[tag=rfm_participant] times 10 80 20

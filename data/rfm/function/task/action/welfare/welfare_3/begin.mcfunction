@@ -1,4 +1,3 @@
-#正式开始课间操领队任务，操作时间只在玩家输入动作时减少
 scoreboard players set @s exercise_round 1
 scoreboard players set @s exercise_wrong 0
 scoreboard players set @s exercise_time 600

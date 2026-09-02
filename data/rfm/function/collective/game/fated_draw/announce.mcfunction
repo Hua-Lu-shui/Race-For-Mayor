@@ -1,4 +1,3 @@
-#显示游戏名称与抽签规则
 title @a[tag=rfm_participant] times 10 80 20
 title @a[tag=rfm_participant] title [{"translate":"rfm.text.419f291a6047","color":"#C6A8FF","bold":true},{"translate":"rfm.text.d3a3069580c2","color":"gold","bold":true}]
 title @a[tag=rfm_participant] subtitle [{"translate":"rfm.text.7320b9c10194","color":"white"}]

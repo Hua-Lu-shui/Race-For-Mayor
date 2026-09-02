@@ -1,4 +1,3 @@
-#事件28：诊疗记录争议（医生候选人所有属性-3）
 scoreboard players set #event_28 event_used 1
 scoreboard players remove @a[tag=rfm_participant,scores={candidate=8}] fame 3
 scoreboard players remove @a[tag=rfm_participant,scores={candidate=8}] economy 3

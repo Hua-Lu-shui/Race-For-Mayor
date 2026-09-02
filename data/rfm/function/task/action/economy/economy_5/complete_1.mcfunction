@@ -1,4 +1,3 @@
-#完成陈康的岗位匹配
 scoreboard players set @s employment_done_1 1
 scoreboard players add @s employment_completed 1
 kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{resume_id:1}}}}]

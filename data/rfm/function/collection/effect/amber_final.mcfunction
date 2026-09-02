@@ -1,4 +1,3 @@
-#“琥珀”：最终结算前给予记录的所有属性
 execute unless score @s collection_slot1 matches 11 unless score @s collection_slot2 matches 11 unless score @s collection_slot3 matches 11 unless score @s collection_slot4 matches 11 unless score @s collection_slot5 matches 11 run return 0
 scoreboard players operation @s fame += @s collection_amber_fame
 scoreboard players operation @s economy += @s collection_amber_economy

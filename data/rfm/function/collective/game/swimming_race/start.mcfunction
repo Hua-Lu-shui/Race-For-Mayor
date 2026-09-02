@@ -1,4 +1,3 @@
-#全员准备完成：进入锁位倒计时，begin后才解除锁位
 scoreboard players set #group_state group_state 5
 scoreboard players set #group_arrival group_arrival 0
 scoreboard players set @a[tag=rfm_participant] group_score 0

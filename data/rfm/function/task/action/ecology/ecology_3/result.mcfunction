@@ -1,4 +1,3 @@
-#根据完成情况结算生态行动任务3的奖励
 scoreboard players set @s park_state 4
 bossbar set rfm:park_time visible false
 tellraw @a[tag=rfm_participant] [{"translate":"rfm.text.7904a0f7c490","color":"white"},{"score":{"name":"@s","objective":"park_progress"},"color":"green"},{"translate":"rfm.text.f3a5d60c82e7","color":"white"}]

@@ -1,2 +1,1 @@
-#向全体玩家显示教程第12行
 tellraw @a [{"translate":"rfm.text.c6a36138b3f6","color":"white"},{"translate":"rfm.text.cb5790f321c1","color":"white"},{"translate":"rfm.text.ddf31ade9839","color":"white"},{"translate":"rfm.text.05f35561beb4","color":"#C6A8FF"},{"translate":"rfm.text.823ab3703778","color":"white"},{"translate":"rfm.text.4ba94afc00bf","color":"white"},{"translate":"rfm.text.6c441cb4f865","color":"white"}]

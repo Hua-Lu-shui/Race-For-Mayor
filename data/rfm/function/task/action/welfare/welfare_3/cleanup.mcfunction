@@ -1,4 +1,3 @@
-#清理民生行动任务3的临时状态和界面
 bossbar set rfm:exercise_time visible false
 clear @s minecraft:paper[minecraft:custom_data={exercise_ready:1}]
 kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{exercise_ready:1}}}}]

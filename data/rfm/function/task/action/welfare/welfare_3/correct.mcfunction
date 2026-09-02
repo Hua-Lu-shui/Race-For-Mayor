@@ -1,4 +1,3 @@
-#正确输入一个动作
 scoreboard players add @s exercise_input 1
 playsound minecraft:entity.experience_orb.pickup master @s ~ ~ ~ 1 1.3 1
 bossbar set rfm:exercise_time name [{"translate":"rfm.text.22999089974d","color":"red"},{"score":{"name":"@s","objective":"exercise_round"},"color":"yellow"},{"translate":"rfm.text.a624453a03d0","color":"red"},{"score":{"name":"@s","objective":"exercise_input"},"color":"white"},{"text":" / ","color":"red"},{"score":{"name":"@s","objective":"exercise_length"},"color":"white"}]

@@ -1,7 +1,5 @@
-#重置决策属性选择计分板
 scoreboard players set @s attribute_choice 0
 
-#从四种属性中随机隐藏一种，剩下三种给玩家选择
 execute store result score @s attribute_missing run random value 1..4
 
 scoreboard players set @s attribute_option_1 0
@@ -24,9 +22,7 @@ execute if score @s attribute_missing matches 4 run scoreboard players set @s at
 execute if score @s attribute_missing matches 4 run scoreboard players set @s attribute_option_2 2
 execute if score @s attribute_missing matches 4 run scoreboard players set @s attribute_option_3 3
 
-#允许玩家改变属性选择计分板
 scoreboard players enable @s attribute_choice
-#提示选择任务类型
 tellraw @s [{"translate":"rfm.text.ea1ef355ebe8","color":"white"},{"translate":"rfm.text.ce211a387eac","color":"#C6A8FF","bold":true},{"text":"：","color":"white"}]
 
 execute unless score @s attribute_missing matches 1 run tellraw @s [{"translate":"rfm.text.bd30e95a8691","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger attribute_choice set 1"}},{"translate":"rfm.text.0c392f992619","color":"white"}]

@@ -1,4 +1,3 @@
-#事件15：财务审查风波（企业家候选人所有属性-3）
 scoreboard players set #event_15 event_used 1
 scoreboard players remove @a[tag=rfm_participant,scores={candidate=2}] fame 3
 scoreboard players remove @a[tag=rfm_participant,scores={candidate=2}] economy 3

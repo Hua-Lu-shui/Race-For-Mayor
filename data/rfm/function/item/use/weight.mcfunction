@@ -1,4 +1,3 @@
-#记录目标权重的旧值
 execute if score #used_item item_held matches 5 run scoreboard players operation @s item_before = #weight fame_weight
 execute if score #used_item item_held matches 6 run scoreboard players operation @s item_before = #weight economy_weight
 execute if score #used_item item_held matches 7 run scoreboard players operation @s item_before = #weight welfare_weight
@@ -8,19 +7,16 @@ execute if score #used_item item_held matches 10 run scoreboard players operatio
 execute if score #used_item item_held matches 11 run scoreboard players operation @s item_before = #weight welfare_weight
 execute if score #used_item item_held matches 12 run scoreboard players operation @s item_before = #weight ecology_weight
 
-#权重加强
 execute if score #used_item item_held matches 5 run scoreboard players add #weight fame_weight 2
 execute if score #used_item item_held matches 6 run scoreboard players add #weight economy_weight 2
 execute if score #used_item item_held matches 7 run scoreboard players add #weight welfare_weight 2
 execute if score #used_item item_held matches 8 run scoreboard players add #weight ecology_weight 2
-#权重削弱，最低为1
 execute if score #used_item item_held matches 9 run scoreboard players remove #weight fame_weight 2
 execute if score #used_item item_held matches 10 run scoreboard players remove #weight economy_weight 2
 execute if score #used_item item_held matches 11 run scoreboard players remove #weight welfare_weight 2
 execute if score #used_item item_held matches 12 run scoreboard players remove #weight ecology_weight 2
 function rfm:attribute/weight_minimum
 
-#计算实际变化量（削弱令牌可能受到权重最低为1的限制）
 execute if score #used_item item_held matches 5 run scoreboard players operation @s item_delta = #weight fame_weight
 execute if score #used_item item_held matches 6 run scoreboard players operation @s item_delta = #weight economy_weight
 execute if score #used_item item_held matches 7 run scoreboard players operation @s item_delta = #weight welfare_weight

@@ -1,4 +1,3 @@
-#随机抽取五位不重复居民，并将抽取顺序对应到五个站位
 scoreboard players set @s photo_selected 0
 scoreboard players set @s photo_slot_1 0
 scoreboard players set @s photo_slot_2 0

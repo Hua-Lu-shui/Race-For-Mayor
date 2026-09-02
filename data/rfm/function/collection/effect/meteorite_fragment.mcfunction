@@ -1,4 +1,3 @@
-#“陨石碎片”：回合开始时，将最高属性的数值赋予随机一项未锁定的并列最低属性
 execute unless score @s collection_slot1 matches 30 unless score @s collection_slot2 matches 30 unless score @s collection_slot3 matches 30 unless score @s collection_slot4 matches 30 unless score @s collection_slot5 matches 30 run return 0
 function rfm:attribute/lock/enforce
 scoreboard players operation @s collection_effect_value = @s fame

@@ -1,4 +1,3 @@
-#三秒内没有作出反应，本次直接扣除1分
 function rfm:task/action/fame/fame_1/reset_buttons
 scoreboard players remove @s speech_score 1
 tellraw @a[tag=rfm_participant] {"translate":"rfm.text.616a0a499fd1","color":"red","bold":true}

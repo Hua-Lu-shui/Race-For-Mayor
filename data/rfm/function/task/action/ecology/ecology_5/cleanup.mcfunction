@@ -2,7 +2,6 @@ bossbar set rfm:energy_time visible false
 clear @s minecraft:paper[minecraft:custom_data={energy_ready:1}]
 kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{energy_ready:1}}}}]
 
-#复位控制台
 setblock 267 -57 79 minecraft:lever[face=wall,facing=north,powered=false] replace
 setblock 264 -57 79 minecraft:lever[face=wall,facing=north,powered=false] replace
 setblock 261 -57 79 minecraft:lever[face=wall,facing=north,powered=false] replace

@@ -1,4 +1,3 @@
-#每名玩家本局只能生效一次；选择阶段另有领取限制，此处防止复制物品或命令绕过
 execute if score @s col_expand_used matches 1.. run return run tellraw @s {"translate":"rfm.text.fca7aa1ee222","color":"red"}
 scoreboard players set @s col_expand_used 1
 scoreboard players add @s collection_cap 1

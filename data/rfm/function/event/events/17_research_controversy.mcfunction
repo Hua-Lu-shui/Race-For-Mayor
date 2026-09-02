@@ -1,4 +1,3 @@
-#事件17：研究成果质疑（学者候选人所有属性-3）
 scoreboard players set #event_17 event_used 1
 scoreboard players remove @a[tag=rfm_participant,scores={candidate=4}] fame 3
 scoreboard players remove @a[tag=rfm_participant,scores={candidate=4}] economy 3

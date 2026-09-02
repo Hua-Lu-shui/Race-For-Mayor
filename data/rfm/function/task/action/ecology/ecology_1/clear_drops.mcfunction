@@ -1,4 +1,3 @@
-#删除任务场地内所有带编号的任务纸条掉落物
 kill @e[type=minecraft:item,x=110,y=-60,z=60,dx=20,dy=15,dz=20,nbt={Item:{components:{"minecraft:custom_data":{emission_ready:1}}}}]
 kill @e[type=minecraft:item,x=110,y=-60,z=60,dx=20,dy=15,dz=20,nbt={Item:{components:{"minecraft:custom_data":{emission_id:1}}}}]
 kill @e[type=minecraft:item,x=110,y=-60,z=60,dx=20,dy=15,dz=20,nbt={Item:{components:{"minecraft:custom_data":{emission_id:2}}}}]

@@ -1,4 +1,3 @@
-#读取当前输入位置的正确动作并判断
 scoreboard players set @s exercise_armed 0
 scoreboard players set @s exercise_target 0
 execute if score @s exercise_input matches 0 run scoreboard players operation @s exercise_target = @s exercise_step_1

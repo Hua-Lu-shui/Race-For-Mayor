@@ -1,4 +1,3 @@
-#事件26：演练扰民争议（军人候选人所有属性-3）
 scoreboard players set #event_26 event_used 1
 scoreboard players remove @a[tag=rfm_participant,scores={candidate=6}] fame 3
 scoreboard players remove @a[tag=rfm_participant,scores={candidate=6}] economy 3

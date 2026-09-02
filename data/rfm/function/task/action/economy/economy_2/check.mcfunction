@@ -1,4 +1,3 @@
-#立即复位全部按钮，避免一次按键被连续读取
 setblock 144 -57 24 minecraft:stone_button[face=floor,facing=west,powered=false] replace
 setblock 144 -57 22 minecraft:stone_button[face=floor,facing=west,powered=false] replace
 setblock 144 -57 20 minecraft:stone_button[face=floor,facing=west,powered=false] replace

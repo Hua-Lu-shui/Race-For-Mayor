@@ -1,4 +1,3 @@
-#临时招聘会场地
 scoreboard players set #waiting next_round_ready 0
 scoreboard players set @a[tag=rfm_participant] next_round_clock 0
 
@@ -17,8 +16,8 @@ execute store result score @s employment_layout run random value 1..3
 gamemode adventure @a[tag=rfm_participant]
 tp @a[tag=rfm_participant] 235 -58 12 0 0
 tp @s 235 -58 25 90 0
+function rfm:task/action/sequence/hide_observers
 
-#玩家到场并加载会场区块后再生成任务实体
 function rfm:task/action/economy/economy_5/create_scene
 
 tellraw @a[tag=rfm_participant] [{"translate":"rfm.text.e16c3dfa7f91","color":"yellow","bold":true},{"translate":"rfm.text.f3bab73164c2","color":"white"},{"selector":"@s","color":"white"}]

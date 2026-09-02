@@ -1,4 +1,3 @@
-#清除上一次可能残留的实体
 kill @e[type=minecraft:villager,tag=rfm_employment_applicant]
 kill @e[type=minecraft:villager,tag=rfm_employment_recruiter]
 kill @e[type=minecraft:item_display,tag=rfm_employment_model]

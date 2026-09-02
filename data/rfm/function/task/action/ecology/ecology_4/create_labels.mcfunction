@@ -1,4 +1,3 @@
-#创建生态行动任务4场景中的说明标签
 kill @e[type=minecraft:text_display,tag=rfm_trash_label]
 summon minecraft:text_display 236 -58 65 {Tags:["rfm_trash_label"],text:'{"translate":"rfm.text.1b0ee977123b","color":"aqua","bold":true}',billboard:"center",alignment:"center",background:0,shadow:1b,see_through:0b}
 summon minecraft:text_display 232 -58 69 {Tags:["rfm_trash_label"],text:'{"translate":"rfm.text.dfbe16fb9796","color":"red","bold":true}',billboard:"center",alignment:"center",background:0,shadow:1b,see_through:0b}

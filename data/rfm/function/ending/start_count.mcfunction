@@ -1,13 +1,11 @@
 execute unless score #session_online game_session = #session_size game_session run schedule function rfm:ending/start_count 20t replace
 execute unless score #session_online game_session = #session_size game_session run return 0
-#摘下转场南瓜头并开始按办公室编号统计候选人票数
 function rfm:attribute/weight_minimum
 clear @a[tag=rfm_participant] minecraft:carved_pumpkin[minecraft:custom_data~{rfm_ending_blackout:1}]
 scoreboard players set #settle_state settle_state 3
 scoreboard players set #settle_room settle_room 0
 scoreboard players set @a[tag=rfm_participant] final_votes 0
 scoreboard objectives setdisplay sidebar final_votes
-#最终藏品效果结算前固定四项全场最低值，避免逐人结算产生先后顺序干扰
 execute as @a[tag=rfm_participant] run function rfm:attribute/lock/enforce
 scoreboard players set #final_lowest_fame fame 2147483647
 scoreboard players set #final_lowest_economy economy 2147483647

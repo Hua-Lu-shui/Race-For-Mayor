@@ -1,4 +1,3 @@
-#事件19：舆情榜单公开（永久显示名誉领先者）
 scoreboard players set #event_19 event_used 1
 scoreboard players set #reveal_fame leader_reveal 1
 title @a[tag=rfm_participant] times 10 80 20

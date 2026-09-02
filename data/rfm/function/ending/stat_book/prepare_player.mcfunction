@@ -1,4 +1,3 @@
-#把当前玩家的结算数据写入其办公室编号对应的存储，并追加一页
 $data remove storage rfm:stat_book players.p$(room)
 $data modify storage rfm:stat_book players.p$(room) set value {fame:0,economy:0,welfare:0,ecology:0,lead_f:0,lead_e:0,lead_w:0,lead_c:0,collections:[],tokens:[],titles:[]}
 $execute store result storage rfm:stat_book players.p$(room).fame int 1 run scoreboard players get @s fame

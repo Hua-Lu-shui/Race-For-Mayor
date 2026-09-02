@@ -1,4 +1,3 @@
-#将五个随机身份写入函数宏参数，并生成一本六页站位册
 kill @e[type=minecraft:text_display,tag=rfm_photo_requirement]
 data modify storage rfm:photo_book roles set value {}
 

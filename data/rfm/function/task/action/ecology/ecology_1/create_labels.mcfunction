@@ -1,7 +1,5 @@
-#清除旧编号，避免多次执行任务后产生重复实体
 kill @e[type=minecraft:text_display,tag=rfm_emission_label]
 
-#在九个排放口上方生成所有玩家可见的悬浮编号
 summon minecraft:text_display 123 -56 72 {Tags:["rfm_emission_label"],text:'{"text":" 1 ","color":"gold","bold":true}',billboard:"center",alignment:"center",background:0,shadow:1b,see_through:0b,brightness:{block:15,sky:15},Glowing:1b,glow_color_override:16755200,transformation:{translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],scale:[2f,2f,2f],right_rotation:[0f,0f,0f,1f]}}
 summon minecraft:text_display 120 -56 72 {Tags:["rfm_emission_label"],text:'{"text":" 2 ","color":"gold","bold":true}',billboard:"center",alignment:"center",background:0,shadow:1b,see_through:0b,brightness:{block:15,sky:15},Glowing:1b,glow_color_override:16755200,transformation:{translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],scale:[2f,2f,2f],right_rotation:[0f,0f,0f,1f]}}
 summon minecraft:text_display 117 -56 72 {Tags:["rfm_emission_label"],text:'{"text":" 3 ","color":"gold","bold":true}',billboard:"center",alignment:"center",background:0,shadow:1b,see_through:0b,brightness:{block:15,sky:15},Glowing:1b,glow_color_override:16755200,transformation:{translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],scale:[2f,2f,2f],right_rotation:[0f,0f,0f,1f]}}

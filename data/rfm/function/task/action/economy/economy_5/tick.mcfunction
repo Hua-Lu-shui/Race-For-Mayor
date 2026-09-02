@@ -1,4 +1,3 @@
-#推进经济行动任务5
 scoreboard players remove @s employment_time 1
 execute store result bossbar rfm:employment_time value run scoreboard players get @s employment_time
 function rfm:task/action/economy/economy_5/check

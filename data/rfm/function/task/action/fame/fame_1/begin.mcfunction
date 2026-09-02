@@ -1,4 +1,3 @@
-#正式开始名誉行动任务1并初始化临场反应
 scoreboard players set @s speech_round 0
 scoreboard players set @s speech_correct 0
 scoreboard players set @s speech_score 10

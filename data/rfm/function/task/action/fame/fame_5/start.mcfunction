@@ -1,4 +1,3 @@
-#准备市民应援场地
 scoreboard players set #waiting next_round_ready 0
 scoreboard players set @a[tag=rfm_participant] next_round_clock 0
 kill @e[tag=rfm_cheer_citizen]
@@ -11,10 +10,10 @@ scoreboard players set @s cheer_spawn 0
 scoreboard players set @s cheer_type 0
 scoreboard players set @s cheer_state 2
 
-#其他玩家从南侧上空观战，行动玩家进入应援场
 gamemode adventure @a[tag=rfm_participant]
 tp @a[tag=rfm_participant] 232 -51 -18 180 32
 tp @s 232 -59 -18 180 0
+function rfm:task/action/sequence/hide_observers
 
 tellraw @a[tag=rfm_participant] [{"translate":"rfm.text.64f9e53717f9","color":"aqua","bold":true},{"translate":"rfm.text.f3bab73164c2","color":"white"},{"selector":"@s","color":"white"}]
 tellraw @a[tag=rfm_participant] [{"translate":"rfm.text.e447afb8ce24","color":"white"},{"translate":"rfm.text.f8b5a9a97edb","color":"#67D5FF","bold":true},{"translate":"rfm.text.37184cb51817","color":"white"},{"translate":"rfm.text.84e37d8352be","color":"#FFD166","bold":true},{"translate":"rfm.text.82e05718ea1b","color":"white"}]

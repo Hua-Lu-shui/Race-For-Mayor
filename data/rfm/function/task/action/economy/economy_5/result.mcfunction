@@ -1,4 +1,3 @@
-#根据就业匹配进度结算经济行动任务5
 scoreboard players set @s employment_state 4
 bossbar set rfm:employment_time visible false
 

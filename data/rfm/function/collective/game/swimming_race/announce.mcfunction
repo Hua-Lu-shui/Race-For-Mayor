@@ -1,4 +1,3 @@
-#只说明游戏名称与规则，不说明背景
 title @a[tag=rfm_participant] times 10 80 20
 title @a[tag=rfm_participant] title [{"translate":"rfm.text.419f291a6047","color":"#C6A8FF","bold":true},{"translate":"rfm.text.6c6b6d24cc70","color":"aqua","bold":true}]
 title @a[tag=rfm_participant] subtitle [{"translate":"rfm.text.552382c4851a","color":"white"}]

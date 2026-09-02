@@ -1,8 +1,6 @@
-#清除上次生成的纸条，再按照当前在线玩家数生成等量纸条
 kill @e[type=minecraft:item_display,tag=rfm_lottery_paper]
 kill @e[type=minecraft:interaction,tag=rfm_lottery_interaction]
 
-#桌面纸条坐标：实体位于指定方块的上表面中心，每个编号的item_display与interaction保持重合
 execute if score #online_total player_count matches 1.. run summon minecraft:item_display 296.5 -58 125.5 {Tags:["rfm_lottery_paper","rfm_lottery_paper_1"],item:{id:"minecraft:paper",count:1},item_display:"ground",transformation:{translation:[0.0f,0.03f,0.0f],scale:[1.1f,1.1f,1.1f],left_rotation:[0.7071f,0.0f,0.0f,0.7071f],right_rotation:[0.0f,0.0f,0.0f,1.0f]}}
 execute if score #online_total player_count matches 1.. run summon minecraft:interaction 296.5 -58 125.5 {Tags:["rfm_lottery_interaction","rfm_lottery_slot_1"],width:0.9f,height:0.5f,response:1b}
 execute if score #online_total player_count matches 2.. run summon minecraft:item_display 296.5 -58 127.5 {Tags:["rfm_lottery_paper","rfm_lottery_paper_2"],item:{id:"minecraft:paper",count:1},item_display:"ground",transformation:{translation:[0.0f,0.03f,0.0f],scale:[1.1f,1.1f,1.1f],left_rotation:[0.7071f,0.0f,0.0f,0.7071f],right_rotation:[0.0f,0.0f,0.0f,1.0f]}}
@@ -20,7 +18,6 @@ execute if score #online_total player_count matches 7.. run summon minecraft:int
 execute if score #online_total player_count matches 8.. run summon minecraft:item_display 297.5 -58 124.5 {Tags:["rfm_lottery_paper","rfm_lottery_paper_8"],item:{id:"minecraft:paper",count:1},item_display:"ground",transformation:{translation:[0.0f,0.03f,0.0f],scale:[1.1f,1.1f,1.1f],left_rotation:[0.7071f,0.0f,0.0f,0.7071f],right_rotation:[0.0f,0.0f,0.0f,1.0f]}}
 execute if score #online_total player_count matches 8.. run summon minecraft:interaction 297.5 -58 124.5 {Tags:["rfm_lottery_interaction","rfm_lottery_slot_8"],width:0.9f,height:0.5f,response:1b}
 
-#为实际生成的纸条随机分配第1～N名，保证名次不重复
 scoreboard players set @e[type=minecraft:interaction,tag=rfm_lottery_interaction] group_score 0
 scoreboard players set #lottery_rank group_rank 1
 execute if entity @e[type=minecraft:interaction,tag=rfm_lottery_interaction] run function rfm:collective/game/fated_draw/assign_next

@@ -1,4 +1,3 @@
-#按summon_vendors中的场景坐标定位20名商人；中文版使用中文姓名，英文版翻译键使用美式姓名
 tp @e[type=minecraft:villager,tag=rfm_market_v01,limit=1] 116 -59 27
 data merge entity @e[type=minecraft:villager,tag=rfm_market_v01,limit=1] {CustomName:'{"translate":"rfm.text.e7aeffa89711","color":"yellow"}'}
 tp @e[type=minecraft:villager,tag=rfm_market_v02,limit=1] 119 -59 29
@@ -43,5 +42,4 @@ data merge entity @e[type=minecraft:villager,tag=rfm_market_v19,limit=1] {Custom
 tp @e[type=minecraft:villager,tag=rfm_market_v20,limit=1] 113 -59 27
 data merge entity @e[type=minecraft:villager,tag=rfm_market_v20,limit=1] {CustomName:'{"translate":"rfm.text.6e03f0137327","color":"yellow"}'}
 
-#重新定位后正对各自摊位
 function rfm:task/action/economy/economy_1/face_vendors

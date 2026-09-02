@@ -1,4 +1,3 @@
-#根据正确分诊数量结算民生奖励
 scoreboard players set @s hospital_state 4
 bossbar set rfm:hospital_time visible false
 tellraw @a[tag=rfm_participant] [{"translate":"rfm.text.36dafbe0c2f8","color":"white"},{"score":{"name":"@s","objective":"hospital_correct"},"color":"red"},{"translate":"rfm.text.dff899097d54","color":"white"}]

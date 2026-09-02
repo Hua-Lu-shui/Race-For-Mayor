@@ -1,4 +1,3 @@
-#正式开始经济行动任务3并初始化计时状态
 execute store result score @s audit_target run random value 1..3
 function rfm:task/action/economy/economy_3/select_books
 scoreboard players set @s audit_answer 0

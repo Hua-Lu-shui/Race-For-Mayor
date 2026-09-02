@@ -1,4 +1,3 @@
-#执行者是偷取者，collection_offer暂存偷到的藏品编号
 scoreboard players set @s collection_effect_pick 0
 execute if score @s collection_cap matches 1.. if score @s collection_slot1 matches 0 run scoreboard players set @s collection_effect_pick 1
 execute unless score @s collection_effect_pick matches 1.. if score @s collection_cap matches 2.. if score @s collection_slot2 matches 0 run scoreboard players set @s collection_effect_pick 2

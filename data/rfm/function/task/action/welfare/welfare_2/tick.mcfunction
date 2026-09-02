@@ -1,4 +1,3 @@
-#推进计时，并按终点和剩余时间判断任务完成情况
 scoreboard players remove @s fitness_time 1
 execute store result bossbar rfm:fitness_time value run scoreboard players get @s fitness_time
 

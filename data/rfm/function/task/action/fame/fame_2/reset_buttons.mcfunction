@@ -1,4 +1,3 @@
-#复位十二户真实门铃按钮
 setblock 141 -57 -9 minecraft:stone_button[face=wall,facing=east,powered=false] replace
 setblock 141 -57 -15 minecraft:stone_button[face=wall,facing=east,powered=false] replace
 setblock 141 -57 -21 minecraft:stone_button[face=wall,facing=east,powered=false] replace

@@ -1,6 +1,5 @@
 execute unless score #session_online game_session = #session_size game_session run schedule function rfm:ending/finalize_player 20t replace
 execute unless score #session_online game_session = #session_size game_session run return 0
-#将头衔影响并入最终票数，并在侧边栏正式显示当前候选人的结果
 execute as @a[tag=rfm_participant,tag=rfm_settling,limit=1] run scoreboard players operation @s vote_total += @s title_bonus
 execute as @a[tag=rfm_participant,tag=rfm_settling,limit=1] run scoreboard players operation @s final_votes = @s vote_total
 title @a[tag=rfm_participant] times 5 55 10

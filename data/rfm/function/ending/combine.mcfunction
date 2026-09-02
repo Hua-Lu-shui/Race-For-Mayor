@@ -1,6 +1,5 @@
 execute unless score #session_online game_session = #session_size game_session run schedule function rfm:ending/combine 20t replace
 execute unless score #session_online game_session = #session_size game_session run return 0
-#四项属性票数全部停止后合并为属性票数总和
 execute as @a[tag=rfm_participant,tag=rfm_settling,limit=1] run scoreboard players operation @s vote_total = @s vote_fame
 execute as @a[tag=rfm_participant,tag=rfm_settling,limit=1] run scoreboard players operation @s vote_total += @s vote_economy
 execute as @a[tag=rfm_participant,tag=rfm_settling,limit=1] run scoreboard players operation @s vote_total += @s vote_welfare

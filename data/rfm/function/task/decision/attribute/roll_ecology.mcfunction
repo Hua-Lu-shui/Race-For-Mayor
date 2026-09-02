@@ -1,4 +1,3 @@
-#随机抽取一个生态决策，并用位图判断该玩家本局是否已经抽到过
 scoreboard players add @s dec_used_eco 0
 execute store result score @s decision_task run random value 401..420
 scoreboard players set @s dec_used_bit 1
@@ -47,5 +46,4 @@ execute if score @s decision_task matches 417 run function rfm:task/decision/eco
 execute if score @s decision_task matches 418 run function rfm:task/decision/ecology/soil_garden/soil_garden_show
 execute if score @s decision_task matches 419 run function rfm:task/decision/ecology/urban_wildlife/urban_wildlife_show
 execute if score @s decision_task matches 420 run function rfm:task/decision/ecology/material_reuse/material_reuse_show
-#学者额外获知三个选项的精确属性影响
 function rfm:ability/scholar/preview

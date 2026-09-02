@@ -1,4 +1,3 @@
-#首次完全正确为完美，调整后完全正确为完成；否则失败
 scoreboard players set @s photo_state 4
 bossbar set rfm:photo_time visible false
 

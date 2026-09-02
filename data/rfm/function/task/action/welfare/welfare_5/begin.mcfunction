@@ -1,4 +1,3 @@
-#正式开始厨艺大比拼
 scoreboard players set @s cooking_clicks 0
 scoreboard players set @s cooking_time 600
 scoreboard players set @s cooking_state 1

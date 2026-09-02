@@ -1,4 +1,3 @@
-#随机商品、随机最佳商人、随机最佳交易数字
 function rfm:task/action/economy/economy_1/create_labels
 kill @e[type=minecraft:villager,tag=rfm_market_vendor]
 clear @s minecraft:bread[minecraft:custom_data={market_trade:1}]

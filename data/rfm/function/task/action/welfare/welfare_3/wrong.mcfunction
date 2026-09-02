@@ -1,4 +1,3 @@
-#踩错后扣除2秒，并从本轮第一个动作重新输入
 scoreboard players add @s exercise_wrong 1
 scoreboard players remove @s exercise_time 40
 scoreboard players set @s exercise_input 0

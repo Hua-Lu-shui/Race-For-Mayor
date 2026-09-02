@@ -1,4 +1,3 @@
-#只清理状态和临时物品，摄影场地实体在全员返回办公室后统一清除
 bossbar set rfm:photo_time visible false
 clear @s minecraft:paper[minecraft:custom_data={photo_ready:1}]
 clear @s minecraft:written_book[minecraft:custom_data~{rfm_photo_book:1}]

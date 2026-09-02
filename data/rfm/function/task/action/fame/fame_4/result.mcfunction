@@ -1,4 +1,3 @@
-#根据10次公开答疑的成功次数结算奖励
 scoreboard players set @s qa_state 4
 bossbar set rfm:qa_time visible false
 effect clear @e[type=minecraft:villager,tag=rfm_qa_reporter] minecraft:glowing

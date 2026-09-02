@@ -1,4 +1,3 @@
-#24“手枪子弹”：每拥有一件藏品，回合开始时最低属性+4
 execute unless score @s collection_slot1 matches 24 unless score @s collection_slot2 matches 24 unless score @s collection_slot3 matches 24 unless score @s collection_slot4 matches 24 unless score @s collection_slot5 matches 24 run return 0
 scoreboard players set @s collection_effect_value 0
 execute if score @s collection_slot1 matches 1.. run scoreboard players add @s collection_effect_value 4

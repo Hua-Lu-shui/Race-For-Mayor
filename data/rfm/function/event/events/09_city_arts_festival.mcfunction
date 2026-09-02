@@ -1,4 +1,3 @@
-#事件09：全城文艺庆典（明星候选人所有属性+3）
 scoreboard players set #event_9 event_used 1
 scoreboard players add @a[tag=rfm_participant,scores={candidate=1}] fame 3
 scoreboard players add @a[tag=rfm_participant,scores={candidate=1}] economy 3

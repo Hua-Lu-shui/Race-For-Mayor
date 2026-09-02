@@ -1,4 +1,3 @@
-#事件13：政务服务表彰（公务员候选人所有属性+3）
 scoreboard players set #event_13 event_used 1
 scoreboard players add @a[tag=rfm_participant,scores={candidate=5}] fame 3
 scoreboard players add @a[tag=rfm_participant,scores={candidate=5}] economy 3

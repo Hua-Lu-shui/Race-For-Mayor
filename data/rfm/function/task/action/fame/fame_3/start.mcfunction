@@ -1,4 +1,3 @@
-#在玩家到场前搭建临时摄影场地并生成居民
 scoreboard players set #waiting next_round_ready 0
 scoreboard players set @a[tag=rfm_participant] next_round_clock 0
 function rfm:task/action/fame/fame_3/create_scene
@@ -41,10 +40,10 @@ advancement revoke @s only rfm:photo_position_3
 advancement revoke @s only rfm:photo_position_4
 advancement revoke @s only rfm:photo_position_5
 
-#其他玩家在摄影区后方俯视，行动玩家在控制区出发
 gamemode adventure @a[tag=rfm_participant]
 tp @a[tag=rfm_participant] 180 -52 -23 0 30
 tp @s 180 -59 -18 0 0
+function rfm:task/action/sequence/hide_observers
 
 tellraw @a[tag=rfm_participant] [{"translate":"rfm.text.9f09ab4648bc","color":"aqua","bold":true},{"translate":"rfm.text.f3bab73164c2","color":"white"},{"selector":"@s","color":"white"}]
 tellraw @a[tag=rfm_participant] [{"translate":"rfm.text.3064eea9d3b0","color":"#67D5FF","bold":true},{"translate":"rfm.text.1af0946385b1","color":"white"},{"translate":"rfm.text.0f1e64280ef7","color":"#67D5FF"},{"translate":"rfm.text.1f443fce06ab","color":"white"},{"translate":"rfm.text.da4e0a1620c1","color":"#FFD166","bold":true},{"text":"。","color":"white"}]

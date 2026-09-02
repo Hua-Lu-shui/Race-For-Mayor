@@ -1,4 +1,3 @@
-#只剩一名玩家时直接决出冠军；否则随机发花并生成5～15秒的停乐时刻
 execute store result score #active player_count run execute if entity @a[tag=rfm_participant,scores={group_finished=0}]
 execute if score #active player_count matches 1 run return run function rfm:collective/game/hot_potato/finish_winner
 

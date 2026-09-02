@@ -1,4 +1,3 @@
-#记录当前题目已经使用，并根据题号确定正确选项类别
 execute if score @s negotiation_question matches 1 run tag @s add rfm_negotiation_q1_used
 execute if score @s negotiation_question matches 2 run tag @s add rfm_negotiation_q2_used
 execute if score @s negotiation_question matches 3 run tag @s add rfm_negotiation_q3_used

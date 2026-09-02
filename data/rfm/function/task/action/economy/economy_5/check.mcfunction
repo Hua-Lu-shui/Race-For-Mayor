@@ -1,4 +1,3 @@
-#检查三种招聘单位布局中，村民脚边是否出现正确的求职登记表
 execute if score @s employment_layout matches 1 if score @s employment_done_5 matches 0 positioned 239 -58 33 if entity @e[type=minecraft:item,distance=..1,nbt={Item:{components:{"minecraft:custom_data":{resume_id:5}}}}] run function rfm:task/action/economy/economy_5/complete_5
 execute if score @s employment_layout matches 1 if score @s employment_done_1 matches 0 positioned 239 -58 29 if entity @e[type=minecraft:item,distance=..1,nbt={Item:{components:{"minecraft:custom_data":{resume_id:1}}}}] run function rfm:task/action/economy/economy_5/complete_1
 execute if score @s employment_layout matches 1 if score @s employment_done_2 matches 0 positioned 239 -58 25 if entity @e[type=minecraft:item,distance=..1,nbt={Item:{components:{"minecraft:custom_data":{resume_id:2}}}}] run function rfm:task/action/economy/economy_5/complete_2

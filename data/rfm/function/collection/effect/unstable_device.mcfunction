@@ -1,4 +1,3 @@
-#“不稳定装置”：回合开始时随机一项属性+5
 execute unless score @s collection_slot1 matches 34 unless score @s collection_slot2 matches 34 unless score @s collection_slot3 matches 34 unless score @s collection_slot4 matches 34 unless score @s collection_slot5 matches 34 run return 0
 execute store result score @s collection_effect_pick run random value 1..4
 execute if score @s collection_effect_pick matches 1 run scoreboard players add @s fame 5

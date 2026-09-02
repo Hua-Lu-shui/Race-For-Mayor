@@ -1,4 +1,3 @@
-#事件03：公共服务评议（民生权重+1）
 scoreboard players set #event_3 event_used 1
 scoreboard players add #weight welfare_weight 1
 title @a[tag=rfm_participant] times 10 80 20

@@ -1,4 +1,3 @@
-#随机抽取一个本局尚未出现的病例
 execute store result score @s hospital_case run random value 1..12
 execute if score @s hospital_case matches 1 if score @s hospital_used_1 matches 1 run function rfm:task/action/welfare/welfare_1/roll_case
 execute if score @s hospital_case matches 2 if score @s hospital_used_2 matches 1 run function rfm:task/action/welfare/welfare_1/roll_case

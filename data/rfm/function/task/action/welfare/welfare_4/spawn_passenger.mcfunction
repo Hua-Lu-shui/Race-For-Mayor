@@ -1,4 +1,3 @@
-#随机选择一条线路生成一名乘客；该线路已有6人时本次不再生成
 scoreboard players set @s bus_spawned 0
 execute store result score @s bus_spawn_line run random value 1..3
 execute if score @s bus_spawn_line matches 1 run function rfm:task/action/welfare/welfare_4/spawn_line_1

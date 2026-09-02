@@ -1,4 +1,3 @@
-#记录并标记令牌使用者，先执行效果，再销毁令牌和持有记录
 tag @a[tag=rfm_participant] remove rfm_item_user
 tag @s add rfm_item_user
 scoreboard players set @s title_item_used 1
@@ -35,7 +34,6 @@ execute if score @s item_held matches 17..20 run function rfm:item/use/lock
 execute if score @s item_held matches 21..22 run function rfm:item/use/peek
 execute if score @s item_held matches 23..24 run function rfm:item/use/expand_collection
 
-#令牌已正式使用后结算“诉讼卷宗”
 function rfm:collection/effect/litigation_file
 
 clear @s minecraft:heart_of_the_sea[minecraft:custom_data~{rfm_item:1}]

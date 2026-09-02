@@ -1,4 +1,3 @@
-#开启自动刷新时保证换成不同藏品；关闭时只在没有待售藏品（开局或上件已购买）时抽取
 execute if score #collection_auto_refresh game_setting matches 1 if score @s collection_offer matches 1.. run function rfm:collection/mysterious/refresh_one
 execute if score @s collection_offer matches 0 run function rfm:collection/mysterious/sample_offer
 

@@ -1,4 +1,3 @@
-#将玩家设置为企业家候选人并初始化对应属性
 playsound minecraft:ui.button.click master @s ~ ~ ~ 0.7 1.0
 scoreboard players set @s candidate 2
 team join business @s

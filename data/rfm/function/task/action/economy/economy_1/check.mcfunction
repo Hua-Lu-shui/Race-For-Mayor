@@ -1,4 +1,3 @@
-#玩家完成一次交易后立即结束市场并进入统一结算
 execute if score @s market_answer matches 1 run scoreboard players set @s market_correct 1
 execute if score @s market_answer matches 2 run scoreboard players set @s market_correct 0
 execute if score @s market_answer matches 1 run tellraw @a[tag=rfm_participant] {"translate":"rfm.text.d8adf3886f63","color":"green","bold":true}

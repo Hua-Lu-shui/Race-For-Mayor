@@ -1,4 +1,3 @@
-#立即复位确认按钮，避免一次按键被连续读取
 setblock 262 -58 74 minecraft:stone_button[face=floor,facing=north,powered=false] replace
 
 execute if score @s energy_total = @s energy_target run scoreboard players add @s energy_correct 1

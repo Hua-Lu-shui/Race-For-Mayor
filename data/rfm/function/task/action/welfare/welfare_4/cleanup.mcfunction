@@ -1,4 +1,3 @@
-#清理民生行动任务4的临时状态和界面；站台实体在返回办公室后统一清理
 bossbar set rfm:bus_time visible false
 clear @s minecraft:paper[minecraft:custom_data={bus_ready:1}]
 kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{bus_ready:1}}}}]

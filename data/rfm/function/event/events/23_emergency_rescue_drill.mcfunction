@@ -1,4 +1,3 @@
-#事件23：应急救援演练（军人候选人所有属性+3）
 scoreboard players set #event_23 event_used 1
 scoreboard players add @a[tag=rfm_participant,scores={candidate=6}] fame 3
 scoreboard players add @a[tag=rfm_participant,scores={candidate=6}] economy 3

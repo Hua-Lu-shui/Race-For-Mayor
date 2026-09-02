@@ -1,4 +1,3 @@
-#“玉玺”：属性公示后，若有任意属性领先，当前最高属性+8；并列领先同样满足条件
 execute unless entity @s[tag=rfm_public_lead_fame] unless entity @s[tag=rfm_public_lead_economy] unless entity @s[tag=rfm_public_lead_welfare] unless entity @s[tag=rfm_public_lead_ecology] run return 0
 function rfm:collection/trade/select_highest
 execute if score @s collection_attr matches 1 run scoreboard players add @s fame 8

@@ -1,4 +1,3 @@
-#读取当前预览位置对应的动作
 scoreboard players set @s exercise_target 0
 execute if score @s exercise_preview matches 1 run scoreboard players operation @s exercise_target = @s exercise_step_1
 execute if score @s exercise_preview matches 2 run scoreboard players operation @s exercise_target = @s exercise_step_2

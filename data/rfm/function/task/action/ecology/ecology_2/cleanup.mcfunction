@@ -1,4 +1,3 @@
-#清理生态行动任务2的临时状态和界面
 bossbar set rfm:sample_time visible false
 clear @s minecraft:paper[minecraft:custom_data={sample_ready:1}]
 clear @s minecraft:glass_bottle

@@ -1,4 +1,3 @@
-#招聘单位负责人
 summon minecraft:villager 239 -58 33 {Tags:["rfm_employment_recruiter"],Rotation:[90.0f,0.0f],NoAI:1b,Invulnerable:1b,PersistenceRequired:1b,Silent:1b,Offers:{Recipes:[]},VillagerData:{profession:"minecraft:none",level:1,type:"minecraft:plains"}}
 summon minecraft:villager 239 -58 29 {Tags:["rfm_employment_recruiter"],Rotation:[90.0f,0.0f],NoAI:1b,Invulnerable:1b,PersistenceRequired:1b,Silent:1b,Offers:{Recipes:[]},VillagerData:{profession:"minecraft:none",level:1,type:"minecraft:plains"}}
 summon minecraft:villager 239 -58 25 {Tags:["rfm_employment_recruiter"],Rotation:[90.0f,0.0f],NoAI:1b,Invulnerable:1b,PersistenceRequired:1b,Silent:1b,Offers:{Recipes:[]},VillagerData:{profession:"minecraft:none",level:1,type:"minecraft:plains"}}

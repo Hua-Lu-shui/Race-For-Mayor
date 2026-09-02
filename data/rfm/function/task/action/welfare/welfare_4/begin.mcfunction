@@ -1,4 +1,3 @@
-#正式开始公交站调度任务
 scoreboard players set @s bus_queue_1 0
 scoreboard players set @s bus_queue_2 0
 scoreboard players set @s bus_queue_3 0

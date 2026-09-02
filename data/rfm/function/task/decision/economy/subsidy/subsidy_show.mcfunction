@@ -1,4 +1,3 @@
-#展示经济决策任务的背景和三个可选方案
 scoreboard players set @s decision_choice 0
 scoreboard players enable @s decision_choice
 tellraw @s {"translate":"rfm.text.e22a8c7ec1de","color":"gold","bold":true}

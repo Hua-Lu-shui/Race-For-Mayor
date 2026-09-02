@@ -1,4 +1,3 @@
-#记录待互换属性，并仅向使用者列出其他候选人
 scoreboard players operation @s swap_pending = @s item_held
 execute if score @s swap_pending matches 1 run tellraw @s [{"translate":"rfm.text.821127e39cef","color":"aqua","bold":true},{"translate":"rfm.text.3b141cf76371","color":"white"},{"translate":"rfm.text.dc04a5799df2","color":"aqua"},{"text":"：","color":"white"}]
 execute if score @s swap_pending matches 2 run tellraw @s [{"translate":"rfm.text.d21e25067cc8","color":"yellow","bold":true},{"translate":"rfm.text.3b141cf76371","color":"white"},{"translate":"rfm.text.cd0bf6887da7","color":"yellow"},{"text":"：","color":"white"}]

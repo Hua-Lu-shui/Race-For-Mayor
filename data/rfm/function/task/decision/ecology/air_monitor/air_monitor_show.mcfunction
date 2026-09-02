@@ -1,4 +1,3 @@
-#展示生态决策任务的背景和三个可选方案
 scoreboard players set @s decision_choice 0
 scoreboard players enable @s decision_choice
 tellraw @s {"translate":"rfm.text.fb2d5f0bc5cc","color":"gold","bold":true}

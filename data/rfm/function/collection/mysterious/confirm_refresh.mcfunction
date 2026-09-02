@@ -1,4 +1,3 @@
-#主动刷新只允许在第2至4回合的办公室交易阶段进行
 execute unless score #phase phase matches 1 run return 0
 execute unless score #waiting next_round_ready matches 1 run return run tellraw @s {"translate":"rfm.text.5861dbce444c","color":"red"}
 execute unless score #round round matches 2..4 run return run tellraw @s {"translate":"rfm.text.06a971cc106a","color":"red"}

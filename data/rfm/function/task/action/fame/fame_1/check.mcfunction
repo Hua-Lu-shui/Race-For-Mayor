@@ -1,4 +1,3 @@
-#立即复位按钮，并判断玩家是否选择了粒子对应的应对方式
 function rfm:task/action/fame/fame_1/reset_buttons
 
 execute if score @s speech_answer = @s speech_category run scoreboard players add @s speech_correct 1

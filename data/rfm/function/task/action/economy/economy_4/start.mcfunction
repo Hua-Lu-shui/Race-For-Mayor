@@ -1,4 +1,3 @@
-#商圈场地
 scoreboard players set #waiting next_round_ready 0
 scoreboard players set @a[tag=rfm_participant] next_round_clock 0
 
@@ -20,6 +19,7 @@ function rfm:task/action/economy/economy_4/prepare_orders
 gamemode adventure @a[tag=rfm_participant]
 tp @a[tag=rfm_participant] 195 -48 19 90 30
 tp @s 181 -58 19 -90 0
+function rfm:task/action/sequence/hide_observers
 
 tellraw @a[tag=rfm_participant] [{"translate":"rfm.text.d38e77679758","color":"yellow","bold":true},{"translate":"rfm.text.f3bab73164c2","color":"white"},{"selector":"@s","color":"white"}]
 tellraw @a[tag=rfm_participant] [{"translate":"rfm.text.f7acefd2d4cd","color":"white"},{"translate":"rfm.text.2de1f48cb3a4","color":"#67D5FF","bold":true},{"translate":"rfm.text.e28f04252ca2","color":"white"},{"translate":"rfm.text.4521048eace5","color":"#FFD166","bold":true},{"translate":"rfm.text.a33f4fcc275d","color":"white"}]

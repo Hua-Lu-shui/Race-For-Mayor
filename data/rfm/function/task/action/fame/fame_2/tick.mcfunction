@@ -2,7 +2,6 @@ scoreboard players remove @s visit_time 1
 execute store result bossbar rfm:visit_time value run scoreboard players get @s visit_time
 bossbar set rfm:visit_time name [{"translate":"rfm.text.e93e60bd6811","color":"aqua"},{"score":{"name":"@s","objective":"visit_step"},"color":"white"},{"translate":"rfm.text.e7e6f270bb25","color":"aqua"},{"score":{"name":"@s","objective":"visit_target"},"color":"yellow"},{"translate":"rfm.text.2c99bb73e5ad","color":"aqua"},{"score":{"name":"@s","objective":"visit_wrong"},"color":"red"}]
 
-#读取十二户真实门铃
 scoreboard players set @s visit_answer 0
 execute if block 141 -57 -9 minecraft:stone_button[powered=true] run scoreboard players set @s visit_answer 101
 execute if block 141 -57 -15 minecraft:stone_button[powered=true] run scoreboard players set @s visit_answer 102

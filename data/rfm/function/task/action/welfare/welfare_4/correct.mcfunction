@@ -1,4 +1,3 @@
-#正确发车
 scoreboard players add @s bus_success 1
 tellraw @a[tag=rfm_participant] [{"translate":"rfm.text.dda39ee8bd99","color":"green","bold":true},{"score":{"name":"@s","objective":"bus_success"},"color":"yellow"},{"text":" / 6","color":"gray"}]
 playsound minecraft:entity.experience_orb.pickup master @a[tag=rfm_participant] ~ ~ ~ 1 1.2 1

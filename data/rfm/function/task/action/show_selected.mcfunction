@@ -1,4 +1,3 @@
-#匹配行动任务编号
 execute if score @s action_task matches 601 run function rfm:task/action/fame/fame_1/show
 execute if score @s action_task matches 602 run function rfm:task/action/fame/fame_2/show
 execute if score @s action_task matches 603 run function rfm:task/action/fame/fame_3/show

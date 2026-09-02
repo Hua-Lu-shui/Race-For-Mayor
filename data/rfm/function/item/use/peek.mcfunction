@@ -1,4 +1,3 @@
-#使用瞬间重新统计四项属性的全部并列领先者；结果仅发送给使用者
 tag @a[tag=rfm_participant] remove rfm_peek_fame
 tag @a[tag=rfm_participant] remove rfm_peek_economy
 tag @a[tag=rfm_participant] remove rfm_peek_welfare

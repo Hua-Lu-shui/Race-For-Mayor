@@ -1,4 +1,3 @@
-#隐藏本次选择，只向选择者确认令牌名称
 playsound minecraft:ui.button.click master @s ~ ~ ~ 0.7 1.0
 execute if score @s item_held matches 1 run tellraw @s {"translate":"rfm.text.b95be2adf573","color":"aqua","bold":true}
 execute if score @s item_held matches 2 run tellraw @s {"translate":"rfm.text.dce42ed7935d","color":"yellow","bold":true}
@@ -23,7 +22,6 @@ execute if score @s item_held matches 20 run tellraw @s {"translate":"rfm.text.9
 execute if score @s item_held matches 21..22 run tellraw @s {"translate":"rfm.text.5f742f453f63","color":"light_purple","bold":true}
 execute if score @s item_held matches 23..24 run tellraw @s {"translate":"rfm.text.30b16bce4be9","color":"gold","bold":true}
 
-#将对应告示牌设为不可用并移除
 execute if score @s item_held matches 1 run scoreboard players set #item_1 item_available 0
 execute if score @s item_held matches 2 run scoreboard players set #item_2 item_available 0
 execute if score @s item_held matches 3 run scoreboard players set #item_3 item_available 0

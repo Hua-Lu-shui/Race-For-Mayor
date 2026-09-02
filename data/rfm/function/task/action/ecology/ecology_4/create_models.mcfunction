@@ -1,7 +1,5 @@
-#在当前四个投放容器上生成垃圾桶外观；实体无碰撞，不再引用旧场地坐标
 kill @e[type=minecraft:item_display,tag=rfm_trash_bin_model]
 
-#模型尺寸与陷阱箱的可点击区域对齐，避免点击模型上半部时射线越过容器
 summon minecraft:item_display 236.5 -58.5 65.5 {Tags:["rfm_trash_bin_model","rfm_trash_bin_recyclable"],Rotation:[180.0f,0.0f],item:{id:"minecraft:paper",count:1,components:{"minecraft:custom_model_data":700002}},item_display:"fixed",transformation:{translation:[0.0f,0.0f,0.0f],scale:[1.75f,1.75f,1.75f],left_rotation:[0.0f,0.0f,0.0f,1.0f],right_rotation:[0.0f,0.0f,0.0f,1.0f]},shadow_radius:0.6f,shadow_strength:0.5f,view_range:64.0f}
 summon minecraft:item_display 232.5 -58.5 69.5 {Tags:["rfm_trash_bin_model","rfm_trash_bin_hazardous"],Rotation:[90.0f,0.0f],item:{id:"minecraft:paper",count:1,components:{"minecraft:custom_model_data":700003}},item_display:"fixed",transformation:{translation:[0.0f,0.0f,0.0f],scale:[1.75f,1.75f,1.75f],left_rotation:[0.0f,0.0f,0.0f,1.0f],right_rotation:[0.0f,0.0f,0.0f,1.0f]},shadow_radius:0.6f,shadow_strength:0.5f,view_range:64.0f}
 summon minecraft:item_display 236.5 -58.5 73.5 {Tags:["rfm_trash_bin_model","rfm_trash_bin_kitchen"],Rotation:[0.0f,0.0f],item:{id:"minecraft:paper",count:1,components:{"minecraft:custom_model_data":700004}},item_display:"fixed",transformation:{translation:[0.0f,0.0f,0.0f],scale:[1.75f,1.75f,1.75f],left_rotation:[0.0f,0.0f,0.0f,1.0f],right_rotation:[0.0f,0.0f,0.0f,1.0f]},shadow_radius:0.6f,shadow_strength:0.5f,view_range:64.0f}

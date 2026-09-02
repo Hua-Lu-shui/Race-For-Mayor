@@ -1,4 +1,3 @@
-#事件18：行政流程问责（公务员候选人所有属性-3）
 scoreboard players set #event_18 event_used 1
 scoreboard players remove @a[tag=rfm_participant,scores={candidate=5}] fame 3
 scoreboard players remove @a[tag=rfm_participant,scores={candidate=5}] economy 3

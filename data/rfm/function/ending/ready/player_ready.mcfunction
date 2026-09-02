@@ -1,7 +1,7 @@
 scoreboard players set @s settle_ready 1
 scoreboard players set @s settle_clock 0
 clear @s minecraft:clock[minecraft:custom_data={settlement_ready:1}]
-#该玩家确认结算后立即清除其令牌与藏品物品；藏品槽位分数保留到最终效果和统计书读取完成
+function rfm:title/check/no_title
 clear @s minecraft:heart_of_the_sea[minecraft:custom_data~{rfm_item:1}]
 scoreboard players set @s item_held 0
 clear @s minecraft:amethyst_shard[minecraft:custom_data~{rfm_collection:1}]

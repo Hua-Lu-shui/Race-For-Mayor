@@ -1,4 +1,3 @@
-#根据45秒内获得的应援分数结算名誉
 scoreboard players set @s cheer_state 4
 bossbar set rfm:cheer_time visible false
 kill @e[type=minecraft:item,tag=rfm_cheer_flower]

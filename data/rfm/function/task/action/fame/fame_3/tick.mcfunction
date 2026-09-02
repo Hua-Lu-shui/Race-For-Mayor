@@ -1,4 +1,3 @@
-#推进35秒计时并读取快门按钮；五个站位方块由右键进度直接处理
 scoreboard players remove @s photo_time 1
 scoreboard players operation @s photo_seconds = @s photo_time
 scoreboard players add @s photo_seconds 19

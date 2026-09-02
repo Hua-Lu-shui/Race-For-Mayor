@@ -1,4 +1,3 @@
-#拜访顺序错误：增加错误次数并扣除3秒
 function rfm:task/action/fame/fame_2/reaction_wrong
 playsound minecraft:entity.villager.no master @a[tag=rfm_participant] ~ ~ ~ 1 0.9 1
 scoreboard players add @s visit_wrong 1

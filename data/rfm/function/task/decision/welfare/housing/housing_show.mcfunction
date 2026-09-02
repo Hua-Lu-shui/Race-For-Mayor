@@ -1,4 +1,3 @@
-#展示民生决策任务的背景和三个可选方案
 scoreboard players set @s decision_choice 0
 scoreboard players enable @s decision_choice
 tellraw @s {"translate":"rfm.text.3950ae0dea86","color":"gold","bold":true}

@@ -1,4 +1,3 @@
-#按每个木质柜台的正面分别固定商贩朝向
 execute as @e[type=minecraft:villager,tag=rfm_market_v01,limit=1] at @s run tp @s ~ ~ ~ 180 0
 execute as @e[type=minecraft:villager,tag=rfm_market_v02,limit=1] at @s run tp @s ~ ~ ~ -90 0
 execute as @e[type=minecraft:villager,tag=rfm_market_v03,limit=1] at @s run tp @s ~ ~ ~ -90 0

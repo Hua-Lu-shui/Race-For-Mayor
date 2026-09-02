@@ -1,4 +1,3 @@
-#财政办公室场地
 scoreboard players set #waiting next_round_ready 0
 scoreboard players set @a[tag=rfm_participant] next_round_clock 0
 
@@ -24,6 +23,7 @@ scoreboard players set @s audit_state 2
 gamemode adventure @a[tag=rfm_participant]
 tp @a[tag=rfm_participant] 162 -58 25 0 0
 tp @s 162 -58 18 -90 0
+function rfm:task/action/sequence/hide_observers
 
 tellraw @a[tag=rfm_participant] [{"translate":"rfm.text.e2c360093975","color":"yellow","bold":true},{"translate":"rfm.text.f3bab73164c2","color":"white"},{"selector":"@s","color":"white"}]
 tellraw @a[tag=rfm_participant] [{"translate":"rfm.text.2b84d119437c","color":"white"},{"translate":"rfm.text.792049aa724f","color":"#67D5FF","bold":true},{"translate":"rfm.text.9f8fde10bdf1","color":"white"},{"translate":"rfm.text.4f47caba8cc2","color":"#FFD166","bold":true},{"translate":"rfm.text.a63686a6b4fe","color":"white"}]

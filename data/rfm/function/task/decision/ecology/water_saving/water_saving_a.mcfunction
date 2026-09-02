@@ -1,4 +1,3 @@
-#执行生态决策任务的A方案并结算属性
 execute if score @s decision_task matches 413 run scoreboard players add @s ecology 8
 execute if score @s decision_task matches 413 run scoreboard players add @s economy 4
 execute if score @s decision_task matches 413 run scoreboard players remove @s welfare 4

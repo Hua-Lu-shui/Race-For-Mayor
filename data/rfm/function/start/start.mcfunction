@@ -1,12 +1,9 @@
-#设置阶段为1，代表游戏进行中
 function rfm:phase/phase1
-#先移除可能残留的旧参与者标签，再为本局生成新的参与者会话；断线重连者保留会话，中途加入者不会自动进入本局
 tag @a remove rfm_participant
 scoreboard players add #session game_session 1
 scoreboard players operation @a game_session = #session game_session
 tag @a add rfm_participant
 execute store result score #session_size game_session run execute if entity @a[tag=rfm_participant]
-#兜底清理返回大厅流程中的旧局状态；保留玩家在大厅选择的候选人身份与四项初始属性
 scoreboard players set #choose_time choose_time 0
 scoreboard players set #waiting next_round_ready 0
 scoreboard players set @a[tag=rfm_participant] room 0
@@ -20,7 +17,6 @@ scoreboard players set @a[tag=rfm_participant] next_round_ready 0
 scoreboard players set @a[tag=rfm_participant] next_round_clock 0
 scoreboard players set @a[tag=rfm_participant] item_pick 0
 scoreboard players set @a[tag=rfm_participant] attribute_total 0
-#关闭所有可能遗留的行动任务tick状态
 scoreboard players set @a[tag=rfm_participant] speech_state 0
 scoreboard players set @a[tag=rfm_participant] visit_state 0
 scoreboard players set @a[tag=rfm_participant] photo_state 0
@@ -41,7 +37,6 @@ scoreboard players set @a[tag=rfm_participant] sample_state 0
 scoreboard players set @a[tag=rfm_participant] park_state 0
 scoreboard players set @a[tag=rfm_participant] trash_state 0
 scoreboard players set @a[tag=rfm_participant] energy_state 0
-#清除旧局结算标签、界面与只供数据包使用的残留物品
 tag @a[tag=rfm_participant] remove rfm_settling
 tag @a[tag=rfm_participant] remove rfm_vote_tied
 tag @a[tag=rfm_participant] remove rfm_random_winner
@@ -54,25 +49,19 @@ clear @a[tag=rfm_participant] minecraft:clock[minecraft:custom_data={next_round_
 clear @a[tag=rfm_participant] minecraft:carved_pumpkin[minecraft:custom_data~{rfm_ending_blackout:1}]
 kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{next_round_ready:1}}}}]
 gamemode adventure @a[tag=rfm_participant]
-#新游戏从第0回合准备状态开始；全员准备后round函数会递增为第1回合
 scoreboard players set #round round 0
-#允许本局最终结算天赋执行一次
 scoreboard players set #abilities settle_state 0
 scoreboard players set @a ability_trigger 0
-#第1回合不存在“上一回合”，因此羽毛笔不在第1回合结束时触发
 scoreboard players set @a previous_action_player 1
-#重置行动玩家公平抽取次数和每位玩家的行动任务去重记录
 scoreboard players reset * action_draw_count
 scoreboard players reset * action_used_fame
 scoreboard players reset * action_used_econ
 scoreboard players reset * action_used_welf
 scoreboard players reset * action_used_eco
-#清空所有在线及离线玩家上一局的决策任务抽取位图
 scoreboard players reset * dec_used_fame
 scoreboard players reset * dec_used_econ
 scoreboard players reset * dec_used_welf
 scoreboard players reset * dec_used_eco
-#重置本局头衔进度；技术根成就只负责承载17个可见头衔
 advancement revoke @a from rfm:title/root
 advancement grant @a only rfm:title/root
 scoreboard players set @a title_dec_fame 0
@@ -105,30 +94,25 @@ scoreboard players set @a stat_title_sc 0
 scoreboard players set @a stat_title_ni 0
 scoreboard players set @a stat_title_nc 0
 scoreboard players set @a stat_title_all 0
-#初始化四项属性权重
 scoreboard players set #weight fame_weight 5
 scoreboard players set #weight economy_weight 5
 scoreboard players set #weight welfare_weight 5
 scoreboard players set #weight ecology_weight 5
-#新游戏清除上一局所有在线及离线候选人的属性锁定
 scoreboard players reset * fame_lock
 scoreboard players reset * economy_lock
 scoreboard players reset * welfare_lock
 scoreboard players reset * ecology_lock
-#在侧边栏展示各项权重
 scoreboard players operation 名誉 weight_display = #weight fame_weight
 scoreboard players operation 经济 weight_display = #weight economy_weight
 scoreboard players operation 民生 weight_display = #weight welfare_weight
 scoreboard players operation 生态 weight_display = #weight ecology_weight
 scoreboard objectives setdisplay sidebar weight_display
-#清空上一局的事件抽取记录
 scoreboard players set #current event 0
 scoreboard players reset * event_used
 scoreboard players set #reveal_fame leader_reveal 0
 scoreboard players set #reveal_economy leader_reveal 0
 scoreboard players set #reveal_welfare leader_reveal 0
 scoreboard players set #reveal_ecology leader_reveal 0
-#重置令牌争夺与令牌状态
 scoreboard players set #group_state group_state 0
 scoreboard players set #last_game group_game 0
 scoreboard players set #selected_game group_game 0
@@ -195,9 +179,7 @@ scoreboard players set @a stat_col_4 0
 scoreboard players set @a stat_col_5 0
 scoreboard players set @a stat_col_6 0
 scoreboard players set @a stat_col_7 0
-#重置藏品，并为医生生成开局随机藏品
 function rfm:collection/start_game
-#重置上一局的最终结算状态
 scoreboard players set #settle_state settle_state 0
 scoreboard players set #settle_room settle_room 0
 scoreboard players set @a settle_ready 0
@@ -205,18 +187,13 @@ scoreboard players set @a settle_clock 0
 scoreboard players set @a title_bonus 0
 scoreboard players set @a vote_total 0
 scoreboard players set @a final_votes 0
-#开始新游戏时清除玩家背包中上一局的竞选统计书
 clear @a minecraft:written_book[minecraft:custom_data~{rfm_stat_book:1}]
 scoreboard players set @a stat_book_room 0
 clear @a minecraft:clock[minecraft:custom_data={settlement_ready:1}]
 kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{settlement_ready:1}}}}]
 clear @a minecraft:heart_of_the_sea[minecraft:custom_data~{rfm_item:1}]
 kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{rfm_item:1}}}}]
-#传送前戴上全黑南瓜遮罩，避免玩家看到办公室传送和区块加载过程
 item replace entity @a armor.head with minecraft:carved_pumpkin[minecraft:custom_name='{"translate":"rfm.text.ea82ecabfdaf","color":"black","italic":false}',minecraft:custom_data={rfm_ending_blackout:1}] 1
-#在黑屏遮罩下分配房间并传送
 function rfm:room/assign
-#抵达办公室一秒后揭开画面
 schedule function rfm:schedule/room_reveal 20t replace
-#入住提示
 schedule function rfm:schedule/room_delay 20t

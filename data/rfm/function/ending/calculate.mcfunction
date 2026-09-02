@@ -1,6 +1,4 @@
-#最终属性票数 = 玩家属性 × 当前对应权重
 function rfm:attribute/lock/enforce
-#条件翻倍（史诗） -> 无条件翻倍（传说） -> 属性增加（史诗、稀有）
 function rfm:collection/effect/clown_hat
 function rfm:collection/effect/fossil_final
 function rfm:collection/effect/amber_final

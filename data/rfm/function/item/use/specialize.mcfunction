@@ -1,19 +1,17 @@
-#属性专精：使用者对应属性+5，未被“神秘的斗篷”保护的其他玩家对应属性-5
 tag @a[tag=rfm_participant] remove rfm_specialize_affected
 tag @a[tag=rfm_participant,tag=!rfm_item_user] add rfm_specialize_affected
+tag @a[tag=rfm_participant,tag=rfm_specialize_affected,scores={candidate=7}] remove rfm_specialize_affected
 execute as @a[tag=rfm_participant,tag=rfm_specialize_affected] if score @s collection_slot1 matches 10 run tag @s remove rfm_specialize_affected
 execute as @a[tag=rfm_participant,tag=rfm_specialize_affected] if score @s collection_slot2 matches 10 run tag @s remove rfm_specialize_affected
 execute as @a[tag=rfm_participant,tag=rfm_specialize_affected] if score @s collection_slot3 matches 10 run tag @s remove rfm_specialize_affected
 execute as @a[tag=rfm_participant,tag=rfm_specialize_affected] if score @s collection_slot4 matches 10 run tag @s remove rfm_specialize_affected
 execute as @a[tag=rfm_participant,tag=rfm_specialize_affected] if score @s collection_slot5 matches 10 run tag @s remove rfm_specialize_affected
 
-#记录其他玩家的旧值
 execute if score #used_item item_held matches 13 as @a[tag=rfm_participant,tag=rfm_specialize_affected] run scoreboard players operation @s item_before = @s fame
 execute if score #used_item item_held matches 14 as @a[tag=rfm_participant,tag=rfm_specialize_affected] run scoreboard players operation @s item_before = @s economy
 execute if score #used_item item_held matches 15 as @a[tag=rfm_participant,tag=rfm_specialize_affected] run scoreboard players operation @s item_before = @s welfare
 execute if score #used_item item_held matches 16 as @a[tag=rfm_participant,tag=rfm_specialize_affected] run scoreboard players operation @s item_before = @s ecology
 
-#使用者对应属性+5，其余受影响玩家对应属性-5
 execute if score #used_item item_held matches 13 run scoreboard players add @a[tag=rfm_participant,tag=rfm_item_user] fame 5
 execute if score #used_item item_held matches 13 run scoreboard players remove @a[tag=rfm_participant,tag=rfm_specialize_affected] fame 5
 execute if score #used_item item_held matches 14 run scoreboard players add @a[tag=rfm_participant,tag=rfm_item_user] economy 5
@@ -24,13 +22,11 @@ execute if score #used_item item_held matches 16 run scoreboard players add @a[t
 execute if score #used_item item_held matches 16 run scoreboard players remove @a[tag=rfm_participant,tag=rfm_specialize_affected] ecology 5
 execute as @a[tag=rfm_participant,tag=rfm_specialize_affected] run function rfm:attribute/minimum
 
-#只选择对应属性已锁定的玩家恢复锁定值，再计算其他玩家受到的实际影响
 execute as @a[tag=rfm_participant,scores={fame_lock=1}] run scoreboard players operation @s fame = @s fame_locked
 execute as @a[tag=rfm_participant,scores={economy_lock=1}] run scoreboard players operation @s economy = @s economy_locked
 execute as @a[tag=rfm_participant,scores={welfare_lock=1}] run scoreboard players operation @s welfare = @s welfare_locked
 execute as @a[tag=rfm_participant,scores={ecology_lock=1}] run scoreboard players operation @s ecology = @s ecology_locked
 
-#计算其他玩家受到的实际影响
 execute if score #used_item item_held matches 13 as @a[tag=rfm_participant,tag=rfm_specialize_affected] run scoreboard players operation @s item_delta = @s fame
 execute if score #used_item item_held matches 14 as @a[tag=rfm_participant,tag=rfm_specialize_affected] run scoreboard players operation @s item_delta = @s economy
 execute if score #used_item item_held matches 15 as @a[tag=rfm_participant,tag=rfm_specialize_affected] run scoreboard players operation @s item_delta = @s welfare
@@ -48,9 +44,9 @@ execute if score #used_item item_held matches 14 as @a[tag=rfm_participant,tag=r
 execute if score #used_item item_held matches 15 as @a[tag=rfm_participant,tag=rfm_specialize_affected] run tellraw @s [{"translate":"rfm.text.ebf5c5ced553","color":"white"},{"translate":"rfm.text.91ce738575d7","color":"#C6A8FF","bold":true},{"translate":"rfm.text.49de2a7da66e","color":"white"},{"translate":"rfm.text.318edbd5be8f","color":"red"},{"translate":"rfm.text.7f988929693d","color":"white"},{"score":{"name":"@s","objective":"item_before"},"color":"red","bold":true},{"text":"。","color":"white"}]
 execute if score #used_item item_held matches 16 as @a[tag=rfm_participant,tag=rfm_specialize_affected] run tellraw @s [{"translate":"rfm.text.ebf5c5ced553","color":"white"},{"translate":"rfm.text.91ce738575d7","color":"#C6A8FF","bold":true},{"translate":"rfm.text.49de2a7da66e","color":"white"},{"translate":"rfm.text.014a015ae588","color":"green"},{"translate":"rfm.text.7f988929693d","color":"white"},{"score":{"name":"@s","objective":"item_before"},"color":"red","bold":true},{"text":"。","color":"white"}]
 execute as @a[tag=rfm_participant,tag=rfm_specialize_affected] run tellraw @a[tag=rfm_participant,tag=rfm_item_user,limit=1] [{"translate":"rfm.text.302448cb41bc","color":"gray"},{"selector":"@s","color":"white"},{"translate":"rfm.text.920f7f3f8f52","color":"gray"},{"score":{"name":"@s","objective":"item_delta"},"color":"red","bold":true}]
-execute as @a[tag=rfm_participant,tag=!rfm_item_user,tag=!rfm_specialize_affected] if score @s collection_slot1 matches 10 run tellraw @s [{"translate":"rfm.text.55e3e5523e7c","color":"light_purple","bold":true},{"translate":"rfm.text.08785f9f6fca","color":"white"}]
-execute as @a[tag=rfm_participant,tag=!rfm_item_user,tag=!rfm_specialize_affected] if score @s collection_slot2 matches 10 run tellraw @s [{"translate":"rfm.text.55e3e5523e7c","color":"light_purple","bold":true},{"translate":"rfm.text.08785f9f6fca","color":"white"}]
-execute as @a[tag=rfm_participant,tag=!rfm_item_user,tag=!rfm_specialize_affected] if score @s collection_slot3 matches 10 run tellraw @s [{"translate":"rfm.text.55e3e5523e7c","color":"light_purple","bold":true},{"translate":"rfm.text.08785f9f6fca","color":"white"}]
-execute as @a[tag=rfm_participant,tag=!rfm_item_user,tag=!rfm_specialize_affected] if score @s collection_slot4 matches 10 run tellraw @s [{"translate":"rfm.text.55e3e5523e7c","color":"light_purple","bold":true},{"translate":"rfm.text.08785f9f6fca","color":"white"}]
-execute as @a[tag=rfm_participant,tag=!rfm_item_user,tag=!rfm_specialize_affected] if score @s collection_slot5 matches 10 run tellraw @s [{"translate":"rfm.text.55e3e5523e7c","color":"light_purple","bold":true},{"translate":"rfm.text.08785f9f6fca","color":"white"}]
+execute as @a[tag=rfm_participant,tag=!rfm_item_user,tag=!rfm_specialize_affected] unless score @s candidate matches 7 if score @s collection_slot1 matches 10 run tellraw @s [{"translate":"rfm.text.55e3e5523e7c","color":"light_purple","bold":true},{"translate":"rfm.text.08785f9f6fca","color":"white"}]
+execute as @a[tag=rfm_participant,tag=!rfm_item_user,tag=!rfm_specialize_affected] unless score @s candidate matches 7 if score @s collection_slot2 matches 10 run tellraw @s [{"translate":"rfm.text.55e3e5523e7c","color":"light_purple","bold":true},{"translate":"rfm.text.08785f9f6fca","color":"white"}]
+execute as @a[tag=rfm_participant,tag=!rfm_item_user,tag=!rfm_specialize_affected] unless score @s candidate matches 7 if score @s collection_slot3 matches 10 run tellraw @s [{"translate":"rfm.text.55e3e5523e7c","color":"light_purple","bold":true},{"translate":"rfm.text.08785f9f6fca","color":"white"}]
+execute as @a[tag=rfm_participant,tag=!rfm_item_user,tag=!rfm_specialize_affected] unless score @s candidate matches 7 if score @s collection_slot4 matches 10 run tellraw @s [{"translate":"rfm.text.55e3e5523e7c","color":"light_purple","bold":true},{"translate":"rfm.text.08785f9f6fca","color":"white"}]
+execute as @a[tag=rfm_participant,tag=!rfm_item_user,tag=!rfm_specialize_affected] unless score @s candidate matches 7 if score @s collection_slot5 matches 10 run tellraw @s [{"translate":"rfm.text.55e3e5523e7c","color":"light_purple","bold":true},{"translate":"rfm.text.08785f9f6fca","color":"white"}]
 tag @a[tag=rfm_participant] remove rfm_specialize_affected

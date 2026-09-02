@@ -1,4 +1,3 @@
-#重置控制台并生成本轮1至10点的供电目标
 setblock 267 -57 79 minecraft:lever[face=wall,facing=north,powered=false] replace
 setblock 264 -57 79 minecraft:lever[face=wall,facing=north,powered=false] replace
 setblock 261 -57 79 minecraft:lever[face=wall,facing=north,powered=false] replace

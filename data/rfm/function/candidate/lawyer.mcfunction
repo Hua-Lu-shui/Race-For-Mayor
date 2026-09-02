@@ -1,4 +1,3 @@
-#将玩家设置为律师候选人并初始化对应属性
 playsound minecraft:ui.button.click master @s ~ ~ ~ 0.7 1.0
 scoreboard players set @s candidate 7
 team join lawyer @s

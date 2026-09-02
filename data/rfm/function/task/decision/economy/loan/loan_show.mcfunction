@@ -1,6 +1,5 @@
 scoreboard players set @s decision_choice 0
 scoreboard players enable @s decision_choice
-#显示任务背景以及选项
 tellraw @s {"translate":"rfm.text.274799a83e8d","color":"gold","bold":true}
 
 tellraw @s {"translate":"rfm.text.00f9a3be562c","color":"white"}

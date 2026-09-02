@@ -1,4 +1,3 @@
-#使用现有竖向社区，并在玩家到场前生成门牌和门铃
 scoreboard players set #waiting next_round_ready 0
 scoreboard players set @a[tag=rfm_participant] next_round_clock 0
 function rfm:task/action/fame/fame_2/create_labels
@@ -13,10 +12,10 @@ scoreboard players set @s visit_time 0
 scoreboard players set @s visit_delay 0
 scoreboard players set @s visit_state 2
 
-#其他玩家从正面观看整栋楼，行动玩家从一楼中央出发
 gamemode adventure @a[tag=rfm_participant]
 tp @a[tag=rfm_participant] 163 -48 -23 90 30
 tp @s 143 -58 -31 0 0
+function rfm:task/action/sequence/hide_observers
 
 tellraw @a[tag=rfm_participant] [{"translate":"rfm.text.3b5b89df2cb1","color":"aqua","bold":true},{"translate":"rfm.text.f3bab73164c2","color":"white"},{"selector":"@s","color":"white"}]
 tellraw @a[tag=rfm_participant] [{"translate":"rfm.text.f7acefd2d4cd","color":"white"},{"translate":"rfm.text.a582f9914169","color":"#67D5FF","bold":true},{"translate":"rfm.text.886545dd2ae9","color":"white"},{"translate":"rfm.text.ba247ab5d48e","color":"#FFD166"},{"translate":"rfm.text.1fe9220eb01d","color":"white"},{"translate":"rfm.text.4439676fd18d","color":"#FFCB77"},{"text":"。","color":"white"}]

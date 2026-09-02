@@ -1,4 +1,3 @@
-#事件22：生态监测公开（永久显示生态领先者）
 scoreboard players set #event_22 event_used 1
 scoreboard players set #reveal_ecology leader_reveal 1
 title @a[tag=rfm_participant] times 10 80 20

@@ -1,4 +1,3 @@
-#“老旧的战功章”：完美完成行动任务时，最低属性+5；并列最低时随机选择一项
 execute unless score @s collection_slot1 matches 6 unless score @s collection_slot2 matches 6 unless score @s collection_slot3 matches 6 unless score @s collection_slot4 matches 6 unless score @s collection_slot5 matches 6 run return 0
 function rfm:attribute/lock/enforce
 scoreboard players operation @s collection_effect_value = @s fame
@@ -12,10 +11,10 @@ execute if score @s welfare = @s collection_effect_value unless score @s welfare
 execute if score @s ecology = @s collection_effect_value unless score @s ecology_lock matches 1 run scoreboard players add @s collection_effect_mask 8
 execute if score @s collection_effect_mask matches 0 run return 0
 function rfm:collection/effect/select_from_mask
-execute if score @s collection_effect_pick matches 1 run scoreboard players add @s fame 5
-execute if score @s collection_effect_pick matches 2 run scoreboard players add @s economy 5
-execute if score @s collection_effect_pick matches 3 run scoreboard players add @s welfare 5
-execute if score @s collection_effect_pick matches 4 run scoreboard players add @s ecology 5
+execute if score @s collection_effect_pick matches 1 run scoreboard players add @s fame 10
+execute if score @s collection_effect_pick matches 2 run scoreboard players add @s economy 10
+execute if score @s collection_effect_pick matches 3 run scoreboard players add @s welfare 10
+execute if score @s collection_effect_pick matches 4 run scoreboard players add @s ecology 10
 playsound minecraft:entity.experience_orb.pickup master @s ~ ~ ~ 0.7 1.2
 tellraw @s [{"translate":"rfm.text.421d5bc2877d","color":"green","bold":true},{"translate":"rfm.text.0ace5909adca","color":"white"}]
 function rfm:attribute/minimum

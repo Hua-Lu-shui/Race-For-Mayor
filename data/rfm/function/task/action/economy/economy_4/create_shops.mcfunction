@@ -1,8 +1,6 @@
-#清除上一次任务可能残留的商户和标签
 kill @e[type=minecraft:villager,tag=rfm_supply_merchant]
 kill @e[type=minecraft:text_display,tag=rfm_supply_label]
 
-#五个店铺补货木桶
 setblock 208 -58 23 minecraft:barrel[facing=south,open=false] replace
 setblock 192 -58 6 minecraft:barrel[facing=south,open=false] replace
 setblock 199 -58 12 minecraft:barrel[facing=south,open=false] replace
@@ -14,7 +12,6 @@ data remove block 199 -58 12 Items
 data remove block 189 -58 15 Items
 data remove block 199 -58 31 Items
 
-#场景仓库：二十四个相互独立的大箱子
 setblock 190 -58 25 minecraft:chest[facing=west,type=right,waterlogged=false] replace
 setblock 190 -58 26 minecraft:chest[facing=west,type=left,waterlogged=false] replace
 setblock 190 -58 27 minecraft:chest[facing=west,type=right,waterlogged=false] replace

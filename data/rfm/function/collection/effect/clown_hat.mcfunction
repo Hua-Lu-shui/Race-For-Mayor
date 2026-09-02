@@ -1,4 +1,3 @@
-#“小丑帽”：最终结算时，若至少两项属性分别为全场最低，则最高属性翻倍；并列最低同样计入
 execute unless score @s collection_slot1 matches 33 unless score @s collection_slot2 matches 33 unless score @s collection_slot3 matches 33 unless score @s collection_slot4 matches 33 unless score @s collection_slot5 matches 33 run return 0
 scoreboard players set @s collection_effect_value 0
 execute if score @s fame = #final_lowest_fame fame run scoreboard players add @s collection_effect_value 1

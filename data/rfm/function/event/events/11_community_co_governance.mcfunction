@@ -1,4 +1,3 @@
-#事件11：社区共治行动（社区领袖候选人所有属性+3）
 scoreboard players set #event_11 event_used 1
 scoreboard players add @a[tag=rfm_participant,scores={candidate=3}] fame 3
 scoreboard players add @a[tag=rfm_participant,scores={candidate=3}] economy 3

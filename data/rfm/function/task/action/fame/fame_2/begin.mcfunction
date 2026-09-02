@@ -1,4 +1,3 @@
-#随机抽取拜访路线并开始40秒计时
 execute store result score @s visit_route run random value 1..6
 scoreboard players set @s visit_step 0
 scoreboard players set @s visit_target 0

@@ -1,4 +1,3 @@
-#给二十四个大箱子的四十八个半箱设置随机战利品表；每个半箱随机填入24/27格
 data modify block 190 -58 25 LootTable set value "rfm:task/action/economy/economy_4/warehouse_fillers"
 data modify block 190 -58 26 LootTable set value "rfm:task/action/economy/economy_4/warehouse_fillers"
 data modify block 190 -58 27 LootTable set value "rfm:task/action/economy/economy_4/warehouse_fillers"
@@ -48,5 +47,4 @@ data modify block 181 -56 27 LootTable set value "rfm:task/action/economy/econom
 data modify block 181 -56 26 LootTable set value "rfm:task/action/economy/economy_4/warehouse_fillers"
 data modify block 181 -56 25 LootTable set value "rfm:task/action/economy/economy_4/warehouse_fillers"
 
-#读取每个半箱的物品槽，立即触发战利品表生成，而不是等玩家首次打开
 function rfm:task/action/economy/economy_4/force_fill_chests

@@ -1,4 +1,3 @@
-#消耗水样，记录进度，并给予下一个空瓶
 clear @s minecraft:potion[minecraft:potion_contents={potion:"minecraft:water"}] 1
 scoreboard players add @s sample_progress 1
 playsound minecraft:entity.experience_orb.pickup master @s ~ ~ ~ 1 1.2

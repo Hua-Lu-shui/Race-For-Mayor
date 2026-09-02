@@ -1,4 +1,3 @@
-#根据补货进度结算经济行动任务4的奖励
 scoreboard players set @s supply_state 4
 bossbar set rfm:supply_time visible false
 

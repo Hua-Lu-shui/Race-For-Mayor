@@ -1,4 +1,3 @@
-#第4、8回合属性公示后的第一阶段：在办公室等待全员准备进入令牌争夺
 scoreboard players set #group_state group_state 3
 scoreboard players set #waiting next_round_ready 0
 scoreboard players set @a[tag=rfm_participant] group_ready 0

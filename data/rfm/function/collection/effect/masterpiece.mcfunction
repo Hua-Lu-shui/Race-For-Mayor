@@ -1,4 +1,3 @@
-#“世纪名画”：回合结束时，最高属性对应的全局权重+1；并列最高时随机选择一项
 execute unless score @s collection_slot1 matches 26 unless score @s collection_slot2 matches 26 unless score @s collection_slot3 matches 26 unless score @s collection_slot4 matches 26 unless score @s collection_slot5 matches 26 run return 0
 function rfm:collection/trade/select_highest
 execute if score @s collection_attr matches 1 run scoreboard players add #weight fame_weight 1

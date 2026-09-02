@@ -1,4 +1,3 @@
-#“冠军奖杯”：在令牌争夺获得第一时，随机一项属性翻倍
 execute unless score @s collection_slot1 matches 40 unless score @s collection_slot2 matches 40 unless score @s collection_slot3 matches 40 unless score @s collection_slot4 matches 40 unless score @s collection_slot5 matches 40 run return 0
 execute store result score @s collection_effect_pick run random value 1..4
 execute if score @s collection_effect_pick matches 1 run scoreboard players operation @s fame += @s fame

@@ -1,10 +1,10 @@
-#公园维护场地
 scoreboard players set #waiting next_round_ready 0
 scoreboard players set @a[tag=rfm_participant] next_round_clock 0
 
 gamemode adventure @a[tag=rfm_participant]
 tp @a[tag=rfm_participant] 190 -47 71 -90 30
 tp @s 206 -58 63 45 0
+function rfm:task/action/sequence/hide_observers
 
 function rfm:task/action/ecology/ecology_3/create_labels
 scoreboard players set @s park_progress 0

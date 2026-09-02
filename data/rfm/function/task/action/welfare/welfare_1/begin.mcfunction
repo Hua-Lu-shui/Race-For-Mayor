@@ -1,4 +1,3 @@
-#正式开始民生行动任务1并初始化计时与非重复病例
 scoreboard players set @s hospital_round 0
 scoreboard players set @s hospital_correct 0
 scoreboard players set @s hospital_answer 0

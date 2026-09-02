@@ -1,19 +1,16 @@
-#垃圾分类场地
 scoreboard players set #waiting next_round_ready 0
 scoreboard players set @a[tag=rfm_participant] next_round_clock 0
 
-#所有玩家进入观战位置
 gamemode adventure @a[tag=rfm_participant]
 tp @a[tag=rfm_participant] 236 -53 66 0 30
 tp @s 236 -59 69 180 0
+function rfm:task/action/sequence/hide_observers
 
-#清除容器正上方的阻挡方块，确保陷阱箱可以打开
 setblock 236 -58 65 minecraft:air
 setblock 232 -58 69 minecraft:air
 setblock 236 -58 73 minecraft:air
 setblock 240 -58 69 minecraft:air
 
-#放置四个可储物的陷阱箱；资源包会隐藏箱体，只显示垃圾桶模型
 setblock 236 -59 65 minecraft:trapped_chest[facing=south,type=single]{CustomName:'{"translate":"rfm.text.1b0ee977123b","color":"aqua","bold":true}'} replace
 setblock 232 -59 69 minecraft:trapped_chest[facing=east,type=single]{CustomName:'{"translate":"rfm.text.dfbe16fb9796","color":"red","bold":true}'} replace
 setblock 236 -59 73 minecraft:trapped_chest[facing=north,type=single]{CustomName:'{"translate":"rfm.text.a38f54b95f87","color":"green","bold":true}'} replace
@@ -21,7 +18,6 @@ setblock 240 -59 69 minecraft:trapped_chest[facing=west,type=single]{CustomName:
 function rfm:task/action/ecology/ecology_4/create_labels
 function rfm:task/action/ecology/ecology_4/create_models
 
-#初始化任务状态，等待行动玩家确认准备
 scoreboard players set @s trash_round 0
 scoreboard players set @s trash_item_id 0
 scoreboard players set @s trash_target 0

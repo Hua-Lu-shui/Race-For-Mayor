@@ -1,4 +1,3 @@
-#事件16：社区协调失误（社区领袖候选人所有属性-3）
 scoreboard players set #event_16 event_used 1
 scoreboard players remove @a[tag=rfm_participant,scores={candidate=3}] fame 3
 scoreboard players remove @a[tag=rfm_participant,scores={candidate=3}] economy 3

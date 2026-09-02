@@ -1,5 +1,3 @@
-#推进民生行动任务2的开场倒计时
-#3秒开场倒数结束前不允许行动玩家提前进入赛道
 execute if score @s fitness_delay matches 60 run title @a[tag=rfm_participant] clear
 execute if score @s fitness_delay matches 60 run title @a[tag=rfm_participant] title {"text":"3","color":"green","bold":true}
 execute if score @s fitness_delay matches 60 run playsound minecraft:block.note_block.hat master @a[tag=rfm_participant] ~ ~ ~ 1 1 1

@@ -1,4 +1,3 @@
-#判断所选线路是否恰好达到核定发车人数
 scoreboard players set @s bus_valid 0
 execute if score @s bus_answer matches 1 if score @s bus_queue_1 matches 3 run scoreboard players set @s bus_valid 1
 execute if score @s bus_answer matches 2 if score @s bus_queue_2 matches 4 run scoreboard players set @s bus_valid 1

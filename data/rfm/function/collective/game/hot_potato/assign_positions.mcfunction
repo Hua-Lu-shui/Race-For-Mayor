@@ -1,4 +1,3 @@
-#随机把1～8名参赛者一一分配到8个站位
 scoreboard players set @a[tag=rfm_participant] potato_pos 0
 tag @a[tag=rfm_participant] remove rfm_hot_potato_assigned
 tag @a[tag=rfm_participant] remove rfm_hot_potato_assigning

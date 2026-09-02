@@ -1,4 +1,3 @@
-#五件必需品依次间隔两个箱子，确保分散在五个不同箱子中
 data modify storage rfm:supply placement.item set value "minecraft:milk_bucket"
 function rfm:task/action/economy/economy_4/random_task_slot
 function rfm:task/action/economy/economy_4/place_current_chest

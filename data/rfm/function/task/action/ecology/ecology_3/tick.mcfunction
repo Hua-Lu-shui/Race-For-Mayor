@@ -1,7 +1,6 @@
 scoreboard players remove @s park_time 1
 execute store result bossbar rfm:park_time value run scoreboard players get @s park_time
 
-#按顺序检查6个维护点；每次确认后前往下一个点
 execute if score @s park_progress matches 0 positioned 188 -58 84 if entity @e[type=minecraft:item,distance=..2,limit=1,nbt={Item:{components:{"minecraft:custom_data":{park_check:1}}}}] run function rfm:task/action/ecology/ecology_3/check
 execute if score @s park_progress matches 1 positioned 211 -58 77 if entity @e[type=minecraft:item,distance=..2,limit=1,nbt={Item:{components:{"minecraft:custom_data":{park_check:1}}}}] run function rfm:task/action/ecology/ecology_3/check
 execute if score @s park_progress matches 2 positioned 189 -58 58 if entity @e[type=minecraft:item,distance=..2,limit=1,nbt={Item:{components:{"minecraft:custom_data":{park_check:1}}}}] run function rfm:task/action/ecology/ecology_3/check

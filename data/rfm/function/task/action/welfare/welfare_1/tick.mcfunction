@@ -1,4 +1,3 @@
-#推进民生行动任务1的计时并检测三个分诊窗口
 scoreboard players remove @s hospital_time 1
 execute store result bossbar rfm:hospital_time value run scoreboard players get @s hospital_time
 

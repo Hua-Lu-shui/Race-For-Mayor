@@ -1,4 +1,3 @@
-#创建令牌争夺流程、计分与排名计分板
 scoreboard objectives add group_state dummy
 scoreboard objectives add group_time dummy
 scoreboard objectives add group_arrival dummy

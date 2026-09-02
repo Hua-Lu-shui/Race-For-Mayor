@@ -1,6 +1,4 @@
-#当前执行者是持有行动任务的玩家；按任务编号和局部状态分派实时流程
 
-#名誉行动601—605
 execute if score @s action_task matches 601 if score @s speech_state matches 2 at @s run function rfm:task/action/fame/fame_1/wait_ready
 execute if score @s action_task matches 601 if score @s speech_state matches 3 run function rfm:task/action/fame/fame_1/countdown
 execute if score @s action_task matches 601 if score @s speech_state matches 1 at @s run function rfm:task/action/fame/fame_1/tick
@@ -19,7 +17,6 @@ execute if score @s action_task matches 605 if score @s cheer_state matches 2 at
 execute if score @s action_task matches 605 if score @s cheer_state matches 3 run function rfm:task/action/fame/fame_5/countdown
 execute if score @s action_task matches 605 if score @s cheer_state matches 1 at @s run function rfm:task/action/fame/fame_5/tick
 
-#生态行动901—905
 execute if score @s action_task matches 901 if score @s emission_state matches 5 at @s run function rfm:task/action/ecology/ecology_1/wait_ready
 execute if score @s action_task matches 901 if score @s emission_state matches 4 run function rfm:task/action/ecology/ecology_1/countdown
 execute if score @s action_task matches 901 if score @s emission_state matches 1 at @s run function rfm:task/action/ecology/ecology_1/tick
@@ -37,7 +34,6 @@ execute if score @s action_task matches 905 if score @s energy_state matches 2 a
 execute if score @s action_task matches 905 if score @s energy_state matches 3 run function rfm:task/action/ecology/ecology_5/countdown
 execute if score @s action_task matches 905 if score @s energy_state matches 1 run function rfm:task/action/ecology/ecology_5/tick
 
-#经济行动701—705
 execute if score @s action_task matches 701 if score @s market_state matches 2 at @s run function rfm:task/action/economy/economy_1/wait_ready
 execute if score @s action_task matches 701 if score @s market_state matches 3 run function rfm:task/action/economy/economy_1/countdown
 execute if score @s action_task matches 701 if score @s market_state matches 1 run function rfm:task/action/economy/economy_1/tick
@@ -54,7 +50,6 @@ execute if score @s action_task matches 705 if score @s employment_state matches
 execute if score @s action_task matches 705 if score @s employment_state matches 3 run function rfm:task/action/economy/economy_5/countdown
 execute if score @s action_task matches 705 if score @s employment_state matches 1 run function rfm:task/action/economy/economy_5/tick
 
-#民生行动801—805
 execute if score @s action_task matches 801 if score @s hospital_state matches 2 at @s run function rfm:task/action/welfare/welfare_1/wait_ready
 execute if score @s action_task matches 801 if score @s hospital_state matches 3 run function rfm:task/action/welfare/welfare_1/countdown
 execute if score @s action_task matches 801 if score @s hospital_state matches 1 run function rfm:task/action/welfare/welfare_1/tick

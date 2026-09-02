@@ -1,4 +1,3 @@
-#collection_attr：1名誉、2经济、3民生、4生态、5当前最高属性、6所有属性、7当前最高与最低属性、8当前最低属性
 scoreboard players set @s collection_pay_pick 0
 execute if score @s collection_attr matches 7 run scoreboard players set @s collection_pay_pick 7
 execute if score @s collection_attr matches 5 run function rfm:collection/trade/select_highest

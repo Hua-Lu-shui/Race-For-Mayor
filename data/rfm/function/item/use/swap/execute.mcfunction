@@ -1,11 +1,9 @@
-#本函数以互换令牌使用者为@s，#swap_target room记录目标办公室
 tag @a[tag=rfm_participant] remove rfm_item_user
 tag @a[tag=rfm_participant] remove rfm_item_target
 tag @s add rfm_item_user
 execute as @a[tag=rfm_participant] if score @s room = #swap_target room run tag @s add rfm_item_target
 scoreboard players operation #used_item item_held = @s swap_pending
 scoreboard players set #swap_blocked item_before 0
-#律师可以主动使用互换令牌，但不能成为其他玩家的互换目标
 execute if entity @a[tag=rfm_participant,tag=rfm_item_target,scores={candidate=7}] run scoreboard players set #swap_blocked item_before 2
 execute if score #swap_blocked item_before matches 2 run function rfm:item/use/swap/lawyer_blocked
 execute if score #swap_blocked item_before matches 2 run return 0
@@ -28,7 +26,6 @@ execute if score #swap_blocked item_before matches 1 run function rfm:item/use/s
 execute if score #swap_blocked item_before matches 1 run return 0
 scoreboard players set @s swap_pending 0
 
-#记录交换前双方数值
 execute if score #used_item item_held matches 1 as @a[tag=rfm_participant,tag=rfm_item_user,limit=1] run scoreboard players operation @s item_before = @s fame
 execute if score #used_item item_held matches 1 as @a[tag=rfm_participant,tag=rfm_item_target,limit=1] run scoreboard players operation @s item_before = @s fame
 execute if score #used_item item_held matches 2 as @a[tag=rfm_participant,tag=rfm_item_user,limit=1] run scoreboard players operation @s item_before = @s economy
@@ -38,7 +35,6 @@ execute if score #used_item item_held matches 3 as @a[tag=rfm_participant,tag=rf
 execute if score #used_item item_held matches 4 as @a[tag=rfm_participant,tag=rfm_item_user,limit=1] run scoreboard players operation @s item_before = @s ecology
 execute if score #used_item item_held matches 4 as @a[tag=rfm_participant,tag=rfm_item_target,limit=1] run scoreboard players operation @s item_before = @s ecology
 
-#执行指定属性交换
 execute as @a[tag=rfm_participant,tag=rfm_item_user,limit=1] run scoreboard players operation #swap item_before = @s item_before
 execute if score #used_item item_held matches 1 as @a[tag=rfm_participant,tag=rfm_item_user,limit=1] run scoreboard players operation @s fame = @a[tag=rfm_participant,tag=rfm_item_target,limit=1] fame
 execute if score #used_item item_held matches 1 as @a[tag=rfm_participant,tag=rfm_item_target,limit=1] run scoreboard players operation @s fame = #swap item_before
@@ -49,7 +45,6 @@ execute if score #used_item item_held matches 3 as @a[tag=rfm_participant,tag=rf
 execute if score #used_item item_held matches 4 as @a[tag=rfm_participant,tag=rfm_item_user,limit=1] run scoreboard players operation @s ecology = @a[tag=rfm_participant,tag=rfm_item_target,limit=1] ecology
 execute if score #used_item item_held matches 4 as @a[tag=rfm_participant,tag=rfm_item_target,limit=1] run scoreboard players operation @s ecology = #swap item_before
 
-#计算双方实际变化；使用者可查看完整结果，被换者只收到匿名通知
 execute if score #used_item item_held matches 1 as @a[tag=rfm_participant,tag=rfm_item_user] run scoreboard players operation @s item_delta = @s fame
 execute if score #used_item item_held matches 1 as @a[tag=rfm_participant,tag=rfm_item_target] run scoreboard players operation @s item_delta = @s fame
 execute if score #used_item item_held matches 2 as @a[tag=rfm_participant,tag=rfm_item_user] run scoreboard players operation @s item_delta = @s economy

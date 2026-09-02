@@ -1,5 +1,3 @@
-#执行dispatch a函数对应的游戏流程
-#将当前任务的方案A分发到唯一对应的结果函数
 function rfm:collection/effect/annotated_file/before
 execute if score @s decision_task matches 101 run function rfm:task/decision/fame/media/media_a
 execute if score @s decision_task matches 102 run function rfm:task/decision/fame/debate/debate_a

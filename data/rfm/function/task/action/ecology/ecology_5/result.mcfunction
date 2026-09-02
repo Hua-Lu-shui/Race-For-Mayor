@@ -1,4 +1,3 @@
-#根据完成情况结算生态行动任务5的奖励
 scoreboard players set @s energy_state 4
 bossbar set rfm:energy_time visible false
 tellraw @a[tag=rfm_participant] [{"translate":"rfm.text.fdd721190dd7","color":"white"},{"score":{"name":"@s","objective":"energy_correct"},"color":"green"},{"translate":"rfm.text.115f1013541c","color":"white"}]

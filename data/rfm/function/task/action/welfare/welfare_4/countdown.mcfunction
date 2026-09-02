@@ -1,4 +1,3 @@
-#推进开场倒计时，结束前持续锁定行动玩家
 execute if score @s bus_delay matches 60 run title @a[tag=rfm_participant] clear
 execute if score @s bus_delay matches 60 run title @a[tag=rfm_participant] title {"text":"3","color":"green","bold":true}
 execute if score @s bus_delay matches 60 run playsound minecraft:block.note_block.hat master @a[tag=rfm_participant] ~ ~ ~ 1 1 1

@@ -1,4 +1,3 @@
-#从已完成的小游戏1～4中随机抽取；第8回合不得与第4回合重复
 execute store result score #selected_game group_game run random value 1..4
 execute if score #last_game group_game matches 1 if score #selected_game group_game matches 1 store result score #selected_game group_game run random value 2..4
 execute if score #last_game group_game matches 2 if score #selected_game group_game matches 2 store result score #selected_game group_game run random value 1..3

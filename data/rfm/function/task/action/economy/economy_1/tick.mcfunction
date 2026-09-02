@@ -1,7 +1,6 @@
 scoreboard players remove @s market_time 1
 execute store result bossbar rfm:market_time value run scoreboard players get @s market_time
 
-#任意交易发生后立即判定；最佳商人的交易记为正确，其余记为错误
 scoreboard players set @s market_answer 0
 execute if entity @e[type=minecraft:villager,tag=rfm_market_vendor,nbt={Offers:{Recipes:[{uses:1}]}}] run scoreboard players set @s market_answer 2
 execute if entity @e[type=minecraft:villager,tag=rfm_market_best,nbt={Offers:{Recipes:[{uses:1}]}}] run scoreboard players set @s market_answer 1

@@ -1,4 +1,3 @@
-#十六件普通藏品在普通稀有度内等概率抽取
 execute store result score @s collection_offer_shift run random value 1..16
 execute if score @s collection_offer_shift matches 1 run scoreboard players set @s collection_offer 1
 execute if score @s collection_offer_shift matches 2 run scoreboard players set @s collection_offer 2

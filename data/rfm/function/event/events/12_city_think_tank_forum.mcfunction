@@ -1,4 +1,3 @@
-#事件12：城市智库论坛（学者候选人所有属性+3）
 scoreboard players set #event_12 event_used 1
 scoreboard players add @a[tag=rfm_participant,scores={candidate=4}] fame 3
 scoreboard players add @a[tag=rfm_participant,scores={candidate=4}] economy 3

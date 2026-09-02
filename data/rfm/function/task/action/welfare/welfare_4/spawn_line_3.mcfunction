@@ -1,4 +1,3 @@
-#蓝线队伍最多显示6名乘客
 execute if score @s bus_queue_3 matches ..5 run scoreboard players set @s bus_spawned 1
 execute if score @s bus_spawned matches 1 run scoreboard players add @s bus_queue_3 1
 execute if score @s bus_spawned matches 1 if score @s bus_queue_3 matches 1 run summon minecraft:villager 227 -59 -73 {Tags:["rfm_bus_passenger","rfm_bus_line_3"],NoAI:1b,Silent:1b,Invulnerable:1b,PersistenceRequired:1b,Rotation:[-90f,0f],VillagerData:{profession:"minecraft:none",level:1,type:"minecraft:snow"}}

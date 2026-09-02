@@ -1,4 +1,3 @@
-#第10回合不走常规领先播报链，因此在进入结算前仅补记一次四项领先进度
 tag @a[tag=rfm_participant] remove rfm_lead_fame
 scoreboard players set #lead_fame fame -2147483648
 scoreboard players operation #lead_fame fame > @a[tag=rfm_participant] fame

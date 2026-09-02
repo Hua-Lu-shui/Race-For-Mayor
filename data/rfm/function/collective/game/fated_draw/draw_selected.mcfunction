@@ -1,4 +1,3 @@
-#把所选纸条的隐藏排序分数复制给抽签玩家，并换算成可见名次
 scoreboard players operation @s group_score = @e[type=minecraft:interaction,tag=rfm_lottery_selected,limit=1] group_score
 scoreboard players set @s group_rank 9
 scoreboard players operation @s group_rank -= @s group_score

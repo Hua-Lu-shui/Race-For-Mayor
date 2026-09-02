@@ -1,4 +1,3 @@
-#到达场地并阅读介绍后，记录在自己附近丢出“准备开始”纸条的玩家
 execute as @a[tag=rfm_participant] run function rfm:collective/start_ready/lock_position
 execute as @a[tag=rfm_participant,scores={group_ready=0}] at @s if entity @e[type=minecraft:item,distance=..3,limit=1,nbt={Item:{components:{"minecraft:custom_data":{collective_start_ready:1}}}}] run function rfm:collective/start_ready/player_ready
 kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{collective_start_ready:1}}}}]

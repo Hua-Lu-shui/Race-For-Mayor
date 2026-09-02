@@ -1,4 +1,3 @@
-#以1/2/4/8记录名誉/经济/民生/生态；从任意非空并列掩码中等概率选出一项并写入1..4
 scoreboard players set @s collection_effect_pick 1
 execute if score @s collection_effect_mask matches 1 run scoreboard players set @s collection_effect_pick 1
 execute if score @s collection_effect_mask matches 2 run scoreboard players set @s collection_effect_pick 2

@@ -1,4 +1,3 @@
-#事件25：社区义诊行动（医生候选人所有属性+3）
 scoreboard players set #event_25 event_used 1
 scoreboard players add @a[tag=rfm_participant,scores={candidate=8}] fame 3
 scoreboard players add @a[tag=rfm_participant,scores={candidate=8}] economy 3

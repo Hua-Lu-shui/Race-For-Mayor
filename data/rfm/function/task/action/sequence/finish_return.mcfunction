@@ -1,10 +1,9 @@
-#恢复所有玩家的游戏模式，并传送回各自办公室
+effect clear @a[tag=rfm_action_observer_hidden] minecraft:invisibility
+tag @a[tag=rfm_action_observer_hidden] remove rfm_action_observer_hidden
 gamemode adventure @a[tag=rfm_participant]
 execute as @a[tag=rfm_participant] run function rfm:room/return
-#玩家回到办公室、交易界面关闭后，再清理市场调研交易槽退回的物品
 schedule function rfm:task/action/economy/economy_1/cleanup_items 2t replace
 
-#玩家返回办公室后统一清除所有行动任务的场地实体，避免玩家看见实体被直接删除
 kill @e[type=minecraft:villager,tag=rfm_speech_citizen]
 kill @e[type=minecraft:text_display,tag=rfm_speech_label]
 kill @e[type=minecraft:villager,tag=rfm_visit_resident]
@@ -63,18 +62,13 @@ kill @e[type=minecraft:interaction,tag=rfm_cooking_interaction]
 kill @e[type=minecraft:text_display,tag=rfm_cooking_label]
 kill @e[type=minecraft:villager,tag=rfm_cooking_judge]
 
-#任务阶段全部结束后结算明星的每回合天赋
 function rfm:ability/round_end
-#回合结束型藏品在领先者统计及属性公示前结算；第10回合则在最终结算前生效
 function rfm:collection/effect/before_leaders
 
 title @a[tag=rfm_participant] title {"translate":"rfm.text.e14df014667f","color":"green","bold":true}
 
-#取消可能残留的自动开局安排
 schedule clear rfm:round/round
 
-#第1至9回合结束后，先播报各属性领先候选人，再进入下一回合全员准备
 execute if score #round round matches ..9 run function rfm:round/leader/start
 
-#第10回合结束后，不再发放准备时钟，进入最终结算流程
 execute if score #round round matches 10.. run function rfm:ending/prepare

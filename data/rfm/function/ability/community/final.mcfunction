@@ -1,10 +1,8 @@
-#“得道多助”：找出结算前的最低属性；并列最低时随机选择一项
 function rfm:attribute/lock/enforce
 scoreboard players operation @s ability_min = @s fame
 execute if score @s economy < @s ability_min run scoreboard players operation @s ability_min = @s economy
 execute if score @s welfare < @s ability_min run scoreboard players operation @s ability_min = @s welfare
 execute if score @s ecology < @s ability_min run scoreboard players operation @s ability_min = @s ecology
-#只从未锁定的并列最低属性中等概率选择一项
 scoreboard players set @s collection_effect_mask 0
 execute if score @s fame = @s ability_min unless score @s fame_lock matches 1 run scoreboard players add @s collection_effect_mask 1
 execute if score @s economy = @s ability_min unless score @s economy_lock matches 1 run scoreboard players add @s collection_effect_mask 2

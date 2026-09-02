@@ -1,18 +1,20 @@
-#执行prepare函数对应的游戏流程
-#最终结算天赋只在正常结算入口执行一次
 execute unless score #abilities settle_state matches 1 run function rfm:ability/final/apply
-#补做第10回合属性领先统计，并结算终局类头衔
 function rfm:title/leader/final_round
 function rfm:title/check/attributes
 function rfm:title/check/final
 execute as @a[tag=rfm_participant,scores={title_item_used=0}] unless entity @s[advancements={rfm:title/no_item=true}] run function rfm:title/award/no_item
-#停止下一回合准备检测并清理可能残留的准备时钟
 scoreboard players set #waiting next_round_ready 0
 scoreboard players set @a[tag=rfm_participant] next_round_ready 0
 scoreboard players set @a[tag=rfm_participant] next_round_clock 0
 clear @a[tag=rfm_participant] minecraft:clock[minecraft:custom_data={next_round_ready:1}]
 kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{next_round_ready:1}}}}]
-#进入游戏结束阶段，玩家仍停留在各自办公室并确认进入结算
+clear @a[tag=rfm_participant] minecraft:heart_of_the_sea[minecraft:custom_data~{rfm_item:1}]
+execute as @a[tag=rfm_participant,scores={item_held=1..24}] run function rfm:item/give_selected
+execute as @a[tag=rfm_participant,scores={collection_slot1=1..}] run function rfm:collection/deliver
+execute as @a[tag=rfm_participant,scores={collection_slot1=..0,collection_slot2=1..}] run function rfm:collection/deliver
+execute as @a[tag=rfm_participant,scores={collection_slot1=..0,collection_slot2=..0,collection_slot3=1..}] run function rfm:collection/deliver
+execute as @a[tag=rfm_participant,scores={collection_slot1=..0,collection_slot2=..0,collection_slot3=..0,collection_slot4=1..}] run function rfm:collection/deliver
+execute as @a[tag=rfm_participant,scores={collection_slot1=..0,collection_slot2=..0,collection_slot3=..0,collection_slot4=..0,collection_slot5=1..}] run function rfm:collection/deliver
 function rfm:phase/phase2
 scoreboard players set #settle_state settle_state 1
 scoreboard players set @a[tag=rfm_participant] settle_ready 0

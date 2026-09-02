@@ -1,4 +1,3 @@
-#清理社区拜访的临时物品、界面和计分状态
 bossbar set rfm:visit_time visible false
 clear @s minecraft:paper[minecraft:custom_data={visit_ready:1}]
 clear @s minecraft:written_book[minecraft:custom_data~{rfm_visit_book:1}]

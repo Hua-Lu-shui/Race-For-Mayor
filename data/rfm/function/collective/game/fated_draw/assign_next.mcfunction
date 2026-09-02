@@ -1,4 +1,3 @@
-#随机选择一张尚未分配的纸条，并写入唯一名次对应的排序分数：第1名=8分，第8名=1分
 tag @e[type=minecraft:interaction,tag=rfm_lottery_interaction] remove rfm_lottery_assigning
 execute as @e[type=minecraft:interaction,tag=rfm_lottery_interaction,scores={group_score=0},sort=random,limit=1] run tag @s add rfm_lottery_assigning
 scoreboard players set #lottery_score group_score 9

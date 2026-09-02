@@ -1,4 +1,3 @@
-#根据10次临场反应的成功次数结算奖励
 scoreboard players set @s speech_state 4
 bossbar set rfm:speech_time visible false
 tellraw @a[tag=rfm_participant] [{"translate":"rfm.text.24bfcd1d37f0","color":"white"},{"score":{"name":"@s","objective":"speech_correct"},"color":"aqua"},{"translate":"rfm.text.75f5987f5c83","color":"white"}]

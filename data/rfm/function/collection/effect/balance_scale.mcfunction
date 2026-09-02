@@ -1,4 +1,3 @@
-#“天平”：回合结束时，若任意两项属性相等，最高属性和最低属性各+4
 execute unless score @s collection_slot1 matches 42 unless score @s collection_slot2 matches 42 unless score @s collection_slot3 matches 42 unless score @s collection_slot4 matches 42 unless score @s collection_slot5 matches 42 run return 0
 scoreboard players set @s collection_effect_value 0
 execute if score @s fame = @s economy run scoreboard players set @s collection_effect_value 1

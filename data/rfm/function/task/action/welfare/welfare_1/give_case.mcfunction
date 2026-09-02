@@ -1,4 +1,3 @@
-#抽取并记录本轮病例，确保一局内不会重复
 function rfm:task/action/welfare/welfare_1/roll_case
 execute if score @s hospital_case matches 1 run scoreboard players set @s hospital_used_1 1
 execute if score @s hospital_case matches 2 run scoreboard players set @s hospital_used_2 1
@@ -13,13 +12,11 @@ execute if score @s hospital_case matches 10 run scoreboard players set @s hospi
 execute if score @s hospital_case matches 11 run scoreboard players set @s hospital_used_11 1
 execute if score @s hospital_case matches 12 run scoreboard players set @s hospital_used_12 1
 
-#病例1至4为急诊，5至8为优先门诊，9至12为普通门诊
 scoreboard players set @s hospital_target 0
 execute if score @s hospital_case matches 1..4 run scoreboard players set @s hospital_target 1
 execute if score @s hospital_case matches 5..8 run scoreboard players set @s hospital_target 2
 execute if score @s hospital_case matches 9..12 run scoreboard players set @s hospital_target 3
 
-#发放可阅读的患者病历；分类答案只存在于计分板，不写在病历中
 execute if score @s hospital_case matches 1 run item replace entity @s hotbar.4 with minecraft:written_book[minecraft:custom_name='{"translate":"rfm.text.eecfc083177a","color":"white","bold":true,"italic":false}',minecraft:written_book_content={title:"患者病历",author:"社区医院",generation:0,pages:['{"translate":"rfm.text.bfa2a1849283"}'],resolved:0b},minecraft:custom_data={hospital_case:1}] 1
 execute if score @s hospital_case matches 2 run item replace entity @s hotbar.4 with minecraft:written_book[minecraft:custom_name='{"translate":"rfm.text.eecfc083177a","color":"white","bold":true,"italic":false}',minecraft:written_book_content={title:"患者病历",author:"社区医院",generation:0,pages:['{"translate":"rfm.text.e769293def2c"}'],resolved:0b},minecraft:custom_data={hospital_case:1}] 1
 execute if score @s hospital_case matches 3 run item replace entity @s hotbar.4 with minecraft:written_book[minecraft:custom_name='{"translate":"rfm.text.eecfc083177a","color":"white","bold":true,"italic":false}',minecraft:written_book_content={title:"患者病历",author:"社区医院",generation:0,pages:['{"translate":"rfm.text.7a1c579f4ecf"}'],resolved:0b},minecraft:custom_data={hospital_case:1}] 1

@@ -1,4 +1,3 @@
-#检查经济行动任务3中的玩家操作并记录结果
 execute if score @s audit_answer = @s audit_target run scoreboard players set @s audit_correct 1
 execute if score @s audit_answer = @s audit_target run tellraw @a[tag=rfm_participant] {"translate":"rfm.text.511d655cd844","color":"green","bold":true}
 execute if score @s audit_answer = @s audit_target run playsound minecraft:entity.experience_orb.pickup master @a[tag=rfm_participant] ~ ~ ~ 1 1.2 1

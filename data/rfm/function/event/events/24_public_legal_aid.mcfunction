@@ -1,4 +1,3 @@
-#事件24：公益法律援助（律师候选人所有属性+3）
 scoreboard players set #event_24 event_used 1
 scoreboard players add @a[tag=rfm_participant,scores={candidate=7}] fame 3
 scoreboard players add @a[tag=rfm_participant,scores={candidate=7}] economy 3

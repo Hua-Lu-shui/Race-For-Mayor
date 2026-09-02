@@ -1,10 +1,7 @@
-#执行attribute函数对应的游戏流程
-#创建四个属性计分板
 scoreboard objectives add fame dummy {"translate":"rfm.text.dc04a5799df2"}
 scoreboard objectives add economy dummy {"translate":"rfm.text.cd0bf6887da7"}
 scoreboard objectives add welfare dummy {"translate":"rfm.text.318edbd5be8f"}
 scoreboard objectives add ecology dummy {"translate":"rfm.text.014a015ae588"}
-#角色天赋使用的回合快照、比较值与触发标记
 scoreboard objectives add ability_fame dummy
 scoreboard objectives add ability_economy dummy
 scoreboard objectives add ability_welfare dummy
@@ -12,7 +9,6 @@ scoreboard objectives add ability_ecology dummy
 scoreboard objectives add ability_min dummy
 scoreboard objectives add ability_max dummy
 scoreboard objectives add ability_trigger dummy
-#属性锁定状态与锁定值
 scoreboard objectives add fame_lock dummy
 scoreboard objectives add economy_lock dummy
 scoreboard objectives add welfare_lock dummy
@@ -21,17 +17,14 @@ scoreboard objectives add fame_locked dummy
 scoreboard objectives add economy_locked dummy
 scoreboard objectives add welfare_locked dummy
 scoreboard objectives add ecology_locked dummy
-#动作栏显示使用的四项临时数值
 scoreboard objectives add fame_show dummy
 scoreboard objectives add econ_show dummy
 scoreboard objectives add welfare_show dummy
 scoreboard objectives add eco_show dummy
-#创建四个属性权重计分板
 scoreboard objectives add fame_weight dummy {"translate":"rfm.text.c993caee15bb"}
 scoreboard objectives add economy_weight dummy {"translate":"rfm.text.116fe2d1ff6d"}
 scoreboard objectives add welfare_weight dummy {"translate":"rfm.text.4b5059491fe7"}
 scoreboard objectives add ecology_weight dummy {"translate":"rfm.text.b93124d17289"}
-#创建侧边栏权重显示计分板；标题不使用两侧装饰，缩短属性名与数值间的留白
 scoreboard objectives add weight_display dummy
 scoreboard objectives modify weight_display displayname {"translate":"rfm.text.bec365631ddf","color":"gold","bold":true}
 scoreboard objectives modify weight_display numberformat styled {"color":"white","bold":true}
@@ -39,7 +32,6 @@ scoreboard players display name 名誉 weight_display {"translate":"rfm.text.dc0
 scoreboard players display name 经济 weight_display {"translate":"rfm.text.cd0bf6887da7"}
 scoreboard players display name 民生 weight_display {"translate":"rfm.text.318edbd5be8f"}
 scoreboard players display name 生态 weight_display {"translate":"rfm.text.014a015ae588"}
-#设置侧边栏四项权重的名称样式
 team add weight_fame
 team modify weight_fame color aqua
 team modify weight_fame prefix {"text":"◆ ","color":"aqua"}
@@ -56,9 +48,7 @@ team add weight_ecology
 team modify weight_ecology color green
 team modify weight_ecology prefix {"text":"◆ ","color":"green"}
 team join weight_ecology 生态
-#创建候选人类型
 scoreboard objectives add candidate dummy
-#创建队伍，用于在Tab列表玩家名前显示身份
 team add star
 team modify star prefix {"translate":"rfm.text.0330c09c19a8","color":"aqua"}
 team add business

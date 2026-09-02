@@ -1,4 +1,3 @@
-#全员准备完成：按最终在线人数重新生成纸条并进入锁位倒计时
 scoreboard players set #group_state group_state 5
 scoreboard players set @a[tag=rfm_participant] group_score 0
 scoreboard players set @a[tag=rfm_participant] group_rank 0

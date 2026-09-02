@@ -1,4 +1,3 @@
-#25“万能钥匙”：每回合开始时，10%几率使最低属性翻倍
 execute unless score @s collection_slot1 matches 25 unless score @s collection_slot2 matches 25 unless score @s collection_slot3 matches 25 unless score @s collection_slot4 matches 25 unless score @s collection_slot5 matches 25 run return 0
 execute store result score @s collection_steal_roll run random value 1..100
 execute unless score @s collection_steal_roll matches 1..10 run return 0

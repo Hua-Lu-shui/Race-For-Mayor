@@ -1,4 +1,3 @@
-#新一局清空旧藏品与神秘人展示状态；医生的开局藏品由天赋函数单独生成
 scoreboard players set @a[tag=rfm_participant] collection_slot1 0
 scoreboard players set @a[tag=rfm_participant] collection_slot2 0
 scoreboard players set @a[tag=rfm_participant] collection_slot3 0

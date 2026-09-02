@@ -1,4 +1,3 @@
-#把经济行动任务3的账本A交给玩家并更新场景
 execute if score @s audit_book_a matches 1 if score @s audit_target matches 1 run function rfm:task/action/economy/economy_3/books/a_false {slot:"A",slot_id:1}
 execute if score @s audit_book_a matches 1 unless score @s audit_target matches 1 run function rfm:task/action/economy/economy_3/books/a_true {slot:"A",slot_id:1}
 execute if score @s audit_book_a matches 2 if score @s audit_target matches 1 run function rfm:task/action/economy/economy_3/books/b_false {slot:"A",slot_id:1}

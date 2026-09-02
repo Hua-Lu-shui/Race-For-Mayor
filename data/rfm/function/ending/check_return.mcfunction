@@ -1,4 +1,3 @@
-#只接受结算完成且仍在返回告示牌附近的请求
 execute unless score #settle_state settle_state matches 4 run scoreboard players set @s ending_return 0
 execute unless score #settle_state settle_state matches 4 run return 0
 execute positioned 49 -57 23 unless entity @s[distance=..6] run scoreboard players set @s ending_return 0

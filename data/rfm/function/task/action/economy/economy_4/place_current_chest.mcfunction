@@ -1,4 +1,3 @@
-#把当前大箱子编号和随机半边转换为实际方块坐标
 execute if score #supply_chest supply_order matches 1 if score #supply_half supply_order matches 0 run data modify storage rfm:supply placement merge value {x:190,y:-58,z:25}
 execute if score #supply_chest supply_order matches 1 if score #supply_half supply_order matches 1 run data modify storage rfm:supply placement merge value {x:190,y:-58,z:26}
 execute if score #supply_chest supply_order matches 2 if score #supply_half supply_order matches 0 run data modify storage rfm:supply placement merge value {x:190,y:-58,z:27}

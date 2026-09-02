@@ -1,4 +1,3 @@
-#启动经济行动任务5
 scoreboard players set @s employment_completed 0
 scoreboard players set @s employment_time 600
 scoreboard players set @s employment_state 1

@@ -1,4 +1,3 @@
-#玩家已在等待屋时，从第一名开始依次进入令牌屋
 scoreboard players set @a[tag=rfm_participant] item_selecting 0
 scoreboard players set @a[tag=rfm_participant] item_pick 0
 scoreboard players set #current_picker item_selecting 1

@@ -1,4 +1,3 @@
-#四项属性票数从0开始同时累加，结算时长只取四项中的最高票数
 scoreboard players set #shown_fame settle_value 0
 scoreboard players set #shown_economy settle_value 0
 scoreboard players set #shown_welfare settle_value 0

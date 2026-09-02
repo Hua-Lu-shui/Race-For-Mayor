@@ -1,4 +1,3 @@
-#关闭计票动画时，直接展示当前候选人的四项最终属性票数3秒
 scoreboard players operation #shown_fame settle_value = @a[tag=rfm_participant,tag=rfm_settling,limit=1] vote_fame
 scoreboard players operation #shown_economy settle_value = @a[tag=rfm_participant,tag=rfm_settling,limit=1] vote_economy
 scoreboard players operation #shown_welfare settle_value = @a[tag=rfm_participant,tag=rfm_settling,limit=1] vote_welfare

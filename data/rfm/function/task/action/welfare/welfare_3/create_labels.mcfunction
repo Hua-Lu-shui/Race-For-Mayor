@@ -1,4 +1,3 @@
-#创建四色动作踏板标签
 kill @e[type=minecraft:text_display,tag=rfm_exercise_label]
 setblock 202 -59 -65 minecraft:light_weighted_pressure_plate
 setblock 206 -59 -69 minecraft:light_weighted_pressure_plate

@@ -1,4 +1,3 @@
-#“魔镜”：回合开始时，每有一位其他同身份候选人，所有属性+2
 execute unless score @s collection_slot1 matches 12 unless score @s collection_slot2 matches 12 unless score @s collection_slot3 matches 12 unless score @s collection_slot4 matches 12 unless score @s collection_slot5 matches 12 run return 0
 tag @a[tag=rfm_participant] remove rfm_mirror_owner
 tag @s add rfm_mirror_owner

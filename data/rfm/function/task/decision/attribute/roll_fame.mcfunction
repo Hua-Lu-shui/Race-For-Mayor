@@ -1,4 +1,3 @@
-#随机抽取一个名誉决策，并用位图判断该玩家本局是否已经抽到过
 scoreboard players add @s dec_used_fame 0
 execute store result score @s decision_task run random value 101..120
 scoreboard players set @s dec_used_bit 1
@@ -47,5 +46,4 @@ execute if score @s decision_task matches 117 run function rfm:task/decision/fam
 execute if score @s decision_task matches 118 run function rfm:task/decision/fame/official_ai/official_ai_show
 execute if score @s decision_task matches 119 run function rfm:task/decision/fame/public_art/public_art_show
 execute if score @s decision_task matches 120 run function rfm:task/decision/fame/honor_revocation/honor_revocation_show
-#学者额外获知三个选项的精确属性影响
 function rfm:ability/scholar/preview

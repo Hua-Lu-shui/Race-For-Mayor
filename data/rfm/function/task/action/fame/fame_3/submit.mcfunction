@@ -1,4 +1,3 @@
-#按下快门后逐一比较五个站位
 setblock 180 -58 -19 minecraft:polished_blackstone_button[face=wall,facing=south,powered=false]
 playsound minecraft:entity.item_frame.add_item master @a[tag=rfm_participant] 180 -58 -19 1 1.6 1
 scoreboard players set @s photo_match 0

@@ -1,4 +1,3 @@
-#九张编号纸条依次占用九个快捷栏槽位
 item replace entity @s hotbar.0 with minecraft:paper[minecraft:custom_name='{"translate":"rfm.text.87116a257edf","color":"yellow","italic":false}',minecraft:custom_data={emission_id:1}] 1
 item replace entity @s hotbar.1 with minecraft:paper[minecraft:custom_name='{"translate":"rfm.text.09b29aedc635","color":"yellow","italic":false}',minecraft:custom_data={emission_id:2}] 1
 item replace entity @s hotbar.2 with minecraft:paper[minecraft:custom_name='{"translate":"rfm.text.f37194780c54","color":"yellow","italic":false}',minecraft:custom_data={emission_id:3}] 1

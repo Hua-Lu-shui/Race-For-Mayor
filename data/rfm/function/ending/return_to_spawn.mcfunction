@@ -1,10 +1,8 @@
-#只允许在市长公布后的结束状态执行一次
 execute unless score #settle_state settle_state matches 4 run return 0
 playsound minecraft:ui.button.click master @s ~ ~ ~ 0.7 1.0
 scoreboard players set #settle_state settle_state 5
 setblock 49 -57 23 minecraft:air
 
-#停止上一局仍可能参与tick判断的全局流程
 function rfm:phase/phase0
 scoreboard players set #round round 0
 scoreboard players set #choose_time choose_time 0
@@ -15,7 +13,6 @@ scoreboard players set #current_picker item_selecting 0
 scoreboard players set #settle_room settle_room 0
 scoreboard players set #current event 0
 
-#清除玩家的任务、选择、准备及最终结算状态
 scoreboard players set @a[tag=rfm_participant] room 0
 scoreboard players set @a[tag=rfm_participant] decision_task 0
 scoreboard players set @a[tag=rfm_participant] decision_choice 0
@@ -110,7 +107,6 @@ scoreboard players set @a[tag=rfm_participant] stat_col_5 0
 scoreboard players set @a[tag=rfm_participant] stat_col_6 0
 scoreboard players set @a[tag=rfm_participant] stat_col_7 0
 
-#关闭所有行动任务状态，防止返回大厅后继续执行任务tick
 scoreboard players set @a[tag=rfm_participant] speech_state 0
 scoreboard players set @a[tag=rfm_participant] visit_state 0
 scoreboard players set @a[tag=rfm_participant] photo_state 0
@@ -132,7 +128,6 @@ scoreboard players set @a[tag=rfm_participant] park_state 0
 scoreboard players set @a[tag=rfm_participant] trash_state 0
 scoreboard players set @a[tag=rfm_participant] energy_state 0
 
-#重置跨局记录和属性锁定；下一局开始函数会再次初始化完整局内状态
 scoreboard players reset * event_used
 scoreboard players reset * action_draw_count
 scoreboard players reset * action_used_fame
@@ -152,7 +147,6 @@ tag @a[tag=rfm_participant] remove rfm_vote_tied
 tag @a[tag=rfm_participant] remove rfm_random_winner
 tag @a[tag=rfm_participant] remove rfm_winner
 
-#清理界面和数据包专用物品
 scoreboard objectives setdisplay sidebar
 bossbar set rfm:choose_time visible false
 title @a[tag=rfm_participant] clear
@@ -168,12 +162,9 @@ kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{rfm_
 kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{rfm_collection:1}}}}]
 function rfm:collection/mysterious/cleanup
 
-#恢复大厅默认身份与属性，再将全体玩家送回世界出生点
 execute as @a[tag=rfm_participant] run function rfm:initialize/candidate
 gamemode adventure @a[tag=rfm_participant]
 tp @a[tag=rfm_participant] 55.5 -50 -17.5 0 0
-#玩家点击返回并完成复位后，重新允许开始下一局
 scoreboard players set #start_pending phase 0
-#返回流程完成，状态重新回到未结算
 scoreboard players set #settle_state settle_state 0
 tag @a[tag=rfm_participant] remove rfm_participant

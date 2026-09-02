@@ -1,4 +1,3 @@
-#完成周禾的岗位匹配
 scoreboard players set @s employment_done_3 1
 scoreboard players add @s employment_completed 1
 kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{resume_id:3}}}}]

@@ -1,4 +1,3 @@
-#结束动作展示，允许玩家开始踩踏板
 scoreboard players set @s exercise_state 1
 scoreboard players set @s exercise_input 0
 scoreboard players set @s exercise_answer 0

@@ -1,4 +1,3 @@
-#根据路线编号和当前进度设置下一户门牌
 scoreboard players set @s visit_target 0
 execute if score @s visit_route matches 1 if score @s visit_step matches 0 run scoreboard players set @s visit_target 104
 execute if score @s visit_route matches 1 if score @s visit_step matches 1 run scoreboard players set @s visit_target 202

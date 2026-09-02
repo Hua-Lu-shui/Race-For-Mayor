@@ -1,5 +1,3 @@
-#确认当前告示牌仍可选择，并记录玩家持有的令牌编号
-#每名玩家整局只能领取一次藏品扩容；拦截后保留当前选择资格
 execute as @a[tag=rfm_participant,scores={item_selecting=1,item_pick=23}] if score @s stat_use_23 matches 1 run function rfm:item/select/expansion_blocked
 execute as @a[tag=rfm_participant,scores={item_selecting=1,item_pick=23}] if score @s stat_use_24 matches 1 run function rfm:item/select/expansion_blocked
 execute as @a[tag=rfm_participant,scores={item_selecting=1,item_pick=24}] if score @s stat_use_23 matches 1 run function rfm:item/select/expansion_blocked
@@ -29,6 +27,5 @@ execute as @a[tag=rfm_participant,scores={item_selecting=1,item_pick=22}] if sco
 execute as @a[tag=rfm_participant,scores={item_selecting=1,item_pick=23}] if score #item_23 item_available matches 1 run scoreboard players set @s item_held 23
 execute as @a[tag=rfm_participant,scores={item_selecting=1,item_pick=24}] if score #item_24 item_available matches 1 run scoreboard players set @s item_held 24
 
-#只有成功取得尚未被选择的令牌时才完成本名玩家的选择
 execute as @a[tag=rfm_participant,scores={item_selecting=1,item_held=1..24}] run function rfm:item/record_owned
 execute as @a[tag=rfm_participant,scores={item_selecting=1,item_held=1..24}] run function rfm:item/select/complete

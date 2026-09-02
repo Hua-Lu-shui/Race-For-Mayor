@@ -1,4 +1,3 @@
-#成功领取令牌时留档；即使终局前未使用，也会出现在竞选统计书中
 execute if score @s item_held matches 1 run scoreboard players set @s stat_use_1 1
 execute if score @s item_held matches 2 run scoreboard players set @s stat_use_2 1
 execute if score @s item_held matches 3 run scoreboard players set @s stat_use_3 1

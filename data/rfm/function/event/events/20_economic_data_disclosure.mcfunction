@@ -1,4 +1,3 @@
-#事件20：经济数据公开（永久显示经济领先者）
 scoreboard players set #event_20 event_used 1
 scoreboard players set #reveal_economy leader_reveal 1
 title @a[tag=rfm_participant] times 10 80 20

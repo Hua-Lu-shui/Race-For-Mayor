@@ -1,4 +1,3 @@
-#目标站位原有居民回到各自候选位置；村民和交互实体会一起移动
 execute if score @s photo_previous matches 1 run tp @e[tag=rfm_photo_resident_1] 183 -59 -13 180 0
 execute if score @s photo_previous matches 2 run tp @e[tag=rfm_photo_resident_2] 181 -59 -13 180 0
 execute if score @s photo_previous matches 3 run tp @e[tag=rfm_photo_resident_3] 179 -59 -13 180 0

@@ -1,4 +1,3 @@
-#随机抽取经济行动，并用位图判断该玩家本局是否已经抽到过
 scoreboard players add @s action_used_econ 0
 execute store result score @s action_task run random value 701..705
 scoreboard players set @s action_used_bit 1

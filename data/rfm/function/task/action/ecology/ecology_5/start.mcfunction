@@ -1,13 +1,11 @@
-#清洁能源场地
 scoreboard players set #waiting next_round_ready 0
 scoreboard players set @a[tag=rfm_participant] next_round_clock 0
 
-#所有玩家进入观战位置，行动玩家站到控制台前
 gamemode adventure @a[tag=rfm_participant]
 tp @a[tag=rfm_participant] 262 -59 70 0 0
 tp @s 263 -59 76 0 0
+function rfm:task/action/sequence/hide_observers
 
-#控制设备
 setblock 267 -57 79 minecraft:lever[face=wall,facing=north,powered=false] replace
 setblock 264 -57 79 minecraft:lever[face=wall,facing=north,powered=false] replace
 setblock 261 -57 79 minecraft:lever[face=wall,facing=north,powered=false] replace
@@ -15,7 +13,6 @@ setblock 258 -57 79 minecraft:lever[face=wall,facing=north,powered=false] replac
 setblock 262 -58 74 minecraft:stone_button[face=floor,facing=north,powered=false] replace
 function rfm:task/action/ecology/ecology_5/create_labels
 
-#初始化任务状态，等待行动玩家确认准备
 scoreboard players set @s energy_round 0
 scoreboard players set @s energy_target 0
 scoreboard players set @s energy_total 0
