@@ -189,6 +189,10 @@ scoreboard players set @a vote_total 0
 scoreboard players set @a final_votes 0
 clear @a minecraft:written_book[minecraft:custom_data~{rfm_stat_book:1}]
 scoreboard players set @a stat_book_room 0
+scoreboard players set @a stat_book_fame 0
+scoreboard players set @a stat_book_economy 0
+scoreboard players set @a stat_book_welfare 0
+scoreboard players set @a stat_book_ecology 0
 clear @a minecraft:clock[minecraft:custom_data={settlement_ready:1}]
 kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{settlement_ready:1}}}}]
 clear @a minecraft:heart_of_the_sea[minecraft:custom_data~{rfm_item:1}]

@@ -14,4 +14,5 @@ execute if score @s lobby_action matches 11 run function rfm:settings/count_anim
 execute if score @s lobby_action matches 12 run function rfm:settings/decision_time/toggle
 execute if score @s lobby_action matches 13 run function rfm:lobby/about
 execute if score @s lobby_action matches 14 run function rfm:settings/collection_refresh/toggle
+execute if score @s lobby_action matches 15 run function rfm:settings/event_frequency/toggle
 scoreboard players set @s lobby_action 0

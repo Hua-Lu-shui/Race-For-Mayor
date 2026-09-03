@@ -2,8 +2,8 @@
   "parent": "rfm:title/root",
   "display": {
     "icon": {"id": "minecraft:paper", "components": {"minecraft:custom_model_data": 720018}},
-    "title": {"text": "默默无闻", "color": "gray"},
-    "description": {"text": "扔出最终结算时钟时未获得任何其他头衔（最终票数 +300）", "color": "gray"},
+    "title": {"translate": "rfm.title.unknown.name", "color": "gray"},
+    "description": {"translate": "rfm.title.unknown.description", "color": "gray"},
     "frame": "goal",
     "show_toast": true,
     "announce_to_chat": false,

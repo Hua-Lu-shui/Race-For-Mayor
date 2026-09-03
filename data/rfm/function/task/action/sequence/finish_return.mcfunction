@@ -69,6 +69,5 @@ title @a[tag=rfm_participant] title {"translate":"rfm.text.e14df014667f","color"
 
 schedule clear rfm:round/round
 
-execute if score #round round matches ..9 run function rfm:round/leader/start
-
-execute if score #round round matches 10.. run function rfm:ending/prepare
+execute if score #round round matches ..10 run function rfm:round/leader/start
+execute if score #round round matches 11.. run function rfm:ending/prepare

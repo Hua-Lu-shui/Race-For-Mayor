@@ -29,3 +29,7 @@ scoreboard objectives add stat_title_ni dummy
 scoreboard objectives add stat_title_nc dummy
 scoreboard objectives add stat_title_all dummy
 scoreboard objectives add stat_book_room dummy
+scoreboard objectives add stat_book_fame dummy
+scoreboard objectives add stat_book_economy dummy
+scoreboard objectives add stat_book_welfare dummy
+scoreboard objectives add stat_book_ecology dummy

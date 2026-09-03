@@ -8,3 +8,5 @@ scoreboard objectives add group_ready dummy
 scoreboard objectives add group_finished dummy
 scoreboard objectives add potato_pos dummy
 scoreboard objectives add potato_hold dummy
+scoreboard objectives add marksman_pos dummy
+scoreboard objectives add marksman_arrow_time dummy

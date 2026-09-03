@@ -1,0 +1,1 @@
+{"criteria":{"hit_by_player_projectile":{"trigger":"minecraft:entity_hurt_player","conditions":{"damage":{"blocked":false,"source_entity":{"type":"minecraft:player","nbt":"{Tags:[\"rfm_participant\"]}"},"type":{"is_projectile":true}}}}},"rewards":{"function":"rfm:collective/game/marksman/hit"}}

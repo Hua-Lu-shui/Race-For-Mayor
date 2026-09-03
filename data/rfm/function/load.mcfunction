@@ -18,6 +18,7 @@ scoreboard objectives add game_setting dummy
 execute unless score #count_animation game_setting matches 0..1 run scoreboard players set #count_animation game_setting 1
 execute unless score #decision_time game_setting matches 20 unless score #decision_time game_setting matches 30 unless score #decision_time game_setting matches 40 run scoreboard players set #decision_time game_setting 30
 execute unless score #collection_auto_refresh game_setting matches 0..1 run scoreboard players set #collection_auto_refresh game_setting 0
+execute unless score #event_every_round game_setting matches 0..1 run scoreboard players set #event_every_round game_setting 0
 function rfm:settings/render
 scoreboard objectives add player_count dummy
 scoreboard objectives add round dummy
