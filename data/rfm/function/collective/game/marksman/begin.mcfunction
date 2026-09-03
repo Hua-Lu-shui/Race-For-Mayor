@@ -1,4 +1,9 @@
 scoreboard players set #group_state group_state 1
+scoreboard players set #group_time group_time 6000
+bossbar set rfm:marksman_time players @a[tag=rfm_participant]
+bossbar set rfm:marksman_time max 6000
+bossbar set rfm:marksman_time value 6000
+bossbar set rfm:marksman_time visible true
 title @a[tag=rfm_participant] title {"translate":"rfm.text.b0797d456278","color":"green","bold":true}
 item replace entity @a[tag=rfm_participant,scores={group_finished=0}] hotbar.0 with minecraft:bow[minecraft:custom_name='{"translate":"rfm.collective.marksman.bow","color":"yellow","bold":true,"italic":false}',minecraft:unbreakable={},minecraft:custom_data={rfm_marksman_bow:1}] 1
 execute as @a[tag=rfm_participant,scores={group_finished=0}] run function rfm:collective/game/marksman/give_arrow

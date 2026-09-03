@@ -141,4 +141,9 @@ execute unless score #start_pending phase matches 1 run bossbar remove rfm:lotte
 execute unless score #start_pending phase matches 1 run bossbar add rfm:lottery_time {"translate":"rfm.text.6afd443ee77c","color":"gold"}
 execute unless score #start_pending phase matches 1 run bossbar set rfm:lottery_time color yellow
 execute unless score #start_pending phase matches 1 run bossbar set rfm:lottery_time visible false
+
+execute unless score #start_pending phase matches 1 run bossbar remove rfm:marksman_time
+execute unless score #start_pending phase matches 1 run bossbar add rfm:marksman_time {"translate":"rfm.collective.marksman.name","color":"yellow"}
+execute unless score #start_pending phase matches 1 run bossbar set rfm:marksman_time color yellow
+execute unless score #start_pending phase matches 1 run bossbar set rfm:marksman_time visible false
 schedule function rfm:display/display 1t replace

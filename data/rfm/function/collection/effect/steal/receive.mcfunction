@@ -10,5 +10,4 @@ execute if score @s collection_effect_pick matches 3 run scoreboard players oper
 execute if score @s collection_effect_pick matches 4 run scoreboard players operation @s collection_slot4 = @s collection_offer
 execute if score @s collection_effect_pick matches 5 run scoreboard players operation @s collection_slot5 = @s collection_offer
 execute if score @s collection_offer matches 11 run function rfm:collection/effect/amber_record
-playsound minecraft:item.bundle.insert master @s ~ ~ ~ 0.7 1.2
 tellraw @s [{"translate":"rfm.text.1428054c4b5d","color":"gold","bold":true},{"translate":"rfm.text.b41958ea90e9","color":"white"}]
