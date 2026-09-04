@@ -1,4 +1,4 @@
-execute as @a[tag=rfm_participant,scores={next_round_ready=0,next_round_clock=1..}] at @s if entity @e[type=minecraft:item,distance=..3,nbt={Item:{components:{"minecraft:custom_data":{next_round_ready:1}}}}] run function rfm:round/ready/player_ready
+execute as @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{next_round_ready:1}}}}] on origin if entity @s[tag=rfm_participant,scores={next_round_ready=0}] run function rfm:round/ready/player_ready
 
 kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{next_round_ready:1}}}}]
 

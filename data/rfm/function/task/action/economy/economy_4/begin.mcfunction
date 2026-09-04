@@ -1,10 +1,10 @@
 scoreboard players set @s supply_completed 0
-scoreboard players set @s supply_time 2400
+scoreboard players set @s supply_time 2600
 scoreboard players set @s supply_state 1
 
 bossbar set rfm:supply_time players @a[tag=rfm_participant]
-bossbar set rfm:supply_time max 2400
-bossbar set rfm:supply_time value 2400
+bossbar set rfm:supply_time max 2600
+bossbar set rfm:supply_time value 2600
 bossbar set rfm:supply_time name [{"translate":"rfm.text.e0c9d49f9ac6","color":"yellow"}]
 bossbar set rfm:supply_time visible true
 

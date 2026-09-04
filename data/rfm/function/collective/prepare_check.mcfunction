@@ -1,4 +1,4 @@
-execute as @a[tag=rfm_participant,scores={group_ready=0}] at @s if entity @e[type=minecraft:item,distance=..3,limit=1,nbt={Item:{components:{"minecraft:custom_data":{collective_venue_ready:1}}}}] run function rfm:collective/prepare_player_ready
+execute as @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{collective_venue_ready:1}}}}] on origin if entity @s[tag=rfm_participant,scores={group_ready=0}] run function rfm:collective/prepare_player_ready
 kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{collective_venue_ready:1}}}}]
 
 execute store result score #online_total player_count run execute if entity @a[tag=rfm_participant]

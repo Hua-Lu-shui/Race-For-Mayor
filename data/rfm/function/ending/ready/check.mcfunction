@@ -1,4 +1,4 @@
-execute as @a[tag=rfm_participant,scores={settle_ready=0,settle_clock=1..}] at @s if entity @e[type=minecraft:item,distance=..3,nbt={Item:{components:{"minecraft:custom_data":{settlement_ready:1}}}}] run function rfm:ending/ready/player_ready
+execute as @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{settlement_ready:1}}}}] on origin if entity @s[tag=rfm_participant,scores={settle_ready=0}] run function rfm:ending/ready/player_ready
 
 kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{settlement_ready:1}}}}]
 scoreboard players set @a[tag=rfm_participant] settle_clock 0
