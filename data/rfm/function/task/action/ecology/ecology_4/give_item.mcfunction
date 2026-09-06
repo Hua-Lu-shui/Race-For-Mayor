@@ -21,7 +21,7 @@ execute if score @s trash_item_id matches 1 run item replace entity @s hotbar.4 
 execute if score @s trash_item_id matches 2 run item replace entity @s hotbar.4 with minecraft:glass_bottle[minecraft:custom_data={trash_item:1}] 1
 execute if score @s trash_item_id matches 3 run item replace entity @s hotbar.4 with minecraft:iron_nugget[minecraft:custom_data={trash_item:1}] 1
 
-execute if score @s trash_item_id matches 4 run item replace entity @s hotbar.4 with minecraft:clock[minecraft:custom_data={trash_item:1}] 1
+execute if score @s trash_item_id matches 4 run item replace entity @s hotbar.4 with minecraft:clock[minecraft:custom_name='{"translate":"rfm.item.trash.electronic_clock","italic":false}',minecraft:custom_data={trash_item:1}] 1
 execute if score @s trash_item_id matches 5 run item replace entity @s hotbar.4 with minecraft:compass[minecraft:custom_data={trash_item:1}] 1
 
 execute if score @s trash_item_id matches 6 run item replace entity @s hotbar.4 with minecraft:rotten_flesh[minecraft:custom_data={trash_item:1}] 1
