@@ -3,6 +3,8 @@ tag @a remove rfm_participant
 scoreboard players add #session game_session 1
 scoreboard players operation @a game_session = #session game_session
 tag @a add rfm_participant
+effect give @a[tag=rfm_participant] minecraft:resistance infinite 4 true
+effect give @a[tag=rfm_participant] minecraft:saturation infinite 0 true
 execute store result score #session_size game_session run execute if entity @a[tag=rfm_participant]
 scoreboard players set #choose_time choose_time 0
 scoreboard players set #waiting next_round_ready 0

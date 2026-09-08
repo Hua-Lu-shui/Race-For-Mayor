@@ -1,1 +1,1 @@
-{"criteria":{"right_click":{"trigger":"minecraft:player_interacted_with_entity","conditions":{"entity":{"type":"minecraft:interaction","nbt":"{Tags:[\"rfm_hot_potato_target_7\"]}"},"item":{"items":"minecraft:oxeye_daisy","components":{"minecraft:custom_data":{"rfm_hot_potato":1}}}}}},"rewards":{"function":"rfm:collective/game/hot_potato/pass_7"}}
+{"criteria":{"disabled":{"trigger":"minecraft:impossible"}}}

@@ -1,3 +1,4 @@
+execute if score #hot_potato_debug group_ready matches 1 run tellraw @a[tag=rfm_participant] [{"text":"[传花诊断] 左键记录及主手检查通过，目标站位 8；点击者：","color":"green"},{"selector":"@s"},{"text":"；游戏状态："},{"score":{"name":"#group_state","objective":"group_state"}}]
 advancement revoke @s only rfm:hot_potato_pass_8
 execute unless score #selected_game group_game matches 4 run return 0
 execute unless score #group_state group_state matches 1 run return 0

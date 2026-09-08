@@ -1,3 +1,4 @@
+execute as @a[tag=!rfm_joined] run function rfm:player/first_join
 execute as @a unless score @s candidate matches 0.. run function rfm:initialize/candidate
 tag @a remove rfm_participant
 execute if score #phase phase matches 1..2 as @a if score @s game_session = #session game_session run tag @s add rfm_participant

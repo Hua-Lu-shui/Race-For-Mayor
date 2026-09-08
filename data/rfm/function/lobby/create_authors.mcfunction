@@ -6,8 +6,8 @@ summon minecraft:item_display 49 -48 -21 {Tags:["rfm_author_model","rfm_author_h
 summon minecraft:item_display 53 -48 -21 {Tags:["rfm_author_model","rfm_author_sunken"],Rotation:[180.0f,0.0f],item:{id:"minecraft:paper",count:1,components:{"minecraft:custom_model_data":700014}},item_display:"fixed",transformation:{translation:[0.0f,0.0f,0.0f],scale:[2.0f,2.0f,2.0f],left_rotation:[0.0f,0.0f,0.0f,1.0f],right_rotation:[0.0f,0.0f,0.0f,1.0f]},view_range:64.0f}
 summon minecraft:item_display 57 -48 -21 {Tags:["rfm_author_model","rfm_author_yanzai"],Rotation:[180.0f,0.0f],item:{id:"minecraft:paper",count:1,components:{"minecraft:custom_model_data":700015}},item_display:"fixed",transformation:{translation:[0.0f,0.0f,0.0f],scale:[2.0f,2.0f,2.0f],left_rotation:[0.0f,0.0f,0.0f,1.0f],right_rotation:[0.0f,0.0f,0.0f,1.0f]},view_range:64.0f}
 
-setblock 41 -50 -20 minecraft:cherry_wall_sign[facing=south,waterlogged=false]{front_text:{messages:['""','{"translate":"rfm.ui.author.building"}','""','""']}}
-setblock 45 -50 -20 minecraft:cherry_wall_sign[facing=south,waterlogged=false]{front_text:{messages:['""','{"translate":"rfm.ui.author.building"}','""','""']}}
-setblock 49 -50 -20 minecraft:cherry_wall_sign[facing=south,waterlogged=false]{front_text:{messages:['{"translate":"rfm.ui.author.datapack"}','{"translate":"rfm.ui.author.resource_pack"}','{"translate":"rfm.ui.author.building"}','""']}}
-setblock 53 -50 -20 minecraft:cherry_wall_sign[facing=south,waterlogged=false]{front_text:{messages:['""','{"translate":"rfm.ui.author.building"}','""','""']}}
-setblock 57 -50 -20 minecraft:cherry_wall_sign[facing=south,waterlogged=false]{front_text:{messages:['""','{"translate":"rfm.ui.author.building"}','""','""']}}
+setblock 41 -50 -20 minecraft:cherry_wall_sign[facing=south,waterlogged=false]{front_text:{messages:['""','{"text":"建筑"}','{"text":"Building"}','""']}}
+setblock 45 -50 -20 minecraft:cherry_wall_sign[facing=south,waterlogged=false]{front_text:{messages:['""','{"text":"建筑"}','{"text":"Building"}','""']}}
+setblock 49 -50 -20 minecraft:cherry_wall_sign[facing=south,waterlogged=false]{front_text:{messages:['{"text":"数据包 / 资源包"}','{"text":"建筑"}','{"text":"Data & Resource"}','{"text":"Packs / Building"}']}}
+setblock 53 -50 -20 minecraft:cherry_wall_sign[facing=south,waterlogged=false]{front_text:{messages:['""','{"text":"建筑"}','{"text":"Building"}','""']}}
+setblock 57 -50 -20 minecraft:cherry_wall_sign[facing=south,waterlogged=false]{front_text:{messages:['""','{"text":"建筑"}','{"text":"Building"}','""']}}

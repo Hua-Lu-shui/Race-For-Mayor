@@ -13,4 +13,4 @@ execute as @a[tag=rfm_participant] run scoreboard players operation @s stat_book
 execute as @a[tag=rfm_participant] at @s run function rfm:ending/stat_book/give
 
 setblock 49 -56 35 minecraft:air
-setblock 49 -57 23 minecraft:cherry_sign[rotation=0]{front_text:{has_glowing_text:1b,messages:['{"text":""}','{"translate":"rfm.text.11d024154013","color":"green","bold":true,"clickEvent":{"action":"run_command","value":"/trigger ending_return set 1"}}','{"text":"Return","color":"green","bold":true,"clickEvent":{"action":"run_command","value":"/trigger ending_return set 1"}}','{"text":""}']}}
+setblock 49 -57 23 minecraft:cherry_sign[rotation=0]{front_text:{has_glowing_text:1b,messages:['{"text":""}','{"text":"返回","color":"green","bold":true,"clickEvent":{"action":"run_command","value":"/trigger ending_return set 1"}}','{"text":"Return","color":"green","bold":true,"clickEvent":{"action":"run_command","value":"/trigger ending_return set 1"}}','{"text":""}']}}
